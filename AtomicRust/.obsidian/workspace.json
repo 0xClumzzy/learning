@@ -29,15 +29,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ec612c1c681aec2e",
+            "id": "95d709f1e8043e87",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
-              "state": {
-                "path": "code for running"
-              },
-              "icon": "lucide-file",
-              "title": "code for running"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -266,11 +264,13 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "c9ae2b8d09a470a4",
+  "active": "95d709f1e8043e87",
   "lastOpenFiles": [
+    "mini-projects/guessing game/notes.md",
+    "Tags/#flashcard",
+    "Untitled Kanban.md",
     "mini-projects/guessing game/src/main.rs.md",
     "mini-projects/guessing game/src/Cargo.toml.md",
-    "mini-projects/guessing game/notes.md",
     "code for running/guessingGame/src/main",
     "rustL/guessingGame/src/rustcZYZCoW/symbols.o",
     "rustL/guessingGame/src/rustcZYZCoW/raw-dylibs",
@@ -281,13 +281,11 @@
     "rustL/wtf/src/main.rs",
     "rustL/wtf/src/hw.rs",
     "rustL/wtf/src/HELLO.md",
-    "rustL/wtf/src",
     "mini-projects/guessing game/notes-mindmap.md",
     "Excalidraw/_Index_of_Excalidraw.md",
     "mini-projects/_Index_of_mini-projects.md",
     "_Index_of_AtomicRust.md",
     "Excalidraw/Drawing 2026-07-15 07.25.34.excalidraw.md",
-    "Untitled Kanban.md",
     "references/guessing game.md",
     "tags/manifest.md",
     "references/Untitled.md",

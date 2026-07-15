@@ -1,3 +1,5 @@
+#flashcard
+
 Create new project folder
 run:
 ```
