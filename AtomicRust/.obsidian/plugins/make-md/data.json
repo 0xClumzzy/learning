@@ -45,7 +45,9 @@
     "//mini-projects/mini-projects/guessing game",
     "//mini-projects/mini-projects/guessing game/mini-projects/guessing game/src",
     "//rustL/rustL/wtf",
-    "//code for running"
+    "//code for running",
+    "//code for running/code for running/guessingGame",
+    "//code for running/code for running/guessingGame/code for running/guessingGame/src"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
