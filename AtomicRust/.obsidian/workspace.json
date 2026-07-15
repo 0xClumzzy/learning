@@ -41,10 +41,12 @@
             "id": "ec612c1c681aec2e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "mk-space",
+              "state": {
+                "path": "rustL"
+              },
+              "icon": "lucide-file",
+              "title": "rustL"
             }
           }
         ]
@@ -275,6 +277,18 @@
   },
   "active": "ec612c1c681aec2e",
   "lastOpenFiles": [
+    "rustL/guessingGame/src/main",
+    "rustL/guessingGame/src/rustcZYZCoW/symbols.o",
+    "rustL/guessingGame/src/rustcZYZCoW/raw-dylibs",
+    "rustL/guessingGame/src/rustcZYZCoW",
+    "rustL/guessingGame/src/main.803wtrkifrp707y40wm1hd0yy.rcgu.o",
+    "rustL/guessingGame/src/main.main.5eb43039c9b39c31-cgu.0.rcgu.o",
+    "rustL/guessingGame/src/main.rs",
+    "rustL/wtf/src/main.rs",
+    "rustL/wtf/src/hw.rs",
+    "rustL/wtf/src/HELLO.md",
+    "rustL/wtf/src",
+    "rustL/wtf/Cargo.toml",
     "mini-projects/guessing game/notes.md",
     "mini-projects/guessing game/notes-mindmap.md",
     "Excalidraw/_Index_of_Excalidraw.md",
@@ -282,22 +296,12 @@
     "_Index_of_AtomicRust.md",
     "Excalidraw/Drawing 2026-07-15 07.25.34.excalidraw.md",
     "Untitled Kanban.md",
-    "Tags",
-    "Excalidraw",
     "mini-projects/guessing game/src/main.rs.md",
     "mini-projects/guessing game/src/Cargo.toml.md",
     "references/guessing game.md",
     "tags/manifest.md",
     "references/Untitled.md",
-    "Untitled",
-    "references",
-    "mini-projects/guessing game/src",
-    "mini-projects/guessing game",
     "tags/helloword.md",
-    "Welcome.md",
-    "templates",
-    "mini-projects",
-    "items",
-    "tags"
+    "Welcome.md"
   ]
 }
