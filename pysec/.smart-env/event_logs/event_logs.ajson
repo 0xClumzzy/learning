@@ -26,3 +26,6 @@
 "event_logs:sources:created": {"key":"sources:created","ct":2,"first_at":1784099796288,"last_at":1784099806110,"class_name":"EventLog","event_sources":{"obsidian:vault.create":2}},
 "event_logs:sources:opened": {"key":"sources:opened","ct":1,"first_at":1784099806236,"last_at":1784099806236,"class_name":"EventLog","event_sources":{"active-leaf-change":1}},
 "event_logs:sources:deleted": {"key":"sources:deleted","ct":2,"first_at":1784099812768,"last_at":1784099815467,"class_name":"EventLog","event_sources":{"obsidian:vault.delete":2}},
+"event_logs:plugin:install_completed": {"key":"plugin:install_completed","ct":1,"first_at":1784101335664,"last_at":1784101335664,"class_name":"EventLog","event_sources":{"install_smart_lookup":1}},
+"event_logs:smart_env:restart_required": {"key":"smart_env:restart_required","ct":1,"first_at":1784101335757,"last_at":1784101335757,"class_name":"EventLog","event_sources":{"SmartEnv.create":1}},
+"event_logs:sources:opened": {"key":"sources:opened","ct":3,"first_at":1784099806236,"last_at":1784101378027,"class_name":"EventLog","event_sources":{"active-leaf-change":3}},

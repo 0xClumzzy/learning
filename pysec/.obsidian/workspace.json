@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ef7df7c160a9cc22",
+        "id": "bbd7a73a62a535b3",
         "type": "tabs",
         "children": [
           {
-            "id": "5e176db068d3abea",
+            "id": "867552d387352769",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "initial-access.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "initial-access"
             }
           }
         ]
@@ -80,8 +84,7 @@
               "title": "Navigator"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -101,6 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "initial-access.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for initial-access"
             }
           },
           {
@@ -119,11 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "initial-access.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from initial-access"
             }
           },
           {
@@ -194,11 +199,13 @@
       "obsidian-kanban:Create new board": false,
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Toggle Footer Connections": false,
-      "smart-connections:Smart Connections: Open random connection": false
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-lookup:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "5e176db068d3abea",
+  "active": "ddf40fc5879cfdcb",
   "lastOpenFiles": [
+    "book-python-for-cybersecurity.md",
     "2026-07-15.md",
     "Untitled Kanban.md",
     "Tags"

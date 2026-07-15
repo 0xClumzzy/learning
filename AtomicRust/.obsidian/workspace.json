@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8ab25133c52ff7ae",
+        "id": "fdf4f727470aa7b5",
         "type": "tabs",
         "children": [
           {
-            "id": "2a9d73ef7a3cfde3",
+            "id": "cd0c59cd3452c5fb",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -218,13 +218,13 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "2a9d73ef7a3cfde3",
+  "active": "cd0c59cd3452c5fb",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-07-15 07.25.34.excalidraw.md",
     "Untitled Kanban.md",
     "mini-projects/guessing game/notes.md",
     "Tags",
     "mini-projects/guessing game/notes-mindmap.md",
-    "Excalidraw/Drawing 2026-07-15 07.25.34.excalidraw.md",
     "Excalidraw",
     "mini-projects/guessing game/src/main.rs.md",
     "mini-projects/guessing game/src/Cargo.toml.md",
