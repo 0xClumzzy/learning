@@ -1,0 +1,383 @@
+.word-viewer {
+  --docx-border: var(--background-modifier-border);
+  --docx-muted: var(--text-muted);
+  --docx-panel: var(--background-secondary);
+  --docx-panel-alt: var(--background-primary-alt);
+  --docx-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 100%;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.word-viewer__header {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  min-height: 40px;
+}
+
+.word-viewer__title {
+  min-width: 0;
+}
+
+.word-viewer__filename {
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.word-viewer__path,
+.word-viewer__detail-path,
+.word-viewer__media-path {
+  color: var(--docx-muted);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.word-viewer__toolbar {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
+.word-viewer__search {
+  align-items: center;
+  border: 1px solid var(--docx-border);
+  border-radius: var(--docx-radius);
+  display: flex;
+  gap: 6px;
+  min-width: 220px;
+  padding: 4px 8px;
+}
+
+.word-viewer__search-icon {
+  color: var(--docx-muted);
+  display: inline-flex;
+}
+
+.word-viewer__search input {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  min-width: 0;
+  width: 100%;
+}
+
+.word-viewer__icon-button {
+  align-items: center;
+  border: 1px solid var(--docx-border);
+  border-radius: var(--docx-radius);
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  padding: 0;
+  width: 32px;
+}
+
+.word-viewer__summary {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.word-viewer__pill,
+.word-viewer__note {
+  background: var(--docx-panel);
+  border: 1px solid var(--docx-border);
+  border-radius: 999px;
+  color: var(--text-normal);
+  font-size: 12px;
+  line-height: 1.3;
+  padding: 4px 8px;
+}
+
+.word-viewer__note {
+  color: var(--docx-muted);
+}
+
+.word-viewer__warnings {
+  background: var(--background-modifier-error-rgb);
+  border: 1px solid var(--background-modifier-error);
+  border-radius: var(--docx-radius);
+  padding: 10px 12px;
+}
+
+.word-viewer__warnings-title {
+  font-weight: 650;
+  margin-bottom: 4px;
+}
+
+.word-viewer__warnings ul {
+  margin: 0;
+  padding-inline-start: 20px;
+}
+
+.word-viewer__body {
+  display: grid;
+  flex: 1 1 auto;
+  gap: 12px;
+  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+  min-height: 0;
+}
+
+.word-viewer__sidebar,
+.word-viewer__detail {
+  min-height: 0;
+  overflow: auto;
+}
+
+.word-viewer__sidebar {
+  border-right: 1px solid var(--docx-border);
+  padding-right: 12px;
+}
+
+.word-viewer__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.word-viewer__section-title {
+  color: var(--docx-muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.word-viewer__outline-button {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--docx-radius);
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 32px minmax(0, 1fr);
+  margin-bottom: 4px;
+  padding: 8px;
+  text-align: left;
+  width: 100%;
+}
+
+.word-viewer__outline-button:hover,
+.word-viewer__outline-button.is-active {
+  background: var(--docx-panel);
+  border-color: var(--docx-border);
+}
+
+.word-viewer__outline-button.is-heading .word-viewer__outline-title {
+  font-weight: 650;
+}
+
+.word-viewer__outline-button.is-level-2 {
+  padding-left: 16px;
+}
+
+.word-viewer__outline-button.is-level-3,
+.word-viewer__outline-button.is-level-4,
+.word-viewer__outline-button.is-level-5,
+.word-viewer__outline-button.is-level-6 {
+  padding-left: 24px;
+}
+
+.word-viewer__outline-index {
+  color: var(--docx-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.word-viewer__outline-label {
+  min-width: 0;
+}
+
+.word-viewer__outline-title {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.word-viewer__outline-meta,
+.word-viewer__block-meta,
+.word-viewer__annotation-meta,
+.word-viewer__media-meta {
+  color: var(--docx-muted);
+  font-size: 12px;
+}
+
+.word-viewer__card {
+  background: var(--background-primary);
+  border: 1px solid var(--docx-border);
+  border-radius: var(--docx-radius);
+  padding: 12px;
+}
+
+.word-viewer__detail-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.word-viewer__detail-title {
+  font-size: 17px;
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+.word-viewer__block {
+  border: 1px solid var(--docx-border);
+  border-radius: var(--docx-radius);
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+.word-viewer__block.is-active {
+  background: var(--docx-panel-alt);
+}
+
+.word-viewer__block.is-heading .word-viewer__paragraph {
+  font-weight: 650;
+}
+
+.word-viewer__block-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.word-viewer__paragraph,
+.word-viewer__annotation-text {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.word-viewer__table-wrap {
+  overflow: auto;
+}
+
+.word-viewer__table,
+.word-viewer__package-table {
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 100%;
+}
+
+.word-viewer__table td,
+.word-viewer__package-table td,
+.word-viewer__package-table th {
+  border: 1px solid var(--docx-border);
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.word-viewer__package-table th {
+  background: var(--docx-panel);
+  font-weight: 650;
+  position: sticky;
+  top: 0;
+}
+
+.word-viewer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.word-viewer__link-pill {
+  align-items: center;
+  background: var(--docx-panel);
+  border: 1px solid var(--docx-border);
+  border-radius: 999px;
+  display: inline-flex;
+  gap: 6px;
+  max-width: 100%;
+  padding: 3px 8px;
+}
+
+.word-viewer__link-target,
+.word-viewer__link-external {
+  color: var(--docx-muted);
+  overflow-wrap: anywhere;
+}
+
+.word-viewer__annotation {
+  border-top: 1px solid var(--docx-border);
+  padding: 8px 0;
+}
+
+.word-viewer__annotation:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.word-viewer__media-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.word-viewer__media-card {
+  background: var(--docx-panel);
+  border: 1px solid var(--docx-border);
+  border-radius: var(--docx-radius);
+  padding: 8px;
+}
+
+.word-viewer__media-name {
+  font-weight: 650;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.word-viewer__empty,
+.word-viewer__message {
+  color: var(--docx-muted);
+  padding: 12px;
+}
+
+.word-viewer__message {
+  background: var(--docx-panel);
+  border: 1px solid var(--docx-border);
+  border-radius: var(--docx-radius);
+}
+
+@media (max-width: 760px) {
+  .word-viewer {
+    padding: 10px;
+  }
+
+  .word-viewer__header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .word-viewer__toolbar,
+  .word-viewer__search {
+    width: 100%;
+  }
+
+  .word-viewer__body {
+    grid-template-columns: 1fr;
+  }
+
+  .word-viewer__sidebar {
+    border-right: 0;
+    border-bottom: 1px solid var(--docx-border);
+    max-height: 220px;
+    padding-bottom: 12px;
+    padding-right: 0;
+  }
+}

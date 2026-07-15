@@ -4,23 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "5c59841d01c2bb70",
+        "id": "8ab25133c52ff7ae",
         "type": "tabs",
         "children": [
           {
-            "id": "3b5e2a4c9d59a3d8",
+            "id": "2a9d73ef7a3cfde3",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Untitled Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": []
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "Untitled Kanban"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -126,12 +120,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Kanban.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Untitled Kanban"
+              "title": "Outgoing links"
             }
           },
           {
@@ -155,13 +148,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Kanban.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled Kanban"
+              "title": "Outline"
             }
           },
           {
@@ -226,10 +218,10 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "3b5e2a4c9d59a3d8",
+  "active": "2a9d73ef7a3cfde3",
   "lastOpenFiles": [
-    "mini-projects/guessing game/notes.md",
     "Untitled Kanban.md",
+    "mini-projects/guessing game/notes.md",
     "Tags",
     "mini-projects/guessing game/notes-mindmap.md",
     "Excalidraw/Drawing 2026-07-15 07.25.34.excalidraw.md",

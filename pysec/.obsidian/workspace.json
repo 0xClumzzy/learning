@@ -11,10 +11,10 @@
             "id": "5e176db068d3abea",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -150,6 +150,26 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "2d7c4ade49ec52a2",
+            "type": "leaf",
+            "state": {
+              "type": "semantic-search-tab",
+              "state": {},
+              "icon": "search",
+              "title": "Semantic Search"
+            }
+          },
+          {
+            "id": "92adf37d92033dba",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-tab",
+              "state": {},
+              "icon": "star",
+              "title": "AI"
+            }
           }
         ],
         "currentTab": 3
@@ -177,7 +197,7 @@
       "smart-connections:Smart Connections: Open random connection": false
     }
   },
-  "active": "9d0e29f7f7d69f6a",
+  "active": "5e176db068d3abea",
   "lastOpenFiles": [
     "2026-07-15.md",
     "Untitled Kanban.md",
