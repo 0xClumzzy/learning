@@ -11,24 +11,16 @@
             "id": "3b5e2a4c9d59a3d8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "mini-projects/guessing game/notes.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                "file": "Untitled Kanban.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": []
                 }
               },
-              "icon": "lucide-file",
-              "title": "notes"
+              "icon": "lucide-trello",
+              "title": "Untitled Kanban"
             }
           }
         ]
@@ -83,8 +75,19 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "9e41fc61259292e1",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -123,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "references/guessing game.md",
+                "file": "Untitled Kanban.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from guessing game"
+              "title": "Outgoing links from Untitled Kanban"
             }
           },
           {
@@ -147,46 +150,52 @@
             }
           },
           {
-            "id": "6daf54c0be7a8c93",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
             "id": "4925cf6f3254ba24",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "mini-projects/guessing game/notes.md",
+                "file": "Untitled Kanban.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of notes"
+              "title": "Outline of Untitled Kanban"
             }
           },
           {
-            "id": "5f281bbdb30f2ce6",
+            "id": "a9436ff2f1c0a4d1",
             "type": "leaf",
             "state": {
-              "type": "git-view",
+              "type": "calendar",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "c1be4a5c3857177f",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "ag-node-list",
+              "title": "Juggl nodes"
+            }
+          },
+          {
+            "id": "9335896a7c00602e",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "ag-style",
+              "title": "Juggl style"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -212,14 +221,17 @@
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "juggl:Juggl global graph": false
     }
   },
   "active": "3b5e2a4c9d59a3d8",
   "lastOpenFiles": [
-    "mini-projects/guessing game/notes-mindmap.md",
     "mini-projects/guessing game/notes.md",
     "Untitled Kanban.md",
+    "Tags",
+    "mini-projects/guessing game/notes-mindmap.md",
     "Excalidraw/Drawing 2026-07-15 07.25.34.excalidraw.md",
     "Excalidraw",
     "mini-projects/guessing game/src/main.rs.md",
