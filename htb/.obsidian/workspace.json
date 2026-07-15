@@ -4,20 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a5c8b721f63f17d5",
+        "id": "69fdcb8e45833a5b",
         "type": "tabs",
         "children": [
           {
-            "id": "16b2db221d68a6b0",
+            "id": "da5315b4d0456a6d",
             "type": "leaf",
             "state": {
-              "type": "bases",
-              "state": {
-                "file": "Untitled.base",
-                "viewName": "Table"
-              },
-              "icon": "lucide-table",
-              "title": "Untitled"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -72,8 +69,19 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "5e626af71dcad007",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,9 +188,55 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "c5c2db6e5f765ae3",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
+          },
+          {
+            "id": "4f900e9c5a53b56d",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
+            }
+          },
+          {
+            "id": "9c9e65303edce46d",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
+            }
+          },
+          {
+            "id": "b8e12f611ef41856",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
+            }
+          },
+          {
+            "id": "7a5c2ec30b720666",
+            "type": "leaf",
+            "state": {
+              "type": "CALENDARIUM",
+              "icon": "CALENDARIUM",
+              "title": "Calendarium"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 11
       }
     ],
     "direction": "horizontal",
@@ -201,16 +255,24 @@
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "calendarium:Open Calendarium": false
     }
   },
-  "active": "16b2db221d68a6b0",
+  "active": "da5315b4d0456a6d",
   "lastOpenFiles": [
+    "Tags",
+    "Untitled.base",
     "academy/CPTS/footprinting/labs/hard/HARD.md",
     "academy/vuln",
     "academy/CPTS/footprinting/labs/hard/tom_rsa",
     "academy/CPTS/footprinting/labs/hard/key",
-    "Untitled.base",
     "2026-07-13.md",
     "Untitled.canvas",
     "academy/CPTS/footprinting/ Post Office Protocol.md",

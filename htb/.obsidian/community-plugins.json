@@ -3,5 +3,10 @@
   "dataview",
   "obsidian-kanban",
   "calendar",
-  "obsidian-git"
+  "obsidian-git",
+  "smart-connections",
+  "pdf-plus",
+  "obsidian-pandoc",
+  "calendarium",
+  "make-md"
 ]
