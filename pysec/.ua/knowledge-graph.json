@@ -1,0 +1,1191 @@
+{
+  "version": "1.0.0",
+  "kind": "knowledge",
+  "project": {
+    "name": "pysec \u2014 Python Cybersecurity Knowledge Base",
+    "languages": [
+      "markdown"
+    ],
+    "frameworks": [
+      "karpathy-wiki"
+    ],
+    "description": "Knowledge graph for pysec \u2014 Python Cybersecurity Knowledge Base",
+    "analyzedAt": "2026-07-15T03:41:31.028805+00:00",
+    "gitCommitHash": "9c45b0fd0761399a08926274b6f92bf22c81abfd"
+  },
+  "nodes": [
+    {
+      "id": "article:arp-spoofing",
+      "type": "article",
+      "name": "ARP Spoofing / Cache Poisoning",
+      "filePath": "arp-spoofing.md",
+      "summary": "Layer 2 MITM: forge ARP replies to associate the attacker's MAC with a victim IP, diverting traffic. Ballmann implements a poisoner, an ARP-watcher (defense), MAC-flooder, and VLAN-hopping/DTP abus...",
+      "tags": [
+        "attack",
+        "layer2",
+        "network",
+        "network protocol attacks"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "scapy",
+          "port-scanning",
+          "book-understanding-network-hacks",
+          "scapy",
+          "port-scanning",
+          "book-understanding-network-hacks"
+        ],
+        "category": "Network Protocol Attacks",
+        "content": "---\ntitle: ARP Spoofing / Cache Poisoning\ntags: layer2, network, attack\n---\n\n# ARP Spoofing / Cache Poisoning\n\nLayer 2 MITM: forge ARP replies to associate the attacker's MAC\nwith a victim IP, diverting traffic. Ballmann implements a poisoner, an\nARP-watcher (defense), MAC-flooder, and VLAN-hopping/DTP abuse variants.\n\nBuilt with [[scapy]]; pairs with [[port-scanning]] for recon.\nFrom [[book-understanding-network-hacks]].\n\n## Related\n- [[scapy]]\n- [[port-scanning]]\n- [[book-understanding-network-hacks]]\n",
+        "backlinks": [
+          "article:book-understanding-network-hacks",
+          "article:book-understanding-network-hacks",
+          "article:port-scanning",
+          "article:port-scanning",
+          "article:scapy",
+          "article:scapy"
+        ]
+      }
+    },
+    {
+      "id": "article:bluetooth-attacks",
+      "type": "article",
+      "name": "Bluetooth Attacks",
+      "filePath": "bluetooth-attacks.md",
+      "summary": "RFCOMM/SDP probing, OBEX, Blue Snarf / Blue Bug exploits, Bluetooth spoofing, and sniffing.",
+      "tags": [
+        "attack",
+        "bluetooth",
+        "network protocol attacks",
+        "wireless"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "wifi-attacks",
+          "book-understanding-network-hacks",
+          "wifi-attacks",
+          "book-understanding-network-hacks"
+        ],
+        "category": "Network Protocol Attacks",
+        "content": "---\ntitle: Bluetooth Attacks\ntags: wireless, bluetooth, attack\n---\n\n# Bluetooth Attacks\n\nRFCOMM/SDP probing, OBEX, Blue Snarf / Blue Bug exploits,\nBluetooth spoofing, and sniffing.\n\nPairs with [[wifi-attacks]]. From [[book-understanding-network-hacks]].\n\n## Related\n- [[wifi-attacks]]\n- [[book-understanding-network-hacks]]\n",
+        "backlinks": [
+          "article:book-understanding-network-hacks",
+          "article:book-understanding-network-hacks",
+          "article:wifi-attacks",
+          "article:wifi-attacks"
+        ]
+      }
+    },
+    {
+      "id": "article:book-python-for-cybersecurity",
+      "type": "article",
+      "name": "Python for Cybersecurity",
+      "filePath": "book-python-for-cybersecurity.md",
+      "summary": "279-page book mapping the MITRE ATT&CK framework to executable Python tradecraft. Each chapter covers one ATT&CK tactic and walks two concrete techniques with working tooling, ending in a Summary a...",
+      "tags": [
+        "book",
+        "mitre",
+        "red-team",
+        "the books"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "mitre-attack-framework",
+          "initial-access",
+          "persistence",
+          "credential-access",
+          "exfiltration",
+          "mitre-attack-framework",
+          "initial-access",
+          "persistence",
+          "credential-access",
+          "exfiltration"
+        ],
+        "category": "The Books",
+        "content": "---\ntitle: Python for Cybersecurity\ntags: mitre, red-team, book\n---\n\n# Python for Cybersecurity\n\n279-page book mapping the MITRE ATT&CK framework to executable\nPython tradecraft. Each chapter covers one ATT&CK tactic and walks two concrete\ntechniques with working tooling, ending in a Summary and Suggested Exercises.\n\n## Coverage\n- 13 tactic chapters: Pre-ATT&CK, Initial Access, Execution, Persistence,\n  Privilege Escalation, Defense Evasion, Credential Access, Discovery,\n  Lateral Movement, Collection, Command & Control, Exfiltration, Impact.\n- Windows-centric: Registry autoruns, WMI, Event logs, logon types.\n\n## Where it fits\nThis book is the playbook layer. See [[mitre-attack-framework]] for the\nunderlying matrix, and [[initial-access]], [[persistence]], [[credential-access]],\n[[exfiltration]] for the tactics it implements in Python.\n\n## Related\n- [[mitre-attack-framework]]\n- [[initial-access]]\n- [[persistence]]\n- [[credential-access]]\n- [[exfiltration]]\n",
+        "backlinks": [
+          "article:credential-access",
+          "article:credential-access",
+          "article:exfiltration",
+          "article:exfiltration",
+          "article:initial-access",
+          "article:initial-access",
+          "article:mitre-attack-framework",
+          "article:mitre-attack-framework",
+          "article:persistence",
+          "article:persistence"
+        ]
+      }
+    },
+    {
+      "id": "article:book-understanding-network-hacks",
+      "type": "article",
+      "name": "Understanding Network Hacks (Ballmann)",
+      "filePath": "book-understanding-network-hacks.md",
+      "summary": "Bastian Ballmann's 187-page \"Attack and Defense with Python\" (Springer, 2015). Hands-on protocol-level hacking: every attack ships with a short Python script and a matching detection/defense variant.",
+      "tags": [
+        "book",
+        "protocols",
+        "scapy",
+        "the books"
+      ],
+      "complexity": "complex",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "scapy",
+          "python-sockets",
+          "arp-spoofing",
+          "port-scanning",
+          "dns-spoofing",
+          "sql-injection",
+          "wifi-attacks",
+          "bluetooth-attacks",
+          "scapy",
+          "python-sockets",
+          "arp-spoofing",
+          "port-scanning",
+          "dns-spoofing",
+          "sql-injection",
+          "wifi-attacks",
+          "bluetooth-attacks"
+        ],
+        "category": "The Books",
+        "content": "---\ntitle: Understanding Network Hacks (Ballmann)\ntags: scapy, protocols, book\n---\n\n# Understanding Network Hacks (Ballmann)\n\nBastian Ballmann's 187-page \"Attack and Defense with Python\"\n(Springer, 2015). Hands-on protocol-level hacking: every attack ships with a\nshort Python script and a matching detection/defense variant.\n\n## Coverage\n- Networking fundamentals (OSI, Ethernet, ARP, IP, TCP/UDP, firewalls, MITM).\n- Layer 2, TCP/IP, DNS, HTTP, WiFi, and Bluetooth attacks using raw sockets\n  and Scapy.\n- Appendix: Scapy reference.\n\n## Where it fits\nThis is the fundamentals + code layer. Built on [[scapy]] and\n[[python-sockets]]. Concrete techniques: [[arp-spoofing]], [[port-scanning]],\n[[dns-spoofing]], [[sql-injection]], [[wifi-attacks]], [[bluetooth-attacks]].\n\n## Related\n- [[scapy]]\n- [[python-sockets]]\n- [[arp-spoofing]]\n- [[port-scanning]]\n- [[dns-spoofing]]\n- [[sql-injection]]\n- [[wifi-attacks]]\n- [[bluetooth-attacks]]\n",
+        "backlinks": [
+          "article:arp-spoofing",
+          "article:arp-spoofing",
+          "article:bluetooth-attacks",
+          "article:bluetooth-attacks",
+          "article:dns-spoofing",
+          "article:dns-spoofing",
+          "article:port-scanning",
+          "article:port-scanning",
+          "article:python-sockets",
+          "article:scapy",
+          "article:scapy",
+          "article:sql-injection",
+          "article:sql-injection",
+          "article:wifi-attacks",
+          "article:wifi-attacks"
+        ]
+      }
+    },
+    {
+      "id": "article:credential-access",
+      "type": "article",
+      "name": "Credential Access",
+      "filePath": "credential-access.md",
+      "summary": "ATT&CK tactic: stealing account credentials. Book 1 covers Credentials from Password Stores and Network Sniffing.",
+      "tags": [
+        "mitre",
+        "mitre att&ck tradecraft",
+        "red-team",
+        "tactic"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "mitre-attack-framework",
+          "book-python-for-cybersecurity",
+          "mitre-attack-framework",
+          "book-python-for-cybersecurity"
+        ],
+        "category": "MITRE ATT&CK Tradecraft",
+        "content": "---\ntitle: Credential Access\ntags: mitre, tactic, red-team\n---\n\n# Credential Access\n\nATT&CK tactic: stealing account credentials. Book 1 covers\nCredentials from Password Stores and Network Sniffing.\n\nSee [[mitre-attack-framework]] and [[book-python-for-cybersecurity]].\n\n## Related\n- [[mitre-attack-framework]]\n- [[book-python-for-cybersecurity]]\n",
+        "backlinks": [
+          "article:book-python-for-cybersecurity",
+          "article:book-python-for-cybersecurity",
+          "article:mitre-attack-framework",
+          "article:mitre-attack-framework"
+        ]
+      }
+    },
+    {
+      "id": "article:dns-spoofing",
+      "type": "article",
+      "name": "DNS Spoofing",
+      "filePath": "dns-spoofing.md",
+      "summary": "Forge DNS responses to redirect victims. Ballmann builds a DNS dictionary mapper, reverse DNS scanner, and a DNS-spoofing tool.",
+      "tags": [
+        "attack",
+        "dns",
+        "network",
+        "network protocol attacks"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "scapy",
+          "book-understanding-network-hacks",
+          "scapy",
+          "book-understanding-network-hacks"
+        ],
+        "category": "Network Protocol Attacks",
+        "content": "---\ntitle: DNS Spoofing\ntags: dns, network, attack\n---\n\n# DNS Spoofing\n\nForge DNS responses to redirect victims. Ballmann builds a\nDNS dictionary mapper, reverse DNS scanner, and a DNS-spoofing tool.\n\nBuilt with [[scapy]]. From [[book-understanding-network-hacks]].\n\n## Related\n- [[scapy]]\n- [[book-understanding-network-hacks]]\n",
+        "backlinks": [
+          "article:book-understanding-network-hacks",
+          "article:book-understanding-network-hacks",
+          "article:scapy",
+          "article:scapy"
+        ]
+      }
+    },
+    {
+      "id": "article:exfiltration",
+      "type": "article",
+      "name": "Exfiltration",
+      "filePath": "exfiltration.md",
+      "summary": "ATT&CK tactic: stealing data out. Book 1 covers Alternative Protocols and Non-Application-Layer Protocols.",
+      "tags": [
+        "mitre",
+        "mitre att&ck tradecraft",
+        "red-team",
+        "tactic"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "mitre-attack-framework",
+          "book-python-for-cybersecurity",
+          "mitre-attack-framework",
+          "book-python-for-cybersecurity"
+        ],
+        "category": "MITRE ATT&CK Tradecraft",
+        "content": "---\ntitle: Exfiltration\ntags: mitre, tactic, red-team\n---\n\n# Exfiltration\n\nATT&CK tactic: stealing data out. Book 1 covers Alternative\nProtocols and Non-Application-Layer Protocols.\n\nSee [[mitre-attack-framework]] and [[book-python-for-cybersecurity]].\n\n## Related\n- [[mitre-attack-framework]]\n- [[book-python-for-cybersecurity]]\n",
+        "backlinks": [
+          "article:book-python-for-cybersecurity",
+          "article:book-python-for-cybersecurity",
+          "article:mitre-attack-framework",
+          "article:mitre-attack-framework"
+        ]
+      }
+    },
+    {
+      "id": "article:initial-access",
+      "type": "article",
+      "name": "Initial Access",
+      "filePath": "initial-access.md",
+      "summary": "ATT&CK tactic: techniques used to get into a target network. Book 1 covers Valid Accounts and Replication Through Removable Media.",
+      "tags": [
+        "mitre",
+        "mitre att&ck tradecraft",
+        "red-team",
+        "tactic"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "mitre-attack-framework",
+          "book-python-for-cybersecurity",
+          "mitre-attack-framework",
+          "book-python-for-cybersecurity"
+        ],
+        "category": "MITRE ATT&CK Tradecraft",
+        "content": "---\ntitle: Initial Access\ntags: mitre, tactic, red-team\n---\n\n# Initial Access\n\nATT&CK tactic: techniques used to get into a target network.\nBook 1 covers Valid Accounts and Replication Through Removable Media.\n\n## Python angle\nAutomating valid-account reuse and USB/removable-media droppers.\nSee [[mitre-attack-framework]] and [[book-python-for-cybersecurity]].\n\n## Related\n- [[mitre-attack-framework]]\n- [[book-python-for-cybersecurity]]\n",
+        "backlinks": [
+          "article:book-python-for-cybersecurity",
+          "article:book-python-for-cybersecurity",
+          "article:mitre-attack-framework",
+          "article:mitre-attack-framework"
+        ]
+      }
+    },
+    {
+      "id": "article:mitre-attack-framework",
+      "type": "article",
+      "name": "MITRE ATT&CK Framework",
+      "filePath": "mitre-attack-framework.md",
+      "summary": "A free, globally accessible knowledge base of adversary tactics and techniques based on real-world observations. Organized as tactics (columns) and techniques (rows). Book 1 uses it as its chapter ...",
+      "tags": [
+        "concept",
+        "framework",
+        "mitre",
+        "mitre att&ck tradecraft"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "book-python-for-cybersecurity",
+          "initial-access",
+          "persistence",
+          "credential-access",
+          "exfiltration",
+          "initial-access",
+          "persistence",
+          "credential-access",
+          "exfiltration",
+          "book-python-for-cybersecurity"
+        ],
+        "category": "MITRE ATT&CK Tradecraft",
+        "content": "---\ntitle: MITRE ATT&CK Framework\ntags: mitre, framework, concept\n---\n\n# MITRE ATT&CK Framework\n\nA free, globally accessible knowledge base of adversary\ntactics and techniques based on real-world observations. Organized as tactics\n(columns) and techniques (rows). Book 1 uses it as its chapter spine.\n\n## Tactics covered here\nThe chapters implemented in [[book-python-for-cybersecurity]] map to:\n[[initial-access]], [[persistence]], [[credential-access]], [[exfiltration]]\n(and more).\n\n## Related\n- [[initial-access]]\n- [[persistence]]\n- [[credential-access]]\n- [[exfiltration]]\n- [[book-python-for-cybersecurity]]\n",
+        "backlinks": [
+          "article:book-python-for-cybersecurity",
+          "article:book-python-for-cybersecurity",
+          "article:credential-access",
+          "article:credential-access",
+          "article:exfiltration",
+          "article:exfiltration",
+          "article:initial-access",
+          "article:initial-access",
+          "article:persistence",
+          "article:persistence"
+        ]
+      }
+    },
+    {
+      "id": "article:persistence",
+      "type": "article",
+      "name": "Persistence",
+      "filePath": "persistence.md",
+      "summary": "ATT&CK tactic: maintaining footholds. Book 1 covers Boot/Logon Autostart Execution and Hijack Execution Flow (e.g., Registry autorun keys).",
+      "tags": [
+        "mitre",
+        "mitre att&ck tradecraft",
+        "red-team",
+        "tactic"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "mitre-attack-framework",
+          "book-python-for-cybersecurity",
+          "mitre-attack-framework",
+          "book-python-for-cybersecurity"
+        ],
+        "category": "MITRE ATT&CK Tradecraft",
+        "content": "---\ntitle: Persistence\ntags: mitre, tactic, red-team\n---\n\n# Persistence\n\nATT&CK tactic: maintaining footholds. Book 1 covers Boot/Logon\nAutostart Execution and Hijack Execution Flow (e.g., Registry autorun keys).\n\nSee [[mitre-attack-framework]] and [[book-python-for-cybersecurity]].\n\n## Related\n- [[mitre-attack-framework]]\n- [[book-python-for-cybersecurity]]\n",
+        "backlinks": [
+          "article:book-python-for-cybersecurity",
+          "article:book-python-for-cybersecurity",
+          "article:mitre-attack-framework",
+          "article:mitre-attack-framework"
+        ]
+      }
+    },
+    {
+      "id": "article:port-scanning",
+      "type": "article",
+      "name": "Port Scanning & Detection",
+      "filePath": "port-scanning.md",
+      "summary": "TCP/IP recon: SYN scan, full/half-open logic, and a scanner plus a detection daemon. Also covers IP-spoofing, SYN-flooder, ICMP-redirect, RST daemon, and auto-hijack daemon.",
+      "tags": [
+        "attack",
+        "network",
+        "network protocol attacks",
+        "tcpip"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "scapy",
+          "arp-spoofing",
+          "book-understanding-network-hacks",
+          "scapy",
+          "arp-spoofing",
+          "book-understanding-network-hacks"
+        ],
+        "category": "Network Protocol Attacks",
+        "content": "---\ntitle: Port Scanning & Detection\ntags: tcpip, network, attack\n---\n\n# Port Scanning & Detection\n\nTCP/IP recon: SYN scan, full/half-open logic, and a scanner\nplus a detection daemon. Also covers IP-spoofing, SYN-flooder, ICMP-redirect,\nRST daemon, and auto-hijack daemon.\n\nBuilt with [[scapy]]; complements [[arp-spoofing]].\nFrom [[book-understanding-network-hacks]].\n\n## Related\n- [[scapy]]\n- [[arp-spoofing]]\n- [[book-understanding-network-hacks]]\n",
+        "backlinks": [
+          "article:arp-spoofing",
+          "article:arp-spoofing",
+          "article:book-understanding-network-hacks",
+          "article:book-understanding-network-hacks",
+          "article:scapy",
+          "article:scapy"
+        ]
+      }
+    },
+    {
+      "id": "article:python-sockets",
+      "type": "article",
+      "name": "Python Sockets",
+      "filePath": "python-sockets.md",
+      "summary": "Raw BSD sockets: the lowest-level networking primitive in Python. Ballmann uses sockets for sniffers, password sniffers, and HTTP/auth attacks including [[sql-injection]].",
+      "tags": [
+        "library",
+        "python",
+        "python pentesting tooling",
+        "tool"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "sql-injection",
+          "scapy",
+          "book-understanding-network-hacks",
+          "scapy",
+          "sql-injection"
+        ],
+        "category": "Python Pentesting Tooling",
+        "content": "---\ntitle: Python Sockets\ntags: tool, library, python\n---\n\n# Python Sockets\n\nRaw BSD sockets: the lowest-level networking primitive in\nPython. Ballmann uses sockets for sniffers, password sniffers, and HTTP/auth\nattacks including [[sql-injection]].\n\nPairs with the higher-level [[scapy]].\nFrom [[book-understanding-network-hacks]].\n\n## Related\n- [[scapy]]\n- [[sql-injection]]\n",
+        "backlinks": [
+          "article:book-understanding-network-hacks",
+          "article:book-understanding-network-hacks",
+          "article:scapy",
+          "article:scapy",
+          "article:sql-injection",
+          "article:sql-injection"
+        ]
+      }
+    },
+    {
+      "id": "article:scapy",
+      "type": "article",
+      "name": "Scapy",
+      "filePath": "scapy.md",
+      "summary": "The packet manipulation library underpinning most of Understanding Network Hacks. Build/parse/send packets at any layer, read/write PCAP, and craft custom protocol frames.",
+      "tags": [
+        "library",
+        "python",
+        "python pentesting tooling",
+        "tool"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "arp-spoofing",
+          "port-scanning",
+          "dns-spoofing",
+          "wifi-attacks",
+          "python-sockets",
+          "book-understanding-network-hacks",
+          "python-sockets",
+          "arp-spoofing",
+          "port-scanning",
+          "dns-spoofing",
+          "wifi-attacks",
+          "book-understanding-network-hacks"
+        ],
+        "category": "Python Pentesting Tooling",
+        "content": "---\ntitle: Scapy\ntags: tool, library, python\n---\n\n# Scapy\n\nThe packet manipulation library underpinning most of\nUnderstanding Network Hacks. Build/parse/send packets at any layer, read/write\nPCAP, and craft custom protocol frames.\n\nFoundational for [[arp-spoofing]], [[port-scanning]], [[dns-spoofing]],\n[[wifi-attacks]]. Lower-level sibling: [[python-sockets]].\nFrom [[book-understanding-network-hacks]].\n\n## Related\n- [[python-sockets]]\n- [[arp-spoofing]]\n- [[port-scanning]]\n- [[dns-spoofing]]\n- [[wifi-attacks]]\n- [[book-understanding-network-hacks]]\n",
+        "backlinks": [
+          "article:arp-spoofing",
+          "article:arp-spoofing",
+          "article:book-understanding-network-hacks",
+          "article:book-understanding-network-hacks",
+          "article:dns-spoofing",
+          "article:dns-spoofing",
+          "article:port-scanning",
+          "article:port-scanning",
+          "article:python-sockets",
+          "article:python-sockets",
+          "article:wifi-attacks",
+          "article:wifi-attacks"
+        ]
+      }
+    },
+    {
+      "id": "article:sql-injection",
+      "type": "article",
+      "name": "SQL Injection",
+      "filePath": "sql-injection.md",
+      "summary": "Inject malicious SQL via unsanitized inputs; Ballmann also covers command injection and XSS. Demonstrated over raw HTTP with [[python-sockets]] and urllib.",
+      "tags": [
+        "attack",
+        "http",
+        "network protocol attacks",
+        "web"
+      ],
+      "complexity": "simple",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "python-sockets",
+          "book-understanding-network-hacks",
+          "python-sockets",
+          "book-understanding-network-hacks"
+        ],
+        "category": "Network Protocol Attacks",
+        "content": "---\ntitle: SQL Injection\ntags: http, web, attack\n---\n\n# SQL Injection\n\nInject malicious SQL via unsanitized inputs; Ballmann also\ncovers command injection and XSS. Demonstrated over raw HTTP with\n[[python-sockets]] and urllib.\n\nFrom [[book-understanding-network-hacks]].\n\n## Related\n- [[python-sockets]]\n- [[book-understanding-network-hacks]]\n",
+        "backlinks": [
+          "article:book-understanding-network-hacks",
+          "article:book-understanding-network-hacks",
+          "article:python-sockets",
+          "article:python-sockets"
+        ]
+      }
+    },
+    {
+      "id": "article:wifi-attacks",
+      "type": "article",
+      "name": "WiFi Attacks",
+      "filePath": "wifi-attacks.md",
+      "summary": "802.11 hacking: scanner, sniffer, probe-request sniffer, hidden SSID, MAC-filter bypass, WEP/WPA/WPA2 cracking, packet injection, deauth, and WiFi MITM. Wireless IDS included.",
+      "tags": [
+        "attack",
+        "network",
+        "network protocol attacks",
+        "wireless"
+      ],
+      "complexity": "moderate",
+      "knowledgeMeta": {
+        "wikilinks": [
+          "bluetooth-attacks",
+          "scapy",
+          "book-understanding-network-hacks",
+          "scapy",
+          "bluetooth-attacks",
+          "book-understanding-network-hacks"
+        ],
+        "category": "Network Protocol Attacks",
+        "content": "---\ntitle: WiFi Attacks\ntags: wireless, network, attack\n---\n\n# WiFi Attacks\n\n802.11 hacking: scanner, sniffer, probe-request sniffer, hidden\nSSID, MAC-filter bypass, WEP/WPA/WPA2 cracking, packet injection, deauth, and\nWiFi MITM. Wireless IDS included.\n\nPairs with [[bluetooth-attacks]] (wireless family) and uses [[scapy]].\nFrom [[book-understanding-network-hacks]].\n\n## Related\n- [[scapy]]\n- [[bluetooth-attacks]]\n- [[book-understanding-network-hacks]]\n",
+        "backlinks": [
+          "article:bluetooth-attacks",
+          "article:bluetooth-attacks",
+          "article:book-understanding-network-hacks",
+          "article:book-understanding-network-hacks",
+          "article:scapy",
+          "article:scapy"
+        ]
+      }
+    },
+    {
+      "id": "topic:the-books",
+      "type": "topic",
+      "name": "The Books",
+      "summary": "Category from index: The Books (2 articles)",
+      "tags": [
+        "category"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "topic:mitre-att&ck-tradecraft",
+      "type": "topic",
+      "name": "MITRE ATT&CK Tradecraft",
+      "summary": "Category from index: MITRE ATT&CK Tradecraft (5 articles)",
+      "tags": [
+        "category"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "topic:network-protocol-attacks",
+      "type": "topic",
+      "name": "Network Protocol Attacks",
+      "summary": "Category from index: Network Protocol Attacks (6 articles)",
+      "tags": [
+        "category"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "topic:python-pentesting-tooling",
+      "type": "topic",
+      "name": "Python Pentesting Tooling",
+      "summary": "Category from index: Python Pentesting Tooling (2 articles)",
+      "tags": [
+        "category"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "source:Python for Cybersecurity",
+      "type": "source",
+      "name": "Python for Cybersecurity.pdf",
+      "filePath": "raw/Python for Cybersecurity.pdf",
+      "summary": "Raw source (.pdf, 8307 KB)",
+      "tags": [
+        "raw",
+        "pdf"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "source:pysec_pfc",
+      "type": "source",
+      "name": "pysec_pfc.txt",
+      "filePath": "raw/pysec_pfc.txt",
+      "summary": "Raw source (.txt, 335 KB)",
+      "tags": [
+        "raw",
+        "txt"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "source:pysec_python",
+      "type": "source",
+      "name": "pysec_python.txt",
+      "filePath": "raw/pysec_python.txt",
+      "summary": "Raw source (.txt, 359 KB)",
+      "tags": [
+        "raw",
+        "txt"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "source:python",
+      "type": "source",
+      "name": "python.pdf",
+      "filePath": "raw/python.pdf",
+      "summary": "Raw source (.pdf, 1566 KB)",
+      "tags": [
+        "raw",
+        "pdf"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "article:arp-spoofing",
+      "target": "article:scapy",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:arp-spoofing",
+      "target": "article:port-scanning",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:arp-spoofing",
+      "target": "article:book-understanding-network-hacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:bluetooth-attacks",
+      "target": "article:wifi-attacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:bluetooth-attacks",
+      "target": "article:book-understanding-network-hacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-python-for-cybersecurity",
+      "target": "article:mitre-attack-framework",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-python-for-cybersecurity",
+      "target": "article:initial-access",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-python-for-cybersecurity",
+      "target": "article:persistence",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-python-for-cybersecurity",
+      "target": "article:credential-access",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-python-for-cybersecurity",
+      "target": "article:exfiltration",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-understanding-network-hacks",
+      "target": "article:scapy",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-understanding-network-hacks",
+      "target": "article:python-sockets",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-understanding-network-hacks",
+      "target": "article:arp-spoofing",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-understanding-network-hacks",
+      "target": "article:port-scanning",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-understanding-network-hacks",
+      "target": "article:dns-spoofing",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-understanding-network-hacks",
+      "target": "article:sql-injection",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-understanding-network-hacks",
+      "target": "article:wifi-attacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-understanding-network-hacks",
+      "target": "article:bluetooth-attacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:credential-access",
+      "target": "article:mitre-attack-framework",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:credential-access",
+      "target": "article:book-python-for-cybersecurity",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:dns-spoofing",
+      "target": "article:scapy",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:dns-spoofing",
+      "target": "article:book-understanding-network-hacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:exfiltration",
+      "target": "article:mitre-attack-framework",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:exfiltration",
+      "target": "article:book-python-for-cybersecurity",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:initial-access",
+      "target": "article:mitre-attack-framework",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:initial-access",
+      "target": "article:book-python-for-cybersecurity",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:mitre-attack-framework",
+      "target": "article:book-python-for-cybersecurity",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:mitre-attack-framework",
+      "target": "article:initial-access",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:mitre-attack-framework",
+      "target": "article:persistence",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:mitre-attack-framework",
+      "target": "article:credential-access",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:mitre-attack-framework",
+      "target": "article:exfiltration",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:persistence",
+      "target": "article:mitre-attack-framework",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:persistence",
+      "target": "article:book-python-for-cybersecurity",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:port-scanning",
+      "target": "article:scapy",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:port-scanning",
+      "target": "article:arp-spoofing",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:port-scanning",
+      "target": "article:book-understanding-network-hacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:python-sockets",
+      "target": "article:sql-injection",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:python-sockets",
+      "target": "article:scapy",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:python-sockets",
+      "target": "article:book-understanding-network-hacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:scapy",
+      "target": "article:arp-spoofing",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:scapy",
+      "target": "article:port-scanning",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:scapy",
+      "target": "article:dns-spoofing",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:scapy",
+      "target": "article:wifi-attacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:scapy",
+      "target": "article:python-sockets",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:scapy",
+      "target": "article:book-understanding-network-hacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:sql-injection",
+      "target": "article:python-sockets",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:sql-injection",
+      "target": "article:book-understanding-network-hacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:wifi-attacks",
+      "target": "article:bluetooth-attacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:wifi-attacks",
+      "target": "article:scapy",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:wifi-attacks",
+      "target": "article:book-understanding-network-hacks",
+      "type": "related",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "article:book-python-for-cybersecurity",
+      "target": "topic:the-books",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:book-understanding-network-hacks",
+      "target": "topic:the-books",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:mitre-attack-framework",
+      "target": "topic:mitre-att&ck-tradecraft",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:initial-access",
+      "target": "topic:mitre-att&ck-tradecraft",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:persistence",
+      "target": "topic:mitre-att&ck-tradecraft",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:credential-access",
+      "target": "topic:mitre-att&ck-tradecraft",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:exfiltration",
+      "target": "topic:mitre-att&ck-tradecraft",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:arp-spoofing",
+      "target": "topic:network-protocol-attacks",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:port-scanning",
+      "target": "topic:network-protocol-attacks",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:dns-spoofing",
+      "target": "topic:network-protocol-attacks",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:sql-injection",
+      "target": "topic:network-protocol-attacks",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:wifi-attacks",
+      "target": "topic:network-protocol-attacks",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:bluetooth-attacks",
+      "target": "topic:network-protocol-attacks",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:scapy",
+      "target": "topic:python-pentesting-tooling",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "article:python-sockets",
+      "target": "topic:python-pentesting-tooling",
+      "type": "categorized_under",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:the-books",
+      "name": "The Books",
+      "description": "The Books (3 nodes)",
+      "nodeIds": [
+        "article:book-python-for-cybersecurity",
+        "article:book-understanding-network-hacks",
+        "topic:the-books"
+      ]
+    },
+    {
+      "id": "layer:mitre-att&ck-tradecraft",
+      "name": "MITRE ATT&CK Tradecraft",
+      "description": "MITRE ATT&CK Tradecraft (6 nodes)",
+      "nodeIds": [
+        "article:mitre-attack-framework",
+        "article:initial-access",
+        "article:persistence",
+        "article:credential-access",
+        "article:exfiltration",
+        "topic:mitre-att&ck-tradecraft"
+      ]
+    },
+    {
+      "id": "layer:network-protocol-attacks",
+      "name": "Network Protocol Attacks",
+      "description": "Network Protocol Attacks (7 nodes)",
+      "nodeIds": [
+        "article:arp-spoofing",
+        "article:port-scanning",
+        "article:dns-spoofing",
+        "article:sql-injection",
+        "article:wifi-attacks",
+        "article:bluetooth-attacks",
+        "topic:network-protocol-attacks"
+      ]
+    },
+    {
+      "id": "layer:python-pentesting-tooling",
+      "name": "Python Pentesting Tooling",
+      "description": "Python Pentesting Tooling (3 nodes)",
+      "nodeIds": [
+        "article:scapy",
+        "article:python-sockets",
+        "topic:python-pentesting-tooling"
+      ]
+    },
+    {
+      "id": "layer:other",
+      "name": "Other",
+      "description": "Uncategorized nodes (4)",
+      "nodeIds": [
+        "source:Python for Cybersecurity",
+        "source:pysec_pfc",
+        "source:pysec_python",
+        "source:python"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "The Books",
+      "description": "Explore the The Books section (2 articles)",
+      "nodeIds": [
+        "article:book-python-for-cybersecurity",
+        "article:book-understanding-network-hacks"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "MITRE ATT&CK Tradecraft",
+      "description": "Explore the MITRE ATT&CK Tradecraft section (5 articles)",
+      "nodeIds": [
+        "article:mitre-attack-framework",
+        "article:initial-access",
+        "article:persistence"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Network Protocol Attacks",
+      "description": "Explore the Network Protocol Attacks section (6 articles)",
+      "nodeIds": [
+        "article:arp-spoofing",
+        "article:port-scanning",
+        "article:dns-spoofing"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Python Pentesting Tooling",
+      "description": "Explore the Python Pentesting Tooling section (2 articles)",
+      "nodeIds": [
+        "article:scapy",
+        "article:python-sockets"
+      ]
+    }
+  ]
+}

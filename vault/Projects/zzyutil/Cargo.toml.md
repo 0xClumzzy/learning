@@ -1,0 +1,15 @@
+```toml
+[workspace]
+
+members = ["core","tui","xtask"]
+default-members = ["tui", "core"]
+resolver = "2"
+
+[profile.release]
+opt.level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = "true"
+incremental = "false"  
+```

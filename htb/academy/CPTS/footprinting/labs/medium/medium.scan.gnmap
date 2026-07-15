@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Tue Jul 14 00:24:14 2026 as: nmap -sCV --min-rate 5000 -oA medium.scan 10.129.66.223
+Host: 10.129.66.223 ()	Status: Up
+Host: 10.129.66.223 ()	Ports: 111/open/tcp//rpcbind?///, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///, 2049/open/tcp//mountd//1-3 (RPC #100005)/, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/, 5985/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/	Ignored State: closed (993)
+# Nmap done at Tue Jul 14 00:26:10 2026 -- 1 IP address (1 host up) scanned in 116.05 seconds

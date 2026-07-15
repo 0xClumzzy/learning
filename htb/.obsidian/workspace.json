@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "67ce9f8344e0d20b",
+    "type": "split",
+    "children": [
+      {
+        "id": "a5c8b721f63f17d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16b2db221d68a6b0",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Untitled.base",
+                "viewName": "Table"
+              },
+              "icon": "lucide-table",
+              "title": "Untitled"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a67c282bb3ae7372",
+    "type": "split",
+    "children": [
+      {
+        "id": "5bf9ade6080622d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "db0194a477b9de18",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cff7be4ff2478b1e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4940fa7ddbd37540",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8faf3742ae6b5127",
+    "type": "split",
+    "children": [
+      {
+        "id": "49a5f12c4a680bd8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e73290bc6f81ca29",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "db72d557f04c4b00",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "1fbac2df289e3ad3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "94ef4e29a8f3039e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d9c884278f17aa81",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "zk-prefixer:Create new unique note": false,
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "16b2db221d68a6b0",
+  "lastOpenFiles": [
+    "academy/CPTS/footprinting/labs/hard/HARD.md",
+    "academy/vuln",
+    "academy/CPTS/footprinting/labs/hard/tom_rsa",
+    "academy/CPTS/footprinting/labs/hard/key",
+    "Untitled.base",
+    "2026-07-13.md",
+    "Untitled.canvas",
+    "academy/CPTS/footprinting/ Post Office Protocol.md",
+    "academy/CPTS/footprinting/labs/medium/MEDIUM.md",
+    "Post Office Protocol.md",
+    "academy/CPTS/footprinting/labs/hard/hard.scan.udp.xml",
+    "academy/CPTS/footprinting/labs/hard/hard.scan.udp.gnmap",
+    "academy/CPTS/footprinting/labs/hard/hard.scan.udp.nmap",
+    "techniques",
+    "academy/CPTS/footprinting/labs/hard/hard.scan.xml",
+    "academy/CPTS/footprinting/labs/hard/hard.scan.gnmap",
+    "academy/CPTS/footprinting/MYSQL.md",
+    "academy/CPTS/footprinting/MSSQL.md",
+    "academy/CPTS/footprinting/SMB.md",
+    "academy/CPTS/footprinting/NFS.md",
+    "academy/CPTS/footprinting/SMTP.md",
+    "academy/CPTS/footprinting/labs/easy/EASY.md",
+    "academy/CPTS/footprinting/labs/easy/la.md",
+    "labs/machines/easy/paperwork/PAPERWORK.md",
+    "labs/machines/easy/ACCESS.md",
+    "labs/machines/easy/ENIGMA.md",
+    "labs/machines/medium/MAKESENSE.md",
+    "academy/CPTS/footprinting/SNMP.md",
+    "academy/CPTS/footprinting/odat/README.md",
+    "academy/CPTS/footprinting/DNS.md"
+  ]
+}

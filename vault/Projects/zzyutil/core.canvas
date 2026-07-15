@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"446c3e6c601abf91","type":"text","text":" ` core/src/lib.rs`\n the data model (Command, ListNode, Tab)\n [[lib.rs]]\n\n","x":-940,"y":-440,"width":260,"height":100,"color":"1"},
+		{"id":"1475a50613223d90","type":"text","text":"\tLIBRARY CRATE ","x":-1020,"y":-720,"width":280,"height":60},
+		{"id":"7ba478f2dfed5db3","type":"text","text":"Pure data — no terminal I/O, no CLI. Parses TOML, embeds scripts at compile time, evaluates preconditions, builds the tree of ListNodes.\n[[Cargo.toml]]","x":-600,"y":-720,"width":245,"height":180},
+		{"id":"994f68855fe74834","type":"text","text":"` core/tabs/`\n the script catalog format","x":-200,"y":-460,"width":250,"height":100,"color":"3"},
+		{"id":"4820ff273b9e9195","type":"text","text":"`core/src/inner.rs\n TOML parsing, embedded scripts, preconditions\n [[]]","x":-580,"y":-300,"width":305,"height":100,"color":"2"},
+		{"id":"c948db8e60fbaf75","x":-1108,"y":-838,"width":250,"height":60,"type":"text","text":""}
+	],
+	"edges":[
+		{"id":"8e2d9515d709027a","fromNode":"7ba478f2dfed5db3","fromSide":"left","toNode":"446c3e6c601abf91","toSide":"top"},
+		{"id":"a6a10a4134eafc62","fromNode":"7ba478f2dfed5db3","fromSide":"bottom","toNode":"4820ff273b9e9195","toSide":"left"},
+		{"id":"d8e9d5ece18cc521","fromNode":"7ba478f2dfed5db3","fromSide":"right","toNode":"994f68855fe74834","toSide":"left"}
+	]
+}

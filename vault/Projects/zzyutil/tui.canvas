@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"262b2b2ff872db95","type":"text","text":"BINARY CRATE","x":-860,"y":-680,"width":250,"height":60},
+		{"id":"0da44605de36b767","type":"text","text":"` tui/src/main.rs`\n terminal setup + event loop. ","x":-780,"y":-380,"width":250,"height":100,"color":"1"},
+		{"id":"596f6d3d3c7d92fc","type":"text","text":"The app itself. Depends on core for the data model. Handles terminal rendering (Ratatui), keyboard events, and running commands.","x":-420,"y":-680,"width":280,"height":160},
+		{"id":"4a7b11178185be40","type":"text","text":"` tui/src/state.rs`\n the TUI layout and keyboard handling","x":-480,"y":-220,"width":250,"height":100,"color":"2"},
+		{"id":"67b7118237e38ba5","x":-300,"y":-380,"width":545,"height":125,"color":"3","type":"text","text":"` tui/src/theme.rs / filter.rs / float.rs / hint.rs`\nhelper widgets"}
+	],
+	"edges":[
+		{"id":"e6b041674230ca9f","fromNode":"596f6d3d3c7d92fc","fromSide":"left","toNode":"0da44605de36b767","toSide":"top"},
+		{"id":"1e0c132ce7637dcd","fromNode":"596f6d3d3c7d92fc","fromSide":"bottom","toNode":"4a7b11178185be40","toSide":"top"},
+		{"id":"5082a6c77a2af082","fromNode":"596f6d3d3c7d92fc","fromSide":"right","toNode":"67b7118237e38ba5","toSide":"top"}
+	]
+}

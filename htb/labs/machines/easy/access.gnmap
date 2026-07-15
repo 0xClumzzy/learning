@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Sat Jul  4 01:52:26 2026 as: nmap -sCV --min-rate 5000 -oA access access.htb
+Host: 10.129.26.111 (access.htb)	Status: Up
+Host: 10.129.26.111 (access.htb)	Ports: 21/open/tcp//ftp//Microsoft ftpd/, 23/open/tcp//telnet//Microsoft Windows XP telnetd/, 80/open/tcp//http//Microsoft IIS httpd 7.5/	Ignored State: filtered (997)
+# Nmap done at Sat Jul  4 01:53:03 2026 -- 1 IP address (1 host up) scanned in 36.90 seconds

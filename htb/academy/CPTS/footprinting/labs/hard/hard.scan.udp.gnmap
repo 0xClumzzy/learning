@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Wed Jul 15 05:39:09 2026 as: nmap -F -sU -oA hard.scan.udp 10.129.202.20
+Host: 10.129.202.20 ()	Status: Up
+Host: 10.129.202.20 ()	Ports: 68/open|filtered/udp//dhcpc///, 161/open/udp//snmp///	Ignored State: closed (98)
+# Nmap done at Wed Jul 15 05:40:47 2026 -- 1 IP address (1 host up) scanned in 97.72 seconds

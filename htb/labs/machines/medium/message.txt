@@ -1,0 +1,31 @@
+```
+## MakeSense HTB Hints (no spoilers)
+
+Hint 1: Recon
+It's a WordPress "agency" site (makesense.htb). Only SSH and HTTPS are open externally. Look closely at the homepage source and theme assets, there's an unusual feature that a normal agency site wouldn't have.
+
+Hint 2: The voice feature
+There's a "call / voice message" widget that transcribes audio client-side using an AI model in the browser. Read through that feature's JS files carefully. Developers sometimes leave things hardcoded client-side that really shouldn't be there.
+
+Hint 3: Encryption isn't secrecy
+If an encryption key is literally sitting in a JS bundle, that "encryption" is just obfuscation, not real protection. Think about what you can do once you know that key, without ever running the actual audio/ML pipeline.
+
+Hint 4: Where does the data go?
+The transcribed data gets stored somewhere and someone (an admin) eventually views it. Look at the function that maps spoken words to symbols like less-than, greater-than, quotes, etc. Its purpose is a strong clue about what it's meant to be used for.
+
+Hint 5: From XSS to admin
+Once your JS runs in an authenticated admin's browser context, you don't need to steal a cookie. You can just make authenticated requests directly, the same way the admin's browser would, to perform an admin action on your behalf.
+
+Hint 6: RCE as www-data
+Once you have WordPress admin access, there's a built-in WP feature that lets you directly edit PHP files that get executed by the server.
+
+Hint 7: Look beyond the website
+
+Check what's running locally on the box that isn't exposed externally. Something is listening only on localhost, needs its own credentials, and is running as a much more privileged user than the web server.
+
+Hint 8: Credential reuse
+Passwords found in config files aren't always just for the thing they were configured for. Try them elsewhere too.
+
+Hint 9: The final piece
+That internal service processes images and lets you save its output to a file. Think about what happens if you control both the filename and the content precisely enough.
+```
