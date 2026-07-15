@@ -38,7 +38,9 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/"
+    "/",
+    "//mini-projects",
+    "//mini-projects/mini-projects/guessing game"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

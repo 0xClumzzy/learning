@@ -4,17 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "fdf4f727470aa7b5",
+        "id": "a5f8a00e97b737c9",
         "type": "tabs",
         "children": [
           {
-            "id": "cd0c59cd3452c5fb",
+            "id": "c9ae2b8d09a470a4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "mini-projects/guessing game/notes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "notes"
+            }
+          }
+        ]
+      },
+      {
+        "id": "94766b26c13e3490",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec612c1c681aec2e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -71,16 +101,13 @@
             }
           },
           {
-            "id": "67577b7f3c521b0c",
+            "id": "5403260bcd5a051a",
             "type": "leaf",
             "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -209,8 +236,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           }
         ],
@@ -218,7 +245,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -245,13 +273,16 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "9d9b4e9b68096dc4",
+  "active": "ec612c1c681aec2e",
   "lastOpenFiles": [
+    "mini-projects/guessing game/notes.md",
+    "mini-projects/guessing game/notes-mindmap.md",
+    "Excalidraw/_Index_of_Excalidraw.md",
+    "mini-projects/_Index_of_mini-projects.md",
+    "_Index_of_AtomicRust.md",
     "Excalidraw/Drawing 2026-07-15 07.25.34.excalidraw.md",
     "Untitled Kanban.md",
-    "mini-projects/guessing game/notes.md",
     "Tags",
-    "mini-projects/guessing game/notes-mindmap.md",
     "Excalidraw",
     "mini-projects/guessing game/src/main.rs.md",
     "mini-projects/guessing game/src/Cargo.toml.md",
