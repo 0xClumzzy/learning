@@ -1,5 +1,7 @@
 [[notes]]
 [[Cargo.toml]]
+[[main.rs|main]]
+[[rustL/guessingGame/src/main|main]]
 
 ```rust
 

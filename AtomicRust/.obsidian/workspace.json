@@ -16,16 +16,7 @@
                 "file": "mini-projects/guessing game/notes.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "backlinks": false
               },
               "icon": "lucide-file",
               "title": "notes"
@@ -43,10 +34,10 @@
             "state": {
               "type": "mk-space",
               "state": {
-                "path": "rustL"
+                "path": "code for running"
               },
               "icon": "lucide-file",
-              "title": "rustL"
+              "title": "code for running"
             }
           }
         ]
@@ -103,7 +94,7 @@
             }
           },
           {
-            "id": "5403260bcd5a051a",
+            "id": "fca7838428ec339a",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -238,8 +229,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "SpacedRepIcon",
-              "title": "Notes Review Queue"
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
             }
           }
         ],
@@ -275,29 +266,28 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "ec612c1c681aec2e",
+  "active": "c9ae2b8d09a470a4",
   "lastOpenFiles": [
-    "rustL/guessingGame/src/main",
+    "mini-projects/guessing game/src/main.rs.md",
+    "mini-projects/guessing game/src/Cargo.toml.md",
+    "mini-projects/guessing game/notes.md",
+    "code for running/guessingGame/src/main",
     "rustL/guessingGame/src/rustcZYZCoW/symbols.o",
     "rustL/guessingGame/src/rustcZYZCoW/raw-dylibs",
     "rustL/guessingGame/src/rustcZYZCoW",
     "rustL/guessingGame/src/main.803wtrkifrp707y40wm1hd0yy.rcgu.o",
     "rustL/guessingGame/src/main.main.5eb43039c9b39c31-cgu.0.rcgu.o",
-    "rustL/guessingGame/src/main.rs",
+    "code for running/guessingGame/src/main.rs",
     "rustL/wtf/src/main.rs",
     "rustL/wtf/src/hw.rs",
     "rustL/wtf/src/HELLO.md",
     "rustL/wtf/src",
-    "rustL/wtf/Cargo.toml",
-    "mini-projects/guessing game/notes.md",
     "mini-projects/guessing game/notes-mindmap.md",
     "Excalidraw/_Index_of_Excalidraw.md",
     "mini-projects/_Index_of_mini-projects.md",
     "_Index_of_AtomicRust.md",
     "Excalidraw/Drawing 2026-07-15 07.25.34.excalidraw.md",
     "Untitled Kanban.md",
-    "mini-projects/guessing game/src/main.rs.md",
-    "mini-projects/guessing game/src/Cargo.toml.md",
     "references/guessing game.md",
     "tags/manifest.md",
     "references/Untitled.md",

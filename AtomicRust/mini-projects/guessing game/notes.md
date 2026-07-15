@@ -83,5 +83,12 @@ rand = "0.8.6"
 ```
 we use  it the same way we used `std::io` 
 ```rust
-
+use rand::Rng;
 ```
+Introduce a secret random number 
+```rust
+let secret_number = rand::thread_rng().gen_range(1..=100);
+```
+
+The `Rng` trait defines methods that random number generators implement, and this trait must be in scope for us to use those methods.
+

@@ -1,4 +1,5 @@
 [[manifest]]
+[[Cargo.toml|Cargo]]
 ```toml 
 [
 package

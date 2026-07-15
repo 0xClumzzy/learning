@@ -40,10 +40,12 @@
   "expandedSpaces": [
     "/",
     "//mini-projects",
-    "//mini-projects/mini-projects/guessing game",
     "//rustL",
-    "//rustL/rustL/guessingGame",
-    "//rustL/rustL/guessingGame/rustL/guessingGame/src"
+    "//rustL/rustL/guessingGame/rustL/guessingGame/src",
+    "//mini-projects/mini-projects/guessing game",
+    "//mini-projects/mini-projects/guessing game/mini-projects/guessing game/src",
+    "//rustL/rustL/wtf",
+    "//code for running"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
