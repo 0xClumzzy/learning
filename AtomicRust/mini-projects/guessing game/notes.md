@@ -71,3 +71,17 @@ std::io::stdin().read_line(&mut guess).expect("failed);
 
 one long line is difficult to read, so it’s best to divide it. It’s often wise to introduce a newline and other whitespace to help break up long lines when you call a method with the `.method_name()` syntax.
 
+Introducing Randomness
+
+- The `rand` crate 
+add to dependencies first 
+```rust
+[
+dependencies
+]
+rand = "0.8.6"
+```
+we use  it the same way we used `std::io` 
+```rust
+
+```
