@@ -103,3 +103,5 @@ Introducing the `cmp` library with the `Ordering` type
 
 The whole logic behind all this is the `match` expression, which utilises arms(patterns) to compare and deduce results
 
+We use shadowing, to like create a comparision factor, shadowing lets us resuse declared variables. It is often used when wanting to convert one value from type to type 
+
