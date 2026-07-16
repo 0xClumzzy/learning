@@ -4,29 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "a5f8a00e97b737c9",
+        "id": "a58d1c4af6ce890b",
         "type": "tabs",
         "children": [
           {
-            "id": "c9ae2b8d09a470a4",
+            "id": "e7c7d775f343a632",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
-              "state": {
-                "path": "mini-projects"
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "mini-projects"
+              "title": "New tab"
             }
           }
         ]
       },
       {
-        "id": "18e9c0cca2c3fb4b",
+        "id": "ec4aaf52579a797d",
         "type": "tabs",
         "children": [
           {
-            "id": "d6bd97e8d78244b6",
+            "id": "c37c979655364b09",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -67,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:/code for running/guessingGame/target/debug/incremental/guessingGame-1lcfi6k5f1hi1/s-hkezk9f46m-11trips-95wd1okv2bm5wkxajfczoqo8e",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +97,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -185,26 +183,6 @@
             }
           },
           {
-            "id": "c1be4a5c3857177f",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_nodes",
-              "state": {},
-              "icon": "ag-node-list",
-              "title": "Juggl nodes"
-            }
-          },
-          {
-            "id": "9335896a7c00602e",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_style",
-              "state": {},
-              "icon": "ag-style",
-              "title": "Juggl style"
-            }
-          },
-          {
             "id": "46f5967d8c103f9f",
             "type": "leaf",
             "state": {
@@ -227,9 +205,19 @@
               "icon": "lucide-ghost",
               "title": "review-queue-list-view"
             }
+          },
+          {
+            "id": "3083fe3214ff6204",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -258,17 +246,19 @@
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
       "obsidian-spaced-repetition:Review flashcards": false,
-      "juggl:Juggl global graph": false
+      "constellations:Open Constellations": false,
+      "juggl:Juggl global graph": false,
+      "atomic-insights:Atomic Insights": false
     }
   },
-  "active": "28d4930aaf89ee49",
+  "active": "c37c979655364b09",
   "lastOpenFiles": [
+    "Untitled Kanban.md",
+    "mini-projects/guessing game/notes.md",
     "Studynotes/Studynotes.md",
     "Studynotes",
-    "mini-projects/guessing game/notes.md",
     "2026-07-16.md",
     "Tags/#flashcard",
-    "Untitled Kanban.md",
     "mini-projects/guessing game/src/main.rs.md",
     "mini-projects/guessing game/src/Cargo.toml.md",
     "code for running/guessingGame/src/main",

@@ -18,6 +18,7 @@
   "obsidian-pandoc",
   "obsidian-tasks-plugin",
   "calendar",
-  "juggl",
-  "extended-graph"
+  "extended-graph",
+  "contribution-graph",
+  "folder-graph-view"
 ]
