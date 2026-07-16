@@ -1,0 +1,1 @@
+https://www.cmegroup.com/markets/fx.html?redirect=/trading/fx/#overview

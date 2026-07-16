@@ -11,22 +11,34 @@
             "id": "62b0d4ec5601f2a4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "NOTES/options.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "options"
             }
           },
           {
-            "id": "299c7c0e50ab0e96",
+            "id": "d37e7c7a5cb23ca4",
             "type": "leaf",
             "state": {
-              "type": "mk-uri-view",
-              "state": {
-                "path": "https://www.make.md/static/latest.md"
-              },
-              "icon": "lucide-file",
-              "title": "https://www.make.md/static/latest.md"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
@@ -38,9 +50,29 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
+          },
+          {
+            "id": "ed4e4909e5fd1785",
+            "type": "leaf",
+            "state": {
+              "type": "smart-release-notes-view",
+              "state": {},
+              "icon": "file-text",
+              "title": "Release Notes"
+            }
+          },
+          {
+            "id": "975c9ed0d20c5dd5",
+            "type": "leaf",
+            "state": {
+              "type": "3d-graph-view-global",
+              "state": {},
+              "icon": "orbit",
+              "title": "Global 3D Graph"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -94,7 +126,7 @@
             }
           },
           {
-            "id": "b3762f9db3098d46",
+            "id": "7642d7347a58c048",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -211,13 +243,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "0b6d1cb9f55e3438",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,11 +275,24 @@
       "zk-prefixer:Create new unique note": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Toggle Footer Connections": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "3d-graph-new:Global 3D Graph": false
     }
   },
-  "active": "e68f09dc3b61b145",
+  "active": "975c9ed0d20c5dd5",
   "lastOpenFiles": [
+    "NOTES/spotfx.md",
+    "Sources/TRADED EFTS.md",
+    "NOTES/eft.md",
+    "Vault.md",
+    "NOTES/options.md",
+    "Sources/FUTURES.md",
+    "NOTES/futures.md",
+    "NOTES/NOTES.md",
+    "NOTES",
     "Tags",
     "Projects/zzyutil/project workspace.md",
     "The Zettalkastan",

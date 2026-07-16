@@ -1,0 +1,1 @@
+https://etfdb.com/etfdb-category/currency/

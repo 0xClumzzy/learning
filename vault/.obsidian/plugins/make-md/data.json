@@ -38,13 +38,23 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/"
+    "/",
+    "//Projects/Projects/zzyutil",
+    "//Indexes",
+    "//Tags",
+    "//tags",
+    "//Sources",
+    "//Templates",
+    "//NOTES"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
   "suppressedWarnings": [],
   "spaceSubFolder": ".space",
-  "hiddenFiles": [],
+  "hiddenFiles": [
+    "Projects/zzyutil",
+    "Projects"
+  ],
   "hiddenExtensions": [
     ".mdb",
     "_assets",

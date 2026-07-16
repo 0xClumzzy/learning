@@ -1,7 +1,0 @@
-{
-	"nodes":[
-		{"id":"372694d0733427cc","x":-560,"y":-340,"width":250,"height":60,"type":"text","text":"BINARY CRATE"},
-		{"id":"aaf1101e61fe3b07","x":-240,"y":-160,"width":405,"height":110,"color":"5","type":"text","text":"Doc generator. Runs as cargo xtask docgen to auto-generate markdown from the catalog."}
-	],
-	"edges":[]
-}
