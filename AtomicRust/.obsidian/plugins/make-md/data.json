@@ -38,17 +38,15 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/",
-    "//mini-projects",
     "//rustL",
     "//rustL/rustL/guessingGame/rustL/guessingGame/src",
     "//mini-projects/mini-projects/guessing game",
     "//mini-projects/mini-projects/guessing game/mini-projects/guessing game/src",
     "//rustL/rustL/wtf",
     "//code for running",
-    "//code for running/code for running/guessingGame",
     "//code for running/code for running/guessingGame/code for running/guessingGame/src",
-    "//Excalidraw"
+    "//Excalidraw",
+    "/"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

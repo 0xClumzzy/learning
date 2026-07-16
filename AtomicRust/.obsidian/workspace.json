@@ -11,15 +11,12 @@
             "id": "c9ae2b8d09a470a4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "mini-projects/guessing game/notes.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "path": "mini-projects"
               },
               "icon": "lucide-file",
-              "title": "notes"
+              "title": "mini-projects"
             }
           }
         ]
@@ -264,10 +261,12 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "c9ae2b8d09a470a4",
+  "active": "fca7838428ec339a",
   "lastOpenFiles": [
-    "2026-07-16.md",
+    "Studynotes/Studynotes.md",
+    "Studynotes",
     "mini-projects/guessing game/notes.md",
+    "2026-07-16.md",
     "Tags/#flashcard",
     "Untitled Kanban.md",
     "mini-projects/guessing game/src/main.rs.md",
@@ -280,7 +279,6 @@
     "rustL/guessingGame/src/main.main.5eb43039c9b39c31-cgu.0.rcgu.o",
     "code for running/guessingGame/src/main.rs",
     "rustL/wtf/src/main.rs",
-    "rustL/wtf/src/hw.rs",
     "rustL/wtf/src/HELLO.md",
     "mini-projects/guessing game/notes-mindmap.md",
     "Excalidraw/_Index_of_Excalidraw.md",

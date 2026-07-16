@@ -155,3 +155,11 @@ Ok(num) => num
 ```
 its like saying if the parse returns a number we cool, `Err(_) => continue`. The rest is bulshit but continue with the game, dont crash 
 
+End the game if the guess is right
+
+```rust
+Ordering::Equal => {
+	println!("you win");
+	break
+}
+```
