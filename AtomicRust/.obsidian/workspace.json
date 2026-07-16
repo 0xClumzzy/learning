@@ -6,6 +6,7 @@
       {
         "id": "a58d1c4af6ce890b",
         "type": "tabs",
+        "dimension": 13.568521031207597,
         "children": [
           {
             "id": "e7c7d775f343a632",
@@ -22,6 +23,7 @@
       {
         "id": "ec4aaf52579a797d",
         "type": "tabs",
+        "dimension": 86.43147896879239,
         "children": [
           {
             "id": "45f85d1e3394cb63",
@@ -32,8 +34,21 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
+          },
+          {
+            "id": "7d869b586c54eee9",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-07-16 10.00.47.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-07-16 10.00.47.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -248,8 +263,9 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "9b6255fb68b3a9bd",
+  "active": "7d869b586c54eee9",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-07-16 10.00.47.excalidraw.md",
     "2026-07-16.md",
     "Untitled Kanban.md",
     "mini-projects/guessing game/notes.md",
