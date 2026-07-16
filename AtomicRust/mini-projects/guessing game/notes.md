@@ -93,4 +93,13 @@ let secret_number = rand::thread_rng().gen_range(1..=100);
 ```
 
 The `Rng` trait defines methods that random number generators implement, and this trait must be in scope for us to use those methods.
+`rand::thread_rng()` the same as callin a function, it sets the variable to a random secret.`gen_range(1..=100)` generates a range from which that secret number will be selected. Think of it like `start..=end`
+
+Guess vs Secret 
+Comparing the guess to the secret to decide if its less than, greater than or equal. Makes the game more fun 
+Introducing the `cmp` library with the `Ordering` type
+
+`use std::cmp::Ordering;`
+
+The whole logic behind all this is the `match` expression, which utilises arms(patterns) to compare and deduce results
 
