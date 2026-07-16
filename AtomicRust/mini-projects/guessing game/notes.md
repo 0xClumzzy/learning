@@ -125,9 +125,10 @@ comaparing;
 match guess.cmp(&secret_number) {
 	Ordering::Less => println!("too small"),
 	Ordering::Greater => println!("too big"),
-	Ordering::Equal => println!("You win");
+	Ordering::Equal => println!("You win"),
 }
 ```
 think of it like if statements but boogie
 > if guess is less than secret print too small......
+
 
