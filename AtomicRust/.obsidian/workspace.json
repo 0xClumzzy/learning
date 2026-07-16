@@ -24,7 +24,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c37c979655364b09",
+            "id": "45f85d1e3394cb63",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -65,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:/code for running/guessingGame/target/debug/incremental/guessingGame-1lcfi6k5f1hi1/s-hkezk9f46m-11trips-95wd1okv2bm5wkxajfczoqo8e",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -87,7 +87,7 @@
             }
           },
           {
-            "id": "28d4930aaf89ee49",
+            "id": "80f6aa595fda05a0",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -96,8 +96,7 @@
               "title": "Navigator"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -202,8 +201,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           },
           {
@@ -217,7 +216,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -245,13 +244,10 @@
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-spaced-repetition:Review flashcards": false,
-      "constellations:Open Constellations": false,
-      "juggl:Juggl global graph": false,
-      "atomic-insights:Atomic Insights": false
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "c37c979655364b09",
+  "active": "e291eacbd7a51b71",
   "lastOpenFiles": [
     "Untitled Kanban.md",
     "mini-projects/guessing game/notes.md",

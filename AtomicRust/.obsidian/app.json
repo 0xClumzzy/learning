@@ -1,4 +1,19 @@
 {
   "showUnsupportedFiles": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "code for running/guessingGame/target/",
+    "code for running/guessingGame/target/debug/examples/",
+    "code for running/guessingGame/target/debug/",
+    "code for running/guessingGame/target/debug/build/",
+    "code for running/guessingGame/target/debug/incremental/",
+    "code for running/guessingGame/target/debug/build/libc-c68f643130863d41/",
+    "code for running/guessingGame/target/debug/build/zerocopy-136fc573bccf4490/out/",
+    "code for running/guessingGame/target/debug/incremental/guessingGame-1lcfi6k5f1hi1/s-hkflc8813z-0f62f5v-60r4a89kdu5os363zcu2ku4ho/",
+    "code for running/guessingGame/target/debug/incremental/guessingGame-1lcfi6k5f1hi1/",
+    "code for running/guessingGame/target/debug/build/libc-f31d6f197b0a5468/out/",
+    "code for running/guessingGame/target/debug/build/zerocopy-bd401451db4ef309/",
+    "code for running/guessingGame/target/debug/build/zerocopy-136fc573bccf4490/",
+    "code for running/guessingGame/target/debug/build/libc-f31d6f197b0a5468/"
+  ]
 }
