@@ -114,10 +114,20 @@ let guess: u32 = guess.trim().parse().expect("input please");
 ```
 right, this for when prossesing user input
 
+We bind this new variable to the expression `guess.trim().parse()`. The `guess` in the expression refers to the original `guess` variable that contained the input as a string. The `trim` method on a `String` instance will eliminate any whitespace at the beginning and end, which we must do before we can convert the string to a `u32`, which can only contain numerical data.
+
+The [`parse` method on strings](https://doc.rust-lang.org/std/primitive.str.html#method.parse) converts a string to another type. Here, we use it to convert from a string to a number. We need to tell Rust the exact number type we want by using `let guess: u32`. The colon (`:`) after `guess` tells Rust we’ll annotate the variable’s type. Rust has a few built-in number types; the `u32` seen here is an unsigned, 32-bit integer. It’s a good default choice for a small positive number.
+
+the `u32` annotation in this example program and the comparison with `secret_number` means Rust will infer that `secret_number` should be a `u32` as well. So, now the comparison will be between two values of the same type
+
 comaparing;
 ```rust
 match guess.cmp(&secret_number) {
 	Ordering::Less => println!("too small"),
-	Ordering::
+	Ordering::Greater => println!("too big"),
+	Ordering::Equal => println!("You win");
 }
 ```
+think of it like if statements but boogie
+> if guess is less than secret print too small......
+
