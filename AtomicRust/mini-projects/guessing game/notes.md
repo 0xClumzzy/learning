@@ -136,7 +136,22 @@ To make the game more fun, we loop through allowing multiple guesses
 ```rust
 loop{
 	println!(enter yo guess);
-	
+	//collect
+	//process
 };
 ```
+
+for proceesing we handle user input 
+```rust 
+let guess: u32 = match guess.trim().parse() {
+	Ok(num) => num,
+	Err(_) => continue,
+}
+```
+SO trim removes whitespace, parse converts to integer. Parse will return a `Result type` which will get processed in two ways. `Result` has two variants, `Ok` if the type matches and `Err` for every other value that dont match 
+
+```rust
+Ok(num) => num
+```
+its like saying if the parse returns a number we cool, `Err(_) => continue`. The rest is bulshit but continue with the game, dont crash 
 
