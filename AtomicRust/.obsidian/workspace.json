@@ -80,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#flashcard",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -263,7 +263,7 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "7d869b586c54eee9",
+  "active": "e7c7d775f343a632",
   "lastOpenFiles": [
     "Excalidraw/Drawing 2026-07-16 10.00.47.excalidraw.md",
     "2026-07-16.md",
