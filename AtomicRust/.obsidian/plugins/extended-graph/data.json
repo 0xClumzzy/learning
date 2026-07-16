@@ -97,8 +97,8 @@
     "repelStrength": 10,
     "linkStrength": 1,
     "linkDistance": 250,
-    "scale": 0.200225830078125,
-    "close": false
+    "scale": 1.0136432647705078,
+    "close": true
   },
   "openInNewTab": false,
   "canonicalizePropertiesWithDataview": true,
@@ -326,7 +326,7 @@
   "selectNodeModifier": "Shift",
   "filterAbstractFiles": [],
   "ignoreInlineLinks": false,
-  "collapseState": false,
+  "collapseState": true,
   "collapseLegend": true,
   "resetAfterChanges": false,
   "collapsedSettings": {},

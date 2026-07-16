@@ -65,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#flashcard",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -96,7 +96,8 @@
               "title": "Navigator"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -247,13 +248,13 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "e291eacbd7a51b71",
+  "active": "9b6255fb68b3a9bd",
   "lastOpenFiles": [
+    "2026-07-16.md",
     "Untitled Kanban.md",
     "mini-projects/guessing game/notes.md",
     "Studynotes/Studynotes.md",
     "Studynotes",
-    "2026-07-16.md",
     "Tags/#flashcard",
     "mini-projects/guessing game/src/main.rs.md",
     "mini-projects/guessing game/src/Cargo.toml.md",
