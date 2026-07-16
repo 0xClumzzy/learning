@@ -131,4 +131,12 @@ match guess.cmp(&secret_number) {
 think of it like if statements but boogie
 > if guess is less than secret print too small......
 
+To make the game more fun, we loop through allowing multiple guesses
+
+```rust
+loop{
+	println!(enter yo guess);
+	
+};
+```
 
