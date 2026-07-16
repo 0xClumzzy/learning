@@ -25,11 +25,11 @@
         ]
       },
       {
-        "id": "94766b26c13e3490",
+        "id": "18e9c0cca2c3fb4b",
         "type": "tabs",
         "children": [
           {
-            "id": "95d709f1e8043e87",
+            "id": "d6bd97e8d78244b6",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -264,7 +264,7 @@
       "juggl:Juggl global graph": false
     }
   },
-  "active": "95d709f1e8043e87",
+  "active": "d6bd97e8d78244b6",
   "lastOpenFiles": [
     "mini-projects/guessing game/notes.md",
     "Tags/#flashcard",

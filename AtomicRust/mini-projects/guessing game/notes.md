@@ -1,4 +1,8 @@
 #flashcard
+[[main.rs]]
+[[code for running/guessingGame/src/main|main]]
+[[Cargo.toml]]
+
 
 Create new project folder
 run:
@@ -105,3 +109,15 @@ The whole logic behind all this is the `match` expression, which utilises arms(p
 
 We use shadowing, to like create a comparision factor, shadowing lets us resuse declared variables. It is often used when wanting to convert one value from type to type 
 
+```rust
+let guess: u32 = guess.trim().parse().expect("input please");
+```
+right, this for when prossesing user input
+
+comaparing;
+```rust
+match guess.cmp(&secret_number) {
+	Ordering::Less => println!("too small"),
+	Ordering::
+}
+```
