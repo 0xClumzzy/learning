@@ -46,7 +46,10 @@
     "//code for running",
     "//code for running/code for running/guessingGame/code for running/guessingGame/src",
     "//Excalidraw",
-    "/"
+    "/",
+    "//templates",
+    "//code for running/code for running/guessingGame",
+    "//mini-projects"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

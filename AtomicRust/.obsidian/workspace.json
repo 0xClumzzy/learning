@@ -6,49 +6,20 @@
       {
         "id": "a58d1c4af6ce890b",
         "type": "tabs",
-        "dimension": 13.568521031207599,
         "children": [
           {
             "id": "e7c7d775f343a632",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "mk-space",
+              "state": {
+                "path": "code for running/guessingGame/src"
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "src"
             }
           }
         ]
-      },
-      {
-        "id": "ec4aaf52579a797d",
-        "type": "tabs",
-        "dimension": 86.4314789687924,
-        "children": [
-          {
-            "id": "45f85d1e3394cb63",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "7d869b586c54eee9",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-07-16 10.00.47.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-07-16 10.00.47.excalidraw"
-            }
-          }
-        ],
-        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -263,12 +234,12 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "7d869b586c54eee9",
+  "active": "e7c7d775f343a632",
   "lastOpenFiles": [
+    "mini-projects/guessing game/notes.md",
     "Excalidraw/Drawing 2026-07-16 10.00.47.excalidraw.md",
     "2026-07-16.md",
     "Untitled Kanban.md",
-    "mini-projects/guessing game/notes.md",
     "Studynotes/Studynotes.md",
     "Studynotes",
     "Tags/#flashcard",
