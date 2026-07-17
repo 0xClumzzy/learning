@@ -38,7 +38,8 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/"
+    "/",
+    "//academy"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

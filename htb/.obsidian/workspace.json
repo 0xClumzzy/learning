@@ -11,10 +11,12 @@
             "id": "da5315b4d0456a6d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "mk-space",
+              "state": {
+                "path": "academy/vuln"
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "vuln"
             }
           }
         ]
@@ -71,7 +73,7 @@
             }
           },
           {
-            "id": "5e626af71dcad007",
+            "id": "f712b4415ed0a7e9",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -204,6 +206,7 @@
             "type": "leaf",
             "state": {
               "type": "CALENDARIUM",
+              "state": {},
               "icon": "CALENDARIUM",
               "title": "Calendarium"
             }
@@ -213,6 +216,7 @@
             "type": "leaf",
             "state": {
               "type": "CALENDARIUM",
+              "state": {},
               "icon": "CALENDARIUM",
               "title": "Calendarium"
             }
@@ -222,6 +226,7 @@
             "type": "leaf",
             "state": {
               "type": "CALENDARIUM",
+              "state": {},
               "icon": "CALENDARIUM",
               "title": "Calendarium"
             }
@@ -267,13 +272,13 @@
   },
   "active": "da5315b4d0456a6d",
   "lastOpenFiles": [
+    "2026-07-13.md",
     "Tags",
     "Untitled.base",
     "academy/CPTS/footprinting/labs/hard/HARD.md",
     "academy/vuln",
     "academy/CPTS/footprinting/labs/hard/tom_rsa",
     "academy/CPTS/footprinting/labs/hard/key",
-    "2026-07-13.md",
     "Untitled.canvas",
     "academy/CPTS/footprinting/ Post Office Protocol.md",
     "academy/CPTS/footprinting/labs/medium/MEDIUM.md",
@@ -283,7 +288,6 @@
     "academy/CPTS/footprinting/labs/hard/hard.scan.udp.nmap",
     "techniques",
     "academy/CPTS/footprinting/labs/hard/hard.scan.xml",
-    "academy/CPTS/footprinting/labs/hard/hard.scan.gnmap",
     "academy/CPTS/footprinting/MYSQL.md",
     "academy/CPTS/footprinting/MSSQL.md",
     "academy/CPTS/footprinting/SMB.md",
