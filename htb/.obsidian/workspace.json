@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "69fdcb8e45833a5b",
+        "id": "e3501e89af83795f",
         "type": "tabs",
         "children": [
           {
-            "id": "da5315b4d0456a6d",
+            "id": "f9b4352d5610db89",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "academy/vuln"
+                "file": "labs/machines/medium/BEDSIDE.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "vuln"
+              "title": "BEDSIDE"
             }
           }
         ]
@@ -73,7 +75,7 @@
             }
           },
           {
-            "id": "f712b4415ed0a7e9",
+            "id": "5d26fc7804eb957b",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -98,52 +100,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e73290bc6f81ca29",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks"
-            }
-          },
-          {
-            "id": "db72d557f04c4b00",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
-            }
-          },
-          {
-            "id": "1fbac2df289e3ad3",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
             "id": "94ef4e29a8f3039e",
             "type": "leaf",
             "state": {
@@ -163,12 +119,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "labs/machines/medium/BEDSIDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of BEDSIDE"
             }
           },
           {
@@ -192,56 +149,55 @@
             }
           },
           {
-            "id": "c5c2db6e5f765ae3",
+            "id": "cc263c2d6f46cb19",
             "type": "leaf",
             "state": {
-              "type": "smart-connections-view",
-              "state": {},
-              "icon": "smart-connections",
-              "title": "Connections"
+              "type": "backlink",
+              "state": {
+                "file": "labs/machines/medium/BEDSIDE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for BEDSIDE"
             }
           },
           {
-            "id": "4f900e9c5a53b56d",
+            "id": "2e5994d62fa25a0d",
             "type": "leaf",
             "state": {
-              "type": "CALENDARIUM",
-              "state": {},
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "type": "outgoing-link",
+              "state": {
+                "file": "labs/machines/medium/BEDSIDE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from BEDSIDE"
             }
           },
           {
-            "id": "9c9e65303edce46d",
+            "id": "1881a0aa223951ca",
             "type": "leaf",
             "state": {
-              "type": "CALENDARIUM",
-              "state": {},
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
-            }
-          },
-          {
-            "id": "b8e12f611ef41856",
-            "type": "leaf",
-            "state": {
-              "type": "CALENDARIUM",
-              "state": {},
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
-            }
-          },
-          {
-            "id": "7a5c2ec30b720666",
-            "type": "leaf",
-            "state": {
-              "type": "CALENDARIUM",
-              "icon": "CALENDARIUM",
-              "title": "Calendarium"
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -270,24 +226,39 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "da5315b4d0456a6d",
+  "active": "f9b4352d5610db89",
   "lastOpenFiles": [
+    "labs/machines/medium/bedsideInfo/bedside.txt",
+    "labs/machines/medium/bedsideInfo/get.key",
+    "labs/machines/medium/bedsideInfo/privesc",
+    "labs/machines/medium/bedsideInfo/id_rsa",
+    "labs/machines/medium/bedsideInfo/01_var_www_html.pdf",
+    "labs/machines/medium/bedsideInfo/evil.pt",
+    "labs/machines/medium/bedsideInfo/exploit.py",
+    "labs/machines/medium/bedsideInfo/dookie/lib/python3.14/site-packages/requests-2.34.2.dist-info/licenses/NOTICE",
+    "labs/machines/medium/bedsideInfo/dookie/lib/python3.14/site-packages/requests-2.34.2.dist-info/licenses/LICENSE",
+    "labs/machines/medium/bedsideInfo/dookie/lib/python3.14/site-packages/requests-2.34.2.dist-info/top_level.txt",
+    "labs/machines/medium/bedsideInfo/dookie/lib/python3.14/site-packages/requests-2.34.2.dist-info/licenses",
+    "labs/machines/medium/bedsideInfo/dookie/lib/python3.14/site-packages/idna-3.18.dist-info/licenses/LICENSE.md",
+    "Pasted image 20260719013113.png",
+    "techniques/php payloads.md",
+    "labs/machines/medium/bedsideInfo/dookie/lib/python3.14/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+    "labs/machines/medium/bedsideInfo/dookie/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
+    "labs/machines/medium/bedsideInfo/shell.php.jpg",
+    "labs/machines/medium/bedsideInfo/shell.png",
+    "academy/vuln/STANDARDS/COMPLIANCE STANDARDS.md",
+    "labs/machines/medium/BEDSIDE.md",
+    "academy/vuln/sources.md",
+    "Pasted image 20260718200428.png",
+    "academy/vuln/STANDARDS/STANDARDS.md",
+    "academy/vuln/standards/.md",
+    "academy/vuln/standards.md",
     "2026-07-13.md",
-    "Tags",
-    "Untitled.base",
     "academy/CPTS/footprinting/labs/hard/HARD.md",
-    "academy/vuln",
-    "academy/CPTS/footprinting/labs/hard/tom_rsa",
-    "academy/CPTS/footprinting/labs/hard/key",
     "Untitled.canvas",
     "academy/CPTS/footprinting/ Post Office Protocol.md",
     "academy/CPTS/footprinting/labs/medium/MEDIUM.md",
     "Post Office Protocol.md",
-    "academy/CPTS/footprinting/labs/hard/hard.scan.udp.xml",
-    "academy/CPTS/footprinting/labs/hard/hard.scan.udp.gnmap",
-    "academy/CPTS/footprinting/labs/hard/hard.scan.udp.nmap",
-    "techniques",
-    "academy/CPTS/footprinting/labs/hard/hard.scan.xml",
     "academy/CPTS/footprinting/MYSQL.md",
     "academy/CPTS/footprinting/MSSQL.md",
     "academy/CPTS/footprinting/SMB.md",
@@ -297,10 +268,6 @@
     "academy/CPTS/footprinting/labs/easy/la.md",
     "labs/machines/easy/paperwork/PAPERWORK.md",
     "labs/machines/easy/ACCESS.md",
-    "labs/machines/easy/ENIGMA.md",
-    "labs/machines/medium/MAKESENSE.md",
-    "academy/CPTS/footprinting/SNMP.md",
-    "academy/CPTS/footprinting/odat/README.md",
-    "academy/CPTS/footprinting/DNS.md"
+    "labs/machines/easy/ENIGMA.md"
   ]
 }

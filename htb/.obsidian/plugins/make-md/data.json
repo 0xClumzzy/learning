@@ -39,7 +39,14 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//academy"
+    "//academy",
+    "//academy/academy/vuln",
+    "//academy/academy/vuln/academy/vuln/standards",
+    "//academy/academy/vuln/academy/vuln/COMPLIANCE STANDARDS",
+    "//academy/academy/vuln/academy/vuln/STANDARDS",
+    "//techniques",
+    "//labs",
+    "//labs/labs/machines"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

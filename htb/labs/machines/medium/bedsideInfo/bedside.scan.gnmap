@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Sun Jul 19 00:24:57 2026 as: nmap --min-rate 5000 -sCV -oA bedside.scan bedside.htb
+Host: 10.129.39.9 (bedside.htb)	Status: Up
+Host: 10.129.39.9 (bedside.htb)	Ports: 22/open/tcp//ssh//OpenSSH 10.0p2 Debian 7+deb13u4 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.68/, 3000/filtered/tcp//ppp///	Ignored State: closed (997)
+# Nmap done at Sun Jul 19 00:25:30 2026 -- 1 IP address (1 host up) scanned in 33.01 seconds

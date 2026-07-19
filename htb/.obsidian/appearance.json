@@ -2,7 +2,7 @@
   "theme": "obsidian",
   "cssTheme": "Exotic",
   "nativeMenus": true,
-  "baseFontSize": 17,
+  "baseFontSize": 21,
   "baseFontSizeAction": true,
   "accentColor": "#430255"
 }
