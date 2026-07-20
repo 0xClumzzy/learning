@@ -173,19 +173,9 @@
               "icon": "lucide-list",
               "title": "Outline of Learning a new skill.excalidraw"
             }
-          },
-          {
-            "id": "f557a34da5aea9e8",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -208,7 +198,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "a1f7564ec02c0006",
+  "active": "338f65a2cfe534a2",
   "lastOpenFiles": [
     "Excalidraw/Learning a new skill.excalidraw.md",
     "Excalidraw",
