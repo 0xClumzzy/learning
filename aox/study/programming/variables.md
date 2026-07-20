@@ -100,7 +100,7 @@ so bolean requires `<stdbool.h>`
 
 FORMAT SPECIFIERS
 
-format specifiers can be used to control the `width`, `precision` and 
+format specifiers can be used to control the `width`, `precision` and flags
 
 WIDTH 
 Width specifies the minimum number of characters to print 
@@ -130,7 +130,12 @@ int main(){
 	float price2 = 29.99;
 	float price3 = 39.99;
 	
-	printf("%)
+	printf(".2f%", price1);
+	printf(".2f%", price3);
+	printf(".2f%", price2);
+	
 	return 0;
 }
 ```
+`.2f` - its like display 2 decimal places, anything more that that will be rounded 
+

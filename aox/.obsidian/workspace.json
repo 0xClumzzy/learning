@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/programming/variables.md",
+                "file": "C.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "variables"
+              "title": "C"
+            }
+          },
+          {
+            "id": "bcdd1079001c34f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "study/programming/practice programs/Hello World.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hello World"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -75,7 +90,7 @@
             }
           },
           {
-            "id": "1f72cd73904e074a",
+            "id": "f2db6be51e78aa84",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -89,8 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a7fb098267ac25b5",
@@ -207,21 +221,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3c74aa231e5ab8d0",
+  "active": "bcdd1079001c34f6",
   "lastOpenFiles": [
-    "cCode/variables/var.string",
-    "cCode/variables/var.bool",
-    "cCode/variables/variables.String.c",
-    "cCode/variables/variables.Bool.c",
-    "cCode/variables/var.char",
-    "cCode/variables/variables.Char.c",
-    "cCode/variables/var.double",
-    "cCode/variables/variables.Double.c",
-    "cCode/variables/var.float",
-    "cCode/variables/variables.Float.c",
-    "cCode/variables/var.int",
+    "UnderstandingCryptology-CoreConcepts_6-2-2013.pdf",
+    "Intro_to_Cellular_Security-20140121.pdf",
+    "cCode/hello",
+    "cCode/hello.c",
+    "cCode/hello.world.c",
+    "cCode/helloWorld.c",
+    "study/programming/practice programs/Shoppingcart .md",
+    "study/programming/practice programs/Hello World.md",
+    "study/programming/practice programs/Area of a circle.md",
+    "math functions.md",
+    "C.md",
+    "study/programming/math functions .md",
+    "cCode/math/math.area",
+    "cCode/math/math.AreaOfACircle.c",
+    "study/programming/Input.md",
+    "study/programming/arithmetic.md",
     "study/programming/variables.md",
+    "study/programming/practice programs/practice programs.md",
+    "study/programming/practice programs",
+    "cCode/math/math.log",
+    "cCode/math/math.Log.c",
     "study/programming/programming.md",
+    "Tags/BroCode.md",
+    "study/programming/.md",
     "study/shellcode/shellcode.md",
     "study/Networking/Networking.md",
     "study/xploitation/xploitation.md",

@@ -39,7 +39,14 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//study"
+    "//study",
+    "//Tags",
+    "//study/study/programming",
+    "//study/study/programming/study/programming/practice programs",
+    "//study/study/shellcode",
+    "//study/study/xploitation",
+    "//cCode",
+    "//study/study/Networking"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
