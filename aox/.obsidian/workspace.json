@@ -182,27 +182,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/programming/variables.md",
+                "file": "study/programming/practice programs/Hello World.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of variables"
-            }
-          },
-          {
-            "id": "d24ef5813d1de543",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline of Hello World"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -221,7 +211,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bcdd1079001c34f6",
+  "active": "e8461dbf07cb5d0c",
   "lastOpenFiles": [
     "UnderstandingCryptology-CoreConcepts_6-2-2013.pdf",
     "Intro_to_Cellular_Security-20140121.pdf",
