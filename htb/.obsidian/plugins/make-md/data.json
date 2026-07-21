@@ -40,13 +40,13 @@
   "expandedSpaces": [
     "/",
     "//academy",
-    "//academy/academy/vuln",
     "//academy/academy/vuln/academy/vuln/standards",
     "//academy/academy/vuln/academy/vuln/COMPLIANCE STANDARDS",
-    "//academy/academy/vuln/academy/vuln/STANDARDS",
     "//techniques",
     "//labs",
-    "//labs/labs/machines"
+    "//labs/labs/machines",
+    "//Tags",
+    "//academy/academy/vuln"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
