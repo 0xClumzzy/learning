@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(){
     char greeting[20] = "Hello, World\n";
