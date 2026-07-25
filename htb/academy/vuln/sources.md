@@ -14,5 +14,6 @@ OWASP
 - https://owasp.org/
 OVAL 
 - https://oval.mitre.org/ 
-
+CVE 
+- https://www.cve.org/
 

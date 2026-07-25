@@ -40,13 +40,11 @@
   "expandedSpaces": [
     "/",
     "//study",
-    "//Tags",
-    "//study/study/programming",
     "//study/study/programming/study/programming/practice programs",
     "//study/study/shellcode",
     "//study/study/xploitation",
-    "//cCode",
-    "//study/study/Networking"
+    "//study/study/Networking",
+    "//Notes"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

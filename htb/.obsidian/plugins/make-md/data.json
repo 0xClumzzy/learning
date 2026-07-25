@@ -46,7 +46,8 @@
     "//labs",
     "//labs/labs/machines",
     "//Tags",
-    "//academy/academy/vuln"
+    "//academy/academy/vuln",
+    "//labs/labs/machines/labs/machines/easy"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
