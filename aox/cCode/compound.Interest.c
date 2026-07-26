@@ -15,12 +15,10 @@ int main(){
     
     printf("Enter the interest rate:\nENTER HERE=> ");
     scanf("%.2f\n", &rate);
-
-    printf("Enter the years of compound:\nENTER HERE=> ");
-    scanf("%.1f\n", &timesCompounded );
-
-    printf("Enter the years(time):\nENTER HERE=> ");
-    scanf("%.1f\n", &timesCompounded );
+    rate = rate/100 
+            
+    printf("Enter the years(t):\nENTER HERE=> ");
+    scanf("%.1f\n", &years);
 
     //calculate 
     
