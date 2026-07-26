@@ -24,13 +24,14 @@ an so on.....
 What you are seeing is instructions(`pus,sub,mov`) and registers(`rbp,rax,eax,rsp`)
 
 # Registers
-- [ ] GENERAL PURPOSE REGISTERS
+- [x] GENERAL PURPOSE REGISTERS
 They are used for a variety of purposes, but they mainly act as temporary variables for the CPU when it is executing machine instructions.
 - Accumulator(`EAX`)
 - Counter(`ECX`)
 - Data Register(`EDX`)
-- Base Register(`)
+- Base Register(`EBX`)
 - [ ] POINTERS AND INDEXES
+pointers store 32-bit addresses, which essentially point to that location in memory. These registers are fairly important to program execution and memory management
 - [ ] 
 
 GDB is a debugger. It lets you step through compiled programs, examine program memory, and view processor registers. It even has the capability to change instructions along the way
