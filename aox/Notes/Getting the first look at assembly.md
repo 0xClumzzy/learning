@@ -30,14 +30,16 @@ They are used for a variety of purposes, but they mainly act as temporary variab
 - Counter(`ECX`)
 - Data Register(`EDX`)
 - Base Register(`EBX`)
-- [ ] POINTERS AND INDEXES
+- [x] POINTERS AND INDEXES
 **pointers** store 32-bit addresses, which essentially point to that location in memory. These registers are fairly important to program execution and memory management
 - Base Pointer (`EBP`)
 - Stack Pointer (`ESP`)
 	
 **indexes** point to the source and destination when data needs to be read from or written to.
+- Source Index (`ESI`)
+- Destination Index (`EDI`)
 
-- [ ] 
+- [x] 
 
 GDB is a debugger. It lets you step through compiled programs, examine program memory, and view processor registers. It even has the capability to change instructions along the way
 ```bash 
