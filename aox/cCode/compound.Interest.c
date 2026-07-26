@@ -16,8 +16,13 @@ int main(){
     printf("Enter the interest rate:\nENTER HERE=> ");
     scanf("%.2f\n", &rate);
 
-    printf("Enter the principal:\nENTER HERE=> ");
-    scanf("%.2lf\n", principal );
+    printf("Enter the years of compound:\nENTER HERE=> ");
+    scanf("%.2f\n", &timesCompounded );
+
+    printf("Enter the years(time):\nENTER HERE=> ");
+    scanf("%.2lf\n", &timesCompounded );
+
+
     
     return 0;
 }
