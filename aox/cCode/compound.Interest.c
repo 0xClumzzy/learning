@@ -19,7 +19,11 @@ int main(){
             
     printf("Enter the years(t):\nENTER HERE=> ");
     scanf("%.1f\n", &years);
-
+    
+    printf("Enter the #no of times compunded per year:\nENTER HERE=> ");
+    scanf("%.2lf\n", &timesCompounded );
+    
+    totalAmount = (principal)
     //calculate 
     
 
