@@ -11,24 +11,22 @@ int main(){
 
     //user input
     printf("Enter the principal:\nENTER HERE=> ");
-    scanf("%.lf\n", &principal );
+    scanf("%lf", &principal);
 
     printf("Enter the interest rate:\nENTER HERE=> ");
-    scanf("%f\n", &rate);
-    rate = rate/100;
+    scanf("%f", &rate);
+    rate = rate / 100;
 
     printf("Enter the time(t):\nENTER HERE=> ");
-    scanf("%f\n", &time);
+    scanf("%f", &time);
 
-    printf("Enter the #no of times compunded per year\nENTER HERE=> ");
-    scanf("%f\n", &timesCompounded );
+    printf("Enter the #no of times compounded per year\nENTER HERE=> ");
+    scanf("%f", &timesCompounded);
 
-    totalAmount = principal * pow(1+rate/timesCompounded,timesCompounded*time);
-    printf("After %.1f\nyears  Your compund is interest is:\n=> P%.2lf",time,totalAmount);
     //calculate
+    totalAmount = principal * pow(1 + rate/timesCompounded, timesCompounded*time);
 
-
-
+    printf("After %.1f years, your compound interest total is:\n=> P%.2lf\n", time, totalAmount);
 
     return 0;
 }
