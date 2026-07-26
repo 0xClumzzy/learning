@@ -11,7 +11,13 @@ int main(){
 
     //user input 
     printf("Enter the principal:\nENTER HERE=> ");
-    scanf("%")
+    scanf("%.2lf\n", &principal );
+    
+    printf("Enter the interest rate:\nENTER HERE=> ");
+    scanf("%.2f\n", &rate);
+
+    printf("Enter the principal:\nENTER HERE=> ");
+    scanf("%.2lf\n", principal );
     
     return 0;
 }
