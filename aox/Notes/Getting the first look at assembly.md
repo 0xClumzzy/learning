@@ -27,3 +27,7 @@ GDB is a debugger. It lets you step through compiled programs, examine program m
 ```bash 
 gdb -q ./hello 
 ```
+from here you can:
+1. Set breakpoints. eg, on main()
+	A breakpoint is set on the main() function so execution will stop right before our code is executed.
+	- Then GDB runs the program, stops at the breakpoint, and is told to display all the processor registers and their current states.
