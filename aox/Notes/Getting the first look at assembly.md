@@ -22,3 +22,8 @@ this basically is gettting machine code for the first 20 lines of the main funct
 an so on.....
 
 What you are seeing is instructions(`pus,sub,mov`) and registers(`rbp,rax,eax,rsp`)
+
+GDB is a debugger. It lets you step through compiled programs, examine program memory, and view processor registers. It even has the capability to change instructions along the way
+```bash 
+gdb -q ./hello 
+```
