@@ -23,7 +23,7 @@ int main(){
     printf("Enter the #no of times compunded per year:\nENTER HERE=> ");
     scanf("%.2lf\n", &timesCompounded );
     
-    totalAmount = (principal)
+    totalAmount = principal
     //calculate 
     
 
