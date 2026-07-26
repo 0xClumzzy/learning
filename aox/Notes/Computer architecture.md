@@ -20,5 +20,4 @@ a2-->C(3)-->p3{=>slow<br>=>in megabytes<br>faster than RAM<br>=>not all cpus use
 
 
 
-
 - [ ] 
