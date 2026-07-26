@@ -25,6 +25,11 @@ What you are seeing is instructions(`pus,sub,mov`) and registers(`rbp,rax,eax,rs
 
 # Registers
 - [ ] GENERAL PURPOSE REGISTERS
+They are used for a variety of purposes, but they mainly act as temporary variables for the CPU when it is executing machine instructions.
+- Accumulator(`EAX`)
+- Counter(`ECX`)
+- Data Register(`EDX`)
+- Base Register(`)
 - [ ] POINTERS AND INDEXES
 - [ ] 
 
