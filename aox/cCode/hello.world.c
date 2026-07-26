@@ -1,4 +1,4 @@
-#include <stdio.h>
+x#include <stdio.h>
 
 int main(){
     char greeting[20] = "Hello, World\n";
