@@ -39,7 +39,7 @@ They are used for a variety of purposes, but they mainly act as temporary variab
 - Source Index (`ESI`)
 - Destination Index (`EDI`)
 
-- [x] 
+- [x] INSTRUCTION POINTER 
 
 GDB is a debugger. It lets you step through compiled programs, examine program memory, and view processor registers. It even has the capability to change instructions along the way
 ```bash 
