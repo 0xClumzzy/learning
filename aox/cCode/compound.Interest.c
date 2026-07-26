@@ -17,14 +17,14 @@ int main(){
     scanf("%.2f\n", &rate);
     rate = rate/100
 
-    printf("Enter the years(t):\nENTER HERE=> ");
-    scanf("%.1f\n", &years);
+    printf("Enter the time(t):\nENTER HERE=> ");
+    scanf("%.1f\n", &time);
 
     printf("Enter the #no of times compunded per year:\nENTER HERE=> ");
     scanf("%.2lf\n", &timesCompounded );
 
-    totalAmount = principal * pow(1+rate/timesCompounded,timesCompounded*years);
-    printf("After %.1f\n Your compund is interest is:\n=> P%.2lf",years,totalAmount);
+    totalAmount = principal * pow(1+rate/timesCompounded,timesCompounded*time);
+    printf("After %.1f\nyears  Your compund is interest is:\n=> P%.2lf",time,totalAmount);
     //calculate
 
 
