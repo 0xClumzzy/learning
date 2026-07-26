@@ -20,6 +20,10 @@ a2-->C(3)-->p3{=>slow<br>=>in megabytes<br>faster than RAM<br>=>not all cpus use
 - [ ] Random Access Memory
 `RAM` is much larger than cache memory, coming in sizes ranging from gigabytes up to terabytes. `RAM` is also located far away from the `CPU` cores and is much slower than cache memory. Accessing data from RAM addresses takes many more instructions.
 
+For example, retrieving an instruction from the registers takes only one clock cycle, and retrieving it from the L1 cache takes a few cycles, while retrieving it from RAM takes around 200 cycles. When this is done billions of times a second, it makes a massive difference in the overall execution speed.
+
+The maximum possible RAM size was 232 bytes, which is only 4 gigabytes, at which point we run out of unique addresses. With 64-bit addresses, the range is now up to `0xffffffffffffffff`, with a theoretical maximum RAM size of 264 bytes, which is around 18.5 exabytes (18.5 million terabytes), so we shouldn't be running out of memory addresses anytime soon.
+
 
 
 
