@@ -10,6 +10,6 @@ The types of memory include:
 There are usually three levels of cache memory, depending on their closeness to the CPU core:
 ```mermaid 
 flowchart LR
-A()
+a1{CACHE}-->A(LEVEL 1)-->B(LEVEL 2)-->
 ```
 - [ ] 
