@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# wifi-lab.sh — legal WiFi practice-range helper
-# Author: Hermes (for clumzzy)
-#
-# SCOPE: YOUR OWN networks / hardware only. No third-party APs.
+# Author: 0xClumzZy 
 # This script is split into modules you run explicitly — nothing runs
 # unless you call the subcommand. It never auto-deauths randoms.
 #
