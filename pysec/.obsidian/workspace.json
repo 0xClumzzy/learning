@@ -75,7 +75,7 @@
             }
           },
           {
-            "id": "091fd5293100a150",
+            "id": "2e3fe4a984f30db5",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -84,7 +84,8 @@
               "title": "Navigator"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -175,6 +176,35 @@
               "icon": "star",
               "title": "AI"
             }
+          },
+          {
+            "id": "b1de7299e63838e0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "29b48830bee56b55",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "initial-access.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of initial-access"
+            }
           }
         ],
         "currentTab": 3
@@ -193,7 +223,6 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "markdown-importer:Open format converter": false,
-      "publish:Publish changes...": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:Create new board": false,
