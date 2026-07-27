@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bbd7a73a62a535b3",
+        "id": "3904962ea4f5ce1e",
         "type": "tabs",
         "children": [
           {
-            "id": "867552d387352769",
+            "id": "df606dbe40312ab4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "initial-access.md",
+                "file": "sql-injection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "initial-access"
+              "title": "sql-injection"
             }
           }
         ]
@@ -75,7 +75,7 @@
             }
           },
           {
-            "id": "2e3fe4a984f30db5",
+            "id": "f7fff7362c411058",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -197,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "initial-access.md",
+                "file": "sql-injection.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of initial-access"
+              "title": "Outline of sql-injection"
             }
           }
         ],
@@ -232,9 +232,20 @@
       "smart-lookup:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "ddf40fc5879cfdcb",
+  "active": "df606dbe40312ab4",
   "lastOpenFiles": [
+    "arp-spoofing.md",
+    "exfiltration.md",
+    "initial-access.md",
+    "dns-spoofing.md",
+    "credential-access.md",
+    "bluetooth-attacks.md",
     "book-python-for-cybersecurity.md",
+    "book-understanding-network-hacks.md",
+    "persistence.md",
+    "port-scanning.md",
+    "python-sockets.md",
+    "scapy.md",
     "2026-07-15.md",
     "Untitled Kanban.md",
     "Tags"

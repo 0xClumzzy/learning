@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Mon Jul 27 16:56:26 2026 as: nmap -sCV -p- --min-rate 5000 -oA ./dz.Info/dz.Nmap dz.htb
+Host: 10.129.43.235 (dz.htb)	Status: Up
+Host: 10.129.43.235 (dz.htb)	Ports: 22/open/tcp//ssh//OpenSSH 9.6p1 Ubuntu 3ubuntu13.18 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.24.0 (Ubuntu)/	Ignored State: filtered (65533)
+# Nmap done at Mon Jul 27 16:57:33 2026 -- 1 IP address (1 host up) scanned in 66.84 seconds

@@ -47,7 +47,9 @@
     "//labs/labs/machines",
     "//Tags",
     "//academy/academy/vuln",
-    "//labs/labs/machines/labs/machines/easy"
+    "//labs/labs/machines/labs/machines/easy",
+    "//labs/labs/machines/labs/machines/hard",
+    "//labs/labs/machines/labs/machines/hard/labs/machines/hard/dz.Info"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
