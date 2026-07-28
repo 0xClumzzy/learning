@@ -7,4 +7,4 @@ else{dothat}
 ```
 order of comparison matters.. 
 
-If u had to compare ages 
+If u had to compare ages the order of clauses will affect the comparison 
