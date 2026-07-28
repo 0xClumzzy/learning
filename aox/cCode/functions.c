@@ -3,11 +3,11 @@
 
 
 void song(char name[], int age){
-    printf("happy birthday to you");
-    printf("happy birthday to you");
+    printf("happy birthday to you\n");
+    printf("happy birthday to you\n");
     printf("happy birthday to %s\n", name);
-    printf("how old are you now: %d ", age);
-    printf("how old are you now: %d ", age);
+    printf("how old are you now: %d\n ", age);
+    printf("how old are you now: %d\n ", age);
 }
 int main(){
     char name[50] = "";
