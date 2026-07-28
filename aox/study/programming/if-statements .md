@@ -19,7 +19,7 @@ int main(){
 	
 	printf("what is yo name?");
 	fgets(name, sizeof(name), stdin);
-	name[strlen(name) -1 ] = ''
+	name[strlen(name) -1 ] = '\0'
 	
 	if(strlen(name) == 0){printf("You did not enter yo name!");}
 	else{printf("hello %s\n",name);}
