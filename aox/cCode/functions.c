@@ -18,7 +18,7 @@ int main(){
     name[strlen(name) - 1] = '\0';
 
     printf("How old are you: \nENTER HERE=>  ");
-    scanf("%d\n", &age);
+    scanf("%d", &age);
 
     song(name, age);
     song(name , age);
