@@ -25,3 +25,5 @@ int main(){
 	else{printf("hello %s\n",name);}
 }
 ```
+
+NESTED IF STATEMENTS 
