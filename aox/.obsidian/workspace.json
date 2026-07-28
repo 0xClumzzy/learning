@@ -213,6 +213,7 @@
   },
   "active": "bcdd1079001c34f6",
   "lastOpenFiles": [
+    "cCode/day",
     "cCode/day.Of.week.c",
     "study/programming/if-statements .md",
     "study/programming/switches.md",
@@ -241,7 +242,6 @@
     "cCode/hello",
     "cCode/hello.c",
     "cCode/hello.world.c",
-    "cCode/helloWorld.c",
     "study/programming/practice programs/Shoppingcart .md",
     "math functions.md",
     "study/programming/Input.md",
