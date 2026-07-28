@@ -20,9 +20,9 @@ int main() {
         else{
             printf("You get a 10% discount\n");
             price *=0.9;
-            printf("you get a ")
+            printf("pay P%.1f", price);
         }
-    else
+    else{}
         
     }
    return 0; 
