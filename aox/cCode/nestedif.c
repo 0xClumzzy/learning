@@ -23,6 +23,6 @@ int main() {
             printf("pay P%.1f", price);
         }
     }
-    else {printf("full amount: P%.1f");}
+    else {printf("full amount: P%.1f", price);}
    return 0;
 }
