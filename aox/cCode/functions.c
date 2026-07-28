@@ -17,6 +17,11 @@ int main(){
     fgets(name, sizeof(name), stdin );
     name[strlen(name) - 1] = '\0';
 
-    pr
+    printf("How old are you: \nENTER HERE=>  ");
+    scanf("%d\n", &age);
+
+    song(char *name, int age);
+    song(char *name, int age);
+
     return 0;
 }
