@@ -18,8 +18,10 @@ int main(){
 	char name[50]= "";
 	
 	printf("what is yo name?");
-	fgets(name, sizeof(name), stdin)
+	fgets(name, sizeof(name), stdin);
+	name[strlen(name) -1 ] = ''
 	
-	if(strlen(name))
+	if(strlen(name) == 0){printf("You did not enter yo name!");}
+	else{printf("hello %s\n",name);}
 }
 ```
