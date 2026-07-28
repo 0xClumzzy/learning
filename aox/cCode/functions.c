@@ -20,8 +20,8 @@ int main(){
     printf("How old are you: \nENTER HERE=>  ");
     scanf("%d\n", &age);
 
-    song(char *name, int age);
-    song(char *name, int age);
+    song(name, age);
+    song(name , age);
 
     return 0;
 }
