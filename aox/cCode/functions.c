@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <strings.h>
+#include <string.h>
 
 
 void song(char name[], int age){
