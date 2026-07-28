@@ -213,6 +213,7 @@
   },
   "active": "bcdd1079001c34f6",
   "lastOpenFiles": [
+    "cCode/functions.c",
     "study/programming/functions .md",
     "study/programming/programming.md",
     "study/programming/if-statements .md",
@@ -250,7 +251,6 @@
     "Tags/BroCode.md",
     "study/programming/.md",
     "study/shellcode/shellcode.md",
-    "study/Networking/Networking.md",
-    "study/xploitation/xploitation.md"
+    "study/Networking/Networking.md"
   ]
 }
