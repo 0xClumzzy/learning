@@ -2,7 +2,10 @@
 
 int main(){
     int day = 0;
+    printf("Enter a day of the week: ")
+    scanf("%d", &day);
     switch(day){
+        default: printf("Enter a day(1-7)");
         case 1:
             printf("It is monday");
             break;
@@ -24,11 +27,9 @@ int main(){
         case 7:
             printf("It is Sunday");
             break;
-        default: printf("Enter a day(1-7)");
-            
     }
-    
 
-    
+
+
     return 0;
 }
