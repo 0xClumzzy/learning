@@ -21,8 +21,7 @@ int main() {
             printf("You get a 10% discount\n");
             price *=0.9;
             printf("pay P%.1f", price);
-        }
-    else{}
+        ?
         
     }
    return 0; 
