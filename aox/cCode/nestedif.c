@@ -3,7 +3,7 @@
 
 
 int main() {
-    float price = 0.0f;
+    float price = 10.00f;
     bool isStudent = true;
     bool isSenior = false;
 
