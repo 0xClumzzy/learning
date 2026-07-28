@@ -26,7 +26,7 @@ int main(){
         case 7:
             printf("It is Sunday");
             break;
-        default: 
+        default:
             printf("Enter a day(1-7)");
     }
 
