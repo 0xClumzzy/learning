@@ -15,6 +15,17 @@ int main(){
         case 4:
             printf("It is Thursday");
             break;
+        case 5:
+            printf("It is Friday");
+            break;
+        case 6:
+            printf("It is Saturday");
+            break;
+        case 7:
+            printf("It is Sunday");
+            break;
+        default: printf("Enter a day(1-7)");
+            
     }
     
 
