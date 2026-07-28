@@ -10,7 +10,7 @@ int main() {
     //student = 10% discount
     //senior = 20% discount
     //student + senior = 30 discount
-    
+
     if(isStudent){
         if(isSenior){
             printf("You get a 30% discount\n ");
@@ -21,8 +21,8 @@ int main() {
             printf("You get a 10% discount\n");
             price *=0.9;
             printf("pay P%.1f", price);
-        ?
-        
+        }
     }
-   return 0; 
+    else {printf("full amount: P%.1f\n");}
+   return 0;
 }
