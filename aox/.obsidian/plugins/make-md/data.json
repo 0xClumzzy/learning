@@ -45,7 +45,8 @@
     "//study/study/Networking",
     "//study/study/programming",
     "//Tags",
-    "//study"
+    "//study",
+    "//cCode"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
