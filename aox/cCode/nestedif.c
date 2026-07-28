@@ -12,13 +12,15 @@ int main() {
     //student + senior = 30 discount
     
     if(isStudent){
-        printf("You get a 10% discount\n ");
-        price *=0.9;
-        printf("pay P%.1f", price);
         if(isSenior){
             printf("You get a 30% discount\n ");
             price *=0.7;
             printf("pay P%.1f", price);
+        }
+        else{
+            printf("You get a 10% discount\n");
+            price *=0.9;
+            printf("you get a ")
         }
     else
         
