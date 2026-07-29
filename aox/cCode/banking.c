@@ -11,7 +11,7 @@ int main(){
     float balance = 0.0f;
 
     do{
-        printf("**WELCOME TO CLUMZZY BANKING SERVICES**\n");
+        printf("\n**WELCOME TO CLUMZZY BANKING SERVICES**\n");
         printf("\nSELECT OPTION\n");
         printf("1.Withdraw\n");
         printf("2.Deposit\n");
@@ -25,6 +25,7 @@ int main(){
                 break;
             case 2:
                 balance +=deposit();
+                printf("\nEnter amount: ");
                 break;
             case 3:
                 checkBalance(balance);
