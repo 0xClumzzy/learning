@@ -13,4 +13,5 @@ eg
 ```
 for(int i = 2; i < 10; i+=2){printf("yes");}
 ```
-*start at*
+*start at 2.....increment i by 2*
+
