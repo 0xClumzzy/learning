@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/programming/for-loop.md",
+                "file": "study/programming/sleep.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "for-loop"
+              "title": "sleep"
             }
           }
         ],
@@ -182,13 +182,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/programming/for-loop.md",
+                "file": "study/programming/sleep.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of for-loop"
+              "title": "Outline of sleep"
             }
           }
         ],
@@ -213,8 +213,9 @@
   },
   "active": "bcdd1079001c34f6",
   "lastOpenFiles": [
-    "study/programming/while loops .md",
     "study/programming/for-loop.md",
+    "study/programming/sleep.md",
+    "study/programming/while loops .md",
     "study/programming/functions .md",
     "cCode/func",
     "cCode/functions.c",
@@ -250,7 +251,6 @@
     "study/programming/arithmetic.md",
     "study/programming/variables.md",
     "Tags/BroCode.md",
-    "study/programming/.md",
-    "study/shellcode/shellcode.md"
+    "study/programming/.md"
   ]
 }
