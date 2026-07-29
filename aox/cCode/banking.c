@@ -10,7 +10,13 @@ int main(){
     int choice = 0;
     float balance = 0.0f;
 
-    printf("WELCOME TO CLUMZZY ")
+    printf("**WELCOME TO CLUMZZY BANKING SERVICES**\n");
+    printf("SELECT OPTION\n");
+    printf("1.Withdraw\n");
+    printf("2.Deposit\n");
+    printf("1.Check balance\n");
+    printf("1.\n");
+    
     return 0;
 }
 
