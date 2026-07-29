@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h> 
 #include <stdbool.h>
+#include <math.h>
 
 void checkBalance(float balance);
 float withdraw(float balance);
@@ -11,7 +12,7 @@ int main(float balance){
 }
 
 void checkBalance(float balance){
-    float balance = 0.00f
-    
+    float balance = 0.00f;
+    subtract(deposit - w)
     
 }
