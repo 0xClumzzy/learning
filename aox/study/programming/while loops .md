@@ -3,3 +3,6 @@
 ```c
 while(condition){do some code}
 ```
+check the condition first then enter the loop
+
+**do-while loop** 
