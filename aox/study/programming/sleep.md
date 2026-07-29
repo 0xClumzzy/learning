@@ -45,3 +45,8 @@ unsigned int remaining = sleep(10);
 printf("%u seconds were left\n", remaining);
 ```
 
+On Windows, the equivalent is:
+  ```c
+#include <windows.h> 
+Sleep(3000);   // milliseconds, not seconds
+
