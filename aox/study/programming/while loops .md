@@ -6,3 +6,9 @@ while(condition){do some code}
 check the condition first then enter the loop
 
 **do-while loop** 
+do some code and check the condition at the end 
+```C
+do{
+this code
+}while(condition);
+```
