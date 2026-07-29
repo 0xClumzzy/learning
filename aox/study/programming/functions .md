@@ -31,7 +31,8 @@ Syntax:
 ```
 return_type function_name(parameter_types);
 ```
-### Prototype vs Definition
+
+*Prototype vs Definition*
 
 Prototype:
 
@@ -46,3 +47,11 @@ int add(int a, int b) {
     return a + b;
 }
 ```
+### Summary
+
+|Prototype|Definition|
+|---|---|
+|Declares a function|Implements a function|
+|Ends with `;`|Uses `{}`|
+|No code inside|Contains the code|
+|Can appear in headers|Usually in `.c` files|
