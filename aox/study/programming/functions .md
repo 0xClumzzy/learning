@@ -24,3 +24,25 @@ Common return types:
 | `float`                       | Returns a floating-point number                  | `float average()` |
 | `double`                      | Returns a higher-precision floating-point number | `double pi()`     |
 | `bool` *(C99, `<stdbool.h>`)* | Returns `true` or `false`                        | `bool exists()`   |
+**Function prototype**
+A **function prototype** is a declaration that tells the compiler
+
+Syntax:
+```
+return_type function_name(parameter_types);
+```
+### Prototype vs Definition
+
+Prototype:
+
+```
+int add(int a, int b);
+```
+
+Definition:
+
+```
+int add(int a, int b) {
+    return a + b;
+}
+```
