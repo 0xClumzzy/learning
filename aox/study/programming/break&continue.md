@@ -15,5 +15,5 @@ int main(){
 	return  0;
 }
 ```
-When `i` hits 3 the loop will break
+When `i` hits 3 the loop will break , continue will skip 3 and continue to the others 
 
