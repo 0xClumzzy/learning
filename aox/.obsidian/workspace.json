@@ -25,14 +25,12 @@
             "id": "bcdd1079001c34f6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "study/programming/practice programs/banking app .md",
-                "mode": "source",
-                "source": false
+                "path": "study/programming/practice programs"
               },
               "icon": "lucide-file",
-              "title": "banking app"
+              "title": "practice programs"
             }
           }
         ],
@@ -182,13 +180,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/programming/practice programs/banking app .md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of banking app"
+              "title": "Outline"
             }
           }
         ],
@@ -213,8 +210,9 @@
   },
   "active": "bcdd1079001c34f6",
   "lastOpenFiles": [
-    "study/programming/practice programs/banking app .md",
+    "cCode/banking.c",
     "study/programming/practice programs/practice programs.md",
+    "study/programming/practice programs/banking app .md",
     "study/programming/practice programs/Area of a circle.md",
     "study/programming/pseudo random numbers.md",
     "study/programming/break&continue.md",
@@ -250,7 +248,6 @@
     "Untitled.md",
     "C.md",
     "math functions.md",
-    "study/programming/Input.md",
-    "study/programming/arithmetic.md"
+    "study/programming/Input.md"
   ]
 }
