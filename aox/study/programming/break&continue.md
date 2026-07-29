@@ -10,6 +10,8 @@ int main(){
 		if(i == 3){
 			break;
 		}
+		printf("%d\n",i);
 	}
+	return  0;
 }
 ```
