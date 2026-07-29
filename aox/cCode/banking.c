@@ -6,6 +6,12 @@ void checkBalance(float balance);
 float withdraw(float balance);
 float deposit();
 
-int main(float balan){
+int main(float balance){
+    return 0;
+}
+
+void checkBalance(float balance){
+    float balance = 0.00f
+    
     
 }
