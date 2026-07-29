@@ -40,8 +40,9 @@ int main(){
     return 0;
 }
 
-void checkBalance(){
-    printf("Your current balance ")
+void checkBalance(float balance){
+    printf("\nYour current balance is: P%.2f\n", balance);
+    
 }
 float withdraw(){}
 float deposit(){}
