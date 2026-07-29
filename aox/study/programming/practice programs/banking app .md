@@ -4,7 +4,8 @@ FEATURES
 - [ ] check balance 
 # functions needed 
 - [ ] deposit function 
-- void function, doenst need to return anything
+- float function, doenst need any arguments
 - [ ] withdraw function 
-- needs to return a float, takes 
+- needs to return a float, handles a float arg too, for amount
 - [ ] check balance function 
+- void function, the user just needs to check their balance 
