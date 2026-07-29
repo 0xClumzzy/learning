@@ -17,27 +17,8 @@ int main(){
         printf("2.Deposit\n");
         printf("3.Check balance\n");
         printf("4.exit\n");
-        //rotate
-        scanf("%d\n", &choice);
-        switch(choice){
-            case 1:
-                balance -= withdraw(balance);
-                break;
-            case 2:
-                balance +=deposit();
-                printf("\nEnter amount: ");
-                break;
-            case 3:
-                checkBalance(balance);
-                break;
-            case 4:
-                break;
-            default:
-                printf("invalid choice!!");
-        }
-    }while(choice !=4);
 
-
+        if(scanf("%d\n", &choice) !=)
     return 0;
 }
 
