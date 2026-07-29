@@ -2,7 +2,12 @@
 
 int main(){
     //the goal is tp print 1-9 thrice
-    for(int i = 0; i <=10; i++){printf("%d\n", i);}
+    for(int j = 0; i <=4; i++){
+        for(int i = 0; i <=10; i++){printf("%d\n", i);}
+        printf("\n")
+    }
+    printf("j")
+    
     
     return 0;
 }
