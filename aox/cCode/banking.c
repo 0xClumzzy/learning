@@ -34,7 +34,7 @@ int main(){
             default:
                 printf("invalid choice!!");
         }
-    }while(choice !=4)
+    }while(choice !=4);
 
 
     return 0;
@@ -46,7 +46,7 @@ void checkBalance(float balance){
 float withdraw(float balance){
     printf("Your current balance is: %.2f\n", balance);
     printf("enter amount to withdraw: \nENTER HERE=> ");
-    scanf("%.2f", &balance);
+    scanf("%f", &balance);
 
     return 0.0f;
 }
@@ -61,8 +61,7 @@ float deposit(){
     }
     else{
         printf("Successfully deposited P%.2f amount", amount);
-        return amount+=balance
+        return amount;
     }
-    
-    
+
 }

@@ -210,6 +210,7 @@
   },
   "active": "bcdd1079001c34f6",
   "lastOpenFiles": [
+    "cCode/bank",
     "cCode/banking.c",
     "study/programming/practice programs/practice programs.md",
     "study/programming/practice programs/banking app .md",
@@ -237,7 +238,6 @@
     "cCode/day.Of.week.c",
     "Notes/Notes.md",
     "study/programming/math functions .md",
-    "cCode/cint",
     "Pasted image 20260726191034.png",
     "study/programming/strings .md",
     "Notes/memory.md",
