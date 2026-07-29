@@ -3,4 +3,8 @@ needs:
 `<stdlib.h>`
 `<time.h>`
 
+Generating the seed value
+```C
+srand(time(NULL));
+```
 
