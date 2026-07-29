@@ -21,13 +21,16 @@ int main(){
         scanf("%d\n", &choice);
         switch(choice){
             case 1:
-                withdraw(balance);
+                balance -= withdraw(balance);
                 break;
             case 2:
-                deposit();
+                balance +=deposit();
                 break;
-            case 3;
-                
+            case 3:
+                checkBalance(balance);
+                break;
+            case 4:
+                break;
         }
     }while(choice !=4)
     
