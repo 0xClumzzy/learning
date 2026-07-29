@@ -45,6 +45,9 @@ void checkBalance(float balance){
 }
 float withdraw(float balance){
     printf("Your current balance is: %.2f\n", balance);
-    scanf("%.2f",)
+    printf("enter amount to withdraw: \nENTER HERE=> ");
+    scanf("%.2f", &balance);
 }
-float deposit(){}
+float deposit(){
+    
+}
