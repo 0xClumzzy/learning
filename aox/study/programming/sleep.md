@@ -46,7 +46,16 @@ printf("%u seconds were left\n", remaining);
 ```
 
 On Windows, the equivalent is:
-  ```c
+```c
 #include <windows.h> 
 Sleep(3000);   // milliseconds, not seconds
+```
+ Notice the capital `S` and that the argument is in **milliseconds**.
+### Summary
 
+| Function                | Unit         | Header                  |
+| ----------------------- | ------------ | ----------------------- |
+| `sleep(3)`              | seconds      | `<unistd.h>`            |
+| `usleep(500000)`        | microseconds | `<unistd.h>` (obsolete) |
+| `nanosleep()`           | nanoseconds  | `<time.h>`              |
+| `Sleep(3000)` (Windows) | milliseconds | `<windows.h>`           |
