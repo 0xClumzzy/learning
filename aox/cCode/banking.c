@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h> 
+#include <unistd.h>
 #include <stdbool.h>
 
 void checkBalance(float balance);
@@ -31,13 +31,17 @@ int main(){
                 break;
             case 4:
                 break;
+            default:
+                printf("invalid choice!!");
         }
     }while(choice !=4)
-    
-    
+
+
     return 0;
 }
 
-void checkBalance(){}
+void checkBalance(){
+    printf("Your current balance ")
+}
 float withdraw(){}
 float deposit(){}
