@@ -57,6 +57,12 @@ float deposit(){
 
     if(amount <=0){
         printf("Enter valid amount");
+        return 0.0f;
     }
+    else{
+        printf("Successfully deposited P%.2f amount", amount);
+        return amount+=balance
+    }
+    
     
 }
