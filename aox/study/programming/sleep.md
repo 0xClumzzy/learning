@@ -28,4 +28,20 @@ int main() {
 }
 ```
 
+**Return value
+
+```c
+unsigned int sleep(unsigned int seconds);
+```
+
+- `0` → Slept for the full time.
+- Non-zero → Interrupted by a signal before the time expired. The return value is the number of seconds left.
+
+Example:
+
+```c
+unsigned int remaining = sleep(10);
+
+printf("%u seconds were left\n", remaining);
+```
 
