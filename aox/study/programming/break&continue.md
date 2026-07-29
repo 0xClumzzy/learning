@@ -15,3 +15,5 @@ int main(){
 	return  0;
 }
 ```
+When `i` hits 3 the loop will break
+
