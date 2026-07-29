@@ -51,7 +51,12 @@ float withdraw(float balance){
     return 0.0f;
 }
 float deposit(){
-    float amount = 0.0f
+    float amount = 0.0f;
     printf("\nEnter amount to deposit: ");
-    sca
+    scanf("%f", &amount);
+
+    if(amount <=0){
+        printf("Enter valid amount");
+    }
+    
 }
