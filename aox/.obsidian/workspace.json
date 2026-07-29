@@ -213,6 +213,8 @@
   },
   "active": "bcdd1079001c34f6",
   "lastOpenFiles": [
+    "cCode/nestedloop.c",
+    "cCode/nestedloop",
     "study/programming/sleep.md",
     "study/programming/break&continue.md",
     "study/programming/for-loop.md",
@@ -245,12 +247,10 @@
     "Notes/x86_64.md",
     "cCode/hello2",
     "Untitled.md",
-    "Notes",
     "C.md",
     "math functions.md",
     "study/programming/Input.md",
     "study/programming/arithmetic.md",
-    "study/programming/variables.md",
-    "Tags/BroCode.md"
+    "study/programming/variables.md"
   ]
 }
