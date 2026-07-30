@@ -1,3 +1,5 @@
 {
-  "cssTheme": "Theme-That-Shall-Not-Be-Named"
+  "cssTheme": "Exotic",
+  "baseFontSize": 19,
+  "nativeMenus": true
 }
