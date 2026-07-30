@@ -1,4 +1,4 @@
-# DarkZero (DZ) — Write-Up
+# DarkZeroReturns (DZ) — Write-Up
 
 **IP:** 10.129.43.235 (dz.htb)
 **OS:** Linux (Ubuntu)
