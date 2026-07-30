@@ -1,5 +1,9 @@
 {
   "cssTheme": "Exotic",
-  "baseFontSize": 19,
-  "nativeMenus": true
+  "baseFontSize": 20,
+  "nativeMenus": true,
+  "baseFontSizeAction": true,
+  "interfaceFontFamily": "DejaVu Sans",
+  "textFontFamily": "Courier New",
+  "monospaceFontFamily": "Adwaita Sans"
 }
