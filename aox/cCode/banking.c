@@ -11,9 +11,16 @@ int main(){
     float balance = 0.0f;
 
     do{
+        //handle the choice input and errors
         if(scanf("%d", &choice ) != 1){
             printf("Invalid choice");
-            
+            while(getchar() != '\0');
+            choice = 0;
+            continue;
+        }
+        //choice logic now, rotate
+        switch(choice){
+            case 1
         }
     }while(choice !=0);
     return 0;
