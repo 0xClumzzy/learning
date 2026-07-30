@@ -28,8 +28,14 @@ int main(){
         //choice logic now, rotate
         switch(choice){
             case 1:
-                printf("Yo current balance is:\nBalance=> \n");
-                balance = withdraw(balance)
+                balance = withdraw(balance);
+                break;
+            case 2:
+                balance += deposit();
+                break;
+            case 3:
+                printf("Yo current balnce is:\nBalance=> ");
+                
         }
     }while(choice !=0);
     return 0;
