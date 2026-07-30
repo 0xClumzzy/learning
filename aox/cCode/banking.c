@@ -35,7 +35,12 @@ int main(){
                 break;
             case 3:
                 printf("Yo current balnce is:\nBalance=> ");
-                
+                break;
+            case 4:
+                printf("Thanks for using our service");
+                break;
+            default:
+                printf("Invalid choice");
         }
     }while(choice !=0);
     return 0;
@@ -45,6 +50,7 @@ void checkBalance(float balance){
     printf("\nYour current balance is: P%.2f\n", balance);
 }
 float withdraw(float balance){
+    float amount = 0.0f;
     printf("Your current balance is: %.2f\n", balance);
     printf("enter amount to withdraw: \nENTER HERE=> ");
     scanf("%f", &balance);
