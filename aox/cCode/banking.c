@@ -54,7 +54,6 @@ float withdraw(float balance){
     float amount = 0.0f;
     printf("Your current balance is: %.2f\n", balance);
     printf("enter amount to withdraw: \nENTER HERE=> ");
-    scanf("%f", &amount);
 
     if(scanf("%f",&amount) != 1){
         printf("Enter amount to withdraw");
@@ -65,7 +64,7 @@ float withdraw(float balance){
         printf("Enter amount to withdraw");
         return balance;
     }
-    else if (amount > balance) {
+    if (amount > balance) {
         printf("Insufficient funds");
         return balance;
     }
