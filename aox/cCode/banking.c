@@ -11,14 +11,8 @@ int main(){
     float balance = 0.0f;
 
     do{
-        printf("\n**WELCOME TO CLUMZZY BANKING SERVICES**\n");
-        printf("\nSELECT OPTION\n");
-        printf("1.Withdraw\n");
-        printf("2.Deposit\n");
-        printf("3.Check balance\n");
-        printf("4.exit\n");
-
-        if(scanf("%d\n", &choice) !=)
+        
+    }while(choice !=0);
     return 0;
 }
 
