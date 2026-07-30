@@ -28,3 +28,6 @@ int main(){
     return 0;
 }
 ```
+basically:
+- `sizeof(numbers)` → size of the **entire array** in bytes. For `{1,2,3,4,5}`, that's 5 elements × 4 bytes each = **20 bytes**.
+- `sizeof(numbers[0])` → size of **one element** = **4 bytes**.
