@@ -4,23 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ef8f508f0070273b",
+        "id": "842ca4e373bea4a7",
         "type": "tabs",
         "children": [
           {
-            "id": "c8669a297f7e6344",
+            "id": "e2f70c487f2124a1",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Untitled Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": []
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "Untitled Kanban"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -107,7 +101,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled Kanban.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +110,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Untitled Kanban"
+              "title": "Backlinks"
             }
           },
           {
@@ -126,12 +119,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled Kanban.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Untitled Kanban"
+              "title": "Outgoing links"
             }
           },
           {
@@ -169,13 +161,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled Kanban.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled Kanban"
+              "title": "Outline"
             }
           },
           {
@@ -220,10 +211,10 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "c8669a297f7e6344",
+  "active": "e2f70c487f2124a1",
   "lastOpenFiles": [
-    "Academy/JuniorWebPentester/HTTPrequest&response Anatomy.md",
     "Untitled Kanban.md",
+    "Academy/JuniorWebPentester/HTTPrequest&response Anatomy.md",
     "Tags"
   ]
 }
