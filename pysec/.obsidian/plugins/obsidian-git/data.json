@@ -32,11 +32,11 @@
   "submoduleRecurseCheckout": false,
   "gitDir": "",
   "showFileMenu": true,
-  "authorInHistoryView": "full",
-  "dateInHistoryView": true,
+  "authorInHistoryView": "hide",
+  "dateInHistoryView": false,
   "diffStyle": "split",
   "hunks": {
-    "showSigns": true,
+    "showSigns": false,
     "hunkCommands": false,
     "statusBar": "disabled"
   },
