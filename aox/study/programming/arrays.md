@@ -54,7 +54,9 @@ int main (){
 			while(getchar() = '\n');
 			continue;
 		}
-	for(int i; )
+	}
+	for(int i; i <=5;i++){
+		printf("%d", scores[i]);
 		
 	}
 	return 0;
