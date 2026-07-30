@@ -95,9 +95,10 @@ printf("%d", array[0][0]);
 ```
 Print all elements
 ```c
-for(int i=0;i<=3;i++){
-	for(int j=0;j<=3;j++){
-		priny
+for(int i=0;i<=3;i++){//rows
+	for(int j=0;j<=3;j++){//columns
+		printf("%d", array[][]);
 	}
+	printf("\n");
 }
 ```
