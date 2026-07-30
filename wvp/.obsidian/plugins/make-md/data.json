@@ -40,7 +40,8 @@
   "expandedSpaces": [
     "/",
     "//Academy",
-    "//Academy/Academy/JuniorWebPentester"
+    "//Academy/Academy/JuniorWebPentester",
+    "//Academy/Academy/JuniorWebPentester/Academy/JuniorWebPentester/Phase1"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
