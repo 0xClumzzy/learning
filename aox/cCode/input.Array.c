@@ -2,9 +2,9 @@ int main (){
 	int scores[5] = {0};
 
 	for(int values=0;values <=5;values++){
-		if(scanf("%d", scores[values]) != '\n'){
+		if(scanf("%d", scores[values]) != 1){
 			printf("Enter a value");
-			while(getchar() = '\n');
+			while(getchar() != '\n');
 			continue;
 		}
 	}
