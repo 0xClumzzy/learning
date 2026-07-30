@@ -45,20 +45,29 @@ Quick reference for common types on a typical 64-bit system (sizes technically a
 
 Arrays and user input 
 ```c
-int main (){
-	int scores[5] = {0};
-	
-	for(int values=0;values <=5;values++){
-		if(scanf("%d", scores[values]) != '\n'){
-			printf("Enter a value");
-			while(getchar() = '\n');
-			continue;
-		}
-	}
-	for(int i; i <=5;i++){
-		printf("%d", scores[i]);
-		
-	}
-	return 0;
+#include <stdio.h>
+
+int main(void){
+    int scores[5] = {0};
+
+    for(int values = 0; values < 5; values++){
+        printf("Enter a value for score:\nENTER HERE=> \n");
+        if(scanf("%d", &scores[values]) != 1){
+            printf("Enter a value\n");
+            while(getchar() != '\n');
+            values--;  // stay on this index, don't skip it — retry
+            continue;
+        }
+    }
+
+    for(int i = 0; i < 5; i++){
+        printf("%d ", scores[i]);
+    }
+    printf("\n");
+
+    return 0;
 }
+
 ```
+
+
