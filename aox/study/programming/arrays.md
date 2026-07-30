@@ -78,8 +78,18 @@ An array where elements are arrays
 eg 
 ```c
 int main (){
-	int array[][3]={{1,2,3},{4,5,6},{7,8,9}}
+	int array[][3]={{1,2,3},
+					{4,5,6},
+					{7,8,9}}
 	
 	return 0;
 }
+```
+Indexing an array
+```c
+printf("%d", array[row][column]);
+```
+eg 
+```c
+printf("%d", array[0][0]);
 ```
