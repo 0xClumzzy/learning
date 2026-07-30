@@ -223,6 +223,7 @@
   },
   "active": "bcdd1079001c34f6",
   "lastOpenFiles": [
+    "cCode/ai",
     "cCode/input.Array.c",
     "cCode/arrays.c",
     "study/programming/practice programs/banking app .md",
@@ -248,7 +249,6 @@
     "study/programming/practice programs/Hello World.md",
     "study/programming/practice programs/Compound Intest calc.md",
     "study/programming/practice programs/Shoppingcart .md",
-    "cCode/nestedif.c",
     "study/programming/switches.md",
     "Notes/Notes.md",
     "study/programming/math functions .md",
