@@ -11,7 +11,10 @@ int main(){
     float balance = 0.0f;
 
     do{
-        
+        if(scanf("%d", &choice ) != 1){
+            printf("Invalid choice");
+            
+        }
     }while(choice !=0);
     return 0;
 }
