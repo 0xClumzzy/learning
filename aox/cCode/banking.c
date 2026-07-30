@@ -60,7 +60,13 @@ float withdraw(float balance){
         while(getchar() != '\0');
         return balance;
     }
-    if (amount <= 0
+    if (amount <= 0){
+        printf("Enter amount to withdraw");
+        return balance;
+    }
+    else if (amount > balance) {
+        printf("Insufficient funds");
+    }
     return 0.0f;
 }
 float deposit(){
