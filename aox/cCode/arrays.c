@@ -2,6 +2,6 @@
 
 int main(){
     int numbers[] = {1,2,3,4,5};
-    printf("%d", numbers);
+    printf("%d", numbers[1]);
     return 0;
 }
