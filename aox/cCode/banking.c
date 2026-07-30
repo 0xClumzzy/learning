@@ -73,5 +73,21 @@ float withdraw(float balance){
     return balance;
     
 }
+float deposit(void){
+    float amount = 0.0f;
+    printf("\nEnter amount to deposit: ");
 
+    if(scanf("%f", &amount) != 1){
+        printf("Invalid input.\n");
+        while(getchar() != '\n');
+        return 0.0f;
+    }
+
+    if(amount <= 0){
+        printf("Enter valid amount\n");
+        return 0.0f;
+    }
+
+    printf("Successfully deposited P%.2f\n", amount);
+    return amount;
 }
