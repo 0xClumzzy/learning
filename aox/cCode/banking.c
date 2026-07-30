@@ -21,7 +21,7 @@ int main(){
         //handle the choice input and errors
         if(scanf("%d", &choice ) != 1){
             printf("Invalid choice");
-            while(getchar() != '\0');
+            while(getchar() != '\n');
             choice = 0;
             continue;
         }
@@ -34,6 +34,7 @@ int main(){
                 balance += deposit();
                 break;
             case 3:
+                checkBalance(balance);
                 printf("Yo current balnce is:\nBalance=> ");
                 break;
             case 4:
@@ -42,7 +43,7 @@ int main(){
             default:
                 printf("Invalid choice");
         }
-    }while(choice !=0);
+    }while(choice !=4);
     return 0;
 }
 
