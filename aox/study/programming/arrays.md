@@ -31,3 +31,14 @@ int main(){
 basically:
 - `sizeof(numbers)` → size of the **entire array** in bytes. For `{1,2,3,4,5}`, that's 5 elements × 4 bytes each = **20 bytes**.
 - `sizeof(numbers[0])` → size of **one element** = **4 bytes**.
+
+Quick reference for common types on a typical 64-bit system (sizes technically aren't guaranteed by the C standard and can vary by platform, but these are the near-universal values you'll see on x86-64/ARM64):
+
+| Type                 | `sizeof` result |
+| -------------------- | --------------- |
+| `char`               | 1 byte          |
+| `short`              | 2 bytes         |
+| `int`                | 4 bytes         |
+| `float`              | 4 bytes         |
+| `double`             | 8 bytes         |
+| `int*` (any pointer) | 8 bytes         |
