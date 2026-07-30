@@ -42,3 +42,11 @@ Quick reference for common types on a typical 64-bit system (sizes technically a
 | `float`              | 4 bytes         |
 | `double`             | 8 bytes         |
 | `int*` (any pointer) | 8 bytes         |
+
+Arrays and user input 
+```c
+int main (){
+
+	retur
+}
+```
