@@ -70,4 +70,5 @@ int main(void){
 
 ```
 
-
+2D ARRAYS 
+An array where elements are arrays
