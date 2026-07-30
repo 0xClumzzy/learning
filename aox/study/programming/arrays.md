@@ -49,7 +49,13 @@ int main (){
 	int scores[5] = {0};
 	
 	for(int values=0;values <=5;values++){
-		if(scanf(%d))
+		if(scanf("%d", != 1)){
+			printf("Enter a value");
+			while(getchar() = '\n');
+			
+			
+		}
+		
 	}
 	return 0;
 }
