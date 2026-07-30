@@ -4,7 +4,7 @@ int main(void){
     int scores[5] = {0};
 
     for(int values = 0; values < 5; values++){
-        printf("Enter a value for score:\nENTER HERE=> ");
+        printf("Enter a value for score:\nENTER HERE=> \n");
         if(scanf("%d", &scores[values]) != 1){
             printf("Enter a value\n");
             while(getchar() != '\n');
