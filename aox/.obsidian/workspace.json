@@ -223,6 +223,7 @@
   },
   "active": "bcdd1079001c34f6",
   "lastOpenFiles": [
+    "cCode/arrays.c",
     "study/programming/practice programs/banking app .md",
     "study/programming/arrays.md",
     "cCode/bank",
@@ -260,7 +261,6 @@
     "Notes/x86_64.md",
     "Untitled.md",
     "C.md",
-    "math functions.md",
-    "study/programming/Input.md"
+    "math functions.md"
   ]
 }
