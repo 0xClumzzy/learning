@@ -65,7 +65,7 @@ float withdraw(float balance){
         return balance;
     }
     if (amount > balance) {
-        printf("Insufficient funds");
+        printf("Insufficient funds\n");
         return balance;
     }
     balance -= amount;
