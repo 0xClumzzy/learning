@@ -72,3 +72,14 @@ int main(void){
 
 2D ARRAYS 
 An array where elements are arrays
+```c
+<returnn type> <variable name>[] [can be number of columns] = {{array1},{array2}};
+```
+eg 
+```c
+int main (){
+	int array[][3]={{1,2,3},{4,5,6},{7,8,9}}
+	
+	return 0;
+}
+```
