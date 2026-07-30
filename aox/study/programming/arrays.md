@@ -46,7 +46,11 @@ Quick reference for common types on a typical 64-bit system (sizes technically a
 Arrays and user input 
 ```c
 int main (){
-
-	retur
+	int scores[5] = {0};
+	
+	for(int values=0;values <=5;values++){
+		if(scanf(%d))
+	}
+	return 0;
 }
 ```
