@@ -11,6 +11,13 @@ int main(){
     float balance = 0.0f;
 
     do{
+        printf("\n**WELCOME TO CLUMZZY BANKING SERVICES**\n");
+        printf("\nSELECT OPTION\n");
+        printf("1.Withdraw\n");
+        printf("2.Deposit\n");
+        printf("3.Check balance\n");
+        printf("4.exit\n");
+
         //handle the choice input and errors
         if(scanf("%d", &choice ) != 1){
             printf("Invalid choice");
@@ -20,7 +27,9 @@ int main(){
         }
         //choice logic now, rotate
         switch(choice){
-            case 1
+            case 1:
+                printf("Yo current balance is:\nBalance=> \n");
+                balance = withdraw(balance)
         }
     }while(choice !=0);
     return 0;
