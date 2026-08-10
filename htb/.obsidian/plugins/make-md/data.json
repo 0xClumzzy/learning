@@ -50,7 +50,8 @@
     "//labs/labs/machines/labs/machines/easy",
     "//labs/labs/machines/labs/machines/hard",
     "//labs/labs/machines/labs/machines/hard/labs/machines/hard/dz.Info",
-    "//labs/labs/machines/labs/machines/easy/labs/machines/easy/paperwork.Info"
+    "//labs/labs/machines/labs/machines/easy/labs/machines/easy/paperwork.Info",
+    "//Excalidraw"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
