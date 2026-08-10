@@ -107,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "8faf3742ae6b5127",
@@ -214,19 +213,9 @@
               "icon": "lucide-ghost",
               "title": "smart-connections-view"
             }
-          },
-          {
-            "id": "6622edb3826bbf81",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
