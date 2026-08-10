@@ -93,7 +93,7 @@
             }
           },
           {
-            "id": "654023ce26addac5",
+            "id": "0332fdcdcc84a171",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -211,8 +211,8 @@
             "state": {
               "type": "smart-connections-view",
               "state": {},
-              "icon": "smart-connections",
-              "title": "Connections"
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
             }
           },
           {
@@ -244,21 +244,13 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false,
-      "obsidian-git:Open Git source control": false,
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Toggle Footer Connections": false,
-      "smart-connections:Smart Connections: Open random connection": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "calendarium:Open Calendarium": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "235abf62d92915a6",
   "lastOpenFiles": [
-    "labs/machines/easy/Untitled.exalidraw.md",
     "Excalidraw/Drawing 2026-08-10 03.34.21.excalidraw.md",
+    "labs/machines/easy/Untitled.exalidraw.md",
     "Excalidraw",
     "labs/machines/easy/Untitled.canvas",
     "Tags",
