@@ -11,14 +11,17 @@
             "id": "2fee26065cef7b42",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "labs/machines/hard/DZ.md",
-                "mode": "source",
-                "source": false
+                "file": "labs/machines/easy/Untitled.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "DZ"
+              "icon": "lucide-layout-dashboard",
+              "title": "Untitled"
             }
           }
         ]
@@ -41,7 +44,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -69,23 +74,15 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "dd9cbb9a0e2b4935",
-            "type": "leaf",
-            "state": {
-              "type": "mk-path-view",
-              "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -134,18 +131,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "f025da4c73d78f91",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -154,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/machines/medium/BEDSIDE.md",
+                "file": "labs/machines/easy/Untitled.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +151,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for BEDSIDE"
+              "title": "Backlinks"
             }
           },
           {
@@ -219,26 +206,25 @@
       "obsidian-git:Open Git source control": false,
       "smart-connections:Smart Connections: Open connections view": false,
       "smart-connections:Toggle Footer Connections": false,
-      "smart-connections:Smart Connections: Open random connection": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "calendarium:Open Calendarium": false
+      "smart-connections:Smart Connections: Open random connection": false
     }
   },
   "active": "2fee26065cef7b42",
   "lastOpenFiles": [
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/exploit_response_0521.html",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/vulnerable.txt",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/licenses/LICENSE",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/licenses/AUTHORS",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/licenses",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/WHEEL",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/REQUESTED",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/RECORD",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/METADATA",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/INSTALLER",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info",
+    "labs/machines/easy/paperwork2.md",
+    "labs/machines/easy/Untitled.canvas",
+    "labs/machines/easy/PAPERWORK.md",
+    "labs/machines/easy/paperwork.Info/archive",
+    "labs/machines/easy/paperwork.Info/archive.zip",
+    "labs/machines/easy/paperwork.Info/pp.xml",
+    "labs/machines/easy/paperwork.Info/pp.gnmap",
+    "labs/machines/easy/paperwork.Info/pp.nmap",
+    "labs/machines/easy/paperwork.Info/gobuster_results/vhost_paperwork.htb_1783807157.txt",
+    "labs/machines/easy/paperwork.Info/archive_extracted/server.py",
+    "labs/machines/easy/paperwork.Info/server_fixed.py",
+    "labs/machines/easy/paperwork.Info/server.py",
+    "labs/machines/easy/paperwork.Info/paperwork-archive-v1.02.zip",
+    "labs/machines/hard/DZ.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/idna-3.18.dist-info/licenses/LICENSE.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/soupsieve-2.9.1.dist-info/licenses/LICENSE.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
@@ -271,9 +257,6 @@
     "Pasted image 20260718200428.png",
     "academy/vuln/standards/.md",
     "academy/vuln/standards.md",
-    "2026-07-13.md",
-    "academy/CPTS/footprinting/labs/hard/HARD.md",
-    "Untitled.canvas",
-    "academy/CPTS/footprinting/ Post Office Protocol.md"
+    "Untitled.canvas"
   ]
 }

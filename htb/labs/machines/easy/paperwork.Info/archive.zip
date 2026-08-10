@@ -1,0 +1,11 @@
+--2026-08-10 03:20:31--  http://paperwork.htb/download/archive
+Resolving paperwork.htb (paperwork.htb)... 10.129.7.31
+Connecting to paperwork.htb (paperwork.htb)|10.129.7.31|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1138 (1.1K) [application/zip]
+Saving to: ‘archive’
+
+     0K .                                                     100% 80.7M=0s
+
+2026-08-10 03:20:32 (80.7 MB/s) - ‘archive’ saved [1138/1138]
+
