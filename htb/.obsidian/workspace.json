@@ -11,20 +11,30 @@
             "id": "2fee26065cef7b42",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "labs/machines/easy/Untitled.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "labs/machines/easy/Untitled.exalidraw.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "Untitled.exalidraw"
+            }
+          },
+          {
+            "id": "235abf62d92915a6",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-08-10 03.34.21.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-08-10 03.34.21.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -152,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "labs/machines/easy/Untitled.canvas",
+                "file": "Excalidraw/Drawing 2026-08-10 03.34.21.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -193,9 +203,19 @@
               "icon": "lucide-tags",
               "title": "Tags"
             }
+          },
+          {
+            "id": "63e4c9d27121e078",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -224,11 +244,14 @@
       "calendarium:Open Calendarium": false
     }
   },
-  "active": "2fee26065cef7b42",
+  "active": "235abf62d92915a6",
   "lastOpenFiles": [
+    "labs/machines/easy/Untitled.exalidraw.md",
+    "Excalidraw/Drawing 2026-08-10 03.34.21.excalidraw.md",
+    "Excalidraw",
+    "labs/machines/easy/Untitled.canvas",
     "Tags",
     "labs/machines/easy/paperwork2.md",
-    "labs/machines/easy/Untitled.canvas",
     "labs/machines/easy/PAPERWORK.md",
     "labs/machines/easy/paperwork.Info/archive",
     "labs/machines/easy/paperwork.Info/archive.zip",
@@ -238,8 +261,6 @@
     "labs/machines/easy/paperwork.Info/gobuster_results/vhost_paperwork.htb_1783807157.txt",
     "labs/machines/easy/paperwork.Info/archive_extracted/server.py",
     "labs/machines/easy/paperwork.Info/server_fixed.py",
-    "labs/machines/easy/paperwork.Info/server.py",
-    "labs/machines/easy/paperwork.Info/paperwork-archive-v1.02.zip",
     "labs/machines/hard/DZ.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/idna-3.18.dist-info/licenses/LICENSE.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/soupsieve-2.9.1.dist-info/licenses/LICENSE.md",
@@ -272,7 +293,6 @@
     "labs/machines/medium/bedsideInfo/shell.png",
     "Pasted image 20260718200428.png",
     "academy/vuln/standards/.md",
-    "academy/vuln/standards.md",
     "Untitled.canvas"
   ]
 }
