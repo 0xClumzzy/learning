@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -248,10 +248,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bceb6c2f00eb3c0b",
+  "active": "a0b7f4d0c5273695",
   "lastOpenFiles": [
-    "labs/machines/easy/PAPERWORK.md",
     "labs/machines/easy/paperwork.Info/LPD.excalidraw.md",
+    "labs/machines/easy/PAPERWORK.md",
     "labs/machines/easy/paperwork2.md",
     "labs/machines/easy/Untitled.exalidraw.md",
     "Excalidraw",
