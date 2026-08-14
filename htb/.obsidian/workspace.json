@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -224,14 +224,23 @@
               "icon": "lucide-ghost",
               "title": "smart-connections-view"
             }
+          },
+          {
+            "id": "7fc0facff8b3c7db",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -248,10 +257,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a0b7f4d0c5273695",
+  "active": "bceb6c2f00eb3c0b",
   "lastOpenFiles": [
-    "labs/machines/easy/paperwork.Info/LPD.excalidraw.md",
     "labs/machines/easy/PAPERWORK.md",
+    "labs/machines/easy/paperwork.Info/LPD.excalidraw.md",
     "labs/machines/easy/paperwork2.md",
     "labs/machines/easy/Untitled.exalidraw.md",
     "Excalidraw",
