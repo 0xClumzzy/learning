@@ -30,6 +30,18 @@
               "icon": "lucide-file",
               "title": "PAPERWORK"
             }
+          },
+          {
+            "id": "bceb6c2f00eb3c0b",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "labs/machines/easy/paperwork.Info/LPD.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "LPD.excalidraw"
+            }
           }
         ],
         "currentTab": 1
@@ -238,8 +250,8 @@
   "active": "a0b7f4d0c5273695",
   "lastOpenFiles": [
     "labs/machines/easy/paperwork.Info/LPD.excalidraw.md",
-    "labs/machines/easy/paperwork2.md",
     "labs/machines/easy/PAPERWORK.md",
+    "labs/machines/easy/paperwork2.md",
     "labs/machines/easy/Untitled.exalidraw.md",
     "Excalidraw",
     "labs/machines/easy/Untitled.canvas",
