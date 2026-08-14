@@ -228,7 +228,7 @@ List the daemon's filesystem root:
 python3 -c "
 import socket
 s = socket.create_connection(('localhost', 9100), timeout=5)
-s.sendall(b'@PJL FSDIRLIST NAME=\"/\" ENTRY=1 COUNT=999\r\n')
+s.sendall(b'@PJL FSDIRLIST NAME=\"" ENTRY=1 COUNT=999\r\n')
 print(s.recv(8192).decode(errors='ignore'))
 s.close()
 "
