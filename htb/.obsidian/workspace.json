@@ -21,12 +21,14 @@
             "id": "a0b7f4d0c5273695",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "labs/machines/easy/paperwork.Info/LPD.excalidraw.md"
+                "file": "labs/machines/easy/PAPERWORK.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "LPD.excalidraw"
+              "icon": "lucide-file",
+              "title": "PAPERWORK"
             }
           }
         ],
@@ -103,8 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "8faf3742ae6b5127",
