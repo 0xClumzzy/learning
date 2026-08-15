@@ -80,7 +80,7 @@
             }
           },
           {
-            "id": "3e05302eddf0432d",
+            "id": "683b707c0669f8ed",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -207,8 +207,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           }
         ],
