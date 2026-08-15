@@ -5,5 +5,8 @@
   "baseFontSizeAction": true,
   "interfaceFontFamily": "DejaVu Sans",
   "textFontFamily": "Courier New",
-  "monospaceFontFamily": "Adwaita Sans"
+  "monospaceFontFamily": "Adwaita Sans",
+  "enabledCssSnippets": [
+    "noctalia"
+  ]
 }

@@ -4,5 +4,8 @@
   "nativeMenus": true,
   "baseFontSize": 17,
   "baseFontSizeAction": true,
-  "accentColor": "#430255"
+  "accentColor": "#430255",
+  "enabledCssSnippets": [
+    "noctalia"
+  ]
 }

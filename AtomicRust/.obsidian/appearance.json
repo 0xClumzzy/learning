@@ -1,3 +1,6 @@
 {
-  "cssTheme": "Exotic"
+  "cssTheme": "Exotic",
+  "enabledCssSnippets": [
+    "noctalia"
+  ]
 }

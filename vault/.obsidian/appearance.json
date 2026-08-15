@@ -2,5 +2,8 @@
   "accentColor": "#57389f",
   "interfaceFontFamily": "MesloLGL Nerd Font",
   "nativeMenus": true,
-  "cssTheme": "Exotic"
+  "cssTheme": "Exotic",
+  "enabledCssSnippets": [
+    "noctalia"
+  ]
 }
