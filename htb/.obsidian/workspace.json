@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "30b0f47c41fdac42",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "labs/machines/medium/MAKESENSE.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MAKESENSE"
-            }
-          },
-          {
             "id": "84cb2ed5fbda6666",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "FIREFLOW"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8faf3742ae6b5127",
@@ -249,7 +235,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3e05302eddf0432d",
+  "active": "84cb2ed5fbda6666",
   "lastOpenFiles": [
     "labs/machines/medium/fireflow.Info/fireflow.Info.md",
     "labs/machines/medium/fireflow.Info",
