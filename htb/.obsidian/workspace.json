@@ -11,12 +11,14 @@
             "id": "30b0f47c41fdac42",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "labs/machines/easy/paperwork.Info/LPD.excalidraw.md"
+                "file": "labs/machines/medium/BEDSIDE.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "LPD.excalidraw"
+              "icon": "lucide-file",
+              "title": "BEDSIDE"
             }
           }
         ]

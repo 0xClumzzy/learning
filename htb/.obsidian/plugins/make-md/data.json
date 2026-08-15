@@ -42,16 +42,14 @@
     "//academy",
     "//academy/academy/vuln/academy/vuln/standards",
     "//academy/academy/vuln/academy/vuln/COMPLIANCE STANDARDS",
-    "//techniques",
     "//labs",
     "//labs/labs/machines",
     "//Tags",
     "//academy/academy/vuln",
-    "//labs/labs/machines/labs/machines/easy",
     "//labs/labs/machines/labs/machines/hard",
-    "//labs/labs/machines/labs/machines/hard/labs/machines/hard/dz.Info",
     "//labs/labs/machines/labs/machines/easy/labs/machines/easy/paperwork.Info",
-    "//Excalidraw"
+    "//Excalidraw",
+    "//labs/labs/machines/labs/machines/medium"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
