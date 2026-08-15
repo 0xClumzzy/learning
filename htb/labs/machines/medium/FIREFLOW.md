@@ -1,5 +1,7 @@
 * MACHINE => FIREFLOW 
 * OS => LINUX 
 * LEVEL => MEDIUM
+
 # RECON 
-- [ ] NMAP S
+- [ ] NMAP SCAN 
+- [ ] 

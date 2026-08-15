@@ -94,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "8faf3742ae6b5127",
@@ -140,8 +139,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -213,12 +212,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,7 +233,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "84cb2ed5fbda6666",
+  "active": "a674580a528c50ea",
   "lastOpenFiles": [
     "labs/machines/medium/fireflow.Info/fireflow.Info.md",
     "labs/machines/medium/fireflow.Info",
