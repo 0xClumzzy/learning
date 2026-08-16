@@ -67,13 +67,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
           },
           {
-            "id": "5fcf4aad282d4375",
+            "id": "1feb6bbe927fcc72",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -171,7 +174,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Learning a new skill.excalidraw"
+              "title": "Outline"
             }
           }
         ],
@@ -198,12 +201,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "338f65a2cfe534a2",
+  "active": "a1f7564ec02c0006",
   "lastOpenFiles": [
+    "Tags",
     "Excalidraw/Learning a new skill.excalidraw.md",
     "Excalidraw",
     ".md",
-    "Tags/Untitled.md",
-    "Tags"
+    "Tags/Untitled.md"
   ]
 }
