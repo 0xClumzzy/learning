@@ -30,4 +30,4 @@ The above command quits without changes to the file
 	
 	Typin in `i` enters insert mode, allows editing file contents
 	`shift i` inserts at the beginning of the line
-	
+	So while movin your cursor, whatever letter it is on `x` will remove that letter 
