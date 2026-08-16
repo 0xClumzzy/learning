@@ -12,4 +12,13 @@ The above command quits without changes to the file
 	```
 	:!ls
 	```
-	lists 
+	lists files
+- [ ] VIM modes
+	- [ ] normal mode
+	```
+	:
+	```
+	starts a command
+	eg=> `:q`
+	quits 
+	
