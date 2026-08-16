@@ -36,4 +36,5 @@ The above command quits without changes to the file
 	On the other hand, `a` will append
 	
 	`dw` will delete a specific word
+	if you wanna delete a whole as line, go to the start of the line, `d$` deletes the whole line 
 	
