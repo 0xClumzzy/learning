@@ -44,4 +44,8 @@ The above command quits without changes to the file
 	`2e` moves the cursor to the end of the third word 
 	`0` moves to the start of the line
 	`$` jumps to the end
-	`^` jumps to the first non whitespace character on the line  
+	`^` jumps to the first non whitespace character on the line 
+	
+	`u` will undo chnages one by one
+	`U` undoes changes made onthe line
+	 
