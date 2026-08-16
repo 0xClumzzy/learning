@@ -11,12 +11,14 @@
             "id": "a1f7564ec02c0006",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Learning a new skill.excalidraw.md"
+                "file": "vim.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Learning a new skill.excalidraw"
+              "icon": "lucide-file",
+              "title": "vim"
             }
           }
         ]
@@ -168,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Learning a new skill.excalidraw.md",
+                "file": "vim.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -176,13 +178,24 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "5d96b380256ce8b3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,8 +216,9 @@
   },
   "active": "a1f7564ec02c0006",
   "lastOpenFiles": [
-    "Tags",
     "Excalidraw/Learning a new skill.excalidraw.md",
+    "vim.md",
+    "Tags",
     "Excalidraw",
     ".md",
     "Tags/Untitled.md"
