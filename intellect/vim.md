@@ -21,4 +21,7 @@ The above command quits without changes to the file
 	starts a command
 	eg=> `:q`
 	quits 
-	``
+	
+	Typin in `i` enters insert mode, allows editing file contents
+	`shift i` inserts at the beginning of the line
+	
