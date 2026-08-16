@@ -35,3 +35,5 @@ The above command quits without changes to the file
 	
 	On the other hand, `a` will append
 	
+	`dw` will delete a specific word
+	
