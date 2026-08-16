@@ -42,4 +42,5 @@ The above command quits without changes to the file
 	
 	`2w` will move two words forward, you can increase the count 3 moves 3 words....
 	`2e` moves the cursor to the end of the third word 
+	`0` moves to the start of the line
 	
