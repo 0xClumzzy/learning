@@ -13,6 +13,12 @@ The above command quits without changes to the file
 	:!ls
 	```
 	lists files
+
+- [ ] MOVIN THE CURSOR
+	Just use the fucking arrows like a normal person
+	or use the letters (`h`(left), `l`(right), `j`(down), `k`(up))
+	pick yo poison
+
 - [ ] VIM modes
 	- [ ] normal mode
 	```
