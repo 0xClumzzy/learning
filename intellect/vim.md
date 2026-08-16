@@ -34,7 +34,12 @@ The above command quits without changes to the file
 	So while movin your cursor, whatever letter it is on `x` will remove that letter 
 	
 	On the other hand, `a` will append
+	`d` will delete the whole line 
+	`dw` will delete a specific word until the start of the next word
+	`de` is until the end
 	
-	`dw` will delete a specific word
 	if you wanna delete a whole as line, go to the start of the line, `d$` deletes the whole line 
+	
+	`2w` will move two words forward, you can increase the count 3 moves 3 words....
+	`2e` moves the cursor to the end of the third word 
 	
