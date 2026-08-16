@@ -48,4 +48,5 @@ The above command quits without changes to the file
 	
 	`u` will undo chnages one by one
 	`U` undoes changes made onthe line
-	 
+	`ctrl+r` redoes the undo, if im making sense
+	`p` will put previosly deleted content 
