@@ -208,8 +208,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e8461dbf07cb5d0c",
+  "active": "9d119b6943eeea55",
   "lastOpenFiles": [
+    "cCode/online",
     "study/programming/if-statements .md",
     "study/programming/Ternary operator .md",
     "C.md",
@@ -247,7 +248,6 @@
     "Pasted image 20260726185640.png",
     "Pasted image 20260726174508.png",
     "Notes/x86_64.md",
-    "Untitled.md",
-    "math functions.md"
+    "Untitled.md"
   ]
 }

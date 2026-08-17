@@ -16,3 +16,12 @@ int y = 5;
 int max = (x>y) ? x:y;
 ```
 if x is greater than y return x otherwise return y 
+with strings:
+checking if user is online too
+```C
+int main()
+{
+	bool isOnline = true;
+	
+}
+```

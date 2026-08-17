@@ -3,6 +3,6 @@
 
 int main(){
     bool isOnline = true;
-    char status[] = isOnline ? "Online" : "Offline";
-    printf("Status: %s\n", status);
+   printf("Status: %s\n", isOnline ? "Online" : "Offline");
+   return 0;
 }
