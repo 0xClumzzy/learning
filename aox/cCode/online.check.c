@@ -3,5 +3,5 @@
 
 int main(){
     bool isOnline = true;
-    
+    char status[] = isOnline ? ""
 }
