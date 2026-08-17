@@ -1,4 +1,6 @@
 {
-  "vimMode": false,
-  "autoConvertHtml": true
+  "vimMode": true,
+  "autoConvertHtml": true,
+  "strictLineBreaks": true,
+  "showLineNumber": true
 }

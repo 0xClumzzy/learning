@@ -1,0 +1,9 @@
+{
+	"id": "bionic-reading",
+	"name": "Bionic Reading",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Applies a bionic reading effect in Reading View by bolding the first portion of each word for faster reading.",
+	"author": "OMEG-Lu",
+	"isDesktopOnly": false
+}
