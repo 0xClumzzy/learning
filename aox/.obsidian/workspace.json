@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a7fb098267ac25b5",
@@ -209,7 +208,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad05677b1dfbfbb1",
+  "active": "97834b17d717c225",
   "lastOpenFiles": [
     "study/programming/if-statements .md",
     "study/programming/Ternary operator .md",
