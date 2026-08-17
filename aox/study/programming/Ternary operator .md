@@ -7,7 +7,6 @@ so the ? is the if action, condition determines the return value
 Check if student if discount if true
 ```c
 bool isStudent = true;
-float price = 10;
-  
+float price = isStudent ? 10:20;  
 ```
-if 
+if conditio
