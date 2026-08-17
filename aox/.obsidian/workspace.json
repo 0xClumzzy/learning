@@ -191,21 +191,11 @@
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of arrays"
-            }
-          },
-          {
-            "id": "7a90c38779474e28",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
