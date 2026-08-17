@@ -12,5 +12,7 @@ float price = isStudent ? 10:20;
 if condition is true price discount 
 ```c
 int x = 3;
-int 
+int y = 5; 
+int max = (x>y) ? x:y;
 ```
+if x is greater than y return x otherwise return y 
