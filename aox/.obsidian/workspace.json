@@ -93,7 +93,7 @@
             }
           },
           {
-            "id": "54102b70fe613a0c",
+            "id": "c94ae5dc77e1494c",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -210,7 +210,6 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "univer:Univer": false,
       "obsidian-git:Open Git source control": false
     }
   },
