@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "6cb2ea2e46859ed3",
+        "id": "cc9a260210162d16",
         "type": "tabs",
         "children": [
           {
-            "id": "3c74aa231e5ab8d0",
+            "id": "ad05677b1dfbfbb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C.md",
+                "file": "study/programming/Ternary operator .md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C"
-            }
-          },
-          {
-            "id": "bcdd1079001c34f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "study/programming/arrays.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "arrays"
+              "title": "Ternary operator"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/programming/arrays.md",
+                "file": "study/programming/Ternary operator .md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -213,13 +198,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bcdd1079001c34f6",
+  "active": "ad05677b1dfbfbb1",
   "lastOpenFiles": [
+    "study/programming/Ternary operator .md",
+    "C.md",
+    "study/programming/arrays.md",
     "cCode/ai",
     "cCode/input.Array.c",
     "cCode/arrays.c",
     "study/programming/practice programs/banking app .md",
-    "study/programming/arrays.md",
     "cCode/bank",
     "cCode/banking.c",
     "study/programming/practice programs/practice programs.md",
@@ -237,7 +224,6 @@
     "cCode/functions.c",
     "study/programming/programming.md",
     "study/programming/if-statements .md",
-    "cCode/nested",
     "study/programming/practice programs/Hello World.md",
     "study/programming/practice programs/Compound Intest calc.md",
     "study/programming/practice programs/Shoppingcart .md",
@@ -252,7 +238,6 @@
     "Pasted image 20260726174508.png",
     "Notes/x86_64.md",
     "Untitled.md",
-    "C.md",
     "math functions.md"
   ]
 }

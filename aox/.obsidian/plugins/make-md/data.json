@@ -42,11 +42,10 @@
     "//study/study/shellcode",
     "//study/study/xploitation",
     "//study/study/Networking",
-    "//study/study/programming",
-    "//Tags",
+    "//study/study/programming/study/programming/practice programs",
+    "//cCode/cCode/math",
     "//study",
-    "//cCode",
-    "//study/study/programming/study/programming/practice programs"
+    "//study/study/programming"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
