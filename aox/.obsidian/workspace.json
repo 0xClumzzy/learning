@@ -84,13 +84,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
           },
           {
-            "id": "7c48e694f6b02fdf",
+            "id": "54102b70fe613a0c",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
