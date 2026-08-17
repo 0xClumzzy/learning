@@ -9,4 +9,4 @@ Check if student if discount if true
 bool isStudent = true;
 float price = isStudent ? 10:20;  
 ```
-if conditio
+if condition is true price becomes 
