@@ -4,3 +4,4 @@ syntax
 so the ? is the if action, condition determines the return value 
 <u>USE CASES</u>
 1. Value based conditions 
+If u recall the student function, thaty checked if student then discounts depending 

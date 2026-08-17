@@ -45,7 +45,8 @@
     "//study/study/programming/study/programming/practice programs",
     "//cCode/cCode/math",
     "//study",
-    "//study/study/programming"
+    "//study/study/programming",
+    "//cCode"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
