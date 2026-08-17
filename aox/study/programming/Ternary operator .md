@@ -22,6 +22,16 @@ checking if user is online too
 int main()
 {
 	bool isOnline = true;
+	printf("Status:  %s\n", isOnline ? "Online": "Offline);
+}
+```
+Shout out bro code for this one
+CHeck if a num is even or odd
+```C
+int main(){
 	
+	int num = 7;
+	printf("Num: %d is %s", num, (num % 2 == 0) ? "even":"odd");
+	return 0;
 }
 ```
