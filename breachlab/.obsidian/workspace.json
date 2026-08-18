@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "7d43091aa0268090",
+    "id": "9f7a76c93830fd41",
     "type": "split",
     "children": [
       {
-        "id": "cc9a260210162d16",
+        "id": "78966f8b8edadec2",
         "type": "tabs",
         "children": [
           {
-            "id": "ad05677b1dfbfbb1",
+            "id": "eb0de785625e5484",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/programming/reading-from-files.md",
+                "file": "GHOST/GHOST.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "reading-from-files"
+              "title": "GHOST"
             }
           }
         ]
@@ -27,28 +27,30 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "31234abbba15115f",
+    "id": "81e9623c59142eb5",
     "type": "split",
     "children": [
       {
-        "id": "bce13beac2ed18a4",
+        "id": "18a1b768786002a6",
         "type": "tabs",
         "children": [
           {
-            "id": "d0601a4b00907329",
+            "id": "053b792b26fb653c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "6e8490f2005063c2",
+            "id": "860f491ed34e7f57",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +67,7 @@
             }
           },
           {
-            "id": "5b4cad0721f592ee",
+            "id": "0e052d8b5601b1c3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,7 +80,7 @@
             }
           },
           {
-            "id": "96ca1094f309413c",
+            "id": "490616cda7c62e88",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -95,20 +97,20 @@
     "width": 300
   },
   "right": {
-    "id": "a7fb098267ac25b5",
+    "id": "99aa4b1785e6c546",
     "type": "split",
     "children": [
       {
-        "id": "e6f772c0969fa6d2",
+        "id": "406f5a918f2ef0b5",
         "type": "tabs",
         "children": [
           {
-            "id": "086bca88fe6518c9",
+            "id": "b365cc7708f8cfea",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/programming/variables.md",
+                "file": "GHOST/GHOST.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,25 +120,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for variables"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "eb327d8f0b4b0965",
+            "id": "2f0469d6aff43d77",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/programming/variables.md",
+                "file": "GHOST/GHOST.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from variables"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "8b3724faad1fcab4",
+            "id": "1f596ccef741bad0",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -151,7 +153,7 @@
             }
           },
           {
-            "id": "282d31ead61b9325",
+            "id": "51fe7cf02bf17f2b",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -165,12 +167,12 @@
             }
           },
           {
-            "id": "e8461dbf07cb5d0c",
+            "id": "c99738e000b29fa1",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/programming/structs.md",
+                "file": "GHOST/GHOST.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,23 +180,13 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
-          },
-          {
-            "id": "9d119b6943eeea55",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,49 +197,15 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
+      "markdown-importer:Open format converter": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad05677b1dfbfbb1",
+  "active": "eb0de785625e5484",
   "lastOpenFiles": [
-    "cCode/read",
-    "cCode/read.From.files.c",
-    "study/programming/writing to files in c.md",
-    "study/programming/reading-from-files.md",
-    "cCode/userInput/input.Array.c",
-    "cCode/fromi.c",
-    "cCode/file.txt",
-    "cCode/write",
-    "cCode/write-to-files.c",
-    "study/programming/POINTERS.md",
-    "cCode/birthday.c",
-    "cCode/bday",
-    "study/programming/structs.md",
-    "cCode/astructs.c",
-    "study/programming/programming.md",
-    "study/programming/enums.md",
-    "cCode/status.c",
-    "study/programming/typedef.md",
-    "study/programming/Ternary operator .md",
-    "study/programming/if-statements .md",
-    "C.md",
-    "study/programming/arrays.md",
-    "study/programming/practice programs/banking app .md",
-    "study/programming/practice programs/practice programs.md",
-    "study/programming/practice programs/Area of a circle.md",
-    "study/programming/pseudo random numbers.md",
-    "study/programming/break&continue.md",
-    "study/programming/sleep.md",
-    "study/programming/for-loop.md",
-    "study/programming/while loops .md",
-    "study/programming/functions .md",
-    "study/programming/practice programs/Hello World.md",
-    "study/programming/practice programs/Compound Intest calc.md",
-    "study/programming/practice programs/Shoppingcart .md",
-    "study/programming/switches.md",
-    "Notes/Notes.md",
-    "Pasted image 20260726191034.png",
-    "Pasted image 20260726185640.png",
-    "Pasted image 20260726174508.png"
+    "Tags",
+    "GHOST/GHOST.md",
+    "GHOST"
   ]
 }
