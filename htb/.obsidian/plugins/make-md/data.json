@@ -49,7 +49,10 @@
     "//labs/labs/machines/labs/machines/hard",
     "//labs/labs/machines/labs/machines/easy/labs/machines/easy/paperwork.Info",
     "//Excalidraw",
-    "//labs/labs/machines/labs/machines/medium"
+    "//labs/labs/machines/labs/machines/medium",
+    "//academy/academy/CPTS",
+    "//academy/academy/CPTS/academy/CPTS/File tranfers ",
+    "//academy/academy/CPTS/academy/CPTS/File tranfer methods"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
