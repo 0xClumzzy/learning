@@ -23,3 +23,13 @@ cat record_* | grep -v "STATUS"
 thats the solution from the writeup. The way i solved it, i looked into the contents of the only odd file and eventually found the flag
 flag: Gr3p_F1nds_Truth
 # ghost5
+hidden listener
+no ss/netstat
+1. find localports 
+```
+nmap -p- --open localhost | grep -oP '^\d+' > ports
+```
+2. connect to all them 
+```
+for port in p
+```
