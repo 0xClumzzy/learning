@@ -80,7 +80,7 @@
             }
           },
           {
-            "id": "490616cda7c62e88",
+            "id": "45628854fd4f8ccc",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -180,13 +180,23 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "77bc4afec5084ac7",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
