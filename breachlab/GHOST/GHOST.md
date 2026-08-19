@@ -36,3 +36,8 @@ for port in $(cat ports); do echo ""| nc -w1 localhost $port && echo "$port RESP
 flag: P0rts_N3v3r_L13
 
 # ghost6
+ so the flag was hidden inside the env file(API)
+flag: 3nv_L34ks_3v3ryth1ng
+# ghost 7 
+decode the item 
+flag: D3c0d3_0r_D13 
