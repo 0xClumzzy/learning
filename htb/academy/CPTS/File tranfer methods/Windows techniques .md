@@ -9,4 +9,5 @@ The `-w` disables line wrapping, 0 means off, default is 76. This makes sure the
 [IO.FILE]::WriteAllBytes("C:\\Desktop\\paylaod.txt", 
 [Convert]::FromBase64String("SAhsdigbghcjeowgf=="))
 ```
-`[IO.FILE]::WriteAllBytes`
+`[IO.FILE]::WriteAllBytes("path", bytes` coverts the base64 payload into a bytes array 
+then we convert it from base64 using the `[Convert]::FromBase64String`
