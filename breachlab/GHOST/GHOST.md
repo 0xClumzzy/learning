@@ -33,3 +33,6 @@ nmap -p- --open localhost | grep -oP '^\d+' > ports
 ```
 for port in $(cat ports); do echo ""| nc -w1 localhost $port && echo "$port RESPONDED"; done 
 ```
+flag: P0rts_N3v3r_L13
+
+# ghost6
