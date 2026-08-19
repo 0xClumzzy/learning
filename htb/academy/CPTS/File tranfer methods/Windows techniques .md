@@ -12,4 +12,11 @@ The `-w` disables line wrapping, 0 means off, default is 76. This makes sure the
 `[IO.FILE]::WriteAllBytes("path", bytes` coverts the base64 payload into a bytes array 
 then we convert they `bytes` from base64 using the `[Convert]::FromBase64String("b64 string")`
 
-The `Get-FileHash`  
+The `Get-FileHash` cmdlet can be used to compare the file hashed to make sure the payloads are the same
+```
+Get-FileHash C:\\De
+```
+In linux the `md5sum` utility slaps too 
+```
+md5sum payload.txt
+```
