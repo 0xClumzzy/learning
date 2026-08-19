@@ -24,4 +24,8 @@ md5sum payload.txt
 ```
 
 - [ ] POWERSHELL DOWNLOADFILE METHOD
-Class name WEbCLient 
+Class name `Net.WebClient` and the `DownlaodFile` method 
+- FILE DOWNLOAD 
+```powershell
+
+```
