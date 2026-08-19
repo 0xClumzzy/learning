@@ -7,5 +7,6 @@ The `-w` disables line wrapping, 0 means off, default is 76. This makes sure the
 2. INSIDE windos pwsh 
 ```
 [IO.FILE]::WriteAllBytes("C:\\Desktop\\paylaod.txt", 
-[Convert]::FromBase64String)
+[Convert]::FromBase64String("SAhsdigbghcjeowgf=="))
 ```
+`[IO.FILE]::WriteAllBytes`
