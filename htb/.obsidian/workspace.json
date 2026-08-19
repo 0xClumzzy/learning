@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "38aa0adbedcbe556",
+        "id": "d38843adfc7e408f",
         "type": "tabs",
         "children": [
           {
-            "id": "84cb2ed5fbda6666",
+            "id": "8df372945ec0f0d0",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Pasted image 20260721101033.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260721101033"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -78,7 +76,7 @@
             }
           },
           {
-            "id": "42b2ee520571fdb8",
+            "id": "a15fca994fceb213",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -205,12 +203,12 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -231,8 +229,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "84cb2ed5fbda6666",
+  "active": "8df372945ec0f0d0",
   "lastOpenFiles": [
+    "Pasted image 20260721101033.png",
     "labs/machines/medium/FIREFLOW.md",
     "labs/machines/medium/fireflow.Info/mcp.py",
     "labs/machines/medium/fireflow.Info/flow.json",
@@ -272,7 +271,6 @@
     "academy/vuln/CVSS scoring .md",
     "academy/vuln/Damage Potential- Reproducibility- Exploitability- Affected Users- Discoverability.md",
     "Pasted image 20260721101121.png",
-    "Pasted image 20260721101033.png",
     "Pasted image 20260721101011.png",
     "Pasted image 20260721100820.png",
     "Pasted image 20260719013113.png",
