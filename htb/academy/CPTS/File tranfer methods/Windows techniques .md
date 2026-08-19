@@ -1,4 +1,6 @@
 OK lets get started
+
+- [x] COPY AND PASTE METHOD 
 1. B64 ENCODE YOUR PAYLOAD
 ```bash
 cat "payload.txt" | base64 -w 0;echo
@@ -14,9 +16,11 @@ then we convert they `bytes` from base64 using the `[Convert]::FromBase64String(
 
 The `Get-FileHash` cmdlet can be used to compare the file hashed to make sure the payloads are the same
 ```
-Get-FileHash C:\\De
+Get-FileHash C:\\Desktop\payload.txt -Algorithm md5
 ```
 In linux the `md5sum` utility slaps too 
 ```
 md5sum payload.txt
 ```
+
+- [ ] POWERSHELL DOWNLOADFILE METHOD
