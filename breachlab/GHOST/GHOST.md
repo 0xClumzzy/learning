@@ -21,5 +21,5 @@ flag: P3rm1ss10ns_M4tt3r
 cat record_* | grep -v "STATUS"
 ```
 thats the solution from the writeup. The way i solved it, i looked into the contents of the only odd file and eventually found the flag
-
+flag: Gr3p_F1nds_Truth
 # ghost5
