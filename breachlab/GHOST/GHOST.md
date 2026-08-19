@@ -31,5 +31,5 @@ nmap -p- --open localhost | grep -oP '^\d+' > ports
 ```
 2. connect to all them 
 ```
-for port in p
+for port in $(cat ports); do echo ""| nc -w1 localhost $port && echo "$port RESPONDED"; done 
 ```
