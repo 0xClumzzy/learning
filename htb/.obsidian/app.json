@@ -1,3 +1,5 @@
 {
-  "rightToLeft": true
+  "rightToLeft": true,
+  "strictLineBreaks": true,
+  "vimMode": true
 }
