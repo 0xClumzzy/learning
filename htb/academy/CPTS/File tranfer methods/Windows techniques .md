@@ -103,5 +103,5 @@ To be continued
 UPLOAD OPERATIONS 
 Powershell base64 encode 
 ```
-[Convert]::ToBase64String((Get-Content -path "C:\\Users\Public\payload" -Encoding ))
+[Convert]::ToBase64String((Get-Content -path "C:\\Users\Public\payload" -Encoding byte ))
 ```
