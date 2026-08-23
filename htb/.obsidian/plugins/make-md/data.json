@@ -53,7 +53,8 @@
     "//academy/academy/CPTS",
     "//academy/academy/CPTS/academy/CPTS/File tranfers ",
     "//academy/academy/CPTS/academy/CPTS/File tranfer methods",
-    "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info"
+    "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info",
+    "//techniques"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
