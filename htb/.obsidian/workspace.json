@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/CPTS/File tranfer methods/Windows techniques .md",
+                "file": "academy/CPTS/File tranfer methods/Linux techniques .md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows techniques"
+              "title": "Linux techniques"
             }
           }
         ]
@@ -236,10 +236,11 @@
   },
   "active": "8df372945ec0f0d0",
   "lastOpenFiles": [
+    "academy/CPTS/File tranfer methods/Windows techniques .md",
+    "academy/CPTS/File tranfer methods/Linux techniques .md",
     "academy/CPTS/File tranfer methods/52d91df5-24dd-4aa3-b156-8d777b89481e.zip",
     "academy/CPTS/File tranfer methods/Unconfirmed 687925.crdownload",
     "techniques/personal favorite techniques.md",
-    "academy/CPTS/File tranfer methods/Windows techniques .md",
     "labs/machines/medium/FIREFLOW.md",
     "labs/machines/medium/fireflow.Info/fireflow.Info.md",
     "academy/CPTS/File tranfer methods/fileless threats .md",
@@ -255,7 +256,6 @@
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/README.md",
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/requests-2.34.2.dist-info/REQUESTED",
-    "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/requests-2.34.2.dist-info/INSTALLER",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/idna-3.18.dist-info/licenses/LICENSE.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
