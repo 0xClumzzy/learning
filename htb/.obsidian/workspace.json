@@ -11,14 +11,12 @@
             "id": "8df372945ec0f0d0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "academy/CPTS/File tranfer methods/Windows techniques .md",
-                "mode": "source",
-                "source": false
+                "path": "labs/machines/medium/fireflow.Info"
               },
               "icon": "lucide-file",
-              "title": "Windows techniques"
+              "title": "fireflow.Info"
             }
           }
         ]
@@ -234,15 +232,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8df372945ec0f0d0",
+  "active": "7dfce2ffe1a9e443",
   "lastOpenFiles": [
+    "labs/machines/medium/FIREFLOW.md",
+    "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/CPTS/File tranfer methods/fileless threats .md",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",
-    "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/CPTS/File tranfer methods",
     "Pasted image 20260721101033.png",
-    "labs/machines/medium/FIREFLOW.md",
     "labs/machines/medium/fireflow.Info/mcp.py",
     "labs/machines/medium/fireflow.Info/flow.json",
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/flow.json",
