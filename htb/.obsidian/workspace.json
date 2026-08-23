@@ -78,7 +78,7 @@
             }
           },
           {
-            "id": "f669e995ca9d6876",
+            "id": "d506503aa9fba0a0",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -232,7 +232,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7dfce2ffe1a9e443",
+  "active": "3913e32f21e7bdc8",
   "lastOpenFiles": [
     "labs/machines/medium/FIREFLOW.md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
