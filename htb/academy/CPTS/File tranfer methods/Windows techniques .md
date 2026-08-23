@@ -105,3 +105,9 @@ Powershell base64 encode
 ```
 [Convert]::ToBase64String((Get-Content -path "C:\\Users\Public\payload" -Encoding byte ))
 ```
+to upload, host an upload server on your attacker machine 
+```
+pip3 install uploadserver
+python3 -m uploadserver 
+```
+
