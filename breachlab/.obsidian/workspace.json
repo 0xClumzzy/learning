@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GHOST/GHOST.md",
+                "file": "GHOST/GHOST I.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GHOST"
+              "title": "GHOST I"
             }
           }
         ]
@@ -80,7 +80,7 @@
             }
           },
           {
-            "id": "b454ed82202d7f63",
+            "id": "8b359d1c0b5177da",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -215,7 +215,7 @@
   "active": "eb0de785625e5484",
   "lastOpenFiles": [
     "Tags",
-    "GHOST/GHOST.md",
+    "GHOST/GHOST I.md",
     "GHOST"
   ]
 }
