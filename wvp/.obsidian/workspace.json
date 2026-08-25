@@ -80,8 +80,8 @@
             "state": {
               "type": "mk-path-view",
               "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
+              "icon": "lucide-ghost",
+              "title": "mk-path-view"
             }
           }
         ],
@@ -182,8 +182,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -214,8 +214,7 @@
       "bases:Create new base": false,
       "workspaces:Manage workspace layouts": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "e2f70c487f2124a1",
