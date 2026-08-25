@@ -69,19 +69,22 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
           },
           {
-            "id": "46842b49adc5e1e8",
+            "id": "ec5d5da905bb0eac",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "mk-path-view"
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -214,11 +217,13 @@
       "bases:Create new base": false,
       "workspaces:Manage workspace layouts": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-kanban:Create new board": false
     }
   },
   "active": "e2f70c487f2124a1",
   "lastOpenFiles": [
+    "Tags",
     "Pasted image 20260730192637.png",
     "Pasted image 20260730190833.png",
     "Pasted image 20260730185746.png",
@@ -228,7 +233,6 @@
     "Academy/JuniorWebPentester/Phase1",
     "Academy/JuniorWebPentester/http-request-anatomy-cheat-sheet.md",
     "Untitled Kanban.md",
-    "Academy/JuniorWebPentester/HTTPrequest&response Anatomy.md",
-    "Tags"
+    "Academy/JuniorWebPentester/HTTPrequest&response Anatomy.md"
   ]
 }
