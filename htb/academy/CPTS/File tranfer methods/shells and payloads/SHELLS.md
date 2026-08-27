@@ -20,4 +20,4 @@ The target has a listener, attacker connects
 <u>challanges</u>
 - There has to be a listener already(even made by us) 
 - Has to be on the internal network 
-- operating system firewalls will likel
+- operating system firewalls will likely block incoming traffic
