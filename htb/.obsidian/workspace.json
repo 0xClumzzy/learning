@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d38843adfc7e408f",
+        "id": "91ee4465a0df051d",
         "type": "tabs",
         "children": [
           {
-            "id": "8df372945ec0f0d0",
+            "id": "714e86c18a1ba9bc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academy/CPTS/File tranfer methods/Linux techniques .md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Linux techniques"
+              "title": "New tab"
             }
           }
         ]
@@ -80,7 +76,7 @@
             }
           },
           {
-            "id": "d506503aa9fba0a0",
+            "id": "0e6f6489a0db7867",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -234,12 +230,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8df372945ec0f0d0",
+  "active": "714e86c18a1ba9bc",
   "lastOpenFiles": [
+    "academy/CPTS/File tranfer methods/Linux techniques .md",
     "academy/CPTS/File tranfer methods/82b4928b-6bfa-4da5-9377-5263107d6866.zip",
     "academy/CPTS/File tranfer methods/Unconfirmed 963206.crdownload",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
-    "academy/CPTS/File tranfer methods/Linux techniques .md",
     "academy/CPTS/File tranfer methods/52d91df5-24dd-4aa3-b156-8d777b89481e.zip",
     "academy/CPTS/File tranfer methods/Unconfirmed 687925.crdownload",
     "techniques/personal favorite techniques.md",
@@ -256,7 +252,6 @@
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/poc.py",
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/docker-compose.yml",
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/README.md",
-    "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/idna-3.18.dist-info/licenses/LICENSE.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
