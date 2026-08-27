@@ -16,4 +16,6 @@ A command line interpreter interprets user input text through a terminal emulato
 - $PSversiontable 
 
 BIND SHELL
+The target has a listener, attacker connects 
+
 
