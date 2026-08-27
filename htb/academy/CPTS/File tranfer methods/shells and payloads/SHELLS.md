@@ -5,5 +5,6 @@ SHELL BASICS
 <u>THE ANATOMY OF A SHELL</u>
 - The operating system 
 - terminal emulator
-- the command line/language interpreter/ shell(cli)
+- the command line/language interpreter/ shell
+A command line interpreter interprets user input text 
 
