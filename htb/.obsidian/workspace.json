@@ -11,12 +11,14 @@
             "id": "714e86c18a1ba9bc",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "academy/CPTS/File tranfer methods/shells and payloads"
+                "file": "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "shells and payloads"
+              "title": "SHELLS"
             }
           }
         ]
@@ -232,10 +234,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8f1b8c7b55d62612",
+  "active": "714e86c18a1ba9bc",
   "lastOpenFiles": [
-    "academy/CPTS/File tranfer methods/shells and payloads/.md",
+    "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
     "academy/CPTS/File tranfer methods/shells and payloads/shells and payloads.md",
+    "academy/CPTS/File tranfer methods/shells and payloads/.md",
     "academy/CPTS/File tranfer methods/shells and payloads",
     "academy/CPTS/File tranfer methods/Linux techniques .md",
     "academy/CPTS/File tranfer methods/82b4928b-6bfa-4da5-9377-5263107d6866.zip",
@@ -273,7 +276,6 @@
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/README.md",
-    "labs/machines/easy/ORION.md",
     "Pasted image 20260721171804.png",
     "labs/machines/medium/bedsideInfo/Pasted image 20260721165914.png",
     "Pasted image 20260721101121.png",
