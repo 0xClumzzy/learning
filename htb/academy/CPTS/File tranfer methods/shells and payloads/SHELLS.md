@@ -43,7 +43,15 @@ You need to specify a:
 - shell 
 - listener
 1. Delete any possibility of a pipe you are tryna create 
-```
+```bash
 rm -f /tmp/f
 ```
-2. 
+2. Create yo pipe
+```bash
+mkfifo /tmp/f
+```
+3. Read from the pipe
+```bash
+cat /tmp/f
+```
+4. 
