@@ -21,3 +21,11 @@ The target has a listener, attacker connects
 - There has to be a listener already(even made by us) 
 - Has to be on the internal network 
 - operating system firewalls will likely block incoming traffic
+1. Start a listener
+```bash
+nc -lvnp 7777
+```
+1. connect to it 
+```bash
+nc -nv 10.10.10.10 7777
+```
