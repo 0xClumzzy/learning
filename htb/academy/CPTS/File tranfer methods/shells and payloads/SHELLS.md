@@ -25,6 +25,10 @@ The target has a listener, attacker connects
 ```bash
 nc -lvnp 7777
 ```
+- nc - netcat
+- -l - start a listener
+- v - verbose
+- n - numeric 
 1. connect to it 
 ```bash
 nc -nv 10.10.10.10 7777
