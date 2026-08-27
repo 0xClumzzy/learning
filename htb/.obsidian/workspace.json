@@ -11,10 +11,12 @@
             "id": "714e86c18a1ba9bc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "mk-space",
+              "state": {
+                "path": "academy/CPTS/File tranfer methods/shells and payloads"
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "shells and payloads"
             }
           }
         ]
@@ -230,8 +232,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "714e86c18a1ba9bc",
+  "active": "8f1b8c7b55d62612",
   "lastOpenFiles": [
+    "academy/CPTS/File tranfer methods/shells and payloads/.md",
+    "academy/CPTS/File tranfer methods/shells and payloads/shells and payloads.md",
+    "academy/CPTS/File tranfer methods/shells and payloads",
     "academy/CPTS/File tranfer methods/Linux techniques .md",
     "academy/CPTS/File tranfer methods/82b4928b-6bfa-4da5-9377-5263107d6866.zip",
     "academy/CPTS/File tranfer methods/Unconfirmed 963206.crdownload",
@@ -250,7 +255,6 @@
     "labs/machines/medium/fireflow.Info/flow.json",
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/flow.json",
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/poc.py",
-    "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/docker-compose.yml",
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/README.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/idna-3.18.dist-info/licenses/LICENSE.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
@@ -270,7 +274,6 @@
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/README.md",
     "labs/machines/easy/ORION.md",
-    "academy/vuln/nessus.md",
     "Pasted image 20260721171804.png",
     "labs/machines/medium/bedsideInfo/Pasted image 20260721165914.png",
     "Pasted image 20260721101121.png",
