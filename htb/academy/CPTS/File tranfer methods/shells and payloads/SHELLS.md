@@ -73,5 +73,5 @@ The target acts as a client
 
 USING POWERSHELL TO DISABLE ANTIVIRUS
 ```powershell
-Set-MpPreference -DisableRealtimeMonitoring $true
+	Set-MpPreference -DisableRealtimeMonitoring $true
 ```
