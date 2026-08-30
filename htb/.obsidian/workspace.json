@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "91ee4465a0df051d",
+        "id": "3e07cf78e8e41b7d",
         "type": "tabs",
         "children": [
           {
-            "id": "714e86c18a1ba9bc",
+            "id": "f60be99729fa24b6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
-                "mode": "source",
-                "source": false
+                "path": "labs/machines/easy"
               },
               "icon": "lucide-file",
-              "title": "SHELLS"
+              "title": "easy"
             }
           }
         ]
@@ -94,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "8faf3742ae6b5127",
@@ -235,8 +232,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "714e86c18a1ba9bc",
+  "active": "f60be99729fa24b6",
   "lastOpenFiles": [
+    "labs/machines/easy/NEXUS.md",
+    "labs/machines/easy/nexus.Info",
     "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
     "academy/CPTS/File tranfer methods/shells and payloads/shells and payloads.md",
     "academy/CPTS/File tranfer methods/shells and payloads/.md",
@@ -258,7 +257,6 @@
     "labs/machines/medium/fireflow.Info/mcp.py",
     "labs/machines/medium/fireflow.Info/flow.json",
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/flow.json",
-    "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/poc.py",
     "labs/machines/medium/fireflow.Info/langflow-CVE-2026-33017-poc/README.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/idna-3.18.dist-info/licenses/LICENSE.md",
     "labs/machines/medium/fireflow.Info/dookie/lib/python3.14/site-packages/pip-26.2.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
@@ -276,7 +274,6 @@
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/soupsieve-2.9.1.dist-info/licenses/LICENSE.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
     "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/dookie/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
-    "labs/machines/easy/orion.Info/CVE-2025-32432-PoC/README.md",
     "Pasted image 20260721171804.png",
     "labs/machines/medium/bedsideInfo/Pasted image 20260721165914.png",
     "Pasted image 20260721101121.png",

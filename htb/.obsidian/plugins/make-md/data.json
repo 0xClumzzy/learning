@@ -39,7 +39,6 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//academy",
     "//academy/academy/vuln/academy/vuln/standards",
     "//academy/academy/vuln/academy/vuln/COMPLIANCE STANDARDS",
     "//labs",
@@ -50,12 +49,13 @@
     "//labs/labs/machines/labs/machines/easy/labs/machines/easy/paperwork.Info",
     "//Excalidraw",
     "//labs/labs/machines/labs/machines/medium",
-    "//academy/academy/CPTS",
     "//academy/academy/CPTS/academy/CPTS/File tranfers ",
     "//academy/academy/CPTS/academy/CPTS/File tranfer methods",
     "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info",
     "//techniques",
-    "//academy/academy/CPTS/academy/CPTS/File tranfer methods/academy/CPTS/File tranfer methods/shells and payloads"
+    "//academy/academy/CPTS/academy/CPTS/File tranfer methods/academy/CPTS/File tranfer methods/shells and payloads",
+    "//academy/academy/CPTS",
+    "//labs/labs/machines/labs/machines/easy"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
