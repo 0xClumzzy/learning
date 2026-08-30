@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.991 scan initiated Sun Aug 30 23:42:44 2026 as: nmap -&#45;min-rate 5000 -sCV -oA ./nexus.Nmap/ -p- nexus.htb -->
+<nmaprun scanner="nmap" args="nmap -&#45;min-rate 5000 -sCV -oA ./nexus.Nmap/ -p- nexus.htb" start="1788126164" startstr="Sun Aug 30 23:42:44 2026" version="7.991" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.5.86" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nexus.htb" type="user"/>
+</hostnames>
+</hosthint>
+<host starttime="1788126166" endtime="1788126259"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.129.5.86" addrtype="ipv4"/>
+<hostnames>
+<hostname name="nexus.htb" type="user"/>
+<hostname name="nexus.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65464">
+<extrareasons reason="reset" count="65464" proto="tcp" ports="1-21,23-79,81-627,629-3852,3854-6016,6018-11057,11059-11866,11868-12683,12685-13405,13407-13743,13745-14673,14675-18564,18566-18796,18798-18848,18850-19057,19059-19509,19511-20531,20533-21506,21508-22850,22852-23470,23472-23698,23700-23987,23989-24756,24758-25166,25168-26760,26762-26808,26810-27175,27177-28353,28355-29182,29184-30038,30040-30304,30306-30637,30639-31935,31937-34592,34594-34752,34754-36037,36039-36443,36445-36809,36811-37641,37643-37671,37673-38161,38163-38194,38196-39198,39200-39211,39213-39520,39522-40303,40305-42614,42616-44416,44418-46541,46543-47921,47923-48328,48330-49037,49039-50060,50062-52191,52193-52389,52391-52754,52756-53903,53905-54130,54132-54213,54215-54244,54246-57335,57337-57794,57796-59056,59058-60499,60501-61035,61037-61464,61466-62416,62418-62643,62645-63547,63549-64117,64119-64207,64209-65535"/>
+</extraports>
+<extraports state="filtered" count="69">
+<extrareasons reason="no-response" count="69" proto="tcp" ports="628,3853,6017,11058,11867,12684,13406,13744,14674,18565,18797,18849,19058,19510,20532,21507,22851,23471,23699,23988,24757,25167,26761,26809,27176,28354,29183,30039,30305,30638,31936,34593,34753,36038,36444,36810,37642,37672,38162,38195,39199,39212,39521,40304,42615,44417,46542,47922,48329,49038,50061,52192,52390,52755,53904,54131,54214,54245,57336,57795,59057,60500,61036,61465,62417,62644,63548,64118,64208"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="9.6p1 Ubuntu 3ubuntu13.16" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:9.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 0c:4b:d2:76:ab:10:06:92:05:dc:f7:55:94:7f:18:df (ECDSA)&#xa;  256 2d:6d:4a:4c:ee:2e:11:b6:c8:90:e6:83:e9:df:38:b0 (ED25519)"><table>
+<elem key="fingerprint">0c4bd276ab10069205dcf755947f18df</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN9Ju3bTZsFozwXY1B2KIlEY4BA+RcNM57w4C5EjOw1QegUUyCJoO4TVOKfzy/9kd3WrPEj/FYKT2agja9/PM44=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">2d6d4a4cee2e11b6c890e683e9df38b0</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIH9qI0OvMyp03dAGXR0UPdxw7hjSwMR773Yb9Sne+7vD</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.24.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.24.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-server-header" output="nginx/1.24.0 (Ubuntu)"><elem>nginx/1.24.0 (Ubuntu)</elem>
+</script><script id="http-title" output="Nexus Energy Authority \xE2\x80\x94 Powering the Nation&apos;s Future"><elem key="title">Nexus Energy Authority \xE2\x80\x94 Powering the Nation&apos;s Future</elem>
+</script></port>
+</ports>
+<times srtt="591683" rttvar="164270" to="1248763"/>
+</host>
+<runstats><finished time="1788126259" timestr="Sun Aug 30 23:44:19 2026" summary="Nmap done at Sun Aug 30 23:44:19 2026; 1 IP address (1 host up) scanned in 95.22 seconds" elapsed="95.22" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
