@@ -80,7 +80,7 @@
             }
           },
           {
-            "id": "7eb58fc36db985b5",
+            "id": "c2ce3894156a8fc2",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -234,10 +234,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6e7d3f07c1a98db1",
+  "active": "f60be99729fa24b6",
   "lastOpenFiles": [
-    "labs/machines/easy/PAPERWORK.md",
     "labs/machines/easy/easy.md",
+    "labs/machines/easy/PAPERWORK.md",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.xml",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.nmap",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.gnmap",

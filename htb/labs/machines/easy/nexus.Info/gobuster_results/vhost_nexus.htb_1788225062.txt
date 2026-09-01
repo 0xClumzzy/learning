@@ -1,0 +1,2 @@
+git.nexus.htb [32mStatus: 200[0m [Size: 14474]
+billing.nexus.htb [36mStatus: 302[0m [Size: 390][34m [--> http://billing.nexus.htb/admin/login][0m
