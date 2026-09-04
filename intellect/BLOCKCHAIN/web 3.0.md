@@ -15,4 +15,4 @@ There is no trust in a specific centralized third party web application or centr
 Centralized authorities have control, they can manipulate system rules and data.
 
 - Semantic web 
-Semantic web allows
+Semantic web allows web apps to perform complex web applications through understanding the content and context of the web data. it uses meta data and artificial intelligence to provide 
