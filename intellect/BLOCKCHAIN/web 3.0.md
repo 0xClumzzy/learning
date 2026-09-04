@@ -18,4 +18,4 @@ Centralized authorities have control, they can manipulate system rules and data.
 Semantic web allows web apps to perform complex web applications through understanding the content and context of the web data. it uses meta data and artificial intelligence to provide meanings(semantics) to user generated data.
 
 - Interoperability
-Seamless data f
+Seamless data flow between services 
