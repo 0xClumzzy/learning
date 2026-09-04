@@ -41,3 +41,6 @@ flag: 3nv_L34ks_3v3ryth1ng
 # ghost 7 
 decode the item 
 flag: D3c0d3_0r_D13 
+
+#ghost 8
+

@@ -1,0 +1,133 @@
+- RECON
+  - Port Scan
+    - 22/tcp -> SSH (OpenSSH 9.6p1)
+    - 8080/tcp -> HTTP (Werkzeug 3.1.3 / Python 3.12.3)
+  - Web
+    - Blockchain Platform
+      - Wallet Management
+      - Mining System
+      - Transactions
+      - VIP Node Registration (requires 10+ coins)
+    - API Endpoints
+      - /dashboard
+      - /mining_data
+      - /submit_block
+    - Directory Fuzzing
+      - /admin (403 Forbidden)
+      - /dashboard (200 OK)
+  - Goal: Mine 10 coins for VIP access
+
+- WEB EXPLOITATION
+  - Mining VIP Coins
+    - Create Wallet
+      - Generate keypair JSON -> Upload to dashboard
+    - Python Miner Script
+      - Download /mining_data
+      - Parse blockchain state
+      - Build candidate blocks
+        - Include Blockchain_Reward transaction first
+      - SHA-256 PoW (hash starts with "00000")
+      - POST to /submit_block
+    - Result: 10 coins -> VIP Access Granted
+  - SSRF -> Admin Panel
+    - Entry Point
+      - Node Manager accepts URLs
+      - Filter: "localhost" & "127.0.0.1" blocked
+      - Bypass: http://0.0.0.0:8080/admin
+    - Flask Proxy Bridge
+      - Register URL in Node Manager
+      - Get volatile node index
+      - Fetch through /dashboard/vip/nodes/test_node/<index>
+    - Result: Full Admin Dashboard Access
+      - Backup/Restore
+      - Blockchain Validation
+      - System Information
+      - Node Management 
+- USER(Walter)
+  - Ping Command Injection
+    - Discovery
+      - Error: "ping: invalid argument: '40.0.0.0'"
+    - Root Cause
+      - Command: ping -c 4<host> (missing space)
+    - URL Parsing Differential
+      - Registration Parser
+        - http://x;payload@0.0.0.0:8080/
+        - hostname = '0.0.0.0'
+      - Ping Reconstruction
+        - Uses full authority = 'x;payload@0.0.0.0'
+        - Command injection via semicolons
+    - RCE Script
+      - Hex-encode commands
+      - wrapper: echo${IFS}<hex>|xxd -r -p|sh
+      - payload: http://x;{wrapper};a@0.0.0.0:8080/
+  - Results
+    - Reverse Shell as walter
+    - user.txt captured
+    - SSH Persistence
+      - Generate ed25519 keypair
+      - Add to authorized_keys
+      - Stable SSH session
+  - Local Enumeration
+    - Found: /opt/staging/smart_contracts/dev_app.py
+    - Runs as 'hank' user 
+- ROOT PRIVILEGE
+  - 1 Hank Pivot
+    - Debug Hook Exploit
+      - Upload contract with "debug": "True"
+      - Arbitrary File Read
+        - __meta__.log_file traversal
+        - Example: ../../../../etc/passwd
+      - Arbitrary File Append
+        - logic.mint = "allow"
+        - hooks.on_mint = "log"
+        - __meta__.log_content -> appends to any file
+    - SSH Key Injection
+      - Target: /home/hank/.ssh/authorized_keys
+      - Trigger: contract_mint action
+      - Result: SSH as hank
+  - 2 Local Enumeration (Hank)
+    - psyp monitoring -> Root cron jobs found
+    - Backup script runs every 5 minutes
+    - FTP credentials exposed
+      - ftpuser:KTkJSAjuDjSOocAYLgYa
+  - 3 TOCTOU Race Attack
+    - Restore Daemon Process
+      - Trigger: /opt/staging/restore marker file
+      - Download: /var/restore_work/_opt_staging.tar.gz
+      - Verify: sha256sum checksum
+      - Extract: tar -C / (as root)    
+- Exploit Preparation
+      - Create malicious archive
+        - Member: .poc (renamed /bin/bash)
+        - Owner: root:root
+        - Mode: 4755 (setuid)
+      - Position: /var/restore_work/.xpl.tar.gz
+    - Race Conditions
+      - IN_CLOSE_WRITE -> Legitimate archive written
+      - IN_CLOSE_NOWRITE -> Checksum verification closes file
+      - Atomic replacement -> os.replace()
+        - Swap .xpl.tar.gz -> _opt_staging.tar.gz
+    - Extraction
+      - tar -C / reopens same path
+      - Extracts setuid binary to /.poc
+    - Root Shell
+      - $ /.poc -p
+      - uid=1001(hank) gid=1003(hank) euid=0(root)
+      - cat /root/root.txt -> Root flag captured
+
+- BACKUP SYSTEM DETAILS
+  - Backup Script (backup.sh)
+    - Creates archives of /opt/* directories
+    - Records sha256 checksums
+    - Uploads via FTP with exposed credentials
+  - Restore Daemon (restore_daemon.sh)
+    - Checks for /opt/*/restore marker
+    - Downloads archive from FTP
+    - Verifies with sha256sum
+    - Extracts with tar -C / (root context)- Python Automation (mining, SSRF proxy, RCE)
+- Command Injection (via URL userinfo)
+- SSRF Bypass (0.0.0.0 vs localhost)
+- Debug Flag Abuse (Flask app)
+- Path Traversal (arbitrary file read/write)
+- TOCTOU Race Condition (archive verification)
+- Setuid Binary Injection (tar extraction)
