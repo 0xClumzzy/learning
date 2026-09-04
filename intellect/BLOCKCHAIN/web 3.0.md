@@ -1,1 +1,1 @@
-tECHNOLOGIES THAT 
+Technologies that decentralize data ownership 
