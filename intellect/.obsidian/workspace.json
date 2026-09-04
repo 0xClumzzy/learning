@@ -79,7 +79,11 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "2c76aa735fe7cc57",
+=======
+            "id": "db7d4998abb492ae",
+>>>>>>> 2158fb9 (help)
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -182,13 +186,16 @@
   },
   "active": "c566e62901c880c0",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "BLOCKCHAIN/web 3.0.md",
     "BLOCKCHAIN/Untitled 1.md",
     "BLOCKCHAIN/BLOCKCHAIN.md",
     "BLOCKCHAIN",
+=======
+    "Tags",
+>>>>>>> 2158fb9 (help)
     "vim.md",
     "Excalidraw/Learning a new skill.excalidraw.md",
-    "Tags",
     "Excalidraw",
     ".md",
     "Tags/Untitled.md"
