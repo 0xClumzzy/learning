@@ -10,4 +10,9 @@ Different entities own the infrastructure, user pays directly to the storage pro
 Decentralized applications also store data in replicas and in multiple locations to ensure data consistency
 
 - Trustlessness
-There is no trust in a specific centralized third party web application or  
+There is no trust in a specific centralized third party web application or central authority to manage transcations, data and interactions 
+
+Centralized authorities have control, they can manipulate system rules and data.
+
+- Semantic web 
+Semantic web allows
