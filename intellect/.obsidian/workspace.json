@@ -74,7 +74,7 @@
             }
           },
           {
-            "id": "0b8f2baccacba47e",
+            "id": "2c76aa735fe7cc57",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -159,8 +159,7 @@
       "markdown-importer:Open format converter": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "homepage:Open homepage": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "e7a7b303c61786dc",
