@@ -38,7 +38,8 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/"
+    "/",
+    "//BLOCKCHAIN"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
