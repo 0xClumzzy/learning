@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "6d2263a7cc27870b",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "c566e62901c880c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "908a1e0ca02a794e",
@@ -180,10 +179,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "c566e62901c880c0",
   "lastOpenFiles": [
-    "BLOCKCHAIN/Untitled 1.md",
     "BLOCKCHAIN/web 3.0.md",
+    "BLOCKCHAIN/Untitled 1.md",
     "BLOCKCHAIN/BLOCKCHAIN.md",
     "BLOCKCHAIN",
     "vim.md",
