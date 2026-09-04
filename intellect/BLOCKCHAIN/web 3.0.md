@@ -5,4 +5,6 @@ Technologies that decentralize data ownership and control on the network
 3. The tech has automatic ways to control user interaction 
 THE CORE IDEA 
 - Decentralization 
-Different entities own the network, user pays directly
+Different entities own the infrastructure, user pays directly to the storage provider to get access 
+
+Decentralized applications also store data in replicas and in multiple locations to ensure data consistency 
