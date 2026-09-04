@@ -7,4 +7,7 @@ THE CORE IDEA
 - Decentralization 
 Different entities own the infrastructure, user pays directly to the storage provider to get access 
 
-Decentralized applications also store data in replicas and in multiple locations to ensure data consistency 
+Decentralized applications also store data in replicas and in multiple locations to ensure data consistency
+
+- Trustlessness
+There is no trust in a specific centralized third party web application or  
