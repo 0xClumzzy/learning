@@ -11,4 +11,4 @@ NODE TYPES
 
 Full nodes enforce concensus rules and store everything, if u run a full node you verify everything no need to trust anyone
 
-Light nodes sacrifice independence for convenience. They can verify wether a transaction exists on a block  
+Light nodes sacrifice independence for convenience. They can verify whether a transaction exists on a block through a *merkle proof* but they trust the full node to tell them the full honest chain state 
