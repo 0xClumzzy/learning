@@ -4,7 +4,7 @@ A blockchain is a distributed, append only ledger shared accross many nodes with
 3. No trusted coordinator. Nodes dont trust each other. They agree on the current state via a consensus protocol. The rule is follow  the chain the consesus rules declared
 4. Trust-minimization. You trust the cryptography,software and concensus. Theres no central bank
 5. Finality is probabilistic or exoplicit. In PoW like bitcoin, a transaction gets h arder to to reverse as more blocks pile on top(usually 6 confirmations = proactically final). In BTF/PoS chains, finality casn be explicit after a vote/.
-CODE EXAMPLE
+CODE EXAMPLE(mini blockchain)
 ```python 
 import hashlib 
 
@@ -17,4 +17,5 @@ CODE BREAKDOWN:
 ```python
 hashlib.sha256((prev_hash + data).encode()).hexdigest()
 ```
-1. `hashlib.sha256()` - it calculates the sha256 hash and returns a hash object
+This is a the heart of the mini blockchain
+1. `hashlib.sha256()` - it calculates the sha256 hash and returns a hash object(256 bit fingerprint)
