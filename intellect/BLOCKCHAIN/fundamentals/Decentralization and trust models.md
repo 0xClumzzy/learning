@@ -17,6 +17,8 @@ TRUST ASSUMPTIONS
 
 When you use a blockchain you are trusting depending on how you interact
 
-|     |     |
-| --- | --- |
-|     |     |
+| HOW YOU INTERACT | WHAT YOU TRUST |
+| ---------------- | -------------- |
+|                  |                |
+|                  |                |
+|                  |                |
