@@ -56,8 +56,7 @@ The triples create a graph-based data structures representing different entity-r
 - Web Ontology Language
 "*grammar and dictionary rules for RDF data*"
 A language for defining ontologies, or formal representations of knowledge relationships between concepts(logical relations)
-=> FULL LOGIC, RULES, REASONING
-
+=> FULL LOGIC, RULES, REASONING, INFERENCING 
 
 
 
