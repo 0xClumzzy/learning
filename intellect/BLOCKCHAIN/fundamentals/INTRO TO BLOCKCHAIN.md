@@ -18,6 +18,10 @@ prev = "0"*64
 for txs in ["alice->bob $10", "bob->carol $20", "carol->dave $5"]:
 	h = hash_block(txs, prev)
 	chain.append({"txs":tsx, "prev":prev, "hash":h}) 
+	prev = h
+	
+#Tamper test
+chain[1]["txs"]
 ``` 
 CODE BREAKDOWN: 
 ```python
