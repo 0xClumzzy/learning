@@ -26,4 +26,8 @@ BENEFITS
 
 - Control over data. The read/write/own paradigm
 - Enhanced privacy through decentralized data ownership and control 
-- Democratized communication. Removes geographical, political and corporate barriers to 
+- Democratized communication. Removes geographical, political and corporate barriers to communication 
+
+WEB3 TECHNOLOGIES 
+
+Blockchain technology forms the foundation to most web3 applications 
