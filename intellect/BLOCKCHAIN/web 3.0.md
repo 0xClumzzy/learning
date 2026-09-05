@@ -24,5 +24,4 @@ Portable data
 
 BENEFITS
 
-- Control over data 
-- 
+- Control over data.read/write/own paradigm 
