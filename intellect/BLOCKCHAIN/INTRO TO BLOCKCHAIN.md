@@ -1,2 +1,2 @@
 A blockchain is a distributed, append only ledger shared accross many nodes with  no central authority where:
-1. The 
+1. Ledger, not database: The ledger is a sequence of blocks. Each block contains a set of transactions and a reference (cryptographic hash) to the previous one  
