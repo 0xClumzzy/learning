@@ -45,4 +45,5 @@ Wasm is a binary instruction format for a stack based virtual machine. It operat
 High performance code can run within the browser enabling which provides foundation for blockchain security 
 
 - [ ] Semantic web technologies 
-They allow apploc
+They allow applications to better understand and interpret web data through linked data principles to interlink multiple datasets  or publish data to the web
+- Resource Description 
