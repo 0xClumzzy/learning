@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BLOCKCHAIN/fundamentals/web 3.0.md",
+                "file": "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "web 3.0"
+              "title": "INTRO TO BLOCKCHAIN"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "9119b1aa3737fc30",
   "lastOpenFiles": [
+    "BLOCKCHAIN/fundamentals/web 3.0.md",
     "BLOCKCHAIN/fundamentals/fundamentals.md",
     "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
     "BLOCKCHAIN/security and scaling/security and scaling.md",
@@ -208,7 +209,6 @@
     "BLOCKCHAIN/concensus and network/BFT consensus.md",
     "BLOCKCHAIN/concensus and network/Proof of stake.md",
     "BLOCKCHAIN/concensus and network/Proof of work.md",
-    "BLOCKCHAIN/Cryptography and data structures/merkle trees.md",
     "BLOCKCHAIN/concensus and network",
     "BLOCKCHAIN/Cryptography and data structures",
     "BLOCKCHAIN/fundamentals",
