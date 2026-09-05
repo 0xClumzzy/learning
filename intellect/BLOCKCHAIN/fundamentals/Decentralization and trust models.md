@@ -16,3 +16,7 @@ Light nodes sacrifice independence for convenience. They can verify whether a tr
 TRUST ASSUMPTIONS 
 
 When you use a blockchain you are trusting depending on how you interact
+
+|     |     |
+| --- | --- |
+|     |     |
