@@ -22,4 +22,7 @@ Seamless data flow between services without intermediaries .
 Interconnections between diverse technologies
 Portable data
 
+BENEFITS
 
+- Control over data 
+- 
