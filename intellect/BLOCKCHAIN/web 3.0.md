@@ -40,4 +40,6 @@ Types of tokens
 - security tokens - Subject to securities regulations 
 - Non Fungible tokens(NFTs)- Represent unique fragments of assets that dont allow fractal ownership
 - [ ] WebAssembly
-Wasm is a binary instruction format for a stack based virtual machine. It operates in a sandboxed environment 
+Wasm is a binary instruction format for a stack based virtual machine. It operates in a sandboxed environment within the browser, it cant access the user's local filesystem
+
+High perfomance code can run within the browser enabling run
