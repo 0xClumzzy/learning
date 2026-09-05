@@ -3,8 +3,8 @@
 - TRUST
 NODE TYPES 
 
-| NODE TYPE | WHAT IT STORES                                             | WHAT IT DOES            | WHO RUNS IT |
-| --------- | ---------------------------------------------------------- | ----------------------- | ----------- |
-| Full node | The entire blockchain history(all blocks and transactions) | Validates every transac |             |
-|           |                                                            |                         |             |
-|           |                                                            |                         |             |
+| NODE TYPE       | WHAT IT STORES                                             | WHAT IT DOES                                                            | WHO RUNS IT                             |
+| --------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------- | --------------------------------------- |
+| Full node       | The entire blockchain history(all blocks and transactions) | Validates every transaction and block independently. Enforces all rules | Volunteers,miners,validators,businesses |
+| Light Node(SPV) | Onl block headers                                          |                                                                         |                                         |
+|                 |                                                            |                                                                         |                                         |
