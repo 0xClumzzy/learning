@@ -49,9 +49,9 @@ They allow applications to better understand and interpret web data through link
 - Resource Description Framework 
 "*sentences about things*"
 RDF allows expression of statements as triples in the form of "subject-predicate-object" 
-The triples create a graph-based data structures representing different entity-relationships 
+The triples create a graph-based data structures representing different entity-relationships(RDF schema) 
 *SPARQL*  is a query language for querying RDF data
-=> BASIC CLASSES/PROPERTIES
+=> triples
 
 - Web Ontology Language
 "*grammar and dictionary rules for RDF data*"
