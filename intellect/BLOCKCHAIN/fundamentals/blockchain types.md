@@ -17,3 +17,4 @@ Data can be owned by individual party, a group of parties or every participant i
 Participants have different access rights 
 - permissioned- Only members are allowed to access, others can only read, or any blend of the two
 - permissionless- Every one has rights 
+ 
