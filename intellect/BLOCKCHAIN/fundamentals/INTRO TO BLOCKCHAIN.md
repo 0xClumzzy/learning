@@ -4,3 +4,10 @@ A blockchain is a distributed, append only ledger shared accross many nodes with
 3. No trusted coordinator. Nodes dont trust each other. They agree on the current state via a consensus protocol. The rule is follow  the chain the consesus rules declared
 4. Trust-minimization. You trust the cryptography,software and concensus. Theres no central bank
 5. Finality is probabilistic or exoplicit. In PoW like bitcoin, a transaction gets h arder to to reverse as more blocks pile on top(usually 6 confirmations = proactically final). In BTF/PoS chains, finality casn be explicit after a vote/.
+CODE EXAMPLE
+```python 
+import hashlib 
+
+def hash_block(data: str, prev_hash: str) -> str:
+	return haslib.sha256((prev_hash + data).encode()).hexdigest()
+```
