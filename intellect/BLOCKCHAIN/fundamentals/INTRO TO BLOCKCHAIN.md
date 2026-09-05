@@ -22,6 +22,7 @@ for txs in ["alice->bob $10", "bob->carol $20", "carol->dave $5"]:
 	
 #Tamper test
 chain[1]["txs"]
+print(f"BLOCK2: {chain}")
 ``` 
 CODE BREAKDOWN: 
 ```python
