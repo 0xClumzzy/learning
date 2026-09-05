@@ -24,4 +24,14 @@ When you use a blockchain you are trusting depending on how you interact
 | Using a centralized exchange | The exchange, they hold keys, control your funds                                              |
 | Using a DeFi app             | The smart contract code, the oracle, the underlying consensus                                 |
 | Running a validator/miner    | The consensus protocol, if u follow the rules, you get rewarded, if you cheat you get slashed |
+
 THE DECENTRALIZED SPECTRUM
+Not all block chains are equally decentralized
+
+| Level | Description | example |
+| ----- | ----------- | ------- |
+|       |             |         |
+|       |             |         |
+|       |             |         |
+|       |             |         |
+|       |             |         |
