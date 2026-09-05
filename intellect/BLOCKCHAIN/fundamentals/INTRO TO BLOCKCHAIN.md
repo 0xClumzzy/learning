@@ -10,4 +10,6 @@ import hashlib
 
 def hash_block(data: str, prev_hash: str) -> str:
 	return haslib.sha256((prev_hash + data).encode()).hexdigest()
+
+#Genesis  block 
 ```
