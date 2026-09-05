@@ -14,7 +14,9 @@ def hash_block(data: str, prev_hash: str) -> str:
 #Genesis  block has no predecessor
 chain=[]
 prev = "0"*64
-```
+
+for transaction in ["alice->bo"] 
+``` 
 CODE BREAKDOWN: 
 ```python
 hashlib.sha256((prev_hash + data).encode()).hexdigest()
