@@ -40,7 +40,8 @@
   "expandedSpaces": [
     "/",
     "//BLOCKCHAIN",
-    "//BLOCKCHAIN/BLOCKCHAIN/Transactions and blocks "
+    "//BLOCKCHAIN/BLOCKCHAIN/Transactions and blocks ",
+    "//BLOCKCHAIN/BLOCKCHAIN/concensus and network"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
