@@ -16,7 +16,7 @@ chain=[]
 prev = "0"*64
 
 for txs in ["alice->bob $10", "bob->carol $20", "carol->dave $5"]:
-	h = has+ 
+	h = hash_block(txs, prev) 
 ``` 
 CODE BREAKDOWN: 
 ```python
