@@ -51,11 +51,14 @@ They allow applications to better understand and interpret web data through link
 RDF allows expression of statements as triples in the form of "subject-predicate-object" 
 The triples create a graph-based data structures representing different entity-relationships 
 *SPARQL*  is a query language for querying RDF data
+=> BASIC CLASSES/PROPERTIES
 
 - Web Ontology Language
 "*grammar and dictionary rules for RDF data*"
 A language for defining ontologies, or formal representations of knowledge relationships between concepts(logical relations)
-=> FULL LO
+=> FULL LOGIC, RULES, REASONING
+
+
 
 
 
