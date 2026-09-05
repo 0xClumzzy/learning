@@ -51,4 +51,5 @@ RDF allows expression of statements as triples in the form of "subject-predicate
 The triples create a graph-based data structures representing different entity-relationships 
 *SPARQL*  is a query language for querying RDF data
 
-- Web Ontology languadfe
+- Web Ontology Language
+A language for defining ontol
