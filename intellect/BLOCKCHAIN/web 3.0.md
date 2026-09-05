@@ -31,6 +31,8 @@ BENEFITS
 WEB3 TECHNOLOGIES 
 
 Blockchain technology forms the foundation to most web3 applications 
-- TOKENIZATION 
-Tokenization is the process of representing digital assets as tokens on a blockchain 
-The tokens area cryptographic representation of ownershipl 
+ - [ ]  TOKENIZATION 
+Tokenization is the process of representing digital assets as tokens on a blockchain
+- real estate, stocks, commodities, art, music, in game items 
+The tokens area cryptographic representation of ownership, access rights and any form of value  
+
