@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.env
+*.tsbuildinfo
+
+# user local setting
+.claude
+.codex
+.learn
+
+# test output
+packages/cli/test/core/learn-protocol/fixtures/migrates/
+
+# build artifacts
+packages/cli/site-dist/
+
+# local release notes (consumed by scripts/release.sh)
+release-notes.md

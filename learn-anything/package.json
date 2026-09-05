@@ -1,0 +1,61 @@
+{
+  "name": "learn-anything",
+  "description": "AI-powered recursive learning system — monorepo workspace",
+  "keywords": [
+    "learn-anything-cli",
+    "learn-anything",
+    "learning",
+    "cli",
+    "ai",
+    "education",
+    "socratic",
+    "tdd"
+  ],
+  "homepage": "https://github.com/ChenChenyaqi/learn-anything",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChenChenyaqi/learn-anything"
+  },
+  "license": "MIT",
+  "author": "yaqi chen",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+    "test": "pnpm -r test",
+    "test:watch": "pnpm -r test:watch",
+    "lint": "eslint packages/",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "@eslint/js": "^10.0.1",
+    "@types/mdast": "^4.0.4",
+    "@types/node": "^24.2.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "jsdom": "^29.1.1",
+    "lint-staged": "^17.0.7",
+    "prettier": "^3.8.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.50.1",
+    "vitest": "^3.2.4"
+  },
+  "lint-staged": {
+    "*.{ts,js,mjs}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}
