@@ -40,7 +40,8 @@
   "expandedSpaces": [
     "/",
     "//BLOCKCHAIN",
-    "//BLOCKCHAIN/BLOCKCHAIN/fundamentals"
+    "//BLOCKCHAIN/BLOCKCHAIN/fundamentals",
+    "//BLOCKCHAIN/BLOCKCHAIN/Cryptography and data structures"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

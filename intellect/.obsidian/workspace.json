@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BLOCKCHAIN/fundamentals/Decentralization and trust models.md",
+                "file": "BLOCKCHAIN/Cryptography and data structures/merkle trees.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Decentralization and trust models"
+              "title": "merkle trees"
             }
           }
         ]
@@ -180,8 +180,14 @@
   },
   "active": "9119b1aa3737fc30",
   "lastOpenFiles": [
-    "BLOCKCHAIN/fundamentals/blockchain types.md",
+    "BLOCKCHAIN/Cryptography and data structures/keys,addresses and wallets.md",
+    "BLOCKCHAIN/Cryptography and data structures/public key cryptography.md",
+    "BLOCKCHAIN/Cryptography and data structures/Hash functions.md",
+    "BLOCKCHAIN/Cryptography and data structures/merkle trees.md",
+    "BLOCKCHAIN/Cryptography and data structures/Cryptography and data structures.md",
     "BLOCKCHAIN/fundamentals/Decentralization and trust models.md",
+    "BLOCKCHAIN/Cryptography and data structures",
+    "BLOCKCHAIN/fundamentals/blockchain types.md",
     "BLOCKCHAIN/fundamentals/fundamentals.md",
     "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
     "BLOCKCHAIN/fundamentals",
