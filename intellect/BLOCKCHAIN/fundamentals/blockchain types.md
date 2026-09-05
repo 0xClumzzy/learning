@@ -1,0 +1,2 @@
+TYPES ARE DESCRIBED 2 MODELS
+- Ownership

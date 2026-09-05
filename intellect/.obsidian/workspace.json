@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
+                "file": "BLOCKCHAIN/fundamentals/blockchain types.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "INTRO TO BLOCKCHAIN"
+              "title": "blockchain types"
             }
           }
         ]
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "908a1e0ca02a794e",
@@ -181,9 +180,9 @@
   },
   "active": "9119b1aa3737fc30",
   "lastOpenFiles": [
+    "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
     "BLOCKCHAIN/fundamentals/web 3.0.md",
     "BLOCKCHAIN/fundamentals/fundamentals.md",
-    "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
     "BLOCKCHAIN/security and scaling/security and scaling.md",
     "BLOCKCHAIN/security and scaling/MEV & bridges.md",
     "BLOCKCHAIN/security and scaling/Wallet security.md",
