@@ -35,4 +35,6 @@ Blockchain technology forms the foundation to most web3 applications
 Tokenization is the process of representing digital assets as tokens on a blockchain
 - real estate, stocks, commodities, art, music, in game items 
 The tokens area cryptographic representation of ownership, access rights and any form of value  
-
+- each token may be divided to represent a fraction or unit of the underlying asset
+Types of tokens 
+- security tokens - Subject to securities reg
