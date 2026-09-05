@@ -33,3 +33,24 @@ Why this matters
 - Avalanche effect - Change one letter the whole thing changes
 - irreversible
 - Linking- Block 2 dependents on block one
+```python
+chain=[]
+prev = "0"*64
+
+for txs in ["alice->bob $10", "bob->carol $20", "carol->dave $5"]:
+	h = hash_block(txs, prev)
+	chain.append({"txs":tsx, "prev":prev, "hash":h}) 
+```
+1. `chain = []
+
+
+
+
+
+
+
+
+
+
+
+
