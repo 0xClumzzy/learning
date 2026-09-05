@@ -53,6 +53,10 @@ The triples create a graph-based data structures representing different entity-r
 *SPARQL*  is a query language for querying RDF data
 
 - Web Ontology Language
-"*grammar and dictionary rul"
-A language for defining ontologies, or formal representations of knowledge relationships between concepts
+"*grammar and dictionary rules for RDF data*"
+A language for defining ontologies, or formal representations of knowledge relationships between concepts(logical relations)
+=> FULL LO
+
+
+
 
