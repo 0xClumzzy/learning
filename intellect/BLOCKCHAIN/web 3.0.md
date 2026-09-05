@@ -37,4 +37,5 @@ Tokenization is the process of representing digital assets as tokens on a blockc
 The tokens area cryptographic representation of ownership, access rights and any form of value  
 - each token may be divided to represent a fraction or unit of the underlying asset
 Types of tokens 
-- security tokens - Subject to securities reg
+- security tokens - Subject to securities regulations 
+- Non Fungible tokens(NFTs)- Represent unique fragments of assets that dont allow fractal ownership
