@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BLOCKCHAIN/Transactions and blocks /fees and gas.md",
+                "file": "BLOCKCHAIN/Smart contracts and applications /DeFi primitives and oracles.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "fees and gas"
+              "title": "DeFi primitives and oracles"
             }
           }
         ]
@@ -180,8 +180,15 @@
   },
   "active": "9119b1aa3737fc30",
   "lastOpenFiles": [
-    "BLOCKCHAIN/Transactions and blocks /blocks structure.md",
+    "BLOCKCHAIN/Smart contracts and applications /tokens and standards.md",
+    "BLOCKCHAIN/Smart contracts and applications /evm fundamentals.md",
+    "BLOCKCHAIN/Smart contracts and applications /DeFi primitives and oracles.md",
+    "Untitled.md",
+    "BLOCKCHAIN/Smart contracts and applications /Smart contracts and applications.md",
+    "BLOCKCHAIN/Smart contracts and applications /.md",
     "BLOCKCHAIN/Transactions and blocks /fees and gas.md",
+    "BLOCKCHAIN/Smart contracts and applications ",
+    "BLOCKCHAIN/Transactions and blocks /blocks structure.md",
     "BLOCKCHAIN/Transactions and blocks /transcation lifestyle.md",
     "BLOCKCHAIN/Transactions and blocks /transactions and blocks.md",
     "BLOCKCHAIN/concensus and network/consensus and network .md",
@@ -203,14 +210,8 @@
     "BLOCKCHAIN/fundamentals/Decentralization and trust models.md",
     "BLOCKCHAIN/Cryptography and data structures",
     "BLOCKCHAIN/fundamentals/blockchain types.md",
-    "BLOCKCHAIN/fundamentals/fundamentals.md",
-    "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
     "BLOCKCHAIN/fundamentals",
-    "BLOCKCHAIN/fundamentals/web 3.0.md",
-    "BLOCKCHAIN/BLOCKCHAIN.md",
     "BLOCKCHAIN",
-    "vim.md",
-    "Excalidraw/Learning a new skill.excalidraw.md",
     "Tags",
     "Excalidraw",
     ".md"
