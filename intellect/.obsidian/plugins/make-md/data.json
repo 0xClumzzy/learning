@@ -39,7 +39,8 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "/",
-    "//BLOCKCHAIN"
+    "//BLOCKCHAIN",
+    "//BLOCKCHAIN/BLOCKCHAIN/fundamentals"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
