@@ -23,3 +23,7 @@ This is a the heart of the mini blockchain
 3. `.encode()` the concatenation(string) to bytes 
 4. `.hexdigest()` converts the 256 bit fingerprint into a 64 bit character hex  string so its readable 
 Why this matters 
+- Deterministic - Same `prev_hash` + `data`  always give the same data
+- Avalanche effect - Change one letter the whole thing changes
+- irreversible
+- 
