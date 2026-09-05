@@ -1,7 +1,9 @@
 TYPES ARE DESCRIBED 2 MODELS
 - Ownership model
 - permission model
-<u>Ownership model</u>
+All centered around the *read/write/own* paridgm
+<u>Ownership model</u> 
+*own*
 *who owns the data in the block chain*
 Data can be owned by individual party, a group of parties or every participant in the blockchain
 - Public- Every one has ownership 
@@ -9,4 +11,6 @@ Data can be owned by individual party, a group of parties or every participant i
 - Consortium- A group parties has ownership 
 
 <u>Permission model</u>
-*read*
+*read/write*
+*what permissions control data access and control*
+Whas permission 
