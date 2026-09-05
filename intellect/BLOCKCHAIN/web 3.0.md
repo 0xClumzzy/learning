@@ -24,4 +24,6 @@ Portable data
 
 BENEFITS
 
-- Control over data.read/write/own paradigm 
+- Control over data. The read/write/own paradigm
+- Enhanced privacy through decentralized data ownership and control 
+- Democratized communication. Removes geographical, political and corporate barriers to 
