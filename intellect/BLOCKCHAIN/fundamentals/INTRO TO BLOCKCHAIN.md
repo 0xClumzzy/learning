@@ -11,7 +11,9 @@ import hashlib
 def hash_block(data: str, prev_hash: str) -> str:
 	return haslib.sha256((prev_hash + data).encode()).hexdigest()
 
-#Genesis  block 
+#Genesis  block has no predecessor
+chain=[]
+prev = "0"*64
 ```
 CODE BREAKDOWN: 
 ```python
@@ -26,4 +28,4 @@ Why this matters
 - Deterministic - Same `prev_hash` + `data`  always give the same data
 - Avalanche effect - Change one letter the whole thing changes
 - irreversible
-- 
+- Linking- Block 2 dependents on block one
