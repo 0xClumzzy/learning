@@ -42,4 +42,7 @@ Types of tokens
 - [ ] WebAssembly
 Wasm is a binary instruction format for a stack based virtual machine. It operates in a sandboxed environment within the browser, it cant access the user's local filesystem
 
-High perfomance code can run within the browser enabling run
+High performance code can run within the browser enabling which provides foundation for blockchain security 
+
+- [ ] Semantic web technologies 
+They allow apploc
