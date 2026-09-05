@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BLOCKCHAIN/fundamentals/Untitled 1.md",
+                "file": "BLOCKCHAIN/fundamentals/Decentralization and trust models.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Decentralization and trust models"
             }
           }
         ]
@@ -180,8 +180,8 @@
   },
   "active": "9119b1aa3737fc30",
   "lastOpenFiles": [
-    "BLOCKCHAIN/fundamentals/Untitled.md",
-    "BLOCKCHAIN/fundamentals/Untitled 1.md",
+    "BLOCKCHAIN/fundamentals/blockchain types.md",
+    "BLOCKCHAIN/fundamentals/Decentralization and trust models.md",
     "BLOCKCHAIN/fundamentals/fundamentals.md",
     "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
     "BLOCKCHAIN/fundamentals",
