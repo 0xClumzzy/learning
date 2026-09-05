@@ -13,4 +13,6 @@ Data can be owned by individual party, a group of parties or every participant i
 <u>Permission model</u>
 *read/write*
 *what permissions control data access and control*
-Whas permission 
+Participants have different access rights 
+- permissioned- Only members are allowed to access, others can only read, or any blend of the two
+- permissionless- 
