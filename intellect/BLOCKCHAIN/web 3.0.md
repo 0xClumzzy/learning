@@ -39,3 +39,5 @@ The tokens area cryptographic representation of ownership, access rights and any
 Types of tokens 
 - security tokens - Subject to securities regulations 
 - Non Fungible tokens(NFTs)- Represent unique fragments of assets that dont allow fractal ownership
+- [ ] WebAssembly
+Wasm is a binary instruction format for a stack based virtual machine. It operates in a sandboxed environment 
