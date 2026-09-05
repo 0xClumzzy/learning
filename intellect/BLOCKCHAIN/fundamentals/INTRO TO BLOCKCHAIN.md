@@ -15,7 +15,8 @@ def hash_block(data: str, prev_hash: str) -> str:
 chain=[]
 prev = "0"*64
 
-for transaction in ["alice->bo"] 
+for txs in ["alice->bob $10", "bob->carol $20", "carol->dave $5"]:
+	h = has+ 
 ``` 
 CODE BREAKDOWN: 
 ```python
