@@ -20,4 +20,5 @@ hashlib.sha256((prev_hash + data).encode()).hexdigest()
 This is a the heart of the mini blockchain
 1. `hashlib.sha256()` - it calculates the sha256 hash and returns a hash object(256 bit fingerprint)
 2. `prev_hash + data` - concatenates the previous hash to the new transaction data. It links them 
-3. 
+3. `.encode()` the concatenation(string) to bytes 
+4. `.hexdigest()` converts t
