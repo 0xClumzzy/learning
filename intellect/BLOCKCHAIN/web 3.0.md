@@ -46,4 +46,5 @@ High performance code can run within the browser enabling which provides foundat
 
 - [ ] Semantic web technologies 
 They allow applications to better understand and interpret web data through linked data principles to interlink multiple datasets  or publish data to the web
-- Resource Description 
+- Resource Description Framework 
+RDF allows expression of statements as triples in the form of subject-predicate-object 
