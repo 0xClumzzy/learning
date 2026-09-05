@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BLOCKCHAIN/fundamentals/blockchain types.md",
+                "file": "BLOCKCHAIN/fundamentals/Decentralization and trust models.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "blockchain types"
+              "title": "Decentralization and trust models"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "9119b1aa3737fc30",
   "lastOpenFiles": [
+    "BLOCKCHAIN/fundamentals/blockchain types.md",
     "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
     "BLOCKCHAIN/fundamentals/web 3.0.md",
     "BLOCKCHAIN/fundamentals/fundamentals.md",
@@ -208,7 +209,6 @@
     "BLOCKCHAIN/concensus and network/P2P network & mem pool.md",
     "BLOCKCHAIN/concensus and network/BFT consensus.md",
     "BLOCKCHAIN/concensus and network/Proof of stake.md",
-    "BLOCKCHAIN/concensus and network/Proof of work.md",
     "BLOCKCHAIN/concensus and network",
     "BLOCKCHAIN/Cryptography and data structures",
     "BLOCKCHAIN/fundamentals",
