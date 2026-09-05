@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BLOCKCHAIN/security and scaling/MEV & bridges.md",
+                "file": "BLOCKCHAIN/fundamentals/web 3.0.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "MEV & bridges"
+              "title": "web 3.0"
             }
           }
         ]
@@ -180,11 +180,13 @@
   },
   "active": "9119b1aa3737fc30",
   "lastOpenFiles": [
+    "BLOCKCHAIN/fundamentals/fundamentals.md",
+    "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
+    "BLOCKCHAIN/security and scaling/security and scaling.md",
+    "BLOCKCHAIN/security and scaling/MEV & bridges.md",
     "BLOCKCHAIN/security and scaling/Wallet security.md",
     "BLOCKCHAIN/security and scaling/Scaling L2s & rollups.md",
     "BLOCKCHAIN/security and scaling/Common attacks.md",
-    "BLOCKCHAIN/security and scaling/MEV & bridges.md",
-    "BLOCKCHAIN/security and scaling/security and scaling.md",
     "BLOCKCHAIN/Smart contracts and applications /DeFi primitives and oracles.md",
     "BLOCKCHAIN/security and scaling",
     "BLOCKCHAIN/Smart contracts and applications /tokens and standards.md",
@@ -207,9 +209,7 @@
     "BLOCKCHAIN/concensus and network/Proof of stake.md",
     "BLOCKCHAIN/concensus and network/Proof of work.md",
     "BLOCKCHAIN/Cryptography and data structures/merkle trees.md",
-    "BLOCKCHAIN/concensus and network/concensus and network.md",
     "BLOCKCHAIN/concensus and network",
-    "BLOCKCHAIN/Cryptography and data structures/keys,addresses and wallets.md",
     "BLOCKCHAIN/Cryptography and data structures",
     "BLOCKCHAIN/fundamentals",
     "BLOCKCHAIN",
