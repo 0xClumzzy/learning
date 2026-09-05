@@ -17,8 +17,8 @@ TRUST ASSUMPTIONS
 
 When you use a blockchain you are trusting depending on how you interact
 
-| HOW YOU INTERACT    | WHAT YOU TRUST |
-| ------------------- | -------------- |
-| Running a full node |                |
-|                     |                |
-|                     |                |
+| HOW YOU INTERACT     | WHAT YOU TRUST                                                        |
+| -------------------- | --------------------------------------------------------------------- |
+| Running a full node  | Only the code you're running, you verify everything yourself          |
+| Using a light wallet | Full nodes you are connected to, if they collude they can lie to you  |
+|                      |                                                                       |
