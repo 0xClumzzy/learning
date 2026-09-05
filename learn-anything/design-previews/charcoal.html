@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn Anything — Pure Charcoal (Glass + Gradient)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #111113; color: #e5e5e5; min-height: 100vh; display: flex; height: 100vh; }
+
+  /* ---- Sidebar ---- */
+  .sidebar { width: 272px; background: rgba(18,18,20,.85); backdrop-filter: blur(24px) saturate(1.8);
+    border-right: 1px solid #252527; display: flex; flex-direction: column; flex-shrink: 0;
+    position: relative; z-index: 1; }
+  .sb-header { padding: 28px 28px 16px; }
+  .sb-header h2 { font-size: 16px; font-weight: 600; color: #f0f0f0; letter-spacing: -.01em; }
+  .sb-search { margin: 0 28px 12px; padding: 10px 14px; border-radius: 12px; border: 1px solid #252527;
+    background: rgba(255,255,255,.04); backdrop-filter: blur(10px); font-size: 13px; color: #737373;
+    display: flex; align-items: center; gap: 10px; }
+  .sb-search::before { content: '🔍'; font-size: 12px; opacity: .5; }
+  .sb-search kbd { font-size: 11px; background: #252527; border: 1px solid #333; border-radius: 5px;
+    padding: 1px 6px; font-family: inherit; color: #737373; }
+  .sb-divider { height: 1px; background: #252527; margin: 0 28px; }
+  .sb-section { padding: 16px 28px; flex: 1; overflow-y: auto; }
+  .sb-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: #525252; margin-bottom: 8px; }
+  .sb-item { padding: 8px 12px; border-radius: 10px; font-size: 13px; color: #a3a3a3; cursor: pointer; transition: all .15s; margin-bottom: 2px; }
+  .sb-item:hover { background: rgba(255,255,255,.06); color: #e5e5e5; }
+  .sb-item.active { background: rgba(255,255,255,.06); color: #f0f0f0; font-weight: 500; }
+  .sb-footer { padding: 16px 28px; border-top: 1px solid #252527; font-size: 11px; color: #525252; }
+
+  /* ---- Main ---- */
+  .main { flex: 1; padding: 36px 48px; overflow-y: auto; position: relative; z-index: 1;
+    background: radial-gradient(ellipse at 20% 20%, rgba(255,255,255,.03) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(255,255,255,.015) 0%, transparent 50%); }
+  .page-title { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .page-title .bar { width: 4px; height: 28px; border-radius: 3px;
+    background: linear-gradient(180deg, #e5e5e5 0%, #a3a3a3 100%); }
+  .page-title h1 { font-size: 28px; font-weight: 600; letter-spacing: -.02em; color: #f0f0f0; }
+  .page-sub { font-size: 13px; color: #525252; margin-bottom: 32px; letter-spacing: .01em; }
+
+  /* ---- Cards ---- */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-bottom: 28px; }
+  .card { background: rgba(24,24,26,.7); backdrop-filter: blur(16px) saturate(1.5);
+    border: 1px solid #252527; border-radius: 20px; padding: 24px; cursor: pointer;
+    transition: all .25s; position: relative; overflow: hidden; }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, #e5e5e5, #737373, #e5e5e5); opacity: 0; transition: opacity .2s; }
+  .card:hover { border-color: #404040; transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 12px 40px rgba(0,0,0,.4); }
+  .card:hover::before { opacity: 1; }
+  .card h3 { font-size: 15px; font-weight: 600; margin-bottom: 6px; color: #f0f0f0; }
+  .card p { font-size: 12px; color: #a3a3a3; margin-bottom: 10px; line-height: 1.5; }
+  .progress-row { display: flex; align-items: center; gap: 10px; }
+  .progress-bar { flex: 1; height: 4px; background: #252527; border-radius: 3px; overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, #a3a3a3, #525252); transition: width .5s; }
+  .progress-pct { font-size: 11px; font-weight: 600; color: #a3a3a3; font-variant-numeric: tabular-nums; }
+
+  /* ---- Stats ---- */
+  .stats-card { background: rgba(24,24,26,.7); backdrop-filter: blur(16px) saturate(1.5);
+    border: 1px solid #252527; border-radius: 20px; padding: 24px; }
+  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .stat { text-align: center; }
+  .stat-val { font-size: 22px; font-weight: 700; background: linear-gradient(135deg, #e5e5e5, #737373);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .stat-label { font-size: 10px; color: #525252; margin-top: 2px; text-transform: uppercase; letter-spacing: .08em; }
+
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sb-header"><h2>Learn Anything</h2></div>
+  <div class="sb-search">🔍 Search... <kbd>⌘K</kbd></div>
+  <div class="sb-divider"></div>
+  <div class="sb-section">
+    <div class="sb-label">Topics</div>
+    <div class="sb-item active">React</div>
+    <div class="sb-item">TypeScript</div>
+    <div class="sb-item">System Design</div>
+    <div class="sb-item">Rust</div>
+    <div class="sb-item">Machine Learning</div>
+  </div>
+  <div class="sb-footer">v0.1.0 · Dark mode</div>
+</div>
+
+<div class="main">
+  <div class="page-title"><div class="bar"></div><h1>Dashboard</h1></div>
+  <p class="page-sub">5 topics · 146 concepts</p>
+  <div class="card-grid">
+    <div class="card"><h3>React</h3><p>12 domains · 48 concepts · 32/48 mastered</p><div class="progress-row"><div class="progress-bar"><div class="progress-fill" style="width:67%"></div></div><span class="progress-pct">67%</span></div></div>
+    <div class="card"><h3>TypeScript</h3><p>8 domains · 36 concepts · 24/36 mastered</p><div class="progress-row"><div class="progress-bar"><div class="progress-fill" style="width:66%"></div></div><span class="progress-pct">66%</span></div></div>
+    <div class="card"><h3>System Design</h3><p>6 domains · 30 concepts · 10/30 mastered</p><div class="progress-row"><div class="progress-bar"><div class="progress-fill" style="width:33%"></div></div><span class="progress-pct">33%</span></div></div>
+    <div class="card"><h3>Rust</h3><p>10 domains · 42 concepts · 5/42 mastered</p><div class="progress-row"><div class="progress-bar"><div class="progress-fill" style="width:12%"></div></div><span class="progress-pct">12%</span></div></div>
+    <div class="card"><h3>Machine Learning</h3><p>14 domains · 56 concepts · 40/56 mastered</p><div class="progress-row"><div class="progress-bar"><div class="progress-fill" style="width:71%"></div></div><span class="progress-pct">71%</span></div></div>
+  </div>
+  <div class="stats-card">
+    <div class="stats-grid">
+      <div class="stat"><div class="stat-val">146</div><div class="stat-label">Total Concepts</div></div>
+      <div class="stat"><div class="stat-val">111</div><div class="stat-label">Mastered</div></div>
+      <div class="stat"><div class="stat-val">76%</div><div class="stat-label">Overall Progress</div></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

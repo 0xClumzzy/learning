@@ -77,7 +77,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="flex min-h-screen bg-(--color-page) text-(--color-ink)">
+  <div class="flex min-h-screen bg-(--color-page) text-(--color-ink)" style="background: radial-gradient(ellipse at 20% 20%, rgba(138,90,66,0.04) 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(74,40,24,0.02) 0%, transparent 50%), var(--color-page);">
     <AppSidebar
       :context="sidebarContext"
       :topic-slug="currentTopicSlug"

@@ -118,7 +118,7 @@ function select(entry: SearchEntry) {
         role="dialog"
         aria-modal="true"
         :aria-label="t('search.open')"
-        class="relative w-full max-w-xl overflow-hidden rounded-xl border border-(--color-divider) bg-(--color-bg-elv) shadow-2xl"
+        class="relative w-full max-w-xl overflow-hidden rounded-[20px] border border-(--color-divider) bg-(--color-bg-elv) backdrop-blur-xl shadow-[0_0_30px_rgba(138,90,66,0.12),0_25px_50px_rgba(0,0,0,0.5)]"
         @keydown="onKeydown"
       >
         <!-- Input -->

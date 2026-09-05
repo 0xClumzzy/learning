@@ -32,7 +32,7 @@ defineExpose({ dialogEl });
     aria-modal="true"
     tabindex="-1"
     :class="[
-      'relative w-full max-w-2xl max-h-[85vh] overflow-hidden rounded-xl border border-(--color-divider) bg-(--color-bg-elv) shadow-2xl outline-none',
+      'relative w-full max-w-2xl max-h-[85vh] overflow-hidden rounded-[20px] border border-(--color-divider) bg-(--color-bg-elv) backdrop-blur-xl shadow-[0_0_30px_rgba(138,90,66,0.12),0_25px_50px_rgba(0,0,0,0.5)] outline-none',
       layoutClass,
     ]"
   >

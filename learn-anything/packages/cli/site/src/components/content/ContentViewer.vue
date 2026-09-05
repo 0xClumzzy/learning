@@ -44,8 +44,8 @@ const isMd = computed(() => props.file?.type === 'markdown');
     <!-- Markdown: VitePress-style prose + right-side TOC outline -->
     <TocLayout v-else-if="isMd" :html="renderedHtml" />
 
-    <!-- Code: VitePress code block style -->
-    <div v-else class="prose-content rounded-lg overflow-hidden bg-(--color-bg-alt)">
+    <!-- Code: glass card style -->
+    <div v-else class="prose-content rounded-[20px] overflow-hidden bg-(--color-bg-soft) backdrop-blur-xl border border-(--color-divider)">
       <div class="flex items-center justify-between px-5 py-2 bg-transparent">
         <span class="text-xs text-text-3 font-mono">{{ fileDisplayName }}</span>
       </div>

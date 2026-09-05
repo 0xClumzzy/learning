@@ -54,7 +54,7 @@ function goToTopic(slug: string) {
           <button
             v-for="topic in topics"
             :key="topic.slug"
-            class="text-left bg-(--color-bg-soft) rounded-xl border border-(--color-divider) p-6 shadow-sm hover:shadow-md hover:-translate-y-0.5 hover:border-brand-2 transition-all duration-200 cursor-pointer"
+            class="text-left bg-(--color-bg-soft) backdrop-blur-xl rounded-[20px] border border-(--color-divider) p-6 hover:border-brand-2 hover:shadow-[0_0_30px_var(--color-glow),0_12px_40px_rgba(0,0,0,0.3)] hover:-translate-y-0.5 hover:scale-[1.01] transition-all duration-250 cursor-pointer"
             @click="goToTopic(topic.slug)"
           >
             <!-- Title -->
@@ -90,7 +90,7 @@ function goToTopic(slug: string) {
         <!-- Left: merged stats card -->
         <div class="flex-1 min-w-0">
           <div
-            class="bg-(--color-bg-soft) rounded-xl border border-(--color-divider) shadow-sm overflow-hidden"
+            class="bg-(--color-bg-soft) backdrop-blur-xl rounded-[20px] border border-(--color-divider) overflow-hidden"
           >
             <StatsHero :stats="stats" />
             <div class="border-t border-(--color-divider)">

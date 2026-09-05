@@ -67,7 +67,7 @@ function onQuizBatchSelected(batch: {
   />
 
   <aside
-    class="fixed top-0 left-0 bottom-0 z-40 w-68 bg-(--color-bg-alt) flex flex-col transition-transform duration-200 lg:translate-x-0"
+    class="fixed top-0 left-0 bottom-0 z-40 w-68 bg-(--color-bg-alt) backdrop-blur-2xl flex flex-col transition-transform duration-200 lg:translate-x-0 border-r border-(--color-divider)"
     :class="mobileOpen ? 'translate-x-0' : '-translate-x-full'"
   >
     <div class="px-6 pt-6 pb-4">
