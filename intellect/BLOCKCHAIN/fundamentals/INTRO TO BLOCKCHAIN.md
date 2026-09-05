@@ -13,3 +13,8 @@ def hash_block(data: str, prev_hash: str) -> str:
 
 #Genesis  block 
 ```
+CODE BREAKDOWN: 
+```python
+hashlib.sha256((prev_hash + data).encode()).hexdigest()
+```
+1. 
