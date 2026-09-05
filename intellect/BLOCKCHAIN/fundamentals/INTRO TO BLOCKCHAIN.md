@@ -44,7 +44,22 @@ for txs in ["alice->bob $10", "bob->carol $20", "carol->dave $5"]:
 1. `chain = []` initialize the chain 
 2. multiply the previous block by 64, `prev = "0"*64`
 3. for every transaction:
-4. make a hash, `hash = hash_block(txs,prec`
+4. make a hash, `hash = hash_block(txs,prev)` where the previous transaction and the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
