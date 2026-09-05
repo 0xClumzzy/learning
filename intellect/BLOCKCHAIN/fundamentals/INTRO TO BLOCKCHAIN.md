@@ -17,4 +17,4 @@ CODE BREAKDOWN:
 ```python
 hashlib.sha256((prev_hash + data).encode()).hexdigest()
 ```
-1. 
+1. `hashlib.sha256()` - it calculates the sha256 hash and returns a hash object
