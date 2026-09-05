@@ -48,4 +48,4 @@ High performance code can run within the browser enabling which provides foundat
 They allow applications to better understand and interpret web data through linked data principles to interlink multiple datasets  or publish data to the web
 - Resource Description Framework 
 RDF allows expression of statements as triples in the form of subject-predicate-object 
-The triples create a graph-based data structure on the web 
+The triples create a graph-based data structures representing different entity-relationships 
