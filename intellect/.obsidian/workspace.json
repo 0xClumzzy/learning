@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "BLOCKCHAIN/Cryptography and data structures/merkle trees.md",
+                "file": "BLOCKCHAIN/concensus and network/forks and chain reorgs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "merkle trees"
+              "title": "forks and chain reorgs"
             }
           }
         ]
@@ -180,10 +180,18 @@
   },
   "active": "9119b1aa3737fc30",
   "lastOpenFiles": [
+    "BLOCKCHAIN/concensus and network/P2P network & mem pool.md",
+    "BLOCKCHAIN/concensus and network/BFT consensus.md",
+    "BLOCKCHAIN/concensus and network/Proof of stake.md",
+    "BLOCKCHAIN/concensus and network/Proof of work.md",
+    "BLOCKCHAIN/concensus and network/forks and chain reorgs.md",
+    "BLOCKCHAIN/concensus and network/Untitled 1.md",
+    "BLOCKCHAIN/Cryptography and data structures/merkle trees.md",
+    "BLOCKCHAIN/concensus and network/concensus and network.md",
+    "BLOCKCHAIN/concensus and network",
     "BLOCKCHAIN/Cryptography and data structures/keys,addresses and wallets.md",
     "BLOCKCHAIN/Cryptography and data structures/public key cryptography.md",
     "BLOCKCHAIN/Cryptography and data structures/Hash functions.md",
-    "BLOCKCHAIN/Cryptography and data structures/merkle trees.md",
     "BLOCKCHAIN/Cryptography and data structures/Cryptography and data structures.md",
     "BLOCKCHAIN/fundamentals/Decentralization and trust models.md",
     "BLOCKCHAIN/Cryptography and data structures",
