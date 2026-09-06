@@ -28,10 +28,10 @@ When you use a blockchain you are trusting depending on how you interact
 THE DECENTRALIZED SPECTRUM
 Not all block chains are equally decentralized
 
-| Level               | Description                                | example |
-| ------------------- | ------------------------------------------ | ------- |
-| fully decentralized | Thousands of nodes, no singular controller | bitcoin |
-|                     |                                            |         |
-|                     |                                            |         |
-|                     |                                            |         |
-|                     |                                            |         |
+| Level               | Description                                           | example              |
+| ------------------- | ----------------------------------------------------- | -------------------- |
+| fully decentralized | Thousands of nodes, no singular controller            | bitcoin              |
+| moderate            | Hundreds of nodes, a few large players have influence | ethereum(post-merge) |
+| semi                | dozens of nodes, a few orgs                           | polygon              |
+|                     |                                                       |                      |
+|                     |                                                       |                      |
