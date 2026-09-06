@@ -26,11 +26,11 @@ When you use a blockchain you are trusting depending on how you interact
 | Running a validator/miner    | The consensus protocol, if u follow the rules, you get rewarded, if you cheat you get slashed |
 ASSUMPTIONS
 
-| assumption | what youre trusting                    | if it fails         |
-| ---------- | -------------------------------------- | ------------------- |
-| CUSTODY    | they wont take your funds              | yo money gone       |
-| LIVENESS   | They will process your transactions    | delayed or censored |
-| VALIDITY   | Onlycorrect transactions get confirmed |                     |
+| assumption | what youre trusting                     | if it fails                         |
+| ---------- | --------------------------------------- | ----------------------------------- |
+| CUSTODY    | they wont take your funds               | yo money gone                       |
+| LIVENESS   | They will process your transactions     | delayed or censored                 |
+| VALIDITY   | Only correct transactions get confirmed | Bad transactions could be finalised |
 
 THE DECENTRALIZED SPECTRUM
 Not all block chains are equally decentralized
