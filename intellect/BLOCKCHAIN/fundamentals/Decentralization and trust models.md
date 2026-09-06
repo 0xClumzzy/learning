@@ -33,5 +33,4 @@ Not all block chains are equally decentralized
 | fully decentralized | Thousands of nodes, no singular controller            | bitcoin              |
 | moderate            | Hundreds of nodes, a few large players have influence | ethereum(post-merge) |
 | semi                | dozens of nodes, a few orgs                           | polygon              |
-|                     |                                                       |                      |
-|                     |                                                       |                      |
+| centralized         | a single entity or a small consortium                 | private              |
