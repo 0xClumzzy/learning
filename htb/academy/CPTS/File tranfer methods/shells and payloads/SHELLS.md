@@ -93,8 +93,14 @@ perl -e 'exec  "/bin/sh";'
 perl: exec "/bin/sh";
 ```
 3. Ruby to sh
+```ruby
+ruby: exec "/bin/sh"
 ```
+3. Lua to sh => `os.execute()`
+```lua 
+lua: os.execute(/bin/sh')
 ```
+
 
 
 
