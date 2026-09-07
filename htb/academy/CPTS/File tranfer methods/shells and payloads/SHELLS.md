@@ -89,5 +89,24 @@ sh -i
 ```
 2. Perl to sh 
 ```perl 
-
+perl -e 'exec  "/bin/sh";'
+perl: exec "/bin/sh";
 ```
+3. Ruby to sh
+```
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
