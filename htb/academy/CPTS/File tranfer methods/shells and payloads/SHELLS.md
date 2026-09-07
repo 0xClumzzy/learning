@@ -98,7 +98,15 @@ ruby: exec "/bin/sh"
 ```
 3. Lua to sh => `os.execute()`
 ```lua 
-lua: os.execute(/bin/sh')
+lua: os.execute('/bin/sh')
+```
+4. AWK to sh 
+```bash 
+awk 'BEGIN {system("/bin/bash")}'
+```
+5. Find to sh 
+```bash 
+
 ```
 
 
