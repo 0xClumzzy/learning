@@ -42,7 +42,6 @@
     "//academy/academy/vuln/academy/vuln/standards",
     "//academy/academy/vuln/academy/vuln/COMPLIANCE STANDARDS",
     "//labs",
-    "//labs/labs/machines",
     "//Tags",
     "//academy/academy/vuln",
     "//labs/labs/machines/labs/machines/hard",
@@ -55,7 +54,8 @@
     "//techniques",
     "//academy/academy/CPTS/academy/CPTS/File tranfer methods/academy/CPTS/File tranfer methods/shells and payloads",
     "//academy/academy/CPTS",
-    "//labs/labs/machines/labs/machines/easy"
+    "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info/labs/machines/medium/fireflow.Info/dookie",
+    "//academy"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

