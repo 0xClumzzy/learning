@@ -79,7 +79,7 @@
             }
           },
           {
-            "id": "c7d1f2a9fd0dc62e",
+            "id": "8be297ed0b333e69",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -180,6 +180,8 @@
   },
   "active": "9119b1aa3737fc30",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "BLOCKCHAIN/fundamentals/Decentralization and trust models.md",
     "BLOCKCHAIN/fundamentals/blockchain types.md",
     "BLOCKCHAIN/fundamentals/INTRO TO BLOCKCHAIN.md",
     "BLOCKCHAIN/fundamentals/web 3.0.md",
@@ -207,8 +209,6 @@
     "BLOCKCHAIN/Transactions and blocks ",
     "BLOCKCHAIN/concensus and network/Untitled 1.md",
     "BLOCKCHAIN/concensus and network/P2P network & mem pool.md",
-    "BLOCKCHAIN/concensus and network/BFT consensus.md",
-    "BLOCKCHAIN/concensus and network/Proof of stake.md",
     "BLOCKCHAIN/concensus and network",
     "BLOCKCHAIN/Cryptography and data structures",
     "BLOCKCHAIN/fundamentals",
