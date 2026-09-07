@@ -106,8 +106,32 @@ awk 'BEGIN {system("/bin/bash")}'
 ```
 5. Find to sh 
 ```bash 
-
+find  -exec /bin/awk 'BEGIN {system("bin/sh")}'
 ```
+OR:
+```bas
+find
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
