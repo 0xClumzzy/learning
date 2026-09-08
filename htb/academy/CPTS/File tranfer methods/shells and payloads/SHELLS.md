@@ -118,8 +118,10 @@ vim -c ':! /bin/sh'
 ```
 Vim escape
 ```vim
-:set
+:set  shell=/bin/sh
+:shell 
 ```
+
 
 
 
