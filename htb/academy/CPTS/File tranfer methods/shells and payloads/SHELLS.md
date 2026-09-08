@@ -132,6 +132,8 @@ ASPX- used in web shells for windows
 
 Antak Webshell
 https://github.com/samratashok/nishang
+Antak utilizes PowerShell to interact with the host, making it great for acquiring a web shell on a Windows server.
+- modify username and password in the file
 
 
 
