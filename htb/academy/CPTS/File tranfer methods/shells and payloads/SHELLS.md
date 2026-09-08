@@ -122,7 +122,13 @@ Vim escape
 :shell 
 ```
 
-ANTAK WEBSHELL
+ASPX- used in web shells for windows
+`Active server page extended` 
+
+ On a web server running the ASP.NET framework, web form pages can be generated for users to input data. On the server side, the information will be converted into HTML. We can take advantage of this by using an ASPX-based web shell to control the underlying Windows operating system. 
+
+Antak Webshell
+
 
 
 
