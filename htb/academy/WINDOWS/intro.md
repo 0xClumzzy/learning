@@ -43,5 +43,14 @@ dir *.py
 
 TREE
 1. show files too
-
-2. Use ascii chars instead of lines
+```
+tree /f
+```
+1. Use ascii chars instead of lines
+```
+tree /a
+```
+1. Only go 2 folders deep
+```
+tree -L 2
+```
