@@ -6,4 +6,7 @@ So windows is ancient...........
 - Windows 8, Server 2012, Windows 8.1, Sever 2012 R2
 - Windows 10, server 2016,19
  All that, powershell comes in handy when it comes to stuff like this 
- `Get-WmiObject` 
+ `Get-WmiObject` cmdlet in powershell works well
+```powershell
+Get-WmiObject -Class  win32_OperatingSystem | s
+```
