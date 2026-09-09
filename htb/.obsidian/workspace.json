@@ -23,12 +23,14 @@
             "id": "920784cde35be4f7",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "academy/WINDOWS"
+                "file": "academy/WINDOWS/intro.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "WINDOWS"
+              "title": "intro"
             }
           }
         ],
@@ -247,8 +249,10 @@
   },
   "active": "920784cde35be4f7",
   "lastOpenFiles": [
-    "academy/WINDOWS/WINDOWS.md",
     "academy/academy.md",
+    "academy/WINDOWS/intro.md",
+    "academy/intro.md",
+    "academy/WINDOWS/WINDOWS.md",
     "academy/WINDOWS.md",
     "academy/WINDOWS",
     "academy/.md",
@@ -284,8 +288,6 @@
     "Vault.md",
     "labs/machines/medium/MAKESENSE.md",
     "labs/machines/medium/BEDSIDE.md",
-    "labs/machines/easy/paperwork.Info/LPD.excalidraw.md",
-    "labs/machines/easy/paperwork2.md",
     "labs/machines/easy/Untitled.canvas",
     "Pasted image 20260721171804.png",
     "labs/machines/medium/bedsideInfo/Pasted image 20260721165914.png",
