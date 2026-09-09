@@ -22,4 +22,5 @@ ACCESSING WINDOWS
 - `mstsc.exe` 
 - remote access must already be allowed for it work 
 - `.rdp` files are gold, they are used to save connection profiles
-1. XFREERD
+1. XFREERDP
+- Linux to Windows
