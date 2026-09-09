@@ -12,4 +12,5 @@ Get-WmiObject -Class  win32_OperatingSystem | select Version,BuildNumber
 ```
 Classes:
 - `win32_OperatingSystem` - Gets  us info
--` Win32_Process`
+- `Win32_Process` - Process listing 
+- `Win32_Bios` -  Bios information 
