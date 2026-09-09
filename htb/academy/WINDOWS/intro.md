@@ -20,3 +20,6 @@ ACCESSING WINDOWS
 - Windows to windows connection 
 - built-in 
 - `mstsc.exe` 
+- remote access must already be allowed for it work 
+- `.rdp` files are gold, they are used to save connection profiles
+1. XFREERD
