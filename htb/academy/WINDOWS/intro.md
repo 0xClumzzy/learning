@@ -3,4 +3,7 @@ So windows is ancient...........
 - Windows Server 2003, 2003 r2
 - Windows Vista, server 2008
 - Windows 7, server 2008 R2
-- Windows 8, Server 2012
+- Windows 8, Server 2012, Windows 8.1, Sever 2012 R2
+- Windows 10, server 2016,19
+ All that, powershell comes in handy when it comes to stuff like this 
+ `Get-WmiObject` 
