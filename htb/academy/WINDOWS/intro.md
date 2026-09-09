@@ -25,4 +25,15 @@ ACCESSING WINDOWS
 1. XFREERDP
 - Linux to Windows
 
-using d
+USING THE DIR AND TREE COMMAND
+
+DIR
+1. Wide list just names
+```
+dir /w
+```
+1. list files
+```
+dir /
+```
+1. only show an extension
