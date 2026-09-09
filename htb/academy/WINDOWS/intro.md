@@ -8,5 +8,8 @@ So windows is ancient...........
  All that, powershell comes in handy when it comes to stuff like this 
  `Get-WmiObject` cmdlet in powershell works well
 ```powershell
-Get-WmiObject -Class  win32_OperatingSystem | s
+Get-WmiObject -Class  win32_OperatingSystem | select Version,BuildNumber
 ```
+Classes:
+- `win32_OperatingSystem` - Gets  us info
+-` Win32_Process`
