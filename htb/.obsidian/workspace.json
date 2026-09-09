@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/kernel architecture.md",
+                "file": "academy/WINDOWS/intro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kernel architecture"
+              "title": "intro"
             }
           }
         ],
@@ -249,8 +249,8 @@
   },
   "active": "920784cde35be4f7",
   "lastOpenFiles": [
-    "academy/academy.md",
     "academy/WINDOWS/kernel architecture.md",
+    "academy/academy.md",
     "academy/WINDOWS/WINDOWS.md",
     "academy/WINDOWS/intro.md",
     "academy/intro.md",

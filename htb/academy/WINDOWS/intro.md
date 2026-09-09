@@ -42,6 +42,9 @@ dir *.py
 ```
 
 TREE
+```
+tree [<drive>:][<path>] [/f] [/a]
+```
 1. show files too
 ```
 tree /f
