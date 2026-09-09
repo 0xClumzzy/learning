@@ -23,11 +23,9 @@
             "id": "920784cde35be4f7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "academy/WINDOWS.md",
-                "mode": "source",
-                "source": false
+                "path": "academy/WINDOWS"
               },
               "icon": "lucide-file",
               "title": "WINDOWS"
@@ -249,7 +247,10 @@
   },
   "active": "920784cde35be4f7",
   "lastOpenFiles": [
+    "academy/WINDOWS/WINDOWS.md",
+    "academy/academy.md",
     "academy/WINDOWS.md",
+    "academy/WINDOWS",
     "academy/.md",
     "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
     "labs/machines/easy/PAPERWORK.md",
@@ -268,7 +269,6 @@
     "academy/CPTS/File tranfer methods/shells and payloads/.md",
     "academy/CPTS/File tranfer methods/shells and payloads",
     "academy/CPTS/File tranfer methods/Linux techniques .md",
-    "academy/CPTS/File tranfer methods/82b4928b-6bfa-4da5-9377-5263107d6866.zip",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
     "techniques/personal favorite techniques.md",
     "labs/machines/medium/FIREFLOW.md",
@@ -286,9 +286,7 @@
     "labs/machines/medium/BEDSIDE.md",
     "labs/machines/easy/paperwork.Info/LPD.excalidraw.md",
     "labs/machines/easy/paperwork2.md",
-    "labs/machines/easy/Untitled.exalidraw.md",
     "labs/machines/easy/Untitled.canvas",
-    "labs/machines/hard/DZ.md",
     "Pasted image 20260721171804.png",
     "labs/machines/medium/bedsideInfo/Pasted image 20260721165914.png",
     "Pasted image 20260721101121.png",
