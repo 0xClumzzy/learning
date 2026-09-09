@@ -17,3 +17,6 @@ Classes:
 
 ACCESSING WINDOWS
 1. RDP
+- Windows to windows connection 
+- built-in 
+- `mstsc.exe` 
