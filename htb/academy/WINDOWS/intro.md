@@ -34,6 +34,14 @@ dir /w
 ```
 1. list files
 ```
-dir /
+dir /s
 ```
 1. only show an extension
+```
+dir *.py
+```
+
+TREE
+1. show files too
+
+2. Use ascii chars instead of lines
