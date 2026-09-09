@@ -14,3 +14,6 @@ Classes:
 - `win32_OperatingSystem` - Gets  us info
 - `Win32_Process` - Process listing 
 - `Win32_Bios` -  Bios information 
+
+ACCESSING WINDOWS
+1. RDP
