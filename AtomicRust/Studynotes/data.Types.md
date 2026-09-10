@@ -2,8 +2,7 @@
 A scalar type represents a single value 
 - intergers(int)
 Signed integer types start with `i`
-Unsigned integer types start with `u`
-|Length|Signed|Unsigned|
+Unsigned integer types start with `
 
 
 1. Compound types
