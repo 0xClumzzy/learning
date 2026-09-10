@@ -1,6 +1,9 @@
 [
   "obsidian-excalidraw-plugin",
   "make-md",
-  "obsidian-tasks-plugin",
-  "obsidian-git"
+  "obsidian-git",
+  "omnisearch",
+  "mermaid-tools",
+  "obsidian-markmind",
+  "obsidian-kanban"
 ]
