@@ -12,5 +12,7 @@ Unsigned integer types start with `u`
 | 64-bit                 | `i64`   | `u64`    |
 | 128-bit                | `i128`  | `u128`   |
 | Architecture-dependent | `isize` | `usize`  |
-Singed integers store values in `two complement`
+Signed integers store values in `two's complement`
+Signed integers store both +/-
+Each signed variant can store nui
 1. Compound types
