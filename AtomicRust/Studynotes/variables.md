@@ -20,3 +20,5 @@ fn main(){
 	println!("Outer x is: {x}");
 }
 ```
+Shadowing lets us use the same variable without having to rename it 
+
