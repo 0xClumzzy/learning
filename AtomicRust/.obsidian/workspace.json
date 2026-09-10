@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Studynotes/data.Types.md",
+                "file": "Studynotes/funtions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "data.Types"
+              "title": "funtions"
             }
           }
         ]
@@ -208,6 +208,9 @@
   },
   "active": "fa37d433b92e73b6",
   "lastOpenFiles": [
+    "Studynotes/Studynotes.md",
+    "Studynotes/funtions.md",
+    "Studynotes/data.Types.md",
     "code for running/arrays/target/debug/deps/arrays-2bb55e52adfbb44b",
     "code for running/arrays/target/debug/incremental/arrays-13o5f6wpmjg6j/s-hm6d35da1v-0fq9f69-0ayvlnfibs3a8mjqabaylb7tm/work-products.bin",
     "code for running/arrays/target/debug/incremental/arrays-13o5f6wpmjg6j/s-hm6d35da1v-0fq9f69-0ayvlnfibs3a8mjqabaylb7tm/query-cache.bin",
@@ -218,12 +221,9 @@
     "code for running/arrays/target/debug/incremental/arrays-13o5f6wpmjg6j/s-hm6d35da1v-0fq9f69-0ayvlnfibs3a8mjqabaylb7tm/d7hfhs75p1kvirw7h0s640y1x.o",
     "code for running/arrays/target/debug/incremental/arrays-13o5f6wpmjg6j/s-hm6d35da1v-0fq9f69-0ayvlnfibs3a8mjqabaylb7tm/cx9dvsrwrrvn4y531ek8vikto.o",
     "code for running/arrays/target/debug/incremental/arrays-13o5f6wpmjg6j/s-hm6d35da1v-0fq9f69-0ayvlnfibs3a8mjqabaylb7tm/cwsxaapmfx14ws71e4nt9k1n8.o",
-    "code for running/arrays/target/debug/incremental/arrays-13o5f6wpmjg6j/s-hm6d35da1v-0fq9f69-0ayvlnfibs3a8mjqabaylb7tm/bu1jfd7126zho5pwwzbxfjz90.o",
     "Studynotes/data.Types-mindmap.md",
-    "Studynotes/data.Types.md",
     "Studynotes/variables.md",
     "mini-projects/guessing game/notes.md",
-    "Studynotes/Studynotes.md",
     "Studynotes/.md",
     "Excalidraw/Drawing 2026-07-16 10.00.47.excalidraw.md",
     "2026-07-16.md",
