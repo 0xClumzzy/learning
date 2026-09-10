@@ -36,11 +36,33 @@ Rust has two primitives, `f32` and `f64`, in bits
 ```rust 
 fn main(){
 	let x = 2.0; //f64
-	let y:f32 
+	let y:f32 = 3.0; //f32
+}
+```
+Floating-point numbers are represented according to the IEEE-754 standard.
+
+- Numeric operators
+```rust
+fn main() {
+    // addition
+    let sum = 5 + 10;
+
+    // subtraction
+    let difference = 95.5 - 4.3;
+
+    // multiplication
+    let product = 4 * 30;
+
+    // division
+    let quotient = 56.7 / 32.2;
+    let truncated = -5 / 3; // Results in -1
+
+    // remainder
+    let remainder = 43 % 5;
 }
 ```
 
-
+-
 
 
 
