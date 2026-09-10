@@ -134,6 +134,7 @@ fn main(){
 You write an array’s type using square brackets with the type of each element, a semicolon, and then the number of elements in the array, like so:
 ```rust
 fn main(){
-	let a: [i32, 5] = [1,2,3,]
+	let a: [i32, 5] = [1,2,3,4,5];
 }
 ```
+ARRAY INDEXING 
