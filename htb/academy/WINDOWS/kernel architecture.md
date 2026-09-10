@@ -17,4 +17,7 @@ Libraries
 - Executive support library- Object management, memory management , other managements
 - Hardware Abstraction Library(HAL library)- Isolates the kernel from hardware specific details 
 - CLFS library- Common Log File System for transaction logging
-- WMI library- Windowa Manageme
+- WMI library- Windows Management Instrumentation infrustructure.
+```mermaid
+
+```
