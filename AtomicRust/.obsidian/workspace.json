@@ -11,12 +11,15 @@
             "id": "e7c7d775f343a632",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "code for running/guessingGame/src"
+                "file": "mini-projects/guessing game/notes.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "lucide-ghost",
-              "title": "mk-space"
+              "icon": "lucide-file",
+              "title": "notes"
             }
           }
         ]
@@ -67,19 +70,22 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
           },
           {
-            "id": "8ebd22712515d3bb",
+            "id": "0dc6fd1d121dd0ec",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "mk-path-view"
+              "icon": "layout-grid",
+              "title": "Navigator"
             }
           }
         ],
@@ -159,16 +165,6 @@
             }
           },
           {
-            "id": "a9436ff2f1c0a4d1",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
-            }
-          },
-          {
             "id": "46f5967d8c103f9f",
             "type": "leaf",
             "state": {
@@ -181,29 +177,9 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
-          },
-          {
-            "id": "9d9b4e9b68096dc4",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
-            }
-          },
-          {
-            "id": "3083fe3214ff6204",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
-            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -230,7 +206,8 @@
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
   "active": "e7c7d775f343a632",

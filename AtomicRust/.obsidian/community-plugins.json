@@ -1,24 +1,6 @@
 [
-  "breadcrumbs",
-  "obsidian-style-settings",
   "obsidian-excalidraw-plugin",
-  "obsidian-markmind",
-  "mermaid-tools",
-  "omnisearch",
-  "obsidian-meta-bind-plugin",
-  "pdf-plus",
-  "dataview",
-  "obsidian-git",
-  "obsidian-kanban",
   "make-md",
-  "obsidian-spaced-repetition",
-  "docxer",
-  "obsidian-enhancing-export",
-  "document-weaver",
-  "obsidian-pandoc",
   "obsidian-tasks-plugin",
-  "calendar",
-  "extended-graph",
-  "contribution-graph",
-  "folder-graph-view"
+  "obsidian-git"
 ]
