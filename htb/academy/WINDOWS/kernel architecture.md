@@ -6,4 +6,4 @@ A layered micro kernel-based architecture.  It seperates the system into user mo
 
 KERNEL MODE COMPONENTS
 = 
-- Object manager- Manages all objects(filrs )
+- Object manager- Manages all objects(files,devices,process)
