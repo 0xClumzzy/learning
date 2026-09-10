@@ -5,3 +5,4 @@ So variables are  immutable by default
 `mut` keyword makes them mutable 
 
 Declaring constants
+`cont PI= 3.142159`
