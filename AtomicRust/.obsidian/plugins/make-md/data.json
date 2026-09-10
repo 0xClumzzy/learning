@@ -40,7 +40,6 @@
   "expandedSpaces": [
     "//rustL",
     "//rustL/rustL/guessingGame/rustL/guessingGame/src",
-    "//mini-projects/mini-projects/guessing game",
     "//mini-projects/mini-projects/guessing game/mini-projects/guessing game/src",
     "//rustL/rustL/wtf",
     "//code for running",
@@ -48,7 +47,8 @@
     "//Excalidraw",
     "/",
     "//templates",
-    "//Studynotes"
+    "//Studynotes",
+    "//mini-projects"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
