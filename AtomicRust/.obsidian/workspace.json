@@ -15,8 +15,8 @@
               "state": {
                 "path": "code for running/guessingGame/src"
               },
-              "icon": "lucide-file",
-              "title": "src"
+              "icon": "lucide-ghost",
+              "title": "mk-space"
             }
           }
         ]
@@ -78,8 +78,8 @@
             "state": {
               "type": "mk-path-view",
               "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
+              "icon": "lucide-ghost",
+              "title": "mk-path-view"
             }
           }
         ],
@@ -164,8 +164,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -198,8 +198,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           }
         ],
@@ -222,19 +222,10 @@
       "markdown-importer:Open format converter": false,
       "zk-prefixer:Create new unique note": false,
       "workspaces:Manage workspace layouts": false,
-      "random-note:Open random note": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "mermaid-tools:Open Mermaid Toolbar": false,
-      "omnisearch:Omnisearch": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-kanban:Create new board": false,
-      "obsidian-spaced-repetition:Review flashcards": false
+      "random-note:Open random note": false
     }
   },
-  "active": "9d9b4e9b68096dc4",
+  "active": "e7c7d775f343a632",
   "lastOpenFiles": [
     "mini-projects/guessing game/notes.md",
     "Excalidraw/Drawing 2026-07-16 10.00.47.excalidraw.md",
