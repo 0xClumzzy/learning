@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/intro.md",
+                "file": "academy/WINDOWS/kernel architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "intro"
+              "title": "kernel architecture"
             }
           }
         ],
@@ -107,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8faf3742ae6b5127",
@@ -249,10 +250,10 @@
   },
   "active": "920784cde35be4f7",
   "lastOpenFiles": [
-    "academy/WINDOWS/kernel architecture.md",
     "academy/academy.md",
-    "academy/WINDOWS/WINDOWS.md",
+    "academy/WINDOWS/kernel architecture.md",
     "academy/WINDOWS/intro.md",
+    "academy/WINDOWS/WINDOWS.md",
     "academy/intro.md",
     "academy/WINDOWS.md",
     "academy/WINDOWS",
