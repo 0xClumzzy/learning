@@ -129,3 +129,11 @@ fn main(){
 	let a = [1,2,3,4,5];
 }
 ```
+ A vector is a similar collection type provided by the standard library that _is_ allowed to grow or shrink in size because its contents live on the heap.
+
+You write an array’s type using square brackets with the type of each element, a semicolon, and then the number of elements in the array, like so:
+```rust
+fn main(){
+	let a: [i32, 5] = [1,2,3,]
+}
+```
