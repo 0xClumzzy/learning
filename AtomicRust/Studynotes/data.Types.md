@@ -138,3 +138,9 @@ fn main(){
 }
 ```
 ARRAY INDEXING 
+```rust
+fn main(){
+	let a: [u32, 5] = [1,2,3,4,5];
+	let first = 
+}
+```
