@@ -14,5 +14,8 @@ Unsigned integer types start with `u`
 | Architecture-dependent | `isize` | `usize`  |
 Signed integers store values in `two's complement`
 Signed integers store both +/-
-Each signed variant can store numbers from $$-(2^{n-1})to 2^{n-1}-1  $$
+Each signed variant can store numbers from $$-(2^{n-1})->2^{n-1}-1  $$Where n is the number of bits that variant uses.
+So, an `i8` can store numbers from −(27) to 27 − 1, which equals −128 to 127.
+
+Unsigned variants can store from
 1. Compound types
