@@ -15,4 +15,6 @@ Managers
 Libraries
 - Kernel library- The foundation, everything depends on this
 - Executive support library- Object management, memory management , other managements
-- Hardware Abstraction Library(HAL library)- 
+- Hardware Abstraction Library(HAL library)- Isolates the kernel from hardware specific details 
+- CLFS library- Common Log File System for transaction logging
+- WMI library- Windowa Manageme
