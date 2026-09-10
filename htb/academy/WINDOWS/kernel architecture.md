@@ -6,7 +6,10 @@ A layered micro kernel-based architecture.  It seperates the system into user mo
 
 KERNEL MODE COMPONENTS
 = 
+Managers
 - Object manager- Manages all objects(files,devices,process......)
 - Memory manager- Manages virtual memory, physical ram allocation 
 - Process and thread manager - Creation and termination 
-- i/o manager - Communication betwee
+- i/o manager - Communication between devices and applications
+- Plug and play manager  - Handles device detection and configuration 
+Libraries
