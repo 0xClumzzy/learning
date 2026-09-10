@@ -11,12 +11,15 @@
             "id": "e7c7d775f343a632",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "Studynotes"
+                "file": "Studynotes/variables.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Studynotes"
+              "title": "variables"
             }
           }
         ]
@@ -209,6 +212,7 @@
   },
   "active": "e7c7d775f343a632",
   "lastOpenFiles": [
+    "Studynotes/variables.md",
     "Studynotes/Studynotes.md",
     "Studynotes/.md",
     "mini-projects/guessing game/notes.md",
