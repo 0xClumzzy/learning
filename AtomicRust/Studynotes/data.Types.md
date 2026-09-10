@@ -84,6 +84,7 @@ fn main() {
 1. Compound types
 They can group multiple values into one type
 Rust has two primitive types. *tuples* and *arrays*
+
 - Tuple types 
 A _tuple_ is a general way of grouping together a number of values with a variety of types into one compound type. Tuples have a fixed length: Once declared, they cannot grow or shrink in size.
 ```rust 
@@ -116,3 +117,8 @@ fn main() {
     let one = x.2;
 }
 ```
+accessing a tuple element directly by using a period (`.`) followed by the index of the value we want to access.
+
+The tuple without any values has a special name, _unit_. This value and its corresponding type are both written `()` and represent an empty value or an empty return type. Expressions implicitly return the unit value if they don’t return any other value.
+
+- Array ty
