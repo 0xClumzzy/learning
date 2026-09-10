@@ -31,6 +31,7 @@ You can write integer literals in any of the forms shown in the above table. Not
 | Octal            | `0o77`        |
 | Binary           | `0b1111_0000` |
 | Byte (`u8` only) | `b'A'`        |
+- Floating point types 
 
 
 
