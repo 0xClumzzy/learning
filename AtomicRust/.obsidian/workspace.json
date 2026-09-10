@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Studynotes/variables.md",
+                "file": "Studynotes/data.Types.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "variables"
+              "title": "data.Types"
             }
           }
         ]
@@ -213,6 +213,8 @@
   },
   "active": "fa37d433b92e73b6",
   "lastOpenFiles": [
+    "Studynotes/variables.md",
+    "Studynotes/data.Types.md",
     "code for running/variables/target/debug/deps/variables-381597e668a87737",
     "code for running/variables/target/debug/deps/rustcYqs7ri/symbols.o",
     "code for running/variables/target/debug/deps/rustcYqs7ri/raw-dylibs",
@@ -223,9 +225,7 @@
     "code for running/variables/target/debug/incremental/variables-0bxyb9n3a3tu1/s-hm69mtfxxj-1jleqxf-azvlnc76p1awuymtc03lo6tc6/dep-graph.bin",
     "code for running/variables/target/debug/incremental/variables-0bxyb9n3a3tu1/s-hm69mtfxxj-1jleqxf-azvlnc76p1awuymtc03lo6tc6/b0ocd2mauqqfycv755fukpd9m.o",
     "code for running/variables/target/debug/incremental/variables-0bxyb9n3a3tu1/s-hm69mtfxxj-1jleqxf-azvlnc76p1awuymtc03lo6tc6/90d19bk0t84bkyg2ht7fk4w77.o",
-    "code for running/variables/target/debug/incremental/variables-0bxyb9n3a3tu1/s-hm69mtfxxj-1jleqxf-azvlnc76p1awuymtc03lo6tc6/7pxjktlecptavdfnn4sz20p5a.o",
     "mini-projects/guessing game/notes.md",
-    "Studynotes/variables.md",
     "Studynotes/Studynotes.md",
     "Studynotes/.md",
     "Excalidraw/Drawing 2026-07-16 10.00.47.excalidraw.md",
