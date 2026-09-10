@@ -14,5 +14,5 @@ Unsigned integer types start with `u`
 | Architecture-dependent | `isize` | `usize`  |
 Signed integers store values in `two's complement`
 Signed integers store both +/-
-Each signed variant can store numbers from $$-(2^n-1)to 2 $$
+Each signed variant can store numbers from $$-(2^{n-1})to 2^{n-1}-1  $$
 1. Compound types
