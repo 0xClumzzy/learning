@@ -91,3 +91,13 @@ fn main(){
 	let tup: (i32, f64, u8) = (230, 6.2, 45)
 }
 ```
+We create a tuple by writing a comma-separated list of values inside parentheses. Each position in the tuple has a type, and the types of the different values in the tuple don’t have to be the same.
+
+To get the individual values out of a tuple, we can use pattern matching to destructure a tuple value
+```rust 
+fn main(){
+	let tup = (230, 6.2, 45);
+	let (x,y,z) = tup;
+	println!
+}
+```
