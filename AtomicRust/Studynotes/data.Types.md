@@ -121,4 +121,11 @@ accessing a tuple element directly by using a period (`.`) followed by the index
 
 The tuple without any values has a special name, _unit_. This value and its corresponding type are both written `()` and represent an empty value or an empty return type. Expressions implicitly return the unit value if they don’t return any other value.
 
-- Array ty
+- Array types 
+Every element of an array must have the same type.
+Arrays have a fixed length
+```rust 
+fn main(){
+	let a = [1,2,3,4,5];
+}
+```
