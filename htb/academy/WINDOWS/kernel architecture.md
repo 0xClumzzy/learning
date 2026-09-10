@@ -19,6 +19,11 @@ Libraries
 - CLFS library- Common Log File System for transaction logging
 - WMI library- Windows Management Instrumentation infrustructure.
 ```mermaid
+flowchart LR
  a[User mode<br/>CSRSS, Win32 apps, services]
     --> b[Win32 subsystem<br/>csrss.exe, Console, GDI, USER]
+	    --> c [Native api<br]
 ```
+
+
+
