@@ -20,7 +20,6 @@ Libraries
 - WMI library- Windows Management Instrumentation infrustructure.
 ```mermaid
 flowchart TD
-a[User mode(CSRSS, Win32 apps, services)]
-b[Win32 subsystem(crs)]
+a[User mode(CSRSS, Win32 apps, services)]-->b[Win32 subsystem(csrss.exe,console,GDI, USER)]
 
 ```
