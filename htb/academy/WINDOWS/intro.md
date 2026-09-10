@@ -1,4 +1,5 @@
 So windows is ancient...........
+https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tree
 - Windows XP
 - Windows Server 2003, 2003 r2
 - Windows Vista, server 2008
