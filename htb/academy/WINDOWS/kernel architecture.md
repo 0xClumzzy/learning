@@ -23,7 +23,10 @@ flowchart LR
  a[User mode<br/>CSRSS, Win32 apps, services]
     --> b[Win32 subsystem<br/>csrss.exe, Console, GDI, USER]
 	    --> c[Native api<br/>  System Call Interface]
-		    --> d[Executive Services<br/>]
+		    --> d[Executive Services<br/>Executive services]
+			    --> e[Kernel]
+				    --> f[HAL]
+					    --> g[hardaware]
 ```
 
 
