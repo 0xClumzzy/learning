@@ -62,28 +62,23 @@ fn main() {
 }
 ```
 
--
+- Boolean Types
+```rust
+fn main() {
+    let t = true;
 
+    let f: bool = false; // with explicit type annotation
+}
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- character types 
+```rust 
+fn main() {
+    let c = 'z';
+    let z: char = 'ℤ'; // with explicit type annotation
+    let heart_eyed_cat = '😻';
+}
+```
 
 
 1. Compound types
