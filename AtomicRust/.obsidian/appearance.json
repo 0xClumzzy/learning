@@ -2,5 +2,6 @@
   "cssTheme": "Primary",
   "enabledCssSnippets": [
     "noctalia"
-  ]
+  ],
+  "interfaceFontFamily": "DejaVu Sans"
 }
