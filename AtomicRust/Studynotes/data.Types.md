@@ -32,7 +32,13 @@ You can write integer literals in any of the forms shown in the above table. Not
 | Binary           | `0b1111_0000` |
 | Byte (`u8` only) | `b'A'`        |
 - Floating point types 
-
+Rust has two primitives, `f32` and `f64`, in bits 
+```rust 
+fn main(){
+	let x = 2.0; //f64
+	let y:f32 
+}
+```
 
 
 
