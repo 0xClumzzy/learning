@@ -13,4 +13,6 @@ Managers
 - i/o manager - Communication between devices and applications
 - Plug and play manager  - Handles device detection and configuration 
 Libraries
-- Kernel library- 
+- Kernel library- The foundation, everything depends on this
+- Executive support library- Object management, memory management , other managements
+- Hardware Abstraction Library(HAL library)- 
