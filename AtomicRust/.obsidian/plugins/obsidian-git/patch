@@ -1,0 +1,10 @@
+diff --git a/Studynotes/data.Types.md b/Studynotes/data.Types.md
+index 000000..000000 100644
+--- a/Studynotes/data.Types.md
++++ b/Studynotes/data.Types.md
+@@ -4,4 +4,1 @@
+-Signed integer types start with `i`
+-Unsigned integer types start with `
+-
+-
++Signd int
