@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mini-projects/guessing game/notes.md",
+                "file": "Studynotes/variables.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "notes"
+              "title": "variables"
             }
           }
         ],
@@ -228,10 +228,10 @@
   },
   "active": "fa37d433b92e73b6",
   "lastOpenFiles": [
+    "mini-projects/guessing game/notes.md",
     "Studynotes/variables.md",
     "Studynotes/Studynotes.md",
     "Studynotes/.md",
-    "mini-projects/guessing game/notes.md",
     "Excalidraw/Drawing 2026-07-16 10.00.47.excalidraw.md",
     "2026-07-16.md",
     "Untitled Kanban.md",
