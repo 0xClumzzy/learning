@@ -8,3 +8,15 @@ Declaring constants
 `cont PI= 3.141592`
 
 Shadowing
+```rust 
+fn main(){
+	let x = 5;
+	let x = x+1;
+	
+	{
+		let x = x * 2;
+		println!("Inner x is: {x}");
+	}
+	println!("Outer x is: {x}");
+}
+```
