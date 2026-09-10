@@ -98,6 +98,6 @@ To get the individual values out of a tuple, we can use pattern matching to dest
 fn main(){
 	let tup = (230, 6.2, 45);
 	let (x,y,z) = tup;
-	println!
+	println!("The value of y is: {y});
 }
 ```
