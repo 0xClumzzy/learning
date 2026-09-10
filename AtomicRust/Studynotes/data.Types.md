@@ -17,5 +17,40 @@ Signed integers store both +/-
 Each signed variant can store numbers from $$-(2^{n-1})->2^{n-1}-1  $$Where n is the number of bits that variant uses.
 So, an `i8` can store numbers from −(27) to 27 − 1, which equals −128 to 127.
 
-Unsigned variants can store from
+Unsigned variants can store from $$0-> 2^{n}-1$$
+the `isize` and `usize` types depend on the architecture of the computer your program is running on: 64 bits if you’re on a 64-bit architecture and 32 bits if you’re on a 32-bit architecture.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. Compound types
