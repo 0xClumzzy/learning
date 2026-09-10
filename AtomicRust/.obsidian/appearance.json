@@ -3,5 +3,7 @@
   "enabledCssSnippets": [
     "noctalia"
   ],
-  "interfaceFontFamily": "DejaVu Sans"
+  "interfaceFontFamily": "DejaVu Sans Mono",
+  "textFontFamily": "FiraCode Nerd Font Propo",
+  "baseFontSizeAction": true
 }
