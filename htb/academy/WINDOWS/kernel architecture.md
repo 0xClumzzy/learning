@@ -13,3 +13,4 @@ Managers
 - i/o manager - Communication between devices and applications
 - Plug and play manager  - Handles device detection and configuration 
 Libraries
+- Kernel library- 
