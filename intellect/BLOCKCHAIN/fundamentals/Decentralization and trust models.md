@@ -9,9 +9,11 @@ NODE TYPES
 | Light Node(SPV) | Only block headers(not full transaction data)              | Verifies transactions using proofs from full nodes. Trusts full nodes to handle the rest | Mobile wallets, browser extensions, resource constrained environments |
 |                 |                                                            |                                                                                          |                                                                       |
 
-Full nodes enforce concensus rules and store everything, if u run a full node you verify everything no need to trust anyone
+`Full nodes` enforce concensus rules and store everything, if u run a full node you verify everything no need to trust anyone
 
-Light nodes sacrifice independence for convenience. They can verify whether a transaction exists on a block through a *merkle proof* but they trust the full node to tell them the full honest chain state 
+`Light nodes` sacrifice independence for convenience. They can verify whether a transaction exists on a block through a *merkle proof* but they trust the full node to tell them the full honest chain state 
+
+`Archive nodes` store every historical state at every block height 
 
 TRUST ASSUMPTIONS 
 
