@@ -45,9 +45,9 @@ Not all block chains are equally decentralized
 | centralized         | a single entity or a small consortium                 | private              |
 
 TRUST MODELS
-1. Trust the operator. Private/consortium chains
-2. Trust the mjority. Public PoW/PoS chains
-3. Trust the code. Smart contract platforms
+1. `Byzanite fault tolerant`. Trust the validat
+2. `Honest Majority`.Trust the mjority. Public PoW/PoS chains
+3. `Trustless` Trust the code. Smart contract platforms
 
 
 
