@@ -48,7 +48,8 @@ TRUST MODELS
 1. `Byzanite fault tolerant`. Trust the validators, <1/3 of validators are malicious, eg Tendermint/cosmos chains
 2. `Honest Majority`.Trust the majority. >50% of hash power (PoW or stake (PoS) is honest, eg Public PoW/PoS chains. 
 3. `Trustless` Trust the code, the protocol, the math. Smart contract platforms eg, blockchain, ethereum.
-4. `Federated trust`. A known set of members eg Hyperleder Fabric
+4. `Federated trust`. A known set of members eg Hyperleder Fabric,Ripple
+5. `Trusted sequencer`. A single entity order transactions. Many L2 rollups
 
 
 
