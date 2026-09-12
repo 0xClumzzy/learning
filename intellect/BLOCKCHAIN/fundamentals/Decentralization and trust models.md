@@ -45,8 +45,8 @@ Not all block chains are equally decentralized
 | centralized         | a single entity or a small consortium                 | private              |
 
 TRUST MODELS
-1. `Byzanite fault tolerant`. Trust the validat
-2. `Honest Majority`.Trust the mjority. Public PoW/PoS chains
+1. `Byzanite fault tolerant`. Trust the validators, <1/3 of validators are malicious, eg Tendermint/cosmos chains
+2. `Honest Majority`.Trust the majority. Public PoW/PoS chains. >50% of hash power (PoW or stake (PoS) is honest.
 3. `Trustless` Trust the code. Smart contract platforms
 
 
