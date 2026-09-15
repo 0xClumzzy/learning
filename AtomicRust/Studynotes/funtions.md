@@ -48,5 +48,8 @@ The scope block has an expression and the evaluation expression gets bound to y,
 - a function call is an expression
 - calling a macro too is an expression 
 
-** return values**
+**return values**
+
+Declaring the type of value a function should return
+
 
