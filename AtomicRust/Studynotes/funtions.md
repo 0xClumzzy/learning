@@ -22,8 +22,9 @@ let number = 12;
 	- function definitions are also statements 
 	- You cant assign a let statement another variable
 	```rust
-	
+	let x = (let y = 5);
 	```
+	- 
 - Expressions evaluate to a resultant value
 ```rust 
 
