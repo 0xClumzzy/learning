@@ -44,4 +44,8 @@ fn main(){
 	println!()
 }
 ```
-The scope block has 
+The scope block has an expression and the evaluation expression gets bound to y, `let y = value` still remains an expression 
+- a function call is an expression
+- calling a macro too is an 
+
+
