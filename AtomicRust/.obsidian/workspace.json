@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Studynotes/funtions.md",
+                "file": "Studynotes/data.Types.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "funtions"
+              "title": "data.Types"
             }
           }
         ]
@@ -208,8 +208,8 @@
   },
   "active": "fa37d433b92e73b6",
   "lastOpenFiles": [
-    "Studynotes/Studynotes.md",
     "Studynotes/funtions.md",
+    "Studynotes/Studynotes.md",
     "Studynotes/data.Types.md",
     "code for running/arrays/target/debug/deps/arrays-2bb55e52adfbb44b",
     "code for running/arrays/target/debug/incremental/arrays-13o5f6wpmjg6j/s-hm6d35da1v-0fq9f69-0ayvlnfibs3a8mjqabaylb7tm/work-products.bin",
