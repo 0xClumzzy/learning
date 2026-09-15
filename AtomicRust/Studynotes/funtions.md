@@ -44,4 +44,4 @@ fn main(){
 	println!()
 }
 ```
-
+The scope block has 
