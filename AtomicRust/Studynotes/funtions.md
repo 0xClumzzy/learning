@@ -21,15 +21,20 @@ STATEMENTS
 ```rust
 let number = 12;
 ```
-
 - function definitions are also statements 
 	- You cant assign a let statement another variable:
 	```rust
 	let x = (let y = 5);
 	``` 
 
-EXPRES
+
+EXPRESSIONS 
 - Expressions evaluate to a resultant value
+```rust
+let x = 3;
+x + 1
+```
+- Expressions can be a part of a statement through 
 ```rust 
 fn main(){
 	let y = {
@@ -39,5 +44,3 @@ fn main(){
 	println!()
 }
 ```
- --> used a scope block
-	- 
