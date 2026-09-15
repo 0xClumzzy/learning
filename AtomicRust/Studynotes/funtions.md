@@ -13,3 +13,6 @@ fn another_function() {
 }
 ```
  `parameters` are special variables that are part of a function’s signature. When a function has parameters, you can provide it with concrete values for those parameters.The concrete values are called `arguments`
+
+**Statement vs expressions**
+- A statement 
