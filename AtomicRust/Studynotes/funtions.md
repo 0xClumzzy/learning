@@ -20,7 +20,10 @@ fn another_function() {
 let number = 12;
 ```
 	- function definitions are also statements 
-	- Since statement 
+	- You cant assign a let statement another variable
+	```rust
+	
+	```
 - Expressions evaluate to a resultant value
 ```rust 
 
