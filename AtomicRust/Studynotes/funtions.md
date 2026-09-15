@@ -51,5 +51,14 @@ The scope block has an expression and the evaluation expression gets bound to y,
 **return values**
 
 Declaring the type of value a function should return
+```rust 
+fn five()--> u8{
+	5
+}
 
+fn main(){
+	let x = five();
+	println!("x = {x}")
+}
+```
 
