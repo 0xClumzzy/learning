@@ -24,8 +24,14 @@ let number = 12;
 	```rust
 	let x = (let y = 5);
 	```
-	- 
+
 - Expressions evaluate to a resultant value
 ```rust 
-
+fn main(){
+	let y = {
+		let x = 3;
+		x + 1
+	};
+	println!()
+}
 ```
