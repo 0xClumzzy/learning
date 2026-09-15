@@ -58,7 +58,7 @@ fn five()--> u8{
 
 fn main(){
 	let x = five();
-	println!("x = {x}")
+	println!("x = {x}");
 }
 ```
 
