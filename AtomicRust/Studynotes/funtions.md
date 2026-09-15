@@ -16,4 +16,12 @@ fn another_function() {
 
 **Statement vs expressions**
 - A statement performs some action but no value is returned 
+```rust
+let number = 12;
+```
+	- function definitions are also statements 
+	- Since statement 
 - Expressions evaluate to a resultant value
+```rust 
+
+```
