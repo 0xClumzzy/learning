@@ -34,7 +34,7 @@ EXPRESSIONS
 let x = 3;
 x + 1
 ```
-- Expressions can be a part of a statement through 
+- Expressions can be a part of a statement through a scope block
 ```rust 
 fn main(){
 	let y = {
@@ -44,3 +44,4 @@ fn main(){
 	println!()
 }
 ```
+
