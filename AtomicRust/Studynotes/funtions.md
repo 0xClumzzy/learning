@@ -20,10 +20,10 @@ fn another_function() {
 let number = 12;
 ```
 	- function definitions are also statements 
-	- You cant assign a let statement another variable
+	- You cant assign a let statement another variable:
 	```rust
 	let x = (let y = 5);
-	```
+	``` -> you cant do this 
 
 - Expressions evaluate to a resultant value
 ```rust 
@@ -35,3 +35,5 @@ fn main(){
 	println!()
 }
 ```
+ --> used a scope block
+	- 
