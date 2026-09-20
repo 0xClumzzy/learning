@@ -44,7 +44,6 @@
     "//labs",
     "//Tags",
     "//labs/labs/machines/labs/machines/hard",
-    "//labs/labs/machines/labs/machines/easy/labs/machines/easy/paperwork.Info",
     "//Excalidraw",
     "//labs/labs/machines/labs/machines/medium",
     "//academy/academy/CPTS/academy/CPTS/File tranfers ",
@@ -55,7 +54,9 @@
     "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info/labs/machines/medium/fireflow.Info/dookie",
     "//academy",
     "//academy/academy/CPTS",
-    "//academy/academy/WINDOWS"
+    "//academy/academy/WINDOWS",
+    "//labs/labs/machines",
+    "//labs/labs/machines/labs/machines/easy"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

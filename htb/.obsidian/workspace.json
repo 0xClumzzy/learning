@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/CPTS/File tranfer methods/Windows techniques .md",
+                "file": "labs/machines/easy/JERRY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Windows techniques"
+              "title": "JERRY"
             }
           }
         ],
@@ -249,6 +249,9 @@
   },
   "active": "920784cde35be4f7",
   "lastOpenFiles": [
+    "labs/machines/easy/easy.md",
+    "techniques/personal favorite techniques.md",
+    "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/WINDOWS/kernel architecture.md",
     "academy/academy.md",
     "academy/WINDOWS/intro.md",
@@ -260,7 +263,6 @@
     "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
     "labs/machines/easy/PAPERWORK.md",
     "conflict-files-obsidian-git.md",
-    "labs/machines/easy/easy.md",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.xml",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.nmap",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.gnmap",
@@ -274,8 +276,6 @@
     "academy/CPTS/File tranfer methods/shells and payloads/.md",
     "academy/CPTS/File tranfer methods/shells and payloads",
     "academy/CPTS/File tranfer methods/Linux techniques .md",
-    "academy/CPTS/File tranfer methods/Windows techniques .md",
-    "techniques/personal favorite techniques.md",
     "labs/machines/medium/FIREFLOW.md",
     "labs/machines/medium/fireflow.Info/fireflow.Info.md",
     "academy/CPTS/File tranfer methods/fileless threats .md",
