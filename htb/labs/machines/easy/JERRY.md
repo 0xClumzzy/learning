@@ -19,12 +19,14 @@ echo "10.101.010.10  jerry.htb" | sudo tee -a /etc/hosts
 make dump dir 
 ```bash 
 mkdir jerry.Info
+mkdir jerry.Info/jerry.Nmap
 ```
 Run an initial Nmap scan:
 
 ```bash
-nmap -sC -sV -oN nmap/boxname 10.10.10.x
+nmap --min-rate 5000 -sCXV -oA jerry.Info/jerry.Nmap/ jerry.htb 
 ```
+
 
 ### Port XX (Service)
 
