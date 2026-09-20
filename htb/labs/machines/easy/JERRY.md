@@ -1,5 +1,5 @@
 ---
-title: HTB - BoxName
+title: JERRY
 description: Windows box with an apache tomcat vuln leading to a NT Authority\SYSTEM shell
 date: 2026-09-20T23:13:11.000Z
 category: htb
@@ -8,11 +8,18 @@ tags:
   - web
   - rce
 difficulty: easy
-os: linux
+os: windows
 ---
 
 ## Enumeration
-
+Add ip to hosts:
+```bash 
+echo "10.101.010.10  jerry.htb" | sudo tee -a /etc/hosts
+```
+make dump dir 
+```bash 
+mkdir jerry.Info
+```
 Run an initial Nmap scan:
 
 ```bash
