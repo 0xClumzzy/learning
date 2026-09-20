@@ -3,10 +3,10 @@ We will need a buffer, it will store the contents of the file. Buffer size is in
 
 The steps to read:
 1. open- filename or filepath 
-2. Buffer allocation 
-3. filename error handling
-4. read
-5. close 
+	1. Buffer allocation 
+2. filename error handling
+3. read
+4. close 
 OPEN 
 ```
 FILE *pFILE = fopen("file.txt", "r");
