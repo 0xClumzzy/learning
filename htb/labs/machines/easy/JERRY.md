@@ -1,11 +1,14 @@
 ---
-title: "HTB - BoxName"
-description: "One-line summary of the box and key vulnerability."
-date: 2024-01-15
-category: "htb"
-tags: ["tag1", "tag2"]
-difficulty: "easy"
-os: "linux"
+title: HTB - BoxName
+description: Windows box with an apache tomcat vuln leading to a NT Authority\SYSTEM shell
+date: 2026-09-20T23:13:11.000Z
+category: htb
+tags:
+  - nmap
+  - web
+  - rce
+difficulty: easy
+os: linux
 ---
 
 ## Enumeration
