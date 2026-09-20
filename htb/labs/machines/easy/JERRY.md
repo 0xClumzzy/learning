@@ -26,11 +26,12 @@ Run an initial Nmap scan:
 ```bash
 nmap --min-rate 5000 -sCXV -oA jerry.Info/jerry.Nmap/ jerry.htb 
 ```
+### Findings 
 
+| port   | service |     |
+| ------ | ------- | --- |
+| 22 tcp |         |     |
 
-### Port XX (Service)
-
-Describe what's running on each interesting port.
 
 ## Foothold
 
