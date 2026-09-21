@@ -46,19 +46,9 @@ Metasploit framework
 search tomcat
 use exploit/multi/http/tomcat_mgr_upload
 ```
-set the options
+set the options necessary and run
 
-Got a shell as `username`.
-
-
-## FlagS
-
-```bash
-cat /root/root.txt
-```
+Got a shell as `NT AUTHORITY\SYSTEM .
 
 ## Lessons Learned
-
-1. Key takeaway one
-2. Key takeaway two
-3. Key takeaway three
+-  This box was meabt
