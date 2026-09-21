@@ -43,8 +43,10 @@ and the server handles JSP files
 Metasploit framework 
 
 ```bash
-search omcat
+search tomcat
+use exploit/multi/http/tomcat_mgr_upload
 ```
+set the options
 
 Got a shell as `username`.
 
