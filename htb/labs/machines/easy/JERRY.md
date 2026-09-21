@@ -36,6 +36,8 @@ it leaks default credentials in the web ui
 - user:`tomcat`
 - password:`s3cret`
 Dicovering file upload capabilities 
+Quick google search informs about the *JSP file upload vulnerability*
+and the server handles JSP files 
 
 ## Foothold
 
