@@ -32,7 +32,10 @@ nmap --min-rate 5000 -sCXV -oA jerry.Info/jerry.Nmap/ jerry.htb
 | -------- | ------- | --- |
 | 8080/tcp | http    |     |
 The web server is running Apache Tomcat version 7.0.88
-it leaks default credentials in the web ui, `tomcat`
+it leaks default credentials in the web ui
+- user:`tomcat`
+- password:`s3cret`
+Dicovering file upload capabilities  
 ## Foothold
 
 How you got initial access.
