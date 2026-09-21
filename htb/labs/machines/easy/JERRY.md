@@ -35,7 +35,8 @@ The web server is running Apache Tomcat version 7.0.88
 it leaks default credentials in the web ui
 - user:`tomcat`
 - password:`s3cret`
-Dicovering file upload capabilities  
+Dicovering file upload capabilities 
+
 ## Foothold
 
 How you got initial access.
