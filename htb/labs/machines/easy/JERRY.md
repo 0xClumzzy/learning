@@ -30,9 +30,8 @@ nmap --min-rate 5000 -sCXV -oA jerry.Info/jerry.Nmap/ jerry.htb
 
 | port     | service |     |
 | -------- | ------- | --- |
-| 8080/tcp |         |     |
-
-
+| 8080/tcp | http    |     |
+The web server is running Apache Tomcat version 7.0.88
 ## Foothold
 
 How you got initial access.
