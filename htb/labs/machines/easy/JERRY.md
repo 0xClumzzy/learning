@@ -49,6 +49,4 @@ use exploit/multi/http/tomcat_mgr_upload
 set the options necessary and run
 
 Got a shell as `NT AUTHORITY\SYSTEM .
-
-## Lessons Learned
--  This box was meabt
+ Get the flags....
