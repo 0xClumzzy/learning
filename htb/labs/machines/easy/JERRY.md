@@ -37,37 +37,19 @@ it leaks default credentials in the web ui
 - password:`s3cret`
 Dicovering file upload capabilities 
 Quick google search informs about the *JSP file upload bypass *(`CVE-2017-12617`)
-and the server handles JSP files 
+and the server handles JSP files
+## Foothold, Exploitation
 
-## Foothold
-
-How you got initial access.
-
-### Exploitation
-
-Step-by-step exploitation.
+Metasploit framework 
 
 ```bash
-# Commands here
+search omcat
 ```
 
 Got a shell as `username`.
 
-## User Flag
 
-```bash
-cat /home/username/user.txt
-```
-
-## Privilege Escalation
-
-How you escalated to root/admin.
-
-```bash
-# Commands here
-```
-
-## Root Flag
+## FlagS
 
 ```bash
 cat /root/root.txt
