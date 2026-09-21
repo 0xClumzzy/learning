@@ -31,7 +31,7 @@ nmap --min-rate 5000 -sCXV -oA jerry.Info/jerry.Nmap/ jerry.htb
 | port   | service |     |
 | ------ | ------- | --- |
 | 22/tcp | ssh     |     |
-|        |         |     |
+| dxg    |         |     |
 
 
 ## Foothold
