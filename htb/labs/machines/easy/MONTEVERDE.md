@@ -1,11 +1,13 @@
 ---
-title: "HTB - BoxName"
-description: "One-line summary of the box and key vulnerability."
+title: MONTEVERDE
+description: One-line summary of the box and key vulnerability.
 date: 2024-01-15
-category: "htb"
-tags: ["tag1", "tag2"]
-difficulty: "easy"
-os: "linux"
+category: htb
+tags:
+  - tag1
+  - tag2
+difficulty: easy
+os: linux
 ---
 
 ## Enumeration
