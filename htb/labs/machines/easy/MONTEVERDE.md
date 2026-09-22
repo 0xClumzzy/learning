@@ -49,8 +49,10 @@ ldapsearch -H ldap://10.10.10.10 -x -s base -b "" namingcontexts
 Establishes AD domain as `MEGABANK.LOCAL`
 - Enumerate using domain as base
 ```bash
-ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL" > enum.ldap
+ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL" > enum
 ```
+> DC: MONTEVERDE.MEGABANK.LOCAL
+Users exist under several OUs, including `MegaBank Users` and `Service Accounts`
 ## Foothold
 
 How you got initial access.
