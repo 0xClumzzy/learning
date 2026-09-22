@@ -38,12 +38,12 @@ ldapsearch -H ldap://10.10.10.10 -x -s base -b "" namingcontexts
 `-s base ` - query only the root entry 
 `-b ""` - empty base DN (RootDSE)
 `namingcontexts` - attribute to retrieve 
-> namingcontexts: DC=MEGABANK,DC=LOCAL
+> namingcontexts: DC=MEGABANK,DC=LOCAL => foc
 
 Establishes AD domain as `MEGABANK.LOCAL`
 - Enumerate using domain as base
 ```bash
-ldap
+ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL"
 ```
 ## Foothold
 
