@@ -7,6 +7,7 @@ reg.exe save hklm\sam C:\sam.save
 reg.exe save hklm\system C:\sys.save
 reg.exe save hklm\security C:\sec.save
 ```
+
 - They are `registry hive files`
 - They live under `C:\Windows\System32\config`
 	- `C:\Windows\System32\config\SAM`
