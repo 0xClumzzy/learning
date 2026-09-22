@@ -134,8 +134,12 @@ Get user flag
 ```powershell
 net group
 ```
-The first gorup that caught attention was 
-The user `mhope` is the member of the domain group `Azure Admins`, along with users `Administrator` and `AAD_987d7f2f57d2`.
+The first gorup that caught attention was `Azure admins`
+```powershell
+net group "Azure admins"
+```
+reveals that the user `mhope` is the member of the domain group `Azure Admins`, along with users `Administrator` and `AAD_987d7f2f57d2`.
+
 ## Root Flag
 
 ```bash
