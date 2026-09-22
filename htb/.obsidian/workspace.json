@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/REG.exe.md",
+                "file": "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "REG.exe"
+              "title": "SAM, SECURITY and SYSTEM"
             }
           }
         ],
@@ -251,8 +251,8 @@
   },
   "active": "559cfc706d185dfd",
   "lastOpenFiles": [
-    "academy/WINDOWS/REGISTRY.md",
     "academy/WINDOWS/REG.exe.md",
+    "academy/WINDOWS/REGISTRY.md",
     "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "academy/WINDOWS/intro.md",
     "academy/WINDOWS/WINDOWS.md",
