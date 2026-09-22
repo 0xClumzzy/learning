@@ -56,7 +56,7 @@ ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL" > enum
 
 - Get username list 
 ```bash 
-ldapsearch -x -H ldap://target -b "DC=MEGABANK,D="
+ldapsearch -x -H ldap://target -b "DC=MEGABANK,DC=LOCAL" "(objectClass=user) sAMAccountName"
 ```
 ## Foothold
 
