@@ -52,7 +52,8 @@ Establishes AD domain as `MEGABANK.LOCAL`
 ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL" > enum
 ```
 > DC: MONTEVERDE.MEGABANK.LOCAL
-Users exist under several OUs, including `MegaBank Users` and `Service Accounts`
+   Users exist under several OUs, including `MegaBank Users` and `Service Accounts`
+
 ## Foothold
 
 How you got initial access.
