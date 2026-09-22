@@ -58,6 +58,10 @@ ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL" > enum
 ```bash 
 ldapsearch -x -H ldap://target -b "DC=MEGABANK,DC=LOCAL" "(objectClass=user) sAMAccountName"
 ```
+get only user names
+```bash 
+ldapsearch -x -H ldap://target -b "DC=MEGABANK,DC=LOCAL" "(objectClass=user) sAMAccountName" | grep 
+```
 ## Foothold
 
 How you got initial access.
