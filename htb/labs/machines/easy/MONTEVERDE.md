@@ -85,7 +85,15 @@ roleary
 smorgan
 MONTEVERDE$   ← computer account, not a normal user
 
-Bruteforce using netexec 
+- password spray
+save and attempt paasword spray using netexec
+```bash
+netexec smb MEGABANK.LOCAL -u users.txt -p users.txt --continue-on-success 
+```
+It is found that the user `SABatchJobs` has the password `SABatchJobs`.
+
+- share enumeration
+
 
 
 ## Foothold
