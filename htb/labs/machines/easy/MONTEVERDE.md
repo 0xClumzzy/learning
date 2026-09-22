@@ -51,7 +51,6 @@ Establishes AD domain as `MEGABANK.LOCAL`
 ```bash
 ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL" > enum.ldap
 ```
-
 ## Foothold
 
 How you got initial access.
