@@ -109,7 +109,13 @@ smbmap -H 10.129.228.111 -d MEGABANK.LOCAL -u SABatchJobs -p SABatchJobs
             SYSVOL                                                  READ ONLY       Logon server share
             users$                                                  READ ONLY
     ```
-
+2. The user `SABatchJobs` has `READ ONLY` privileges on following SMB Share:
+    
+    1. azure_uploads
+    2. users$
+    3. SYSVOL
+> 3.connecting to `users$` share, folders for other domain users are found
+> 
 ## Foothold
 
 How you got initial access.
