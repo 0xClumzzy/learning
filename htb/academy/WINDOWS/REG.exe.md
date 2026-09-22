@@ -57,7 +57,7 @@ A full path looks like: `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion`
 
 ---
 
-## Step-by-step: each subcommand with examples
+##  Each subcommand with examples
 
 ### 1. `reg query` — Read registry data
 
