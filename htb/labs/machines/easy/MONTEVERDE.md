@@ -94,11 +94,21 @@ It is found that the user `SABatchJobs` has the password `SABatchJobs`.
 
 - share enumeration using `smbmap`
 ```bash
-smbmap -H 10.129.228.111 -d MEGABANK.LOCAL -u SABatchJobs-p
-
-SABatchJobs
+smbmap -H 10.129.228.111 -d MEGABANK.LOCAL -u SABatchJobs -p SABatchJobs
 ```
-
+> 1. ```bash
+    [+] IP: 10.129.228.111   Name: MEGABANK.LOCAL            Status: Authenticated
+            Disk                                                    Permissions     Comment
+            ----                                                    -----------     -------
+            ADMIN$                                                  NO ACCESS       Remote Admin
+            azure_uploads                                           READ ONLY
+            C$                                                          NO ACCESS       Default share
+            E$                                                         NO ACCESS       Default share
+            IPC$                                                    READ ONLY       Remote IPC
+            NETLOGON                                                READ ONLY       Logon server share
+            SYSVOL                                                  READ ONLY       Logon server share
+            users$                                                  READ ONLY
+    ```
 
 ## Foothold
 
