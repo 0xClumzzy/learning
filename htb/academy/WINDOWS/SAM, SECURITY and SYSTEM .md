@@ -45,4 +45,6 @@ move sam.save \\<hoost ip>\SHARENAME
 				-> rounds, `10240`- PBKDF2 iteration count (fixed)
 				-> username as salt
 				-> 32-char hex digest
+				-> hashcat mode 2100
+		-> 
 	- `C:\Windows\System32\config\SECURITY `
