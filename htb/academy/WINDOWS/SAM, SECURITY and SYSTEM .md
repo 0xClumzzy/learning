@@ -27,6 +27,9 @@ move sam.save \\<hoost ip>\SHARENAME
 		-> The keys are encrypted with a boot key from THE `SYSTEM` HIVE
 		-> `secretsdump.py` dumps SAM hashes as well as data\boot key from `SYSTEM` 
 			-> `username:RID:LM_hash:NT_hash:::` format eg, `bob:1001:aad3b435b51404eeaad3b435b51404ee:3c0e5d303ec84884ad5c3b7876a06ea6:::`
+			-> focus on the NT_hash 
+			-> Hashcat mode 1000
+			-> `awk -F: ''`
 
 	- `C:\Windows\System32\config\SYSTEM`
 	- `C:\Windows\System32\config\SECURITY `
