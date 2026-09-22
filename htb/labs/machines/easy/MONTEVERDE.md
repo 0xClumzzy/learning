@@ -23,9 +23,11 @@ nmap -sCV --min-rate 5000 10.10.10.10
 ### Open ports
 
 
-| port   | service |
-| ------ | ------- |
-| 53/tcp | DNS     |
+| port    | service                                            |
+| ------- | -------------------------------------------------- |
+| 53/tcp  | DNS (SRV records, _services, _dns-sd, _udp, local) |
+| 88/tcp  | Kerberos(Authentication)                           |
+| 389/tcp | LDAP                                               |
 
 
 ## Foothold
