@@ -31,8 +31,12 @@ nmap -sCV --min-rate 5000 10.10.10.10
 | 445/tcp | smb                                                |
 1. LDAP ENUMERATION
 - LDAP naming context discovery, to get the AD domain/forest structure 
+```bash
+ldapsearch -H ldap://10.10.10.10 -x -s base -b "" bnamingcontexts
+```
 > namingcontexts: DC=MEGABANK,DC=LOCAL
 
+Establishes AD domain as `MEGABANK.LOCAL`
 ## Foothold
 
 How you got initial access.
