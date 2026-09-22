@@ -17,12 +17,16 @@ os: windows
 Run an initial Nmap scan:
 
 ```bash
-nmap -sCV  
+nmap -sCV --min-rate 5000 10.10.10.10 
 ```
 
-### Port XX (Service)
+### Open ports
 
-Describe what's running on each interesting port.
+
+| port   | service |
+| ------ | ------- |
+| 53/tcp | DNS     |
+
 
 ## Foothold
 
