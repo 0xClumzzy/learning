@@ -20,8 +20,7 @@ Run an initial Nmap scan:
 nmap -sCV --min-rate 5000 10.10.10.10 
 ```
 
-### Open ports
-
+### Open ports and 
 
 | port    | service                                            |
 | ------- | -------------------------------------------------- |
