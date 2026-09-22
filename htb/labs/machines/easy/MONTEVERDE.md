@@ -60,8 +60,19 @@ ldapsearch -x -H ldap://target -b "DC=MEGABANK,DC=LOCAL" "(objectClass=user) sAM
 ```
 get only user names
 ```bash 
-ldapsearch -x -H ldap://target -b "DC=MEGABANK,DC=LOCAL" "(objectClass=user) sAMAccountName" | grep 
+ldapsearch -x -H ldap://target -b "DC=MEGABANK,DC=LOCAL" "(objectClass=user) sAMAccountName" | grep '^sAMAccountName:' | cut -d' ' -f2
 ```
+>Guest
+AAD_987d7f2f57d2
+mhope
+SABatchJobs
+svc-ata
+svc-bexec
+svc-netapp
+dgalanos
+roleary
+smorgan
+MONTEVERDE$   ← computer account, not a normal user
 ## Foothold
 
 How you got initial access.
