@@ -6,16 +6,13 @@
 
 ## Where to find it
 
-| Item | Detail |
-|---|---|
-| **Path** | `C:\Windows\System32\reg.exe` |
-| **32-bit copy** | `C:\Windows\SysWOW64\reg.exe` (on 64-bit Windows) |
-| **Available since** | Windows 2000 |
-| **Works on** | Windows XP → Windows 11, all Server editions |
-
-You don't need to navigate to the folder — just type `reg` in **Command Prompt** or **PowerShell** and it's found automatically. 
-
-> 💡 **Tip:** Type `reg /?` in the terminal to see the built-in help with all syntax at any time. 
+| Item                | Detail                                            |
+| ------------------- | ------------------------------------------------- |
+| **Path**            | `C:\Windows\System32\reg.exe`                     |
+| **32-bit copy**     | `C:\Windows\SysWOW64\reg.exe` (on 64-bit Windows) |
+| **Available since** | Windows 2000                                      |
+| **Works on**        | Windows XP → Windows 11, all Server editions      |
+>  **Tip:** Type `reg /?` in the terminal to see the built-in help with all syntax at any time. 
 
 ---
 
