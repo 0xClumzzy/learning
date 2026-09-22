@@ -29,6 +29,8 @@ nmap -sCV --min-rate 5000 10.10.10.10
 | 389/tcp | LDAP                                               |
 | 464/tcp | kpasswd5                                           |
 | 445/tcp | smb                                                |
+1. LDAP ENUMERATION
+
 ## Foothold
 
 How you got initial access.
