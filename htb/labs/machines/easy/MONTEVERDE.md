@@ -41,6 +41,7 @@ ldapsearch -H ldap://10.10.10.10 -x -s base -b "" namingcontexts
 > namingcontexts: DC=MEGABANK,DC=LOCAL
 
 Establishes AD domain as `MEGABANK.LOCAL`
+- Enumerate using 
 ## Foothold
 
 How you got initial access.
