@@ -37,7 +37,7 @@ ldapsearch -H ldap://10.10.10.10 -x -s base -b "" namingcontexts
 `-x` - simple authentication 
 `-s base ` - query only the root entry 
 `-b ""` - empty base DN (RootDSE)
-`namingcon`
+`namingcontexts` - attribute to retrieve 
 > namingcontexts: DC=MEGABANK,DC=LOCAL
 
 Establishes AD domain as `MEGABANK.LOCAL`
