@@ -30,6 +30,8 @@ nmap -sCV --min-rate 5000 10.10.10.10
 | 464/tcp | kpasswd5                                           |
 | 445/tcp | smb                                                |
 1. LDAP ENUMERATION
+- LDAP naming context discovery, to get the AD domain/forest structure 
+> namingcontexts: DC=MEGABANK,DC=LOCAL
 
 ## Foothold
 
