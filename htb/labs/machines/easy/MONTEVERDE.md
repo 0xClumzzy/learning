@@ -130,12 +130,12 @@ evil-winrm -i 10.129.228.111 -u mhope -p '4n0therD4y@n0th3r$'
 Get user flag
 ## Privilege Escalation
 
-How you escalated to root/admin.
-
-```bash
-# Commands here
+- Get a list of all available gorups 
+```powershell
+net group
 ```
-
+The first gorup that caught attention was 
+The user `mhope` is the member of the domain group `Azure Admins`, along with users `Administrator` and `AAD_987d7f2f57d2`.
 ## Root Flag
 
 ```bash
