@@ -38,13 +38,20 @@ ldapsearch -H ldap://10.10.10.10 -x -s base -b "" namingcontexts
 `-s base ` - query only the root entry 
 `-b ""` - empty base DN (RootDSE)
 `namingcontexts` - attribute to retrieve 
-> namingcontexts: DC=MEGABANK,DC=LOCAL => foc
+> namingcontexts: DC=MEGABANK,DC=LOCAL => focus 
+> 
+> Other contexts are standard AD partitions:
+>CN=Configuration,DC=MEGABANK,DC=LOCAL
+  CN=Schema,CN=Configuration,DC=MEGABANK,DC=LOCAL
+  DC=DomainDnsZones,DC=MEGABANK,DC=LOCAL
+  DC=ForestDnsZones,DC=MEGABANK,DC=LOCAL
 
 Establishes AD domain as `MEGABANK.LOCAL`
 - Enumerate using domain as base
 ```bash
-ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL"
+ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL" > enum.ldap
 ```
+
 ## Foothold
 
 How you got initial access.
