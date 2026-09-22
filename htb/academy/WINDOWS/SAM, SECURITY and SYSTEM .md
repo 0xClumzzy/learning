@@ -1,8 +1,9 @@
 THESE 3 ARE LIKE THE THREE PILLARS BEHIND WINDOWS AUTHENTICATION 
 
 ASSUMING WE HAVE SHELL AS `NT AUTHORITY\SYSTEM` 
+`reg.exe` is a command line registry tool that lets us query,add,delete
 ```cmd 
-reg.exe save C: 
+reg.exe save hklm\sam C:\sam.save 
 ```
 - They are `registry hive files`
 - They live under `C:\Windows\System32\config`
