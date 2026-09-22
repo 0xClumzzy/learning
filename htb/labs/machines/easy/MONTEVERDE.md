@@ -1,13 +1,15 @@
 ---
 title: MONTEVERDE
-description: One-line summary of the box and key vulnerability.
-date: 2024-01-15
+description: Azure connect enumeration and exploitation
+date: 2026-09-22T07:00:24.000Z
 category: htb
 tags:
-  - tag1
-  - tag2
-difficulty: easy
-os: linux
+  - HTB
+  - windows
+  - SAM
+  - AD
+difficulty: medium
+os: windows
 ---
 
 ## Enumeration
@@ -15,7 +17,7 @@ os: linux
 Run an initial Nmap scan:
 
 ```bash
-nmap -sC -sV -oN nmap/boxname 10.10.10.x
+nmap -sCV  
 ```
 
 ### Port XX (Service)
