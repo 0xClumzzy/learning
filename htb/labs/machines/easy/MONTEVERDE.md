@@ -85,7 +85,8 @@ roleary
 smorgan
 MONTEVERDE$   ← computer account, not a normal user
 
-Get groups 
+Bruteforce using netexec 
+
 
 ## Foothold
 
