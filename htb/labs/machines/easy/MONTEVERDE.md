@@ -54,6 +54,17 @@ ldap -x -H ldap://10.10.10.10 -b "DC=MEGABANK,DC=LOCAL" > enum
 > DC: MONTEVERDE.MEGABANK.LOCAL
    Users exist under several OUs, including `MegaBank Users` and `Service Accounts`
 
+- Domain level enumeration
+```bash 
+ldapsearch -H ldap://<IP> -x -b "DC=MEGABANK,DC=LOCAL" -s sub "(objectClass=domain)"
+```
+Pulls the domain object itself. You'll get:
+
+- `description` - sometimes contains notes, department names, or environment hints
+- `distinguishedName` - confirms the DN
+- `objectClass` - confirms it's a domain
+- `objectVersion` - AD schema version (can hint at OS/functional level
+
 - Get username list 
 ```bash 
 ldapsearch -x -H ldap://target -b "DC=MEGABANK,DC=LOCAL" "(objectClass=user) sAMAccountName"
