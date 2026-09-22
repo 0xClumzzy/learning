@@ -73,6 +73,9 @@ dgalanos
 roleary
 smorgan
 MONTEVERDE$   ← computer account, not a normal user
+
+Get groups 
+
 ## Foothold
 
 How you got initial access.
