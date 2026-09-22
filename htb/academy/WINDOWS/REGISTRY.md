@@ -31,3 +31,4 @@ System hives live in `C:\Windows\System32\config\` as extensionless binary files
 `REG_SZ` (string), `REG_DWORD` (32-bit number), `REG_MULTI_SZ` (multi-string), `REG_BINARY`, `REG_EXPAND_SZ` (expandable string).
 
 > **Caution:** A single wrong edit can break sign-in, services, or startup. Always export the key first and change one value at a time.   
+
