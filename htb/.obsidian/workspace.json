@@ -95,7 +95,7 @@
             }
           },
           {
-            "id": "ea2e47e896b5df0c",
+            "id": "a1b1a76d13a70a97",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -251,6 +251,7 @@
   },
   "active": "559cfc706d185dfd",
   "lastOpenFiles": [
+    "Tags",
     "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "labs/machines/easy/MONTEVERDE.md",
     "labs/machines/easy/TEMPLATE.md",
@@ -286,7 +287,6 @@
     "labs/machines/easy/NEXUS.md",
     "academy/CPTS/File tranfer methods/shells and payloads/shells and payloads.md",
     "academy/CPTS/File tranfer methods/shells and payloads/.md",
-    "academy/CPTS/File tranfer methods/Linux techniques .md",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",
     "Pasted image 20260721101033.png",
