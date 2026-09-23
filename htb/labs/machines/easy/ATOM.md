@@ -26,10 +26,14 @@ rustscan -a atom.htb -- -sCV
 
 ### Open ports  (Service)
 
-| port    | service |
-| ------- | ------- |
-| 80/tcp  | http    |
-| 139/tcp |         |
+| port     | service |
+| -------- | ------- |
+| 80/tcp   | http    |
+| 135/tcp  | msrpc   |
+| 443/tcp  | https   |
+| 445/tcp  | smb     |
+| 5985/tcp | winrm   |
+| 637      |         |
 
 
 ## Foothold
