@@ -25,7 +25,13 @@ Dangerous commnads
 | `magic script = script.sh`  | Which script should be executed when the script gets closed?        |
 | `magic output = script.out` | Where the output of the magic script needs to be stored?            |
 
+smb host enumeration 
+```bash
+nxc smb <ip>
+```
+
 smb enumeration
+`smbclient`:
 ```bash
 smbclient -N -L //<ip> 
 ```
@@ -33,6 +39,10 @@ or
 with creds
 ```bash
 smbclient -L //<ip> -U 'user%password'
+```
+`netexec`
+```bash
+netexec smb <ip> -u u
 ```
 
 | flag | use                           |
