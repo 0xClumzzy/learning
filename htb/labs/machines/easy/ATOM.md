@@ -57,6 +57,7 @@ mkdir heed && cd heed && 7z x ../heedv1\ Setup\ 1.0.0.exe 1>/dev/null && ls
 ```
 We will come back for you.....
 
+Learning that electron updater 
 
 ## Foothold
 
