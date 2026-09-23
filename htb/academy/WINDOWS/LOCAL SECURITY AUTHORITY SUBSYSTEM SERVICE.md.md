@@ -28,4 +28,5 @@ Generating a memory dump of cached LSASS data
 	```powershell
 	rundll32 C:\windows\system32\comscvs.dll, MiniDump 672 C:\lsass.dmp full
 	```
-	
+	With this command, we are running `rundll32.exe` to call an exported function of `comsvcs.dll` which also calls the MiniDumpWriteDump (`MiniDump`) function to dump the LSASS process memory to a specified directory (`C:\lsass.dmp`). Recall that most modern AV tools recognize this as malicious activity and prevent the command from executing
+## Extracting credentials(pypykatz)
