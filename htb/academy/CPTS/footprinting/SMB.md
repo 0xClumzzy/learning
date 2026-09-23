@@ -36,10 +36,16 @@ tells you
 - mesaage signing
 eg 
 ### Port 
-- `445/tcp`  SMB (`microsoft-ds`) is open.
+- `445/tcp`  - SMB (`microsoft-ds`) .
 ### SMB Security
 - `account_used: guest` - Guest account was used. 
-- `authentication_level: user` - User-level authentication. - `challenge_response: supported` — NTLM challenge-response is supported. - `message_signing: disabled` — SMB signing is disabled.
+- `authentication_level: user` - User-level authentication. 
+- `challenge_response: supported` -  NTLM challenge-response is supported. 
+- `message_signing: disabled` - SMB signing is disabled.
+Key takeaways:
+- **Message Signing Disabled:** An attacker on the same network can intercept SMB traffic and relay authentication attempts to another machine to gain unauthorized access. (SMB relay attacks)
+- **Guest Access Enabled:** The system allowed `guest` enumeration, meaning you can likely list shares without valid domain credentials.
+
 smb host enumeration 
 ```bash
 nxc smb <ip>
