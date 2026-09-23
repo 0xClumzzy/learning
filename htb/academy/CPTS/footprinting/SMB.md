@@ -35,8 +35,11 @@ tells you
 - challange response
 - mesaage signing
 eg 
-PORT STATE SERVICE 445/tcp open microsoft-ds Host script results: | smb-security-mode: | account_used: guest | authentication_level: user | challenge_response: supported |_ message_signing: disabled (dangerous, but default)
-
+### Port 
+- `445/tcp`  SMB (`microsoft-ds`) is open.
+### SMB Security
+- `account_used: guest` - Guest account was used. 
+- `authentication_level: user` - User-level authentication. - `challenge_response: supported` — NTLM challenge-response is supported. - `message_signing: disabled` — SMB signing is disabled.
 smb host enumeration 
 ```bash
 nxc smb <ip>
