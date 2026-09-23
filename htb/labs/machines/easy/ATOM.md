@@ -62,8 +62,18 @@ Learning that `electron builder`,  makes electron distribution software, verifie
 So during an update the application will request  `latest.yaml` file from the update server which contains the definition of the new release - including the binary filename and hashes.
 
 cool...........
+Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source file
 
-Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source 
+| DLL                | Purpose                                    | Analyst Note                                                      |
+| ------------------ | ------------------------------------------ | ----------------------------------------------------------------- |
+| `nsis7z.dll`       | 7-zip extraction plugin                    | Unpacks the `app-64.7z` at install time                           |
+| `nsProcess.dll`    | Process enumeration/kill                   | Can check running processes, kill them                            |
+| `SpiderBanner.dll` | Custom installer UI                        | Cosmetic , prolly just the install screen                         |
+| `StdUtils.dll`     | Extended NSIS utilities                    | String ops, execution, env vars                                   |
+| `System.dll`       | Low-level Win32 API calls from NSIS script | **Dangerous** — can call arbitrary Windows API functions directly |
+| `WinShell.dll`     | Windows Shell integration                  | Start menu, shortcuts, file associations                          |
+
+---
 
 ## Foothold
 
