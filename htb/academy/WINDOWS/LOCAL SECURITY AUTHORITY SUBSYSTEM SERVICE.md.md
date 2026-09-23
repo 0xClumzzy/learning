@@ -10,6 +10,9 @@ Upon initial login, lsass will:
 Generating a memory dump of cached LSASS data
 1. **Task manager method** 
 	- Open task manager 
-	- slect the process tab
+	- select the process tab
+	- Right click LSA process
+	- Create dump file
+	- A file called `lsass.DMP` is created and saved in `%temp%`
 2. **Rundll32.exe and Comsvcs.dll method**
-
+	- 
