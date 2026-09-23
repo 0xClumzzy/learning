@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -263,12 +263,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "75adef8cb0cb2501",
+  "active": "559cfc706d185dfd",
   "lastOpenFiles": [
+    "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "labs/machines/easy/MONTEVERDE.md",
     "Tags",
-    "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "labs/machines/easy/TEMPLATE.md",
     "academy/WINDOWS/REG.exe.md",
     "academy/WINDOWS/REGISTRY.md",
