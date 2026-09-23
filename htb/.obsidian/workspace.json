@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -277,8 +277,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "33bda618e0300c36",
+  "active": "75adef8cb0cb2501",
   "lastOpenFiles": [
+    "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/vuln/CVSS scoring .md",
     "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
@@ -298,7 +299,6 @@
     "labs/machines/easy/BLE.md",
     "labs/machines/easy/easy.md",
     "techniques/personal favorite techniques.md",
-    "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/WINDOWS/kernel architecture.md",
     "academy/intro.md",
     "academy/WINDOWS.md",
