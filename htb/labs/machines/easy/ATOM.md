@@ -1,6 +1,6 @@
 ---
 title: ATOM
-description: One-line summary of the box and key vulnerability.
+description:  windows machine hosting an electron software with improper signature verification, leading to rce
 date: 2024-01-15
 category: htb
 tags:
