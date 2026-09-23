@@ -52,7 +52,6 @@
     "//academy/academy/CPTS/academy/CPTS/File tranfer methods/academy/CPTS/File tranfer methods/shells and payloads",
     "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info/labs/machines/medium/fireflow.Info/dookie",
     "//academy",
-    "//academy/academy/CPTS",
     "//academy/academy/WINDOWS",
     "//labs/labs/machines"
   ],
@@ -66,6 +65,8 @@
     "_assets",
     "_blocks"
   ],
+  "newFileLocation": "root",
+  "newFileFolderPath": "",
   "inlineBacklinks": false,
   "inlineContext": true,
   "inlineBacklinksExpanded": false,
