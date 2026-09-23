@@ -33,9 +33,8 @@ rustscan -a atom.htb -- -sCV
 | 443/tcp  | https   |
 | 445/tcp  | smb     |
 | 5985/tcp | winrm   |
-| 637      |         |
-
-
+| 6379/tcp | redis   |
+The webserver is hosted a note taking application 
 ## Foothold
 
 How you got initial access.
