@@ -45,4 +45,19 @@ important  info
  SHA1: cba4e545b7ec918129725154b29f055e4cd5aea8 
  DPAPI: NA
  ```
+ - WDIGEST
+ `WDIGEST` is an older authentication protocol enabled by default in `Windows XP` - `Windows 8` and `Windows Server 2003` - `Windows Server 2012`. LSASS caches credentials used by WDIGEST in clear-text. This means if we find ourselves targeting a Windows system with WDIGEST enabled, we will most likely see a password in clear-text
+ ```shellsession
+ == WDIGEST [14ab89]== 
+ username bob 
+ domainname DESKTOP-33E7O54 
+ password None 
+ password (hex)
+ ```
+ - kerberos 
+ ```shellsession
+ == Kerberos == 
+ Username: bob 
+ Domain: DESKTOP-33E7O54
+ ```
  
