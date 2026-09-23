@@ -34,7 +34,7 @@ rustscan -a atom.htb -- -sCV
 | 445/tcp  | smb     |
 | 5985/tcp | winrm   |
 | 6379/tcp | redis   |
-The webserver is hosted a note taking application, `wappy` tells us about the techstack behind it, get wappy at 
+The webserver is hosted a note taking application, `wappy` tells us about the techstack behind it, get wappy at: https://github.com/gokulapap/wappalyzer-cli 
 ```shellsession
 http://atom.htb  [200]  5 technologies  1007ms
   title Heed Solutions
@@ -45,7 +45,10 @@ http://atom.htb  [200]  5 technologies  1007ms
   Windows Server      100%  Operating systems
 ```
 
+There is a download button, with a zip file and extracting, we get an exe file 
+```bash
 
+```
 ## Foothold
 
 How you got initial access.
