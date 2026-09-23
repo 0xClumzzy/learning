@@ -14,14 +14,22 @@ os: windows
 
 ## Enumeration
 
+add the IP to hosts 
+```bash
+echo "ip atom.htb" | sudo tee -a /etc/hosts
+```
 Run an initial Nmap scan:
 
 ```bash
-nmap -sCV 10.10.10.10
+rustscan -a atom.htb -- -sCV
 ```
 
 ### Open ports  (Service)
 
+| port    | service |
+| ------- | ------- |
+| 80/tcp  | http    |
+| 139/tcp |         |
 
 
 ## Foothold
