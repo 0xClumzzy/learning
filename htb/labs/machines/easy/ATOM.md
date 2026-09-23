@@ -59,7 +59,11 @@ We will come back for you.....
 
 Learning that `electron builder`,  makes electron distribution software, verifies their  signatures and performs a signature check based on a string comparison between the installed binary's `PublisherName` and  a the certified `CommonName` attribute of the update binary. 
 
-So during an update the application
+So during an update the application will request  `latest.yaml` file from the update server which contains the definition of the new release - including the binary filename and hashes.
+
+cool...........
+
+Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source 
 
 ## Foothold
 
