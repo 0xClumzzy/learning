@@ -11,14 +11,12 @@
             "id": "2a78015ae7ba9c23",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "academy/WINDOWS/Untitled.md",
-                "mode": "source",
-                "source": false
+                "path": "academy/WINDOWS"
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "WINDOWS"
             }
           }
         ]
@@ -236,8 +234,10 @@
   },
   "active": "2a78015ae7ba9c23",
   "lastOpenFiles": [
-    "academy/WINDOWS/Untitled.md",
+    "conflict-files-obsidian-git.md",
+    "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/WINDOWS.md",
+    "academy/WINDOWS/.md",
     "academy/CPTS/footprinting/DNS.md",
     "labs/machines/easy/MONTEVERDE.md",
     "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
@@ -261,7 +261,6 @@
     "academy/.md",
     "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
     "labs/machines/easy/PAPERWORK.md",
-    "conflict-files-obsidian-git.md",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.xml",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.nmap",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.gnmap",
@@ -271,7 +270,6 @@
     "labs/machines/easy/nexus.Info/nexus.Nmap",
     "labs/machines/easy/NEXUS.md",
     "academy/CPTS/File tranfer methods/shells and payloads/shells and payloads.md",
-    "academy/CPTS/File tranfer methods/shells and payloads/.md",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",
     "Pasted image 20260721101033.png",
