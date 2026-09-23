@@ -54,7 +54,8 @@
     "//academy",
     "//academy/academy/WINDOWS",
     "//labs/labs/machines",
-    "//academy/academy/vuln"
+    "//academy/academy/CPTS",
+    "//academy/academy/CPTS/academy/CPTS/File tranfer methods"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
