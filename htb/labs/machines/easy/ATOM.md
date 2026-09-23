@@ -76,6 +76,8 @@ Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and i
  ```bash
  mkdir app-64 && cd app-64 && 7z x ../app-64.7z 1>/dev/null && ls
  ```
+ in there is a resources folder
+ 
 ---
 
 ## Foothold
