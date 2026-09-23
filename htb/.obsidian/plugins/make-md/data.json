@@ -53,7 +53,8 @@
     "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info/labs/machines/medium/fireflow.Info/dookie",
     "//academy",
     "//academy/academy/WINDOWS",
-    "//labs/labs/machines"
+    "//labs/labs/machines",
+    "//academy/academy/vuln"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
