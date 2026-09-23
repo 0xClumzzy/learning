@@ -72,7 +72,10 @@ Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and i
 | `StdUtils.dll`     | Extended NSIS utilities                    | String ops, execution, env vars                                   |
 | `System.dll`       | Low-level Win32 API calls from NSIS script | **Dangerous** — can call arbitrary Windows API functions directly |
 | `WinShell.dll`     | Windows Shell integration                  | Start menu, shortcuts, file associations                          |
-
+ Extract the app
+ ```bash
+ mkdir app-64 && cd app-64 && 7z x ../app-64.7z 1>/dev/null && ls
+ ```
 ---
 
 ## Foothold
