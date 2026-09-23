@@ -57,7 +57,7 @@ mkdir heed && cd heed && 7z x ../heedv1\ Setup\ 1.0.0.exe 1>/dev/null && ls
 ```
 We will come back for you.....
 
-Learning that `electron builder`,  makes electron distribution software and  verifies their  signatures,  
+Learning that `electron builder`,  makes electron distribution software, verifies their  signatures and performs a signature check based on a string comparision between the installed binary's `PublisherName` and  
 
 ## Foothold
 
