@@ -62,7 +62,7 @@ Learning that `electron builder`,  makes electron distribution software, verifie
 So during an update the application will request  `latest.yaml` file from the update server which contains the definition of the new release - including the binary filename and hashes.
 
 cool...........
-Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source file
+Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and in there there is an `app-64.7z` file , prolly the electron app.....
 
 | DLL                | Purpose                                    | Analyst Note                                                      |
 | ------------------ | ------------------------------------------ | ----------------------------------------------------------------- |
