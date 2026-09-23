@@ -34,12 +34,17 @@ rustscan -a atom.htb -- -sCV
 | 445/tcp  | smb     |
 | 5985/tcp | winrm   |
 | 6379/tcp | redis   |
-The webserver is hosted a note taking application, `wappy` tells us about the techstack behind it 
+The webserver is hosted a note taking application, `wappy` tells us about the techstack behind it, get wappy at 
 ```shellsession
-
-
-
+http://atom.htb  [200]  5 technologies  1007ms
+  title Heed Solutions
+  Apache HTTP Server 2.4.46 100%  Web servers
+  Bootstrap 5.0.0     100%  UI frameworks
+  OpenSSL 1.1.1j      100%  Web server extensions
+  PHP 7.3.27          100%  Programming languages
+  Windows Server      100%  Operating systems
 ```
+
 
 ## Foothold
 

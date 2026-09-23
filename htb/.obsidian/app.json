@@ -2,5 +2,6 @@
   "rightToLeft": true,
   "strictLineBreaks": true,
   "vimMode": true,
-  "autoConvertHtml": false
+  "autoConvertHtml": true,
+  "smartIndentList": false
 }
