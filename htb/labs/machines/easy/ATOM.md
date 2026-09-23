@@ -1,7 +1,7 @@
 ---
 title: ATOM
 description:  windows machine hosting an electron software with improper signature verification, leading to rce
-date: 2024-01-15
+date: 2026-09-23T22:51:31.000Z
 category: htb
 tags:
   - tag1
