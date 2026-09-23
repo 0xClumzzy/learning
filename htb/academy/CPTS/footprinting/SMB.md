@@ -36,7 +36,7 @@ tells you
 - mesaage signing
 eg 
 ### Port 
-- `445/tcp`  - SMB (`microsoft-ds`) .
+- `445/tcp`  - SMB (`microsoft-ds`) s.
 ### SMB Security
 - `account_used: guest` - Guest account was used. 
 - `authentication_level: user` - User-level authentication. 
