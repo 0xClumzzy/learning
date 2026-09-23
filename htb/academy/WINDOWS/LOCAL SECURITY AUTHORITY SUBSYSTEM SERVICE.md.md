@@ -64,6 +64,9 @@ important  info
 - DPAPI
 Mimikatz and Pypykatz can extract the DPAPI `masterkey` for logged-on users whose data is present in LSASS process memory. These masterkeys can then be used to decrypt the secrets associated with each of the applications using DPAPI and result in the capturing of credentials for various accounts.
 ```shellsession
-
+== DPAPI [14ab89]== 
+luid 1354633 key_guid 3e1d1091-b792-45df-ab8e-c66af044d69b 
+masterkey e8bc2faf77e7bd1891c0e49f0dea9d447a491107ef5b25b9......... sha1_masterkey 52e758b6120389898f7fae553ac8172b43221605
 ```
+
  
