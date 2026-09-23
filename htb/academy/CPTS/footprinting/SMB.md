@@ -29,6 +29,14 @@ nmap
 ```bash
 sudo nmap --script smb-security-mode -p445 target
 ```
+tells you 
+- acc used 
+- authentication level
+- challange response
+- mesaage signing
+eg 
+PORT STATE SERVICE 445/tcp open microsoft-ds Host script results: | smb-security-mode: | account_used: guest | authentication_level: user | challenge_response: supported |_ message_signing: disabled (dangerous, but default)
+
 smb host enumeration 
 ```bash
 nxc smb <ip>
