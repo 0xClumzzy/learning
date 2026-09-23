@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TEMPLATE.md",
+                "file": "labs/machines/easy/ATOM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TEMPLATE"
+              "title": "ATOM"
             }
           }
         ],
@@ -291,17 +291,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a1b1a76d13a70a97",
+  "active": "8c807cfb7f23877e",
   "lastOpenFiles": [
-    "labs/machines/TEMPLATE1.md",
     "academy/CPTS/footprinting/SMB.md",
+    "TEMPLATE.md",
+    "labs/machines/easy/ATOM.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
+    "labs/machines/easy/TEMPLATE.md",
+    "labs/machines/TEMPLATE1.md",
     "academy/vuln/CVSS scoring .md",
     "labs/machines/easy/MONTEVERDE.md",
     "Tags",
-    "labs/machines/easy/TEMPLATE.md",
     "academy/WINDOWS/REG.exe.md",
     "academy/WINDOWS/REGISTRY.md",
     "academy/WINDOWS/intro.md",
@@ -321,8 +323,6 @@
     "academy/WINDOWS",
     "academy/.md",
     "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
-    "labs/machines/easy/PAPERWORK.md",
-    "conflict-files-obsidian-git.md",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.xml",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.nmap",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.gnmap",

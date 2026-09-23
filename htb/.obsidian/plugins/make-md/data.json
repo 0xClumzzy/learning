@@ -47,7 +47,6 @@
     "//Excalidraw",
     "//labs/labs/machines/labs/machines/medium",
     "//academy/academy/CPTS/academy/CPTS/File tranfers ",
-    "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info",
     "//techniques",
     "//academy/academy/CPTS/academy/CPTS/File tranfer methods/academy/CPTS/File tranfer methods/shells and payloads",
     "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info/labs/machines/medium/fireflow.Info/dookie",
@@ -55,7 +54,8 @@
     "//academy/academy/WINDOWS",
     "//labs/labs/machines",
     "//academy/academy/CPTS",
-    "//academy/academy/CPTS/academy/CPTS/footprinting"
+    "//academy/academy/CPTS/academy/CPTS/footprinting",
+    "//labs/labs/machines/labs/machines/easy"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
