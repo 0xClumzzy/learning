@@ -4,10 +4,12 @@ description:  windows machine hosting an electron software with improper signat
 date: 2026-09-23T22:51:31.000Z
 category: htb
 tags:
-  - tag1
-  - tag2
-difficulty: easy
-os: linux
+  - windows
+  - nmap
+  - web
+  - rce
+difficulty: medium
+os: windows
 ---
 
 ## Enumeration
@@ -15,12 +17,12 @@ os: linux
 Run an initial Nmap scan:
 
 ```bash
-nmap -sC -sV -oN nmap/boxname 10.10.10.x
+nmap -sCV 10.10.10.10
 ```
 
-### Port XX (Service)
+### Open ports  (Service)
 
-Describe what's running on each interesting port.
+
 
 ## Foothold
 
