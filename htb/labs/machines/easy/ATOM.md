@@ -51,6 +51,12 @@ file 'heedv1 Setup 1.0.0.exe'
 ```
 > PE32 executable for MS Windows 4.00 (GUI), Intel i386, Nullsoft Installer self-extracting archive, 5 sections
 
+*self extracting archieve* prompted decompiling the archieve using 7zip
+```bash
+mkdir heed && cd heed && 7z x ../heedv1\ Setup\ 1.0.0.exe 1>/dev/null && ls
+```
+We will come back for you.....
+
 
 ## Foothold
 
