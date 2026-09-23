@@ -42,7 +42,7 @@ smbclient -L //<ip> -U 'user%password'
 ```
 `netexec`
 ```bash
-netexec smb <ip> -u u
+netexec smb <ip> -u user -p pass --shares
 ```
 
 | flag | use                           |
