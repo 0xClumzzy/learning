@@ -47,8 +47,11 @@ http://atom.htb  [200]  5 technologies  1007ms
 
 There is a download button, with a zip file and extracting, we get an exe file 
 ```bash
-
+file 'heedv1 Setup 1.0.0.exe'
 ```
+> PE32 executable for MS Windows 4.00 (GUI), Intel i386, Nullsoft Installer self-extracting archive, 5 sections
+
+
 ## Foothold
 
 How you got initial access.
