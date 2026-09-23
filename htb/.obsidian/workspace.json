@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -277,12 +277,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "75adef8cb0cb2501",
+  "active": "559cfc706d185dfd",
   "lastOpenFiles": [
+    "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/vuln/CVSS scoring .md",
-    "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "labs/machines/easy/MONTEVERDE.md",
     "Tags",
     "labs/machines/easy/TEMPLATE.md",
