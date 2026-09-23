@@ -54,10 +54,16 @@ important  info
  password None 
  password (hex)
  ```
- - kerberos 
+ - kerberos
+  a network authentication protocol used by Active Directory in Windows Domain environments. Domain user accounts are granted tickets upon authentication with Active Directory. This ticket is used to allow the user to access shared resources on the network that they have been granted access to without needing to type their credentials each time. LSASS caches `passwords`, `ekeys`, `tickets`, and `pins` associated with Kerberos. It is possible to extract these from LSASS process memory and use them to access other systems joined to the same domain.
  ```shellsession
  == Kerberos == 
  Username: bob 
  Domain: DESKTOP-33E7O54
  ```
+- DPAPI
+Mimikatz and Pypykatz can extract the DPAPI `masterkey` for logged-on users whose data is present in LSASS process memory. These masterkeys can then be used to decrypt the secrets associated with each of the applications using DPAPI and result in the capturing of credentials for various accounts.
+```shellsession
+
+```
  
