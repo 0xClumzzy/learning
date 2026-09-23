@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "3e07cf78e8e41b7d",
+        "id": "597f08767db3624f",
         "type": "tabs",
         "children": [
           {
-            "id": "f60be99729fa24b6",
+            "id": "2a78015ae7ba9c23",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academy/CPTS/footprinting/DNS.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "DNS"
-            }
-          },
-          {
-            "id": "559cfc706d185dfd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "labs/machines/easy/MONTEVERDE.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MONTEVERDE"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,7 +76,7 @@
             }
           },
           {
-            "id": "ea2e47e896b5df0c",
+            "id": "e569ad51cc51bfe4",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -249,16 +230,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "559cfc706d185dfd",
+  "active": "2a78015ae7ba9c23",
   "lastOpenFiles": [
-    "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
+    "academy/CPTS/footprinting/DNS.md",
     "labs/machines/easy/MONTEVERDE.md",
+    "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "labs/machines/easy/TEMPLATE.md",
     "academy/WINDOWS/REG.exe.md",
     "academy/WINDOWS/REGISTRY.md",
     "academy/WINDOWS/intro.md",
     "academy/WINDOWS/WINDOWS.md",
-    "academy/CPTS/footprinting/DNS.md",
     "labs/machines/easy/BLUE.md",
     "academy/academy.md",
     "labs/machines/easy/JERRY.md",
