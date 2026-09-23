@@ -34,7 +34,13 @@ rustscan -a atom.htb -- -sCV
 | 445/tcp  | smb     |
 | 5985/tcp | winrm   |
 | 6379/tcp | redis   |
-The webserver is hosted a note taking application 
+The webserver is hosted a note taking application, `wappy` tells us about the techstack behind it 
+```shellsession
+
+
+
+```
+
 ## Foothold
 
 How you got initial access.
