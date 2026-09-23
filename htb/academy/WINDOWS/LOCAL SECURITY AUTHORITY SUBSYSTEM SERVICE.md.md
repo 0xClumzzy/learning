@@ -16,6 +16,15 @@ Generating a memory dump of cached LSASS data
 	- A file called `lsass.DMP` is created and saved in `%temp%`
 2. **Rundll32.exe and Comsvcs.dll method**
 	- Determine what `PID` is assigned to `lsass.exe` 
+	cmd:
 	```cmd 
 	tasklist /svc
+	```
+	powershell:
+	```powershell
+	Get-Process lsass
+	```
+	- Create a dump file 
+	```powershell
+	rund32.dll
 	```
