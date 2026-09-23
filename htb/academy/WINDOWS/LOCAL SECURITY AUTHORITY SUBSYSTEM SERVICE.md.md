@@ -8,3 +8,8 @@ Upon initial login, lsass will:
 - writes to window's security log
 ## Dumping LSASS process memory
 Generating a memory dump of cached LSASS data
+1. **Task manager method** 
+	- Open task manager 
+	- slect the process tab
+2. **Rundll32.exe and Comsvcs.dll method**
+
