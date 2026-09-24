@@ -34,6 +34,7 @@ rustscan -a atom.htb -- -sCV
 | 445/tcp  | smb     |
 | 5985/tcp | winrm   |
 | 6379/tcp | redis   |
+####WEB ENUM
 The webserver is hosted a note taking application, `wappy` tells us about the techstack behind it, get wappy at: https://github.com/gokulapap/wappalyzer-cli 
 ```shellsession
 http://atom.htb  [200]  5 technologies  1007ms
