@@ -193,8 +193,16 @@ smbclient -N -L //atom.htb
         Software_Updates Disk
 4. Share file enumeration
 ```bash
-smbclient -N  //atom.htb/Soft
+smbclient -N  //atom.htb/Software_updates
 ```
+- get the pdf file `UAT_Testing_Procedures.pdf`
+- `pdftotext UAT_Testing_Procedures.pdf` 
+> We follow the below process before releasing our products.
+1. Build and install the application to make sure it works as we expect it to be.
+2. Make sure that the update server running is in a private hardened instance. To
+initiate the QA process, just place the updates in one of the "client" folders, and
+
+Th
 ---
 
 ## Foothold
