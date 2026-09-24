@@ -100,7 +100,8 @@ Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and i
    url: 'http://updates.atom.htb'
    publisherName:
   - HackTheBox
-Add the link`updates.atom.htb`to hosts 
+Add the link`updates.atom.htb`to hosts(same site)
+
 
 ---
 
