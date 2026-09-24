@@ -114,8 +114,33 @@ mkdir app && cd app && asar e ../app.asar . && ls
 ```bash 
 cat package.json
 ```
+entry point, app name, version, and dependencies:
 ```json
+{
+  "name": "heedv1",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "Open Source Application provided by HackTheBox",
+  "author": "MrR3boot",
+  "dependencies": {
+    "electron-log": "^1.3.0",
+    "electron-updater": "^2.23.3",
+    "url": "^0.11.0"
+  }
+}
 ```
+
+| Field              | Value          | Significance         |
+| ------------------ | -------------- | -------------------- |
+| `name`             | `heedv1`       | app name             |
+| `version`          | `1.0.0`        | app version          |
+| `main`             | `main.js`      | entry point          |
+| `description`      | HackTheBox app | confirms lab binary  |
+| `author`           | `MrR3boot`     | HTB challenge author |
+| `electron-updater` | `^2.23.3`      | handles auto-updates |
+| `electron-log`     | `^1.3.0`       | logging library      |
+| `url`              | `^0.11.0`      | URL parsing utility  |
+
 ---
 
 ## Foothold
