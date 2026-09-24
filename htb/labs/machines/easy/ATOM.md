@@ -183,9 +183,18 @@ nxc smb atom.htb
 | SMB Signing | `False`                    |
 3. Share enumeration 
 ```
-smbclient -N -L //ato
+smbclient -N -L //atom.htb
 ```
-
+>     Sharename  Type      Comment
+        ---------       ----        -------
+        ADMIN$   Disk       Remote Admin
+        C$             Disk        Default share
+        IPC$          IPC         Remote IPC
+        Software_Updates Disk
+4. Share file enumeration
+```bash
+smbclient -N  //atom.htb/Soft
+```
 ---
 
 ## Foothold
