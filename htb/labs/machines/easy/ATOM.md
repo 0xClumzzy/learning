@@ -129,6 +129,7 @@ entry point, app name, version, and dependencies:
   }
 }
 ```
+
 ---
 
 ## Foothold
