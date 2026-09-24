@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -305,10 +305,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bcb73d39989d2052",
+  "active": "8c807cfb7f23877e",
   "lastOpenFiles": [
-    "labs/machines/easy/ATOM.md",
     "academy/CPTS/footprinting/SMB.md",
+    "labs/machines/easy/ATOM.md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
     "TEMPLATE.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",

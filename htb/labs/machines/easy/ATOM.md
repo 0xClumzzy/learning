@@ -167,7 +167,11 @@ Host script results:
 Key takeways:
 - **Message Signing Disabled:** An attacker on the same network can intercept SMB traffic and relay authentication attempts to another machine to gain unauthorized access. (SMB relay attacks)
 - **Guest Access Enabled:** The system allowed `guest` enumeration, meaning you can likely list shares without valid domain credentials.
-
+2. SMB host enum
+```bash
+nxc smb atom.htb
+```
+> 
 ---
 
 ## Foothold
