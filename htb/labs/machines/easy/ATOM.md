@@ -79,7 +79,7 @@ Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and i
  in there is a resources folder
  There are possible tings that we are looking for 
  - hardcoded creds- `main.js`, `renderer.js`, any `.js` in `resources`
- - the update mechanism 
+ - the update mechanism - found an 
  - 
 ---
 
