@@ -147,7 +147,11 @@ https://blog.doyensec.com/2020/02/24/electron-updater-update-signature-bypass.ht
  we will comeback
 
  #### SMB ENUM
- 
+ Nmap scan 
+ ```bash
+ sudo nmap --script smb-security-mode -p445 target
+ ```
+ We want  to scheck how secure the target is in terms of smb security
 ---
 
 ## Foothold
