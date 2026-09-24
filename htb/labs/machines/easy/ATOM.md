@@ -206,11 +206,20 @@ initiate the QA process, just place the updates in one of the "client" folders, 
 ---
 ## Foothold
 https://blog.doyensec.com/2020/02/24/electron-updater-update-signature-bypass.html
-electron-updater signature bypass
-
+**electron-updater signature bypass**
 Signature verification is done by comparing the installed binary's `publisherName` against the certificate's `Common Name`. The check is performed via PowerShell's `Get-AuthenticodeSignature` cmdlet.
 
-The variable `$tempUpdateFile` is passed unescaped to `execFile()` — so a filename containing a single quote `'` triggers a parse error, **bypassing the entire signature check**.
+The variable `$tempUpdateFile` is passed unescaped to `execFile()` , so a filename containing a single quote `'` triggers a parse error, **bypassing the entire signature check**.
+
+vulnerable code:
+```powershll
+execFile("powershell.exe", ["-NoProfile", "-NonInteractive",
+  "-InputFormat", "None", "-Command",
+  `Get-AuthenticodeSignature '${tempUpdateFile}'`
+  | ConvertTo-Json -Compress`],
+  { timeout: 20 * 1000 }, (error, stdout, stderr) => {
+```
+
 ### Exploitation
 
 Step-by-step exploitation.
