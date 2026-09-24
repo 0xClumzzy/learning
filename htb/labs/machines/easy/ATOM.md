@@ -77,7 +77,22 @@ Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and i
  mkdir app-64 && cd app-64 && 7z x ../app-64.7z 1>/dev/null && ls
  ```
  in there is a resources folder
-
+ ```
+ app-64/
+├── heedv1.exe              ← main executable, loads electron + app
+├── resources/
+│   ├── app.asar            ← app source 
+│   ├── app-update.yml      ← update server config
+│   ├── electron.asar       ← electron runtime
+│   ├── elevate.exe         ← UAC helper
+│   └── inspector/          ← devtools 
+├── locales/                ← UI language files 
+├── swiftshader/            ← software GPU renderer 
+├── *.dll                   ← electron/chromium dependencies 
+├── *.pak                   ← chromium resource packs 
+└── *.bin                   ← v8/snapshot blobs 
+ ```
+ Our main
 ---
 
 ## Foothold
