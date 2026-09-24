@@ -236,6 +236,7 @@ shasum -a 512 "Po77'.exe" | cut -d " " -f1 | xxd -r -p | base64
 ```
 >0KAEZgATnqfm5G0YEkL1I28WvfX229sY9Imhd91kahyoKqBkxF7JTNR1tz6DzYtoGgn44zjn5lal PETNqZfZPg==
 
+3. Create the update file `latest.yaml`
 
 ### Exploitation
 
