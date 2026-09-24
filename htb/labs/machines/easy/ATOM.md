@@ -102,6 +102,10 @@ Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and i
   - HackTheBox
 Add the link`updates.atom.htb`to hosts(same site)
 
+Extract the source, get asar `npm install -g asar`
+```bash
+mkdir app && cd app && asar e ../app.asar . && ls
+```
 
 ---
 
