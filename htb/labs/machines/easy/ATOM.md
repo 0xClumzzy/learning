@@ -58,9 +58,12 @@ mkdir heed && cd heed && 7z x ../heedv1\ Setup\ 1.0.0.exe 1>/dev/null && ls
 ```
 We will come back for you.....
 
+So electron is a framework for building desktop applications using JavaScript, HTML, and CSS. By embedding Chromium and Node.js into its binary which  allows you to maintain one JavaScript codebase and create cross-platform apps that work on Windows, macOS, and Linux with no native development experience required.
+
 Learning that `electron builder`,  makes electron distribution software, verifies their  signatures and performs a signature check based on a string comparison between the installed binary's `PublisherName` and  a the certified `CommonName` attribute of the update binary. 
 
 So during an update the application will request  `latest.yaml` file from the update server which contains the definition of the new release - including the binary filename and hashes.
+
 
 cool...........
 Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and in there there is an `app-64.7z` file , prolly the electron app.....
