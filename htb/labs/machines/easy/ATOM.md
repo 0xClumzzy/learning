@@ -202,12 +202,9 @@ smbclient -N  //atom.htb/Software_updates
 2. Make sure that the update server running is in a private hardened instance. To
 initiate the QA process, just place the updates in one of the "client" folders, and
 
-Th
+ This suggest  we can host a malicious payload and submit an update file `latest.yaml` to one of the client folders in the smb share
 ---
-
 ## Foothold
-
-How you got initial access.
 
 ### Exploitation
 
