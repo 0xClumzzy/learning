@@ -34,6 +34,7 @@ rustscan -a atom.htb -- -sCV
 | 445/tcp  | smb     |
 | 5985/tcp | winrm   |
 | 6379/tcp | redis   |
+
 ####WEB ENUM
 The webserver is hosted a note taking application, `wappy` tells us about the techstack behind it, get wappy at: https://github.com/gokulapap/wappalyzer-cli 
 ```shellsession
@@ -141,7 +142,12 @@ information we need got
 | `electron-updater` | `^2.23.3`      | handles auto-updates |
 | `electron-log`     | `^1.3.0`       | logging library      |
 | `url`              | `^0.11.0`      | URL parsing utility  |
-`electron-updater 2.23.3` is old  vulnerabilities exist in early versions around **signature verification bypass**. unsigned updates can be served and executed
+`electron-updater 2.23.3` is old  vulnerabilities exist in early versions around **signature verification bypass**. unsigned updates can be served and executed: 
+https://blog.doyensec.com/2020/02/24/electron-updater-update-signature-bypass.html
+ we will comeback
+
+ #### SMB ENUM
+ 
 ---
 
 ## Foothold
