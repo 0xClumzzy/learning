@@ -114,22 +114,8 @@ mkdir app && cd app && asar e ../app.asar . && ls
 ```bash 
 cat package.json
 ```
-entry point, app name, version, and dependencies:
 ```json
-{
-  "name": "heedv1",
-  "version": "1.0.0",
-  "main": "main.js",
-  "description": "Open Source Application provided by HackTheBox",
-  "author": "MrR3boot",
-  "dependencies": {
-    "electron-log": "^1.3.0",
-    "electron-updater": "^2.23.3",
-    "url": "^0.11.0"
-  }
-}
 ```
-
 ---
 
 ## Foothold
