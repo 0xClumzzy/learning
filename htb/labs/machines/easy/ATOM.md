@@ -14,16 +14,14 @@ os: windows
 
 ## Enumeration
 
-add the IP to hosts 
+1. add the IP to hosts 
 ```bash
 echo "ip atom.htb" | sudo tee -a /etc/hosts
 ```
-Run an initial Nmap scan:
-
+2. Run an initial Nmap scan:
 ```bash
 rustscan -a atom.htb -- -sCV
 ```
-
 ### Open ports  (Service)
 
 | port     | service |
@@ -147,7 +145,8 @@ https://blog.doyensec.com/2020/02/24/electron-updater-update-signature-bypass.ht
  we will comeback
 
  #### SMB ENUM
- Nmap scan 
+ 
+1. Nmap scan 
  ```bash
  sudo nmap --script smb-security-mode -p445 target
  ```
@@ -165,6 +164,10 @@ Host script results:
 - `authentication_level: user` - User-level authentication. 
 - `challenge_response: supported` -  NTLM challenge-response is supported. 
 - `message_signing: disabled` - SMB signing is disabled.
+Key takeways:
+- **Message Signing Disabled:** An attacker on the same network can intercept SMB traffic and relay authentication attempts to another machine to gain unauthorized access. (SMB relay attacks)
+- **Guest Access Enabled:** The system allowed `guest` enumeration, meaning you can likely list shares without valid domain credentials.
+
 ---
 
 ## Foothold
