@@ -92,7 +92,16 @@ Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and i
 ├── *.pak                   ← chromium resource packs 
 └── *.bin                   ← v8/snapshot blobs 
  ```
- Our main
+ Our main attention is on the app source and  update
+ ```bash 
+ cat resources/app-update.yml
+ ```
+ > provider: generic
+   url: 'http://updates.atom.htb'
+   publisherName:
+  - HackTheBox
+Add the link to hosts 
+
 ---
 
 ## Foothold
