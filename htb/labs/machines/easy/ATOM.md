@@ -129,6 +129,7 @@ entry point, app name, version, and dependencies:
   }
 }
 ```
+information we need got 
 
 | Field              | Value          | Significance         |
 | ------------------ | -------------- | -------------------- |
@@ -140,7 +141,7 @@ entry point, app name, version, and dependencies:
 | `electron-updater` | `^2.23.3`      | handles auto-updates |
 | `electron-log`     | `^1.3.0`       | logging library      |
 | `url`              | `^0.11.0`      | URL parsing utility  |
-
+`electron-updater 2.23.3` is old  vulnerabilities exist in early versions around **signature verification bypass**. unsigned updates can be served and executed
 ---
 
 ## Foothold
