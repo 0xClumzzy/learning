@@ -151,7 +151,20 @@ https://blog.doyensec.com/2020/02/24/electron-updater-update-signature-bypass.ht
  ```bash
  sudo nmap --script smb-security-mode -p445 target
  ```
- We want  to scheck how secure the target is in terms of smb security
+ We want  to check how secure the target is in terms of smb security:
+ > 
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+Host script results:
+| smb-security-mode:
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+- `account_used: guest` - Guest account was used. 
+- `authentication_level: user` - User-level authentication. 
+- `challenge_response: supported` -  NTLM challenge-response is supported. 
+- `message_signing: disabled` - SMB signing is disabled.
 ---
 
 ## Foothold
