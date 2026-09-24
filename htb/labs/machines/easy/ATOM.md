@@ -77,13 +77,7 @@ Decompiling the exe uncovers a `'$PLUGINSDIR'` containing the source files and i
  mkdir app-64 && cd app-64 && 7z x ../app-64.7z 1>/dev/null && ls
  ```
  in there is a resources folder
- |Entity|Purpose|
-|---|---|
-|`app.asar`|App source code|
-|`app-update.yml`|Update server config|
-|`electron.asar`|Electron framework|
-|`elevate.exe`|UAC elevation helper|
-|`inspector/`|Chromium DevTools| 
+
 ---
 
 ## Foothold
