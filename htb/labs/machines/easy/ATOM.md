@@ -171,7 +171,21 @@ Key takeways:
 ```bash
 nxc smb atom.htb
 ```
-> 
+
+| Field       | Value                      |
+| ----------- | -------------------------- |
+| Host        | `atom.htb`                 |
+| IP          | `10.129.9.52`              |
+| Port        | `445`                      |
+| OS          | `Windows 10 Pro 19042 x64` |
+| Hostname    | `ATOM`                     |
+| Domain      | `ATOM`                     |
+| SMB Signing | `False`                    |
+3. Share enumeration 
+```
+smbclient -N -L //ato
+```
+
 ---
 
 ## Foothold
