@@ -23,7 +23,7 @@ Run an initial Nmap scan:
 nmap -sC -sV -oN nmap/boxname 10.10.10.x
 ```
 ---
-Open Ports
+**Open Ports**
 
 | Port      | Service       | Notes                                      |
 | --------- | ------------- | ------------------------------------------ |
@@ -36,7 +36,7 @@ Open Ports
 | 50389/tcp | LDAP          | **Anonymous bind OK**                      |
 
 ---
-PORT DETAILS
+**PORT DETAILS**
  22 - SSH
 - OpenSSH 9.6p1 Ubuntu 3ubuntu13.19
 - ECDSA (nistp256) + ED25519 keys
@@ -80,21 +80,17 @@ PORT DETAILS
 found nothing
 ---
 
-## Discovered Subdomains / Vhosts
+**Discovered Subdomains / Vhosts** 
 
-| Host | Source | Port |
-|------|--------|------|
-| `management.htb` | Cert CN / redirect | 443 |
-| `*.management.htb` | Cert SAN (wildcard) | 443 |
-| `sso.management.htb` | Cert CN on 4444 | 4444 |
+| Host                 | Source              | Port |
+| -------------------- | ------------------- | ---- |
+| `management.htb`     | Cert CN / redirect  | 443  |
+| `*.management.htb`   | Cert SAN (wildcard) | 443  |
+| `sso.management.htb` | Cert CN on 4444     | 4444 |
 
 ---
+OpemAM 
 
-## High-Value Targets
-
-| Target | Why |
-|--------|-----|
-| LDAP anon bind (50389) | Passwords / user list
 ## Foothold
 
 How you got initial access.
