@@ -52,7 +52,8 @@ nmap -sC -sV -oN nmap/boxname 10.10.10.x
 - SAN: `management.htb`, `*.management.htb` → **wildcard, fuzz subdomains**
 - Cert validity: 2026-06-02 → 2126-05-09 (self-signed, 100yr)
 - RSA 2048-bit, sha256WithRSAEncryption
-
+NEW PORTS 
+**Jm**
 
 ---
 
