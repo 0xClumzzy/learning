@@ -165,7 +165,8 @@ mysql -h localhost -u glpi -p
 ```
 enter the pass and enumerate the database:
 ```sql
-SELECT * FROM  
+SELECT * FROM  glpi_authldaps; #ldap pass
+SELECT * FROM  glpi_users; #
 ```
 
 Got a shell as `username`.
