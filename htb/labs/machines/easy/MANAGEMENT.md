@@ -25,15 +25,15 @@ nmap -sC -sV -oN nmap/boxname 10.10.10.x
 ---
 **Open Ports**
 
-| Port      | Service       | Notes                                      |
-| --------- | ------------- | ------------------------------------------ |
-| 22/tcp    | OpenSSH 9.6p1 | Ubuntu 3ubuntu13.19                        |
-| 80/tcp    | HTTP (nginx)  | HTTP sever                                 |
-| 443/tcp   | HTTPS (nginx) | "Management- Managed IT & Infrastructure"  |
-| 1689/tcp  | Java RMI      | JMX stub → org.opends.server.protocols.jmx |
-| 4444/tcp  | LDAPS         | CN: sso.management.htb (self-signed)       |
-| 46047/tcp | Java RMI      | Dynamic port bound by registry on 1689     |
-| 50389/tcp | LDAP          | **Anonymous bind OK**                      |
+| Port      | Service       | Notes                                          |
+| --------- | ------------- | ---------------------------------------------- |
+| 22/tcp    | OpenSSH 9.6p1 | Ubuntu 3ubuntu13.19                            |
+| 80/tcp    | HTTP (nginx)  | HTTP sever                                     |
+| 443/tcp   | HTTPS (nginx) | "Management- Managed IT & Infrastructure"      |
+| 1689/tcp  | Java RMI      | JMX registry → org.opends.server.protocols.jmx |
+| 4444/tcp  | LDAPS         | CN: sso.management.htb (self-signed)           |
+| 46047/tcp | Java RMI      | Dynamic port bound by registry on 1689         |
+| 50389/tcp | LDAP          | **Anonymous bind OK**                          |
 
 ---
 **PORT DETAILS**
@@ -58,8 +58,8 @@ NEW PORTS
 **JMX over JAVA RMI**
 - Java Management Extensions is a management interface for java apps 
 - Remote Method Invocation is how JMX exposes itself to the internet
-- REGISTRY(port 1689)
-
+- REGISTRY(port 1689)- phonebook pointing to MBEAN addresses
+- STUB ENDPOINT (port)
 ---
 
 **Discovered Subdomains / Vhosts** 
