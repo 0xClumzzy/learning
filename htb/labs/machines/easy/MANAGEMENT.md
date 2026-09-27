@@ -156,6 +156,9 @@ under the
 - `glpi` theres db creds, `config_db.php` capturing user(`glpi`) and pass(`8rhu0L6Pw4Y7`)
 - glpi's encryption key(`glpicrypt.key`)
 
+So GLPI, the `Gestion Libre de Parc Informatique`.... french
+is an IT asset management software that tracks hardware, software, tickets, users, LDAP integrations, the whole corporate IT circus.
+
 Got a shell as `username`.
 
 ## User Flag
