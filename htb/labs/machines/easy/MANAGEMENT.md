@@ -87,7 +87,7 @@ The web app that manages identity
 
 ## Foothold
 
-After some digging we find out the OpenAM web app is vulnerable to 
+After some digging we find out the OpenAM web app is vulnerable to a pre-authentication RCE vulnerability which stems from unsafe deseriliazation of the `jato.clientSession`
 
 How you got initial access.
 
