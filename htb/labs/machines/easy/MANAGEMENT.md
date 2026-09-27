@@ -207,10 +207,13 @@ congrats....................
 ```bash
 sudo -l 
 ```
-
+very good:
 ```bash
-# Commands here
+Matching Defaults entries for owen on management: 
+	env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty 
+	User owen may run the following commands on management: (root) NOPASSWD: /usr/bin/rdiff-backup --server --restrict-path /opt/backup --restrict-mode read-only *
 ```
+
 
 ## Root Flag
 
