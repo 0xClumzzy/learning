@@ -170,6 +170,8 @@ SELECT * FROM  glpi_users; #users
 ```
 
 GLPI uses **libsodium** , specifically `sodium_crypto_secretbox` (XSalsa20-Poly1305) and requires a key to decrypt 
+- copy the key  and the encrypted pass
+
 
 Got a shell as `username`.
 
