@@ -141,10 +141,8 @@ We get shell as user `openham`
 
 ### Exploitation
 
-Step-by-step exploitation.
-
 ```bash
-# Commands here
+Commands here
 ```
 
 Got a shell as `username`.
