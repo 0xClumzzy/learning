@@ -65,7 +65,7 @@ PORT DETAILS
 - Enumerate rootDSE for attribute disclosure
 46047 - Java RMI (dynamic)
 - Actual RMIServer stub endpoint spawned by registry on 1689
-- Try `jconsole` or ysoserial if JMX is unauthenticated
+- `jconsole` or ysoserial if JMX is unauthenticated
 50389 -LDAP 
 - **Anonymous bind allowed**
 - Dump naming contexts first:
@@ -77,7 +77,7 @@ PORT DETAILS
   ldapsearch -x -H ldap://management.htb:50389 -b "dc=management,dc=htb"
 ```
 - Look for: `userPassword`, `uid`, `cn`, `mail` — OpenDJ may expose hashed or cleartext passwords
-
+found nothing
 ---
 
 ## Discovered Subdomains / Vhosts

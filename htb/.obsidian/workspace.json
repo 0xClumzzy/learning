@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -305,8 +305,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bcb73d39989d2052",
+  "active": "8c807cfb7f23877e",
   "lastOpenFiles": [
+    "academy/CPTS/footprinting/SMB.md",
     "conflict-files-obsidian-git.md",
     "labs/machines/easy/MANAGEMENT.md",
     "labs/machines/easy/easy.md",
@@ -315,7 +316,6 @@
     "labs/machines/easy/.md",
     "labs/machines/machines.md",
     "labs/machines/TEMPLATE11.md",
-    "academy/CPTS/footprinting/SMB.md",
     "Tags",
     "TEMPLATE.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
