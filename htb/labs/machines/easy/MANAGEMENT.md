@@ -165,9 +165,11 @@ mysql -h localhost -u glpi -p
 ```
 enter the pass and enumerate the database:
 ```sql
-SELECT * FROM  glpi_authldaps; #ldap pass
-SELECT * FROM  glpi_users; #
+SELECT * FROM  glpi_authldaps; #glpi pass
+SELECT * FROM  glpi_users; #users 
 ```
+
+GLPI uses **libsodium** , specifically `sodium_crypto_secretbox` (XSalsa20-Poly1305) and requires a key to decrypt 
 
 Got a shell as `username`.
 
