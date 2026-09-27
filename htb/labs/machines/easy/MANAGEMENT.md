@@ -64,7 +64,9 @@ If JMX connector has no authentication anyone who can reach the registry can cal
 - MBEAN objects expose attributes(heap size, thread count) and operations
 **LDAP**
 - A protocol used to communicate with a directory service 
-- The `bind` operatiom authe
+- The `bind` operation authenticates, anonymous bind allowed means we can get access to the DS withouth creds
+- The `search` operation can dump users and passowords
+- 
 
 ---
 
