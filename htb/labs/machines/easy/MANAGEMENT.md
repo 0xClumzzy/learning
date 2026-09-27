@@ -142,8 +142,10 @@ We get shell as user `openham`
 ### Exploitation
 
 ```bash
-Commands here
+env
 ```
+exposes a config dir `PWD=/opt/glpi/config`
+
 
 Got a shell as `username`.
 
