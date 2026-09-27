@@ -63,7 +63,8 @@ NEW PORTS
 If JMX connector has no authentication anyone who can reach the registry can call any MBEAN  onject including `Runtime.exec()`
 - MBEAN objects expose attributes(heap size, thread count) and operations
 **LDAP**
-- 
+- A protocol used to communicate with a directory service 
+- The `bind` operatiom authe
 
 ---
 
