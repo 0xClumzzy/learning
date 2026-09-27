@@ -171,8 +171,24 @@ SELECT * FROM  glpi_users; #users
 
 GLPI uses **libsodium** , specifically `sodium_crypto_secretbox` (XSalsa20-Poly1305) and requires a key to decrypt 
 - copy the key  and the encrypted pass
+```python
+import base64
+from nacl.bindings import crypto_aead_xchacha20poly1305_ietf_decrypt
 
+encrypted = base64.b64decode("avrqW65aZWKzLAKWhPxZGn1eLj3yYAnwUp08mEazsJUWfI5cqbaP6vM12w0p/ykpmyO3Pw==")
 
+key = base64.b64decode("Zif6I/wYBzKYteE3Tl/jC60u+bVozB970xS0ysAcLX8=")
+
+ciphertext = encrypted[24:]
+nonce = encrypted[:24]
+
+password = crypto_aead_xchacha20poly1305_ietf_decrypt(ciphertext, nonce, nonce, key).decode()
+
+print(password)
+
+```
+
+- Tried the same password for 
 Got a shell as `username`.
 
 ## User Flag
