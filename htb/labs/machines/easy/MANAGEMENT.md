@@ -59,7 +59,7 @@ NEW PORTS
 - Java Management Extensions is a management interface for java apps 
 - Remote Method Invocation is how JMX exposes itself to the internet
 - REGISTRY(port 1689)- phonebook pointing to MBEAN addresses
-- STUB ENDPOINT (port)
+- STUB ENDPOINT (port 47047)-  
 ---
 
 **Discovered Subdomains / Vhosts** 
