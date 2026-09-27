@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/CPTS/footprinting/SMB.md",
+                "file": "academy/CPTS/footprinting/MYSQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SMB"
+              "title": "MYSQL"
             }
           }
         ],
@@ -307,8 +307,8 @@
   },
   "active": "bcb73d39989d2052",
   "lastOpenFiles": [
-    "labs/machines/easy/ATOM.md",
     "academy/CPTS/footprinting/SMB.md",
+    "labs/machines/easy/ATOM.md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
     "TEMPLATE.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
