@@ -87,9 +87,11 @@ The web app that manages identity
 
 ## Foothold
 
-After some digging we find out the OpenAM web app is vulnerable to a pre-authentication RCE vulnerability which stems from unsafe deseriliazation of the `jato.clientSession`
+After some digging we find out the OpenAM web app is vulnerable to a pre-authentication RCE vulnerability which stems from unsafe deseriliazation of the `jato.clientSession`HTTP parameter inside `ClientSession.deserializeAttributes()`, which calls `Encoder.deserialize()` and `ApplicationObjectInputStream.readObject()` with no class whitelist applied.
 
-How you got initial access.
+An unauthenticated attacker sends a crafted HTTP GET or POST request containing a serialized Java object to any JATO ViewBean endpoint whose JSP renders `<jato:form>` tags. Upon receipt, the server deserializes the object without validation, triggering a gadget chain built entirely from classes bundled in the OpenAM WAR - no external libraries required - and executing arbitrary OS commands as the application process user.
+
+
 
 ### Exploitation
 
