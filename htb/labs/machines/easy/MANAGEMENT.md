@@ -66,7 +66,6 @@ If JMX connector has no authentication anyone who can reach the registry can cal
 - A protocol used to communicate with a directory service 
 - The `bind` operation authenticates, anonymous bind allowed means we can get access to the DS withouth creds
 - The `search` operation can dump users and passowords
-- 
 
 ---
 
@@ -79,7 +78,10 @@ If JMX connector has no authentication anyone who can reach the registry can cal
 | `sso.management.htb` | Cert CN on 4444     | 4444 |
 
 ---
-OpemAM 
+**OpemAM**
+
+The web app that manages identity
+- It delegates to OpenDJ via LDAP 
 
 ## Foothold
 
