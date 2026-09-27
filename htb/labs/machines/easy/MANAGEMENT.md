@@ -57,7 +57,8 @@ NEW PORTS
 
 **JMX over JAVA RMI**
 - Java Management Extensions is a management interface for java apps 
-
+- Remote Method Invocation is how JMX exposes itself to the internet
+- 
 
 ---
 
