@@ -103,8 +103,21 @@ git clone https://github.com/infernosalex/CVE-2026-33439-Python-PoC
 ```bash 
 curl -I https://sso.management.htb/openam/ccversion/Version
 ```
-status code 200 confirms it, y
+status code 200 confirms it, you can view raw data if u want:
+```http
+HTTP/1.1 200
+Server: nginx/1.24.0 (Ubuntu)
+Date: Sun, 27 Sep 2026 21:26:55 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 2608
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: JSESSIONID=08E8D06276AEC4E7D5978A0EDB09F2B4; Path=/openam; Secure; HttpOnly
+```
+2.  Probe JATO ViewBean endpoints
+```bash
 
+```
 ### Exploitation
 
 Step-by-step exploitation.
