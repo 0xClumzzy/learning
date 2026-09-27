@@ -87,6 +87,8 @@ The web app that manages identity
 
 ## Foothold
 
+After some digging we find out the OpenAM web app is vulnerable to 
+
 How you got initial access.
 
 ### Exploitation
