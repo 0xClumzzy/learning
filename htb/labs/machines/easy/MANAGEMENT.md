@@ -116,11 +116,18 @@ Set-Cookie: JSESSIONID=08E8D06276AEC4E7D5978A0EDB09F2B4; Path=/openam; Secure; H
 ```
 2.  Probe JATO ViewBean endpoints
 ```bash
-for ENDPOINT in "/ui/PWResetUserValidation" "/ui/PWResetQuestion" "/ui/Login"; do
-    STATUS=$(curl -sk -o /dev/null -w "%{http_code}" "https://sso.management.htb/openam${ENDPOINT}?jato.clientSession=probe")
-    echo "[HTTP ${STATUS}] ${ENDPOINT}"
+for ENDPOINT in "/ui/PWResetUserValidation" "/ui/PWResetQuestion" "/ui/Login"; do                               
+        STATUS=$(curl -sk -o /dev/null -w "%{http_code}" \
+                "https://sso.management.htb/openam${ENDPOINT}?jato.clientSession=probe")
+        echo "[HTTP ${STATUS}] ${ENDPOINT}"
 done
 ```
+>
+[HTTP 200] /ui/PWResetUserValidation 
+[HTTP 200] /ui/PWResetQuestion
+[HTTP 200] /ui/Login
+
+
 ### Exploitation
 
 Step-by-step exploitation.
