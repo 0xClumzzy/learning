@@ -52,32 +52,8 @@ nmap -sC -sV -oN nmap/boxname 10.10.10.x
 - SAN: `management.htb`, `*.management.htb` → **wildcard, fuzz subdomains**
 - Cert validity: 2026-06-02 → 2126-05-09 (self-signed, 100yr)
 - RSA 2048-bit, sha256WithRSAEncryption
-1689 - Java RMI (JMX)
-- Registry stub: `org.opends.server.protocols.jmx.client-unknown`
-- RMI stub: `javax.management.remote.rmi.RMIServerImpl_Stub`
-- Bound on `127.0.1.1:46047`
-- Check for unauthenticated JMX access → remote MBeans → RCE
-4444 - LDAPS
-- Cert CN: `sso.management.htb` → **add to /etc/hosts**
-- Org: Administration Connector RSA Self-Signed Certificate
-- Validity: 2026-06-02 → 2046-05-28
-- LDAPSearchReq response exposes `ds-root-dse` → confirms OpenDJ
-- Enumerate rootDSE for attribute disclosure
-46047 - Java RMI (dynamic)
-- Actual RMIServer stub endpoint spawned by registry on 1689
-- `jconsole` or ysoserial if JMX is unauthenticated
-50389 -LDAP 
-- **Anonymous bind allowed**
-- Dump naming contexts first:
-```bash
-  ldapsearch -x -H ldap://management.htb:50389 -b "" -s base namingContexts
-```
-- Full tree dump:
-```bash
-  ldapsearch -x -H ldap://management.htb:50389 -b "dc=management,dc=htb"
-```
-- Look for: `userPassword`, `uid`, `cn`, `mail` — OpenDJ may expose hashed or cleartext passwords
-found nothing
+
+
 ---
 
 **Discovered Subdomains / Vhosts** 
