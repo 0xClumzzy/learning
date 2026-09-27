@@ -62,6 +62,9 @@ NEW PORTS
 - STUB ENDPOINT (port 47047)
 If JMX connector has no authentication anyone who can reach the registry can call any MBEAN  onject including `Runtime.exec()`
 - MBEAN objects expose attributes(heap size, thread count) and operations
+**LDAP**
+- 
+
 ---
 
 **Discovered Subdomains / Vhosts** 
