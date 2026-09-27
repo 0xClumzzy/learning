@@ -147,7 +147,10 @@ export TERM=xterm-256color
 ```
 
 ### Exploitation
-
+```bash
+cat /etc/passwd
+```
+- reveals user owen 
 ```bash
 env
 ```
@@ -188,14 +191,16 @@ print(password)
 
 ```
 
-- Tried the same password for 
-Got a shell as `username`.
+- Lets try ssh to user `owen` using the same creds
+- we succeed
+Got a shell as `owen`.
 
 ## User Flag
 
 ```bash
-cat /home/username/user.txt
+cat user.txt
 ```
+congrats....................
 
 ## Privilege Escalation
 
