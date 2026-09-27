@@ -81,7 +81,9 @@ If JMX connector has no authentication anyone who can reach the registry can cal
 **OpemAM**
 
 The web app that manages identity
-- It delegates to OpenDJ via LDAP 
+- It delegates to OpenDJ via LDAP
+- OpenDJ(Directory Java) is an implementation of an LDAP directory server 
+- OpenAM handles the sessions, OpenDJ handles the actual data 
 
 ## Foothold
 
