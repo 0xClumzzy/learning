@@ -98,10 +98,9 @@ The poc for shell: https://github.com/infernosalex/CVE-2026-33439-Python-PoC
 ```bash 
 git clone https://github.com/infernosalex/CVE-2026-33439-Python-PoC 
 ```
-start a listener 
-```bash 
 
-```
+1. Confirm OpenAM is running and identity version 
+
 
 ### Exploitation
 
