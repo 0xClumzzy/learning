@@ -100,7 +100,10 @@ git clone https://github.com/infernosalex/CVE-2026-33439-Python-PoC
 ```
 
 1. Confirm OpenAM is running and identity version 
-
+```bash 
+curl -I https://sso.management.htb/openam/ccversion/Version
+```
+status code 200 confirms it, y
 
 ### Exploitation
 
