@@ -159,6 +159,15 @@ under the
 So GLPI, the `Gestion Libre de Parc Informatique`.... french
 is an IT asset management software that tracks hardware, software, tickets, users, LDAP integrations, the whole corporate IT circus.
 
+We can hunt for the password in the db 
+```bash
+mysql -h localhost -u glpi -p
+```
+enter the pass and enumerate the database:
+```sql
+SELECT * FROM  
+```
+
 Got a shell as `username`.
 
 ## User Flag
