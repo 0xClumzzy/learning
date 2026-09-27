@@ -204,7 +204,9 @@ congrats....................
 
 ## Privilege Escalation
 
-How you escalated to root/admin.
+```bash
+sudo -l 
+```
 
 ```bash
 # Commands here
