@@ -18,8 +18,8 @@ const messages: Record<Locale, Messages> = { en, 'zh-CN': zhCN };
 /*  Shared state (singleton across components)                        */
 /* ------------------------------------------------------------------ */
 
-const STORAGE_KEY = 'learn-anything-locale';
-const THEME_KEY = 'learn-anything-theme';
+const STORAGE_KEY = 'peaches-locale';
+const THEME_KEY = 'peaches-theme';
 
 function detectLocale(): Locale {
   if (typeof localStorage === 'undefined') return 'en';

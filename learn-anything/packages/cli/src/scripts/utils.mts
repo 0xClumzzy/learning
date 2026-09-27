@@ -7,7 +7,7 @@
  */
 
 /* ------------------------------------------------------------------ */
-/*  Inline v1 types (same shape as src/core/learn-protocol/types.ts)  */
+/*  Inline v1 types (same shape as src/core/peaches-protocol/types.ts)  */
 /* ------------------------------------------------------------------ */
 
 export type ConceptStatus = 'unexplored' | 'in_progress' | 'needs_practice' | 'mastered';
@@ -64,7 +64,7 @@ export const STATUS_LABEL: Record<ConceptStatus, string> = {
 export const esc = (s: string): string => s.replace(/_/g, '\\_');
 
 /* ------------------------------------------------------------------ */
-/*  Inline validation (mirrors src/core/learn-protocol/schema.ts)     */
+/*  Inline validation (mirrors src/core/peaches-protocol/schema.ts)     */
 /* ------------------------------------------------------------------ */
 
 export interface ValidationError {

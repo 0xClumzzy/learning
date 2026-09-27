@@ -1,13 +1,13 @@
 /* Quiz schema + frontend types.
  *
- * Re-exports the CLI's learn-protocol types (single source of truth:
- * packages/cli/src/core/learn-protocol/types.ts) and defines the
+ * Re-exports the CLI's peaches-protocol types (single source of truth:
+ * packages/cli/src/core/peaches-protocol/types.ts) and defines the
  * frontend-only types shared across the quiz data/session/grading layers. */
 
-import type { QuizQuestion } from '../../../../src/core/learn-protocol/types';
+import type { QuizQuestion } from '../../../../src/core/peaches-protocol/types';
 
-export type { QuizDeck, QuizQuestion } from '../../../../src/core/learn-protocol/types';
-export type { QuestionGradeable, QuestionType } from '../../../../src/core/learn-protocol/types';
+export type { QuizDeck, QuizQuestion } from '../../../../src/core/peaches-protocol/types';
+export type { QuestionGradeable, QuestionType } from '../../../../src/core/peaches-protocol/types';
 
 export type QuizAnswer = string | boolean | string[] | null;
 export type QuizAnswers = Record<string, QuizAnswer>;

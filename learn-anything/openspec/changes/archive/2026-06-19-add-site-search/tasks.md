@@ -43,7 +43,7 @@
 
 ## 8. Verification
 
-- [ ] 8.1 Run `pnpm --filter learn-anything-site dev` and verify `⌘K`/`Ctrl+K` opens the modal; results match headings/filenames across notes, knowledge map, and exercise docs
+- [ ] 8.1 Run `pnpm --filter peaches-site dev` and verify `⌘K`/`Ctrl+K` opens the modal; results match headings/filenames across notes, knowledge map, and exercise docs
 - [ ] 8.2 Verify deep-linking: hover heading shows `#`, click sets URL hash; entering a `#slug` URL on refresh scrolls to the section; Chinese headings deep-link
 - [ ] 8.3 Verify dark mode, EN/zh-CN switching, and that editing a note triggers an index refresh via SSE
 - [ ] 8.4 Run `pnpm lint` and `pnpm format:check` from the repo root

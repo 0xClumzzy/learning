@@ -41,7 +41,7 @@ The system SHALL run the site file bundling script as part of the CLI package bu
 
 #### Scenario: pnpm build runs site bundling
 
-- **WHEN** `pnpm build` or `pnpm -F learn-anything-cli build` is executed
+- **WHEN** `pnpm build` or `pnpm -F peaches build` is executed
 - **THEN** the site file bundling script runs before TypeScript compilation, and the resulting `dist/` includes the compiled `files.js`
 
 ### Requirement: Build script uses Node.js fs and path APIs only

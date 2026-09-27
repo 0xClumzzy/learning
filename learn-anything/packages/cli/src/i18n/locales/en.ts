@@ -3,9 +3,9 @@ import type { LocaleMessages } from '../types.js';
 export const en: LocaleMessages = {
   cli: {
     programDescription:
-      'AI-powered recursive learning system with Socratic method and TDD practice',
-    initCommandDescription: 'Initialize Learn Anything learning skills in the current project',
-    updateCommandDescription: 'Update Learn Anything skill files to latest version',
+      'Pick a topic, grow into it — AI-powered recursive learning for your coding assistant',
+    initCommandDescription: 'Initialize Peaches learning skills in the current project',
+    updateCommandDescription: 'Update Peaches skill files to latest version',
     toolsOptionDescription: (ids: string) =>
       `Specify AI tools (non-interactive mode). Use "all", "none", or comma-separated list: ${ids}`,
     notDirectory: (path: string) => `Path "${path}" is not a directory`,
@@ -13,23 +13,23 @@ export const en: LocaleMessages = {
       `Directory "${path}" does not exist, it will be created automatically.`,
     cannotAccess: (path: string, msg: string) => `Cannot access path "${path}": ${msg}`,
     errorPrefix: (msg: string) => `Error: ${msg}`,
-    updateComplete: 'Learn Anything skill files have been updated.',
+    updateComplete: 'Peaches skill files have been updated.',
     forceOption: 'Skip confirmation prompt',
     langOption: 'Display language: zh-CN or en (default: system locale)',
     portOption: 'Port for the dev server (default: 24278)',
     strictPortOption: 'Use the exact port from --port; do not auto-pick a free one when busy',
     noOpenOption: 'Do not open browser automatically',
     serveCommandDescription: 'Start a local site to visualize learning progress',
-    serveHint: 'Run npx learn-anything-cli serve to view your learning progress in browser',
+    serveHint: 'Run npx peaches serve to view your learning progress in browser',
   },
 
   init: {
-    header: '\n🧠 Learn Anything — AI-Powered Recursive Learning System\n',
+    header: '\n🍑 Peaches — Pick a topic. Grow into it.\n',
     noToolsSelected:
       'No AI tools selected. Use --tools option to specify, or select in interactive mode.',
     availableTools: (tools: string) => `Available tools: ${tools}`,
     skillGenerated: (toolName: string) => `  ✓ ${toolName} — 6 skill files generated`,
-    initComplete: '🎉 Learn Anything initialization complete!\n',
+    initComplete: '🎉 Peaches initialization complete!\n',
     globalDataPath: (dir: string) => `  Learning data stored at ${dir}/`,
     startLearning: (example: string) => `  Run ${example} to start your first learning topic\n`,
     availableCommands: 'Available learning commands:',
@@ -54,7 +54,7 @@ export const en: LocaleMessages = {
       `Port ${from} is already in use — switching to port ${to}.`,
     portRangeExhausted: (start: number, end: number) =>
       `No free port found in range ${start}-${end}. Specify one manually with --port.`,
-    emptyTopics: 'No learning topics found in .learn/topics/. Start learning with /learn:topic.',
+    emptyTopics: 'No learning topics found in .peaches/topics/. Start learning with /peaches:topic.',
     serverStopped: 'Server stopped.',
     siteNotBuilt: 'Site files not found. Please reinstall the package or run the build step.',
   },

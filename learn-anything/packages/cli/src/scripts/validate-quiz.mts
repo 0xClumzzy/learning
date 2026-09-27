@@ -6,7 +6,7 @@
  * Usage: node validate-quiz.mjs <quiz.json-path>
  *
  * This file is compiled from src/scripts/validate-quiz.mts via tsc and
- * copied into the learn-anything-quiz skill's scripts/ directory by init/update.
+ * copied into the peaches-quiz skill's scripts/ directory by init/update.
  */
 
 import { readFileSync } from 'node:fs';

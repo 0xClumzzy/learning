@@ -76,7 +76,7 @@ awk -v prev="$CURRENT_VERSION" -v new="$VERSION" '
   /^\[Unreleased\]:/ {
     sub("v" prev "...HEAD", "v" new "...HEAD")
     print
-    print "[" new "]: https://github.com/ChenChenyaqi/learn-anything/compare/v" prev "...v" new
+    print "[" new "]: https://github.com/ChenChenyaqi/peaches/compare/v" prev "...v" new
     next
   }
   { print }
@@ -117,7 +117,7 @@ git push origin "v$VERSION"
 
 log "B4 · publish GitHub release"
 gh release create "v$VERSION" --title "v$VERSION" --notes-file "$NOTES_FILE"
-echo "    https://github.com/ChenChenyaqi/learn-anything/releases/tag/v$VERSION"
+echo "    https://github.com/ChenChenyaqi/peaches/releases/tag/v$VERSION"
 
 # ─── C. sync develop ────────────────────────────────────────────────────────
 log "C1 · sync main back to develop"

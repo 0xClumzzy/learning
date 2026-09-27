@@ -1,9 +1,8 @@
 {
-  "name": "learn-anything",
-  "description": "AI-powered recursive learning system — monorepo workspace",
+  "name": "peaches",
+  "description": "Peaches — pick a topic, grow into it. AI-powered recursive learning system",
   "keywords": [
-    "learn-anything-cli",
-    "learn-anything",
+    "peaches",
     "learning",
     "cli",
     "ai",
@@ -11,10 +10,10 @@
     "socratic",
     "tdd"
   ],
-  "homepage": "https://github.com/ChenChenyaqi/learn-anything",
+  "homepage": "https://github.com/ChenChenyaqi/peaches",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChenChenyaqi/learn-anything"
+    "url": "https://github.com/ChenChenyaqi/peaches"
   },
   "license": "MIT",
   "author": "yaqi chen",

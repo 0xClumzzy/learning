@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Learn Anything is a CLI tool (`learn-anything`) that generates skill and command files for AI coding assistants, turning them into interactive learning tutors. It supports 30+ AI tools (Claude Code, Cursor, Gemini CLI, Codex, Copilot, Windsurf, etc.) and outputs localized files in `en` and `zh-CN`.
+Peaches is a CLI tool (published as `peaches`, binary `peaches`) that generates skill and command files for AI coding assistants, turning them into interactive learning tutors. It supports 30+ AI tools (Claude Code, Cursor, Gemini CLI, Codex, Copilot, Windsurf, etc.) and outputs localized files in `en` and `zh-CN`.
 
 The generated skills implement 6 learning workflows: topic (initialize a subject), explain (recursive Socratic deep-dive), practice (TDD-style exercises), review (spaced repetition), status (knowledge map visualization), and quiz (two-stage generation and grading).
 
@@ -17,21 +17,21 @@ pnpm test           # Run all tests once (vitest run) across all packages
 pnpm test:watch     # Run tests in watch mode (vitest) across all packages
 pnpm lint           # ESLint on packages/
 # Per-package commands:
-pnpm -F learn-anything-cli build     # Build only the CLI package
-pnpm -F learn-anything-cli test      # Test only the CLI package
+pnpm -F peaches build     # Build only the CLI package
+pnpm -F peaches test      # Test only the CLI package
 ```
 
 ## Architecture (monorepo)
 
 ```
 packages/
-  cli/                  # Published as `learn-anything-cli`
+  cli/                  # Published as `peaches`
     src/
-      cli/index.ts          # Commander.js CLI: `learn-anything init [path]` and `learn-anything update [path]`
+      cli/index.ts          # Commander.js CLI: `peaches init [path]` and `peaches update [path]`
       core/
         init.ts             # InitCommand — orchestrates tool detection, interactive selection,
                             #   skill generation, and command generation
-        config.ts           # AI_TOOLS array (30+ tools with skillsDir mappings), LEARN_DIR
+        config.ts           # AI_TOOLS array (30+ tools with skillsDir mappings), PEACHES_DIR
         command-generation/ # Adapter pattern: each tool has an adapter that knows its file format
                             #   and directory conventions (Claude → .claude/commands/, YAML frontmatter;
                             #   Gemini → .gemini/commands/, TOML; Codex → ~/.codex/prompts/)
@@ -42,8 +42,8 @@ packages/
         templates/
           types.ts          # SkillTemplate, CommandTemplate interfaces
           skill-templates.ts # Re-exports all 6 workflow template getters
-          workflows/        # learn-topic.ts, learn-explain.ts, learn-practice.ts,
-                            #   learn-review.ts, learn-status.ts, learn-quiz.ts
+          workflows/        # peaches-topic.ts, peaches-explain.ts, peaches-practice.ts,
+                            #   peaches-review.ts, peaches-status.ts, peaches-quiz.ts
                             #   Each exports getXxxSkillTemplate(locale) and getXxxCommandTemplate(locale)
         shared/
           skill-generation.ts  # Aggregates templates; generateSkillContent() writes YAML frontmatter
@@ -63,8 +63,8 @@ packages/
 
 - **Templates are locale-aware**: every template getter takes `locale: SupportedLocale` and pulls strings from i18n. The same template produces different content for `en` vs `zh-CN`.
 - **Adapter pattern for multi-tool output**: adding support for a new AI tool means creating a new adapter in `command-generation/adapters/` that implements `ToolCommandAdapter` (specifying file path conventions and file format) and registering it.
-- **Shared data in `./.learn/`**: the CLI creates `./.learn/topics/` in the project directory for learning state that stays with the project.
-- **Interactive by default**: when no `--tools` flag is passed and stdin/stdout are TTYs, `learn-anything init` shows an interactive checkbox prompt (via `@inquirer/prompts`) with detected tools pre-selected.
+- **Shared data in `./.peaches/`**: the CLI creates `./.peaches/topics/` in the project directory for learning state that stays with the project.
+- **Interactive by default**: when no `--tools` flag is passed and stdin/stdout are TTYs, `peaches init` shows an interactive checkbox prompt (via `@inquirer/prompts`) with detected tools pre-selected.
 
 ### Adding a new AI tool
 

@@ -1,4 +1,4 @@
-# Contributing to Learn Anything
+# Contributing to Peaches
 
 ## Commit Message Convention
 
@@ -192,11 +192,11 @@ If you don't have write access to this repository, the workflow is the same — 
 
 ```bash
 # 1. Fork the repository on GitHub, then clone your fork
-git clone https://github.com/YOUR_USERNAME/learn-anything.git
-cd learn-anything
+git clone https://github.com/YOUR_USERNAME/peaches.git
+cd peaches
 
 # 2. Add the upstream remote and create a branch from develop
-git remote add upstream https://github.com/ChenChenyaqi/learn-anything.git
+git remote add upstream https://github.com/ChenChenyaqi/peaches.git
 git fetch upstream
 git checkout -b feat/my-feature upstream/develop
 

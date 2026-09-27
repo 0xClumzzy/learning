@@ -3,7 +3,7 @@ import type { I18nKey } from './en';
 const zhCN: Record<I18nKey, string> = {
   'dashboard.title': '学习仪表盘',
   'dashboard.noTopics': '暂无学习主题',
-  'dashboard.startLearning': '运行 `learn-anything init` 开始你的第一个学习主题',
+  'dashboard.startLearning': '运行 `peaches init` 开始你的第一个学习主题',
   'dashboard.topicCount': '{count} 个主题',
   'dashboard.overview.activity': '学习活动',
   'dashboard.overview.content': '学习内容',

@@ -4,7 +4,7 @@ import * as fs from 'fs';
 import { createRequire } from 'module';
 import { fileURLToPath } from 'url';
 import { FileSystemUtils } from '../utils/file-system.js';
-import { AI_TOOLS, AIToolOption, LEARN_DIR } from './config.js';
+import { AI_TOOLS, AIToolOption, PEACHES_DIR } from './config.js';
 import { isInteractive } from '../utils/interactive.js';
 import { generateCommands, CommandAdapterRegistry } from './command-generation/index.js';
 import { getSkillTemplates, getCommandContents, generateSkillContent } from './shared/index.js';
@@ -46,13 +46,13 @@ export class InitCommand {
     // Ensure target directory exists
     await FileSystemUtils.ensureDir(resolvedPath);
 
-    // Create .learn/ directory in the target project
-    const learnDir = path.join(resolvedPath, LEARN_DIR);
-    const topicsDir = path.join(learnDir, 'topics');
+    // Create .peaches/ directory in the target project
+    const peachesDir = path.join(resolvedPath, PEACHES_DIR);
+    const topicsDir = path.join(peachesDir, 'topics');
     await FileSystemUtils.ensureDir(topicsDir);
 
     // Run v0→v1 migration for any existing learning data
-    const { migrateAll } = await import('./learn-protocol/index.js');
+    const { migrateAll } = await import('./peaches-protocol/index.js');
     const report = await migrateAll(topicsDir);
     if (report.migratedCount > 0) {
       console.log(chalk.green(m.init.migrationComplete(report.migratedCount)));
@@ -112,41 +112,41 @@ export class InitCommand {
 
     console.log('');
     console.log(chalk.bold(m.init.initComplete));
-    console.log(chalk.dim(m.init.globalDataPath(LEARN_DIR)));
-    console.log(chalk.dim(m.init.startLearning('/learn javascript')));
+    console.log(chalk.dim(m.init.globalDataPath(PEACHES_DIR)));
+    console.log(chalk.dim(m.init.startLearning('/peaches javascript')));
 
     console.log(chalk.bold(m.init.availableCommands));
     const cmd = m.init.cmdLine;
     console.log(
       cmd(
-        chalk.cyan('/learn:topic <topic-name>'),
+        chalk.cyan('/peaches:topic <topic-name>'),
         chalk.dim('      — Initialize or load a learning topic'),
       ),
     );
     console.log(
       cmd(
-        chalk.cyan('/learn:explain <concept-name>'),
+        chalk.cyan('/peaches:explain <concept-name>'),
         chalk.dim('  — Recursively deep-dive into a concept'),
       ),
     );
     console.log(
-      cmd(chalk.cyan('/learn:practice <concept-name>'), chalk.dim(' — TDD-style coding exercises')),
+      cmd(chalk.cyan('/peaches:practice <concept-name>'), chalk.dim(' — TDD-style coding exercises')),
     );
     console.log(
       cmd(
-        chalk.cyan('/learn:review [topic-name]'),
+        chalk.cyan('/peaches:review [topic-name]'),
         chalk.dim('    — Review progress, spaced repetition recommendations'),
       ),
     );
     console.log(
       cmd(
-        chalk.cyan('/learn:status [topic-name]'),
+        chalk.cyan('/peaches:status [topic-name]'),
         chalk.dim('    — Visualize learning state as knowledge map heatmap'),
       ),
     );
     console.log(
       cmd(
-        chalk.cyan('/learn:quiz <concept-name>'),
+        chalk.cyan('/peaches:quiz <concept-name>'),
         chalk.dim('   — Quick text Q&A quiz (saved for re-practice)'),
       ),
     );
@@ -226,10 +226,10 @@ export class InitCommand {
 
       // topic / explain / practice / quiz → utils.mjs + render.mjs
       if (
-        entry.dirName === 'learn-anything-topic' ||
-        entry.dirName === 'learn-anything-explain' ||
-        entry.dirName === 'learn-anything-practice' ||
-        entry.dirName === 'learn-anything-quiz'
+        entry.dirName === 'peaches-topic' ||
+        entry.dirName === 'peaches-explain' ||
+        entry.dirName === 'peaches-practice' ||
+        entry.dirName === 'peaches-quiz'
       ) {
         await FileSystemUtils.writeFile(
           path.join(scriptsDir, 'utils.mjs'),
@@ -241,14 +241,14 @@ export class InitCommand {
         );
       }
       // quiz -> validate-quiz.mjs (deck validation)
-      if (entry.dirName === 'learn-anything-quiz') {
+      if (entry.dirName === 'peaches-quiz') {
         await FileSystemUtils.writeFile(
           path.join(scriptsDir, 'validate-quiz.mjs'),
           this.readCompiledScript('validate-quiz.mjs'),
         );
       }
       // topic -> init-sessions.mjs
-      if (entry.dirName === 'learn-anything-topic') {
+      if (entry.dirName === 'peaches-topic') {
         await FileSystemUtils.writeFile(
           path.join(scriptsDir, 'init-sessions.mjs'),
           this.readCompiledScript('init-sessions.mjs'),
@@ -256,7 +256,7 @@ export class InitCommand {
       }
 
       // status → utils.mjs + status.mjs
-      if (entry.dirName === 'learn-anything-status') {
+      if (entry.dirName === 'peaches-status') {
         await FileSystemUtils.writeFile(
           path.join(scriptsDir, 'utils.mjs'),
           this.readCompiledScript('utils.mjs'),

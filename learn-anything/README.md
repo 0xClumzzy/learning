@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="./logo.png" alt="Learn Anything Logo" width="120" />
+  <img src="./logo.png" alt="Peaches Logo" width="120" />
 </p>
 
-<h1 align="center">Learn Anything</h1>
+<h1 align="center">Peaches</h1>
 
 <p align="center">
-  <strong>AI-Powered Recursive Learning System</strong><br />
+  <strong>Pick a topic. Grow into it.</strong><br />
   Turn your AI coding assistant into an interactive tutor — Socratic method &amp; TDD-style exercises.<br />
   <em>Now with a built-in visual learning dashboard.</em>
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/learn-anything-cli"><img src="https://img.shields.io/npm/v/learn-anything-cli?color=blue&label=npm" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/peaches"><img src="https://img.shields.io/npm/v/peaches?color=blue&label=npm" alt="npm version" /></a>
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/node-%3E%3D20.0-green" alt="Node.js" /></a>
   <a href="https://pnpm.io/"><img src="https://img.shields.io/badge/pnpm-workspace-orange" alt="pnpm workspace" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License MIT" /></a>
@@ -23,9 +23,9 @@
 
 ---
 
-## What is Learn Anything?
+## What is Peaches?
 
-**Learn Anything** generates skill and command files for **30+ AI coding tools** — Claude Code, Cursor, Codex, OpenCode, and more. Once generated, your AI assistant gains six slash commands that guide you through systematically mastering any technical topic:
+**Peaches** is an AI-powered recursive learning system that generates skill and command files for **30+ AI coding tools** — Claude Code, Cursor, Codex, OpenCode, and more. Once generated, your AI assistant gains six slash commands that guide you through systematically mastering any technical topic:
 
 - 🧭 **Choose your own path** — AI generates a knowledge map; you decide what to learn next
 - 🎓 **Recursive learning method** — Recursive explanations that follow your curiosity as deep as you want
@@ -39,14 +39,14 @@
 
 ```bash
 # Interactive mode — auto-detects your AI tools and prompts you to choose
-npx learn-anything-cli init
+npx peaches init
 
 # Target specific tools
-npx learn-anything-cli init --tools claude
+npx peaches init --tools claude
 
 # Or install globally
-pnpm add -g learn-anything-cli   # npm install -g learn-anything-cli
-learn-anything init
+pnpm add -g peaches   # npm install -g peaches
+peaches init
 ```
 
 ### Context7 Integration _(optional)_
@@ -59,12 +59,12 @@ During `init` or `update`, you'll be prompted to enable **Context7** for documen
 
 | Command                  | What it does                                                 |
 | :----------------------- | :----------------------------------------------------------- |
-| `/learn:topic <name>`    | Initialize a topic, generate a knowledge map, track progress |
-| `/learn:explain <name>`  | Recursive learning method — go as deep as you want           |
-| `/learn:practice <name>` | TDD-style coding exercises with structured feedback          |
-| `/learn:review [name]`   | Spaced repetition review with personalized next-step plan    |
-| `/learn:status [name]`   | Knowledge map heatmap — mastery, practice counts, confidence |
-| `/learn:quiz <name>`     | Quick text Q&A quiz — graded and saved for re-practice       |
+| `/peaches:topic <name>`    | Initialize a topic, generate a knowledge map, track progress |
+| `/peaches:explain <name>`  | Recursive learning method — go as deep as you want           |
+| `/peaches:practice <name>` | TDD-style coding exercises with structured feedback          |
+| `/peaches:review [name]`   | Spaced repetition review with personalized next-step plan    |
+| `/peaches:status [name]`   | Knowledge map heatmap — mastery, practice counts, confidence |
+| `/peaches:quiz <name>`     | Quick text Q&A quiz — graded and saved for re-practice       |
 
 ### Visual Learning Dashboard
 
@@ -72,17 +72,17 @@ Start a zero-config web dashboard to browse your learning data:
 
 ```bash
 # Start the visual dashboard (no npm install needed)
-npx learn-anything-cli serve
+npx peaches serve
 
 # Custom port
-npx learn-anything-cli serve --port 8080
+npx peaches serve --port 8080
 
 # Disable auto-open browser
-npx learn-anything-cli serve --no-open
+npx peaches serve --no-open
 ```
 
 > The dashboard is pre-built and shipped with the CLI — no extra dependencies or `npm install` required.
-> If you installed globally, you can use `learn-anything serve` instead.
+> If you installed globally, you can use `peaches serve` instead.
 
 The dashboard provides:
 
@@ -95,17 +95,34 @@ The dashboard provides:
 
 ## How It Works
 
+`init` is a one-time, local generation step. There is no daemon and no account — Peaches writes plain files that your assistant reads as instructions. _(If you opt into Context7 during setup, your assistant will fetch official library docs from `context7.com`; that is the only network call, and it is optional.)_
+
+**1. Generate.** Peaches writes a command file and a skill file for each of the six workflows, using whatever format your tool expects.
+
+**2. Adopt a persona.** Each skill opens by casting your assistant into a specific Peaches role, so behaviour stays consistent no matter which tool you drive:
+
+| Command           | Assistant becomes             | Effect                                                                        |
+| :---------------- | :---------------------------- | :---------------------------------------------------------------------------- |
+| `/peaches:topic`    | Peaches' _Knowledge Mentor_   | creates `state.json`, renders `knowledge-map.md`, sets up `sessions/`         |
+| `/peaches:explain`  | Peaches' _Explanation Mentor_ | writes `sessions/<domain>/<concept>-<date>.md`, updates `state.json`          |
+| `/peaches:practice` | Peaches' _Practice Coach_     | writes `exercises/<concept-slug>/…-practice-<date>.md`, updates `state.json`  |
+| `/peaches:quiz`     | Peaches' _Quiz Coach_         | writes `quizzes/<concept-slug>/…-quiz-<timestamp>.json`, updates `state.json` |
+| `/peaches:review`   | Peaches' _Learning Analyst_   | read-only — reads `state.json` and plans what to do next                      |
+| `/peaches:status`   | Peaches' _Status Visualizer_  | read-only — runs the status script over `state.json`                          |
+
+**3. Keep the state.** Every workflow updates `state.json`, which is what makes progress, spaced repetition, and the dashboard work later.
+
 ```
 Your Project/
 ├── .claude/
-│   ├── commands/learn/          # Slash commands for Claude
+│   ├── commands/peaches/          # Slash commands for Claude
 │   └── skills/                  # Skill files with full workflow instructions
 ├── .cursor/commands/            # Cursor-specific command format
-├── .gemini/commands/learn/      # Gemini TOML-format commands
+├── .gemini/commands/peaches/      # Gemini TOML-format commands
 ├── .codex/prompts/              # Codex prompt files
 │   ...                          # (30+ other tool formats)
 │
-├── .learn/                      # 🧠 Your learning data lives here
+├── .peaches/                      # 🍑 Your learning data lives here
 │   └── topics/
 │       └── typescript/
 │           ├── state.json           # Single source of truth
@@ -118,12 +135,14 @@ Your Project/
 
 Each AI tool receives **tool-appropriate file formats** via an adapter pattern — YAML frontmatter for Claude, TOML for Gemini, Markdown for Cursor, etc.
 
+> Your `.peaches/` directory is plain Markdown and JSON, so it is safe in git and readable without Peaches installed.
+
 ## Monorepo Structure
 
 ```
-learn-anything/
+peaches/
 ├── packages/
-│   ├── cli/                     # learn-anything-cli — published to npm
+│   ├── cli/                     # peaches — published to npm
 │   │   ├── site/                 # Dashboard source (Vue 3 + Vite)
 │   │   ├── scripts/              # Build scripts (bundle-site.mjs)
 │   │   ├── src/
@@ -131,9 +150,9 @@ learn-anything/
 │   │   │   ├── core/            # init, config, command generation, templates
 │   │   │   ├── i18n/            # en + zh-CN locales
 │   │   │   └── utils/           # Filesystem, interactive helpers
-│   │   ├── bin/                 # learn-anything binary
+│   │   ├── bin/                 # peaches binary
 │   │   └── package.json
-│   └── gui/                     # learn-anything-gui — coming soon 🚧
+│   └── gui/                     # peaches-gui — coming soon 🚧
 │       └── README.md
 ├── pnpm-workspace.yaml          # pnpm workspace config
 ├── tsconfig.base.json           # Shared compiler options
@@ -143,8 +162,8 @@ learn-anything/
 
 | Package                                | npm                                                                                                                    | Description                                              |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
-| [`learn-anything-cli`](./packages/cli) | [![npm](https://img.shields.io/npm/v/learn-anything-cli?color=blue)](https://www.npmjs.com/package/learn-anything-cli) | CLI tool — generate skill/command files for 30+ AI tools |
-| `learn-anything-gui`                   | _private_                                                                                                              | Graphical desktop interface _(in development)_           |
+| [`peaches`](./packages/cli) | [![npm](https://img.shields.io/npm/v/peaches?color=blue)](https://www.npmjs.com/package/peaches) | CLI tool — generate skill/command files for 30+ AI tools |
+| `peaches-gui`                   | _private_                                                                                                              | Graphical desktop interface _(in development)_           |
 
 ## Supported AI Tools
 
@@ -152,7 +171,7 @@ learn-anything/
 
 ```bash
 # Update existing skill files to the latest version (auto-detects installed tools)
-npx learn-anything-cli update
+npx peaches update
 ```
 
 ## Development
@@ -165,8 +184,8 @@ npx learn-anything-cli update
 ### Setup
 
 ```bash
-git clone https://github.com/ChenChenyaqi/learn-anything.git
-cd learn-anything
+git clone https://github.com/ChenChenyaqi/peaches.git
+cd peaches
 pnpm install
 ```
 
@@ -185,18 +204,18 @@ pnpm install
 ### Per-Package Commands
 
 ```bash
-pnpm -F learn-anything-cli build      # Build only CLI
-pnpm -F learn-anything-cli test       # Test only CLI
-pnpm -F learn-anything-cli dev:cli    # Build and run CLI locally
+pnpm -F peaches build      # Build only CLI
+pnpm -F peaches test       # Test only CLI
+pnpm -F peaches dev:cli    # Build and run CLI locally
 ```
 
 ## Star History
 
-<a href="https://star-history.dera.page/#ChenChenyaqi/learn-anything&type=date&legend=top-left">
+<a href="https://star-history.dera.page/#ChenChenyaqi/peaches&type=date&legend=top-left">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/learn-anything&type=date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/learn-anything&type=date&legend=top-left" />
-    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=ChenChenyaqi/learn-anything&type=date&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/peaches&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/peaches&type=date&legend=top-left" />
+    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=ChenChenyaqi/peaches&type=date&legend=top-left" />
   </picture>
 </a>
 
@@ -207,5 +226,5 @@ pnpm -F learn-anything-cli dev:cli    # Build and run CLI locally
 ---
 
 <p align="center">
-  <sub>Built with ❤️ for curious minds · <a href="https://github.com/ChenChenyaqi/learn-anything">GitHub</a> · <a href="./CONTRIBUTING.md">Contributing</a> · <a href="./CHANGELOG.md">Changelog</a></sub>
+  <sub>Built with ❤️ for curious minds · <a href="https://github.com/ChenChenyaqi/peaches">GitHub</a> · <a href="./CONTRIBUTING.md">Contributing</a> · <a href="./CHANGELOG.md">Changelog</a></sub>
 </p>

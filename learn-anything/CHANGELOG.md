@@ -5,15 +5,37 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- **Peaches** — an AI-powered recursive learning system that turns your AI coding assistant into an interactive tutor. Tagline: _"Pick a topic. Grow into it."_ (English-only; a Chinese rendering was tried and dropped as unidiomatic).
+- `BRAND.md` — brand source of truth: the mark, the colour ramps, type, where each surface lives, and a checklist for future brand changes.
+
+### Changed
+
+- The site theme is **"Peach Glow"**: charcoal base `#111113` with a peach accent (`#f5a76f`). The peach mark (`logo.png` + `logo.svg`) is inlined in the dashboard sidebar from a single `PeachMark.vue` component.
+- The dashboard's modal glow shadows and background radial gradients now reference the `--color-glow` token instead of hardcoded `rgba(…)` values, so the accent is re-themeable from `main.css` alone.
+- Learning state lives in `.peaches/topics/`. Topics are plain Markdown and JSON, safe to commit and readable without the CLI installed.
+
+### Fixed
+
+- **Mastery states are now visually distinct in the knowledge map.** `mastered` and `needs_practice` both resolved to `--color-mastered`/`brand-2` (identical values), so two different states rendered pixel-identical in `MasteryTree` and in the `StatsHero` / `TopicProgressView` segmented ledgers — the one job those views have. The single-hue `--color-progress` token is replaced by a semantic status scale: `mastered` peach `#f5a76f`, `in_progress` leaf-green `#7fa65c`, `attention` (needs practice) coral `#e0605f`, `unexplored` grey. The quiz score bar (`>= 80 / >= 50 / below`) and the incorrect-answer ✗ in `QuizResults` were also remapped — the latter was brand peach, which read as a success colour on a wrong answer.
+
+### Added
+
+- `BRAND.md` — brand source of truth: mark, colour ramps, type, where each surface lives, what is deliberately _not_ rebranded, and a checklist for future brand changes.
+- `test/brand.test.ts` — regression guards asserting the sidebar mark and `logo.svg` share identical path geometry, that the inlined mark keeps the green leaf and namespaces its gradient ids, and that the status tokens stay distinct and consistent between `@theme` and `.dark`.
+
 ## [1.6.3] - 2026-07-21
 
 ### Fixed
 
-- `learn-explain` template's Step 4D now caps the confidence increment at 1.0 (`confidence += 0.05~0.1 (cap 1.0)`), matching the practice/quiz templates and preventing `validateStateV1` failures that halted `render.mjs` mid-session. (#129, closes #121)
+- `peaches-explain` template's Step 4D now caps the confidence increment at 1.0 (`confidence += 0.05~0.1 (cap 1.0)`), matching the practice/quiz templates and preventing `validateStateV1` failures that halted `render.mjs` mid-session. (#129, closes #121)
 - `validateQuizDeck` now requires `multiple_choice` `answer` to be a string contained in `options[]`, mirroring the existing `multi_select` check. Previously only `options[]` length was validated, so un-answerable questions (answer not in options, or wrong type like boolean/array) passed validation and could never be graded correct by the `exact` step. (#130, closes #122)
 - `validateStateV1`/`validateQuizDeck` now report a `Must be an object` error for primitive or `null` entries inside `domains`/`concepts`/`questions`. Previously such entries either passed silently (e.g. `domains: ['str']`, `questions: [42]`) or threw an uncaught `TypeError` (e.g. `domains: [null]`, `questions: [null]`), crashing `render.mjs`/`validate-quiz.mjs` instead of returning the friendly error list. (#131, closes #123)
 - `dateStr` validator now rejects impossible dates that happened to match the digit shape (e.g. `2026-99-99`, `2026-13-45`, `2026-02-30`, `2026-01-01 99:99:99`). Both implementations (`schema.ts` Zod and `utils.mts` inline) now round-trip the parsed components through `new Date(...)` and verify every field reads back identically, catching range errors and calendar errors (Feb 30, non-leap-year Feb 29) without per-component special-casing. This prevents hallucinated timestamps written by the AI from silently producing `Invalid Date` downstream (e.g. review-interval math on `last_practiced`). (#132, closes #124)
-- `learn-quiz` Step 6 now splits the `exact` grading bullet by question type. Previously "strict equality versus `answer`" was ill-defined for `multi_select` (`answer: string[]`) and read literally as order-sensitive, so a learner answering `Q1: B, A` against `answer: ["A", "B"]` could be marked wrong by an AI grader following the instruction to the letter. `multi_select` now explicitly requires unordered set comparison (no missing, no extras; order irrelevant); `multiple_choice` and `true_false` keep strict equality. (#133, closes #125)
+- `peaches-quiz` Step 6 now splits the `exact` grading bullet by question type. Previously "strict equality versus `answer`" was ill-defined for `multi_select` (`answer: string[]`) and read literally as order-sensitive, so a learner answering `Q1: B, A` against `answer: ["A", "B"]` could be marked wrong by an AI grader following the instruction to the letter. `multi_select` now explicitly requires unordered set comparison (no missing, no extras; order irrelevant); `multiple_choice` and `true_false` keep strict equality. (#133, closes #125)
 
 ## [1.6.2] - 2026-07-18
 
@@ -25,11 +47,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- **`/learn-explain` explanation flow**: reordered so the **core mechanism (precise rules) now precedes the analogy** — analogies are supplementary aids that must note the cases they don't cover. Code examples referencing project source must be verified against the actual source before file paths are annotated.
+- **`/peaches-explain` explanation flow**: reordered so the **core mechanism (precise rules) now precedes the analogy** — analogies are supplementary aids that must note the cases they don't cover. Code examples referencing project source must be verified against the actual source before file paths are annotated.
 
 ### Fixed
 
-- Update dashboard serve command, using `npx learn-anything-cli serve` instead of `learn-anything-cli serve`.
+- Update dashboard serve command, using `npx peaches serve` instead of `peaches serve`.
 
 ## [1.6.0] - 2026-06-30
 
@@ -56,7 +78,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Fixed skill templates silently failing to discover files under the hidden `.learn/` directory — the glob tool ignores dot-prefixed paths by default. All discovery instructions now explicitly use Bash `ls -d` instead of glob. (#72, #101)
+- Fixed skill templates silently failing to discover files under the hidden `.peaches/` directory — the glob tool ignores dot-prefixed paths by default. All discovery instructions now explicitly use Bash `ls -d` instead of glob. (#72, #101)
 - Fixed binary files (e.g. Rust compiled binaries) showing up in the dashboard practice directory tree. Exercises listing now detects binary files by content using Git's NUL-byte heuristic instead of an extension list, and also hides build sub-directories like `target/`. (#90, #102)
 - Fixed quiz cards rendering multi-line content (especially embedded code in `error_correction` questions) on a single line. Quiz text elements now use `whitespace-pre-wrap break-words` so `\n` newlines display correctly, while keeping the XSS-safe `{{ }}` text interpolation (no `v-html`). (#92, #103)
 
@@ -104,15 +126,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- **READMEs synced with quiz workflow**: Both the English and Chinese READMEs now document the single-flow `/learn:quiz <name>` command (replacing the stale `<generate|grade>` two-stage syntax) and include the new `quizzes/` directory in the project structure tree.
+- **READMEs synced with quiz workflow**: Both the English and Chinese READMEs now document the single-flow `/peaches:quiz <name>` command (replacing the stale `<generate|grade>` two-stage syntax) and include the new `quizzes/` directory in the project structure tree.
 - **CSS design tokens**: Added `--color-mastered-rgb` and `--color-brand-2-rgb` for alpha transparency support in composable styles.
 
 ## [1.4.0] - 2026-06-24
 
 ### Added
 
-- **Quiz workflow (`/learn:quiz`)**: A new single-flow text Q&A quiz that generates, grades, and persists a reusable question deck per concept. Supports four text-answer question types — multiple choice, true/false, fill-in-blank, error correction — with a `gradeable` model (`exact` / `accepted` / `ai_only`) for consistent AI grading. Decks are saved as structured `quiz.json` files, enabling future zero-token re-practice on the dashboard.
-- **Quiz deck validation (`validate-quiz.mjs`)**: A standalone validation script (mirroring `render.mjs`) that checks each `quiz.json` deck against the v1 schema — field types, type↔gradeable consistency, and required sub-fields — immediately after the deck is written. Ships inside the `learn-anything-quiz` skill directory.
+- **Quiz workflow (`/peaches:quiz`)**: A new single-flow text Q&A quiz that generates, grades, and persists a reusable question deck per concept. Supports four text-answer question types — multiple choice, true/false, fill-in-blank, error correction — with a `gradeable` model (`exact` / `accepted` / `ai_only`) for consistent AI grading. Decks are saved as structured `quiz.json` files, enabling future zero-token re-practice on the dashboard.
+- **Quiz deck validation (`validate-quiz.mjs`)**: A standalone validation script (mirroring `render.mjs`) that checks each `quiz.json` deck against the v1 schema — field types, type↔gradeable consistency, and required sub-fields — immediately after the deck is written. Ships inside the `peaches-quiz` skill directory.
 - **Shared state-update table**: Quiz and practice now share a single `STATE_UPDATE_TABLE` for learning-progress updates, keeping the two workflows in sync.
 
 ## [1.3.2] - 2026-06-19
@@ -125,7 +147,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- **Auto-find free port for `serve`**: When running `learn-anything serve`, if the target port is already in use the server now automatically probes for the next available port (up to 50 attempts) instead of exiting with an error. Use `--strict-port` to opt out and require the exact port.
+- **Auto-find free port for `serve`**: When running `peaches serve`, if the target port is already in use the server now automatically probes for the next available port (up to 50 attempts) instead of exiting with an error. Use `--strict-port` to opt out and require the exact port.
 - **TOC activeId flash on click**: When clicking a heading in the table of contents sidebar, the active highlight no longer flickers through intermediate headings during smooth scroll. The IntersectionObserver is temporarily suppressed until the scroll animation completes.
 
 ## [1.3.0] - 2026-06-19
@@ -223,9 +245,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **Visual learning site**: A custom Vue 3 + Vite application with Vue Router, Tailwind CSS v4, markdown-it, and highlight.js. Provides a rich visual interface to browse knowledge maps, session notes, and exercise files.
-- **SiteGenerator class**: Writes front-end site files into `.learn/` directory, with smart config overwrite rules and `--force` mode.
-- **`serve` command**: `learn-anything serve [path]` generates the visual site, installs dependencies, and starts a Vite dev server with hot module replacement.
-- **`--site` flag**: `learn-anything init --site` and `learn-anything update --site` generate the visual site alongside skill/command files.
+- **SiteGenerator class**: Writes front-end site files into `.peaches/` directory, with smart config overwrite rules and `--force` mode.
+- **`serve` command**: `peaches serve [path]` generates the visual site, installs dependencies, and starts a Vite dev server with hot module replacement.
+- **`--site` flag**: `peaches init --site` and `peaches update --site` generate the visual site alongside skill/command files.
 - **Interactive site prompt**: `init` and `update` now prompt whether to generate the visual learning site in interactive mode.
 - **Enhanced file scanning**: `sessions/*.md` and `exercises/*` files without subdirectory grouping are now supported and displayed as a flat list at the bottom of the sidebar.
 - **Hot module replacement**: Modifying topic files (state.json, sessions, exercises) triggers automatic browser refresh.
@@ -234,7 +256,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - **Monorepo structure**: `packages/cli/site/` now houses the standalone Vue 3 front-end app. Site files are bundled into `packages/cli/src/site/files.ts` at build time.
-- **`.learn/` layout**: Site files now live under `.learn/site/`, separate from `.learn/topics/`.
+- **`.peaches/` layout**: Site files now live under `.peaches/site/`, separate from `.peaches/topics/`.
 
 ## [0.5.1] - 2026-06-16
 
@@ -247,7 +269,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- **Monorepo architecture**: Converted the project to a pnpm monorepo with `packages/cli` (published as `learn-anything-cli`) and `packages/gui` (private, future GUI). Build, test, and lint commands now support per-package execution via `pnpm -F`.
+- **Monorepo architecture**: Converted the project to a pnpm monorepo with `packages/cli` (published as `peaches`) and `packages/gui` (private, future GUI). Build, test, and lint commands now support per-package execution via `pnpm -F`.
 - **Simplified build pipeline**: Replaced the custom `build.js` wrapper with direct `tsc` compilation, reducing indirection and making the build process more standard.
 
 ### Added
@@ -271,7 +293,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - **Learn Protocol v1**: `state.json` is now the single source of truth for all learning data, using a hierarchical knowledge map format (domains → concepts → details). The old dual-file model (state.yaml + hand-written knowledge-map.md) is replaced — `knowledge-map.md` is now a **generated artifact** produced by `render.mjs` from `state.json`, never edited directly. AI instructions explicitly forbid reading or writing `knowledge-map.md` as a data source.
-- **Automatic v0→v1 migration**: Existing learning data is auto-migrated on `learn-anything init` or `update`, with backup files created for safety.
+- **Automatic v0→v1 migration**: Existing learning data is auto-migrated on `peaches init` or `update`, with backup files created for safety.
 - **Schema validation**: `render.mjs` validates `state.json` against the v1 schema before generating `knowledge-map.md`, with clear error messages on field mismatches.
 - **Status script**: New standalone `status.mjs` script reads `state.json` and outputs a formatted heatmap or topic summary, reducing AI token spend. Supports `--locale en|zh-CN` for i18n output.
 - **Shared utils** (`utils.mjs`): Extracted shared types, validation, and helpers used by both `render.mjs` and `status.mjs`.
@@ -300,7 +322,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Session files now written BEFORE echoing to conversation in `learn:practice` and `learn:explain` workflows, eliminating drift between saved content and chat output.
+- Session files now written BEFORE echoing to conversation in `peaches:practice` and `peaches:explain` workflows, eliminating drift between saved content and chat output.
 - Test path assertions made cross-platform compatible (Windows vs Unix path separators).
 
 ## [0.2.1] - 2026-05-30
@@ -324,42 +346,42 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- `learn-anything` CLI: generate skill and command files for 30+ AI coding tools.
+- `peaches` CLI: generate skill and command files for 30+ AI coding tools.
 - `init` command: interactive tool detection and selection, skill generation.
 - `update` command: update existing skill files.
 - Five learning workflows: topic, explain, practice, review, status.
 - Locale support: English (`en`) and Chinese (`zh-CN`).
 - MIT License.
 
-[Unreleased]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.6.3...HEAD
-[1.6.3]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.6.2...v1.6.3
-[1.6.2]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.6.1...v1.6.2
-[1.6.1]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.6.0...v1.6.1
-[1.6.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.5.6...v1.6.0
-[1.5.6]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.5.5...v1.5.6
-[1.5.5]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.5.4...v1.5.5
-[1.5.4]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.5.3...v1.5.4
-[1.5.3]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.5.2...v1.5.3
-[1.5.2]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.5.1...v1.5.2
-[1.5.1]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.5.0...v1.5.1
-[1.5.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.4.0...v1.5.0
-[1.4.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.3.2...v1.4.0
-[1.3.2]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.3.1...v1.3.2
-[1.3.1]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.3.0...v1.3.1
-[1.3.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.2.2...v1.3.0
-[1.2.2]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.2.1...v1.2.2
-[1.2.1]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.2.0...v1.2.1
-[1.2.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.1.1...v1.2.0
-[1.1.1]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.1.0...v1.1.1
-[1.1.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.5.1...v1.0.0
-[0.5.1]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.5.0...v0.5.1
-[0.5.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.4.2...v0.5.0
-[0.4.2]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.4.1...v0.4.2
-[0.4.1]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.4.0...v0.4.1
-[0.4.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.3.1...v0.4.0
-[0.3.1]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.3.0...v0.3.1
-[0.3.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.2.1...v0.3.0
-[0.2.1]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.2.0...v0.2.1
-[0.2.0]: https://github.com/ChenChenyaqi/learn-anything/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/ChenChenyaqi/learn-anything/releases/tag/v0.1.0
+[Unreleased]: https://github.com/ChenChenyaqi/peaches/compare/v1.6.3...HEAD
+[1.6.3]: https://github.com/ChenChenyaqi/peaches/compare/v1.6.2...v1.6.3
+[1.6.2]: https://github.com/ChenChenyaqi/peaches/compare/v1.6.1...v1.6.2
+[1.6.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.6.0...v1.6.1
+[1.6.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.6...v1.6.0
+[1.5.6]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.5...v1.5.6
+[1.5.5]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.4...v1.5.5
+[1.5.4]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.3...v1.5.4
+[1.5.3]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.2...v1.5.3
+[1.5.2]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.1...v1.5.2
+[1.5.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.0...v1.5.1
+[1.5.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.4.0...v1.5.0
+[1.4.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.3.2...v1.4.0
+[1.3.2]: https://github.com/ChenChenyaqi/peaches/compare/v1.3.1...v1.3.2
+[1.3.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.2.2...v1.3.0
+[1.2.2]: https://github.com/ChenChenyaqi/peaches/compare/v1.2.1...v1.2.2
+[1.2.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.2.0...v1.2.1
+[1.2.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.1.1...v1.2.0
+[1.1.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.5.1...v1.0.0
+[0.5.1]: https://github.com/ChenChenyaqi/peaches/compare/v0.5.0...v0.5.1
+[0.5.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.4.2...v0.5.0
+[0.4.2]: https://github.com/ChenChenyaqi/peaches/compare/v0.4.1...v0.4.2
+[0.4.1]: https://github.com/ChenChenyaqi/peaches/compare/v0.4.0...v0.4.1
+[0.4.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.3.1...v0.4.0
+[0.3.1]: https://github.com/ChenChenyaqi/peaches/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.2.1...v0.3.0
+[0.2.1]: https://github.com/ChenChenyaqi/peaches/compare/v0.2.0...v0.2.1
+[0.2.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/ChenChenyaqi/peaches/releases/tag/v0.1.0

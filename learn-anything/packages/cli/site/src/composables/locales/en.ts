@@ -1,7 +1,7 @@
 const en = {
   'dashboard.title': 'Learning Dashboard',
   'dashboard.noTopics': 'No topics yet',
-  'dashboard.startLearning': 'Run `learn-anything init` to start your first topic',
+  'dashboard.startLearning': 'Run `peaches init` to start your first topic',
   'dashboard.topicCount': '{count} {count, plural, one {topic} other {topics}}',
   'dashboard.overview.activity': 'Activity',
   'dashboard.overview.content': 'Content',

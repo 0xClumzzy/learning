@@ -33,11 +33,11 @@ const { t } = useI18n();
         :style="{ flexGrow: stats.mastered, flexBasis: 0 }"
       />
       <div
-        class="h-full bg-progress transition-all duration-500"
+        class="h-full bg-(--color-in-progress) transition-all duration-500"
         :style="{ flexGrow: stats.inProgress, flexBasis: 0 }"
       />
       <div
-        class="h-full bg-brand-2 transition-all duration-500"
+        class="h-full bg-(--color-attention) transition-all duration-500"
         :style="{ flexGrow: stats.needsPractice, flexBasis: 0 }"
       />
       <div
@@ -54,12 +54,12 @@ const { t } = useI18n();
         {{ t('status.mastered') }}
       </span>
       <span class="inline-flex items-center gap-1.5">
-        <span class="w-2 h-2 rounded-full bg-progress" />
+        <span class="w-2 h-2 rounded-full bg-(--color-in-progress)" />
         <span class="font-semibold tabular-nums text-text-2">{{ stats.inProgress }}</span>
         {{ t('status.inProgress') }}
       </span>
       <span class="inline-flex items-center gap-1.5">
-        <span class="w-2 h-2 rounded-full bg-brand-2" />
+        <span class="w-2 h-2 rounded-full bg-(--color-attention)" />
         <span class="font-semibold tabular-nums text-text-2">{{ stats.needsPractice }}</span>
         {{ t('status.needsPractice') }}
       </span>

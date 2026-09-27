@@ -50,9 +50,9 @@ describe('Skill Templates', () => {
     const content = generateSkillContent(template, '0.1.0');
 
     expect(content).toContain('---');
-    expect(content).toContain('name: learn-anything-explain');
+    expect(content).toContain('name: peaches-explain');
     expect(content).toContain('generatedBy: "0.1.0"');
-    expect(content).toContain('Learn Anything');
+    expect(content).toContain('Peaches');
   });
 
   it('should generate English SKILL.md content', () => {
@@ -60,16 +60,16 @@ describe('Skill Templates', () => {
     const content = generateSkillContent(template, '0.1.0');
 
     expect(content).toContain('---');
-    expect(content).toContain('name: learn-anything-explain');
-    expect(content).toContain('You are Learn Anything');
+    expect(content).toContain('name: peaches-explain');
+    expect(content).toContain("You are Peaches'");
   });
 
   it('should use English name and description', () => {
     const template = getLearnExplainSkillTemplate();
 
-    expect(template.name).toBe('learn-anything-explain');
+    expect(template.name).toBe('peaches-explain');
     expect(template.description).toContain('Recursively deep-dive');
-    expect(template.instructions).toContain('You are Learn Anything');
+    expect(template.instructions).toContain("You are Peaches'");
   });
 });
 
@@ -115,7 +115,7 @@ describe('Command Generation', () => {
     expect(cmds).toHaveLength(contents.length);
 
     for (const cmd of cmds) {
-      expect(cmd.path.replace(/\\/g, '/')).toContain('.claude/commands/learn/');
+      expect(cmd.path.replace(/\\/g, '/')).toContain('.claude/commands/peaches/');
       expect(cmd.path).toMatch(/\.md$/);
       expect(cmd.fileContent).toContain('---');
       expect(cmd.fileContent).toContain('category: Learning');
@@ -128,8 +128,8 @@ describe('Command Generation', () => {
 
     const topicContent = getCommandContents()[0];
     const cmd = generateCommand(topicContent, adapter!);
-    expect(cmd.path.replace(/\\/g, '/')).toContain('.cursor/commands/learn-anything-topic.md');
-    expect(cmd.fileContent).toContain('/learn-anything-topic');
+    expect(cmd.path.replace(/\\/g, '/')).toContain('.cursor/commands/peaches-topic.md');
+    expect(cmd.fileContent).toContain('/peaches-topic');
   });
 
   it('should generate Codex command files with absolute paths', () => {
@@ -138,7 +138,7 @@ describe('Command Generation', () => {
 
     const topicContent = getCommandContents()[0];
     const cmd = generateCommand(topicContent, adapter!);
-    expect(cmd.path.replace(/\\/g, '/')).toContain('.codex/prompts/learn-anything-topic.md');
+    expect(cmd.path.replace(/\\/g, '/')).toContain('.codex/prompts/peaches-topic.md');
   });
 
   it('should generate Gemini command files in TOML format', () => {
@@ -147,7 +147,7 @@ describe('Command Generation', () => {
 
     const topicContent = getCommandContents()[0];
     const cmd = generateCommand(topicContent, adapter!);
-    expect(cmd.path.replace(/\\/g, '/')).toContain('.gemini/commands/learn/');
+    expect(cmd.path.replace(/\\/g, '/')).toContain('.gemini/commands/peaches/');
     expect(cmd.path).toMatch(/\.toml$/);
     expect(cmd.fileContent).toContain('description =');
     expect(cmd.fileContent).toContain('prompt = """');
@@ -164,7 +164,7 @@ describe('Command Generation', () => {
 
       const cmd = generateCommand(quizContent!, adapter!);
       expect(cmd.path).toContain('quiz');
-      expect(cmd.fileContent).toContain('learn-anything-quiz');
+      expect(cmd.fileContent).toContain('peaches-quiz');
     },
   );
 });
@@ -175,7 +175,7 @@ describe('Skill Template Content Quality', () => {
     expect(t.instructions).toContain('Socratic');
     expect(t.instructions).toContain('Recursive');
     expect(t.instructions).toContain('analogy');
-    expect(t.instructions).toContain('./.learn/topics/');
+    expect(t.instructions).toContain('./.peaches/topics/');
   });
 
   it('practice template should include dual-mode guidance', () => {
@@ -196,7 +196,7 @@ describe('Skill Template Content Quality', () => {
   });
 
   it.each(['topic', 'explain', 'practice', 'review', 'quiz'])(
-    '%s template should warn about glob not matching hidden .learn directory',
+    '%s template should warn about glob not matching hidden .peaches directory',
     (workflow) => {
       const getters = {
         topic: getLearnTopicSkillTemplate,
@@ -207,7 +207,7 @@ describe('Skill Template Content Quality', () => {
       } as const;
       const t = getters[workflow]();
       expect(t.instructions).toContain('hidden directory');
-      expect(t.instructions).toContain('ls -d .learn/topics/*/');
+      expect(t.instructions).toContain('ls -d .peaches/topics/*/');
     },
   );
 
@@ -225,7 +225,7 @@ describe('Skill Template Content Quality', () => {
 
   it('quiz template should define a single-flow reusable-deck workflow', () => {
     const t = getLearnQuizSkillTemplate();
-    expect(t.instructions).toContain('/learn:quiz <concept');
+    expect(t.instructions).toContain('/peaches:quiz <concept');
     expect(t.instructions).toContain('quiz.json');
     expect(t.instructions).toContain('quizzes/<concept-slug>/');
     expect(t.instructions).toContain('gradeable');
@@ -240,8 +240,8 @@ describe('Skill Template Content Quality', () => {
     expect(t.instructions).not.toContain('submission.json');
     expect(t.instructions).not.toContain('assessment.md');
     expect(t.instructions).not.toContain('scope_policy');
-    expect(t.instructions).not.toContain('/learn:quiz generate');
-    expect(t.instructions).not.toContain('/learn:quiz grade');
+    expect(t.instructions).not.toContain('/peaches:quiz generate');
+    expect(t.instructions).not.toContain('/peaches:quiz grade');
   });
 
   it('quiz template should scope to touched concepts and update state only after grading', () => {

@@ -3,5 +3,7 @@ dist/
 .env
 *.tsbuildinfo
 .claude/
-.learn/
+.peaches/
 pnpm-lock.yaml
+# Prettier has no SVG parser; brand marks are hand-authored vector art.
+*.svg

@@ -3,7 +3,7 @@ import { exec, spawn } from 'child_process';
 import chalk from 'chalk';
 import * as fs from 'fs';
 import { createRequire } from 'module';
-import { LEARN_DIR } from '../core/config.js';
+import { PEACHES_DIR } from '../core/config.js';
 import { getMessages } from '../i18n/index.js';
 import type { SupportedLocale } from '../i18n/types.js';
 import { DEFAULT_PORT, findFreePort, isPortFree } from '../utils/port.js';
@@ -23,7 +23,7 @@ export async function executeServe(options: ServeOptions): Promise<void> {
   const cli = msg.cli;
 
   const resolvedPath = path.resolve(options.targetPath ?? '.');
-  const topicsDir = path.join(resolvedPath, LEARN_DIR, 'topics');
+  const topicsDir = path.join(resolvedPath, PEACHES_DIR, 'topics');
 
   if (!fs.existsSync(topicsDir)) {
     fs.mkdirSync(topicsDir, { recursive: true });

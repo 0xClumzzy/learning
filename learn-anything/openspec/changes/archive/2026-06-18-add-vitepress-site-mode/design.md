@@ -1,6 +1,6 @@
 ## Context
 
-The learn-anything CLI currently generates skill files and command files for AI coding assistants. User learning data accumulates in `.learn/topics/` as structured JSON (`state.json`), Markdown session notes, and exercise files — but there is no built-in viewer for this data. Users can only see it by opening raw files.
+The peaches CLI currently generates skill files and command files for AI coding assistants. User learning data accumulates in `.peaches/topics/` as structured JSON (`state.json`), Markdown session notes, and exercise files — but there is no built-in viewer for this data. Users can only see it by opening raw files.
 
 We introduce an optional "site mode" that spins up a local site to visualize learning progress. The site reads existing data from the filesystem without any additional build step. Users opt in via `--site` flag on `init`/`update`, or run `serve` directly.
 
@@ -12,8 +12,8 @@ A key constraint: we need a real dev project for component development (HMR, Vue
 
 **Goals:**
 
-- Provide a `learn-anything serve` command that installs dependencies and starts a Vite dev server for `.learn/` _(pending)_
-- Add `--site` flag to `init`/`update` that generates site template files into `.learn/` _(pending)_
+- Provide a `peaches serve` command that installs dependencies and starts a Vite dev server for `.peaches/` _(pending)_
+- Add `--site` flag to `init`/`update` that generates site template files into `.peaches/` _(pending)_
 - Deliver a Dashboard page showing all topics as cards with progress indicators ✅
 - Deliver a Topic page with domain/exercise sidebar navigation ✅
 - Support viewing session notes (Markdown) and exercise files (Markdown or code with syntax highlighting) ✅
@@ -24,7 +24,7 @@ A key constraint: we need a real dev project for component development (HMR, Vue
 **Non-Goals:**
 
 - Building a production static site (`vite build` works but is not the primary use case)
-- Integrating `/learn:review` and `/learn:status` data into the site
+- Integrating `/peaches:review` and `/peaches:status` data into the site
 - Content translation of user notes
 - Write-back from the site to `state.json`
 - Remote deployment or hosting
@@ -52,7 +52,7 @@ The cost is losing VitePress's built-in features (file-based routing, automatic 
 
 ### 3. Build-time `fs.readFileSync` → `files.ts` mapping, not file copy to dist
 
-**Rationale**: The CLI binary must contain all site files as strings so they can be written to `.learn/` at runtime without referencing a source directory. A build script scans `packages/cli/site/` (excluding `node_modules/`, `topics/`, `dist/`, `package-lock.json`, `pnpm-lock.yaml`), reads each file, and generates `packages/cli/src/site/files.ts`:
+**Rationale**: The CLI binary must contain all site files as strings so they can be written to `.peaches/` at runtime without referencing a source directory. A build script scans `packages/cli/site/` (excluding `node_modules/`, `topics/`, `dist/`, `package-lock.json`, `pnpm-lock.yaml`), reads each file, and generates `packages/cli/src/site/files.ts`:
 
 ```ts
 export const SITE_FILES: Record<string, string> = {
@@ -62,7 +62,7 @@ export const SITE_FILES: Record<string, string> = {
 };
 ```
 
-This file is then compiled by `tsc` into the dist output. The `SiteGenerator` class imports `SITE_FILES` and writes each entry to the corresponding path under `.learn/`.
+This file is then compiled by `tsc` into the dist output. The `SiteGenerator` class imports `SITE_FILES` and writes each entry to the corresponding path under `.peaches/`.
 
 **Alternative considered**: Copying the `site/` directory to `dist/` and shipping it alongside the CLI binary. Rejected because it requires the binary to know its own location on disk to find the template files, which is fragile across different installation methods (npm global, npx, pnpm, local node_modules).
 
@@ -162,9 +162,9 @@ interface SelectedFile {
 - **Content**: `.prose-content` matching `vp-doc.css` — h1 28/32px, h2 24px with border-top, 16px paragraph margins, 28px line-height, code block negative margins on mobile, zebra table striping, etc.
 - **Dark mode**: Class-based (`.dark` on `<html>`), matches VitePress dark palette
 
-### 10. npm dependencies in `.learn/package.json` (user's project)
+### 10. npm dependencies in `.peaches/package.json` (user's project)
 
-**Rationale**: Keeps site dependencies isolated from the user's project. For the runtime mode _(pending)_, `.learn/package.json` will declare `vue`, `vue-router`, `markdown-it`, `highlight.js`, and dev dependencies for Vite. The `serve` command runs `npm install --prefix .learn` before `npx --prefix .learn vite .learn`.
+**Rationale**: Keeps site dependencies isolated from the user's project. For the runtime mode _(pending)_, `.peaches/package.json` will declare `vue`, `vue-router`, `markdown-it`, `highlight.js`, and dev dependencies for Vite. The `serve` command runs `npm install --prefix .peaches` before `npx --prefix .peaches vite .peaches`.
 
 ### 11. UI i18n uses a composable + localStorage
 
@@ -187,11 +187,11 @@ interface SelectedFile {
 ### 13. CLI command structure
 
 ```
-learn-anything init [path]              # unchanged
-learn-anything init [path] --site       # adds site file generation
-learn-anything update [path]            # unchanged
-learn-anything update [path] --site     # adds site file regeneration
-learn-anything serve [path]             # generate + npm install + vite dev
+peaches init [path]              # unchanged
+peaches init [path] --site       # adds site file generation
+peaches update [path]            # unchanged
+peaches update [path] --site     # adds site file regeneration
+peaches serve [path]             # generate + npm install + vite dev
 ```
 
 The `serve` command is separate from `init --site` because:

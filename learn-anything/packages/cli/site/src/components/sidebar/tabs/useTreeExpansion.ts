@@ -9,7 +9,7 @@ import { ref } from 'vue';
 /*  collapses others. State is scoped per tree type × topic slug.      */
 /* ------------------------------------------------------------------ */
 
-const STORAGE_KEY = 'learn-anything-tree-expansion';
+const STORAGE_KEY = 'peaches-tree-expansion';
 
 type ExpansionStore = Record<string, Record<string, string[]>>;
 

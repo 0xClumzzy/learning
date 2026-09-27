@@ -6,7 +6,7 @@
  * 1. Runs `vite build` in packages/cli/site/ to produce site/dist/
  * 2. Copies site/dist/ + serve.mjs + .gitignore → site-dist/
  *
- * site-dist/ is published to npm and copied to .learn/site/ at runtime.
+ * site-dist/ is published to npm and copied to .peaches/site/ at runtime.
  *
  * The `vite build` applies the resolve alias that swaps
  * useTopicData.ts → useApiData.ts (fetch-based data layer).

@@ -15,7 +15,7 @@ export const codexAdapter: ToolCommandAdapter = {
   toolId: 'codex',
 
   getFilePath(commandId: string): string {
-    return path.join(os.homedir(), '.codex', 'prompts', `learn-anything-${commandId}.md`);
+    return path.join(os.homedir(), '.codex', 'prompts', `peaches-${commandId}.md`);
   },
 
   formatFile(content: CommandContent): string {

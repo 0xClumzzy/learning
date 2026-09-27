@@ -1,4 +1,4 @@
-export const LEARN_DIR = '.learn';
+export const PEACHES_DIR = '.peaches';
 
 export interface AIToolOption {
   name: string;

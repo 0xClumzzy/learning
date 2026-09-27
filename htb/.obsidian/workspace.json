@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "labs/machines/easy/ATOM.md",
+                "file": "labs/machines/easy/MANAGEMENT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ATOM"
+              "title": "MANAGEMENT"
             }
           },
           {
@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -151,7 +151,7 @@
             }
           },
           {
-            "id": "f4b49761c53fa615",
+            "id": "a28a384da9fc785c",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -210,8 +210,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           },
           {
@@ -278,8 +278,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           }
         ],
@@ -305,19 +305,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bcb73d39989d2052",
+  "active": "8c807cfb7f23877e",
   "lastOpenFiles": [
+    "labs/machines/easy/MANAGEMENT.md",
+    "labs/machines/easy/easy.md",
     "labs/machines/easy/ATOM.md",
-    "academy/CPTS/footprinting/SMB.md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
+    "labs/machines/easy/.md",
+    "labs/machines/machines.md",
+    "labs/machines/TEMPLATE11.md",
+    "academy/CPTS/footprinting/SMB.md",
+    "Tags",
     "TEMPLATE.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "labs/machines/easy/TEMPLATE.md",
-    "labs/machines/TEMPLATE1.md",
     "academy/vuln/CVSS scoring .md",
     "labs/machines/easy/MONTEVERDE.md",
-    "Tags",
     "academy/WINDOWS/REG.exe.md",
     "academy/WINDOWS/REGISTRY.md",
     "academy/WINDOWS/intro.md",
@@ -329,14 +333,10 @@
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "labs/machines/easy/BLE.md",
-    "labs/machines/easy/easy.md",
     "techniques/personal favorite techniques.md",
     "academy/WINDOWS/kernel architecture.md",
     "academy/intro.md",
-    "academy/WINDOWS.md",
     "academy/WINDOWS",
-    "academy/.md",
-    "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.xml",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.nmap",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.gnmap",

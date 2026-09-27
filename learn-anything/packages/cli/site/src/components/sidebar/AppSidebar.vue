@@ -6,6 +6,7 @@ import SidebarMobileToggle from './SidebarMobileToggle.vue';
 import SidebarDashboard from './SidebarDashboard.vue';
 import SidebarTabs from './tabs/SidebarTabs.vue';
 import SidebarFooter from './footer/SidebarFooter.vue';
+import PeachMark from '@/components/brand/PeachMark.vue';
 import { OmitQuizSourceType } from '@/composables/topicDataTypes';
 
 const props = defineProps<{
@@ -72,10 +73,17 @@ function onQuizBatchSelected(batch: {
   >
     <div class="px-6 pt-6 pb-4">
       <button
-        class="text-base font-semibold text-text-1 hover:text-brand-2 transition-colors cursor-pointer"
+        class="flex items-center gap-2.5 cursor-pointer group"
         @click="emit('back-to-dashboard')"
       >
-        Learn Anything
+        <PeachMark
+          class="w-6 h-6 shrink-0 transition-transform duration-200 group-hover:rotate-6"
+        />
+        <span
+          class="text-base font-semibold text-text-1 group-hover:text-brand-2 transition-colors"
+        >
+          Peaches
+        </span>
       </button>
     </div>
 

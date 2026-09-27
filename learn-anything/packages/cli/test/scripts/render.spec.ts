@@ -79,7 +79,7 @@ function s(topic: string, domains: Domain[]): StateV1 {
 // ===========================================================================
 
 describe('render()', () => {
-  it('javascript (real .learn data: 7 domains, 34 concepts)', () => {
+  it('javascript (real .peaches data: 7 domains, 34 concepts)', () => {
     const state = loadFixture('javascript/state.json') as StateV1;
     const expected = loadExpected('javascript/expected.md');
     expect(render(state)).toBe(expected);

@@ -14,7 +14,7 @@ export default tseslint.config(
       'packages/*/node_modules/',
       'packages/*/bin/',
       '.claude/',
-      '.learn/',
+      '.peaches/',
       'packages/cli/site/topics/',
       'packages/cli/test/fixtures/',
     ],

@@ -18,13 +18,13 @@
 - [x] 3.3 Move `bin/` directory into `packages/cli/bin/` via `git mv`
 - [x] 3.4 Move `build.js` into `packages/cli/build.js` via `git mv`
 - [x] 3.5 Move `vitest.config.ts` into `packages/cli/vitest.config.ts` via `git mv`
-- [x] 3.6 Create `packages/cli/package.json`: same name (`learn-anything-cli`), version (`0.4.2`), description, dependencies. Adjust `bin` to `"./bin/learn-anything.js"` and `files` to `["dist", "bin"]`. Remove devDependencies (managed at root).
+- [x] 3.6 Create `packages/cli/package.json`: same name (`peaches`), version (`0.4.2`), description, dependencies. Adjust `bin` to `"./bin/peaches.js"` and `files` to `["dist", "bin"]`. Remove devDependencies (managed at root).
 - [x] 3.7 Create `packages/cli/tsconfig.json` extending `../../tsconfig.base.json`, with `rootDir: "./src"` and `outDir: "./dist"`
 - [x] 3.8 Delete now-empty root `src/`, `test/`, `bin/` directories
 
 ## 4. Create GUI Placeholder
 
-- [x] 4.1 Create `packages/gui/package.json` with `"name": "learn-anything-gui"`, `"private": true`, `"version": "0.1.0"`
+- [x] 4.1 Create `packages/gui/package.json` with `"name": "peaches-gui"`, `"private": true`, `"version": "0.1.0"`
 - [x] 4.2 Create `packages/gui/README.md` with placeholder text in English and Chinese: "GUI is under construction / GUI 正在建设中"
 
 ## 5. Update Cross-Cutting Config
@@ -39,5 +39,5 @@
 - [x] 6.1 Run `pnpm install` to regenerate lock file and link workspace packages
 - [x] 6.2 Run `pnpm build` to verify `packages/cli` compiles successfully
 - [x] 6.3 Run `pnpm test` to verify all tests pass
-- [x] 6.4 Run `node packages/cli/bin/learn-anything.js --version` to verify CLI works
+- [x] 6.4 Run `node packages/cli/bin/peaches.js --version` to verify CLI works
 - [x] 6.5 Update CI workflow typecheck path for monorepo tsconfig

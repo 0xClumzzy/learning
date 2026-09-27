@@ -132,7 +132,7 @@ The system SHALL provide a language switch button in the sidebar footer. When to
 
 ### Requirement: Dark mode toggles between light and dark themes
 
-The system SHALL provide a dark mode toggle button in the sidebar footer. Dark mode state SHALL be persisted in `localStorage` (key: `learn-anything-theme`). On initial load, the system SHALL respect the user's system preference (`prefers-color-scheme: dark`). Dark mode SHALL apply via a `.dark` class on `<html>`, with all color tokens switching to their dark variants.
+The system SHALL provide a dark mode toggle button in the sidebar footer. Dark mode state SHALL be persisted in `localStorage` (key: `peaches-theme`). On initial load, the system SHALL respect the user's system preference (`prefers-color-scheme: dark`). Dark mode SHALL apply via a `.dark` class on `<html>`, with all color tokens switching to their dark variants.
 
 #### Scenario: Toggle dark mode
 

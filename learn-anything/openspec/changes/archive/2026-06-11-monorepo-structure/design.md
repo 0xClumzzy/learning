@@ -1,8 +1,8 @@
 ## Context
 
-The `learn-anything-cli` project is currently a single npm package at the repository root. The `packages/` directory already exists with stale `core` and `cli` subdirectories containing only old dist artifacts (no source files, no `package.json`). There is no `pnpm-workspace.yaml`.
+The `peaches` project is currently a single npm package at the repository root. The `packages/` directory already exists with stale `core` and `cli` subdirectories containing only old dist artifacts (no source files, no `package.json`). There is no `pnpm-workspace.yaml`.
 
-The goal is to convert to a proper pnpm monorepo with two packages: `packages/cli` (the existing CLI tool, published as `learn-anything-cli`) and `packages/gui` (a placeholder for a future GUI application).
+The goal is to convert to a proper pnpm monorepo with two packages: `packages/cli` (the existing CLI tool, published as `peaches`) and `packages/gui` (a placeholder for a future GUI application).
 
 ## Goals / Non-Goals
 
@@ -10,7 +10,7 @@ The goal is to convert to a proper pnpm monorepo with two packages: `packages/cl
 
 - Move all source code from root-level `src/`, `test/`, `bin/` into `packages/cli/`
 - Root `package.json` becomes a workspace manager (`private: true`) with scripts delegating via `pnpm -r`
-- `packages/cli/package.json` retains `"name": "learn-anything-cli"` and `"version": "0.4.2"`
+- `packages/cli/package.json` retains `"name": "peaches"` and `"version": "0.4.2"`
 - Add `pnpm-workspace.yaml` with `packages: ['packages/*']`
 - Add `tsconfig.base.json` for shared compiler options
 - Create `packages/gui/` with a README placeholder and private `package.json`
@@ -19,7 +19,7 @@ The goal is to convert to a proper pnpm monorepo with two packages: `packages/cl
 **Non-Goals:**
 
 - No source code refactoring or dependency changes
-- No functionality changes to `learn-anything-cli`
+- No functionality changes to `peaches`
 - No build system changes (still uses `tsc` via `build.js`)
 - No test configuration changes (still uses vitest with same config)
 - No CI changes (GitHub Actions left as-is unless paths break)
@@ -96,7 +96,7 @@ The `packages/core/` directory contains only stale `.js`/`.d.ts` dist files and 
 | ----------------------------- | ---------------------------------------------------------- |
 | `src/` (37 files)             | `packages/cli/src/`                                        |
 | `test/` (42 files)            | `packages/cli/test/`                                       |
-| `bin/learn-anything.js`       | `packages/cli/bin/learn-anything.js`                       |
+| `bin/peaches.js`       | `packages/cli/bin/peaches.js`                       |
 | `build.js`                    | `packages/cli/build.js`                                    |
 | `vitest.config.ts`            | `packages/cli/vitest.config.ts`                            |
 | `tsconfig.json`               | `packages/cli/tsconfig.json` (modified)                    |
@@ -104,15 +104,15 @@ The `packages/core/` directory contains only stale `.js`/`.d.ts` dist files and 
 
 ## Files That Need Editing
 
-1. **`packages/cli/package.json`** — same `name`/`version`/`dependencies`; `bin` path adjusts to `"./bin/learn-anything.js"`; `files` adjusts to `["dist", "bin"]`; devDependencies removed
+1. **`packages/cli/package.json`** — same `name`/`version`/`dependencies`; `bin` path adjusts to `"./bin/peaches.js"`; `files` adjusts to `["dist", "bin"]`; devDependencies removed
 2. **`packages/cli/tsconfig.json`** — add `"extends": "../../tsconfig.base.json"`, keep `rootDir`/`outDir` as `"./src"`/`"./dist"`
 3. **`packages/cli/vitest.config.ts`** — `include` paths stay `['test/**/*.test.ts', 'test/**/*.spec.ts']` (relative to package root, unchanged)
-4. **`packages/cli/bin/learn-anything.js`** — import path stays `'../dist/cli/index.js'` (relative, unchanged)
+4. **`packages/cli/bin/peaches.js`** — import path stays `'../dist/cli/index.js'` (relative, unchanged)
 5. **`packages/cli/build.js`** — no changes (relative paths still work)
 6. **`eslint.config.mjs`** — update `ignores` for `packages/*/dist/`, `packages/*/node_modules/`
 7. **`.gitignore`** — add `packages/*/dist/` pattern
 8. **`CLAUDE.md`** — update directory tree and paths
-9. **`packages/gui/package.json`** — new file: `"name": "learn-anything-gui"`, `"private": true`
+9. **`packages/gui/package.json`** — new file: `"name": "peaches-gui"`, `"private": true`
 10. **`packages/gui/README.md`** — new file: placeholder text
 
 ## Risks / Trade-offs

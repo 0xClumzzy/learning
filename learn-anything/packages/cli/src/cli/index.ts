@@ -16,7 +16,7 @@ const earlyLocale = langIdx !== -1 ? resolveLocale(process.argv[langIdx + 1]) : 
 const m = getMessages(earlyLocale);
 
 program
-  .name('learn-anything')
+  .name('peaches')
   .description('AI-powered recursive learning system with Socratic method and TDD practice')
   .version(version);
 

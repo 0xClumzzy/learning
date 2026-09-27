@@ -1,6 +1,6 @@
 ## Context
 
-The Learn Anything site is a custom Vue 3 + Vite + Tailwind v4 SPA served by a
+The Peaches site is a custom Vue 3 + Vite + Tailwind v4 SPA served by a
 local Node.js HTTP server (`serve.mjs`). The server reads topic files from disk
 and exposes REST endpoints (`/api/topics`, `/api/topics/:slug`, `/api/file`). A
 fetch-based data layer (`useTopicData`) loads topic metadata eagerly at boot and

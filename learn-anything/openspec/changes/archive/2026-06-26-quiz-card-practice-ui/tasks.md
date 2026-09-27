@@ -1,6 +1,6 @@
 ## 1. Backend API (`serve.mjs`)
 
-- [x] 1.1 Add `GET /api/quizzes?topic=<slug>` endpoint that scans `.learn/topics/<slug>/quizzes/` directory and returns `{ groups: [{ concept_slug, concept_name, files: [{ filename, path }] }] }`
+- [x] 1.1 Add `GET /api/quizzes?topic=<slug>` endpoint that scans `.peaches/topics/<slug>/quizzes/` directory and returns `{ groups: [{ concept_slug, concept_name, files: [{ filename, path }] }] }`
 - [x] 1.2 Add `GET /api/quizzes/<topic>/<filename>` endpoint that reads and returns a single quiz JSON file, with path traversal protection
 - [x] 1.3 Handle edge cases: missing `quizzes/` directory (return empty groups), missing topic (404), invalid paths (403)
 

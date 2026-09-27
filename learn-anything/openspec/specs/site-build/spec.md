@@ -41,7 +41,7 @@ The system SHALL run the bundle script as the first step of `pnpm build` (before
 
 #### Scenario: pnpm build runs site bundling
 
-- **WHEN** `pnpm build` or `pnpm -F learn-anything-cli build` is executed
+- **WHEN** `pnpm build` or `pnpm -F peaches build` is executed
 - **THEN** the site bundling script runs before TypeScript compilation
 
 ### Requirement: Build script uses Node.js built-in APIs only

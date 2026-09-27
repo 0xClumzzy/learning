@@ -22,8 +22,8 @@ function toggle(slug: string): void {
 
 const statusBarClass: Record<ConceptStatus, string> = {
   mastered: 'bg-mastered',
-  in_progress: 'bg-(--color-progress)',
-  needs_practice: 'bg-brand-2',
+  in_progress: 'bg-(--color-in-progress)',
+  needs_practice: 'bg-(--color-attention)',
   unexplored: 'bg-(--color-text-3) opacity-30',
 };
 </script>

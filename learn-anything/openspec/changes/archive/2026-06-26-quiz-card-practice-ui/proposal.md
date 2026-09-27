@@ -1,6 +1,6 @@
 ## Why
 
-The `/learn:quiz` CLI workflow generates quiz decks as JSON files under `.learn/topics/<topic>/quizzes/`, enabling spaced-repetition and self-assessment. However, the web dashboard has no quiz interface—users can only practice quizzes through the CLI chat. Adding a card-based quiz UI in the dashboard lets users revisit and re-practice saved quiz decks at any time, directly in the browser.
+The `/peaches:quiz` CLI workflow generates quiz decks as JSON files under `.peaches/topics/<topic>/quizzes/`, enabling spaced-repetition and self-assessment. However, the web dashboard has no quiz interface—users can only practice quizzes through the CLI chat. Adding a card-based quiz UI in the dashboard lets users revisit and re-practice saved quiz decks at any time, directly in the browser.
 
 ## What Changes
 
@@ -36,5 +36,5 @@ The `/learn:quiz` CLI workflow generates quiz decks as JSON files under `.learn/
   - `packages/cli/site/src/components/QuizCard.vue`
   - `packages/cli/site/src/components/QuizResults.vue`
   - `packages/cli/site/src/composables/useQuiz.ts`
-- **CLI package**: No changes — quiz JSON schema (`QuizDeck`, `QuizQuestion`) is already defined in `packages/cli/src/core/learn-protocol/types.ts`.
+- **CLI package**: No changes — quiz JSON schema (`QuizDeck`, `QuizQuestion`) is already defined in `packages/cli/src/core/peaches-protocol/types.ts`.
 - **Dependencies**: No new external dependencies required.

@@ -1,5 +1,5 @@
 /* ================================================================== */
-/*  Learn Anything — "The Annotated Notebook" Design Tokens             */
+/*  Peaches — "Peach Glow" Design Tokens                                */
 /*  Tailwind v4 @theme configuration                                    */
 /* ================================================================== */
 
@@ -19,7 +19,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* ------------------------------------------------------------------ */
-/*  Design tokens — "Charcoal Glow"                                    */
+/*  Design tokens — "Peach Glow"                                        */
 /* ------------------------------------------------------------------ */
 
 @theme {
@@ -69,22 +69,29 @@
   --color-divider: #252527;
   --color-gutter: #252527;
 
-  /* --- Accent: rust --- */
-  --color-brand-1: #8a5a42;
-  --color-brand-2: #8a5a42;
-  --color-brand-2-rgb: 138 90 66;
-  --color-brand-3: #a07058;
-  --color-brand-soft: rgba(138 90 66 / 0.12);
+  /* --- Accent: peach (interaction + affordance, NOT status) --- */
+  --color-brand-1: #f5a76f;
+  --color-brand-2: #f5a76f;
+  --color-brand-2-rgb: 245 167 111;
+  --color-brand-3: #ffc094;
+  --color-brand-soft: rgba(245 167 111 / 0.14);
 
-  /* --- Status colors --- */
-  --color-mastered: #8a5a42;
-  --color-mastered-rgb: 138 90 66;
-  --color-progress: #6b4a32;
+  /* --- Status scale (semantic) ---
+     Hues are deliberately far apart so a mastery state is readable at a
+     glance in the knowledge-map heatmap. Do not collapse these into the
+     brand ramp: brand-2 and mastered sharing one value once made
+     `mastered` and `needs_practice` render pixel-identical. */
+  --color-mastered: #f5a76f; /* ripe peach — the brand payoff */
+  --color-mastered-rgb: 245 167 111;
+  --color-in-progress: #7fa65c; /* leaf green — growing */
+  --color-in-progress-rgb: 127 166 92;
+  --color-attention: #e0605f; /* coral — needs practice */
+  --color-attention-rgb: 224 96 95;
 
   /* --- Glass / glow --- */
   --color-glass: rgba(18, 18, 20, 0.85);
   --color-glass-card: rgba(24, 24, 26, 0.7);
-  --color-glow: rgba(138, 90, 66, 0.12);
+  --color-glow: rgba(245, 167, 111, 0.14);
 
   /* --- Code --- */
   --color-code-bg: #1a1a1c;
@@ -113,15 +120,18 @@
   --color-divider: #252527;
   --color-gutter: #252527;
 
-  --color-brand-1: #8a5a42;
-  --color-brand-2: #8a5a42;
-  --color-brand-2-rgb: 138 90 66;
-  --color-brand-3: #a07058;
-  --color-brand-soft: rgba(138 90 66 / 0.12);
+  --color-brand-1: #f5a76f;
+  --color-brand-2: #f5a76f;
+  --color-brand-2-rgb: 245 167 111;
+  --color-brand-3: #ffc094;
+  --color-brand-soft: rgba(245 167 111 / 0.14);
 
-  --color-mastered: #8a5a42;
-  --color-mastered-rgb: 138 90 66;
-  --color-progress: #6b4a32;
+  --color-mastered: #f5a76f;
+  --color-mastered-rgb: 245 167 111;
+  --color-in-progress: #7fa65c;
+  --color-in-progress-rgb: 127 166 92;
+  --color-attention: #e0605f;
+  --color-attention-rgb: 224 96 95;
 }
 
 /* ------------------------------------------------------------------ */

@@ -1,21 +1,21 @@
 {
-  "name": "learn-anything-cli",
+  "name": "peaches",
   "version": "1.6.3",
-  "description": "AI-powered recursive learning system with Socratic method and TDD practice",
+  "description": "Peaches — pick a topic, grow into it. AI-powered recursive learning with Socratic method, TDD practice, and spaced repetition",
   "keywords": [
-    "learn-anything-cli",
-    "learn-anything",
+    "peaches",
     "learning",
     "cli",
     "ai",
     "education",
     "socratic",
-    "tdd"
+    "tdd",
+    "spaced-repetition"
   ],
-  "homepage": "https://github.com/ChenChenyaqi/learn-anything",
+  "homepage": "https://github.com/ChenChenyaqi/peaches",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChenChenyaqi/learn-anything"
+    "url": "https://github.com/ChenChenyaqi/peaches"
   },
   "license": "MIT",
   "author": "yaqi chen",
@@ -30,7 +30,7 @@
     }
   },
   "bin": {
-    "learn-anything": "./bin/learn-anything.js"
+    "peaches": "./bin/peaches.js"
   },
   "files": [
     "dist",
@@ -43,7 +43,7 @@
   "scripts": {
     "build": "node scripts/bundle-site.mjs && tsc",
     "dev": "tsc --watch",
-    "dev:cli": "pnpm build && node bin/learn-anything.js",
+    "dev:cli": "pnpm build && node bin/peaches.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "echo 'Lint from root'",

@@ -2,7 +2,7 @@
 
 ## Context
 
-The current system generates learning data distributed across different files. The `learn-anything init` command writes 5 SKILL.md files to each AI tool's skills directory. These SKILL.md files contain natural language instructions that guide the AI at runtime to create and manage learning data under the `.learn/topics/<topic>/` directory.
+The current system generates learning data distributed across different files. The `peaches init` command writes 5 SKILL.md files to each AI tool's skills directory. These SKILL.md files contain natural language instructions that guide the AI at runtime to create and manage learning data under the `.peaches/topics/<topic>/` directory.
 
 Current data model (v0):
 
@@ -59,7 +59,7 @@ Core problem: both files maintain structural information independently. The `pat
 ### 4. render.mjs deployed to each skill directory
 
 **Choice**: Each of the 5 skill directories has its own copy of `scripts/render.mjs`
-**Alternative**: Shared script in `.learn/scripts/` or the AI tool's top-level directory
+**Alternative**: Shared script in `.peaches/scripts/` or the AI tool's top-level directory
 **Reason**:
 
 - AI runs within a single skill context and does not load other skills
@@ -79,7 +79,7 @@ Core problem: both files maintain structural information independently. The `pat
 
 ### 6. Migration runs at init/update time
 
-**Choice**: Detect and run migration during `learn-anything init` and `learn-anything update`
+**Choice**: Detect and run migration during `peaches init` and `peaches update`
 **Reason**:
 
 - Ensures AI always works with v1 format at runtime
@@ -111,7 +111,7 @@ v0 state.yaml (no version field)
 ### Deployment Order
 
 1. Release new CLI version (including migration + render.mjs deployment)
-2. Users run `learn-anything update` or `learn-anything init`
+2. Users run `peaches update` or `peaches init`
 3. Automatically detect existing data version and execute migration
 4. Newly generated skill files already contain v1 instructions
 

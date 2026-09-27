@@ -9,15 +9,15 @@ const items = useReviewItems(8);
 
 const REASON_BORDER: Record<ReviewReason, string> = {
   never_practiced: 'var(--color-brand-2)',
-  needs_practice: 'var(--color-brand-3)',
-  low_confidence: 'var(--color-progress)',
+  needs_practice: 'var(--color-attention)',
+  low_confidence: 'var(--color-in-progress)',
   stale: 'var(--color-text-3)',
 };
 
 const REASON_TEXT: Record<ReviewReason, string> = {
   never_practiced: 'var(--color-brand-2)',
-  needs_practice: 'var(--color-brand-3)',
-  low_confidence: 'var(--color-progress)',
+  needs_practice: 'var(--color-attention)',
+  low_confidence: 'var(--color-in-progress)',
   stale: 'var(--color-text-2)',
 };
 

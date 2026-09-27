@@ -1,6 +1,6 @@
 ## Why
 
-The project is a single-package npm package, but we plan to add a GUI application and potentially more packages in the future. Converting to a pnpm monorepo now establishes a scalable structure — the `cli` package remains the published `learn-anything-cli`, while a new `gui` package provides a landing spot for GUI development, starting as a placeholder.
+The project is a single-package npm package, but we plan to add a GUI application and potentially more packages in the future. Converting to a pnpm monorepo now establishes a scalable structure — the `cli` package remains the published `peaches`, while a new `gui` package provides a landing spot for GUI development, starting as a placeholder.
 
 ## What Changes
 
@@ -19,16 +19,16 @@ None — this is a structural change with no new user-facing capabilities.
 
 ### Modified Capabilities
 
-None — existing spec-level behavior (`learn-protocol`, `render-script`, `skill-workflows`) is unchanged.
+None — existing spec-level behavior (`peaches-protocol`, `render-script`, `skill-workflows`) is unchanged.
 
 ## Impact
 
 - All source files relocate from root-level `src/` to `packages/cli/src/`
 - All test files relocate from root-level `test/` to `packages/cli/test/`
-- `bin/learn-anything.js` moves to `packages/cli/bin/learn-anything.js`
+- `bin/peaches.js` moves to `packages/cli/bin/peaches.js`
 - `CLAUDE.md` path references need updating
 - `.gitignore` patterns may need adjustment for `packages/*/dist/`
 - CI (`.github/workflows/`) may need path updates for build/test commands
 - `pnpm-lock.yaml` will be regenerated after `pnpm install`
-- Public API unchanged — `npx learn-anything-cli init` still works
+- Public API unchanged — `npx peaches init` still works
 - This change is **not BREAKING** for consumers of the npm package

@@ -46,8 +46,8 @@ const { t } = useI18n();
               dr.results.percentage >= 80
                 ? 'bg-mastered'
                 : dr.results.percentage >= 50
-                  ? 'bg-progress'
-                  : 'bg-brand-2'
+                  ? 'bg-(--color-in-progress)'
+                  : 'bg-(--color-attention)'
             "
             :style="{ width: `${dr.results.percentage}%` }"
           />

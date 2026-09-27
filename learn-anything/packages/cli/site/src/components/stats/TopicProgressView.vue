@@ -36,11 +36,11 @@ const stats = computed(() => computeTopicStats(props.state));
               :style="{ flexGrow: d.mastered, flexBasis: 0 }"
             />
             <div
-              class="h-full bg-progress transition-all duration-500"
+              class="h-full bg-(--color-in-progress) transition-all duration-500"
               :style="{ flexGrow: d.inProgress, flexBasis: 0 }"
             />
             <div
-              class="h-full bg-brand-2 transition-all duration-500"
+              class="h-full bg-(--color-attention) transition-all duration-500"
               :style="{ flexGrow: d.needsPractice, flexBasis: 0 }"
             />
             <div

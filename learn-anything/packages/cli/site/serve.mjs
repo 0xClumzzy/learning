@@ -16,7 +16,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const STATIC_DIR = __dirname;
-const TOPICS_DIR = process.env.TOPICS_DIR || join(__dirname, '..', '..', '.learn', 'topics');
+const TOPICS_DIR = process.env.TOPICS_DIR || join(__dirname, '..', '..', '.peaches', 'topics');
 const PORT = parseInt(process.env.PORT || '24278', 10);
 
 const MIME = {
@@ -60,7 +60,7 @@ function isBinaryFile(filePath) {
   }
 }
 
-const EXCLUDED_NAMES = new Set(['.learn', '.git', '.idea', 'node_modules']);
+const EXCLUDED_NAMES = new Set(['.peaches', '.git', '.idea', 'node_modules']);
 
 function isExcluded(name) {
   return name.startsWith('.') || EXCLUDED_NAMES.has(name);

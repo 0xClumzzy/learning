@@ -9,7 +9,7 @@
  *   node status.mjs --all [--locale zh-CN] <dir>   Summary of all topics
  *
  * This file is compiled from src/scripts/status.mts via tsc and
- * copied into learn-anything-status skill's scripts/ directory by init/update.
+ * copied into peaches-status skill's scripts/ directory by init/update.
  */
 
 import { readFileSync, readdirSync, statSync } from 'node:fs';
@@ -95,7 +95,7 @@ const EN: Strings = {
   days: 'Days',
   total: 'Total',
   noTopics: '📭 No learning topics found.',
-  startJourney: 'Run `/learn <topic-name>` to start your learning journey!',
+  startJourney: 'Run `/peaches <topic-name>` to start your learning journey!',
   noData: (path) => `📭 No learning data found at ${path}`,
 };
 
@@ -133,7 +133,7 @@ const ZH_CN: Strings = {
   days: '天数',
   total: '合计',
   noTopics: '📭 暂无学习主题。',
-  startJourney: '运行 `/learn <主题名>` 开始你的学习之旅！',
+  startJourney: '运行 `/peaches <主题名>` 开始你的学习之旅！',
   noData: (path) => `📭 未找到学习数据: ${path}`,
 };
 

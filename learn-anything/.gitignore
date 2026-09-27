@@ -6,10 +6,10 @@ dist/
 # user local setting
 .claude
 .codex
-.learn
+.peaches
 
 # test output
-packages/cli/test/core/learn-protocol/fixtures/migrates/
+packages/cli/test/core/peaches-protocol/fixtures/migrates/
 
 # build artifacts
 packages/cli/site-dist/

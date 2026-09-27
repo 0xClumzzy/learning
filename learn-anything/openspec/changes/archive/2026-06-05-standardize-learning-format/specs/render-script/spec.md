@@ -21,8 +21,8 @@ Usage: `node render.mjs <topic-dir>`
 
 #### Scenario: Correct invocation
 
-- **WHEN** executing `node render.mjs .learn/topics/javascript`
-- **THEN** reads `.learn/topics/javascript/state.json`, writes `.learn/topics/javascript/knowledge-map.md`, prints summary to stdout
+- **WHEN** executing `node render.mjs .peaches/topics/javascript`
+- **THEN** reads `.peaches/topics/javascript/state.json`, writes `.peaches/topics/javascript/knowledge-map.md`, prints summary to stdout
 
 #### Scenario: Missing argument
 
@@ -85,14 +85,14 @@ render.mjs SHALL provide clear error messages for various error conditions.
 
 ### Requirement: Deployment to Skill Directory
 
-`learn-anything init` and `learn-anything update` SHALL write `render.mjs` to the `scripts/` subdirectory alongside each skill's SKILL.md during generation.
+`peaches init` and `peaches update` SHALL write `render.mjs` to the `scripts/` subdirectory alongside each skill's SKILL.md during generation.
 
 #### Scenario: init deploys render.mjs
 
-- **WHEN** executing `learn-anything init --tools claude`
-- **THEN** render.mjs is generated under `.claude/skills/learn-anything-topic/scripts/render.mjs` and all other 4 skill directories
+- **WHEN** executing `peaches init --tools claude`
+- **THEN** render.mjs is generated under `.claude/skills/peaches-topic/scripts/render.mjs` and all other 4 skill directories
 
 #### Scenario: render.mjs executes from skill directory
 
-- **WHEN** AI runs `node .claude/skills/learn-anything-explain/scripts/render.mjs ./.learn/topics/javascript` within a skill context
+- **WHEN** AI runs `node .claude/skills/peaches-explain/scripts/render.mjs ./.peaches/topics/javascript` within a skill context
 - **THEN** the script works correctly regardless of which skill the AI has loaded

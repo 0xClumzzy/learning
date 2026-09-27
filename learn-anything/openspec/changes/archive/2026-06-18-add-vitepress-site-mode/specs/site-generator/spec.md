@@ -1,17 +1,17 @@
 ## ADDED Requirements
 
-> **Status: Pending implementation.** The dev project at `packages/cli/site/` is complete and the build script generates `SITE_FILES`, but the `SiteGenerator` class that writes those files to `.learn/` has not yet been created.
+> **Status: Pending implementation.** The dev project at `packages/cli/site/` is complete and the build script generates `SITE_FILES`, but the `SiteGenerator` class that writes those files to `.peaches/` has not yet been created.
 
 > **Note:** The original spec referenced VitePress paths (`.vitepress/config.mts`, `pages/`). The actual implementation uses Vue 3 + Vite paths (`src/components/`, `vite.config.ts`, etc.). The requirements below have been updated accordingly.
 
 ### Requirement: SiteGenerator writes all template files on first generation
 
-The system SHALL write all site template files (Vue components, composables, styles, router, config files, package.json) to the `.learn/` directory when the `SiteGenerator.generate()` method is called and the target directory has no existing site setup.
+The system SHALL write all site template files (Vue components, composables, styles, router, config files, package.json) to the `.peaches/` directory when the `SiteGenerator.generate()` method is called and the target directory has no existing site setup.
 
 #### Scenario: First generation creates complete directory structure
 
-- **WHEN** `SiteGenerator.generate()` is called and `.learn/src/` does not exist
-- **THEN** the system creates `.learn/package.json`, `.learn/index.html`, `.learn/vite.config.ts`, `.learn/tsconfig.json`, `.learn/src/main.ts`, `.learn/src/App.vue`, `.learn/src/router/index.ts`, all component files under `.learn/src/components/`, all composable files under `.learn/src/composables/`, all style files under `.learn/src/styles/`, all utility files under `.learn/src/utils/`, and `.learn/.gitignore`
+- **WHEN** `SiteGenerator.generate()` is called and `.peaches/src/` does not exist
+- **THEN** the system creates `.peaches/package.json`, `.peaches/index.html`, `.peaches/vite.config.ts`, `.peaches/tsconfig.json`, `.peaches/src/main.ts`, `.peaches/src/App.vue`, `.peaches/src/router/index.ts`, all component files under `.peaches/src/components/`, all composable files under `.peaches/src/composables/`, all style files under `.peaches/src/styles/`, all utility files under `.peaches/src/utils/`, and `.peaches/.gitignore`
 
 #### Scenario: First generation writes theme components
 
@@ -24,7 +24,7 @@ The system SHALL skip writing component, composable, and style files if they alr
 
 #### Scenario: Subsequent generation skips existing theme files
 
-- **WHEN** `SiteGenerator.generate()` is called and `.learn/src/components/Dashboard.vue` already exists
+- **WHEN** `SiteGenerator.generate()` is called and `.peaches/src/components/Dashboard.vue` already exists
 - **THEN** the system does NOT overwrite `Dashboard.vue` or any other existing file under `src/components/`, `src/composables/`, or `src/styles/`
 
 #### Scenario: Force flag overwrites theme files
@@ -48,12 +48,12 @@ The system SHALL always overwrite `vite.config.ts`, `tsconfig.json`, `index.html
 
 ### Requirement: SiteGenerator writes .gitignore
 
-The system SHALL write `.learn/.gitignore` with entries for `node_modules/` and `dist/` on every generation.
+The system SHALL write `.peaches/.gitignore` with entries for `node_modules/` and `dist/` on every generation.
 
 #### Scenario: .gitignore is created or updated
 
 - **WHEN** `SiteGenerator.generate()` is called
-- **THEN** `.learn/.gitignore` exists and contains at minimum `node_modules/` and `dist/`
+- **THEN** `.peaches/.gitignore` exists and contains at minimum `node_modules/` and `dist/`
 
 ### Requirement: SiteGenerator uses embedded file content
 
@@ -61,5 +61,5 @@ The system SHALL read all template file content from `packages/cli/src/site/file
 
 #### Scenario: Template content comes from embedded mapping
 
-- **WHEN** `SiteGenerator.generate()` writes a file to `.learn/`
+- **WHEN** `SiteGenerator.generate()` writes a file to `.peaches/`
 - **THEN** the file content is sourced from the `SITE_FILES` constant, not from reading `packages/cli/site/` or any other directory on disk

@@ -1,17 +1,17 @@
 <p align="center">
-  <img src="./logo.png" alt="Learn Anything Logo" width="120" />
+  <img src="./logo.png" alt="Peaches Logo" width="120" />
 </p>
 
-<h1 align="center">Learn Anything</h1>
+<h1 align="center">Peaches</h1>
 
 <p align="center">
-  <strong>AI 驱动的递归学习系统</strong><br />
+  <strong>Pick a topic. Grow into it.</strong><br />
   将你的 AI 编程助手变成交互式导师 — 苏格拉底式教学法 · TDD 风格练习<br />
   <em>现已内置可视化学习仪表盘。</em>
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/learn-anything-cli"><img src="https://img.shields.io/npm/v/learn-anything-cli?color=blue&label=npm" alt="npm 版本" /></a>
+  <a href="https://www.npmjs.com/package/peaches"><img src="https://img.shields.io/npm/v/peaches?color=blue&label=npm" alt="npm 版本" /></a>
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/node-%3E%3D20.0-green" alt="Node.js" /></a>
   <a href="https://pnpm.io/"><img src="https://img.shields.io/badge/pnpm-workspace-orange" alt="pnpm workspace" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="许可证 MIT" /></a>
@@ -23,9 +23,9 @@
 
 ---
 
-## 什么是 Learn Anything？
+## 什么是 Peaches？
 
-**Learn Anything** 为 **30+ 种 AI 编程工具**（Claude Code、Cursor、Codex、OpenCode 等）生成 skill 和 command 文件。安装后，你的 AI 助手获得六个斜杠命令，引导你系统性掌握任何技术主题：
+**Peaches** 是一个 AI 驱动的递归学习系统，为 **30+ 种 AI 编程工具**（Claude Code、Cursor、Codex、OpenCode 等）生成 skill 和 command 文件。安装后，你的 AI 助手获得六个斜杠命令，引导你系统性掌握任何技术主题：
 
 - 🧭 **自主选择路径** — AI 生成知识图谱，你来决定学什么
 - 🎓 **递归学习法** — 递归讲解跟随你的好奇心，想挖多深就多深
@@ -39,14 +39,14 @@
 
 ```bash
 # 交互模式 — 自动检测你的 AI 工具并提示选择
-npx learn-anything-cli init
+npx peaches init
 
 # 指定工具
-npx learn-anything-cli init --tools claude
+npx peaches init --tools claude
 
 # 或全局安装
-pnpm add -g learn-anything-cli   # npm install -g learn-anything-cli
-learn-anything init
+pnpm add -g peaches   # npm install -g peaches
+peaches init
 ```
 
 ### Context7 集成 _(可选)_
@@ -59,12 +59,12 @@ learn-anything init
 
 | 命令                     | 功能                                      |
 | :----------------------- | :---------------------------------------- |
-| `/learn:topic <名称>`    | 初始化主题，生成知识图谱，跟踪进度        |
-| `/learn:explain <名称>`  | 递归式学习法 — 想挖多深就挖多深           |
-| `/learn:practice <名称>` | TDD 风格编码练习，结构化反馈              |
-| `/learn:review [名称]`   | 间隔重复复习，个性化下一步计划            |
-| `/learn:status [名称]`   | 知识图谱热力图 — 掌握度、练习次数、信心分 |
-| `/learn:quiz <名称>`     | 快速文字问答测验 — 批改并保存，可反复练习 |
+| `/peaches:topic <名称>`    | 初始化主题，生成知识图谱，跟踪进度        |
+| `/peaches:explain <名称>`  | 递归式学习法 — 想挖多深就挖多深           |
+| `/peaches:practice <名称>` | TDD 风格编码练习，结构化反馈              |
+| `/peaches:review [名称]`   | 间隔重复复习，个性化下一步计划            |
+| `/peaches:status [名称]`   | 知识图谱热力图 — 掌握度、练习次数、信心分 |
+| `/peaches:quiz <名称>`     | 快速文字问答测验 — 批改并保存，可反复练习 |
 
 ### 可视化学习仪表盘
 
@@ -72,17 +72,17 @@ learn-anything init
 
 ```bash
 # 启动可视化仪表盘（无需 npm install）
-npx learn-anything-cli serve
+npx peaches serve
 
 # 自定义端口
-npx learn-anything-cli serve --port 8080
+npx peaches serve --port 8080
 
 # 禁止自动打开浏览器
-npx learn-anything-cli serve --no-open
+npx peaches serve --no-open
 ```
 
 > 仪表盘已在 CLI 中预构建并随包发布 — 无需额外依赖或 `npm install`。
-> 如果已全局安装，也可以使用 `learn-anything serve`。
+> 如果已全局安装，也可以使用 `peaches serve`。
 
 仪表盘提供：
 
@@ -95,17 +95,34 @@ npx learn-anything-cli serve --no-open
 
 ## 工作原理
 
+`init` 是一次性的本地生成步骤。没有守护进程，也不需要账号——Peaches 只是把纯文本文件写进项目里，让你的 AI 助手把它们当作指令来读。_（如果你在安装时启用了 Context7，助手会从 `context7.com` 拉取官方库文档；这是唯一的网络请求，且是可选的。）_
+
+**1. 生成。** Peaches 为六个工作流各写入一个 command 文件和一个 skill 文件，并自动适配你所用的工具格式。
+
+**2. 设定角色。** 每个 skill 都会先把你的助手代入一个特定的 Peaches 角色，这样无论你用哪个工具，行为都保持一致：
+
+| 命令              | 助手扮演                      | 效果                                                                     |
+| :---------------- | :---------------------------- | :----------------------------------------------------------------------- |
+| `/peaches:topic`    | Peaches' _Knowledge Mentor_   | 创建 `state.json`，渲染 `knowledge-map.md`，建立 `sessions/` 目录        |
+| `/peaches:explain`  | Peaches' _Explanation Mentor_ | 写入 `sessions/<domain>/<concept>-<date>.md`，更新 `state.json`          |
+| `/peaches:practice` | Peaches' _Practice Coach_     | 写入 `exercises/<concept-slug>/…-practice-<date>.md`，更新 `state.json`  |
+| `/peaches:quiz`     | Peaches' _Quiz Coach_         | 写入 `quizzes/<concept-slug>/…-quiz-<timestamp>.json`，更新 `state.json` |
+| `/peaches:review`   | Peaches' _Learning Analyst_   | 只读——读取 `state.json` 并规划下一步                                     |
+| `/peaches:status`   | Peaches' _Status Visualizer_  | 只读——对 `state.json` 运行状态脚本                                       |
+
+**3. 留存状态。** 每个工作流都会更新 `state.json`，正是它让学习进度、间隔重复和仪表盘在之后依然可用。
+
 ```
 你的项目/
 ├── .claude/
-│   ├── commands/learn/          # Claude 专用斜杠命令
+│   ├── commands/peaches/          # Claude 专用斜杠命令
 │   └── skills/                  # 包含完整工作流指令的 skill 文件
 ├── .cursor/commands/            # Cursor 专用命令格式
-├── .gemini/commands/learn/      # Gemini TOML 格式命令
+├── .gemini/commands/peaches/      # Gemini TOML 格式命令
 ├── .codex/prompts/              # Codex prompt 文件
 │   ...                          # （30+ 种工具各有对应格式）
 │
-├── .learn/                      # 🧠 你的学习数据存在这里
+├── .peaches/                      # 🍑 你的学习数据存在这里
 │   └── topics/
 │       └── typescript/
 │           ├── state.json           # 唯一数据源
@@ -118,12 +135,14 @@ npx learn-anything-cli serve --no-open
 
 每个 AI 工具通过**适配器模式**获得对应格式的文件——Claude 用 YAML frontmatter，Gemini 用 TOML，Cursor 用 Markdown 等。
 
+> `.peaches/` 目录就是纯 Markdown 和 JSON，可以安全地提交到 git，不装 Peaches 也能直接阅读。
+
 ## 仓库结构
 
 ```
-learn-anything/
+peaches/
 ├── packages/
-│   ├── cli/                     # learn-anything-cli — 发布到 npm
+│   ├── cli/                     # peaches — 发布到 npm
 │   │   ├── site/                 # 仪表盘源码 (Vue 3 + Vite)
 │   │   ├── scripts/              # 构建脚本 (bundle-site.mjs)
 │   │   ├── src/
@@ -131,9 +150,9 @@ learn-anything/
 │   │   │   ├── core/            # 初始化、配置、命令生成、模板
 │   │   │   ├── i18n/            # en + zh-CN 多语言
 │   │   │   └── utils/           # 文件系统、交互式帮助函数
-│   │   ├── bin/                 # learn-anything 可执行文件
+│   │   ├── bin/                 # peaches 可执行文件
 │   │   └── package.json
-│   └── gui/                     # learn-anything-gui — 开发中 🚧
+│   └── gui/                     # peaches-gui — 开发中 🚧
 │       └── README.md
 ├── pnpm-workspace.yaml          # pnpm workspace 配置
 ├── tsconfig.base.json           # 共享 TypeScript 编译选项
@@ -143,8 +162,8 @@ learn-anything/
 
 | 包                                     | npm                                                                                                                    | 说明                                             |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------- |
-| [`learn-anything-cli`](./packages/cli) | [![npm](https://img.shields.io/npm/v/learn-anything-cli?color=blue)](https://www.npmjs.com/package/learn-anything-cli) | CLI 工具 — 为 30+ AI 工具生成 skill/command 文件 |
-| `learn-anything-gui`                   | _私有_                                                                                                                 | 图形化桌面界面 _(开发中)_                        |
+| [`peaches`](./packages/cli) | [![npm](https://img.shields.io/npm/v/peaches?color=blue)](https://www.npmjs.com/package/peaches) | CLI 工具 — 为 30+ AI 工具生成 skill/command 文件 |
+| `peaches-gui`                   | _私有_                                                                                                                 | 图形化桌面界面 _(开发中)_                        |
 
 ## 支持的 AI 工具
 
@@ -152,7 +171,7 @@ learn-anything/
 
 ```bash
 # 更新已有 skill 文件到最新版本（自动检测已安装的工具）
-npx learn-anything-cli update
+npx peaches update
 ```
 
 ## 开发
@@ -165,8 +184,8 @@ npx learn-anything-cli update
 ### 环境搭建
 
 ```bash
-git clone https://github.com/ChenChenyaqi/learn-anything.git
-cd learn-anything
+git clone https://github.com/ChenChenyaqi/peaches.git
+cd peaches
 pnpm install
 ```
 
@@ -185,18 +204,18 @@ pnpm install
 ### 单独包命令
 
 ```bash
-pnpm -F learn-anything-cli build      # 仅构建 CLI
-pnpm -F learn-anything-cli test       # 仅测试 CLI
-pnpm -F learn-anything-cli dev:cli    # 构建并在本地运行 CLI
+pnpm -F peaches build      # 仅构建 CLI
+pnpm -F peaches test       # 仅测试 CLI
+pnpm -F peaches dev:cli    # 构建并在本地运行 CLI
 ```
 
 ## Star History
 
-<a href="https://star-history.dera.page/#ChenChenyaqi/learn-anything&type=date&legend=top-left">
+<a href="https://star-history.dera.page/#ChenChenyaqi/peaches&type=date&legend=top-left">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/learn-anything&type=date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/learn-anything&type=date&legend=top-left" />
-    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=ChenChenyaqi/learn-anything&type=date&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/peaches&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/peaches&type=date&legend=top-left" />
+    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=ChenChenyaqi/peaches&type=date&legend=top-left" />
   </picture>
 </a>
 
@@ -207,5 +226,5 @@ pnpm -F learn-anything-cli dev:cli    # 构建并在本地运行 CLI
 ---
 
 <p align="center">
-  <sub>用 ❤️ 为好奇心构建 · <a href="https://github.com/ChenChenyaqi/learn-anything">GitHub</a> · <a href="./CONTRIBUTING.md">贡献指南</a> · <a href="./CHANGELOG.md">更新日志</a></sub>
+  <sub>用 ❤️ 为好奇心构建 · <a href="https://github.com/ChenChenyaqi/peaches">GitHub</a> · <a href="./CONTRIBUTING.md">贡献指南</a> · <a href="./CHANGELOG.md">更新日志</a></sub>
 </p>

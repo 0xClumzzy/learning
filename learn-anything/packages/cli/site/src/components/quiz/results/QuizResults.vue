@@ -58,7 +58,7 @@ function formatAnswer(answer: QuizAnswer): string {
         <div class="mb-2 flex items-start gap-2">
           <span class="mt-0.5 shrink-0 text-sm font-bold">
             <span v-if="result.correct === true" class="text-mastered">✓</span>
-            <span v-else-if="result.correct === false" class="text-brand-2">✗</span>
+            <span v-else-if="result.correct === false" class="text-(--color-attention)">✗</span>
             <span v-else class="text-text-3">○</span>
           </span>
           <p

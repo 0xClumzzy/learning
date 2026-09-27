@@ -30,32 +30,32 @@ export function getSkillTemplates(): SkillTemplateEntry[] {
   return [
     {
       template: getLearnTopicSkillTemplate(),
-      dirName: 'learn-anything-topic',
+      dirName: 'peaches-topic',
       workflowId: 'topic',
     },
     {
       template: getLearnExplainSkillTemplate(),
-      dirName: 'learn-anything-explain',
+      dirName: 'peaches-explain',
       workflowId: 'explain',
     },
     {
       template: getLearnPracticeSkillTemplate(),
-      dirName: 'learn-anything-practice',
+      dirName: 'peaches-practice',
       workflowId: 'practice',
     },
     {
       template: getLearnReviewSkillTemplate(),
-      dirName: 'learn-anything-review',
+      dirName: 'peaches-review',
       workflowId: 'review',
     },
     {
       template: getLearnStatusSkillTemplate(),
-      dirName: 'learn-anything-status',
+      dirName: 'peaches-status',
       workflowId: 'status',
     },
     {
       template: getLearnQuizSkillTemplate(),
-      dirName: 'learn-anything-quiz',
+      dirName: 'peaches-quiz',
       workflowId: 'quiz',
     },
   ];
@@ -97,9 +97,9 @@ export function generateSkillContent(
 name: ${template.name}
 description: ${template.description}
 license: ${template.license || 'MIT'}
-compatibility: ${template.compatibility || 'Requires learn-anything CLI.'}
+compatibility: ${template.compatibility || 'Requires peaches CLI.'}
 metadata:
-  author: ${template.metadata?.author || 'learn-anything'}
+  author: ${template.metadata?.author || 'peaches'}
   version: "${template.metadata?.version || '1.0'}"
   generatedBy: "${generatedByVersion}"
 ---
