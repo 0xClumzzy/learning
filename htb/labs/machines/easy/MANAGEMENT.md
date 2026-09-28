@@ -243,7 +243,9 @@ as mentioned rdiff-backup has two modes:
 ```
 
 **client mode** -  the side you interact with, tells the server what to do. uses `--remote-schema` to define how to spawn the server, and `%s` as a placeholder for the source path.
-
+```bash
+rdiff-backup backup --help # understand --remote-schema and %s
+```
 the `[[USER@]SERVER::]PATH` syntax:
 
 ```
@@ -254,9 +256,11 @@ the `[[USER@]SERVER::]PATH` syntax:
 ```
 
 no SSH needed -  `::` with no hostname spawns the server locally.
+```bash
+rdiff-backup restore --help # understand how /::/path works
+```
 
 ---
-
 #### the vulnerability
 
 **argparse last-value-wins.**
