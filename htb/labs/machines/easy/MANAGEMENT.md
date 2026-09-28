@@ -220,7 +220,7 @@ three things matter here:
 - `*` — wildcard at the end, owen can append anything
 **how rdiff-backup works*
 ```bash 
-
+rdiff-backup server --help
 ```
 
 rdiff-backup has a **client/server model**. when backing up over SSH it:
