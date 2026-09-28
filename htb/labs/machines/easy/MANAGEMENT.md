@@ -213,7 +213,23 @@ Matching Defaults entries for owen on management:
 	env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty 
 	User owen may run the following commands on management: (root) NOPASSWD: /usr/bin/rdiff-backup --server --restrict-path /opt/backup --restrict-mode read-only *
 ```
+three things matter here:
 
+- runs as **root** with no password
+- `--restrict-path /opt/backup` — intended to jail file access to `/opt/backup` only
+- `*` — wildcard at the end, owen can append anything
+**how rdiff-backup works*
+```bash 
+
+```
+
+rdiff-backup has a **client/server model**. when backing up over SSH it:
+
+1. spawns itself locally as the **client**
+2. SSHes into remote and spawns itself as the **server**
+3. client tells server what to read/write
+
+`--remote-schema` lets you define the command used to spawn the server. `%s` is a placeholder that gets replaced with the **source path**.
 
 ## Root Flag
 
