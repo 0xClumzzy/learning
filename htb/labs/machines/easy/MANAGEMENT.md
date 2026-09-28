@@ -216,8 +216,8 @@ Matching Defaults entries for owen on management:
 three things matter here:
 
 - runs as **root** with no password
-- `--restrict-path /opt/backup` — intended to jail file access to `/opt/backup` only
-- `*` — wildcard at the end, owen can append anything
+- `--restrict-path /opt/backup` intended to jail file access to `/opt/backup` only
+- `*` wildcard at the end, owen can append anything
 **how rdiff-backup works*
 ```bash 
 rdiff-backup server --help #get help on the utility
@@ -233,7 +233,7 @@ rdiff-backup has a **client/server model**. when backing up over SSH it:
 
 `--remote-schema` lets you define the command used to spawn the server. `%s` is a placeholder that gets replaced with the **source path**.
 
-so rdiff-backup has two modes:
+as mentioned rdiff-backup has two modes:
 
 **server mode** - spawned on the "remote" side, reads/writes files
 
