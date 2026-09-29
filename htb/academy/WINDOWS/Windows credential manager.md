@@ -43,6 +43,7 @@ runas /savecred /user:SRV01\mcharles cmd
 ```
 syntax: `<runas> /savecred  /user:<user> <command>
 
-### Extracting creds using mimikatz
+### Extracting creds using mimikatz(windows)
+
 
 
