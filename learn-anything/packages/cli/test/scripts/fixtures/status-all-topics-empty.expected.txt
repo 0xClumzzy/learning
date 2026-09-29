@@ -1,4 +1,0 @@
-🌟 Learning Status — All Topics
-
-📭 No learning topics found.
-Run `/peaches <topic-name>` to start your learning journey!
