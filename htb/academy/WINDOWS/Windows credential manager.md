@@ -17,5 +17,11 @@ Credentials Guard is also used to further protect DPAPI master keys by storing t
 - Windows credentials 
 Exporting windows vaults
 ```cmd
-rundll32 keymgr.dll,KRShowKey
+rundll32 keymgr.dll,KRShowKeyMgr
 ```
+Enumeratimg credentials with `cmdkey`
+- Passwords stored in the current user profile
+```cmd 
+cmdkey /list
+```
+
