@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/REGISTRY.md",
+                "file": "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "REGISTRY"
+              "title": "LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -249,9 +248,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e433c1f915ea4950",
+  "active": "f60be99729fa24b6",
   "lastOpenFiles": [
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
+    "academy/WINDOWS/REG.exe.md",
+    "academy/WINDOWS/REGISTRY.md",
     "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
     "academy/WINDOWS/Windows credential manager.md",
     "academy/WINDOWS/WINDOWS.md",
@@ -271,8 +272,6 @@
     "labs/machines/easy/TEMPLATE.md",
     "academy/vuln/CVSS scoring .md",
     "labs/machines/easy/MONTEVERDE.md",
-    "academy/WINDOWS/REG.exe.md",
-    "academy/WINDOWS/REGISTRY.md",
     "academy/WINDOWS/intro.md",
     "labs/machines/easy/BLUE.md",
     "academy/academy.md",
