@@ -294,7 +294,7 @@ sudo /usr/bin/rdiff-backup --server \
 
 result: server is now restricted to `/root` instead of `/opt/backup`, now  reads root's entire home directory and mirrors it to `/tmp/rootbak`.
 
-bash
+## Root Flag
 
 ```bash
 cat /tmp/rootbak/root.txt  # gg
@@ -314,10 +314,6 @@ cat /tmp/rootbak/root.txt  # gg
 - wildcards at the end of a sudo rule = you control everything after the fixed flags
 - look for flags that can be passed twice where the second one overrides the first
 - `--remote-schema` + `%s` + `/::/path` = localhost server spawn without SSH
-## Root Flag
 
-```bash
-cat /root/root.txt
-```
 
 
