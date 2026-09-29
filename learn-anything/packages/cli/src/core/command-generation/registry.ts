@@ -1,11 +1,18 @@
 import type { ToolCommandAdapter } from './types.js';
-import { claudeAdapter, cursorAdapter, codexAdapter, geminiAdapter } from './adapters/index.js';
+import {
+  opencodeAdapter,
+  claudeAdapter,
+  cursorAdapter,
+  codexAdapter,
+  geminiAdapter,
+} from './adapters/index.js';
 
 export class CommandAdapterRegistry {
   private static adapters: Map<string, ToolCommandAdapter> = new Map();
 
   static {
-    const all = [claudeAdapter, cursorAdapter, codexAdapter, geminiAdapter];
+    // OpenCode first: it is the primary supported target.
+    const all = [opencodeAdapter, claudeAdapter, cursorAdapter, codexAdapter, geminiAdapter];
     for (const adapter of all) {
       CommandAdapterRegistry.adapters.set(adapter.toolId, adapter);
     }

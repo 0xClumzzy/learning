@@ -69,16 +69,10 @@ The Quizzes tab SHALL display all quiz JSON files for the current topic as a phy
 
 ### Requirement: i18n keys for quiz UI
 
-The i18n composable SHALL support quiz-related translation keys in both English and Chinese locales.
+The i18n composable SHALL expose quiz-related translation keys in English.
 
-#### Scenario: English locale
+#### Scenario: Quiz strings
 
-- **WHEN** the locale is `en`
+- **WHEN** the dashboard renders
 - **THEN** `t('sidebar.quizzes')` returns "Quizzes"
 - **AND** `t('quiz.empty')` returns "No quizzes yet"
-
-#### Scenario: Chinese locale
-
-- **WHEN** the locale is `zh-CN`
-- **THEN** `t('sidebar.quizzes')` returns "测验"
-- **AND** `t('quiz.empty')` returns "暂无测验"

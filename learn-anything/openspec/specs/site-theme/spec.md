@@ -111,23 +111,20 @@ The system SHALL render a `ContentViewer` component that receives a `SelectedFil
 - **WHEN** ContentViewer receives `file: null`
 - **THEN** a centered message "Select a file from the sidebar to view its content" is displayed
 
-### Requirement: Language switch toggles UI strings between EN and zh-CN
+### Requirement: UI strings are English-only
 
-The system SHALL provide a language switch button in the sidebar footer. When toggled, all UI strings (tab names, section labels, empty states, dashboard text) SHALL change between English and Simplified Chinese. Note content and exercise content SHALL NOT be affected.
+The system SHALL render all UI strings (tab names, section labels, empty states, dashboard text) in English. No language switch SHALL be offered. Peaches ships in one language; adding a second is a deliberate future change, not a configuration option.
 
-#### Scenario: Switch from English to Chinese
+Note content and exercise content SHALL NOT be affected — they are rendered exactly as stored.
 
-- **WHEN** the current UI language is English and user clicks the language switch button
-- **THEN** all UI strings change to Chinese and the button label changes to "English"
+#### Scenario: No language switch is present
 
-#### Scenario: Language persists across page loads
+- **WHEN** the sidebar footer renders
+- **THEN** it contains a theme toggle and no language toggle
 
-- **WHEN** user sets the UI language to Chinese and refreshes the page or navigates to another page
-- **THEN** the UI language remains Chinese
+#### Scenario: Stored content is rendered verbatim
 
-#### Scenario: Language does not affect note content
-
-- **WHEN** user switches the UI language
+- **WHEN** the dashboard renders a topic with non-English content
 - **THEN** the content of session notes, knowledge map entries, and exercise descriptions is displayed exactly as stored, with no modification
 
 ### Requirement: Dark mode toggles between light and dark themes

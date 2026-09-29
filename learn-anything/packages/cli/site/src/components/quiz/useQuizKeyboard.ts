@@ -47,6 +47,45 @@ export type QuizKeyAction =
  * Every non-null result implies the caller should `preventDefault()`;
  * `null` means "ignore the key entirely" (no preventDefault).
  */
+/**
+ * True when the event target owns the Space key itself.
+ *
+ * The quiz modal used to `preventDefault()` Space for every non-text
+ * target, which also killed the standard keyboard way to activate a focused
+ * option button (and Space toggles a focused checkbox). Only elements with
+ * no native Space behaviour should be suppressed, and only to stop the page
+ * behind the modal from scrolling.
+ */
+const INTERACTIVE_TAGS = new Set([
+  'BUTTON',
+  'INPUT',
+  'TEXTAREA',
+  'SELECT',
+  'OPTION',
+  'A',
+  'SUMMARY',
+  'LABEL',
+]);
+
+const INTERACTIVE_ROLES = new Set(['button', 'option', 'radio', 'checkbox', 'menuitem', 'tab']);
+
+export function isInteractiveTarget(target: EventTarget | null): boolean {
+  const el = target as HTMLElement | null;
+  if (!el || typeof el.tagName !== 'string') return false;
+  if (INTERACTIVE_TAGS.has(el.tagName)) return true;
+  if (el.isContentEditable) return true;
+  const role = typeof el.getAttribute === 'function' ? el.getAttribute('role') : null;
+  return role !== null && INTERACTIVE_ROLES.has(role);
+}
+
+/**
+ * True when a Space keydown should be swallowed to stop the page scrolling
+ * behind the quiz modal. False whenever a focused control would use the key.
+ */
+export function shouldSuppressSpace(target: EventTarget | null): boolean {
+  return !isInteractiveTarget(target);
+}
+
 export function resolveQuizKey(e: KeyboardEvent, ctx: ResolveQuizKeyCtx): QuizKeyAction | null {
   const { key, metaKey, ctrlKey } = e;
 

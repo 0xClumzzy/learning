@@ -62,10 +62,12 @@ describe('theme status scale', () => {
       m[1]!.toLowerCase(),
     );
 
-  it('defines every semantic status token in both the root and .dark scopes', () => {
+  it('defines every semantic status token exactly once', () => {
+    // The theme is single-source. It used to re-declare every value under
+    // `.dark`, so each edit had to be made twice and a missed one diverged
+    // silently. Asserting a single declaration makes that impossible.
     for (const name of ['mastered', 'in-progress', 'attention']) {
-      // Declared twice: once in @theme, once in .dark.
-      expect(tokens(name).length, `--color-${name} declaration count`).toBe(2);
+      expect(tokens(name).length, `--color-${name} declaration count`).toBe(1);
     }
   });
 
@@ -79,14 +81,15 @@ describe('theme status scale', () => {
     expect(new Set([mastered, inProgress, attention]).size).toBe(3);
   });
 
-  it('agrees between the @theme and .dark declarations', () => {
-    for (const name of ['mastered', 'in-progress', 'attention']) {
-      const [a, b] = tokens(name);
-      expect(a).toBe(b);
-    }
-  });
-
   it('has retired the ambiguous --color-progress token', () => {
     expect(mainCss).not.toContain('--color-progress:');
+  });
+
+  it('does not ship a second palette under .dark', () => {
+    // A `.dark { --color-*: ... }` block would be a second source of truth.
+    const darkBlock = mainCss.match(/^\.dark\s*\{([\s\S]*?)\n\}/m);
+    if (darkBlock) {
+      expect(darkBlock[1], '.dark must not redeclare tokens').not.toMatch(/--color-\w+\s*:/);
+    }
   });
 });

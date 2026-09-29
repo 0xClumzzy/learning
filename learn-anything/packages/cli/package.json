@@ -12,13 +12,13 @@
     "tdd",
     "spaced-repetition"
   ],
-  "homepage": "https://github.com/ChenChenyaqi/peaches",
+  "homepage": "https://github.com/0xClumzzy/peaches",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChenChenyaqi/peaches"
+    "url": "https://github.com/0xClumzzy/peaches"
   },
   "license": "MIT",
-  "author": "yaqi chen",
+  "author": "0xClumzzy",
   "type": "module",
   "publishConfig": {
     "access": "public"

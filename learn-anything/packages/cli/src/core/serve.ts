@@ -5,7 +5,6 @@ import * as fs from 'fs';
 import { createRequire } from 'module';
 import { PEACHES_DIR } from '../core/config.js';
 import { getMessages } from '../i18n/index.js';
-import type { SupportedLocale } from '../i18n/types.js';
 import { DEFAULT_PORT, findFreePort, isPortFree } from '../utils/port.js';
 
 export interface ServeOptions {
@@ -13,12 +12,10 @@ export interface ServeOptions {
   port?: number;
   strictPort?: boolean;
   open?: boolean;
-  locale?: SupportedLocale;
 }
 
 export async function executeServe(options: ServeOptions): Promise<void> {
-  const locale = options.locale ?? 'en';
-  const msg = getMessages(locale);
+  const msg = getMessages();
   const m = msg.serve;
   const cli = msg.cli;
 

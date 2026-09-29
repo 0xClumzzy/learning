@@ -55,6 +55,9 @@ log "A1 · create $RELEASE_BRANCH from develop"
 git checkout -b "$RELEASE_BRANCH"
 
 log "A2 · update CHANGELOG.md"
+# Anchor on the Unreleased heading specifically. Matching the first /^## \[/
+# fired on the Unreleased heading itself and printed the new version header
+# above it, leaving the released entry stranded under an Unreleased heading.
 NOTES_PATH="$NOTES_FILE" awk -v new="$VERSION" -v date="$DATE" '
   BEGIN {
     p = ENVIRON["NOTES_PATH"]
@@ -62,12 +65,16 @@ NOTES_PATH="$NOTES_FILE" awk -v new="$VERSION" -v date="$DATE" '
     while ((getline line < p) > 0) body = body line "\n"
     close(p)
   }
-  /^## \[/ && !done {
+  /^## \[Unreleased\]/ && !done {
+    # Open a fresh Unreleased section above the entry being released.
+    print "## [Unreleased]"
+    print ""
     print "## [" new "] - " date
     print ""
     printf "%s", body
     print ""
     done = 1
+    next
   }
   { print }
 ' CHANGELOG.md > CHANGELOG.md.tmp && mv CHANGELOG.md.tmp CHANGELOG.md
@@ -76,7 +83,7 @@ awk -v prev="$CURRENT_VERSION" -v new="$VERSION" '
   /^\[Unreleased\]:/ {
     sub("v" prev "...HEAD", "v" new "...HEAD")
     print
-    print "[" new "]: https://github.com/ChenChenyaqi/peaches/compare/v" prev "...v" new
+    print "[" new "]: https://github.com/0xClumzzy/peaches/compare/v" prev "...v" new
     next
   }
   { print }
@@ -117,7 +124,7 @@ git push origin "v$VERSION"
 
 log "B4 · publish GitHub release"
 gh release create "v$VERSION" --title "v$VERSION" --notes-file "$NOTES_FILE"
-echo "    https://github.com/ChenChenyaqi/peaches/releases/tag/v$VERSION"
+echo "    https://github.com/0xClumzzy/peaches/releases/tag/v$VERSION"
 
 # ─── C. sync develop ────────────────────────────────────────────────────────
 log "C1 · sync main back to develop"

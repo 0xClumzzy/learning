@@ -1,6 +1,11 @@
 import { describe, it, expect } from 'vitest';
 import type { QuizQuestion } from '@/components/quiz/types';
-import { resolveQuizKey, type ResolveQuizKeyCtx } from '@/components/quiz/useQuizKeyboard';
+import {
+  resolveQuizKey,
+  isInteractiveTarget,
+  shouldSuppressSpace,
+  type ResolveQuizKeyCtx,
+} from '@/components/quiz/useQuizKeyboard';
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -40,6 +45,53 @@ function ctx(overrides: Partial<ResolveQuizKeyCtx> = {}): ResolveQuizKeyCtx {
     ...overrides,
   };
 }
+
+/* ================================================================== */
+/*  Space handling                                                     */
+/* ================================================================== */
+
+/** Minimal element stub carrying just what the guard reads. */
+function el(tagName: string, extra: Partial<HTMLElement> = {}): HTMLElement {
+  return {
+    tagName: tagName.toUpperCase(),
+    isContentEditable: false,
+    getAttribute: () => null,
+    ...extra,
+  } as unknown as HTMLElement;
+}
+
+describe('Space key handling', () => {
+  it('treats buttons, inputs and links as interactive', () => {
+    for (const tag of ['BUTTON', 'INPUT', 'TEXTAREA', 'SELECT', 'A', 'SUMMARY']) {
+      expect(isInteractiveTarget(el(tag)), tag).toBe(true);
+    }
+  });
+
+  it('treats contenteditable and ARIA roles as interactive', () => {
+    expect(isInteractiveTarget(el('DIV', { isContentEditable: true }))).toBe(true);
+    for (const role of ['button', 'option', 'radio', 'checkbox']) {
+      const target = el('DIV', { getAttribute: () => role });
+      expect(isInteractiveTarget(target), role).toBe(true);
+    }
+  });
+
+  it('treats plain structural elements as non-interactive', () => {
+    expect(isInteractiveTarget(el('DIV'))).toBe(false);
+    expect(isInteractiveTarget(el('ARTICLE'))).toBe(false);
+    expect(isInteractiveTarget(null)).toBe(false);
+  });
+
+  it('does NOT suppress Space on a focused quiz option button', () => {
+    // The regression: Space was preventDefault()d for every non-text target,
+    // so a keyboard user could not activate any quiz option.
+    expect(shouldSuppressSpace(el('BUTTON'))).toBe(false);
+    expect(shouldSuppressSpace(el('INPUT'))).toBe(false);
+  });
+
+  it('still suppresses Space on the dialog itself to stop page scroll', () => {
+    expect(shouldSuppressSpace(el('DIV'))).toBe(true);
+  });
+});
 
 /* ================================================================== */
 /*  Submit                                                             */

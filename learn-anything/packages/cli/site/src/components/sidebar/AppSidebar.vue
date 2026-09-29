@@ -68,30 +68,26 @@ function onQuizBatchSelected(batch: {
   />
 
   <aside
-    class="fixed top-0 left-0 bottom-0 z-40 w-68 bg-(--color-bg-alt) backdrop-blur-2xl flex flex-col transition-transform duration-200 lg:translate-x-0 border-r border-(--color-divider)"
+    class="fixed top-0 left-0 bottom-0 z-40 w-62 bg-(--color-bg-alt) flex flex-col transition-transform duration-200 lg:translate-x-0 border-r border-(--color-divider)"
     :class="mobileOpen ? 'translate-x-0' : '-translate-x-full'"
   >
-    <div class="px-6 pt-6 pb-4">
+    <div class="px-5 pt-6 pb-5">
       <button
         class="flex items-center gap-2.5 cursor-pointer group"
         @click="emit('back-to-dashboard')"
       >
-        <PeachMark
-          class="w-6 h-6 shrink-0 transition-transform duration-200 group-hover:rotate-6"
-        />
-        <span
-          class="text-base font-semibold text-text-1 group-hover:text-brand-2 transition-colors"
-        >
+        <PeachMark class="w-[18px] h-[18px] shrink-0 drop-shadow-[0_0_7px_var(--color-glow)]" />
+        <span class="text-sm font-semibold text-text-1 group-hover:text-brand-2 transition-colors">
           Peaches
         </span>
       </button>
     </div>
 
-    <div class="px-6 pb-3">
+    <div class="px-5 pb-3">
       <SearchTrigger @open="emit('search-open')" />
     </div>
 
-    <div class="mx-6 border-t border-(--color-divider)" />
+    <div class="mx-5 border-t border-(--color-divider)" />
 
     <!-- Dashboard: topic list -->
     <SidebarDashboard v-if="context === 'dashboard'" @topic-selected="onTopicSelected" />

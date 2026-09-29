@@ -6,8 +6,8 @@
 
 <p align="center">
   <strong>Pick a topic. Grow into it.</strong><br />
-  Turn your AI coding assistant into an interactive tutor — Socratic method &amp; TDD-style exercises.<br />
-  <em>Now with a built-in visual learning dashboard.</em>
+  A security tutor that lives in your AI coding assistant — Socratic deep-dives, hands-on security labs, and spaced repetition.<br />
+  <em>Built for chronic ADHD: one next step, never a wall of gaps.</em>
 </p>
 
 <p align="center">
@@ -17,23 +17,34 @@
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License MIT" /></a>
 </p>
 
-<p align="center">
-  <a href="./README.md">English</a> · <a href="./README.zh-CN.md">中文</a>
-</p>
-
 ---
 
 ## What is Peaches?
 
-**Peaches** is an AI-powered recursive learning system that generates skill and command files for **30+ AI coding tools** — Claude Code, Cursor, Codex, OpenCode, and more. Once generated, your AI assistant gains six slash commands that guide you through systematically mastering any technical topic:
+**Peaches** is an AI-powered security curriculum that generates skill and command files for **28 AI coding tools** — Claude Code, Cursor, Codex, OpenCode, and more. Your assistant gains seven slash commands covering the full spectrum:
 
-- 🧭 **Choose your own path** — AI generates a knowledge map; you decide what to learn next
-- 🎓 **Recursive learning method** — Recursive explanations that follow your curiosity as deep as you want
-- 🧪 **TDD-style practice** — Write real code with structured feedback, from beginner to challenge
-- 📝 **Adaptive quizzes** — Quick text Q&A quizzes, graded and saved as reusable question decks
-- 📊 **Spaced repetition** — Smart review that surfaces weak spots when you need them most
-- 🔥 **Knowledge visualization** — Heatmap showing exactly where you stand
-- 🖥️ **Visual Dashboard** — Browse knowledge maps, session notes, and exercises in a rich web interface
+🛡️ **AppSec & defensive** ▸ OWASP Top 10, secure design, code review, authn/authz, secrets, supply chain, incident response
+🎯 **Offensive** ▸ recon, exploitation primitives, web/mobile/cloud attack surface, reverse engineering, CTFs
+🔐 **Cryptography** ▸ primitives, key management, protocol design, common crypto flaws
+🧱 **Foundations** ▸ networking, DNS, TLS/TCP/IP, OS internals, Linux hardening
+
+Every offensive concept is taught **paired with its defence and its detection signal**, and every lab runs locally or on a deliberately vulnerable target.
+
+### Built for chronic ADHD
+
+The bottleneck with a learning system is rarely ability — it is friction, decision paralysis, and shame after a lapse. Peaches is designed around that:
+
+| Problem | What Peaches does |
+| :--- | :--- |
+| A big opening move | The map starts at **one** concept and grows on demand — never a 25-item syllabus |
+| "What do I do now?" | **`/peaches:next`** picks the single best action and starts it. No menu, no recall |
+| Choice paralysis | Every workflow recommends one next step instead of listing options |
+| Lost your place | Every workflow resumes the exact thing you were last doing |
+| A lapse turns into shame | No streaks, no "days ago", no catch-up nagging. Long gaps silently widen the interval |
+| A wall of unfinished | Progress views show only what you've touched. Unexplored is absent, not grey |
+| Sessions you can't cut short | Every change is valid whether you return in five minutes or five weeks |
+
+These rules live in one place — `ADHD_PROTOCOL` in `_shared.ts` — and are imported by all seven workflows, so behaviour stays consistent. A test fails the build if any workflow drops it, or reintroduces lapse-guilt language.
 
 ## Quick Start
 
@@ -55,16 +66,20 @@ During `init` or `update`, you'll be prompted to enable **Context7** for documen
 
 > **Setup:** Run `npx ctx7 setup` or visit the [Context7 docs](https://context7.com/docs/resources/all-clients) for your AI tool.
 
-### After Init — Six Learning Commands
+### After Init — Seven Commands
 
-| Command                  | What it does                                                 |
-| :----------------------- | :----------------------------------------------------------- |
-| `/peaches:topic <name>`    | Initialize a topic, generate a knowledge map, track progress |
-| `/peaches:explain <name>`  | Recursive learning method — go as deep as you want           |
-| `/peaches:practice <name>` | TDD-style coding exercises with structured feedback          |
-| `/peaches:review [name]`   | Spaced repetition review with personalized next-step plan    |
-| `/peaches:status [name]`   | Knowledge map heatmap — mastery, practice counts, confidence |
-| `/peaches:quiz <name>`     | Quick text Q&A quiz — graded and saved for re-practice       |
+| Command | What it does |
+| :--- | :--- |
+| `/peaches:next` | **Start here.** Picks the single best next step and begins it. No arguments, no recall |
+| `/peaches:topic <name>` | Start or resume a security topic; the map grows one concept at a time |
+| `/peaches:explain <name>` | The mechanism — attack and defence, one level deep unless you ask for more |
+| `/peaches:practice <name>` | Security labs: find the flaw, build the primitive, harden the fix, or read the evidence |
+| `/peaches:review [name]` | Decide what to reinforce next from your progress |
+| `/peaches:status [name]` | Heatmap of the concepts you have actually touched |
+| `/peaches:quiz <name>` | Quick five-question quiz, saved as a reusable deck |
+
+> `/peaches:next` is the whole onboarding. If you only ever run one command, run
+> that one.
 
 ### Visual Learning Dashboard
 
@@ -86,29 +101,37 @@ npx peaches serve --no-open
 
 The dashboard provides:
 
-- **Knowledge Map** — Markdown-rendered overview of your learning topic
-- **Session Notes** — Browse and read all learning session notes organized by domain
-- **Exercise Viewer** — View starter code, solutions, and practice results with syntax highlighting
-- **Dark Mode** — Light/dark theme toggle
-- **i18n** — Full English and Chinese interface
-- **Hot Reload** — Auto-refresh when you add or modify topic files
+▪ **Knowledge Map** ▸ Markdown-rendered overview of your learning topic
+▪ **Session Notes** ▸ browse and read every session note, organized by domain
+▪ **Exercise Viewer** ▸ starter code, solutions, and practice results, with syntax highlighting
+▪ **Dark only** ▸ a deliberate single dark theme, tuned for contrast
+▪ **i18n** ▸ full English and Chinese interface
+▪ **Hot Reload** ▸ auto-refresh when you add or modify topic files
 
 ## How It Works
 
 `init` is a one-time, local generation step. There is no daemon and no account — Peaches writes plain files that your assistant reads as instructions. _(If you opt into Context7 during setup, your assistant will fetch official library docs from `context7.com`; that is the only network call, and it is optional.)_
 
-**1. Generate.** Peaches writes a command file and a skill file for each of the six workflows, using whatever format your tool expects.
+**1. Generate.** Peaches writes a command file and a skill file for each of the seven workflows, using whatever format your tool expects.
 
 **2. Adopt a persona.** Each skill opens by casting your assistant into a specific Peaches role, so behaviour stays consistent no matter which tool you drive:
 
-| Command           | Assistant becomes             | Effect                                                                        |
-| :---------------- | :---------------------------- | :---------------------------------------------------------------------------- |
-| `/peaches:topic`    | Peaches' _Knowledge Mentor_   | creates `state.json`, renders `knowledge-map.md`, sets up `sessions/`         |
-| `/peaches:explain`  | Peaches' _Explanation Mentor_ | writes `sessions/<domain>/<concept>-<date>.md`, updates `state.json`          |
-| `/peaches:practice` | Peaches' _Practice Coach_     | writes `exercises/<concept-slug>/…-practice-<date>.md`, updates `state.json`  |
-| `/peaches:quiz`     | Peaches' _Quiz Coach_         | writes `quizzes/<concept-slug>/…-quiz-<timestamp>.json`, updates `state.json` |
-| `/peaches:review`   | Peaches' _Learning Analyst_   | read-only — reads `state.json` and plans what to do next                      |
-| `/peaches:status`   | Peaches' _Status Visualizer_  | read-only — runs the status script over `state.json`                          |
+| Command | Assistant becomes | Effect |
+| :--- | :--- | :--- |
+| `/peaches:next` | Peaches' _Next Step Coach_ | read-only — reads `state.json`, picks one action, starts it |
+| `/peaches:topic` | Peaches' _Knowledge Mentor_ | creates `state.json`, renders `knowledge-map.md`, sets up `sessions/` |
+| `/peaches:explain` | Peaches' _Explanation Mentor_ | writes `sessions/<domain>/<concept>-<date>.md`, updates `state.json` |
+| `/peaches:practice` | Peaches' _Practice Coach_ | writes `exercises/<concept-slug>/…-practice-<date>.md`, updates `state.json` |
+| `/peaches:quiz` | Peaches' _Quiz Coach_ | writes `quizzes/<concept-slug>/…-quiz-<timestamp>.json`, updates `state.json` |
+| `/peaches:review` | Peaches' _Learning Analyst_ | read-only — reads `state.json` and plans what to reinforce |
+| `/peaches:status` | Peaches' _Status Visualizer_ | read-only — runs the status script over `state.json` |
+
+Every skill also carries two shared blocks, so the behaviour is identical whichever
+command you run:
+
+✦ **`SECURITY_SCOPE`** ✧ the four tracks, the "pair every attack with its defence"
+  rule, the authorise-before-offensive-operations boundary, and CVE-currency guidance.
+◆ **`ADHD_PROTOCOL`** ◇ the ten interaction rules in the table above.
 
 **3. Keep the state.** Every workflow updates `state.json`, which is what makes progress, spaced repetition, and the dashboard work later.
 
@@ -148,12 +171,12 @@ peaches/
 │   │   ├── src/
 │   │   │   ├── cli/             # Commander.js CLI entry point
 │   │   │   ├── core/            # init, config, command generation, templates
-│   │   │   ├── i18n/            # en + zh-CN locales
+│   │   │   ├── i18n/            # en locale messages
 │   │   │   └── utils/           # Filesystem, interactive helpers
 │   │   ├── bin/                 # peaches binary
 │   │   └── package.json
-│   └── gui/                     # peaches-gui — coming soon 🚧
-│       └── README.md
+├── openspec/                     # Spec-driven change proposals and capability specs
+├── .github/workflows/ci.yml      # Lint, typecheck, test (Node 20/22), build
 ├── pnpm-workspace.yaml          # pnpm workspace config
 ├── tsconfig.base.json           # Shared compiler options
 ├── package.json                 # Workspace root (private)
@@ -162,12 +185,14 @@ peaches/
 
 | Package                                | npm                                                                                                                    | Description                                              |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- |
-| [`peaches`](./packages/cli) | [![npm](https://img.shields.io/npm/v/peaches?color=blue)](https://www.npmjs.com/package/peaches) | CLI tool — generate skill/command files for 30+ AI tools |
-| `peaches-gui`                   | _private_                                                                                                              | Graphical desktop interface _(in development)_           |
+| [`peaches`](./packages/cli) | [![npm](https://img.shields.io/npm/v/peaches?color=blue)](https://www.npmjs.com/package/peaches) | CLI tool — generate skill/command files for 28 AI tools |
+| `peaches-site`                 | _private_                                                                                                              | The visual learning dashboard (Vue 3 + Vite)             |
+
+The dashboard at `packages/cli/site/` is the graphical interface; it is bundled into the published CLI and served by `peaches serve`.
 
 ## Supported AI Tools
 
-> Manage, Amazon Q Developer, Antigravity, Auggie, Bob Shell, Claude Code, Cline, Codex, ForgeCode, CodeBuddy Code, Continue, CoStrict, Crush, Cursor, Factory Droid, Gemini CLI, GitHub Copilot, iFlow, Junie, Kilo Code, Kiro, OpenCode, Pi, Qoder, Lingma, Qwen Code, RooCode, Trae, Windsurf, and AGENTS.md-compatible assistants.
+> Amazon Q Developer, Antigravity, Auggie, Bob Shell, Claude Code, Cline, Codex, ForgeCode, CodeBuddy Code, Continue, CoStrict, Crush, Cursor, Factory Droid, Gemini CLI, GitHub Copilot, iFlow, Junie, Kilo Code, Kiro, OpenCode, Pi, Qoder, Lingma, Qwen Code, RooCode, Trae, Windsurf, and AGENTS.md-compatible assistants.
 
 ```bash
 # Update existing skill files to the latest version (auto-detects installed tools)
@@ -178,13 +203,13 @@ npx peaches update
 
 ### Prerequisites
 
-- **Node.js** ≥ 20
-- **pnpm** ≥ 9
+◦ **Node.js** ≥ 20
+◦ **pnpm** ≥ 10 (the workspace uses `allowBuilds`, a pnpm 10 setting)
 
 ### Setup
 
 ```bash
-git clone https://github.com/ChenChenyaqi/peaches.git
+git clone https://github.com/0xClumzzy/peaches.git
 cd peaches
 pnpm install
 ```
@@ -211,20 +236,20 @@ pnpm -F peaches dev:cli    # Build and run CLI locally
 
 ## Star History
 
-<a href="https://star-history.dera.page/#ChenChenyaqi/peaches&type=date&legend=top-left">
+<a href="https://star-history.dera.page/#0xClumzzy/peaches&type=date&legend=top-left">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/peaches&type=date&theme=dark&legend=top-left" />
-    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=ChenChenyaqi/peaches&type=date&legend=top-left" />
-    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=ChenChenyaqi/peaches&type=date&legend=top-left" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=0xClumzzy/peaches&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=0xClumzzy/peaches&type=date&legend=top-left" />
+    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=0xClumzzy/peaches&type=date&legend=top-left" />
   </picture>
 </a>
 
 ## License
 
-[MIT](./LICENSE) © [yaqi chen](https://github.com/ChenChenyaqi)
+[MIT](./LICENSE) © [0xClumzzy](https://github.com/0xClumzzy)
 
 ---
 
 <p align="center">
-  <sub>Built with ❤️ for curious minds · <a href="https://github.com/ChenChenyaqi/peaches">GitHub</a> · <a href="./CONTRIBUTING.md">Contributing</a> · <a href="./CHANGELOG.md">Changelog</a></sub>
+  <sub>Built with ❤️ for curious minds · <a href="https://github.com/0xClumzzy/peaches">GitHub</a> · <a href="./CONTRIBUTING.md">Contributing</a> · <a href="./CHANGELOG.md">Changelog</a></sub>
 </p>

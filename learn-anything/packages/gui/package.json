@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "description": "Peaches GUI (under construction)",
-  "homepage": "https://github.com/ChenChenyaqi/peaches",
+  "homepage": "https://github.com/0xClumzzy/peaches",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChenChenyaqi/peaches"
+    "url": "https://github.com/0xClumzzy/peaches"
   },
   "license": "AGPL-3.0-only",
-  "author": "yaqi chen"
+  "author": "0xClumzzy"
 }

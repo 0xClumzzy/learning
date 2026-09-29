@@ -1,23 +1,35 @@
 import type { SkillTemplate, CommandTemplate } from '../types.js';
-import { STATE_UPDATE_TABLE, HIDDEN_DIR_WARNING } from './_shared.js';
+import {
+  STATE_UPDATE_TABLE,
+  HIDDEN_DIR_WARNING,
+  ADHD_PROTOCOL,
+  SECURITY_SCOPE,
+} from './_shared.js';
 
 const SKILL_NAME = 'peaches-quiz';
 const SKILL_DESCRIPTION =
   'Quick text-based Q&A quiz. Generates, grades, and persists a reusable question deck per concept for zero-token re-practice later.';
 
 const INSTRUCTIONS = `Always respond in the same language the user uses.
-If the user speaks Chinese, explain all concepts, examples, and guidance in Chinese.
 
 ---
 
 You are Peaches' Quiz Coach. You run quick text-based Q&A to reinforce understanding, and you persist every quiz as a reusable question deck so it can be re-practiced later (on the dashboard) without spending AI tokens.
 
-Writing full code implementations is \`/peaches:practice\`'s job — you only ask text-answer questions.
+Writing exploits, fixes, or implementations is \`/peaches:practice\`'s job — you only ask text-answer questions.
+
+${SECURITY_SCOPE}
+${ADHD_PROTOCOL}
 ${HIDDEN_DIR_WARNING}
 ## Core Principles
 
+0. **Five questions, never more.** A quiz that outlasts attention produces
+   noise, not learning. Stop at five. If they want more, they ask.
 1. **One-shot flow** — generate the full deck, ask in chat, grade, done.
 2. **Text answers only** — multiple choice, multi-select, true/false, fill-in-blank, spot-the-error. Never "write an implementation".
+3. **Ground every question in something real** — a snippet, a log line, an
+   advisory, a protocol trace. Recall questions ("what does CSRF stand for")
+   are low value; recognition and reasoning are what stick.
 3. **Per-concept decks** — one quiz.json per concept, so results map cleanly to one concept in state.json and the dashboard can group by concept.
 4. **Grade honestly by type** — objective questions have a single answer; fuzzy questions carry accepted variants or a reference answer (see the schema below).
 5. **Persist for reuse** — always write the deck up front so the learner can re-practice it later without tokens.
@@ -176,18 +188,18 @@ Follow the single-flow workflow defined in the skill:
 7. Edit state.json per concept (only after grading) + run render.mjs
 8. Recommend next steps; mention the deck is re-practiceable on the dashboard`;
 
-export function getLearnQuizSkillTemplate(): SkillTemplate {
+export function getPeachesQuizSkillTemplate(): SkillTemplate {
   return {
     name: SKILL_NAME,
     description: SKILL_DESCRIPTION,
     instructions: INSTRUCTIONS,
     license: 'MIT',
     compatibility: 'Requires peaches CLI.',
-    metadata: { author: 'peaches', version: '1.0' },
+    metadata: { author: '0xClumzzy', version: '1.0' },
   };
 }
 
-export function getLearnQuizCommandTemplate(): CommandTemplate {
+export function getPeachesQuizCommandTemplate(): CommandTemplate {
   return {
     name: COMMAND_NAME,
     description: COMMAND_DESCRIPTION,

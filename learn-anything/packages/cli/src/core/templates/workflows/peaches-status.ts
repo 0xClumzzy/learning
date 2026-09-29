@@ -1,38 +1,51 @@
 import type { SkillTemplate, CommandTemplate } from '../types.js';
+import { ADHD_PROTOCOL, SECURITY_SCOPE } from './_shared.js';
 
 const SKILL_NAME = 'peaches-status';
 const SKILL_DESCRIPTION =
-  'Visualize your current learning state. Display a knowledge map heatmap with mastery status for each concept.';
+  'Show what you have under way. A knowledge-map heatmap of concepts you have actually touched.';
 
 const INSTRUCTIONS = `You are Peaches' Status Visualizer. Your sole task is to run the status script and present its output to the user.
 
+${SECURITY_SCOPE}
+${ADHD_PROTOCOL}
+
+## How to present the heatmap
+
+The script is the source of truth — present its output, do not recompute it.
+When you narrate it, obey the protocol:
+
+- **Report only what exists.** Concepts with \`unexplored\` status are not
+  progress and not news. Do not list them, count them, or summarise the backlog.
+  If the user asks "how much is left?", answer plainly with a number; do not
+  volunteer it.
+- **No percentage of the whole.** A "17% complete" headline is a standing
+  reminder of the unfinished. Lead with what is mastered or under way instead.
+- **No recency.** Never mention how long ago anything happened.
+- **End with one next action**, not a list.
+
 ## Command: /peaches-status [topic-name]
 
-### Step 1: Determine Locale
-
-- If the user speaks Chinese, use \`--locale zh-CN\`
-- Otherwise, use \`--locale en\` (default)
-
-### Step 2: Determine Mode
+### Step 1: Determine Mode
 
 - If the user **specified a topic name**: run the script with that single topic (detailed heatmap)
 - If the user did **NOT** specify a topic:
   - Run the script with \`--all\` flag to show a summary of **all** topics
 
-### Step 3: Run Status Script
+### Step 2: Run Status Script
 
 Use the Bash tool to run the status script (located in the scripts/ directory next to this SKILL.md file):
 
 **Single topic (detailed heatmap):**
 \`\`\`bash
 SCRIPT=$(find . -path '*/peaches-status/scripts/status.mjs' -print -quit 2>/dev/null)
-node "$SCRIPT" --locale <locale> ./.peaches/topics/<topic-name>
+node "$SCRIPT" ./.peaches/topics/<topic-name>
 \`\`\`
 
 **All topics (summary by topic):**
 \`\`\`bash
 SCRIPT=$(find . -path '*/peaches-status/scripts/status.mjs' -print -quit 2>/dev/null)
-node "$SCRIPT" --all --locale <locale> ./.peaches/topics
+node "$SCRIPT" --all ./.peaches/topics
 \`\`\`
 
 The script reads state.json, validates it, and outputs a formatted heatmap or topic summary directly.
@@ -52,23 +65,22 @@ const COMMAND_DESCRIPTION =
 
 const COMMAND_CONTENT = `Use the peaches-status skill to handle the user's /peaches-status [topic-name] request.
 Follow the workflow defined in the skill:
-1. Determine locale based on user's language (zh-CN or en)
-2. Determine mode: single topic (detailed) or all topics (summary)
-3. Run status.mjs script with appropriate flags
+1. Determine mode: single topic (detailed) or all topics (summary)
+2. Run status.mjs script with appropriate flags
 Show the script output to the user.`;
 
-export function getLearnStatusSkillTemplate(): SkillTemplate {
+export function getPeachesStatusSkillTemplate(): SkillTemplate {
   return {
     name: SKILL_NAME,
     description: SKILL_DESCRIPTION,
     instructions: INSTRUCTIONS,
     license: 'MIT',
     compatibility: 'Requires peaches CLI.',
-    metadata: { author: 'peaches', version: '1.0' },
+    metadata: { author: '0xClumzzy', version: '1.0' },
   };
 }
 
-export function getLearnStatusCommandTemplate(): CommandTemplate {
+export function getPeachesStatusCommandTemplate(): CommandTemplate {
   return {
     name: COMMAND_NAME,
     description: COMMAND_DESCRIPTION,

@@ -7,7 +7,15 @@ export interface AIToolOption {
   successLabel?: string;
   skillsDir?: string;
   detectionPaths?: string[];
+  /**
+   * Primary supported target. Pre-selected in the interactive picker even when
+   * nothing is detected, and listed first. Exactly one tool carries this.
+   */
+  preferred?: boolean;
 }
+
+/** The single primary target. OpenCode. */
+export const PREFERRED_TOOL = 'opencode';
 
 export const AI_TOOLS: AIToolOption[] = [
   {
@@ -129,6 +137,7 @@ export const AI_TOOLS: AIToolOption[] = [
     available: true,
     successLabel: 'OpenCode',
     skillsDir: '.opencode',
+    preferred: true,
   },
   { name: 'Pi', value: 'pi', available: true, successLabel: 'Pi', skillsDir: '.pi' },
   { name: 'Qoder', value: 'qoder', available: true, successLabel: 'Qoder', skillsDir: '.qoder' },

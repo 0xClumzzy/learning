@@ -1,4 +1,10 @@
-export type SupportedLocale = 'zh-CN' | 'en';
+/**
+ * Peaches ships in English only. The i18n layer is retained as a seam for
+ * future locales, but there is exactly one: `en`.
+ */
+export type SupportedLocale = 'en';
+
+export const SUPPORTED_LOCALES: readonly SupportedLocale[] = ['en'];
 
 export interface ServeMessages {
   startingServer: string;
@@ -22,7 +28,6 @@ export interface CLIMessages {
   errorPrefix: (msg: string) => string;
   updateComplete: string;
   forceOption: string;
-  langOption: string;
   portOption: string;
   strictPortOption: string;
   noOpenOption: string;
@@ -34,7 +39,8 @@ export interface InitMessages {
   header: string;
   noToolsSelected: string;
   availableTools: (tools: string) => string;
-  skillGenerated: (toolName: string) => string;
+  missingCompiledScript: (filename: string, scriptPath: string) => string;
+  skillGenerated: (toolName: string, count: number) => string;
   initComplete: string;
   globalDataPath: (dir: string) => string;
   startLearning: (example: string) => string;

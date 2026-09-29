@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import { useI18n } from '@/composables/useI18n';
-import LanguageSwitch from './LanguageSwitch.vue';
 
 const { t, isDark, toggleDarkMode } = useI18n();
 </script>
 
 <template>
-  <div class="px-6 py-3 border-t border-(--color-divider) flex items-center justify-between">
-    <LanguageSwitch />
+  <div class="px-6 py-3 border-t border-(--color-divider) flex items-center justify-end">
     <button
       class="p-1.5 rounded-md text-text-2 hover:bg-(--color-bg-soft) hover:text-text-1 transition-colors cursor-pointer"
       :title="t('theme.switch')"

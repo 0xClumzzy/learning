@@ -196,7 +196,7 @@ git clone https://github.com/YOUR_USERNAME/peaches.git
 cd peaches
 
 # 2. Add the upstream remote and create a branch from develop
-git remote add upstream https://github.com/ChenChenyaqi/peaches.git
+git remote add upstream https://github.com/0xClumzzy/peaches.git
 git fetch upstream
 git checkout -b feat/my-feature upstream/develop
 

@@ -28,13 +28,6 @@ const REASON_KEYS: Record<ReviewReason, I18nKey> = {
   stale: 'review.stale',
 };
 
-const NEVER_SENTINEL = 365;
-
-function formatTime(item: ReviewItem): string {
-  if (item.daysSinceActivity >= NEVER_SENTINEL) return t('review.never');
-  return `${item.daysSinceActivity}${t('review.daysAgo')}`;
-}
-
 function goToTopic(slug: string): void {
   router.push(`/topics/${slug}`);
 }
@@ -63,10 +56,13 @@ function goToTopic(slug: string): void {
         <span class="flex-1 min-w-0 truncate text-sm font-medium text-text-1">
           {{ item.conceptName }}
         </span>
+        <!-- No "N days ago" column. The ADHD protocol treats a lapse as a
+             scheduling artefact, not debt, so recency is not shown at all.
+             What to work on is not the same question as how long ago. -->
         <span class="shrink-0 flex items-center gap-1.5 text-xs text-text-3 ml-3">
-          <span class="font-medium" :style="{ color: REASON_TEXT[item.reason] }">{{ t(REASON_KEYS[item.reason]) }}</span>
-          <span class="opacity-40">·</span>
-          <span class="tabular-nums">{{ formatTime(item) }}</span>
+          <span class="font-medium" :style="{ color: REASON_TEXT[item.reason] }">{{
+            t(REASON_KEYS[item.reason])
+          }}</span>
           <span class="opacity-40 hidden sm:inline">·</span>
           <span class="hidden sm:inline">{{ item.topicName }}</span>
         </span>

@@ -261,13 +261,13 @@ rdiff-backup restore --help # understand how /::/path works
 ```
 
 ---
-#### the vulnerability
+**the vulnerability**
 
 **argparse last-value-wins.**
 
 `--restrict-path` only accepts one value. when you pass it twice, argparse silently takes the last one and discards the first.
 
-the sudo rule hardcodes `--restrict-path /opt/backup` — but the `*` wildcard lets owen inject a second `--restrict-path` which **overwrites** the first.
+the sudo rule hardcodes `--restrict-path /opt/backup` but the `*` wildcard lets owen inject a second `--restrict-path` which **overwrites** the first.
 
 ---
 
@@ -287,12 +287,12 @@ bash
 
 ```bash
 sudo /usr/bin/rdiff-backup --server \
-  --restrict-path /opt/backup \   # ← from sudo rule (gets ignored)
+  --restrict-path /opt/backup \   # from sudo rule (gets ignored)
   --restrict-mode read-only \
-  --restrict-path /root           # ← injected via %s (wins)
+  --restrict-path /root           # injected via %s (wins)
 ```
 
-result: server is now restricted to `/root` instead of `/opt/backup` - reads root's entire home directory and mirrors it to `/tmp/rootbak`.
+result: server is now restricted to `/root` instead of `/opt/backup`, now  reads root's entire home directory and mirrors it to `/tmp/rootbak`.
 
 bash
 

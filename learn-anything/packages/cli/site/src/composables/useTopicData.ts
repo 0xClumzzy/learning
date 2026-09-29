@@ -38,6 +38,10 @@ let ready = false;
 let initPromise: Promise<void> | null = null;
 let initVersion = 0;
 
+/* Last init failure, surfaced so the UI can explain an empty dashboard
+   instead of showing a bare "no topics" state. Cleared on a good load. */
+const initError = ref<string | null>(null);
+
 const stateBySlug = new Map<string, StateV1>();
 const knowledgeMapBySlug = new Map<string, string>();
 const filesBySlug = new Map<string, TopicFiles>();
@@ -50,6 +54,10 @@ export function getDataVersion(): number {
   return dataVersion.value;
 }
 
+export function getInitError(): string | null {
+  return initError.value;
+}
+
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
 /* ------------------------------------------------------------------ */
@@ -57,6 +65,7 @@ export function getDataVersion(): number {
 function clearIndexes() {
   initPromise = null;
   ready = false;
+  initError.value = null;
   initVersion++;
   stateBySlug.clear();
   knowledgeMapBySlug.clear();
@@ -122,30 +131,51 @@ export async function initTopicData(): Promise<void> {
 
   const version = initVersion;
 
+  /* Never rejects: a server that is down or an aborted request must not
+     propagate out to callers (main.ts awaits this before mounting, and
+     listenForChanges chains off it). Failures land in `initError` and the
+     in-flight promise is released so a later SSE reload can retry. */
   initPromise = (async () => {
-    const resp = await fetch('/api/topics');
-    if (!resp.ok || version !== initVersion) {
-      initPromise = null;
-      return;
-    }
-    const summaries: TopicSummary[] = await resp.json();
+    try {
+      const resp = await fetch('/api/topics');
+      if (!resp.ok) {
+        throw new Error(`GET /api/topics responded ${resp.status} ${resp.statusText}`);
+      }
+      if (version !== initVersion) {
+        initPromise = null;
+        return;
+      }
+      const summaries: TopicSummary[] = await resp.json();
 
-    const topicDataMap = new Map();
-    await Promise.all(
-      summaries.map(async (s) => {
-        const r = await fetch(`/api/topics/${encodeURIComponent(s.slug)}`);
-        if (r.ok && version === initVersion) {
-          topicDataMap.set(s.slug, await r.json());
-        }
-      }),
-    );
+      const topicDataMap = new Map();
+      await Promise.all(
+        summaries.map(async (s) => {
+          try {
+            const r = await fetch(`/api/topics/${encodeURIComponent(s.slug)}`);
+            if (r.ok && version === initVersion) {
+              topicDataMap.set(s.slug, await r.json());
+            }
+          } catch {
+            /* One unreadable topic should not blank the whole dashboard;
+               the topic renders as not-found and the others still load. */
+          }
+        }),
+      );
 
-    if (version !== initVersion) {
+      if (version !== initVersion) {
+        initPromise = null;
+        return;
+      }
+      buildIndexes(summaries, topicDataMap);
+      ready = true;
+      initError.value = null;
+    } catch (err) {
+      initVersion++;
+      ready = false;
+      topicSummaryCache = null;
       initPromise = null;
-      return;
+      initError.value = err instanceof Error ? err.message : String(err);
     }
-    buildIndexes(summaries, topicDataMap);
-    ready = true;
   })();
 
   return initPromise;
@@ -159,6 +189,10 @@ export function listenForChanges(callback: () => void): () => void {
   return createSSEListener('/api/events', () => {
     clearIndexes();
     initTopicData().then(() => {
+      /* A failed re-init now resolves rather than rejects, so only signal a
+         data change when the reload actually produced indexes — otherwise
+         every component re-renders against an empty cache. */
+      if (!ready) return;
       dataVersion.value++;
       callback();
     });

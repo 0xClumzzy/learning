@@ -1,23 +1,27 @@
 export type { SkillTemplate, CommandTemplate } from './types.js';
 
 export {
-  getLearnTopicSkillTemplate,
-  getLearnTopicCommandTemplate,
+  getPeachesNextSkillTemplate,
+  getPeachesNextCommandTemplate,
+} from './workflows/peaches-next.js';
+export {
+  getPeachesTopicSkillTemplate,
+  getPeachesTopicCommandTemplate,
 } from './workflows/peaches-topic.js';
 export {
-  getLearnExplainSkillTemplate,
-  getLearnExplainCommandTemplate,
+  getPeachesExplainSkillTemplate,
+  getPeachesExplainCommandTemplate,
 } from './workflows/peaches-explain.js';
 export {
-  getLearnPracticeSkillTemplate,
-  getLearnPracticeCommandTemplate,
+  getPeachesPracticeSkillTemplate,
+  getPeachesPracticeCommandTemplate,
 } from './workflows/peaches-practice.js';
 export {
-  getLearnReviewSkillTemplate,
-  getLearnReviewCommandTemplate,
+  getPeachesReviewSkillTemplate,
+  getPeachesReviewCommandTemplate,
 } from './workflows/peaches-review.js';
 export {
-  getLearnStatusSkillTemplate,
-  getLearnStatusCommandTemplate,
+  getPeachesStatusSkillTemplate,
+  getPeachesStatusCommandTemplate,
 } from './workflows/peaches-status.js';
-export { getLearnQuizSkillTemplate, getLearnQuizCommandTemplate } from './workflows/peaches-quiz.js';
+export { getPeachesQuizSkillTemplate, getPeachesQuizCommandTemplate } from './workflows/peaches-quiz.js';

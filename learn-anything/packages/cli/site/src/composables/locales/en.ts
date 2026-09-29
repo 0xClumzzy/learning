@@ -28,7 +28,6 @@ const en = {
   'status.inProgress': 'In Progress',
   'status.needsPractice': 'Needs Practice',
   'status.unexplored': 'Unexplored',
-  'lang.switch': '中文',
   'theme.switch': 'Toggle theme',
   'sidebar.topics': 'Topics',
   'sidebar.exercises': 'Exercises',
@@ -90,6 +89,14 @@ const en = {
   'review.stale': 'Due for review',
   'review.daysAgo': 'd ago',
   'review.never': 'Never',
+  'dashboard.overview.explored': 'Explored',
+
+  // NextAction — the one promoted step
+  'next.continue': 'CONTINUE',
+  'next.reinforce': 'Worth another pass',
+  'next.needsPractice': 'Could use another run at it',
+  'next.lowConfidence': 'Shaky on the details',
+  'next.neverPracticed': 'Explained, not yet practised',
 };
 
 export type I18nKey = keyof typeof en;

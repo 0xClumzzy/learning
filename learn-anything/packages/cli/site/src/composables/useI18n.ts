@@ -1,6 +1,5 @@
 import { ref } from 'vue';
 import en, { type I18nKey } from './locales/en';
-import zhCN from './locales/zh-CN';
 
 export type { I18nKey } from './locales/en';
 
@@ -8,63 +7,44 @@ export type { I18nKey } from './locales/en';
 /*  Types                                                             */
 /* ------------------------------------------------------------------ */
 
-export type Locale = 'en' | 'zh-CN';
-
 type Messages = Record<I18nKey, string>;
 
-const messages: Record<Locale, Messages> = { en, 'zh-CN': zhCN };
+/* Peaches ships in English only. The lookup table is kept as a seam for
+   future locales rather than being collapsed to a bare import. */
+const messages: Record<'en', Messages> = { en };
 
 /* ------------------------------------------------------------------ */
 /*  Shared state (singleton across components)                        */
 /* ------------------------------------------------------------------ */
 
-const STORAGE_KEY = 'peaches-locale';
 const THEME_KEY = 'peaches-theme';
 
-function detectLocale(): Locale {
-  if (typeof localStorage === 'undefined') return 'en';
-  const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored === 'zh-CN' || stored === 'en') return stored;
-  return 'en';
-}
+const isDark = ref<boolean>(
+  typeof document !== 'undefined' ? document.documentElement.classList.contains('dark') : false,
+);
 
-const locale = ref<Locale>(detectLocale());
+const toggleDarkMode = (): void => {
+  const next = !isDark.value;
+  isDark.value = next;
+  document.documentElement.classList.toggle('dark', next);
+  if (typeof localStorage !== 'undefined') {
+    localStorage.setItem(THEME_KEY, next ? 'dark' : 'light');
+  }
+};
 
 /* ------------------------------------------------------------------ */
 /*  Composable                                                        */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Translation lookup plus theme control.
+ *
+ * `isDark` and `toggleDarkMode` are module-level on purpose: a per-instance
+ * ref here would give each component its own copy, and the class list is the
+ * real source of truth. Keep them at module scope.
+ */
 export function useI18n() {
-  const t = (key: I18nKey): string => {
-    return messages[locale.value][key];
-  };
+  const t = (key: I18nKey): string => messages.en[key];
 
-  const toggleLocale = (): void => {
-    locale.value = locale.value === 'en' ? 'zh-CN' : 'en';
-    if (typeof localStorage !== 'undefined') {
-      localStorage.setItem(STORAGE_KEY, locale.value);
-    }
-  };
-
-  const setLocale = (next: Locale): void => {
-    locale.value = next;
-    if (typeof localStorage !== 'undefined') {
-      localStorage.setItem(STORAGE_KEY, next);
-    }
-  };
-
-  const isDark = ref<boolean>(
-    typeof document !== 'undefined' ? document.documentElement.classList.contains('dark') : false,
-  );
-
-  const toggleDarkMode = (): void => {
-    const next = !isDark.value;
-    isDark.value = next;
-    document.documentElement.classList.toggle('dark', next);
-    if (typeof localStorage !== 'undefined') {
-      localStorage.setItem(THEME_KEY, next ? 'dark' : 'light');
-    }
-  };
-
-  return { locale, t, toggleLocale, setLocale, isDark, toggleDarkMode };
+  return { t, isDark, toggleDarkMode };
 }

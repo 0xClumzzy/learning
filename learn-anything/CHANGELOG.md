@@ -9,11 +9,52 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **Peaches is now a security curriculum**, covering the full spectrum: AppSec/defensive (OWASP Top 10, secure design, code review, authn/authz, secrets, supply chain, incident response), offensive (recon, exploitation primitives, web/mobile/cloud attack surface, reverse engineering, CTFs), cryptography, and foundations. Every offensive concept is now taught paired with its mitigation and its detection signal, and every lab states its blast radius and runs locally or against a deliberately vulnerable target.
+- **`/peaches:next`** — a new lowest-friction entry point. It reads your progress, picks the single best next action, and starts it. No arguments, no menu, no recall. If you only ever run one command, run that one.
+- **Designed for chronic ADHD.** Ten interaction rules now live in a single exported constant, `ADHD_PROTOCOL` (`packages/cli/src/core/templates/workflows/_shared.ts`), imported by all seven workflows:
+  ▪ the knowledge map starts at **one** concept and grows on demand, replacing the previous 15–25 concept up-front syllabus
+  ▪ every workflow recommends one action instead of listing options
+  ▪ every workflow resumes the exact thing last in progress
+  ▪ streaks, "days ago", recency, and catch-up language are gone; long gaps silently widen the review interval
+  ▪ progress views show only touched concepts: `unexplored` is no longer rendered as a grey bar or a backlog count
+  ▪ sessions are interruptible: every change is valid after five minutes or five weeks
+  ▪ `/peaches:quiz` is capped at five questions
+  `test/skill-templates.test.ts` now fails the build if any workflow drops `ADHD_PROTOCOL`/`SECURITY_SCOPE` or reintroduces lapse-guilt phrasing.
+- `NextAction.vue` — the promoted next-step component.
+- **CI workflow (`.github/workflows/ci.yml`).** `CONTRIBUTING.md` documented a four-job pipeline that did not exist, and `scripts/release.sh` gates on `gh pr checks` — with no checks attached, every release aborted before tagging. Now runs lint, format check, CLI typecheck, tests on Node 20 and 22, and a build that asserts `site-dist/index.html` exists.
+- **The dashboard can no longer white-screen.** `main.ts` awaited `initTopicData()` before `app.mount()`, and that function had no error handling around its `fetch` — so a stopped server or a failed request left a blank page with the error visible only in devtools. `initTopicData()` now never rejects: failures land on `getInitError()`, one unreadable topic no longer takes down the whole dashboard, and a failed SSE reload no longer re-renders every component against an empty cache.
+- **Space works on quiz options again.** The modal swallowed `Space` for every non-text target to stop page-scroll, which also killed the standard keyboard way to activate a focused option button. Suppression is now limited to non-interactive targets, via a tested `shouldSuppressSpace()` guard.
+- **Compiled scripts are loaded before any skill file is written.** A missing `dist/scripts/*.mjs` used to throw from inside the per-tool loop, leaving half-populated skill directories and no explanation. `init` now preloads every script up front and fails with a localized message before touching disk.
+- **`peaches init <path>` detects tools in the target project.** Interactive selection called `hasToolDir(process.cwd())`, so it pre-selected based on your current directory while writing into the target.
+- **Peaches is now English-only.** The `zh-CN` locale is removed from the CLI, the dashboard, and the `status.mjs` script; `--lang` and the dashboard language switch are gone. The i18n layer is kept as a one-locale seam, so a future translation is additive. See §Removed below.
+- **`.vue` files are formatted on commit** and `packages/cli/site-dist/` is no longer handed to Prettier, which made `pnpm format:check` fail on the minified bundle.
+- **The build no longer requires pnpm on PATH.** `bundle-site.mjs` shelled out to `pnpm exec vite build`; it now resolves Vite's bin script directly.
+- Removed four stray files tracked at the repo root (`.sh`, `.py`, `karabo.sh`, `karano.sh`).
+- Removed `packages/gui/`, an empty placeholder declaring `AGPL-3.0-only` in an otherwise MIT repository.
+- Added `pnpm --filter peaches-site dev` as `dev:site`, which the README documented but which did not exist.
+
+### Removed
+
+- **The `zh-CN` locale.** Peaches ships in English only. Removed `src/i18n/locales/zh-CN.ts` and the site's `composables/locales/zh-CN.ts`, the `--lang` CLI option (which had never been consistently applied to help text), the dashboard's language-switch button, the `--locale` flag on `status.mjs` and its Chinese `Strings` table, the Chinese status test fixtures, and `README.zh-CN.md`. `SupportedLocale` is now `'en'`; the i18n indirection is retained so a future locale is additive. Workflow prompts now say only "respond in the same language the user uses" — the CLI no longer claims a language the product does not have.
+- Fixed `scripts/release.sh` inserting the new version heading _above_ `## [Unreleased]` instead of consuming it.
+- `test/appSmoke.test.ts` — mounts the real `App.vue` and fails on any Vue error. Added after `PeachMark` shipped with an unassigned `defineProps`, which threw during render and blanked the entire SPA; the brand tests only asserted on the component's _text_, so nothing caught it. A render check is the only thing that catches that class of bug.
+- `@vitejs/plugin-vue` is now in the site's `vitest.config.ts`. It was missing entirely, so no test could ever mount an SFC.
+- `BRAND.md` — brand source of truth: the mark, the design language, the colour ramps, type, the product principles above, where each surface lives, and a checklist for future brand changes.
+- `test/brand.test.ts` — regression guards asserting the sidebar mark and `logo.svg` share identical path geometry, that the inlined mark keeps the green leaf and namespaces its gradient ids, and that the status tokens stay distinct and consistent between `@theme` and `.dark`.
 - **Peaches** — an AI-powered recursive learning system that turns your AI coding assistant into an interactive tutor. Tagline: _"Pick a topic. Grow into it."_ (English-only; a Chinese rendering was tried and dropped as unidiomatic).
-- `BRAND.md` — brand source of truth: the mark, the colour ramps, type, where each surface lives, and a checklist for future brand changes.
 
 ### Changed
 
+- **Dashboard visual redesign — "cool futurist, yet simple."** Depth now comes from elevation (`#07080b` -> `#0c0e13` -> `#11141a`) rather than heavier borders; hairlines dropped to `rgba(255,255,255,.06)`. A single peach light source (top-left) and a faint cyan counter-glow (bottom-right) replace the previous corner washes. Monospace now carries all numbers, labels, and nav counts, separating "system" from "content" without extra boxes. Card radius 20px -> 10px, sidebar 272px -> 248px, and the glass blur that was applied to cards and the sidebar rail is gone — glass is now reserved for modal surfaces. Glow is used once per view: the promoted action and the active progress segment.
+- **The dashboard now promotes exactly one next action.** A new `NextAction` band sits above the topic grid, reusing the existing review-priority ranking. It shows the single highest-priority concept and why, with one call to action, and renders nothing rather than an empty shell when there is no work to do.
+- **Knowledge-map rows are restructured**: status glyph, name, a 2px confidence track, and the percentage. Concepts that have never been opened render an em-dash and a 0-width track instead of `0%` — an untouched concept is not a deficit, so it no longer reads as one.
+- `in_progress` moved from leaf green to cool cyan `#46d6e8` for the futurist direction. **This diverges from the CLI's `status.mjs`, which still uses the blue circle emoji.** Aligning them is follow-up work.
+- **The theme palette is now single-source.** The `.dark` block that re-declared every token identically has been removed, so a token can no longer be edited in one place and drift in the other. `.dark` remains on `<html>` as a class marker. The theme is dark-only; the README no longer advertises a light/dark toggle that never worked.
+
+- `/peaches:practice` is now a security lab rather than a TDD exercise. The coach picks the lab type from the concept — find the vulnerability, build the primitive, harden the control, read the evidence, assess a CVE, or drive a real tool — and states the blast radius before the user starts.
+- `/peaches:review` recommends a single concept rather than a ranked list, and never prints a recency column.
+- `dirName` is now derived from `workflowId` (`` `peaches-${workflowId}` ``) instead of being hand-written alongside it, and `init.ts` keys script-copying on `workflowId`. Adding a workflow can no longer desync the on-disk directory name from the id the logic depends on — the failure mode was a skill silently shipping with no scripts.
+- The CLI no longer hardcodes the workflow count in its "N skill files generated" message; it reports the real number.
 - The site theme is **"Peach Glow"**: charcoal base `#111113` with a peach accent (`#f5a76f`). The peach mark (`logo.png` + `logo.svg`) is inlined in the dashboard sidebar from a single `PeachMark.vue` component.
 - The dashboard's modal glow shadows and background radial gradients now reference the `--color-glow` token instead of hardcoded `rgba(…)` values, so the accent is re-themeable from `main.css` alone.
 - Learning state lives in `.peaches/topics/`. Topics are plain Markdown and JSON, safe to commit and readable without the CLI installed.
@@ -21,11 +62,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - **Mastery states are now visually distinct in the knowledge map.** `mastered` and `needs_practice` both resolved to `--color-mastered`/`brand-2` (identical values), so two different states rendered pixel-identical in `MasteryTree` and in the `StatsHero` / `TopicProgressView` segmented ledgers — the one job those views have. The single-hue `--color-progress` token is replaced by a semantic status scale: `mastered` peach `#f5a76f`, `in_progress` leaf-green `#7fa65c`, `attention` (needs practice) coral `#e0605f`, `unexplored` grey. The quiz score bar (`>= 80 / >= 50 / below`) and the incorrect-answer ✗ in `QuizResults` were also remapped — the latter was brand peach, which read as a success colour on a wrong answer.
-
-### Added
-
-- `BRAND.md` — brand source of truth: mark, colour ramps, type, where each surface lives, what is deliberately _not_ rebranded, and a checklist for future brand changes.
-- `test/brand.test.ts` — regression guards asserting the sidebar mark and `logo.svg` share identical path geometry, that the inlined mark keeps the green leaf and namespaces its gradient ids, and that the status tokens stay distinct and consistent between `@theme` and `.dark`.
 
 ## [1.6.3] - 2026-07-21
 
@@ -353,35 +389,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Locale support: English (`en`) and Chinese (`zh-CN`).
 - MIT License.
 
-[Unreleased]: https://github.com/ChenChenyaqi/peaches/compare/v1.6.3...HEAD
-[1.6.3]: https://github.com/ChenChenyaqi/peaches/compare/v1.6.2...v1.6.3
-[1.6.2]: https://github.com/ChenChenyaqi/peaches/compare/v1.6.1...v1.6.2
-[1.6.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.6.0...v1.6.1
-[1.6.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.6...v1.6.0
-[1.5.6]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.5...v1.5.6
-[1.5.5]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.4...v1.5.5
-[1.5.4]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.3...v1.5.4
-[1.5.3]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.2...v1.5.3
-[1.5.2]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.1...v1.5.2
-[1.5.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.5.0...v1.5.1
-[1.5.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.4.0...v1.5.0
-[1.4.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.3.2...v1.4.0
-[1.3.2]: https://github.com/ChenChenyaqi/peaches/compare/v1.3.1...v1.3.2
-[1.3.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.3.0...v1.3.1
-[1.3.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.2.2...v1.3.0
-[1.2.2]: https://github.com/ChenChenyaqi/peaches/compare/v1.2.1...v1.2.2
-[1.2.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.2.0...v1.2.1
-[1.2.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.1.1...v1.2.0
-[1.1.1]: https://github.com/ChenChenyaqi/peaches/compare/v1.1.0...v1.1.1
-[1.1.0]: https://github.com/ChenChenyaqi/peaches/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.5.1...v1.0.0
-[0.5.1]: https://github.com/ChenChenyaqi/peaches/compare/v0.5.0...v0.5.1
-[0.5.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.4.2...v0.5.0
-[0.4.2]: https://github.com/ChenChenyaqi/peaches/compare/v0.4.1...v0.4.2
-[0.4.1]: https://github.com/ChenChenyaqi/peaches/compare/v0.4.0...v0.4.1
-[0.4.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.3.1...v0.4.0
-[0.3.1]: https://github.com/ChenChenyaqi/peaches/compare/v0.3.0...v0.3.1
-[0.3.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.2.1...v0.3.0
-[0.2.1]: https://github.com/ChenChenyaqi/peaches/compare/v0.2.0...v0.2.1
-[0.2.0]: https://github.com/ChenChenyaqi/peaches/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/ChenChenyaqi/peaches/releases/tag/v0.1.0
+[Unreleased]: https://github.com/0xClumzzy/peaches/compare/v1.6.3...HEAD
+[1.6.3]: https://github.com/0xClumzzy/peaches/compare/v1.6.2...v1.6.3
+[1.6.2]: https://github.com/0xClumzzy/peaches/compare/v1.6.1...v1.6.2
+[1.6.1]: https://github.com/0xClumzzy/peaches/compare/v1.6.0...v1.6.1
+[1.6.0]: https://github.com/0xClumzzy/peaches/compare/v1.5.6...v1.6.0
+[1.5.6]: https://github.com/0xClumzzy/peaches/compare/v1.5.5...v1.5.6
+[1.5.5]: https://github.com/0xClumzzy/peaches/compare/v1.5.4...v1.5.5
+[1.5.4]: https://github.com/0xClumzzy/peaches/compare/v1.5.3...v1.5.4
+[1.5.3]: https://github.com/0xClumzzy/peaches/compare/v1.5.2...v1.5.3
+[1.5.2]: https://github.com/0xClumzzy/peaches/compare/v1.5.1...v1.5.2
+[1.5.1]: https://github.com/0xClumzzy/peaches/compare/v1.5.0...v1.5.1
+[1.5.0]: https://github.com/0xClumzzy/peaches/compare/v1.4.0...v1.5.0
+[1.4.0]: https://github.com/0xClumzzy/peaches/compare/v1.3.2...v1.4.0
+[1.3.2]: https://github.com/0xClumzzy/peaches/compare/v1.3.1...v1.3.2
+[1.3.1]: https://github.com/0xClumzzy/peaches/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/0xClumzzy/peaches/compare/v1.2.2...v1.3.0
+[1.2.2]: https://github.com/0xClumzzy/peaches/compare/v1.2.1...v1.2.2
+[1.2.1]: https://github.com/0xClumzzy/peaches/compare/v1.2.0...v1.2.1
+[1.2.0]: https://github.com/0xClumzzy/peaches/compare/v1.1.1...v1.2.0
+[1.1.1]: https://github.com/0xClumzzy/peaches/compare/v1.1.0...v1.1.1
+[1.1.0]: https://github.com/0xClumzzy/peaches/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/0xClumzzy/peaches/compare/v0.5.1...v1.0.0
+[0.5.1]: https://github.com/0xClumzzy/peaches/compare/v0.5.0...v0.5.1
+[0.5.0]: https://github.com/0xClumzzy/peaches/compare/v0.4.2...v0.5.0
+[0.4.2]: https://github.com/0xClumzzy/peaches/compare/v0.4.1...v0.4.2
+[0.4.1]: https://github.com/0xClumzzy/peaches/compare/v0.4.0...v0.4.1
+[0.4.0]: https://github.com/0xClumzzy/peaches/compare/v0.3.1...v0.4.0
+[0.3.1]: https://github.com/0xClumzzy/peaches/compare/v0.3.0...v0.3.1
+[0.3.0]: https://github.com/0xClumzzy/peaches/compare/v0.2.1...v0.3.0
+[0.2.1]: https://github.com/0xClumzzy/peaches/compare/v0.2.0...v0.2.1
+[0.2.0]: https://github.com/0xClumzzy/peaches/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/0xClumzzy/peaches/releases/tag/v0.1.0

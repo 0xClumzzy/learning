@@ -5,5 +5,16 @@ dist/
 .claude/
 .peaches/
 pnpm-lock.yaml
+# Minified production bundle; reformatting it is meaningless and fails --check.
+packages/cli/site-dist/
+# Generated skill/command output committed to the repo. These are emitted by
+# `peaches init`/`update` from src/core/templates and are never hand-edited.
+.agent/
+.opencode/
+.cursor/
+.gemini/
+.codex/
+.windsurf/
+.github/
 # Prettier has no SVG parser; brand marks are hand-authored vector art.
 *.svg

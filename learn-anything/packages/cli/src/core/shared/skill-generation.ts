@@ -1,16 +1,18 @@
 import {
-  getLearnTopicSkillTemplate,
-  getLearnExplainSkillTemplate,
-  getLearnPracticeSkillTemplate,
-  getLearnReviewSkillTemplate,
-  getLearnStatusSkillTemplate,
-  getLearnQuizSkillTemplate,
-  getLearnTopicCommandTemplate,
-  getLearnExplainCommandTemplate,
-  getLearnPracticeCommandTemplate,
-  getLearnReviewCommandTemplate,
-  getLearnStatusCommandTemplate,
-  getLearnQuizCommandTemplate,
+  getPeachesNextSkillTemplate,
+  getPeachesTopicSkillTemplate,
+  getPeachesExplainSkillTemplate,
+  getPeachesPracticeSkillTemplate,
+  getPeachesReviewSkillTemplate,
+  getPeachesStatusSkillTemplate,
+  getPeachesQuizSkillTemplate,
+  getPeachesNextCommandTemplate,
+  getPeachesTopicCommandTemplate,
+  getPeachesExplainCommandTemplate,
+  getPeachesPracticeCommandTemplate,
+  getPeachesReviewCommandTemplate,
+  getPeachesStatusCommandTemplate,
+  getPeachesQuizCommandTemplate,
   type SkillTemplate,
 } from '../templates/skill-templates.js';
 import type { CommandContent } from '../command-generation/index.js';
@@ -22,53 +24,59 @@ export interface SkillTemplateEntry {
 }
 
 export interface CommandTemplateEntry {
-  template: ReturnType<typeof getLearnTopicCommandTemplate>;
+  template: ReturnType<typeof getPeachesTopicCommandTemplate>;
   id: string;
 }
 
 export function getSkillTemplates(): SkillTemplateEntry[] {
   return [
     {
-      template: getLearnTopicSkillTemplate(),
-      dirName: 'peaches-topic',
+      template: getPeachesNextSkillTemplate(),
+      workflowId: 'next',
+    },
+    {
+      template: getPeachesTopicSkillTemplate(),
       workflowId: 'topic',
     },
     {
-      template: getLearnExplainSkillTemplate(),
-      dirName: 'peaches-explain',
+      template: getPeachesExplainSkillTemplate(),
       workflowId: 'explain',
     },
     {
-      template: getLearnPracticeSkillTemplate(),
-      dirName: 'peaches-practice',
+      template: getPeachesPracticeSkillTemplate(),
       workflowId: 'practice',
     },
     {
-      template: getLearnReviewSkillTemplate(),
-      dirName: 'peaches-review',
+      template: getPeachesReviewSkillTemplate(),
       workflowId: 'review',
     },
     {
-      template: getLearnStatusSkillTemplate(),
-      dirName: 'peaches-status',
+      template: getPeachesStatusSkillTemplate(),
       workflowId: 'status',
     },
     {
-      template: getLearnQuizSkillTemplate(),
-      dirName: 'peaches-quiz',
+      template: getPeachesQuizSkillTemplate(),
       workflowId: 'quiz',
     },
-  ];
+  ].map(({ template, workflowId }) => ({
+    template,
+    workflowId,
+    // Derived, never hand-written: the skill directory is always
+    // `peaches-<workflowId>`. Keeping this in one place means adding a workflow
+    // cannot desync the on-disk name from the id logic keys on.
+    dirName: `peaches-${workflowId}`,
+  }));
 }
 
 export function getCommandTemplates(): CommandTemplateEntry[] {
   return [
-    { template: getLearnTopicCommandTemplate(), id: 'topic' },
-    { template: getLearnExplainCommandTemplate(), id: 'explain' },
-    { template: getLearnPracticeCommandTemplate(), id: 'practice' },
-    { template: getLearnReviewCommandTemplate(), id: 'review' },
-    { template: getLearnStatusCommandTemplate(), id: 'status' },
-    { template: getLearnQuizCommandTemplate(), id: 'quiz' },
+    { template: getPeachesNextCommandTemplate(), id: 'next' },
+    { template: getPeachesTopicCommandTemplate(), id: 'topic' },
+    { template: getPeachesExplainCommandTemplate(), id: 'explain' },
+    { template: getPeachesPracticeCommandTemplate(), id: 'practice' },
+    { template: getPeachesReviewCommandTemplate(), id: 'review' },
+    { template: getPeachesStatusCommandTemplate(), id: 'status' },
+    { template: getPeachesQuizCommandTemplate(), id: 'quiz' },
   ];
 }
 

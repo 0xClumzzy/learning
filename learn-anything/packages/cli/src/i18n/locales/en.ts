@@ -15,7 +15,6 @@ export const en: LocaleMessages = {
     errorPrefix: (msg: string) => `Error: ${msg}`,
     updateComplete: 'Peaches skill files have been updated.',
     forceOption: 'Skip confirmation prompt',
-    langOption: 'Display language: zh-CN or en (default: system locale)',
     portOption: 'Port for the dev server (default: 24278)',
     strictPortOption: 'Use the exact port from --port; do not auto-pick a free one when busy',
     noOpenOption: 'Do not open browser automatically',
@@ -28,10 +27,14 @@ export const en: LocaleMessages = {
     noToolsSelected:
       'No AI tools selected. Use --tools option to specify, or select in interactive mode.',
     availableTools: (tools: string) => `Available tools: ${tools}`,
-    skillGenerated: (toolName: string) => `  ✓ ${toolName} — 6 skill files generated`,
+    missingCompiledScript: (filename: string, scriptPath: string) =>
+      `Required script "${filename}" is missing from the installation (expected at ${scriptPath}).\n  Reinstall peaches, or run \`pnpm build\` if you are working from source.\n  No skill files were written.`,
+    skillGenerated: (toolName: string, count: number) =>
+      `  ✓ ${toolName} — ${count} skill files generated`,
     initComplete: '🎉 Peaches initialization complete!\n',
     globalDataPath: (dir: string) => `  Learning data stored at ${dir}/`,
-    startLearning: (example: string) => `  Run ${example} to start your first learning topic\n`,
+    startLearning: (example: string) =>
+      `  Run ${example} when you are ready — it will pick up where you left off\n`,
     availableCommands: 'Available learning commands:',
     cmdLine: (cmd: string, desc: string) => `  ${cmd}${desc}`,
     interactiveSelectPrompt:
@@ -54,7 +57,8 @@ export const en: LocaleMessages = {
       `Port ${from} is already in use — switching to port ${to}.`,
     portRangeExhausted: (start: number, end: number) =>
       `No free port found in range ${start}-${end}. Specify one manually with --port.`,
-    emptyTopics: 'No learning topics found in .peaches/topics/. Start learning with /peaches:topic.',
+    emptyTopics:
+      'No learning topics found in .peaches/topics/. Start learning with /peaches:topic.',
     serverStopped: 'Server stopped.',
     siteNotBuilt: 'Site files not found. Please reinstall the package or run the build step.',
   },

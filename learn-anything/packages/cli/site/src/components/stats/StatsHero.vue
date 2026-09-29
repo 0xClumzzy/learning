@@ -1,39 +1,79 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import { useI18n } from '@/composables/useI18n';
 import type { MasteryStats } from './useDashboardStats';
+import { STATUS_GLYPH } from './statusGlyph';
 
-defineProps<{ stats: MasteryStats }>();
+const props = defineProps<{ stats: MasteryStats }>();
 
 const { t } = useI18n();
+
+const cells = computed(() => [
+  {
+    key: 'mastered',
+    glyph: STATUS_GLYPH.mastered,
+    glyphClass: 'text-mastered',
+    value: props.stats.mastered,
+    label: t('status.mastered'),
+  },
+  {
+    key: 'in_progress',
+    glyph: STATUS_GLYPH.in_progress,
+    glyphClass: 'text-(--color-in-progress)',
+    value: props.stats.inProgress,
+    label: t('status.inProgress'),
+  },
+  {
+    key: 'needs_practice',
+    glyph: STATUS_GLYPH.needs_practice,
+    glyphClass: 'text-(--color-attention)',
+    value: props.stats.needsPractice,
+    label: t('status.needsPractice'),
+  },
+  {
+    key: 'unexplored',
+    glyph: STATUS_GLYPH.unexplored,
+    glyphClass: 'text-(--color-unmapped)',
+    value: props.stats.unexplored,
+    label: t('status.unexplored'),
+  },
+]);
 </script>
 
 <template>
-  <div class="p-6">
-    <!-- Editorial sentence: big numbers woven into prose -->
-    <p class="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-4 text-sm text-text-2">
-      <span>{{ t('status.mastered') }}</span>
-      <span class="text-2xl font-bold tabular-nums text-text-1 leading-none">{{
-        stats.mastered
-      }}</span>
-      <span class="text-text-3">/</span>
-      <span class="text-lg font-semibold tabular-nums text-text-3 leading-none">
-        {{ stats.totalConcepts }}
-      </span>
-      <span>{{ t('topic.concepts') }}</span>
-      <span class="text-text-3 mx-0.5">·</span>
-      <span class="text-2xl font-bold tabular-nums text-mastered leading-none"
-        >{{ stats.overallPct }}%</span
-      >
-    </p>
-
-    <!-- Segmented ledger rule: proportional by concept status -->
-    <div class="flex h-2.5 w-full rounded-full overflow-hidden bg-(--color-divider)">
+  <div>
+    <!-- Numbers lead, labels recede. 1px grid lines separate the tiles with no
+         borders of their own, so the row reads as one object. -->
+    <div
+      class="grid grid-cols-4 gap-px bg-(--color-divider) border border-(--color-divider) rounded-[10px] overflow-hidden"
+    >
       <div
-        class="h-full bg-mastered transition-all duration-500"
+        v-for="cell in cells"
+        :key="cell.key"
+        class="bg-(--color-bg-alt) px-4 py-4"
+      >
+        <div class="text-[12px] leading-none" :class="cell.glyphClass" aria-hidden="true">
+          {{ cell.glyph }}
+        </div>
+        <div class="mt-2 font-mono text-[26px] font-semibold tracking-tight leading-none">
+          {{ cell.value }}
+        </div>
+        <div
+          class="mt-1 font-mono text-[11px] uppercase tracking-[0.08em] text-text-3"
+        >
+          {{ cell.label }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Hairline ledger, glowing only where there is progress. -->
+    <div class="mt-6 flex h-[3px] w-full overflow-hidden rounded-full bg-white/[0.05]">
+      <div
+        class="h-full bg-mastered shadow-[0_0_10px_var(--color-glow)] transition-all duration-500"
         :style="{ flexGrow: stats.mastered, flexBasis: 0 }"
       />
       <div
-        class="h-full bg-(--color-in-progress) transition-all duration-500"
+        class="h-full bg-(--color-in-progress) shadow-[0_0_10px_var(--color-glow-cyan)] transition-all duration-500"
         :style="{ flexGrow: stats.inProgress, flexBasis: 0 }"
       />
       <div
@@ -41,32 +81,20 @@ const { t } = useI18n();
         :style="{ flexGrow: stats.needsPractice, flexBasis: 0 }"
       />
       <div
-        class="h-full bg-text-3 opacity-25 transition-all duration-500"
+        class="h-full bg-(--color-unmapped) transition-all duration-500"
         :style="{ flexGrow: stats.unexplored, flexBasis: 0 }"
       />
     </div>
 
-    <!-- Tick labels -->
-    <div class="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-text-3">
-      <span class="inline-flex items-center gap-1.5">
-        <span class="w-2 h-2 rounded-full bg-mastered" />
-        <span class="font-semibold tabular-nums text-text-2">{{ stats.mastered }}</span>
-        {{ t('status.mastered') }}
-      </span>
-      <span class="inline-flex items-center gap-1.5">
-        <span class="w-2 h-2 rounded-full bg-(--color-in-progress)" />
-        <span class="font-semibold tabular-nums text-text-2">{{ stats.inProgress }}</span>
-        {{ t('status.inProgress') }}
-      </span>
-      <span class="inline-flex items-center gap-1.5">
-        <span class="w-2 h-2 rounded-full bg-(--color-attention)" />
-        <span class="font-semibold tabular-nums text-text-2">{{ stats.needsPractice }}</span>
-        {{ t('status.needsPractice') }}
-      </span>
-      <span class="inline-flex items-center gap-1.5">
-        <span class="w-2 h-2 rounded-full bg-text-3 opacity-25" />
-        <span class="font-semibold tabular-nums text-text-2">{{ stats.unexplored }}</span>
-        {{ t('status.unexplored') }}
+    <!-- Glyph + label: the shape carries the meaning, the hue reinforces it. -->
+    <div class="mt-2.5 flex flex-wrap gap-x-5 gap-y-1 font-mono text-[11px] text-text-3">
+      <span
+        v-for="cell in cells"
+        :key="cell.key"
+        class="inline-flex items-center gap-1.5"
+      >
+        <span :class="cell.glyphClass" aria-hidden="true">{{ cell.glyph }}</span>
+        {{ cell.label }}
       </span>
     </div>
   </div>

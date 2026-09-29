@@ -48,9 +48,10 @@ defineEmits<{
         mono ? 'font-mono' : 'font-medium',
         node.path === selectedFilePath ? 'text-brand-2' : 'text-text-2 hover:text-text-1',
       ]"
+      :title="node.path"
       @click="$emit('file-selected', node)"
     >
-      {{ node.name }}
+      {{ node.label }}
     </button>
   </template>
 </template>

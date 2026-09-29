@@ -7,6 +7,7 @@ import { useDashboardStats } from '@/components/stats/useDashboardStats';
 import StatsHero from '@/components/stats/StatsHero.vue';
 import StatsSummary from '@/components/stats/StatsSummary.vue';
 import ReviewPanel from '@/components/review/ReviewPanel.vue';
+import NextAction from '@/components/review/NextAction.vue';
 import { useReviewItems } from '@/components/review/useReview';
 
 const router = useRouter();
@@ -22,14 +23,12 @@ function goToTopic(slug: string) {
 
 <template>
   <div class="w-full pr-0 lg:pr-8 xl:pr-12 2xl:pr-16">
-    <!-- Header — VitePress-style page heading with brand accent -->
-    <div class="flex items-center gap-3 mb-4">
-      <span class="w-1 h-6 rounded-full bg-brand-2 shrink-0" />
-      <h1>
-        {{ t('dashboard.title') }}
-      </h1>
-    </div>
-    <p v-if="topics.length > 0" class="text-sm text-text-3 mb-10">
+    <!-- Header. No eyebrow: it used to repeat the h1 verbatim, which is pure
+         duplication and cost a line of vertical space for zero information. -->
+    <h1 class="mb-2 !text-[30px] !leading-[1.15] !font-semibold tracking-[-0.025em]">
+      {{ t('dashboard.title') }}
+    </h1>
+    <p v-if="topics.length > 0" class="text-[13.5px] text-text-2 mb-8 max-w-[62ch]">
       {{ topics.length }} {{ topics.length === 1 ? 'topic' : 'topics' }}
     </p>
 
@@ -48,13 +47,18 @@ function goToTopic(slug: string) {
 
     <!-- Content (only when topics exist) -->
     <template v-else>
-      <!-- Topics band (top, full width) -->
+      <!-- The one promoted action. Nothing else competes with it. -->
+      <section class="mb-8">
+        <NextAction />
+      </section>
+
+      <!-- Topics band -->
       <section class="mb-8">
         <div class="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4">
           <button
             v-for="topic in topics"
             :key="topic.slug"
-            class="text-left bg-(--color-bg-soft) backdrop-blur-xl rounded-[20px] border border-(--color-divider) p-6 hover:border-brand-2 hover:shadow-[0_0_30px_var(--color-glow),0_12px_40px_rgba(0,0,0,0.3)] hover:-translate-y-0.5 hover:scale-[1.01] transition-all duration-250 cursor-pointer"
+            class="text-left bg-(--color-bg-alt) rounded-[10px] border border-(--color-divider) p-5 cursor-pointer transition-colors duration-200 hover:border-(--color-border-strong) hover:bg-(--color-bg-soft)"
             @click="goToTopic(topic.slug)"
           >
             <!-- Title -->
@@ -90,7 +94,7 @@ function goToTopic(slug: string) {
         <!-- Left: merged stats card -->
         <div class="flex-1 min-w-0">
           <div
-            class="bg-(--color-bg-soft) backdrop-blur-xl rounded-[20px] border border-(--color-divider) overflow-hidden"
+            class="bg-(--color-bg-alt) rounded-[10px] border border-(--color-divider) overflow-hidden"
           >
             <StatsHero :stats="stats" />
             <div class="border-t border-(--color-divider)">

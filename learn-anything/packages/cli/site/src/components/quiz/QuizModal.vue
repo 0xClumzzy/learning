@@ -4,7 +4,7 @@ import { useQuizSession } from './useQuizSession';
 import { useQuizQueue } from './useQuizQueue';
 import type { QuizDeck, QuizResults as QuizResultsData, QueueItem } from './types';
 import { useModalA11y } from '@/composables/useModalA11y';
-import { resolveQuizKey } from './useQuizKeyboard';
+import { resolveQuizKey, shouldSuppressSpace } from './useQuizKeyboard';
 import { toggleMultiSelect } from './utils';
 import { useQuizProgress, type ProgressSession, type ProgressQueue } from './useQuizProgress';
 import QuizResults from './results/QuizResults.vue';
@@ -147,11 +147,12 @@ function onModalKeydown(e: KeyboardEvent) {
     close();
     return;
   }
-  const isText =
-    (e.target as HTMLElement)?.tagName === 'INPUT' ||
-    (e.target as HTMLElement)?.tagName === 'TEXTAREA';
-  // prevent space keydown, it can refresh quiz cards
-  if (e.code === 'Space' && !isText) {
+  /* Space on a focused control belongs to that control. Swallowing it
+     document-wide broke the standard keyboard way to activate every quiz
+     option button (and Space toggles a focused checkbox). Only suppress it
+     when focus is on the dialog itself or on a non-interactive element,
+     where the only effect would be scrolling the page behind the modal. */
+  if (e.code === 'Space' && shouldSuppressSpace(e.target)) {
     e.preventDefault();
     return;
   }

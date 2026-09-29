@@ -77,7 +77,10 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="flex min-h-screen bg-(--color-page) text-(--color-ink)" style="background: radial-gradient(ellipse at 20% 20%, rgba(245,167,111,0.05) 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, rgba(176,112,60,0.03) 0%, transparent 50%), var(--color-page);">
+  <div
+    class="flex min-h-screen bg-(--color-page) text-(--color-ink)"
+    style="background: radial-gradient(900px 500px at 12% -8%, var(--color-glow), transparent 70%), radial-gradient(700px 500px at 88% 108%, var(--color-glow-cyan), transparent 70%), var(--color-page); background-attachment: fixed;"
+  >
     <AppSidebar
       :context="sidebarContext"
       :topic-slug="currentTopicSlug"
@@ -91,8 +94,8 @@ onUnmounted(() => {
       @quiz-batch-selected="onQuizBatchSelected"
     />
 
-    <main class="flex-1 min-w-0 lg:pl-68">
-      <div class="px-6 py-10 lg:px-10">
+    <main class="flex-1 min-w-0 lg:pl-62">
+      <div class="px-8 py-10 lg:px-11">
         <router-view />
       </div>
     </main>

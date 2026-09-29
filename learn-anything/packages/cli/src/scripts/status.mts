@@ -4,9 +4,8 @@
  * Reads state.json (v1) and outputs a formatted learning heatmap to stdout.
  *
  * Usage:
- *   node status.mjs <topic-dir>                    Detailed heatmap (English)
- *   node status.mjs --locale zh-CN <topic-dir>     Detailed heatmap (Chinese)
- *   node status.mjs --all [--locale zh-CN] <dir>   Summary of all topics
+ *   node status.mjs <topic-dir>      Detailed heatmap
+ *   node status.mjs --all <dir>      Summary of all topics
  *
  * This file is compiled from src/scripts/status.mts via tsc and
  * copied into peaches-status skill's scripts/ directory by init/update.
@@ -17,18 +16,11 @@ import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import type { StateV1, Concept, ConceptStatus } from './utils.mjs';
-import {
-  validateStateV1,
-  totalCount,
-  masteredCount,
-  STATUS_ICON,
-} from './utils.mjs';
+import { validateStateV1, totalCount, masteredCount, STATUS_ICON } from './utils.mjs';
 
 /* ------------------------------------------------------------------ */
 /*  i18n                                                              */
 /* ------------------------------------------------------------------ */
-
-type Locale = 'en' | 'zh-CN';
 
 interface Strings {
   // Single topic
@@ -83,9 +75,9 @@ const EN: Strings = {
     mastered: 'Mastered — passed practice, high confidence',
     in_progress: 'In Progress — started but not yet mastered',
     needs_practice: 'Needs Practice — understand but need reinforcement',
-    unexplored: 'Unexplored — haven\'t started learning yet',
+    unexplored: "Unexplored — haven't started learning yet",
   },
-  practiceCount: (n) => n === 1 ? '1 practice' : `${n} practices`,
+  practiceCount: (n) => (n === 1 ? '1 practice' : `${n} practices`),
   confidence: (pct) => `${pct}% confidence`,
   relativeToday: 'today',
   relativeYesterday: 'yesterday',
@@ -99,45 +91,9 @@ const EN: Strings = {
   noData: (path) => `📭 No learning data found at ${path}`,
 };
 
-const ZH_CN: Strings = {
-  title: (topic) => `🌟 ${topic} 学习状态`,
-  mastered: '已掌握',
-  active: '进行中',
-  practice: '需练习',
-  unexplored: '未探索',
-  progress: '进度',
-  statsTitle: '📊 学习统计',
-  lastPractice: (name, rel) => `💪 最近练习: ${name} (${rel})`,
-  startedLearning: (date) => `📅 开始学习: ${date}`,
-  daysLearning: (days) => `⏱️  学习天数: ${days}`,
-  legend: '图例',
-  statusLabel: {
-    mastered: '已掌握',
-    in_progress: '进行中',
-    needs_practice: '需练习',
-    unexplored: '未探索',
-  },
-  statusMeaning: {
-    mastered: '已掌握 — 通过练习，掌握度高',
-    in_progress: '进行中 — 已开始但尚未掌握',
-    needs_practice: '需练习 — 理解但需要巩固',
-    unexplored: '未探索 — 尚未开始学习',
-  },
-  practiceCount: (n) => n === 1 ? '1 次练习' : `${n} 次练习`,
-  confidence: (pct) => `${pct}% 掌握度`,
-  relativeToday: '今天',
-  relativeYesterday: '昨天',
-  relativeDaysAgo: (n) => `${n} 天前`,
-  allTopicsTitle: '🌟 学习状态 — 所有主题',
-  topic: '主题',
-  days: '天数',
-  total: '合计',
-  noTopics: '📭 暂无学习主题。',
-  startJourney: '运行 `/peaches <主题名>` 开始你的学习之旅！',
-  noData: (path) => `📭 未找到学习数据: ${path}`,
-};
-
-const STRINGS: Record<Locale, Strings> = { en: EN, 'zh-CN': ZH_CN };
+/* Peaches ships in English only. The `Strings` indirection is kept so a
+   future locale is an additive change here rather than a rewrite. */
+const STRINGS: Strings = EN;
 
 /* ------------------------------------------------------------------ */
 /*  Display width helpers                                             */
@@ -155,15 +111,15 @@ function dw(s: string): number {
 /** Check if a code point is a CJK / fullwidth character (display width = 2). */
 function isCJK(cp: number): boolean {
   return (
-    (cp >= 0x4e00 && cp <= 0x9fff)   // CJK Unified Ideographs
-    || (cp >= 0x3400 && cp <= 0x4dbf) // CJK Extension A
-    || (cp >= 0xf900 && cp <= 0xfaff) // CJK Compatibility Ideographs
-    || (cp >= 0x2e80 && cp <= 0x2eff) // CJK Radicals Supplement
-    || (cp >= 0x3000 && cp <= 0x303f) // CJK Symbols and Punctuation
-    || (cp >= 0x3040 && cp <= 0x309f) // Hiragana
-    || (cp >= 0x30a0 && cp <= 0x30ff) // Katakana
-    || (cp >= 0xff01 && cp <= 0xff60) // Fullwidth Forms
-    || (cp >= 0xac00 && cp <= 0xd7af) // Hangul Syllables
+    (cp >= 0x4e00 && cp <= 0x9fff) || // CJK Unified Ideographs
+    (cp >= 0x3400 && cp <= 0x4dbf) || // CJK Extension A
+    (cp >= 0xf900 && cp <= 0xfaff) || // CJK Compatibility Ideographs
+    (cp >= 0x2e80 && cp <= 0x2eff) || // CJK Radicals Supplement
+    (cp >= 0x3000 && cp <= 0x303f) || // CJK Symbols and Punctuation
+    (cp >= 0x3040 && cp <= 0x309f) || // Hiragana
+    (cp >= 0x30a0 && cp <= 0x30ff) || // Katakana
+    (cp >= 0xff01 && cp <= 0xff60) || // Fullwidth Forms
+    (cp >= 0xac00 && cp <= 0xd7af) // Hangul Syllables
   );
 }
 
@@ -237,8 +193,8 @@ function conceptLine(concept: Concept, t: Strings): string {
   return `${icon} ${concept.name}  ${parts.join(' · ')}`;
 }
 
-export function renderStatus(state: StateV1, now?: number, locale: Locale = 'en'): string {
-  const t = STRINGS[locale];
+export function renderStatus(state: StateV1, now?: number): string {
+  const t = STRINGS;
   const lines: string[] = [];
 
   const total = totalCount(state);
@@ -254,7 +210,9 @@ export function renderStatus(state: StateV1, now?: number, locale: Locale = 'en'
     if (domain.concepts.length === 0) continue;
 
     const domainMastered = domain.concepts.filter((c) => c.status === 'mastered').length;
-    lines.push(`${domain.name}  [${domainMastered}/${domain.concepts.length} ${t.mastered.toLowerCase()}]`);
+    lines.push(
+      `${domain.name}  [${domainMastered}/${domain.concepts.length} ${t.mastered.toLowerCase()}]`,
+    );
 
     const last = domain.concepts.length - 1;
     for (let i = 0; i <= last; i++) {
@@ -264,7 +222,7 @@ export function renderStatus(state: StateV1, now?: number, locale: Locale = 'en'
     lines.push('');
   }
 
-  // Summary panel — column widths based on locale
+  // Summary panel
   const active = countByStatus(state, 'in_progress');
   const practice = countByStatus(state, 'needs_practice');
   const unexplored = countByStatus(state, 'unexplored');
@@ -280,10 +238,18 @@ export function renderStatus(state: StateV1, now?: number, locale: Locale = 'en'
   const hLine = '─'.repeat(totalW - 2);
   lines.push(`┌${hLine}┐`);
   lines.push(`│${padEnd(`    ${t.statsTitle}`, totalW - 2)}│`);
-  lines.push(`├${'─'.repeat(colM)}┬${'─'.repeat(colA)}┬${'─'.repeat(colP)}┬${'─'.repeat(colU)}┬${'─'.repeat(colR)}┤`);
-  lines.push(`│${padEnd(` ${t.mastered}`, colM)}│${padEnd(` ${t.active}`, colA)}│${padEnd(` ${t.practice}`, colP)}│${padEnd(` ${t.unexplored}`, colU)}│${padEnd(` ${t.progress}`, colR)}│`);
-  lines.push(`│${padEnd(` ${mastered} 🟢`, colM)}│${padEnd(` ${active} 🔵`, colA)}│${padEnd(` ${practice} 🟠`, colP)}│${padEnd(` ${unexplored} ⚪`, colU)}│${padEnd(` ${pct}%`, colR)}│`);
-  lines.push(`├${'─'.repeat(colM)}┴${'─'.repeat(colA)}┴${'─'.repeat(colP)}┴${'─'.repeat(colU)}┴${'─'.repeat(colR)}┤`);
+  lines.push(
+    `├${'─'.repeat(colM)}┬${'─'.repeat(colA)}┬${'─'.repeat(colP)}┬${'─'.repeat(colU)}┬${'─'.repeat(colR)}┤`,
+  );
+  lines.push(
+    `│${padEnd(` ${t.mastered}`, colM)}│${padEnd(` ${t.active}`, colA)}│${padEnd(` ${t.practice}`, colP)}│${padEnd(` ${t.unexplored}`, colU)}│${padEnd(` ${t.progress}`, colR)}│`,
+  );
+  lines.push(
+    `│${padEnd(` ${mastered} 🟢`, colM)}│${padEnd(` ${active} 🔵`, colA)}│${padEnd(` ${practice} 🟠`, colP)}│${padEnd(` ${unexplored} ⚪`, colU)}│${padEnd(` ${pct}%`, colR)}│`,
+  );
+  lines.push(
+    `├${'─'.repeat(colM)}┴${'─'.repeat(colA)}┴${'─'.repeat(colP)}┴${'─'.repeat(colU)}┴${'─'.repeat(colR)}┤`,
+  );
 
   const contentW = totalW - 2;
   const lastP = findLastPracticed(state);
@@ -306,8 +272,15 @@ export function renderStatus(state: StateV1, now?: number, locale: Locale = 'en'
   lines.push('');
   lines.push(`| Icon | Status | Meaning |`);
   lines.push(`|------|--------|---------|`);
-  for (const status of ['mastered', 'in_progress', 'needs_practice', 'unexplored'] as ConceptStatus[]) {
-    lines.push(`| ${STATUS_ICON[status]} | ${t.statusLabel[status]} | ${t.statusMeaning[status]} |`);
+  for (const status of [
+    'mastered',
+    'in_progress',
+    'needs_practice',
+    'unexplored',
+  ] as ConceptStatus[]) {
+    lines.push(
+      `| ${STATUS_ICON[status]} | ${t.statusLabel[status]} | ${t.statusMeaning[status]} |`,
+    );
   }
 
   return lines.join('\n').trimEnd() + '\n';
@@ -383,8 +356,8 @@ function scanTopics(baseDir: string): TopicSummary[] {
   return summaries;
 }
 
-export function renderAllTopics(summaries: TopicSummary[], now?: number, locale: Locale = 'en'): string {
-  const t = STRINGS[locale];
+export function renderAllTopics(summaries: TopicSummary[], now?: number): string {
+  const t = STRINGS;
   const lines: string[] = [];
 
   lines.push(t.allTopicsTitle);
@@ -410,7 +383,9 @@ export function renderAllTopics(summaries: TopicSummary[], now?: number, locale:
   const bot = `└${'─'.repeat(topicCol)}┴${'─'.repeat(masterCol)}┴${'─'.repeat(activeCol)}┴${'─'.repeat(practiceCol)}┴${'─'.repeat(progressCol)}┴${'─'.repeat(daysCol)}┘`;
 
   lines.push(top);
-  lines.push(`│ ${padEnd(t.topic, topicCol - 1)}│ ${padEnd(t.mastered, masterCol - 1)}│ ${padEnd(t.active, activeCol - 1)}│ ${padEnd(t.practice, practiceCol - 1)}│ ${padEnd(t.progress, progressCol - 1)}│ ${padEnd(t.days, daysCol - 1)}│`);
+  lines.push(
+    `│ ${padEnd(t.topic, topicCol - 1)}│ ${padEnd(t.mastered, masterCol - 1)}│ ${padEnd(t.active, activeCol - 1)}│ ${padEnd(t.practice, practiceCol - 1)}│ ${padEnd(t.progress, progressCol - 1)}│ ${padEnd(t.days, daysCol - 1)}│`,
+  );
   lines.push(sep);
 
   for (const s of summaries) {
@@ -454,7 +429,12 @@ export function renderAllTopics(summaries: TopicSummary[], now?: number, locale:
   lines.push('');
   lines.push(`| Icon | Status |`);
   lines.push(`|------|--------|`);
-  for (const status of ['mastered', 'in_progress', 'needs_practice', 'unexplored'] as ConceptStatus[]) {
+  for (const status of [
+    'mastered',
+    'in_progress',
+    'needs_practice',
+    'unexplored',
+  ] as ConceptStatus[]) {
     lines.push(`| ${STATUS_ICON[status]} | ${t.statusLabel[status]} |`);
   }
 
@@ -468,8 +448,8 @@ export function renderAllTopics(summaries: TopicSummary[], now?: number, locale:
 function usage(): never {
   const script = process.argv[1]?.split('/').pop() || 'status.mjs';
   console.error(`Usage:`);
-  console.error(`  node ${script} [--locale en|zh-CN] <topic-dir>`);
-  console.error(`  node ${script} --all [--locale en|zh-CN] <topics-dir>`);
+  console.error(`  node ${script} <topic-dir>`);
+  console.error(`  node ${script} --all <topics-dir>`);
   process.exit(1);
 }
 
@@ -480,23 +460,14 @@ function main(): void {
   }
 
   // Parse flags
-  let locale: Locale = 'en';
   let isAll = false;
   let dirArg: string | undefined;
 
-  for (let i = 0; i < args.length; i++) {
-    if (args[i] === '--all') {
+  for (const arg of args) {
+    if (arg === '--all') {
       isAll = true;
-    } else if (args[i] === '--locale' && args[i + 1]) {
-      const val = args[++i];
-      if (val === 'en' || val === 'zh-CN') {
-        locale = val;
-      } else {
-        console.error(`Unknown locale: ${val}. Supported: en, zh-CN`);
-        process.exit(1);
-      }
-    } else if (!args[i].startsWith('--')) {
-      dirArg = args[i];
+    } else if (!arg.startsWith('--')) {
+      dirArg = arg;
     }
   }
 
@@ -508,7 +479,7 @@ function main(): void {
 
   if (isAll) {
     const summaries = scanTopics(dir);
-    console.log(renderAllTopics(summaries, undefined, locale));
+    console.log(renderAllTopics(summaries));
   } else {
     const statePath = join(dir, 'state.json');
 
@@ -518,22 +489,20 @@ function main(): void {
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       if (msg.includes('ENOENT') || msg.includes('not found')) {
-        const t = STRINGS[locale];
-        console.error(t.noData(statePath));
-        console.error(t.startJourney);
+        console.error(STRINGS.noData(statePath));
+        console.error(STRINGS.startJourney);
       } else {
         console.error(`Error: ${msg}`);
       }
       process.exit(1);
     }
 
-    console.log(renderStatus(state, undefined, locale));
+    console.log(renderStatus(state));
   }
 }
 
 const isMain =
-  process.argv[1] != null &&
-  fileURLToPath(import.meta.url) === resolve(process.argv[1]);
+  process.argv[1] != null && fileURLToPath(import.meta.url) === resolve(process.argv[1]);
 if (isMain) {
   main();
 }

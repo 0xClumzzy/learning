@@ -8,8 +8,13 @@
  *
  * There is a regression test (`test/brand.test.ts`) asserting the body path
  * below still matches `logo.svg` — update both together.
+ *
+ * `defineProps` MUST be assigned to a binding: the template dereferences
+ * `props.class`, and an unassigned call leaves `props` undefined, which throws
+ * during render and blanks the whole SPA — the mark renders in the sidebar on
+ * every view. `test/brand.test.ts` mounts this component to catch that.
  */
-withDefaults(defineProps<{ class?: string }>(), { class: 'w-6 h-6' });
+const props = withDefaults(defineProps<{ class?: string }>(), { class: 'w-6 h-6' });
 </script>
 
 <template>

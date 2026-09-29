@@ -64,26 +64,26 @@ const MIXED_SUMMARIES: TopicSummary[] = [
 ];
 
 // ===========================================================================
-// renderStatus() — English
+// renderStatus()
 // ===========================================================================
 
-describe('renderStatus() — en', () => {
+describe('renderStatus()', () => {
   it('mixed statuses', () => {
     const state = loadFixture('status-mixed.json');
     const expected = loadExpected('status-mixed.expected.txt');
-    expect(renderStatus(state, NOW, 'en')).toBe(expected);
+    expect(renderStatus(state, NOW)).toBe(expected);
   });
 
   it('empty domains', () => {
     const state = loadFixture('status-empty.json');
     const expected = loadExpected('status-empty.expected.txt');
-    expect(renderStatus(state, NOW, 'en')).toBe(expected);
+    expect(renderStatus(state, NOW)).toBe(expected);
   });
 
   it('all mastered', () => {
     const state = loadFixture('status-all-mastered.json');
     const expected = loadExpected('status-all-mastered.expected.txt');
-    expect(renderStatus(state, NOW, 'en')).toBe(expected);
+    expect(renderStatus(state, NOW)).toBe(expected);
   });
 
   it('domain with no concepts is skipped in tree', () => {
@@ -113,56 +113,32 @@ describe('renderStatus() — en', () => {
         },
       ],
     };
-    const output = renderStatus(state, NOW, 'en');
+    const output = renderStatus(state, NOW);
     expect(output).not.toContain('Empty');
     expect(output).toContain('Has');
   });
 
   it('output ends with exactly one newline', () => {
     const state = loadFixture('status-mixed.json');
-    const output = renderStatus(state, NOW, 'en');
+    const output = renderStatus(state, NOW);
     expect(output).toMatch(/\n$/);
     expect(output).not.toMatch(/\n\n$/);
   });
 });
 
 // ===========================================================================
-// renderStatus() — Chinese
+// renderAllTopics()
 // ===========================================================================
 
-describe('renderStatus() — zh-CN', () => {
-  it('mixed statuses', () => {
-    const state = loadFixture('status-mixed.json');
-    const expected = loadExpected('status-mixed.zh-CN.expected.txt');
-    expect(renderStatus(state, NOW, 'zh-CN')).toBe(expected);
-  });
-
-  it('empty domains', () => {
-    const state = loadFixture('status-empty.json');
-    const expected = loadExpected('status-empty.zh-CN.expected.txt');
-    expect(renderStatus(state, NOW, 'zh-CN')).toBe(expected);
-  });
-
-  it('all mastered', () => {
-    const state = loadFixture('status-all-mastered.json');
-    const expected = loadExpected('status-all-mastered.zh-CN.expected.txt');
-    expect(renderStatus(state, NOW, 'zh-CN')).toBe(expected);
-  });
-});
-
-// ===========================================================================
-// renderAllTopics() — English
-// ===========================================================================
-
-describe('renderAllTopics() — en', () => {
+describe('renderAllTopics()', () => {
   it('multiple topics', () => {
     const expected = loadExpected('status-all-topics.expected.txt');
-    expect(renderAllTopics(MIXED_SUMMARIES, NOW, 'en')).toBe(expected);
+    expect(renderAllTopics(MIXED_SUMMARIES, NOW)).toBe(expected);
   });
 
   it('empty topics list', () => {
     const expected = loadExpected('status-all-topics-empty.expected.txt');
-    expect(renderAllTopics([], NOW, 'en')).toBe(expected);
+    expect(renderAllTopics([], NOW)).toBe(expected);
   });
 
   it('output ends with exactly one newline', () => {
@@ -180,24 +156,8 @@ describe('renderAllTopics() — en', () => {
         days: 1,
       },
     ];
-    const output = renderAllTopics(summaries, NOW, 'en');
+    const output = renderAllTopics(summaries, NOW);
     expect(output).toMatch(/\n$/);
     expect(output).not.toMatch(/\n\n$/);
-  });
-});
-
-// ===========================================================================
-// renderAllTopics() — Chinese
-// ===========================================================================
-
-describe('renderAllTopics() — zh-CN', () => {
-  it('multiple topics', () => {
-    const expected = loadExpected('status-all-topics.zh-CN.expected.txt');
-    expect(renderAllTopics(MIXED_SUMMARIES, NOW, 'zh-CN')).toBe(expected);
-  });
-
-  it('empty topics list', () => {
-    const expected = loadExpected('status-all-topics-empty.zh-CN.expected.txt');
-    expect(renderAllTopics([], NOW, 'zh-CN')).toBe(expected);
   });
 });
