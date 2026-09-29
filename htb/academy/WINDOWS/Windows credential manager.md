@@ -25,3 +25,13 @@ Enumeratimg credentials with `cmdkey`
 cmdkey /list
 ```
 
+| Key         | Value                                                                                                                                                      |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Target      | The resource or account name the credential is for. This could be a computer, domain name, or a special identifier.                                        |
+| Type        | The kind of credential. Common types are `Generic` for general credentials, and `Domain Password` for domain user logons.                                  |
+| User        | The user account associated with the credential.                                                                                                           |
+| Persistence | Some credentials indicate whether a credential is saved persistently on the computer; credentials marked with `Local machine persistence` survive reboots. |
+eg:
+```cmd
+Target: Domain:interactive=SRV01\mcharles Type: Domain Password User: SRV01\mcharles
+```
