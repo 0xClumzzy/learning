@@ -15,11 +15,11 @@ Each vault folder contains a policy `Policy.vpol` file with AES keys(AES-128/256
 Credentials Guard is also used to further protect DPAPI master keys by storing them in secured enclaves, the password stores are referred to as `credential lockers`
 - Web credentials 
 - Windows credentials 
-Exporting windows vaults
+### Exporting windows vaults
 ```cmd
 rundll32 keymgr.dll,KRShowKeyMgr
 ```
-Enumeratimg credentials with `cmdkey`
+### Enumeratimg credentials with `cmdkey`
 - Passwords stored in the current user profile
 ```cmd 
 cmdkey /list
@@ -43,4 +43,4 @@ runas /savecred /user:SRV01\mcharles cmd
 ```
 syntax: <runas> /savecred  /user:<user> <command>
 
-Extracting credentials with mimikatz
+### Extracting 
