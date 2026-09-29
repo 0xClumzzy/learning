@@ -19,7 +19,7 @@ export const en: LocaleMessages = {
     strictPortOption: 'Use the exact port from --port; do not auto-pick a free one when busy',
     noOpenOption: 'Do not open browser automatically',
     serveCommandDescription: 'Start a local site to visualize learning progress',
-    serveHint: 'Run npx peaches serve to view your learning progress in browser',
+    serveHint: 'Run npx @0xclumzzy/peaches serve to view your learning progress in browser',
   },
 
   init: {

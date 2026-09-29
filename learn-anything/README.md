@@ -200,7 +200,7 @@ The dashboard at `packages/cli/site/` is the graphical interface; it is bundled 
 
 ```bash
 # Update existing skill files to the latest version (auto-detects installed tools)
-npx peaches update
+npx @0xclumzzy/peaches update
 ```
 
 ## Development

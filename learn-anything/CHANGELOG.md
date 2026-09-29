@@ -5,7 +5,43 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [2.0.0] - 2026-09-30
+### Changed
+
+- **BREAKING: the package is now published as `@0xclumzzy/peaches`.** The
+  unscoped `peaches` name on npm is owned by an unrelated 2012 CSS compiler, so
+  it was never publishable. Only the *install path* is scoped — the binary is
+  still `peaches`, and every other identifier (`.peaches/`, `peaches-*` skills,
+  `/peaches:*` commands) is unchanged.
+
+  ```bash
+  npm install -g @0xclumzzy/peaches
+  npx @0xclumzzy/peaches init
+  ```
+
+- **BREAKING: the project is now called Peaches.** Previously `learn-anything`.
+  The npm package, binary, data directory (`.peaches/`), generated skill IDs
+  (`peaches-*`), and slash commands (`/peaches:*`) were all renamed, with no
+  compatibility shim, alias, or migration path.
+- **OpenCode is now the primarily supported AI tool.** It was previously one of
+  30 equals, and it silently received *no command files at all* — command
+  generation returns early for any tool without a registered adapter. An
+  OpenCode adapter now exists, writing `.opencode/commands/peaches/<id>.md`
+  with the frontmatter OpenCode V2 actually reads. OpenCode leads the tool
+  picker and is pre-selected when nothing is detected. The other tools are
+  still fully supported.
+- **Dashboard visual redesign — "cool futurist, yet simple."** Depth now comes from elevation (`#07080b` -> `#0c0e13` -> `#11141a`) rather than heavier borders; hairlines dropped to `rgba(255,255,255,.06)`. A single peach light source (top-left) and a faint cyan counter-glow (bottom-right) replace the previous corner washes. Monospace now carries all numbers, labels, and nav counts, separating "system" from "content" without extra boxes. Card radius 20px -> 10px, sidebar 272px -> 248px, and the glass blur that was applied to cards and the sidebar rail is gone — glass is now reserved for modal surfaces. Glow is used once per view: the promoted action and the active progress segment.
+- **The dashboard now promotes exactly one next action.** A new `NextAction` band sits above the topic grid, reusing the existing review-priority ranking. It shows the single highest-priority concept and why, with one call to action, and renders nothing rather than an empty shell when there is no work to do.
+- **Knowledge-map rows are restructured**: status glyph, name, a 2px confidence track, and the percentage. Concepts that have never been opened render an em-dash and a 0-width track instead of `0%` — an untouched concept is not a deficit, so it no longer reads as one.
+- `in_progress` moved from leaf green to cool cyan `#46d6e8` for the futurist direction. **This diverges from the CLI's `status.mjs`, which still uses the blue circle emoji.** Aligning them is follow-up work.
+- **The theme palette is now single-source.** The `.dark` block that re-declared every token identically has been removed, so a token can no longer be edited in one place and drift in the other. `.dark` remains on `<html>` as a class marker. The theme is dark-only; the README no longer advertises a light/dark toggle that never worked.
+- `/peaches:practice` is now a security lab rather than a TDD exercise. The coach picks the lab type from the concept — find the vulnerability, build the primitive, harden the control, read the evidence, assess a CVE, or drive a real tool — and states the blast radius before the user starts.
+- `/peaches:review` recommends a single concept rather than a ranked list, and never prints a recency column.
+- `dirName` is now derived from `workflowId` (`` `peaches-${workflowId}` ``) instead of being hand-written alongside it, and `init.ts` keys script-copying on `workflowId`. Adding a workflow can no longer desync the on-disk directory name from the id the logic depends on — the failure mode was a skill silently shipping with no scripts.
+- The CLI no longer hardcodes the workflow count in its "N skill files generated" message; it reports the real number.
+- The site theme is **"Peach Glow"**: charcoal base `#111113` with a peach accent (`#f5a76f`). The peach mark (`logo.png` + `logo.svg`) is inlined in the dashboard sidebar from a single `PeachMark.vue` component.
+- The dashboard's modal glow shadows and background radial gradients now reference the `--color-glow` token instead of hardcoded `rgba(…)` values, so the accent is re-themeable from `main.css` alone.
+- Learning state lives in `.peaches/topics/`. Topics are plain Markdown and JSON, safe to commit and readable without the CLI installed.
 
 ### Added
 
@@ -42,22 +78,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `BRAND.md` — brand source of truth: the mark, the design language, the colour ramps, type, the product principles above, where each surface lives, and a checklist for future brand changes.
 - `test/brand.test.ts` — regression guards asserting the sidebar mark and `logo.svg` share identical path geometry, that the inlined mark keeps the green leaf and namespaces its gradient ids, and that the status tokens stay distinct and consistent between `@theme` and `.dark`.
 - **Peaches** — an AI-powered recursive learning system that turns your AI coding assistant into an interactive tutor. Tagline: _"Pick a topic. Grow into it."_ (English-only; a Chinese rendering was tried and dropped as unidiomatic).
-
-### Changed
-
-- **Dashboard visual redesign — "cool futurist, yet simple."** Depth now comes from elevation (`#07080b` -> `#0c0e13` -> `#11141a`) rather than heavier borders; hairlines dropped to `rgba(255,255,255,.06)`. A single peach light source (top-left) and a faint cyan counter-glow (bottom-right) replace the previous corner washes. Monospace now carries all numbers, labels, and nav counts, separating "system" from "content" without extra boxes. Card radius 20px -> 10px, sidebar 272px -> 248px, and the glass blur that was applied to cards and the sidebar rail is gone — glass is now reserved for modal surfaces. Glow is used once per view: the promoted action and the active progress segment.
-- **The dashboard now promotes exactly one next action.** A new `NextAction` band sits above the topic grid, reusing the existing review-priority ranking. It shows the single highest-priority concept and why, with one call to action, and renders nothing rather than an empty shell when there is no work to do.
-- **Knowledge-map rows are restructured**: status glyph, name, a 2px confidence track, and the percentage. Concepts that have never been opened render an em-dash and a 0-width track instead of `0%` — an untouched concept is not a deficit, so it no longer reads as one.
-- `in_progress` moved from leaf green to cool cyan `#46d6e8` for the futurist direction. **This diverges from the CLI's `status.mjs`, which still uses the blue circle emoji.** Aligning them is follow-up work.
-- **The theme palette is now single-source.** The `.dark` block that re-declared every token identically has been removed, so a token can no longer be edited in one place and drift in the other. `.dark` remains on `<html>` as a class marker. The theme is dark-only; the README no longer advertises a light/dark toggle that never worked.
-
-- `/peaches:practice` is now a security lab rather than a TDD exercise. The coach picks the lab type from the concept — find the vulnerability, build the primitive, harden the control, read the evidence, assess a CVE, or drive a real tool — and states the blast radius before the user starts.
-- `/peaches:review` recommends a single concept rather than a ranked list, and never prints a recency column.
-- `dirName` is now derived from `workflowId` (`` `peaches-${workflowId}` ``) instead of being hand-written alongside it, and `init.ts` keys script-copying on `workflowId`. Adding a workflow can no longer desync the on-disk directory name from the id the logic depends on — the failure mode was a skill silently shipping with no scripts.
-- The CLI no longer hardcodes the workflow count in its "N skill files generated" message; it reports the real number.
-- The site theme is **"Peach Glow"**: charcoal base `#111113` with a peach accent (`#f5a76f`). The peach mark (`logo.png` + `logo.svg`) is inlined in the dashboard sidebar from a single `PeachMark.vue` component.
-- The dashboard's modal glow shadows and background radial gradients now reference the `--color-glow` token instead of hardcoded `rgba(…)` values, so the accent is re-themeable from `main.css` alone.
-- Learning state lives in `.peaches/topics/`. Topics are plain Markdown and JSON, safe to commit and readable without the CLI installed.
 
 ### Fixed
 
@@ -389,7 +409,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Locale support: English (`en`) and Chinese (`zh-CN`).
 - MIT License.
 
-[Unreleased]: https://github.com/0xClumzzy/peaches/compare/v1.6.3...HEAD
+[Unreleased]: https://github.com/0xClumzzy/peaches/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/0xClumzzy/peaches/compare/v1.6.3...v2.0.0
 [1.6.3]: https://github.com/0xClumzzy/peaches/compare/v1.6.2...v1.6.3
 [1.6.2]: https://github.com/0xClumzzy/peaches/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/0xClumzzy/peaches/compare/v1.6.0...v1.6.1
