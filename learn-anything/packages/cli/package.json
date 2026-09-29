@@ -1,7 +1,7 @@
 {
-  "name": "peaches",
-  "version": "1.6.3",
-  "description": "Peaches — pick a topic, grow into it. AI-powered recursive learning with Socratic method, TDD practice, and spaced repetition",
+  "name": "@0xclumzzy/peaches",
+  "version": "2.0.0",
+  "description": "Peaches \u2014 pick a topic, grow into it. AI-powered recursive learning with Socratic method, TDD practice, and spaced repetition",
   "keywords": [
     "peaches",
     "learning",

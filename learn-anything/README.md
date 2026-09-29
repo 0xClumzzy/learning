@@ -50,15 +50,19 @@ These rules live in one place — `ADHD_PROTOCOL` in `_shared.ts` — and are im
 
 ```bash
 # Interactive mode — auto-detects your AI tools and prompts you to choose
-npx peaches init
+npx @0xclumzzy/peaches init
 
 # Target specific tools
-npx peaches init --tools claude
+npx @0xclumzzy/peaches init --tools opencode
 
 # Or install globally
-pnpm add -g peaches   # npm install -g peaches
+npm install -g @0xclumzzy/peaches   # or: pnpm add -g @0xclumzzy/peaches
 peaches init
 ```
+
+> The package is published under the `@0xclumzzy` scope because the unscoped
+> name `peaches` on npm is already owned by an unrelated 2012 CSS compiler.
+> The binary is still just `peaches` — only the install path is scoped.
 
 ### Context7 Integration _(optional)_
 
@@ -87,13 +91,13 @@ Start a zero-config web dashboard to browse your learning data:
 
 ```bash
 # Start the visual dashboard (no npm install needed)
-npx peaches serve
+npx @0xclumzzy/peaches serve
 
 # Custom port
-npx peaches serve --port 8080
+npx @0xclumzzy/peaches serve --port 8080
 
 # Disable auto-open browser
-npx peaches serve --no-open
+npx @0xclumzzy/peaches serve --no-open
 ```
 
 > The dashboard is pre-built and shipped with the CLI — no extra dependencies or `npm install` required.
