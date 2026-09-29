@@ -11,12 +11,14 @@
             "id": "f60be99729fa24b6",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "academy/WINDOWS"
+                "file": "academy/WINDOWS/Windows credential manager.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "WINDOWS"
+              "title": "Windows credential manager"
             }
           }
         ]
@@ -234,7 +236,9 @@
   },
   "active": "f60be99729fa24b6",
   "lastOpenFiles": [
+    "academy/WINDOWS/Windows credential manager.md",
     "academy/WINDOWS/WINDOWS.md",
+    "academy/WINDOWS/.md",
     "academy/CPTS/footprinting/DNS.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
@@ -261,8 +265,6 @@
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "labs/machines/easy/BLE.md",
-    "techniques/personal favorite techniques.md",
-    "academy/WINDOWS/kernel architecture.md",
     "academy/WINDOWS",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.xml",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.nmap",
