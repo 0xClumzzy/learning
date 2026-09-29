@@ -12,4 +12,4 @@ So windows credentials manager is built in to windows since windows 7 and window
 
 Each vault folder contains a policy `Policy.vpol` file with AES keys(AES-128/256) that is protected  by DPAPI. These AES keys are used to encrypt the credentials. 
 
-Credentials Guard is also used to further protect DPAPI 
+Credentials Guard is also used to further protect DPAPI master keys by storing them in secured enclaves 
