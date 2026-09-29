@@ -41,6 +41,8 @@ Target: Domain:interactive=SRV01\mcharles
 ```cmd
 runas /savecred /user:SRV01\mcharles cmd 
 ```
-syntax: <runas> /savecred  /user:<user> <command>
+syntax: `<runas> /savecred  /user:<user> <command>
 
-### Extracting 
+### Extracting creds using mimikatz
+
+
