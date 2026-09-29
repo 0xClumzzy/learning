@@ -8,4 +8,6 @@ So windows credentials manager is built in to windows since windows 7 and window
 		-> `%UserProfile%\AppData\LocalMicrosoft\Credentials`
 		->`%UserProfile%\AppData\Roamimg\Microsoft\Vault`
 		->`%ProgramData%\Micoroft\Vault`
-		-> `%SystemRoot%\System32\config\systemprofile\AppData\Roaming`
+	>`%SystemRoot%\System32\config\systemprofile\AppData\Roaming\Microsoft\`
+
+Each vault folder contains a policy `Policy.vpol` file 
