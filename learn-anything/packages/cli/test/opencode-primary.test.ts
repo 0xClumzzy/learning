@@ -1,8 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { CommandAdapterRegistry } from '@/core/command-generation/registry';
-import { opencodeAdapter } from '@/core/command-generation/adapters/opencode';
-import { getCommandContents, generateCommand } from '../../src/core/shared/skill-generation';
-import { AI_TOOLS, PREFERRED_TOOL } from '../../src/core/config';
+import { CommandAdapterRegistry } from '../src/core/command-generation/registry.js';
+import { opencodeAdapter } from '../src/core/command-generation/adapters/opencode.js';
+import { getCommandContents } from '../src/core/shared/skill-generation.js';
+import { generateCommand } from '../src/core/command-generation/generator.js';
+import { AI_TOOLS, PREFERRED_TOOL } from '../src/core/config.js';
 
 describe('OpenCode is the primary target', () => {
   it('registers an adapter, so commands are actually generated', () => {
