@@ -81,6 +81,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- **The published tarball was missing everything it needed.** The build was wired to `prepublishOnly`, which npm runs for `npm publish` but *not* for `npm pack`. Since `dist/` and `packages/cli/site-dist/` are gitignored, packing from a clean clone produced an archive with no compiled CLI and no dashboard — it installed without complaint and then failed at runtime. The hook is now `prepack`, which runs for both, and it calls `npm run build` rather than `pnpm run build` so it does not require pnpm on the consumer's PATH. Verified by packing from a fresh clone: 90 `dist/` files, 7 `site-dist/` files, 0 test files, and `peaches init --tools opencode` generating 7 skills and 7 commands from the installed package.
 - **Mastery states are now visually distinct in the knowledge map.** `mastered` and `needs_practice` both resolved to `--color-mastered`/`brand-2` (identical values), so two different states rendered pixel-identical in `MasteryTree` and in the `StatsHero` / `TopicProgressView` segmented ledgers — the one job those views have. The single-hue `--color-progress` token is replaced by a semantic status scale: `mastered` peach `#f5a76f`, `in_progress` leaf-green `#7fa65c`, `attention` (needs practice) coral `#e0605f`, `unexplored` grey. The quiz score bar (`>= 80 / >= 50 / below`) and the incorrect-answer ✗ in `QuizResults` were also remapped — the latter was brand peach, which read as a success colour on a wrong answer.
 
 ## [1.6.3] - 2026-07-21
