@@ -1,0 +1,4 @@
+{"timestamp": "2026-09-29T23:58:04.736322+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Created default settings: /home/lemonx/learning/my-deeptutor/data/user/settings/interface.json", "context": {}}
+{"timestamp": "2026-09-29T23:58:04.737449+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Created default settings: /home/lemonx/learning/my-deeptutor/data/user/settings/main.yaml", "context": {}}
+{"timestamp": "2026-09-29T23:58:04.739488+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Created default settings: /home/lemonx/learning/my-deeptutor/data/user/settings/agents.yaml", "context": {}}
+{"timestamp": "2026-09-29T23:58:04.768572+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Seeded default personas: peer, research-assistant, teacher", "context": {}}
