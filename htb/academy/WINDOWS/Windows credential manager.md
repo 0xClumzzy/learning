@@ -15,4 +15,7 @@ Each vault folder contains a policy `Policy.vpol` file with AES keys(AES-128/256
 Credentials Guard is also used to further protect DPAPI master keys by storing them in secured enclaves, the password stores are referred to as `credential lockers`
 - Web credentials 
 - Windows credentials 
-COnverti
+Exporting windows vaults
+```cmd
+rundll32 keymgr.dll,KRShowKey
+```
