@@ -39,12 +39,14 @@
             "id": "393dc3d14ceef161",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "academy/WINDOWS"
+                "file": "academy/WINDOWS/Untitled.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "WINDOWS"
+              "title": "Untitled"
             }
           }
         ],
@@ -261,15 +263,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c33c2740ccd6a60c",
+  "active": "393dc3d14ceef161",
   "lastOpenFiles": [
+    "academy/WINDOWS/Untitled.md",
+    "academy/WINDOWS/WINDOWS.md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/WINDOWS/Windows credential manager.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/REG.exe.md",
     "academy/WINDOWS/REGISTRY.md",
     "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
-    "academy/WINDOWS/WINDOWS.md",
     "academy/WINDOWS/.md",
     "academy/CPTS/footprinting/DNS.md",
     "labs/machines/easy/MANAGEMENT.md",
@@ -291,7 +294,6 @@
     "labs/machines/easy/JERRY.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
-    "labs/machines/easy/BLE.md",
     "academy/WINDOWS",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.xml",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.nmap",
