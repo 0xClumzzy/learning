@@ -39,14 +39,12 @@
             "id": "393dc3d14ceef161",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "academy/CPTS/File tranfer methods/Windows techniques .md",
-                "mode": "source",
-                "source": false
+                "path": "academy/WINDOWS"
               },
               "icon": "lucide-file",
-              "title": "Windows techniques"
+              "title": "WINDOWS"
             }
           }
         ],
@@ -263,8 +261,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "393dc3d14ceef161",
+  "active": "c33c2740ccd6a60c",
   "lastOpenFiles": [
+    "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/WINDOWS/Windows credential manager.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/REG.exe.md",
@@ -274,7 +273,6 @@
     "academy/WINDOWS/.md",
     "academy/CPTS/footprinting/DNS.md",
     "labs/machines/easy/MANAGEMENT.md",
-    "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/CPTS/footprinting/SMB.md",
     "conflict-files-obsidian-git.md",
     "labs/machines/easy/easy.md",
