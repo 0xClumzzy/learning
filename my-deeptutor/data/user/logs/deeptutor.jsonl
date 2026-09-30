@@ -2,3 +2,4 @@
 {"timestamp": "2026-09-29T23:58:04.737449+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Created default settings: /home/lemonx/learning/my-deeptutor/data/user/settings/main.yaml", "context": {}}
 {"timestamp": "2026-09-29T23:58:04.739488+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Created default settings: /home/lemonx/learning/my-deeptutor/data/user/settings/agents.yaml", "context": {}}
 {"timestamp": "2026-09-29T23:58:04.768572+00:00", "level": "INFO", "logger": "deeptutor.services.setup.init", "message": "Seeded default personas: peer, research-assistant, teacher", "context": {}}
+{"timestamp": "2026-09-29T23:59:25.778205+00:00", "level": "INFO", "logger": "httpx", "message": "HTTP Request: GET https://api.openai.com/v1/models \"HTTP/1.1 401 Unauthorized\"", "context": {}}
