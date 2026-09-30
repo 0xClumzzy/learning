@@ -51,11 +51,11 @@
     "//academy/academy/CPTS/academy/CPTS/File tranfer methods/academy/CPTS/File tranfer methods/shells and payloads",
     "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info/labs/machines/medium/fireflow.Info/dookie",
     "//academy",
-    "//academy/academy/WINDOWS",
     "//labs/labs/machines",
     "//academy/academy/CPTS",
     "//labs/labs/machines/labs/machines/easy",
-    "//labs/labs/machines/labs/machines/hard/labs/machines/hard/gobuster_results"
+    "//labs/labs/machines/labs/machines/hard/labs/machines/hard/gobuster_results",
+    "//academy/academy/CPTS/academy/CPTS/File tranfer methods"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
