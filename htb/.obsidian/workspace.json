@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f12fbf11eb93888c",
+        "id": "510533ac6cbff586",
         "type": "tabs",
         "children": [
           {
-            "id": "7ea91b1ca39d81cb",
+            "id": "cd696c28a4cb9fbb",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -76,7 +76,7 @@
             }
           },
           {
-            "id": "da7e320c73bc80b6",
+            "id": "d4b50798b270164d",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -230,11 +230,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7ea91b1ca39d81cb",
+  "active": "cd696c28a4cb9fbb",
   "lastOpenFiles": [
     "academy/WINDOWS/Windows credential manager.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
-    "academy/WINDOWS/Untitled.md",
     "academy/WINDOWS/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/WINDOWS.md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
@@ -259,6 +258,7 @@
     "academy/WINDOWS/intro.md",
     "labs/machines/easy/BLUE.md",
     "academy/academy.md",
+    "labs/machines/easy/JERRY.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
