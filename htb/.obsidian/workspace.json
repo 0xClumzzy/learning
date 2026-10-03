@@ -48,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -261,10 +261,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1375b9881144331b",
+  "active": "e3e71ec88cd56460",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-10-03 17.05.00.excalidraw.md",
     "MANAGEMENT HTB .md",
+    "Excalidraw/Drawing 2026-10-03 17.05.00.excalidraw.md",
     "Excalidraw",
     "academy/WINDOWS/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/Windows credential manager.md",
