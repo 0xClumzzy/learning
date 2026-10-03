@@ -20,8 +20,19 @@
               "icon": "lucide-file",
               "title": "Attacking AD and NTDS.dit"
             }
+          },
+          {
+            "id": "1375b9881144331b",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -234,11 +245,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cd696c28a4cb9fbb",
+  "active": "1375b9881144331b",
   "lastOpenFiles": [
+    "academy/WINDOWS/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/Windows credential manager.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
-    "academy/WINDOWS/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/WINDOWS.md",
     "academy/CPTS/File tranfer methods/Windows techniques .md",
     "academy/WINDOWS/REG.exe.md",
