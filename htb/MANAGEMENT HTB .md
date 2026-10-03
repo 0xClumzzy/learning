@@ -76,3 +76,35 @@ PORT 1689(Java RMI)
 # FOOTHOLD
 
 # PRIV ESCLATION
+
+```
+rdiff-backup 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'
+
+'
