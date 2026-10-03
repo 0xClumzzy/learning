@@ -25,10 +25,14 @@
             "id": "1375b9881144331b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "MANAGEMENT HTB .md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "MANAGEMENT HTB"
             }
           }
         ],
@@ -247,6 +251,7 @@
   },
   "active": "1375b9881144331b",
   "lastOpenFiles": [
+    "MANAGEMENT HTB .md",
     "academy/WINDOWS/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/Windows credential manager.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
@@ -273,7 +278,6 @@
     "academy/WINDOWS/intro.md",
     "labs/machines/easy/BLUE.md",
     "academy/academy.md",
-    "labs/machines/easy/JERRY.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
