@@ -1,5 +1,6 @@
 # RECON 
 
+### Nmap scan
 # FOOTHOLD
 
 # PRIV ESCLATION
