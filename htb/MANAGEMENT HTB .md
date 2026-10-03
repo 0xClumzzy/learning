@@ -75,6 +75,8 @@ PORT 1689(Java RMI)
 
 # FOOTHOLD
 
+Pre-auth java decerialization for  rce 
+
 # PRIV ESCLATION
 
 ```bash
