@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "MANAGEMENT HTB"
             }
+          },
+          {
+            "id": "e3e71ec88cd56460",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-10-03 17.05.00.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-10-03 17.05.00.excalidraw"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -249,9 +261,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1375b9881144331b",
+  "active": "e3e71ec88cd56460",
   "lastOpenFiles": [
     "MANAGEMENT HTB .md",
+    "Excalidraw/Drawing 2026-10-03 17.05.00.excalidraw.md",
+    "Excalidraw",
     "academy/WINDOWS/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/Windows credential manager.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
@@ -277,7 +291,6 @@
     "labs/machines/easy/MONTEVERDE.md",
     "academy/WINDOWS/intro.md",
     "labs/machines/easy/BLUE.md",
-    "academy/academy.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
@@ -286,7 +299,6 @@
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.gnmap",
     "labs/machines/easy/nexus.Info/nexus.xml",
     "labs/machines/easy/nexus.Info/nexus.gnmap",
-    "labs/machines/easy/nexus.Info/nexus.nmap",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",
     "Pasted image 20260721101033.png",
