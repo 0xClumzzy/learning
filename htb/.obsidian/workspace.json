@@ -107,7 +107,7 @@
             }
           },
           {
-            "id": "d4b50798b270164d",
+            "id": "5030a07931be5289",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -261,10 +261,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e3e71ec88cd56460",
+  "active": "5350a32acc587560",
   "lastOpenFiles": [
-    "MANAGEMENT HTB .md",
     "Excalidraw/Drawing 2026-10-03 17.05.00.excalidraw.md",
+    "MANAGEMENT HTB .md",
     "Excalidraw",
     "academy/WINDOWS/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/Windows credential manager.md",
