@@ -73,4 +73,6 @@ MCP handles;
 
 GENERIC CONFERENCE CONTROL
 ****
-It manages the whole session
+It manages the overall session
+- handles the setup and teardown of sessions
+- Controls the resources p
