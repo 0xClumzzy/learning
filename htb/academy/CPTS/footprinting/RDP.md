@@ -42,3 +42,9 @@ PORT     STATE SERVICE
 |     128-bit RC4: SUCCESS
 |_  RDP Protocol Version:  RDP 5.x, 6.x, 7.x, or 8.x server
 ```
+
+*MS-WBT-SERVER*
+
+ms-wbt-server is a protocol stack that allows machines to communicate remotely
+- RDP 
+- 
