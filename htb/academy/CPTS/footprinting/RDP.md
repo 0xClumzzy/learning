@@ -47,4 +47,9 @@ PORT     STATE SERVICE
 
 ms-wbt-server is a protocol stack that allows machines to communicate remotely
 - RDP 
-- 
+- MCS
+- GCC
+
+Components that manage RDP 
+1. Wdtshare.sys
+- The driver 
