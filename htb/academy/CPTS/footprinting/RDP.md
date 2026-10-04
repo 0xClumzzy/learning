@@ -78,7 +78,7 @@ It manages the overall session
 - Controls the resources provided by MCS 
 - manages sessions(create,delete,coordinate)
 ```mermaid 
-flowchart  LR
-A[]
+flowchart LR
+A((MCS</br> channels+priority))-->B
 ```
 
