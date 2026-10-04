@@ -75,4 +75,9 @@ GENERIC CONFERENCE CONTROL
 ****
 It manages the overall session
 - handles the setup and teardown of sessions
-- Controls the resources p
+- Controls the resources provided by MCS 
+- manages sessions(create,delete,coordinate)
+```mermaid 
+flowchart  LR
+
+```
