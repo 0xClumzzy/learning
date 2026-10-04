@@ -64,4 +64,6 @@ MULTIPOINT COMMUNICATION SERVICE
 ****
 It defines how data can be  transmitted to multiple sources  simultaneously 
 => used for point to point communication in RDP scenarios
-
+MCP handles;
+- Channel Assignment - It manages virtual channels and directs each type of data to its channel 
+- Data segmentation- easir management and transimmition of data via atomit
