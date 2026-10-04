@@ -62,4 +62,6 @@ Components that manage RDP
 
 MULTIPOINT COMMUNICATION SERVICE
 ****
-It defines how data should n
+It defines how data can be  transmitted to multiple sources  simultaneously 
+=> used for point to point communication in RDP scenarios
+
