@@ -49,7 +49,8 @@ ms-wbt-server is a protocol stack that allows machines to communicate remotely
 - RDP 
 - MCS
 - GCC
-
+REMOTE DESKTOP PROTOCOL
+****
 Components that manage RDP 
 1. Wdtshare.sys
 - The rpd driver 
@@ -59,3 +60,6 @@ Components that manage RDP
 - Transport driver
 - Packages rdp data and transmits via the underlying protocol, mainly tcp/ip.
 
+MULTIPOINT COMMUNICATION SERVICE
+****
+It defines how data should n
