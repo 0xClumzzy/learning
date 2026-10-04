@@ -79,6 +79,8 @@ It manages the overall session
 - manages sessions(create,delete,coordinate)
 ```mermaid 
 flowchart LR
-A((MCS</br> channels+priority))-->B
+A((MCS</br> channels+priority))-->B((MCS</br>seg+frames))
+B-->{PROTOCOL }
 ```
+
 
