@@ -55,7 +55,8 @@
     "//academy/academy/CPTS",
     "//labs/labs/machines/labs/machines/easy",
     "//labs/labs/machines/labs/machines/hard/labs/machines/hard/gobuster_results",
-    "//academy/academy/WINDOWS"
+    "//academy/academy/WINDOWS",
+    "//academy/academy/CPTS/academy/CPTS/footprinting"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

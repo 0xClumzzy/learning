@@ -39,12 +39,14 @@
             "id": "e7a48d1a5c641a82",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "labs/machines/medium"
+                "file": "academy/CPTS/footprinting/RDP.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "medium"
+              "title": "RDP"
             }
           },
           {
@@ -60,9 +62,21 @@
               "icon": "lucide-file",
               "title": "LAYOVER"
             }
+          },
+          {
+            "id": "23740a2c258a32d3",
+            "type": "leaf",
+            "state": {
+              "type": "mk-space",
+              "state": {
+                "path": "academy/CPTS/footprinting"
+              },
+              "icon": "lucide-file",
+              "title": "footprinting"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -275,13 +289,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2629c741d5e15d80",
+  "active": "e7a48d1a5c641a82",
   "lastOpenFiles": [
-    "LAYOVER .md",
+    "academy/CPTS/footprinting/RDP.md",
     "MANAGEMENT HTB .md",
+    "academy/WINDOWS/Attacking AD and NTDS.dit.md",
+    "LAYOVER .md",
     "Excalidraw/Drawing 2026-10-03 17.05.00.excalidraw.md",
     "Excalidraw",
-    "academy/WINDOWS/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/Windows credential manager.md",
     "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/WINDOWS.md",
@@ -304,7 +319,6 @@
     "labs/machines/easy/TEMPLATE.md",
     "academy/vuln/CVSS scoring .md",
     "labs/machines/easy/MONTEVERDE.md",
-    "academy/WINDOWS/intro.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
