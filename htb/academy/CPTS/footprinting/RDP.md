@@ -80,7 +80,11 @@ It manages the overall session
 ```mermaid 
 flowchart LR
 A((MCS</br> channels+priority))-->B((MCS</br>seg+frames))
-B-->{PROTOCOL }
+B-->C[protocol ecapsulation</br>=RDP]
 ```
+
+
+
+
 
 
