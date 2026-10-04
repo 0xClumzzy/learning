@@ -49,6 +49,7 @@ ms-wbt-server is a protocol stack that allows machines to communicate remotely
 - RDP 
 - MCS
 - GCC
+
 REMOTE DESKTOP PROTOCOL
 ****
 Components that manage RDP 
@@ -69,4 +70,7 @@ MCP handles;
 - Data segmentation- easir management and transimmition of data via atomity
 - Prioritization- Assignment of  priority levels to dofferent data streams
 >> MCS essentially abstracts the multiple RDP stacks into a single entity from the perspective of the Generic Conference Control. It’s a way to organize and manage the flow of data efficiently.
-4
+
+GENERIC CONFERENCE CONTROL
+****
+It manages the whole session
