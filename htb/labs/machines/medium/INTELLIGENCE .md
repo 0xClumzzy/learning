@@ -16,8 +16,26 @@ os: windows 
 Run an initial Nmap scan:
 
 ```bash
-nmap -sC -sV -oN nmap/intel 10.10.10.x
+nmap --min-rate 5000 -sCV -oX nmap/intel 10.10.10.x
 ```
+
+| Port     | State | Service              | Version / Notes                            |
+| -------- | ----- | -------------------- | ------------------------------------------ |
+| 53/tcp   | open  | DNS                  | Simple DNS Plus                            |
+| 80/tcp   | open  | HTTP                 | Microsoft IIS 10.0 — Title: `Intelligence` |
+| 88/tcp   | open  | Kerberos             | Server time: `2026-10-20 07:27:27Z`        |
+| 135/tcp  | open  | MSRPC                | Microsoft Windows RPC                      |
+| 139/tcp  | open  | NetBIOS-SSN          | Microsoft Windows                          |
+| 389/tcp  | open  | LDAP                 | AD LDAP — Domain: `intelligence.htb`       |
+| 445/tcp  | open  | SMB                  | microsoft-ds                               |
+| 464/tcp  | open  | kpasswd5             | Kerberos password change                   |
+| 593/tcp  | open  | RPC over HTTP        | Microsoft Windows RPC/HTTP 1.0             |
+| 636/tcp  | open  | LDAPS                | (SSL)                                      |
+| 3268/tcp | open  | Global Catalog LDAP  | AD LDAP                                    |
+| 3269/tcp | open  | Global Catalog LDAPS | (SSL)                                      |
+| 5985/tcp | open  | WinRM                | Microsoft HTTPAPI 2.0 — `Not Found`        |
+
+Web browser has a document 
 
 ## Foothold
 
