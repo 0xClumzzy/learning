@@ -39,14 +39,9 @@ nmap --min-rate 5000 -sCV -oX nmap/intel 10.10.10.x
 The web server has 2 pdfs that reflect at time stamp on it, editing the timestamp to a relative one confirms a hit making an assumption of potential users, all hits have a different creator in their metadata that can be viewed with exiftool. 
 - A python script to download every iteration of the date from `2019-01-01` → `2019-12-15` saves the pdfs
 - Another script searches for buzzwords like password, and we get a hit 
-1. Script for  downloads, it saves the users in a wordlist(`cere)
+1. Script for  downloads, it saves the users in a wordlist(`creators.py`)
 ```python
 #!/usr/bin/env python3
-"""
-Date-based document brute forcer
-Range: 2020-01-01 to 2020-12-15
-Pattern: http://10.10.10.10/documents/YYYY-MM-DD-upload.pdf
-"""
 
 import os
 import requests
@@ -157,8 +152,75 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-2. script for password 
+2. script for password, finds a hit: 
+```python
+#!/usr/bin/env python3
+import os
+import sys
+import re
 
+try:
+    from pypdf import PdfReader
+except ImportError:  # pragma: no cover
+    from PyPDF2 import PdfReader
+
+DEFAULT_KEYWORD = "password"
+
+
+def extract_text(path: str) -> str:
+    try:
+        reader = PdfReader(path)
+        parts = []
+        for page in reader.pages:
+            try:
+                parts.append(page.extract_text() or "")
+            except Exception:  # pylint: disable=broad-except
+                continue
+        return "\n".join(parts)
+    except Exception as e:  # pylint: disable=broad-except
+        return f"[ERROR reading {path}: {e}]"
+
+
+def main():
+    directory = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
+    keyword = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_KEYWORD
+    pattern = re.compile(re.escape(keyword), re.IGNORECASE)
+
+    pdfs = sorted(
+        f for f in os.listdir(directory)
+        if f.lower().endswith(".pdf") and os.path.isfile(os.path.join(directory, f))
+    )
+
+    if not pdfs:
+        print(f"No PDFs found in {directory}")
+        return
+
+    print(f"Searching {len(pdfs)} PDF(s) in {directory} for '{keyword}'...\n")
+    hits = 0
+    for name in pdfs:
+        path = os.path.join(directory, name)
+        text = extract_text(path)
+        lines = [ln for ln in text.splitlines() if pattern.search(ln)]
+        if lines:
+            hits += 1
+            print(f"=== {name} ===")
+            for ln in lines:
+                print(f"  {ln.strip()}")
+            # Also print the following line, which often holds the actual password
+            all_lines = text.splitlines()
+            for i, ln in enumerate(all_lines):
+                if pattern.search(ln) and i + 1 < len(all_lines):
+                    nxt = all_lines[i + 1].strip()
+                    if nxt and not pattern.search(nxt):
+                        print(f"  -> {nxt}")
+            print()
+
+    print(f"Done. {hits} PDF(s) contained '{keyword}'.")
+
+
+if __name__ == "__main__":
+    main()
+```
 ### SMB enumeration
 
 ## Foothold
