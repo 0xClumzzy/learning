@@ -35,7 +35,8 @@
               "title": "INTELLIGENCE"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -249,8 +250,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "23740a2c258a32d3",
+  "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
+    "academy/CPTS/footprinting/SMB.md",
     "LAYOVER .md",
     "labs/machines/medium/INTELLIGENCE .md",
     "labs/machines/TEMPLATE111.md",
@@ -273,7 +275,6 @@
     "academy/WINDOWS/.md",
     "academy/CPTS/footprinting/DNS.md",
     "labs/machines/easy/MANAGEMENT.md",
-    "academy/CPTS/footprinting/SMB.md",
     "conflict-files-obsidian-git.md",
     "labs/machines/easy/easy.md",
     "labs/machines/easy/ATOM.md",
