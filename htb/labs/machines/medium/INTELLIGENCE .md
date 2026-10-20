@@ -222,6 +222,26 @@ if __name__ == "__main__":
     main()
 ```
 ### SMB enumeration
+*Password spraying*
+```bash
+netexec
+
+smb 10.129.95.154
+
+-u
+
+Tiffany.Molina
+
+-p
+
+'NewIntelligenceCorpUser9876'
+
+--shares
+```
+
+```bash
+smbclient  //10.129.95.154/IT -U 'Tiffany.Molina%NewIntelligenceCorpUser9876'
+```
 
 ## Foothold
 
