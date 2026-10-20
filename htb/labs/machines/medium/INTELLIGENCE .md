@@ -36,7 +36,8 @@ nmap --min-rate 5000 -sCV -oX nmap/intel 10.10.10.x
 | 3269/tcp | open  | Global Catalog LDAPS | (SSL)                                      |
 | 5985/tcp | open  | WinRM                | Microsoft HTTPAPI 2.0 — `Not Found`        |
 ### Web enumeration 
-The web server has 2 pdfs that reflect at time stamp on it, editing the times
+The web server has 2 pdfs that reflect at time stamp on it, editing the timestamp to a relative one confirms a hit, 
+A python script to download every iteration of the date from `2019-01-01` → `2019-12-15` saves the pdfs
 
 
 ## Foothold
