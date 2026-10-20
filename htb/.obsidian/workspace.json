@@ -149,7 +149,7 @@
             }
           },
           {
-            "id": "7848c11f2ce4ef8a",
+            "id": "4d189cf25e659598",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -305,6 +305,7 @@
   },
   "active": "9e322f4fa993a3de",
   "lastOpenFiles": [
+    "Tags",
     "techniques/VOLATILITY.md",
     "TEAMS.md",
     "academy/CPTS/footprinting/RDP.md",
@@ -330,9 +331,7 @@
     "labs/machines/easy/.md",
     "labs/machines/machines.md",
     "labs/machines/TEMPLATE11.md",
-    "Tags",
     "TEMPLATE.md",
-    "labs/machines/easy/TEMPLATE.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
