@@ -49,10 +49,14 @@
     "//academy/academy/CPTS/academy/CPTS/File tranfer methods/academy/CPTS/File tranfer methods/shells and payloads",
     "//labs/labs/machines/labs/machines/medium/labs/machines/medium/fireflow.Info/labs/machines/medium/fireflow.Info/dookie",
     "//labs/labs/machines",
-    "//labs/labs/machines/labs/machines/easy",
     "//labs/labs/machines/labs/machines/hard/labs/machines/hard/gobuster_results",
     "//academy/academy/CPTS/academy/CPTS/footprinting",
-    "//labs"
+    "//labs",
+    "//labs/labs/challenges",
+    "//labs/labs/challenges/labs/challenges/web",
+    "//academy",
+    "//academy/academy/WINDOWS",
+    "//academy/academy/WINDOWS/academy/WINDOWS/kerberos"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
