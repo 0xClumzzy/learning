@@ -13,7 +13,8 @@ os: windows 
 
 ## Enumeration
 
-Run an initial Nmap scan:
+### Port scan
+ Nmap scan:
 
 ```bash
 nmap --min-rate 5000 -sCV -oX nmap/intel 10.10.10.x
@@ -34,8 +35,9 @@ nmap --min-rate 5000 -sCV -oX nmap/intel 10.10.10.x
 | 3268/tcp | open  | Global Catalog LDAP  | AD LDAP                                    |
 | 3269/tcp | open  | Global Catalog LDAPS | (SSL)                                      |
 | 5985/tcp | open  | WinRM                | Microsoft HTTPAPI 2.0 — `Not Found`        |
+### Web enumeration 
+The web server has 2 pdfs that reflect at time stamp on it, editing the times
 
-Web browser has a document 
 
 ## Foothold
 
