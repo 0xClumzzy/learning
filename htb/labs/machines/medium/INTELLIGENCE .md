@@ -235,7 +235,7 @@ netexec smb 10.129.95.154 -u Tiffany.Molina -p 'NewIntelligenceCorpUser9876' --s
 smbclient //10.129.95.154/IT -U 'Tiffany.Molina%NewIntelligenceCorpUser9876'
 ```
 
-There is a 
+There is a `downdetector.ps1` that checks webserver status  scheduled update evry 5 minutes. It imports AD, gets every dns record and sends an authen 
 ## Foothold
 
 How you got initial access.
