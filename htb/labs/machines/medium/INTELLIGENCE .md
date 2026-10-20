@@ -1,13 +1,14 @@
 ---
 title: INTELLIGENCE
-description: One-line summary of the box and key vulnerability.
-date: 2024-01-15
+description: A windows machine with active directory  with document bruteforcing for username discovery
+date: 2026-10-20T01:46:41.000Z
 category: htb
 tags:
-  - tag1
-  - tag2
-difficulty: easy
-os: linux
+  - windows
+  - nmap
+  - ad
+difficulty: medium
+os: windows 
 ---
 
 ## Enumeration
@@ -15,12 +16,8 @@ os: linux
 Run an initial Nmap scan:
 
 ```bash
-nmap -sC -sV -oN nmap/boxname 10.10.10.x
+nmap -sC -sV -oN nmap/intel 10.10.10.x
 ```
-
-### Port XX (Service)
-
-Describe what's running on each interesting port.
 
 ## Foothold
 
