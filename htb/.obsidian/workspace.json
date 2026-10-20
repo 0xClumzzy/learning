@@ -50,20 +50,6 @@
             }
           },
           {
-            "id": "2629c741d5e15d80",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LAYOVER .md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "LAYOVER"
-            }
-          },
-          {
             "id": "23740a2c258a32d3",
             "type": "leaf",
             "state": {
@@ -73,20 +59,6 @@
               },
               "icon": "lucide-file",
               "title": "footprinting"
-            }
-          },
-          {
-            "id": "9e322f4fa993a3de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "labs/machines/medium/INTELLIGENCE .md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "INTELLIGENCE"
             }
           },
           {
@@ -104,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -318,8 +290,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff8f62f55c1edbff",
+  "active": "23740a2c258a32d3",
   "lastOpenFiles": [
+    "LAYOVER .md",
+    "labs/machines/medium/INTELLIGENCE .md",
     "labs/machines/TEMPLATE111.md",
     "academy/academy.md",
     "techniques/VOLATILITY.md",
@@ -328,7 +302,6 @@
     "academy/CPTS/footprinting/RDP.md",
     "MANAGEMENT HTB .md",
     "academy/WINDOWS/Attacking AD and NTDS.dit.md",
-    "LAYOVER .md",
     "Excalidraw/Drawing 2026-10-03 17.05.00.excalidraw.md",
     "Excalidraw",
     "academy/WINDOWS/Windows credential manager.md",
@@ -347,7 +320,6 @@
     "labs/machines/easy/ATOM.md",
     "labs/machines/easy/.md",
     "labs/machines/machines.md",
-    "labs/machines/medium/INTELLIGENCE .md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
