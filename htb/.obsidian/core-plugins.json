@@ -17,6 +17,7 @@
   "slash-command": true,
   "editor-status": true,
   "bookmarks": true,
+  "markdown-importer": false,
   "zk-prefixer": true,
   "random-note": false,
   "outline": true,
