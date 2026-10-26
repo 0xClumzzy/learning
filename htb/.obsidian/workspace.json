@@ -95,7 +95,7 @@
             }
           },
           {
-            "id": "0e685f02fd1fe438",
+            "id": "9f6fd6c05b1e6db4",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -251,6 +251,7 @@
   },
   "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
+    "Tags",
     "academy/WINDOWS/kerberos/SPNs.md",
     "academy/WINDOWS/kerberos/kerberos relaying.md",
     "labs/machines/medium/INTELLIGENCE .md",
@@ -261,7 +262,6 @@
     "labs/machines/TEMPLATE111.md",
     "academy/academy.md",
     "techniques/VOLATILITY.md",
-    "Tags",
     "TEAMS.md",
     "academy/CPTS/footprinting/RDP.md",
     "MANAGEMENT HTB .md",
@@ -279,7 +279,6 @@
     "academy/CPTS/footprinting/DNS.md",
     "labs/machines/easy/MANAGEMENT.md",
     "conflict-files-obsidian-git.md",
-    "labs/machines/easy/easy.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
