@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/kerberos/kerberos relaying.md",
+                "file": "LAYOVER .md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kerberos relaying"
+              "title": "LAYOVER"
             }
           }
         ],
@@ -215,19 +215,9 @@
               "icon": "lucide-ghost",
               "title": "smart-connections-view"
             }
-          },
-          {
-            "id": "7fc0facff8b3c7db",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -251,9 +241,9 @@
   },
   "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
+    "academy/WINDOWS/kerberos/kerberos relaying.md",
     "Tags",
     "academy/WINDOWS/kerberos/SPNs.md",
-    "academy/WINDOWS/kerberos/kerberos relaying.md",
     "labs/machines/medium/INTELLIGENCE .md",
     "academy/WINDOWS/kerberos/kerberos.md",
     "academy/WINDOWS/kerberos",
