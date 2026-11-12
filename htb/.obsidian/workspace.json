@@ -95,7 +95,7 @@
             }
           },
           {
-            "id": "c60be44e01dc99fc",
+            "id": "6a2beaecfaef6edd",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -241,8 +241,8 @@
   },
   "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
-    "academy/WINDOWS/kerberos/kerberos relaying.md",
     "Tags",
+    "academy/WINDOWS/kerberos/kerberos relaying.md",
     "academy/WINDOWS/kerberos/SPNs.md",
     "labs/machines/medium/INTELLIGENCE .md",
     "academy/WINDOWS/kerberos/kerberos.md",
