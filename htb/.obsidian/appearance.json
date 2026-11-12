@@ -7,5 +7,6 @@
   "accentColor": "#430255",
   "enabledCssSnippets": [
     "noctalia"
-  ]
+  ],
+  "showRibbon": true
 }
