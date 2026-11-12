@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/fundamentals/ntlm.md",
+                "file": "academy/WINDOWS/lateral movement/PassTheHash .md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ntlm"
+              "title": "PassTheHash"
             }
           }
         ],
@@ -241,10 +241,11 @@
   },
   "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
+    "academy/WINDOWS/lateral movement/lateral movement.md",
+    "academy/WINDOWS/hash dumping/hash dumping.md",
     "academy/WINDOWS/fundamentals/ntlm.md",
     "academy/WINDOWS/fundamentals/fundamentals.md",
     "academy/WINDOWS/lateral movement/PassTheHash .md",
-    "academy/WINDOWS/lateral movement/lateral movement.md",
     "academy/WINDOWS/lateral movement",
     "academy/WINDOWS/WINDOWS.md",
     "academy/WINDOWS/intro.md",
@@ -254,7 +255,6 @@
     "academy/WINDOWS/fundamentals/REG.exe.md",
     "academy/WINDOWS/hash dumping/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
-    "academy/WINDOWS/hash dumping/hash dumping.md",
     "academy/WINDOWS/hash dumping",
     "academy/WINDOWS/kerberos/kerberos relaying.md",
     "academy/WINDOWS/kerberos/.md",
