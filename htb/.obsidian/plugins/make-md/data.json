@@ -55,7 +55,9 @@
     "//labs/labs/challenges",
     "//labs/labs/challenges/labs/challenges/web",
     "//academy",
-    "//academy/academy/WINDOWS"
+    "//academy/academy/WINDOWS",
+    "//academy/academy/WINDOWS/academy/WINDOWS/kerberos",
+    "//academy/academy/WINDOWS/academy/WINDOWS/lateral movent"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

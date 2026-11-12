@@ -27,10 +27,10 @@
             "state": {
               "type": "mk-space",
               "state": {
-                "path": "academy/WINDOWS"
+                "path": "academy/WINDOWS/lateral movement"
               },
               "icon": "lucide-file",
-              "title": "WINDOWS"
+              "title": "lateral movement"
             }
           }
         ],
@@ -239,16 +239,18 @@
   },
   "active": "5f6374147e91b17b",
   "lastOpenFiles": [
+    "academy/WINDOWS/lateral movement/lateral movement.md",
+    "academy/WINDOWS/lateral movement",
+    "academy/WINDOWS/WINDOWS.md",
+    "academy/WINDOWS/intro.md",
     "academy/WINDOWS/fundamentals/fundamentals.md",
     "academy/WINDOWS/fundamentals",
-    "academy/WINDOWS/WINDOWS.md",
-    "academy/WINDOWS/kernel architecture.md",
-    "academy/WINDOWS/REGISTRY.md",
-    "academy/WINDOWS/intro.md",
+    "academy/WINDOWS/fundamentals/kernel architecture.md",
+    "academy/WINDOWS/fundamentals/REGISTRY.md",
     "academy/WINDOWS/fundamentals/REG.exe.md",
     "academy/WINDOWS/hash dumping/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
-    "academy/WINDOWS/kerberos/PassTheHash .md",
+    "academy/WINDOWS/lateral movement/PassTheHash .md",
     "academy/WINDOWS/hash dumping/hash dumping.md",
     "academy/WINDOWS/hash dumping",
     "academy/WINDOWS/kerberos/kerberos relaying.md",
@@ -269,12 +271,10 @@
     "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
     "Excalidraw/Drawing 2026-10-03 17.05.00.excalidraw.md",
     "Excalidraw",
-    "academy/WINDOWS/hash dumping/Windows credential manager.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.xml",
-    "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.nmap",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",
     "Pasted image 20260721101033.png",
