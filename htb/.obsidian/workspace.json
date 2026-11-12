@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/kerberos/kerberos relaying.md",
+                "file": "academy/WINDOWS/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "kerberos relaying"
+              "title": "Untitled"
             }
           }
         ],
@@ -241,8 +241,9 @@
   },
   "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
-    "academy/WINDOWS/kerberos/.md",
     "academy/WINDOWS/kerberos/kerberos relaying.md",
+    "academy/WINDOWS/Untitled.md",
+    "academy/WINDOWS/kerberos/.md",
     "academy/WINDOWS/kerberos/SPNs.md",
     "LAYOVER .md",
     "academy/CPTS/footprinting/SMB.md",
@@ -269,7 +270,6 @@
     "academy/WINDOWS/.md",
     "academy/CPTS/footprinting/DNS.md",
     "labs/machines/easy/MANAGEMENT.md",
-    "conflict-files-obsidian-git.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
