@@ -25,14 +25,12 @@
             "id": "ff8f62f55c1edbff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "mk-space",
               "state": {
-                "file": "academy/WINDOWS/PassTheHash .md",
-                "mode": "source",
-                "source": false
+                "path": "academy/WINDOWS"
               },
               "icon": "lucide-file",
-              "title": "PassTheHash"
+              "title": "WINDOWS"
             }
           }
         ],
@@ -239,10 +237,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff8f62f55c1edbff",
+  "active": "5f6374147e91b17b",
   "lastOpenFiles": [
+    "academy/WINDOWS/fundamentals/fundamentals.md",
+    "academy/WINDOWS/fundamentals",
+    "academy/WINDOWS/WINDOWS.md",
+    "academy/WINDOWS/kernel architecture.md",
+    "academy/WINDOWS/REGISTRY.md",
+    "academy/WINDOWS/intro.md",
+    "academy/WINDOWS/fundamentals/REG.exe.md",
+    "academy/WINDOWS/hash dumping/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
+    "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
+    "academy/WINDOWS/kerberos/PassTheHash .md",
+    "academy/WINDOWS/hash dumping/hash dumping.md",
+    "academy/WINDOWS/hash dumping",
     "academy/WINDOWS/kerberos/kerberos relaying.md",
-    "academy/WINDOWS/PassTheHash .md",
     "academy/WINDOWS/kerberos/.md",
     "academy/WINDOWS/kerberos/SPNs.md",
     "LAYOVER .md",
@@ -257,26 +266,15 @@
     "TEAMS.md",
     "academy/CPTS/footprinting/RDP.md",
     "MANAGEMENT HTB .md",
-    "academy/WINDOWS/Attacking AD and NTDS.dit.md",
+    "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
     "Excalidraw/Drawing 2026-10-03 17.05.00.excalidraw.md",
     "Excalidraw",
-    "academy/WINDOWS/Windows credential manager.md",
-    "academy/WINDOWS/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
-    "academy/WINDOWS/WINDOWS.md",
-    "academy/CPTS/File tranfer methods/Windows techniques .md",
-    "academy/WINDOWS/REG.exe.md",
-    "academy/WINDOWS/REGISTRY.md",
-    "academy/WINDOWS/SAM, SECURITY and SYSTEM .md",
-    "academy/WINDOWS/.md",
-    "academy/CPTS/footprinting/DNS.md",
-    "labs/machines/easy/MANAGEMENT.md",
+    "academy/WINDOWS/hash dumping/Windows credential manager.md",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
     "academy/WINDOWS",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.xml",
     "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.nmap",
-    "labs/machines/easy/nexus.Info/nexus.Nmap/nexus.gnmap",
-    "labs/machines/easy/nexus.Info/nexus.xml",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",
     "Pasted image 20260721101033.png",
