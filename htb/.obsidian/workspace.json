@@ -25,12 +25,14 @@
             "id": "ff8f62f55c1edbff",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "academy/WINDOWS/lateral movement"
+                "file": "academy/WINDOWS/lateral movement/PassTheHash .md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "lateral movement"
+              "title": "PassTheHash"
             }
           }
         ],
@@ -237,7 +239,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5f6374147e91b17b",
+  "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
     "academy/WINDOWS/lateral movement/lateral movement.md",
     "academy/WINDOWS/lateral movement",
