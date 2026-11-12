@@ -55,8 +55,7 @@
     "//labs/labs/challenges",
     "//labs/labs/challenges/labs/challenges/web",
     "//academy",
-    "//academy/academy/WINDOWS",
-    "//academy/academy/WINDOWS/academy/WINDOWS/kerberos"
+    "//academy/academy/WINDOWS"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
