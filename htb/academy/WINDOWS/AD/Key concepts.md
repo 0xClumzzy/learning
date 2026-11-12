@@ -5,3 +5,4 @@ The word management suggests:
 - There is a central db 
 - That has information on a network of compters
 - All housed in a domain controller 
+
