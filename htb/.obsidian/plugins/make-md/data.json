@@ -57,7 +57,9 @@
     "//academy",
     "//academy/academy/WINDOWS",
     "//academy/academy/WINDOWS/academy/WINDOWS/lateral movent",
-    "//academy/academy/WINDOWS/academy/WINDOWS/AD"
+    "//academy/academy/WINDOWS/academy/WINDOWS/AD",
+    "//academy/academy/WINDOWS/academy/WINDOWS/fundamentals",
+    "//academy/academy/WINDOWS/academy/WINDOWS/hash dumping"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
