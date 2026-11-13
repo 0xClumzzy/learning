@@ -17,5 +17,7 @@ $env:USERDNSDOMAIN #-> DNS Name
 All computers must be connected to a domain controller to belong to that active directory  
 1. Domain Controllers. Central servers managing the domain. 
 2. Workspace. Personal computers 
-3. Servers. Computers hosting
+3. Servers. Computers hosting services 
+## Users 
+
 
