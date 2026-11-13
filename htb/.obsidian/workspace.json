@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
+                "file": "academy/WINDOWS/AD/Domain Controllers .md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Attacking AD and NTDS.dit"
+              "title": "Domain Controllers"
             }
           }
         ],
@@ -241,6 +241,10 @@
   },
   "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
+    "Pasted image 20261113184819.png",
+    "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
+    "academy/WINDOWS/hash dumping/Windows credential manager.md",
+    "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/hash dumping/hash dumping.md",
     "academy/WINDOWS/fundamentals/REGISTRY.md",
     "academy/WINDOWS/fundamentals/REG.exe.md",
@@ -259,7 +263,6 @@
     "academy/WINDOWS/fundamentals",
     "academy/WINDOWS/fundamentals/kernel architecture.md",
     "academy/WINDOWS/hash dumping/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
-    "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
     "academy/WINDOWS/hash dumping",
     "academy/WINDOWS/kerberos/kerberos relaying.md",
     "academy/WINDOWS/kerberos/.md",
@@ -270,9 +273,6 @@
     "labs/machines/medium/INTELLIGENCE .md",
     "academy/WINDOWS/kerberos/kerberos.md",
     "academy/WINDOWS/kerberos",
-    "labs/machines/TEMPLATE111.md",
-    "academy/academy.md",
-    "techniques/VOLATILITY.md",
     "Excalidraw",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",
