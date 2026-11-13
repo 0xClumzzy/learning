@@ -10,6 +10,9 @@ The network of computers sharing the same centralized database
 To determine the domain name: 
 ```powershell 
 $env:USERDNSDOMAIN #-> DNS Name 
-(Get-ADDomain).DNSRoot
+(Get-ADDomain).DNSRoot #-> Still get DNS name
 ```
+
+## Computers 
+All computers must be connected to a domain controlller to belong to 
 
