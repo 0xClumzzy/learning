@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -253,10 +253,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff8f62f55c1edbff",
+  "active": "150be469841e54bd",
   "lastOpenFiles": [
-    "academy/WINDOWS/AD/Domain Controllers .md",
     "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
+    "academy/WINDOWS/AD/Domain Controllers .md",
     "Pasted image 20261113184819.png",
     "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
     "academy/WINDOWS/hash dumping/Windows credential manager.md",
