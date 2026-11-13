@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/AD/Key concepts.md",
+                "file": "academy/WINDOWS/AD/Domain Controllers .md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Key concepts"
+              "title": "Domain Controllers"
             }
           }
         ],
@@ -242,6 +242,7 @@
   "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
     "academy/WINDOWS/AD/Key concepts.md",
+    "academy/WINDOWS/AD/Domain Controllers .md",
     "academy/WINDOWS/AD/AD.md",
     "academy/WINDOWS/lateral movement/PassTheHash .md",
     "academy/WINDOWS/AD",
@@ -272,7 +273,6 @@
     "labs/machines/TEMPLATE111.md",
     "academy/academy.md",
     "techniques/VOLATILITY.md",
-    "TEAMS.md",
     "Excalidraw",
     "labs/machines/easy/blue.Info/blue.Nmap",
     "labs/machines/easy/blue.Info",

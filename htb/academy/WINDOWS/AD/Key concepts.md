@@ -20,7 +20,8 @@ All computers must be connected to a domain controller to belong to that active 
 3. Servers. Computers hosting services 
 ## Users 
 Active Directory hosts two main user types: `local users`, with access limited to the machines on which they are created, and `domain users`, by default having access to all domain computers.
-```poe
+```powershell
 WORKGROUP/iron    #Local User
 shadow.local/iron #Domain User
 ```
+

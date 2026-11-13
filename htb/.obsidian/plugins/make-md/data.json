@@ -56,7 +56,8 @@
     "//labs/labs/challenges/labs/challenges/web",
     "//academy",
     "//academy/academy/WINDOWS",
-    "//academy/academy/WINDOWS/academy/WINDOWS/lateral movent"
+    "//academy/academy/WINDOWS/academy/WINDOWS/lateral movent",
+    "//academy/academy/WINDOWS/academy/WINDOWS/AD"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
