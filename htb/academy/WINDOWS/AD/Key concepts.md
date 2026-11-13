@@ -7,5 +7,8 @@ The word management suggests:
 - All housed in a domain controller 
 ## Domains 
 The network of computers sharing the same centralized database 
+To determine the domain name: 
+```powershell 
 
+```
 
