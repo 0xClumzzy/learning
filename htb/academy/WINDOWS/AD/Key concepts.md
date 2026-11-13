@@ -9,6 +9,7 @@ The word management suggests:
 The network of computers sharing the same centralized database 
 To determine the domain name: 
 ```powershell 
-
+$env:USERDNSDOMAIN #-> DNS Name 
+(Get-ADDomain).DNSRoot
 ```
 
