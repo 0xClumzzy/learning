@@ -14,3 +14,5 @@ ntdsutil.exe 'ac i ntds' 'ifm' 'create full c:\tmp'
 the issued command performs a pivotal task: creating a copy of the NTDS and subsequent copies of the SYSTEM and SECURITY registry hives [[SAM, SECURITY and SYSTEM ]]]
 - The SYSTEM HIVE  has the `Syskey/BootKey
 - The key plays a role in decryption 
+	1. **First level**- Decrypt the Password Encryption Key(PEK). The PEK is initially encrypted with the bootkey using RC$
+	2. 
