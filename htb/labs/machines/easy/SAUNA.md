@@ -17,10 +17,10 @@ os: windows
 Run an initial Nmap scan:
 
 ```bash
-
+sudo rustscan -a 10.129.95.180 --ulimit 5000 -- -sCV -oA sauna.Nmap/sauna
 ```
 
-### Port XX (Service)
+### 
 
 Describe what's running on each interesting port.
 

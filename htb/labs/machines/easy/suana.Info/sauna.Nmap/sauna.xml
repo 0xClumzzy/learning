@@ -24,3 +24,61 @@
 <taskbegin task="SYN Stealth Scan" time="1794617063"/>
 <taskend task="SYN Stealth Scan" time="1794617064" extrainfo="13 total ports"/>
 <taskbegin task="Service scan" time="1794617064"/>
+<taskend task="Service scan" time="1794617124" extrainfo="13 services on 1 host"/>
+<taskbegin task="NSE" time="1794617124"/>
+<taskend task="NSE" time="1794617145"/>
+<taskbegin task="NSE" time="1794617145"/>
+<taskend task="NSE" time="1794617148"/>
+<taskbegin task="NSE" time="1794617148"/>
+<taskend task="NSE" time="1794617148"/>
+<host starttime="1794617063" endtime="1794617148"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.129.95.180" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sauna.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-title" output="Egotistical Bank :: Home"><elem key="title">Egotistical Bank :: Home</elem>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2026-11-14 07:44:32Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: EGOTISTICAL-BANK.LOCAL, Site: Default-First-Site-Name" hostname="SAUNA" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49673"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49674"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49676"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49685"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49692"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2026-11-14T07:45:34&#xa;  start_date: N/A"><elem key="date">2026-11-14T07:45:34</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="clock-skew" output="6h59m59s"><elem key="stddev">0</elem>
+<elem key="count">1</elem>
+<elem key="median">25199</elem>
+<elem key="mean">25199</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 38495/tcp): CLEAN (Couldn&apos;t establish connection (TIMEOUT))&#xa;  Check 2 (port 4222/tcp): CLEAN (Couldn&apos;t establish connection (TIMEOUT))&#xa;  Check 3 (port 10224/udp): CLEAN (Couldn&apos;t receive bytes: TIMEOUT)&#xa;  Check 4 (port 51519/udp): CLEAN (Couldn&apos;t receive bytes: TIMEOUT)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/></hostscript><times srtt="364281" rttvar="67035" to="632421"/>
+</host>
+<taskbegin task="NSE" time="1794617148"/>
+<taskend task="NSE" time="1794617148"/>
+<taskbegin task="NSE" time="1794617148"/>
+<taskend task="NSE" time="1794617148"/>
+<taskbegin task="NSE" time="1794617148"/>
+<taskend task="NSE" time="1794617148"/>
+<runstats><finished time="1794617148" timestr="Sat Nov 14 02:45:48 2026" summary="Nmap done at Sat Nov 14 02:45:48 2026; 1 IP address (1 host up) scanned in 86.30 seconds" elapsed="86.30" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
