@@ -11,3 +11,5 @@ At the core of Active Directory lies the NTDS. Understanding how to obtain infor
 ```powershell 
 ntdsutil.exe 'ac i ntds' 'ifm' 'create full c:\tmp'
 ```
+the issued command performs a pivotal task: creating a copy of the NTDS and subsequent copies of the SYSTEM and SECURITY registry hives
+- The SYSTEN
