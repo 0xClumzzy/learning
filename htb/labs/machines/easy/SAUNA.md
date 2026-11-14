@@ -1,11 +1,11 @@
 ---
 title: SAUNA
-description: "\n"
-date: 2024-01-15
+description: Sauna is an easy difficulty Windows machine that features Active Directory enumeration and exploitation.
+date: 2026-11-14T00:37:35.000Z
 category: htb
 tags:
-  - tag1
-  - tag2
+  - windows
+  - ad
 difficulty: easy
 os: linux
 ---
