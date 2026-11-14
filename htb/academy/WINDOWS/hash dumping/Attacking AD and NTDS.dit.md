@@ -34,5 +34,9 @@ the issued command performs a pivotal task: creating a copy of the NTDS and subs
 2.   Using VSSADMIN 
 We can use `vssadmin` to create a [Volume Shadow Copy](https://docs.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service) (`VSS`) of the `C:` drive or whatever volume the admin chose when initially installing AD. It is very likely that NTDS will be stored on `C:` as that is the default location selected at install, but it is possible to change the location. We use VSS for this because it is designed to make copies of volumes that may be read & written to actively without needing to bring a particular application or system down
 ```powershell 
-vssadmin 
+vssadmin CREATE SHADOW /For=C:
+```
+Copy to another location: 
+```powershell 
+cmd.exe
 ```
