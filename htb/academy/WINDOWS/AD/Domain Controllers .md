@@ -9,3 +9,9 @@ If u actually compromised an account:
 nltest /dclist:domain
 ```
 
+#### Connecting to a DC with Evil-WinRM
+```shellsession
+evil-winrm -i 10.10.10.10 -u username -p 'P@55w0rd!'
+```
+#### Checking local group membership
+
