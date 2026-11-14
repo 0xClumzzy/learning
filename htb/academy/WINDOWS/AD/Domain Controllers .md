@@ -14,4 +14,12 @@ nltest /dclist:domain
 evil-winrm -i 10.10.10.10 -u username -p 'P@55w0rd!'
 ```
 #### Checking local group membership
+```shellsession
+net localgroup
+```
+We are looking to see if the account has local admin rights. To make a copy of the NTDS.dit file, we need local admin (`Administrators group`) or Domain Admin (`Domain Admins group`) (or equivalent) rights.
+#### Checking user account privileges including domain
+```shellsession
+net user username 
+```
 
