@@ -5,4 +5,4 @@ In this topic, the focus is on ways to extract credentials throught the use of a
 The `.dit` stands for [directory information tree](https://docs.oracle.com/cd/E19901-01/817-7607/dit.html).
 
 This is the primary database file associated with AD and stores all domain usernames, password hashes, and other critical schema information. If this file can be captured, we could potentially compromise every account on the domain 
-
+# DUMPING NTDS.dit 

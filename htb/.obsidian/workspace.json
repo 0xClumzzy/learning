@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -281,10 +281,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "150be469841e54bd",
+  "active": "ff8f62f55c1edbff",
   "lastOpenFiles": [
-    "labs/machines/easy/SAUNA.md",
     "academy/WINDOWS/AD/Domain Controllers .md",
+    "labs/machines/easy/SAUNA.md",
     "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/hash dumping/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
     "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
