@@ -1,1 +1,2 @@
-In this topic, the focus is on ways to extract credentials throught the use of a dictionary attack against AD accounts and dumping hashes from from the NTDS.dit file 
+In this topic, the focus is on ways to extract credentials throught the use of a dictionary attack against AD accounts and dumping hashes from from the NTDS.dit file
+
