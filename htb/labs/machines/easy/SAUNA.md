@@ -6,8 +6,10 @@ category: htb
 tags:
   - windows
   - ad
+  - AES-REP roasting
+  - kerberoasting
 difficulty: easy
-os: linux
+os: windows
 ---
 
 ## Enumeration
@@ -15,7 +17,7 @@ os: linux
 Run an initial Nmap scan:
 
 ```bash
-nmap -sC -sV -oN nmap/boxname 10.10.10.x
+
 ```
 
 ### Port XX (Service)
