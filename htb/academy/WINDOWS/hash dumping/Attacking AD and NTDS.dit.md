@@ -18,4 +18,12 @@ the issued command performs a pivotal task: creating a copy of the NTDS and subs
 	2. **Second Level**- Initiate the first of decrypting hashes with the PEK using RC4
 	3. **Third level**- Progress to the second level of decrypting hashes using DES 
 	Obtaining the bootkey allows us to decrypt the NTDS content 
+	Download the files:
+	```bash 
+	smbclient.py username@host 
+	shares 
+	use C$ 
+	cd temop
+	```
+
 	
