@@ -80,7 +80,7 @@
             }
           },
           {
-            "id": "bc920b42731ca1e4",
+            "id": "04a29e356198eda1",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -207,7 +207,6 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "markdown-importer:Open format converter": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
