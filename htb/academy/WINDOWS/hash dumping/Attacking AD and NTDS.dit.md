@@ -8,4 +8,6 @@ This is the primary database file associated with AD and stores all domain usern
 # DUMPING NTDS.dit 
 At the core of Active Directory lies the NTDS. Understanding how to obtain information from it becomes crucial. To dump the domain database, we have two main methods: one from the Domain Controller itself using tools like ntdsutil.exe or vssadmin, and another online using tools like impacket’s secretsdump script or mimikatz with the lsadump::dsync command.
 1. From domain controller: utilizing `ntds.exe`
-
+```powershell 
+ntdsutil.exe 'ac i ntds' 'ifm' 'create full c:\tmp'
+```
