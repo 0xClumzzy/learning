@@ -21,8 +21,21 @@ sudo rustscan -a 10.129.95.180 --ulimit 5000 -- -sCV -oA sauna.Nmap/sauna
 ```
 
 ### Discoverd ports 
-
-Describe what's running on each interesting port.
+```powershell
+Open 10.129.95.180:53
+Open 10.129.95.180:88
+Open 10.129.95.180:80
+Open 10.129.95.180:135
+Open 10.129.95.180:139
+Open 10.129.95.180:389
+Open 10.129.95.180:9389
+Open 10.129.95.180:49667
+Open 10.129.95.180:49673
+Open 10.129.95.180:49674
+Open 10.129.95.180:49676
+Open 10.129.95.180:49685
+Open 10.129.95.180:49692
+```
 
 ## Foothold
 
