@@ -15,4 +15,5 @@ the issued command performs a pivotal task: creating a copy of the NTDS and subs
 - The SYSTEM HIVE  has the `Syskey/BootKey
 - The key plays a role in decryption 
 	1. **First level**- Decrypt the Password Encryption Key(PEK). The PEK is initially encrypted with the bootkey using RC$
-	2. 
+	2. **Second Level**- Initiate the first of decrypting hashes with the PEK using RC4
+	3. **Third level**- Progress to the second level 
