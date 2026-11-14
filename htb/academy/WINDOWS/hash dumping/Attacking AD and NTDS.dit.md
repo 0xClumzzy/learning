@@ -17,4 +17,5 @@ the issued command performs a pivotal task: creating a copy of the NTDS and subs
 	1. **First level**- Decrypt the Password Encryption Key(PEK). The PEK is initially encrypted with the bootkey using RC4
 	2. **Second Level**- Initiate the first of decrypting hashes with the PEK using RC4
 	3. **Third level**- Progress to the second level of decrypting hashes using DES 
+	Obtaining the bootkey allows us to decrypt the NTDS content 
 	
