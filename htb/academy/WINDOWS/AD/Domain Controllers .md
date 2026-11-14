@@ -4,4 +4,8 @@ Positioned as central servers housing Active Directory Domain Services (AD DS), 
 ```bash
 sudo nmap -sS --open -p389 targewt
 ```
-If u a
+If u actually compromised an account:
+```cmd
+nltest /dclist:domain
+```
+
