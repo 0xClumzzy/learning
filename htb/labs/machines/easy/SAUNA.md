@@ -20,7 +20,7 @@ Run an initial Nmap scan:
 sudo rustscan -a 10.129.95.180 --ulimit 5000 -- -sCV -oA sauna.Nmap/sauna
 ```
 
-### 
+### Discoverd ports 
 
 Describe what's running on each interesting port.
 
