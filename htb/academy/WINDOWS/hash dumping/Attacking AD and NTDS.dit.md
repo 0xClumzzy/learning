@@ -25,6 +25,9 @@ the issued command performs a pivotal task: creating a copy of the NTDS and subs
 	use C$ 
 			cd temp and get the files `ntds.dit`
 	```
-	
+	THEN secretsdump.py
+	```bash
+	secretsdump.py 
+	```
 
 	
