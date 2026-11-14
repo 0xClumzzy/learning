@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.993 scan initiated Sat Nov 14 02:44:22 2026 as: nmap -vvv -p 53,88,80,135,139,389,9389,49667,49673,49674,49676,49685,49692 -4 -sCV -oA sauna.Nmap/sauna 10.129.95.180 -->
+<nmaprun scanner="nmap" args="nmap -vvv -p 53,88,80,135,139,389,9389,49667,49673,49674,49676,49685,49692 -4 -sCV -oA sauna.Nmap/sauna 10.129.95.180" start="1794617062" startstr="Sat Nov 14 02:44:22 2026" version="7.993" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="13" services="53,80,88,135,139,389,9389,49667,49673-49674,49676,49685,49692"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1794617063"/>
+<taskend task="NSE" time="1794617063"/>
+<taskbegin task="NSE" time="1794617063"/>
+<taskend task="NSE" time="1794617063"/>
+<taskbegin task="NSE" time="1794617063"/>
+<taskend task="NSE" time="1794617063"/>
+<taskbegin task="Ping Scan" time="1794617063"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.95.180" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1794617063" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1794617063"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1794617063"/>
+<taskbegin task="SYN Stealth Scan" time="1794617063"/>
+<taskend task="SYN Stealth Scan" time="1794617064" extrainfo="13 total ports"/>
+<taskbegin task="Service scan" time="1794617064"/>

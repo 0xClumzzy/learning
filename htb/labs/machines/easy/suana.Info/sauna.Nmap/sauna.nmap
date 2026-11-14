@@ -1,0 +1,1 @@
+# Nmap 7.993 scan initiated Sat Nov 14 02:44:22 2026 as: nmap -vvv -p 53,88,80,135,139,389,9389,49667,49673,49674,49676,49685,49692 -4 -sCV -oA sauna.Nmap/sauna 10.129.95.180
