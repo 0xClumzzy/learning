@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -267,16 +267,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e80f5569b621b168",
+  "active": "150be469841e54bd",
   "lastOpenFiles": [
+    "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
+    "academy/WINDOWS/AD/Domain Controllers .md",
+    "labs/machines/easy/SAUNA.md",
     "labs/machines/easy/suana.Info/sauna.Nmap/sauna.xml",
     "labs/machines/easy/suana.Info/sauna.Nmap/sauna.gnmap",
     "labs/machines/easy/suana.Info/sauna.Nmap/sauna.nmap",
     "labs/machines/easy/suana.Info/sauna.Nmap",
     "labs/machines/easy/suana.Info",
-    "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
-    "labs/machines/easy/SAUNA.md",
-    "academy/WINDOWS/AD/Domain Controllers .md",
     "Pasted image 20261113184819.png",
     "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
     "academy/WINDOWS/hash dumping/Windows credential manager.md",
@@ -305,7 +305,6 @@
     "academy/CPTS/footprinting/SMB.md",
     "Tags",
     "labs/machines/medium/INTELLIGENCE .md",
-    "academy/WINDOWS/kerberos",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",
     "Pasted image 20260721101033.png",
