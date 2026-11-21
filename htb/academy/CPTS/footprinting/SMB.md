@@ -88,6 +88,10 @@ SAMBA + NMAP
 ```bash
 sudo nmap -sCV -p139,445 10.10.10.10
 ```
+nse:
+- `--script smb-os-discovery`
+- `--script smb-protocols`
+
 
 RPCCLIENT 
 

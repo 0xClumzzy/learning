@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "78966f8b8edadec2",
+        "id": "b47f224f0d0dfe40",
         "type": "tabs",
         "children": [
           {
-            "id": "eb0de785625e5484",
+            "id": "7691c54de33e350c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -80,7 +80,7 @@
             }
           },
           {
-            "id": "04a29e356198eda1",
+            "id": "cff3894b9251e35e",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -211,10 +211,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "eb0de785625e5484",
+  "active": "7691c54de33e350c",
   "lastOpenFiles": [
-    "Tags",
     "GHOST/GHOST I.md",
+    "Tags",
     "GHOST"
   ]
 }

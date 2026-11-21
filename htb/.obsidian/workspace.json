@@ -4,95 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "510533ac6cbff586",
+        "id": "e171cc2d2ec00539",
         "type": "tabs",
         "children": [
           {
-            "id": "23740a2c258a32d3",
+            "id": "05252cf12538d1fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/CPTS/footprinting/SMB.md",
+                "file": "academy/WINDOWS/lateral movement/PassTheHash .md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SMB"
-            }
-          },
-          {
-            "id": "ff8f62f55c1edbff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Attacking AD and NTDS.dit"
-            }
-          },
-          {
-            "id": "150be469841e54bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academy/WINDOWS/AD/Domain Controllers .md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Domain Controllers"
-            }
-          },
-          {
-            "id": "e80f5569b621b168",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "labs/machines/easy/SAUNA.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SAUNA"
-            }
-          },
-          {
-            "id": "611181cf8ecf5dc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academy/WINDOWS/hash dumping/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md"
-            }
-          },
-          {
-            "id": "935dcf1cc608d608",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SAM, SECURITY and SYSTEM"
+              "title": "PassTheHash"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -151,7 +80,7 @@
             }
           },
           {
-            "id": "c7ee5def3bc5424c",
+            "id": "24c015530f88e648",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -271,9 +200,19 @@
               "icon": "lucide-ghost",
               "title": "smart-connections-view"
             }
+          },
+          {
+            "id": "2769cd7a304281ac",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -295,44 +234,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff8f62f55c1edbff",
+  "active": "05252cf12538d1fb",
   "lastOpenFiles": [
-    "academy/WINDOWS/hash dumping/SAM, SECURITY and SYSTEM .md",
+    "academy/WINDOWS/lateral movement/PassTheHash .md",
+    "academy/WINDOWS/lateral movement/lateral movement.md",
+    "academy/WINDOWS/AD/AD.md",
+    "academy/WINDOWS/AD/LDAP,NBTNS,SMB.md",
+    "academy/CPTS/footprinting/SMB.md",
+    "academy/CPTS/footprinting/DNS.md",
+    "academy/WINDOWS/fundamentals/LDAP.md",
+    "academy/WINDOWS/WINDOWS.md",
+    "labs/machines/easy/forest.Info/LEARNING_PATH.md",
+    "labs/machines/easy/forest.Info/PENTEST_FUNDAMENTALS.md",
+    "AD templates.canvas",
+    "labs/machines/easy/forest.Info/PATTERN_RECOGNITION.md",
+    "academy/WINDOWS/kerberos/SPNs.md",
+    "labs/machines/easy/forest.Info/TOOL_DECISION_GUIDE.md",
+    "labs/machines/easy/forest.Info/forest-recon.md",
+    "labs/machines/easy/forest.Info/loot/SharpHound.exe",
+    "labs/machines/easy/forest.Info/SharpHound.exe",
+    "labs/machines/easy/forest.Info/SharpHound.exe.crdownload",
+    "labs/machines/easy/forest.Info/FOREST_SPECIFIC_CHECKLIST.md",
+    "labs/machines/easy/forest.Info/MENTAL_MODELS.md",
+    "labs/machines/easy/forest.Info/loot/README.txt",
+    "labs/machines/easy/forest.Info/loot/report.md",
+    "labs/machines/easy/forest.Info/loot/tiny.json",
+    "labs/machines/easy/forest.Info/loot/playbook.md",
+    "labs/machines/easy/forest.Info/loot/domain-posture.txt",
+    "labs/machines/easy/forest.Info/loot/attack-paths.txt",
+    "labs/machines/easy/forest.Info/loot/password-candidates.txt",
+    "labs/machines/easy/forest.Info/loot/spray-users.txt",
+    "labs/machines/easy/forest.Info/loot/asrep-users.txt",
+    "labs/machines/easy/FOREST.md",
+    "labs/machines/easy/.md",
+    "labs/machines/starting-point/DANCING.md",
+    "labs/machines/starting-point/MEOW.md",
+    "labs/machines/starting-point/TEMPLATE111.md",
     "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
     "academy/WINDOWS/AD/Domain Controllers .md",
     "labs/machines/easy/SAUNA.md",
-    "academy/WINDOWS/hash dumping/LOCAL SECURITY AUTHORITY SUBSYSTEM SERVICE.md.md",
-    "labs/machines/easy/suana.Info/sauna.Nmap/sauna.xml",
-    "labs/machines/easy/suana.Info/sauna.Nmap/sauna.gnmap",
-    "labs/machines/easy/suana.Info/sauna.Nmap/sauna.nmap",
-    "labs/machines/easy/suana.Info/sauna.Nmap",
-    "labs/machines/easy/suana.Info",
     "Pasted image 20261113184819.png",
-    "academy/WINDOWS/hash dumping/Windows credential manager.md",
-    "academy/WINDOWS/hash dumping/hash dumping.md",
-    "academy/WINDOWS/fundamentals/REGISTRY.md",
-    "academy/WINDOWS/fundamentals/REG.exe.md",
-    "academy/WINDOWS/AD/Key concepts.md",
-    "academy/WINDOWS/AD/AD.md",
-    "academy/WINDOWS/lateral movement/PassTheHash .md",
-    "academy/WINDOWS/AD",
-    "academy/WINDOWS/.md",
-    "academy/WINDOWS/lateral movement/lateral movement.md",
-    "academy/WINDOWS/fundamentals/ntlm.md",
-    "academy/WINDOWS/fundamentals/fundamentals.md",
-    "academy/WINDOWS/lateral movement",
-    "academy/WINDOWS/WINDOWS.md",
-    "academy/WINDOWS/intro.md",
-    "academy/WINDOWS/fundamentals",
-    "academy/WINDOWS/fundamentals/kernel architecture.md",
-    "academy/WINDOWS/hash dumping",
-    "academy/WINDOWS/kerberos/kerberos relaying.md",
-    "academy/WINDOWS/kerberos/.md",
-    "academy/WINDOWS/kerberos/SPNs.md",
-    "LAYOVER .md",
-    "academy/CPTS/footprinting/SMB.md",
-    "Tags",
-    "labs/machines/medium/INTELLIGENCE .md",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",
     "Pasted image 20260721101033.png",
@@ -342,7 +283,6 @@
     "Pasted image 20260721101121.png",
     "Pasted image 20260721101011.png",
     "Pasted image 20260721100820.png",
-    "Pasted image 20260719013113.png",
-    "Untitled.canvas"
+    "Pasted image 20260719013113.png"
   ]
 }

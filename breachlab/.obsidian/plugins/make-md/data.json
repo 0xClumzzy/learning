@@ -38,7 +38,8 @@
   "vaultSelector": true,
   "deleteFileOption": "trash",
   "expandedSpaces": [
-    "/"
+    "/",
+    "//GHOST"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
