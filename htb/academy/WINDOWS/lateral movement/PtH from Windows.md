@@ -6,7 +6,7 @@ Assuming we compromised an acc with local admin privs
 1. Mimikatz
 `serkulsa::tickets` module using the `/export` function resulting in `.kirbi` files -> tickets
 ```powershell
-mimikatz.exe privilege::debug "serkulsa::secrets /export" exit
+mimikatz.exe privilege::debug "serkulsa::tickets /export" exit
 ```
 The tickets that end with `$` correspond to the computer account, which needs a ticket to interact with the Active Directory. User tickets have the user's name, followed by an `@` that separates the service name and the domain, for example: `[randomvalue]-username@service-domain.local.kirbi`.
 >**Note:** If you pick a ticket with the service krbtgt, it corresponds to the TGT of that account.
