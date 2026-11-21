@@ -3,7 +3,7 @@
   "autoCommitMessage": "notes updated",
   "commitMessageScript": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
-  "autoSaveInterval": 0,
+  "autoSaveInterval": 2,
   "autoPushInterval": 1,
   "autoPullInterval": 5,
   "autoPullOnBoot": true,

