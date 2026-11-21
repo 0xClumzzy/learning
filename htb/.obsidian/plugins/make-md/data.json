@@ -54,7 +54,8 @@
     "//ctfs",
     "//academy/academy/CPTS",
     "//academy/academy/WINDOWS",
-    "//academy/academy/WINDOWS/academy/WINDOWS/hash dumping"
+    "//academy/academy/WINDOWS/academy/WINDOWS/hash dumping",
+    "//academy/academy/CPTS/academy/CPTS/File tranfer methods"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
