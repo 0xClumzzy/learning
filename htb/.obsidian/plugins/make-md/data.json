@@ -51,10 +51,10 @@
     "//labs",
     "//labs/labs/machines/labs/machines/easy/labs/machines/easy/forest.Info",
     "//academy",
-    "//academy/academy/WINDOWS",
-    "//academy/academy/WINDOWS/academy/WINDOWS/lateral movement",
     "//ctfs",
-    "//academy/academy/WINDOWS/academy/WINDOWS/kerberos"
+    "//academy/academy/CPTS",
+    "//academy/academy/WINDOWS",
+    "//academy/academy/WINDOWS/academy/WINDOWS/hash dumping"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
