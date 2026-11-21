@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/lateral movement/PtH from Windows.md",
+                "file": "academy/WINDOWS/lateral movement/Pass the Ticket.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PtH from Windows"
+              "title": "Pass the Ticket"
             }
           }
         ]
@@ -236,8 +236,10 @@
   },
   "active": "05252cf12538d1fb",
   "lastOpenFiles": [
-    "academy/WINDOWS/kerberos/Kerberos refresher protocol .md",
+    "academy/WINDOWS/lateral movement/Pass the key OverPass the Hash .md",
+    "academy/WINDOWS/lateral movement/Pass the Ticket.md",
     "academy/WINDOWS/lateral movement/PtH from Windows.md",
+    "academy/WINDOWS/kerberos/Kerberos refresher protocol .md",
     "academy/WINDOWS/lateral movement/lateral movement.md",
     "academy/WINDOWS/lateral movement/PassTheHash .md",
     "academy/WINDOWS/lateral movement/.md",
@@ -271,8 +273,6 @@
     "labs/machines/easy/FOREST.md",
     "labs/machines/easy/.md",
     "labs/machines/starting-point/DANCING.md",
-    "labs/machines/starting-point/MEOW.md",
-    "labs/machines/starting-point/TEMPLATE111.md",
     "Pasted image 20261113184819.png",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",
