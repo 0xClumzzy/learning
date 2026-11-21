@@ -1,0 +1,264 @@
+ction: Dump Kerberos Ticket Data (All Users)
+
+[*] Current LUID    : 0x9d744
+
+  UserName                 : julio
+  Domain                   : INLANEFREIGHT
+  LogonId                  : 0x655b2
+  UserSID                  : S-1-5-21-3325992272-2815718403-617452758-1106
+  AuthenticationPackage    : Kerberos
+  LogonType                : Service
+  LogonTime                : 11/21/2026 1:15:09 PM
+  LogonServer              : DC01
+  LogonServerDNSDomain     : INLANEFREIGHT.HTB
+  UserPrincipalName        : julio@inlanefreight.htb
+
+
+    ServiceName              :  krbtgt/INLANEFREIGHT.HTB
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  julio
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:15:09 PM
+    EndTime                  :  11/21/2026 11:15:09 PM
+    RenewTill                :  11/28/2026 1:15:09 PM
+    Flags                    :  name_canonicalize, pre_authent, initial, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  JyEp9dtagVDQXNMf/HOcjVrXqD4IomPaOzwKtb+nhgU=
+    Base64EncodedTicket   :
+
+      doIFujCCBbagAwIBBaEDAgEWooIEszCCBK9hggSrMIIEp6ADAgEFoRMbEUlOTEFORUZSRUlHSFQuSFRCoiYwJKADAgECoR0wGxsGa3JidGd0GxFJTkxBTkVGUkVJR0hULkhUQqOCBGEwggRdoAMCARKhAwIBAqKCBE8EggRLWh+aAcjsgt8DeRkXbp6Xk1OoGiHuz9j4+X4K4KvJ3Zm1LAffe5JijbI/Yf+U3gB+PaJ8eJhqKMT5lmDd2DsHE/RpmvyUckUZbdZnyahDom2lhacW0f23xYD3BsIs1bR5e0KEpPhX/ZoPhZLrDw94xT2Wf2ozeqlaULggIDKk6anzpdxjiRdoFxai9JLFSZmn+/nJzZgfnRaQr1B3bFG0oZbPvhuXjrdZm+/qv8OvfgP4Ch8++SX8KbbUVVZWHHYQhGbUczHLgzPsPHPoA1z68vy+NCSaBpOuI4gwP66R3IiiXblS+Zbmtju1Ei1m1Lu/HurrzZIQCg0/JtMrmqnHFmvPQuprPArCewSnbjaHdm8IBqKFYPM+VjOTqxgk5WLsY7sxcEp4aLYQ7EAXaFfnQ+vGQc8gJrh1dKSH0c9f0iQPGgiyM6iaLTThoxMSgDOp+zWs7zyiIgHDwyx4MwAI1lu4UWsy9QHmnACP14vmURVttm53S2YpvQLbsHKz6QP8YehDqZfpJoiToTSqB1X7vsjOEsUwLTqlCLCIvvo5MzGnShgZ6NS8KwIpxNTzOO4Gd8w5lnirxaAynQ4NxdNtWl/1UaVsn44UWbqxUK0r/4AorVWFLayjagAskKg1ZJ2k3IyYi2N+9jHiKEb0UorXa0n8qNbPNmFHFfUUvqja4sgTBtdGz7dpatBcwR6QAfaXGdACaCNWvf3DTJiq88HFPhGqGpESn2u3cyFMqn3meHGnp3a4L2W7Ilt6KhwIuTJafuAwvnvtWg5lwm/VYdunROZ4HJovdof/uOgU9hKNK7Z71NuckIgAGqg8B/GI5kY9EVHiN+Q8oxWTxUGj3AP6VXobqYymPa1VYhegFgUrCDAZMNnTvKmgNMDB4PikkAteOkh/TW/FX8UjxVAD7U3pNag8Ar/gpuOh+Em6odT7CvBGbG5lhQ5n1AJjr2nU1VtV5q97BJ37D3clOA8UfOxKuXOPh5pEF6yzb76F3sodjCl7BtfPE5h8/NecuTkWkXcEppIHpgC8/qPjc9HUYP8oz59jAq/vr9Gu6G/5mFsgqHumTi5u3yClijq+OVAfTTzfxbNX6mDo2uuFQTQdJCK6YVRAkxrKbiVgixI/3x2jYEF7mhlKemeGU/HV3jHFAJ47lpN9mkiSXyYChtLCL0oU5/TsDAg2c9BFeifrxAgmtqkvt3rPVKpeXtXGQTmgaSag/XcfJmpRc4JVYESMP76EBP7ZgIsCwHguXXkTvh5HN9ZJR/OzeAarXH/L1u53yeCCr7d0D+cSGFJr4t1bRGow9GXuytOx9648pp7lDcPBzXh+MD3YGNTUVBOZML+MaqCRMIcGfEscc9ceUqca3xl5a0vnoSOgvcxC38+DJ/vG90qTlmBg2/SqXQ1+/6Uoer7o5IsJDF9k6ZnEgieQSNF2NUpwsTplU9xKUkqK69lRXJHTmVeszXCFk8q82qOB8jCB76ADAgEAooHnBIHkfYHhMIHeoIHbMIHYMIHVoCswKaADAgESoSIEICchKfXbWoFQ0FzTH/xznI1a16g+CKJj2js8CrW/p4YFoRMbEUlOTEFORUZSRUlHSFQuSFRCohIwEKADAgEBoQkwBxsFanVsaW+jBwMFAEDhAAClERgPMjAyNjExMjExOTE1MDlaphEYDzIwMjYxMTIyMDUxNTA5WqcRGA8yMDI2MTEyODE5MTUwOVqoExsRSU5MQU5FRlJFSUdIVC5IVEKpJjAkoAMCAQKhHTAbGwZrcmJ0Z3QbEUlOTEFORUZSRUlHSFQuSFRC
+
+  UserName                 : MS01$
+  Domain                   : INLANEFREIGHT
+  LogonId                  : 0x3e4
+  UserSID                  : S-1-5-20
+  AuthenticationPackage    : Negotiate
+  LogonType                : Service
+  LogonTime                : 11/21/2026 1:14:06 PM
+  LogonServer              :
+  LogonServerDNSDomain     :
+  UserPrincipalName        :  MS01$@inlanefreight.ht
+
+
+    ServiceName              :  krbtgt/INLANEFREIGHT.HTB
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:15 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, pre_authent, initial, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  WB9F0cWBkzJCGJR2BrE0BU+/wEUPWMLsctpgADfyU4Q=
+    Base64EncodedTicket   :
+
+      doIFsjCCBa6gAwIBBaEDAgEWooIEqzCCBKdhggSjMIIEn6ADAgEFoRMbEUlOTEFORUZSRUlHSFQuSFRCoiYwJKADAgECoR0wGxsGa3JidGd0GxFJTkxBTkVGUkVJR0hULkhUQqOCBFkwggRVoAMCARKhAwIBAqKCBEcEggRDb/uuoJKfbW8uE1nrlR4DWPeY9AvJcdUt/RrlrMhBD5kSBrTm62JKwR5oos9vcdazeIWMGhoc21Ky6G1IK19TAgmivjUjg2EoLOggDHktzCg+oMfVfurEOpv8hTWZXJieCzykexfLC+m48dhv2IWrjU7vsRSEr2NlNOMZ/nw2Y8qwArvdlLJX6/fc+X6kBGmbu2IDmGcnoQ2kbtN8IOT9Y40kKGj3iJUkgKGbRESbf8ojqqrxzpMgJK1eUqIHIHojEPMXkAVzn+kv8l3My8+nYfk+yaOKYwmvRo7qTdr3NjmH/rIehdpgOvnosRLOVpU8EreMiikipGnx8FPmq2qZG8LuOoTBveDfikfZRx4kNsvtoK9h3/DQD1BfmblumaT8xWvBNSdNzOLTDpiuVY8fcY0He7B4YvYOxiYb0SK+3upD4Z3l8xJt21URsp/tZlChenHkYP7X+zUALL3SX9Okavu5DIfuOQF6yZcpWUev96KV3fTQro+CdTG23g1wxIaO3nN5xcu2IKCRwHQ+dwk3NVgOOxXDq7Tw2cUXEYItzfO6YYZoZYQdKFoItmx6RqJUlkVaZhB0Rwbvz90GSp7ac0ulHI1JBYOv8p5JnJMs00F48B+GNJvUFxDgHOSJLpqpJ8QIseu3kknFkMsf4D3iHJQPJ6yzB/RWQuYWIVJ655BX7umRQ42CDI6rjGjoBJuGQc1MwsI0Kn0wuE1bhuB8YvW9QN9sANOMk87qgrz4k0DsEGx5CQke7cqS8pXiX/opEHvIW76EuT2gD9iYlTp3294FmTXd7EioBlljZeBxUfNUjuVY23zLjqYf86C169aY5iY5PDCeExzD1OR1Nxp1gXhw+/EWd/vEtv6q7f5FLTaU7kaG0e+vAz6mGv4//+WRVZFVW871+zTa8jaZ6ANp3gV59nKFVE4/EmyMyQXf+Pdcax6iAj0E32ZfTR9vjKpz25DFhPAHyayUMEarp3LMKEsOi0DhXQbHYCL72iuG6WsCZlUX7zV9EkUQVt+VdR76DIGyS/gb+iWFmRVjKkH/OrFTsf/puRPZciym/cOV/4VolscHhvSofIG0egm1+qBPt7O/z0lOY7ZTXOhqmB0BeVhTnjKuQOcTNanBvpIRxwDrKtXeBTw4ObDO2IzluR41i4QivPO1SM4KJQKm+IFLM82LN2LEAh0Z94l34S/8pVoaXPpeek1z1npCEwuuZfUKclHaQRU1H+ne588+Uo7MWMr0zLt0oQWFWgzUYSs8SB6lx5U9EGCAzTj8RjcdrwUVwl8C8f3iCri2E+F32BHdy60UDIZhaY/YYyO3TW/efyIMCsKRdfZ7bjyj2ya5vWPMHPG0TDBlWV88lBfNVBech/nkIvT955vFbe9ZMVziyEMn3wXP2hvTwHmRUV8RmgzPkGlzHx/lLPDZIDFi9i0xpp6zatX1En4u0/t4CMdE7uTMk5OjgfIwge+gAwIBAKKB5wSB5H2B4TCB3qCB2zCB2DCB1aArMCmgAwIBEqEiBCBYH0XRxYGTMkIYlHYGsTQFT7/ARQ9Ywuxy2mAAN/JThKETGxFJTkxBTkVGUkVJR0hULkhUQqISMBCgAwIBAaEJMAcbBU1TMDEkowcDBQBA4QAApREYDzIwMjYxMTIxMTkxNDE1WqYRGA8yMDI2MTEyMjA1MTQxNVqnERgPMjAyNjExMjgxOTE0MTVaqBMbEUlOTEFORUZSRUlHSFQuSFRCqSYwJKADAgECoR0wGxsGa3JidGd0GxFJTkxBTkVGUkVJR0hULkhUQg==
+
+
+    ServiceName              :  GC/DC01.inlanefreight.htb/inlanefreight.htb
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:15 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, ok_as_delegate, pre_authent, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  R0TU+nooqwj4m2S3Ip4OeW6X0Xk5R6+z0ZTCX0ZCzLw=
+    Base64EncodedTicket   :
+
+      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
+
+
+    ServiceName              :  DNS/dc01.inlanefreight.htb
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:15 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, ok_as_delegate, pre_authent, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  jFO0JYXKQO//VDvzyp4oyCgDIspb9HUrvUIC+lqHpTM=
+    Base64EncodedTicket   :
+
+      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
+
+
+    ServiceName              :  cifs/DC01.inlanefreight.htb
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:15 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, ok_as_delegate, pre_authent, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  0mSPrQJSsnsj/huw0ghyI09AmWa0w+Sq1JMMxqkKTQE=
+    Base64EncodedTicket   :
+
+      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
+
+
+    ServiceName              :  ldap/dc01.inlanefreight.htb/inlanefreight.htb
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:15 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, ok_as_delegate, pre_authent, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  MeVL+0ieQVmBVtYMuJyl2+FrIJ9kta3r2E9jIEdjuQE=
+    Base64EncodedTicket   :
+
+      doIGIjCCBh6gAwIBBaEDAgEWooIFAzCCBP9hggT7MIIE96ADAgEFoRMbEUlOTEFORUZSRUlHSFQuSFRCojwwOqADAgECoTMwMRsEbGRhcBsWZGMwMS5pbmxhbmVmcmVpZ2h0Lmh0YhsRaW5sYW5lZnJlaWdodC5odGKjggSbMIIEl6ADAgESoQMCAQeiggSJBIIEhROCT7bg7J/4J/cX78SWLwQ1GgvuoW/r334ZatKaez1M/llbgL721o6KVoho5w5+1uOPhtLLjtIWfZrzlfKJ44wx5yiOqOMWF3wX6xZyPaPR7UnvwG3ANoB2Ps2DhQ8k73IjQ4Ob1+P9rVrEiGCCEM1E69+DsZjITjLkMdu6bmFGPshft7xRnCQiaqwJowzi0I9eyQDl49vRprXsk8pkcg1cBuXzc0qZkGCsvtZHvyqla3IJkEx+usVFloTQLVWznn7CodM4fkIpBsoS73Llo73MhwmWOHXa9Ne8w8DqP8sGk2W6hEKfD77IrppbOcvk99gx4ppvXC5xH3nXKxg0vOwqd+Re0OxfZyMpeebQdUS9GHaEAvc8lMcmy5XIZ9e9idEGG2Asp5qxP7YEdXkO9D9FS+SkHzteNRTItrIuH+OZBXvTcbtfRrCLiF47Vswj4Ox2V3B8PXHgkQHHpzCqaSnd30POtG34mSE/Lkpwjogzp18+Vo5ATdnCArTPlIQH4CRlZrV3MPTXk3SbjChqQvVhPRsluFYBqYZmemNpCSxhjp+YBGlgBr+4bN9P8wxW2I3HibxJtc6041JzUVc1g8TgTe+Du0KDybmg+Gb3BIGolb9/W2wDa+OWQAcBl5bWM2QSZNnO7f1++UpDCqO7u8ce+JOSDFpVCHcT0dYY+RrAnhcXvhhnGCWLiQ6GImUKCrvJRToiuAJEKp4JcFfRJk/DGhrprSOrv8d83mB4J0s43+F4H9fvXFYkPRCCDdTfjfw0d5bZ2INCh96h4wYBYs6ri4T4CmKdnuqMFRN7IrQ2InQy4o3c759n9no79UQQyJFDYUZL3zdY1bjaX+kPuE2cxbuDksK2bRxM3C71pmrgHL2oLElvzkt+cNBUdYykEFeo0yj0IIPYe1pxBLE0oAZo8kFasD+k13rCZUsC0+Uw5Hu3R9HUtnDIy0c12hxvGkqjVYryY2RadukUO0H/abzM0ZTTFHy7+0Vfisu5A32+k4gYVTGm1O9tpvuFvPeR8cLJr7f8I0LJk3nX1EeqpngQ2/sev9g/MZkLU8314ASKb9wYo0uXDKgblmDF4jvsR7iBGi1lh5DUGq9FXShZK7crRqu4f2LAnXHkGIBY+vBhAcAO+C1K0umYxobeY/P0CwDR7rzRi3SD9OVp1d/RjCr+XmQ5xt7tEh7s6tfd4zurvgvPgvn9RkRXekFSgcMAHSnlhBsZwhJqgzakvMiiYY18t5yViKmU4G1Xh5AB6DTXNbEhi1gbLGg1tnw+LtCXcWsAXLb14m3lNXy/D22gq76JmL1Neeuf++EZkSBI5xnRDbTYU025h/PRT6qffVZIgZMy4bBaJSCycthzsy+xnnYILWePT5NMeyaFj9ffb9lCiV9m3oDF0aWc6VfiSSXEDAOIASD8NNiglkXjppLF5NTvo18IQk1+XtrjRHbztsp3kQLk2UiXZ0DBwidi2bBenOd9thIVLLumtdaooQZTUjRLqdxunbZAwrrdN2AdMaLDJ8q9ctyyR1pdfiwoLPsvwEe9LNHSo4IBCTCCAQWgAwIBAKKB/QSB+n2B9zCB9KCB8TCB7jCB66ArMCmgAwIBEqEiBCAx5Uv7SJ5BWYFW1gy4nKXb4Wsgn2S1revYT2MgR2O5AaETGxFJTkxBTkVGUkVJR0hULkhUQqISMBCgAwIBAaEJMAcbBU1TMDEkowcDBQBApQAApREYDzIwMjYxMTIxMTkxNDE1WqYRGA8yMDI2MTEyMjA1MTQxNVqnERgPMjAyNjExMjgxOTE0MTVaqBMbEUlOTEFORUZSRUlHSFQuSFRCqTwwOqADAgECoTMwMRsEbGRhcBsWZGMwMS5pbmxhbmVmcmVpZ2h0Lmh0YhsRaW5sYW5lZnJlaWdodC5odGI=
+
+  UserName                 : david
+  Domain                   : INLANEFREIGHT
+  LogonId                  : 0x668b0
+  UserSID                  : S-1-5-21-3325992272-2815718403-617452758-1107
+  AuthenticationPackage    : Kerberos
+  LogonType                : Service
+  LogonTime                : 11/21/2026 1:15:09 PM
+  LogonServer              : DC01
+  LogonServerDNSDomain     : INLANEFREIGHT.HTB
+  UserPrincipalName        : david@inlanefreight.htb
+
+
+    ServiceName              :  krbtgt/INLANEFREIGHT.HTB
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  david
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:15:09 PM
+    EndTime                  :  11/21/2026 11:15:09 PM
+    RenewTill                :  11/28/2026 1:15:09 PM
+    Flags                    :  name_canonicalize, pre_authent, initial, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  AQ0s9vwzdpyVxnlxQ8XoRp7wb3SvoSDWgvYWrNmMN+w=
+    Base64EncodedTicket   :
+
+      doIFsjCCBa6gAwIBBaEDAgEWooIEqzCCBKdhggSjMIIEn6ADAgEFoRMbEUlOTEFORUZSRUlHSFQuSFRCoiYwJKADAgECoR0wGxsGa3JidGd0GxFJTkxBTkVGUkVJR0hULkhUQqOCBFkwggRVoAMCARKhAwIBAqKCBEcEggRDcm4D3S+HhsNKh+vuHZZHoSQfPOOsJ0yreTAGyDMt0aEzIsJUqlXENtEy4x3+yE5PFmrbWsda74dF8lrrKs9edQ3lU3WfwrjeP7OY6xGJZmCrgUMhngbSwY/IRlANZr4ICbwiYbKyYccPY2Krph2xITxu18iQAnJpCED5c+9gixk2oMyzYiOfTZV8s9KhdA3frIHee4pYZlG9iWLNZ1OsP6g4L2+9KmDy6C6AQGfzx7c/lo7Q8CNBXa5Dob+ghMQ+ULsNFtLhaf7QrII+u9RDllPmHl5+1EsjF1E6Bch8WHMrv8B601m0bhaWPx5ZRgxvfIPID2n/sXsshftx0wfduWXlMfPmofKu5Z7Gef9zI6H6cZrFmCtk9y9WYaSPRxyCQNU6yjRG2FQB67Mk7Q4jyjyxltyh8aLwRUL1Ap9TNE9TnR0xQBVN0CA11c6Mf8wZkfQR325yAXbnrmiTtyVXlGpsAsr2GuvGj5gsDM3PaKF1ZOL6zMfmrufJUI4RVofQi7PEqUhy6qrndh9NYwVJl8j5Tg8U8fxvVPwHrQaln3eWa1IKSo7RWiTo0jbdp5GcmCNA8WZ/acsxOlmiee5QvsK7uHMzrWwpH/29qxgxqK0BAlE4cGgKrGaMULBzmgHNRGEkyY8+/L8KHu74WS/88h6Zu8gQ50AZWcWkkRV7mdhIe3KDfryVY45dRNgncSCdJ6+HYQTli7t5XrLOQAlWTT+QqrDT86KbglZP9WfaxSZt4+cYdVFdYaMRIofth7+ARjcKa9qnvVTTYUMw/Twm8tQh8YuE1ZtLmz0D7y+HB9Nlt64TMEd54mbHYQC9ODt5asqLWC8Pt6hevNpYAOnY/8zZ9sJrlHQVYUkRd8VN0JG04S/s55iUNgpYTsUxQetDfTptvbUkTEWemtbow1EtmotQ7mNxMKmXNARuz+Mn0spe0OHyZEwBi9El9nR1hl2v4yaJdOQfA+o1DtjNbhA3LVZhmvZxtPHhEpxJz5KfYdqF5mNqlPGTl8RMCBvwfcQeqhY/4YCqSfwmbTtiJPEbu/aGvngr7OrWoHGXleHJt4co9Y+sRY1mAZqXOCPvBX3GFia+MSlhMBThEZbMnZu8wyPcs570LE77iAUjT+/EeCzOEnsa8LsWuu6crauGVF4QZWJoBKfqftHzUubiZ+HVXzHo2Vv0PK2beNmFzvqFjBM8O8WjYRZutAk02QwuMk6t+wJecbqE857vnrP1zrVZGaRrNGNIRawar1FoKCEweqjUVMNteekwgWs1VnOD75WQ5JFkJh5DYpeozFwhi/WXMPagz9Ro2SRTZYbTZsPwiHxC6wfLAtTtC5Lk7PG3PXasT9bo0Kf9jtF9QE5S+3KsUefh47H8ZNtvOex3+GXZMe6r7xeXjfgPK3QLvjPE4wjOt2wMPln+s49akt+NVScAhv25Je8mLO3wU853Sf006HbuorejgfIwge+gAwIBAKKB5wSB5H2B4TCB3qCB2zCB2DCB1aArMCmgAwIBEqEiBCABDSz2/DN2nJXGeXFDxehGnvBvdK+hINaC9has2Yw37KETGxFJTkxBTkVGUkVJR0hULkhUQqISMBCgAwIBAaEJMAcbBWRhdmlkowcDBQBA4QAApREYDzIwMjYxMTIxMTkxNTA5WqYRGA8yMDI2MTEyMjA1MTUwOVqnERgPMjAyNjExMjgxOTE1MDlaqBMbEUlOTEFORUZSRUlHSFQuSFRCqSYwJKADAgECoR0wGxsGa3JidGd0GxFJTkxBTkVGUkVJR0hULkhUQg==
+
+  UserName                 : john
+  Domain                   : INLANEFREIGHT
+  LogonId                  : 0x65f8d
+  UserSID                  : S-1-5-21-3325992272-2815718403-617452758-1108
+  AuthenticationPackage    : Kerberos
+  LogonType                : Service
+  LogonTime                : 11/21/2026 1:15:09 PM
+  LogonServer              : DC01
+  LogonServerDNSDomain     : INLANEFREIGHT.HTB
+  UserPrincipalName        : john@inlanefreight.htb
+
+
+    ServiceName              :  krbtgt/INLANEFREIGHT.HTB
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  john
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:15:09 PM
+    EndTime                  :  11/21/2026 11:15:09 PM
+    RenewTill                :  11/28/2026 1:15:09 PM
+    Flags                    :  name_canonicalize, pre_authent, initial, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  Kier5a/U2p3PKpfIRSf1TmzcIdMlm+W2l9kfiR2r8o8=
+    Base64EncodedTicket   :
+
+      doIFqDCCBaSgAwIBBaEDAgEWooIEojCCBJ5hggSaMIIElqADAgEFoRMbEUlOTEFORUZSRUlHSFQuSFRCoiYwJKADAgECoR0wGxsGa3JidGd0GxFJTkxBTkVGUkVJR0hULkhUQqOCBFAwggRMoAMCARKhAwIBAqKCBD4EggQ6vSg4X1C6q581SLXbsmG2ZB3u+nUQE9HusGpCPCWS7qQiEm08BVp7zkQDBpEb9xAn2pGF7QEE0cHQueK3BHJSsNlUENUxnKRFC4BjGco76Khb0ZBPbRiVOsTkNX4Z/hOOvSecoQ9Yp0M54srK+0SSk02L1+r3/p2yFBASCgMlVmiznWjxA9n8bN+bsKo+AEw/ms+4AD+Xn3GjvPZHKwi+qdCdnBcZfywNN2M9p5dz3Y3/RjAvA8xluSjPzFkOv8lPWPCxIYO/LkYlHFcXwV2Yzso6pBERfNVh3UxoPeLd1Sqm/GaVleD1lXHswu3cDuaHxZMotlqphfVZxo/y+4U3wG1o8R+yDFq7ankdJoblCwp4bOs5VIkY2B7EcGQkyaAVQIYXCOHr2ts80QegyAgOJwuQgm/PlxNjmm4LzGMMbi9/rCgjwfYqiABid2qTAuUljCfrSGFOzO/hTZtgXdJsuE6eoQ+v1WlnzNK6FMAzFI0Y6nyro8LEkv29zLAYeuWPz6CKdI+JOJTwqAkKMikhx2twNGoIr4rAhjh4pmlk4Q+2SAn8XoLcYSxQDtoHKqM6pyYj9rXXp4qKTV7Qln+wPV4raqASdZl6grWSlt3aQ6neqQaHT97sffC121OwJZlkWqRLOyrOuchSUA7qtb3TYK0h3nwu+mUZU9PcjLp4l90LEG4o8ZW9qY8UDclLzPrOeO4HRvKplKQ4xRvFMdpq0M8MY6XT/CEqs5dIoa02BEjr5zR2GO7PdJOYq5byhRrL8H8fyAEF95Myh751xJJlL3xH50QUoTCOGzjrNMNDpweAyTTXxG7+NooSEqoIoVeSaJ1Z5Ryh/2vDV1we7UZBeIkBdxGyjZy/RGyeAq/bxhgdu1LTdvPZUFwgq4kMhjhLkiqOWOGLNjkfQTc3Yf/UBdmCJIHtkr9D6EFHHd+aTy1DK+xkomQYImA0C9OLy3SxPbijbfj4gCNKsvkyqi0ri2qIo9NrDHQS+DA6mv3nN+Or80jsSNfP+jZhGGY4rCeXw2KtpgPn8seYYRct5fJmVVcMC+P9VD3r+7kQwon3oO98ArruCYxcVoPKTzVjAFENJ1mxU2ET9E36YVOhwI1Td/xvmuBsHClD2Z1oRZLhod8PG4KIXX7LzG7OU1sLve0aDVOHfANrXTiix2awQr7kO3Z+OyLuo0fkdccFPBPK/Ujj77nmKV5q8M9kFZHvTKWx5JJtAU7CBn0+zfX0uzP2O4Go7z1jGOQtHoLW+I5ORoo920qyTOIIkhUR2qW9dUkVwEjxe8YJioljXQLruXiigHp51ZFbejUDsHq5SAx3euPFqFdwuY8Tm11rLdryfmq2qZWMvVXR/eEYa9q1unNMY7uHCtwXIpEfKD8iTBT6EE0305iI/lerpZOVwpqyWfQBvrOlP79gimG9VENcKFZrGyJpDi69o68Bz/ujgfEwge6gAwIBAKKB5gSB432B4DCB3aCB2jCB1zCB1KArMCmgAwIBEqEiBCAqJ6vlr9Tanc8ql8hFJ/VObNwh0yWb5baX2R+JHavyj6ETGxFJTkxBTkVGUkVJR0hULkhUQqIRMA+gAwIBAaEIMAYbBGpvaG6jBwMFAEDhAAClERgPMjAyNjExMjExOTE1MDlaphEYDzIwMjYxMTIyMDUxNTA5WqcRGA8yMDI2MTEyODE5MTUwOVqoExsRSU5MQU5FRlJFSUdIVC5IVEKpJjAkoAMCAQKhHTAbGwZrcmJ0Z3QbEUlOTEFORUZSRUlHSFQuSFRC
+
+  UserName                 : MS01$
+  Domain                   : INLANEFREIGHT
+  LogonId                  : 0x3e7
+  UserSID                  : S-1-5-18
+  AuthenticationPackage    : Negotiate
+  LogonType                : 0
+  LogonTime                : 11/21/2026 1:14:06 PM
+  LogonServer              :
+  LogonServerDNSDomain     : inlanefreight.htb
+  UserPrincipalName        : MS01$@inlanefreight.htb
+
+
+    ServiceName              :  krbtgt/INLANEFREIGHT.HTB
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:15 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, pre_authent, initial, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  oXBbweIKxmunibbREWIG0d4IUWPulrB/IUUn7rrEpv8=
+    Base64EncodedTicket   :
+
+      doIFsjCCBa6gAwIBBaEDAgEWooIEqzCCBKdhggSjMIIEn6ADAgEFoRMbEUlOTEFORUZSRUlHSFQuSFRCoiYwJKADAgECoR0wGxsGa3JidGd0GxFJTkxBTkVGUkVJR0hULkhUQqOCBFkwggRVoAMCARKhAwIBAqKCBEcEggRDvLrj6bGUPnQr1DeISRO/SIg/MTqMIvuT7Ks2PJlN9XgoU2pg4VhRm2ayf3gZIiDPleJFp88DnCWQ5RNfhpJUo3FE5BG2MgU+JuW3bIB8sALBwBr5aWQ9SpzwFXlrWZt6WRkzfP7NOT6WugrN58cC+59VbfsG1kEUsJib8H03ewpIuNSlyofFVOCDcKeS/jNf/9p0jS2HJPKzAUHEZht1idS3ZxpLLBxfNZs4WAXEArwSPmjvqLu3CjASlDh8wJl1Q/tEDPXJKms+1F/fM91XgMGNVkV5oGQldWhDqaT5A7d6SeUJmF3n7O5Oehradbf2UhRps50rYz+r7TJK4jd7siak9+esE8NSjuTVH0YqaYxatIc37hk7NvmMg9MmxdNZ/Wxvni7Vqj8pSOHC/cvmcP9nFre4H05lD5ZmeOWDmgcPEJP+iPK1GAVHhAmIkwS2f6Tk0nlzkFp+WiqZUVIIPCEjSBh+EHLs2CdLaxitGV5ptDG6mcJOrCU98k3jXdm/A5URawjyV8wuckUs8IG5Wb3JnGwjoGUcH+BPIhNQRN6AlbHXE1mPJ1rOMNOnbijQMj9kCNZXLqtKuIEqu98TTh/HZoiXNrxcd4Q378ryWPu9hEQD2KASDw/pbPvfmvS2x0gwK1dGPNm3C929G5ufk91nf9IY5XYY/v2G/naLm905ISQRwOzEe/40CEPkRxmevouj/cOViKsQzxpc/7TjT+D1Lf4tGOvsyPLBh1DAmSiebM019S4UwB5KxA63dITESsBqhJgOW1OdaZqvgfWk7+Tz/xo3tRwiCQKPiqAZ5UeD5d0H8kfKD1TAVI0rev7BKX6qHVgw6hNKVaOPx0WKBmrsmPzvsTjQg6je29lngbJuzWk+XddKmPnT5zIdgYT1U0m3OgVoL/5ZBADBoy9iRUfE4qJgXIJ5fob4dUxck66ymTDrzuI8aeMM1BfuzlaCT4QMbghOv6QxdO6W9ri+tP6wQY4R3LcTTPxRlsqryFXv4PHmhmCVtW8wNzEGeLWPkyzaHqMQwPZtq4iT7mcevusPOVK3Sz5/hN8kRyd8cP5xPVYw20C96aPlzDeTZxbOPxbmij3l3F9u8qyuIBkNZOum8zHuywfcdL3gr0t9PXxE5tyWFy5FhVZh6r8INAn+Z6RKw4RFt5vSTfYvgrx91i1Z7AX7MriImZOAPpI45vx1CfMOEsNU2+6SjoHWDlGBgGHp7fO6hSgqlr+lAMp0wt3TUEsf28JNPUBBTI/LTVHXgQvdFM7xPgvo+m4hiLQQMvK02J8V1c97GS1dHzFO6vBIecXYyyrLARPELsKWlc1+xopxINOTYPuCUrswRaLsGkEAa0NebGKGv5kmihnEwQ6eMM7qInUx6KLDfVo7lNvlaHGaVlymGglf4b1ZAYOpAIGmgR1sgySQ1uHUElWxKfW/qJE9qE0e+6ewNsGifVAiXVujgfIwge+gAwIBAKKB5wSB5H2B4TCB3qCB2zCB2DCB1aArMCmgAwIBEqEiBCChcFvB4grGa6eJttERYgbR3ghRY+6WsH8hRSfuusSm/6ETGxFJTkxBTkVGUkVJR0hULkhUQqISMBCgAwIBAaEJMAcbBU1TMDEkowcDBQBA4QAApREYDzIwMjYxMTIxMTkxNDE1WqYRGA8yMDI2MTEyMjA1MTQxNVqnERgPMjAyNjExMjgxOTE0MTVaqBMbEUlOTEFORUZSRUlHSFQuSFRCqSYwJKADAgECoR0wGxsGa3JidGd0GxFJTkxBTkVGUkVJR0hULkhUQg==
+
+
+    ServiceName              :  cifs/DC01.inlanefreight.htb/inlanefreight.htb
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:19 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, ok_as_delegate, pre_authent, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  +HL2wEFs9UQNtzxfP6m4F/gMNMDG3Xp7Rkcm0Brn6g8=
+    Base64EncodedTicket   :
+
+      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
+
+
+    ServiceName              :  MS01$
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:18 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, ok_as_delegate, pre_authent, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  Cc4SMCDHsizIj57m1S/OkKhYa/HN3cP/KnmVCzJFxYM=
+    Base64EncodedTicket   :
+
+      doIFzDCCBcigAwIBBaEDAgEWooIE2TCCBNVhggTRMIIEzaADAgEFoRMbEUlOTEFORUZSRUlHSFQuSFRCohIwEKADAgEBoQkwBxsFTVMwMSSjggSbMIIEl6ADAgESoQMCAQOiggSJBIIEhec2be55BWOIuGyjx3NFsP+E11nY8IjVLknz/P4EWw3HFZcLBR5es826HJRiG9UgIJc4lS47SlbInUhaTCZUnvYEyNKl3d3P7oulSuXePu3Ji6RwzA6pi4/ZOHoBB+1jImgtjUM7EuaCDpkOJcjEJSDHKGDfBLaLN4Uq3+h6SbijGeiUcEwbNfoAvEf5fnZ7zygSKqElKplBiGfnvHm7tOHIyzaJkDPk2+w1693bYLrdN61y9JuUajX2B77u9dQhroUUb1DbePTTNBWIKNVbdO9e4G7bxXsxQqyXuxAGz83xVDV/NuGbpVhU9b2BVraPHQLs2ht1eAtL3DBoMZceSjWlvgXdr1X8DF9ulX42qCnZQDz+9KgdKjqGmFmj04a5EiQx1CJlpTMf6Zftf3DWMXhrFm+BMbH5TZcFI0dJveGE4fkxjEpDBOXbp6Az7+ijhUmcNqTgsBmBotGWdhxcaY3Wye8I264Q4CBjxAQPkYeESQqNt8v4EIMDk6VgUtx6bP8nKzwAUEu7xby7vsn9iAV/zvzoQ6DRvhBEiYFEbMcS+gKnhw208qb9gnslsG+coAgvP+N0uzVhQLqYosGladxKYjTncBDD37BQDTO/FV4F9zzc372v5Tw8Jftw4K3hBGavuIQuVlcsxK7nIHEj6qK8nMRyJqqLWLRf6pDDuYOLmhPEEhv/q+9u/A6L+Glok2BOwSHUlIaTKkwLcSf6tYijsYmdTW1tJpGVqz6XJhWWwmyeFTJY8uNLLtdGyWvp4IXL9g5+k9gex7cvCbTZoViZPEp9Km6oYZrz5aCNfcoWDRVrkwdIl7iNe5CDm6Yp5r9sPxbYNpJSeIfzm1AHiMIvoO9gcS2OQwTo4Q0pZDb4mNffXpleyRNfzMXz+TNvF01csVlAR8UuD9Iqo07rkS2tJOnHSRF2AVn+kEea86onRvQDoP0pqdDRpf3pN9fG6U5M89i7yJ4MLujp5Oc2b/Ax4UGOPzl7+AoIn7nB5YV7xCMoZ8LOl6SddQuC04Xy7Orv5pJOrjRtGlPUj/XE54CsK7qXDHXo9TDduunKdsUM/40bxAsk/Esj+t49yF8wJRtr6/nwAqxMpc3Ao00yCXuIr9krak5sw5N1YUo3S4RzSGIC+QGzNG1IgLcXeEeleDbLQh+YesUqG9z56lpo7K5Y1FIqol94jgRc1Pz77Lwk2IdCwi+flQUm7Gi8N3joY5xlAMxPi4BqHqoqStA6idQwa7sB5gYGktADRVY3GYzlXyqG7ZnWCgdLO0Ro72w029fXac6nh26UwKM55NXZp/pEuV6hGyS5tqR8tUzCsBhPjmymLHF9tIsTjrry2PsXBldFhLFZJ5SUHe5f2+JPcLP65pj2flVyD/MvNOIIbnHmHvDIBceMfkP229ul8Js+Vdi0/kodQJh2yGU1Z8n9X6voRvUV3hYDsCuKVhwZW+87YTypI6LFWxf9UOp0Ea8TpqvQjHXwfz9UjGsA6RXAplLP51jMlzxsXj/8g6Rbgwk1+g5s++GM/QFzJv0wsWv6Ur/QY0mFo4HeMIHboAMCAQCigdMEgdB9gc0wgcqggccwgcQwgcGgKzApoAMCARKhIgQgCc4SMCDHsizIj57m1S/OkKhYa/HN3cP/KnmVCzJFxYOhExsRSU5MQU5FRlJFSUdIVC5IVEKiEjAQoAMCAQGhCTAHGwVNUzAxJKMHAwUAQKUAAKURGA8yMDI2MTEyMTE5MTQxOFqmERgPMjAyNjExMjIwNTE0MTVapxEYDzIwMjYxMTI4MTkxNDE1WqgTGxFJTkxBTkVGUkVJR0hULkhUQqkSMBCgAwIBAaEJMAcbBU1TMDEk
+
+
+    ServiceName              :  LDAP/DC01.inlanefreight.htb
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:16 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, ok_as_delegate, pre_authent, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  CdcG6WJhPY5IYxyu1PSRDegmx1o2/YGc0m1OvaD2Zw0=
+    Base64EncodedTicket   :
+
+      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
+
+
+    ServiceName              :  LDAP/DC01.inlanefreight.htb/inlanefreight.htb
+    ServiceRealm             :  INLANEFREIGHT.HTB
+    UserName                 :  MS01$
+    UserRealm                :  INLANEFREIGHT.HTB
+    StartTime                :  11/21/2026 1:14:15 PM
+    EndTime                  :  11/21/2026 11:14:15 PM
+    RenewTill                :  11/28/2026 1:14:15 PM
+    Flags                    :  name_canonicalize, ok_as_delegate, pre_authent, renewable, forwardable
+    KeyType                  :  aes256_cts_hmac_sha1
+    Base64(key)              :  dJH5sBz0uc5QePKBQjwk05ex3bVlGFdztJIH671DQQc=
+    Base64EncodedTicket   :
+
+      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
+
+PS C:\tools>
+
+
+
+
+
+
+
+
+
