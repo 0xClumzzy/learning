@@ -1,0 +1,1387 @@
+# extended LDIF
+#
+# LDAPv3
+# base <DC=htb,DC=local> with scope subtree
+# filter: (objectClass=*)
+# requesting:   cn sAMAccountName userAccountControl servicePrincipalName 
+#
+
+# htb.local
+dn: DC=htb,DC=local
+
+# Users, htb.local
+dn: CN=Users,DC=htb,DC=local
+cn: Users
+
+# Allowed RODC Password Replication Group, Users, htb.local
+dn: CN=Allowed RODC Password Replication Group,CN=Users,DC=htb,DC=local
+cn: Allowed RODC Password Replication Group
+sAMAccountName: Allowed RODC Password Replication Group
+
+# Denied RODC Password Replication Group, Users, htb.local
+dn: CN=Denied RODC Password Replication Group,CN=Users,DC=htb,DC=local
+cn: Denied RODC Password Replication Group
+sAMAccountName: Denied RODC Password Replication Group
+
+# Read-only Domain Controllers, Users, htb.local
+dn: CN=Read-only Domain Controllers,CN=Users,DC=htb,DC=local
+
+# Enterprise Read-only Domain Controllers, Users, htb.local
+dn: CN=Enterprise Read-only Domain Controllers,CN=Users,DC=htb,DC=local
+cn: Enterprise Read-only Domain Controllers
+sAMAccountName: Enterprise Read-only Domain Controllers
+
+# Cloneable Domain Controllers, Users, htb.local
+dn: CN=Cloneable Domain Controllers,CN=Users,DC=htb,DC=local
+cn: Cloneable Domain Controllers
+sAMAccountName: Cloneable Domain Controllers
+
+# Protected Users, Users, htb.local
+dn: CN=Protected Users,CN=Users,DC=htb,DC=local
+cn: Protected Users
+sAMAccountName: Protected Users
+
+# Key Admins, Users, htb.local
+dn: CN=Key Admins,CN=Users,DC=htb,DC=local
+cn: Key Admins
+sAMAccountName: Key Admins
+
+# Enterprise Key Admins, Users, htb.local
+dn: CN=Enterprise Key Admins,CN=Users,DC=htb,DC=local
+cn: Enterprise Key Admins
+sAMAccountName: Enterprise Key Admins
+
+# DnsAdmins, Users, htb.local
+dn: CN=DnsAdmins,CN=Users,DC=htb,DC=local
+cn: DnsAdmins
+sAMAccountName: DnsAdmins
+
+# DnsUpdateProxy, Users, htb.local
+dn: CN=DnsUpdateProxy,CN=Users,DC=htb,DC=local
+cn: DnsUpdateProxy
+sAMAccountName: DnsUpdateProxy
+
+# Exchange Online-ApplicationAccount, Users, htb.local
+dn: CN=Exchange Online-ApplicationAccount,CN=Users,DC=htb,DC=local
+cn: Exchange Online-ApplicationAccount
+userAccountControl: 546
+sAMAccountName: $331000-VK4ADACQNUCA
+
+# SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}, Users, htb.local
+dn: CN=SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1},CN=Users,DC=htb,DC=local
+cn: SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}
+userAccountControl: 514
+sAMAccountName: SM_2c8eef0a09b545acb
+
+# SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}, Users, htb.local
+dn: CN=SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c},CN=Users,DC=htb,DC=local
+cn: SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}
+userAccountControl: 514
+sAMAccountName: SM_ca8c2ed5bdab4dc9b
+
+# SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}, Users, htb.local
+dn: CN=SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9},CN=Users,DC=htb,DC=local
+cn: SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}
+userAccountControl: 514
+sAMAccountName: SM_75a538d3025e4db9a
+
+# DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}, Users, htb.local
+dn: CN=DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852},CN=Users,DC=htb,DC=local
+cn: DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}
+userAccountControl: 514
+sAMAccountName: SM_681f53d4942840e18
+
+# Migration.8f3e7716-2011-43e4-96b1-aba62d229136, Users, htb.local
+dn: CN=Migration.8f3e7716-2011-43e4-96b1-aba62d229136,CN=Users,DC=htb,DC=local
+cn: Migration.8f3e7716-2011-43e4-96b1-aba62d229136
+userAccountControl: 514
+sAMAccountName: SM_1b41c9286325456bb
+
+# FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042, Users, htb.local
+dn: CN=FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042,CN=Users,DC=htb,DC=local
+cn: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+userAccountControl: 514
+sAMAccountName: SM_9b69f1b9d2cc45549
+
+# SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}, Users, htb.local
+dn: CN=SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201},CN=Users,DC=htb,DC=local
+cn: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}
+userAccountControl: 514
+sAMAccountName: SM_7c96b981967141ebb
+
+# SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}, Users, htb.local
+dn: CN=SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA},CN=Users,DC=htb,DC=local
+cn: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}
+userAccountControl: 514
+sAMAccountName: SM_c75ee099d0a64c91b
+
+# SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}, Users, htb.local
+dn: CN=SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9},CN=Users,DC=htb,DC=local
+cn: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}
+userAccountControl: 514
+sAMAccountName: SM_1ffab36a2f5f479cb
+
+# Administrator, Users, htb.local
+dn: CN=Administrator,CN=Users,DC=htb,DC=local
+
+# Guest, Users, htb.local
+dn: CN=Guest,CN=Users,DC=htb,DC=local
+cn: Guest
+userAccountControl: 66082
+sAMAccountName: Guest
+
+# DefaultAccount, Users, htb.local
+dn: CN=DefaultAccount,CN=Users,DC=htb,DC=local
+cn: DefaultAccount
+userAccountControl: 66082
+sAMAccountName: DefaultAccount
+
+# krbtgt, Users, htb.local
+dn: CN=krbtgt,CN=Users,DC=htb,DC=local
+
+# Domain Computers, Users, htb.local
+dn: CN=Domain Computers,CN=Users,DC=htb,DC=local
+cn: Domain Computers
+sAMAccountName: Domain Computers
+
+# Domain Controllers, Users, htb.local
+dn: CN=Domain Controllers,CN=Users,DC=htb,DC=local
+
+# Schema Admins, Users, htb.local
+dn: CN=Schema Admins,CN=Users,DC=htb,DC=local
+
+# Enterprise Admins, Users, htb.local
+dn: CN=Enterprise Admins,CN=Users,DC=htb,DC=local
+
+# Cert Publishers, Users, htb.local
+dn: CN=Cert Publishers,CN=Users,DC=htb,DC=local
+cn: Cert Publishers
+sAMAccountName: Cert Publishers
+
+# Domain Admins, Users, htb.local
+dn: CN=Domain Admins,CN=Users,DC=htb,DC=local
+
+# Domain Users, Users, htb.local
+dn: CN=Domain Users,CN=Users,DC=htb,DC=local
+cn: Domain Users
+sAMAccountName: Domain Users
+
+# Domain Guests, Users, htb.local
+dn: CN=Domain Guests,CN=Users,DC=htb,DC=local
+cn: Domain Guests
+sAMAccountName: Domain Guests
+
+# Group Policy Creator Owners, Users, htb.local
+dn: CN=Group Policy Creator Owners,CN=Users,DC=htb,DC=local
+cn: Group Policy Creator Owners
+sAMAccountName: Group Policy Creator Owners
+
+# RAS and IAS Servers, Users, htb.local
+dn: CN=RAS and IAS Servers,CN=Users,DC=htb,DC=local
+cn: RAS and IAS Servers
+sAMAccountName: RAS and IAS Servers
+
+# Computers, htb.local
+dn: CN=Computers,DC=htb,DC=local
+cn: Computers
+
+# EXCH01, Computers, htb.local
+dn: CN=EXCH01,CN=Computers,DC=htb,DC=local
+cn: EXCH01
+userAccountControl: 4096
+sAMAccountName: EXCH01$
+servicePrincipalName: IMAP/EXCH01
+servicePrincipalName: IMAP/EXCH01.htb.local
+servicePrincipalName: IMAP4/EXCH01
+servicePrincipalName: IMAP4/EXCH01.htb.local
+servicePrincipalName: POP/EXCH01
+servicePrincipalName: POP/EXCH01.htb.local
+servicePrincipalName: POP3/EXCH01
+servicePrincipalName: POP3/EXCH01.htb.local
+servicePrincipalName: exchangeRFR/EXCH01
+servicePrincipalName: exchangeRFR/EXCH01.htb.local
+servicePrincipalName: exchangeAB/EXCH01
+servicePrincipalName: exchangeAB/EXCH01.htb.local
+servicePrincipalName: exchangeMDB/EXCH01
+servicePrincipalName: exchangeMDB/EXCH01.htb.local
+servicePrincipalName: SMTP/EXCH01
+servicePrincipalName: SMTP/EXCH01.htb.local
+servicePrincipalName: SmtpSvc/EXCH01
+servicePrincipalName: SmtpSvc/EXCH01.htb.local
+servicePrincipalName: WSMAN/EXCH01
+servicePrincipalName: WSMAN/EXCH01.htb.local
+servicePrincipalName: RestrictedKrbHost/EXCH01
+servicePrincipalName: HOST/EXCH01
+servicePrincipalName: RestrictedKrbHost/EXCH01.htb.local
+servicePrincipalName: HOST/EXCH01.htb.local
+
+# Domain Controllers, htb.local
+dn: OU=Domain Controllers,DC=htb,DC=local
+
+# FOREST, Domain Controllers, htb.local
+dn: CN=FOREST,OU=Domain Controllers,DC=htb,DC=local
+cn: FOREST
+userAccountControl: 532480
+sAMAccountName: FOREST$
+servicePrincipalName: TERMSRV/FOREST
+servicePrincipalName: TERMSRV/FOREST.htb.local
+servicePrincipalName: exchangeAB/FOREST
+servicePrincipalName: exchangeAB/FOREST.htb.local
+servicePrincipalName: Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/FOREST.htb.local
+servicePrincipalName: ldap/FOREST.htb.local/ForestDnsZones.htb.local
+servicePrincipalName: ldap/FOREST.htb.local/DomainDnsZones.htb.local
+servicePrincipalName: DNS/FOREST.htb.local
+servicePrincipalName: GC/FOREST.htb.local/htb.local
+servicePrincipalName: RestrictedKrbHost/FOREST.htb.local
+servicePrincipalName: RestrictedKrbHost/FOREST
+servicePrincipalName: RPC/236ba33a-7959-4a41-b959-5f82689a0871._msdcs.htb.local
+servicePrincipalName: HOST/FOREST/HTB
+servicePrincipalName: HOST/FOREST.htb.local/HTB
+servicePrincipalName: HOST/FOREST
+servicePrincipalName: HOST/FOREST.htb.local
+servicePrincipalName: HOST/FOREST.htb.local/htb.local
+servicePrincipalName: E3514235-4B06-11D1-AB04-00C04FC2DCD2/236ba33a-7959-4a41-b959-5f82689a0871/htb.local
+servicePrincipalName: ldap/FOREST/HTB
+servicePrincipalName: ldap/236ba33a-7959-4a41-b959-5f82689a0871._msdcs.htb.local
+servicePrincipalName: ldap/FOREST.htb.local/HTB
+servicePrincipalName: ldap/FOREST
+servicePrincipalName: ldap/FOREST.htb.local
+servicePrincipalName: ldap/FOREST.htb.local/htb.local
+
+# RID Set, FOREST, Domain Controllers, htb.local
+dn: CN=RID Set,CN=FOREST,OU=Domain Controllers,DC=htb,DC=local
+cn: RID Set
+
+# DFSR-LocalSettings, FOREST, Domain Controllers, htb.local
+dn: CN=DFSR-LocalSettings,CN=FOREST,OU=Domain Controllers,DC=htb,DC=local
+cn: DFSR-LocalSettings
+
+# Domain System Volume, DFSR-LocalSettings, FOREST, Domain Controllers, htb.local
+dn: CN=Domain System Volume,CN=DFSR-LocalSettings,CN=FOREST,OU=Domain Controllers,DC=htb,DC=local
+cn: Domain System Volume
+
+# SYSVOL Subscription, Domain System Volume, DFSR-LocalSettings, FOREST, Domain Controllers, htb.local
+dn: CN=SYSVOL Subscription,CN=Domain System Volume,CN=DFSR-LocalSettings,CN=FOREST,OU=Domain Controllers,DC=htb,DC=local
+cn: SYSVOL Subscription
+
+# System, htb.local
+dn: CN=System,DC=htb,DC=local
+cn: System
+
+# WinsockServices, System, htb.local
+dn: CN=WinsockServices,CN=System,DC=htb,DC=local
+cn: WinsockServices
+
+# RpcServices, System, htb.local
+dn: CN=RpcServices,CN=System,DC=htb,DC=local
+cn: RpcServices
+
+# FileLinks, System, htb.local
+dn: CN=FileLinks,CN=System,DC=htb,DC=local
+cn: FileLinks
+
+# VolumeTable, FileLinks, System, htb.local
+dn: CN=VolumeTable,CN=FileLinks,CN=System,DC=htb,DC=local
+
+# ObjectMoveTable, FileLinks, System, htb.local
+dn: CN=ObjectMoveTable,CN=FileLinks,CN=System,DC=htb,DC=local
+cn: ObjectMoveTable
+
+# Default Domain Policy, System, htb.local
+dn: CN=Default Domain Policy,CN=System,DC=htb,DC=local
+cn: Default Domain Policy
+
+# AppCategories, Default Domain Policy, System, htb.local
+dn: CN=AppCategories,CN=Default Domain Policy,CN=System,DC=htb,DC=local
+cn: AppCategories
+
+# RID Manager$, System, htb.local
+dn: CN=RID Manager$,CN=System,DC=htb,DC=local
+cn: RID Manager$
+
+# Meetings, System, htb.local
+dn: CN=Meetings,CN=System,DC=htb,DC=local
+cn: Meetings
+
+# Policies, System, htb.local
+dn: CN=Policies,CN=System,DC=htb,DC=local
+cn: Policies
+
+# {31B2F340-016D-11D2-945F-00C04FB984F9}, Policies, System, htb.local
+dn: CN={31B2F340-016D-11D2-945F-00C04FB984F9},CN=Policies,CN=System,DC=htb,DC=local
+
+# {6AC1786C-016F-11D2-945F-00C04fB984F9}, Policies, System, htb.local
+dn: CN={6AC1786C-016F-11D2-945F-00C04fB984F9},CN=Policies,CN=System,DC=htb,DC=local
+
+# MicrosoftDNS, System, htb.local
+dn: CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+cn: MicrosoftDNS
+
+# RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+cn: Zone
+
+# @, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=@,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# A.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=A.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# B.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=B.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# C.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=C.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# D.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=D.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# E.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=E.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# F.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=F.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# G.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=G.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# H.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=H.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# I.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=I.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# J.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=J.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# K.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=K.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# L.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=L.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# M.ROOT-SERVERS.NET, RootDNSServers, MicrosoftDNS, System, htb.local
+dn: DC=M.ROOT-SERVERS.NET,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=htb,DC=local
+
+# RAS and IAS Servers Access Check, System, htb.local
+dn: CN=RAS and IAS Servers Access Check,CN=System,DC=htb,DC=local
+cn: RAS and IAS Servers Access Check
+
+# File Replication Service, System, htb.local
+dn: CN=File Replication Service,CN=System,DC=htb,DC=local
+cn: File Replication Service
+
+# Dfs-Configuration, System, htb.local
+dn: CN=Dfs-Configuration,CN=System,DC=htb,DC=local
+cn: Dfs-Configuration
+
+# IP Security, System, htb.local
+dn: CN=IP Security,CN=System,DC=htb,DC=local
+cn: IP Security
+
+# ipsecPolicy{72385230-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecPolicy{72385230-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecPolicy{72385230-70FA-11D1-864C-14A300000000}
+
+# ipsecISAKMPPolicy{72385231-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecISAKMPPolicy{72385231-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecISAKMPPolicy{72385231-70FA-11D1-864C-14A300000000}
+
+# ipsecNFA{72385232-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecNFA{72385232-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNFA{72385232-70FA-11D1-864C-14A300000000}
+
+# ipsecNFA{59319BE2-5EE3-11D2-ACE8-0060B0ECCA17}, IP Security, System, htb.local
+dn: CN=ipsecNFA{59319BE2-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNFA{59319BE2-5EE3-11D2-ACE8-0060B0ECCA17}
+
+# ipsecNFA{594272E2-071D-11D3-AD22-0060B0ECCA17}, IP Security, System, htb.local
+dn: CN=ipsecNFA{594272E2-071D-11D3-AD22-0060B0ECCA17},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNFA{594272E2-071D-11D3-AD22-0060B0ECCA17}
+
+# ipsecNegotiationPolicy{72385233-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecNegotiationPolicy{72385233-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNegotiationPolicy{72385233-70FA-11D1-864C-14A300000000}
+
+# ipsecFilter{7238523A-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecFilter{7238523A-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecFilter{7238523A-70FA-11D1-864C-14A300000000}
+
+# ipsecNegotiationPolicy{59319BDF-5EE3-11D2-ACE8-0060B0ECCA17}, IP Security, System, htb.local
+dn: CN=ipsecNegotiationPolicy{59319BDF-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNegotiationPolicy{59319BDF-5EE3-11D2-ACE8-0060B0ECCA17}
+
+# ipsecNegotiationPolicy{7238523B-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecNegotiationPolicy{7238523B-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNegotiationPolicy{7238523B-70FA-11D1-864C-14A300000000}
+
+# ipsecFilter{72385235-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecFilter{72385235-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecFilter{72385235-70FA-11D1-864C-14A300000000}
+
+# ipsecPolicy{72385236-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecPolicy{72385236-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecPolicy{72385236-70FA-11D1-864C-14A300000000}
+
+# ipsecISAKMPPolicy{72385237-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecISAKMPPolicy{72385237-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecISAKMPPolicy{72385237-70FA-11D1-864C-14A300000000}
+
+# ipsecNFA{59319C04-5EE3-11D2-ACE8-0060B0ECCA17}, IP Security, System, htb.local
+dn: CN=ipsecNFA{59319C04-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNFA{59319C04-5EE3-11D2-ACE8-0060B0ECCA17}
+
+# ipsecNegotiationPolicy{59319C01-5EE3-11D2-ACE8-0060B0ECCA17}, IP Security, System, htb.local
+dn: CN=ipsecNegotiationPolicy{59319C01-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNegotiationPolicy{59319C01-5EE3-11D2-ACE8-0060B0ECCA17}
+
+# ipsecPolicy{7238523C-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecPolicy{7238523C-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecPolicy{7238523C-70FA-11D1-864C-14A300000000}
+
+# ipsecISAKMPPolicy{7238523D-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecISAKMPPolicy{7238523D-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecISAKMPPolicy{7238523D-70FA-11D1-864C-14A300000000}
+
+# ipsecNFA{7238523E-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecNFA{7238523E-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNFA{7238523E-70FA-11D1-864C-14A300000000}
+
+# ipsecNFA{59319BF3-5EE3-11D2-ACE8-0060B0ECCA17}, IP Security, System, htb.local
+dn: CN=ipsecNFA{59319BF3-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNFA{59319BF3-5EE3-11D2-ACE8-0060B0ECCA17}
+
+# ipsecNFA{594272FD-071D-11D3-AD22-0060B0ECCA17}, IP Security, System, htb.local
+dn: CN=ipsecNFA{594272FD-071D-11D3-AD22-0060B0ECCA17},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNFA{594272FD-071D-11D3-AD22-0060B0ECCA17}
+
+# ipsecNegotiationPolicy{7238523F-70FA-11D1-864C-14A300000000}, IP Security, System, htb.local
+dn: CN=ipsecNegotiationPolicy{7238523F-70FA-11D1-864C-14A300000000},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNegotiationPolicy{7238523F-70FA-11D1-864C-14A300000000}
+
+# ipsecNegotiationPolicy{59319BF0-5EE3-11D2-ACE8-0060B0ECCA17}, IP Security, System, htb.local
+dn: CN=ipsecNegotiationPolicy{59319BF0-5EE3-11D2-ACE8-0060B0ECCA17},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNegotiationPolicy{59319BF0-5EE3-11D2-ACE8-0060B0ECCA17}
+
+# ipsecNFA{6A1F5C6F-72B7-11D2-ACF0-0060B0ECCA17}, IP Security, System, htb.local
+dn: CN=ipsecNFA{6A1F5C6F-72B7-11D2-ACF0-0060B0ECCA17},CN=IP Security,CN=System,DC=htb,DC=local
+cn: ipsecNFA{6A1F5C6F-72B7-11D2-ACF0-0060B0ECCA17}
+
+# DFSR-GlobalSettings, System, htb.local
+dn: CN=DFSR-GlobalSettings,CN=System,DC=htb,DC=local
+cn: DFSR-GlobalSettings
+
+# Domain System Volume, DFSR-GlobalSettings, System, htb.local
+dn: CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=htb,DC=local
+cn: Domain System Volume
+
+# Content, Domain System Volume, DFSR-GlobalSettings, System, htb.local
+dn: CN=Content,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=htb,DC=local
+cn: Content
+
+# SYSVOL Share, Content, Domain System Volume, DFSR-GlobalSettings, System, htb.local
+dn: CN=SYSVOL Share,CN=Content,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=htb,DC=local
+cn: SYSVOL Share
+
+# Topology, Domain System Volume, DFSR-GlobalSettings, System, htb.local
+dn: CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=htb,DC=local
+cn: Topology
+
+# FOREST, Topology, Domain System Volume, DFSR-GlobalSettings, System, htb.local
+dn: CN=FOREST,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=htb,DC=local
+cn: FOREST
+
+# AdminSDHolder, System, htb.local
+dn: CN=AdminSDHolder,CN=System,DC=htb,DC=local
+
+# ComPartitions, System, htb.local
+dn: CN=ComPartitions,CN=System,DC=htb,DC=local
+cn: ComPartitions
+
+# ComPartitionSets, System, htb.local
+dn: CN=ComPartitionSets,CN=System,DC=htb,DC=local
+cn: ComPartitionSets
+
+# WMIPolicy, System, htb.local
+dn: CN=WMIPolicy,CN=System,DC=htb,DC=local
+
+# DomainUpdates, System, htb.local
+dn: CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: DomainUpdates
+
+# Operations, DomainUpdates, System, htb.local
+dn: CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: Operations
+
+# 6E157EDF-4E72-4052-A82A-EC3F91021A22, Operations, DomainUpdates, System, htb.local
+dn: CN=6E157EDF-4E72-4052-A82A-EC3F91021A22,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6E157EDF-4E72-4052-A82A-EC3F91021A22
+
+# ab402345-d3c3-455d-9ff7-40268a1099b6, Operations, DomainUpdates, System, htb.local
+dn: CN=ab402345-d3c3-455d-9ff7-40268a1099b6,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: ab402345-d3c3-455d-9ff7-40268a1099b6
+
+# bab5f54d-06c8-48de-9b87-d78b796564e4, Operations, DomainUpdates, System, htb.local
+dn: CN=bab5f54d-06c8-48de-9b87-d78b796564e4,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: bab5f54d-06c8-48de-9b87-d78b796564e4
+
+# f3dd09dd-25e8-4f9c-85df-12d6d2f2f2f5, Operations, DomainUpdates, System, htb.local
+dn: CN=f3dd09dd-25e8-4f9c-85df-12d6d2f2f2f5,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: f3dd09dd-25e8-4f9c-85df-12d6d2f2f2f5
+
+# 2416c60a-fe15-4d7a-a61e-dffd5df864d3, Operations, DomainUpdates, System, htb.local
+dn: CN=2416c60a-fe15-4d7a-a61e-dffd5df864d3,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 2416c60a-fe15-4d7a-a61e-dffd5df864d3
+
+# 7868d4c8-ac41-4e05-b401-776280e8e9f1, Operations, DomainUpdates, System, htb.local
+dn: CN=7868d4c8-ac41-4e05-b401-776280e8e9f1,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 7868d4c8-ac41-4e05-b401-776280e8e9f1
+
+# 860c36ed-5241-4c62-a18b-cf6ff9994173, Operations, DomainUpdates, System, htb.local
+dn: CN=860c36ed-5241-4c62-a18b-cf6ff9994173,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 860c36ed-5241-4c62-a18b-cf6ff9994173
+
+# 0e660ea3-8a5e-4495-9ad7-ca1bd4638f9e, Operations, DomainUpdates, System, htb.local
+dn: CN=0e660ea3-8a5e-4495-9ad7-ca1bd4638f9e,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 0e660ea3-8a5e-4495-9ad7-ca1bd4638f9e
+
+# a86fe12a-0f62-4e2a-b271-d27f601f8182, Operations, DomainUpdates, System, htb.local
+dn: CN=a86fe12a-0f62-4e2a-b271-d27f601f8182,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: a86fe12a-0f62-4e2a-b271-d27f601f8182
+
+# d85c0bfd-094f-4cad-a2b5-82ac9268475d, Operations, DomainUpdates, System, htb.local
+dn: CN=d85c0bfd-094f-4cad-a2b5-82ac9268475d,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: d85c0bfd-094f-4cad-a2b5-82ac9268475d
+
+# 6ada9ff7-c9df-45c1-908e-9fef2fab008a, Operations, DomainUpdates, System, htb.local
+dn: CN=6ada9ff7-c9df-45c1-908e-9fef2fab008a,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6ada9ff7-c9df-45c1-908e-9fef2fab008a
+
+# 10b3ad2a-6883-4fa7-90fc-6377cbdc1b26, Operations, DomainUpdates, System, htb.local
+dn: CN=10b3ad2a-6883-4fa7-90fc-6377cbdc1b26,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 10b3ad2a-6883-4fa7-90fc-6377cbdc1b26
+
+# 98de1d3e-6611-443b-8b4e-f4337f1ded0b, Operations, DomainUpdates, System, htb.local
+dn: CN=98de1d3e-6611-443b-8b4e-f4337f1ded0b,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 98de1d3e-6611-443b-8b4e-f4337f1ded0b
+
+# f607fd87-80cf-45e2-890b-6cf97ec0e284, Operations, DomainUpdates, System, htb.local
+dn: CN=f607fd87-80cf-45e2-890b-6cf97ec0e284,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: f607fd87-80cf-45e2-890b-6cf97ec0e284
+
+# 9cac1f66-2167-47ad-a472-2a13251310e4, Operations, DomainUpdates, System, htb.local
+dn: CN=9cac1f66-2167-47ad-a472-2a13251310e4,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 9cac1f66-2167-47ad-a472-2a13251310e4
+
+# 6ff880d6-11e7-4ed1-a20f-aac45da48650, Operations, DomainUpdates, System, htb.local
+dn: CN=6ff880d6-11e7-4ed1-a20f-aac45da48650,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6ff880d6-11e7-4ed1-a20f-aac45da48650
+
+# 446f24ea-cfd5-4c52-8346-96e170bcb912, Operations, DomainUpdates, System, htb.local
+dn: CN=446f24ea-cfd5-4c52-8346-96e170bcb912,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 446f24ea-cfd5-4c52-8346-96e170bcb912
+
+# 51cba88b-99cf-4e16-bef2-c427b38d0767, Operations, DomainUpdates, System, htb.local
+dn: CN=51cba88b-99cf-4e16-bef2-c427b38d0767,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 51cba88b-99cf-4e16-bef2-c427b38d0767
+
+# a3dac986-80e7-4e59-a059-54cb1ab43cb9, Operations, DomainUpdates, System, htb.local
+dn: CN=a3dac986-80e7-4e59-a059-54cb1ab43cb9,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: a3dac986-80e7-4e59-a059-54cb1ab43cb9
+
+# 293f0798-ea5c-4455-9f5d-45f33a30703b, Operations, DomainUpdates, System, htb.local
+dn: CN=293f0798-ea5c-4455-9f5d-45f33a30703b,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 293f0798-ea5c-4455-9f5d-45f33a30703b
+
+# 5c82b233-75fc-41b3-ac71-c69592e6bf15, Operations, DomainUpdates, System, htb.local
+dn: CN=5c82b233-75fc-41b3-ac71-c69592e6bf15,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 5c82b233-75fc-41b3-ac71-c69592e6bf15
+
+# 7ffef925-405b-440a-8d58-35e8cd6e98c3, Operations, DomainUpdates, System, htb.local
+dn: CN=7ffef925-405b-440a-8d58-35e8cd6e98c3,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 7ffef925-405b-440a-8d58-35e8cd6e98c3
+
+# 4dfbb973-8a62-4310-a90c-776e00f83222, Operations, DomainUpdates, System, htb.local
+dn: CN=4dfbb973-8a62-4310-a90c-776e00f83222,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 4dfbb973-8a62-4310-a90c-776e00f83222
+
+# 8437C3D8-7689-4200-BF38-79E4AC33DFA0, Operations, DomainUpdates, System, htb.local
+dn: CN=8437C3D8-7689-4200-BF38-79E4AC33DFA0,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 8437C3D8-7689-4200-BF38-79E4AC33DFA0
+
+# 7cfb016c-4f87-4406-8166-bd9df943947f, Operations, DomainUpdates, System, htb.local
+dn: CN=7cfb016c-4f87-4406-8166-bd9df943947f,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 7cfb016c-4f87-4406-8166-bd9df943947f
+
+# f7ed4553-d82b-49ef-a839-2f38a36bb069, Operations, DomainUpdates, System, htb.local
+dn: CN=f7ed4553-d82b-49ef-a839-2f38a36bb069,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: f7ed4553-d82b-49ef-a839-2f38a36bb069
+
+# 8ca38317-13a4-4bd4-806f-ebed6acb5d0c, Operations, DomainUpdates, System, htb.local
+dn: CN=8ca38317-13a4-4bd4-806f-ebed6acb5d0c,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 8ca38317-13a4-4bd4-806f-ebed6acb5d0c
+
+# 3c784009-1f57-4e2a-9b04-6915c9e71961, Operations, DomainUpdates, System, htb.local
+dn: CN=3c784009-1f57-4e2a-9b04-6915c9e71961,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 3c784009-1f57-4e2a-9b04-6915c9e71961
+
+# 6bcd5678-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5678-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5678-8314-11d6-977b-00c04f613221
+
+# 6bcd5679-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5679-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5679-8314-11d6-977b-00c04f613221
+
+# 6bcd567a-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd567a-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd567a-8314-11d6-977b-00c04f613221
+
+# 6bcd567b-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd567b-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd567b-8314-11d6-977b-00c04f613221
+
+# 6bcd567c-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd567c-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd567c-8314-11d6-977b-00c04f613221
+
+# 6bcd567d-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd567d-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd567d-8314-11d6-977b-00c04f613221
+
+# 6bcd567e-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd567e-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd567e-8314-11d6-977b-00c04f613221
+
+# 6bcd567f-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd567f-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd567f-8314-11d6-977b-00c04f613221
+
+# 6bcd5680-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5680-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5680-8314-11d6-977b-00c04f613221
+
+# 6bcd5681-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5681-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5681-8314-11d6-977b-00c04f613221
+
+# 6bcd5682-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5682-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5682-8314-11d6-977b-00c04f613221
+
+# 6bcd5683-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5683-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5683-8314-11d6-977b-00c04f613221
+
+# 6bcd5684-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5684-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5684-8314-11d6-977b-00c04f613221
+
+# 6bcd5685-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5685-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5685-8314-11d6-977b-00c04f613221
+
+# 6bcd5686-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5686-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5686-8314-11d6-977b-00c04f613221
+
+# 6bcd5687-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5687-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5687-8314-11d6-977b-00c04f613221
+
+# 6bcd5688-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5688-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5688-8314-11d6-977b-00c04f613221
+
+# 6bcd5689-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd5689-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd5689-8314-11d6-977b-00c04f613221
+
+# 6bcd568a-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd568a-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd568a-8314-11d6-977b-00c04f613221
+
+# 6bcd568b-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd568b-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd568b-8314-11d6-977b-00c04f613221
+
+# 6bcd568c-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd568c-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd568c-8314-11d6-977b-00c04f613221
+
+# 6bcd568d-8314-11d6-977b-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=6bcd568d-8314-11d6-977b-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 6bcd568d-8314-11d6-977b-00c04f613221
+
+# 3051c66f-b332-4a73-9a20-2d6a7d6e6a1c, Operations, DomainUpdates, System, htb.local
+dn: CN=3051c66f-b332-4a73-9a20-2d6a7d6e6a1c,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 3051c66f-b332-4a73-9a20-2d6a7d6e6a1c
+
+# 3e4f4182-ac5d-4378-b760-0eab2de593e2, Operations, DomainUpdates, System, htb.local
+dn: CN=3e4f4182-ac5d-4378-b760-0eab2de593e2,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 3e4f4182-ac5d-4378-b760-0eab2de593e2
+
+# c4f17608-e611-11d6-9793-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=c4f17608-e611-11d6-9793-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: c4f17608-e611-11d6-9793-00c04f613221
+
+# 13d15cf0-e6c8-11d6-9793-00c04f613221, Operations, DomainUpdates, System, htb.local
+dn: CN=13d15cf0-e6c8-11d6-9793-00c04f613221,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 13d15cf0-e6c8-11d6-9793-00c04f613221
+
+# 8ddf6913-1c7b-4c59-a5af-b9ca3b3d2c4c, Operations, DomainUpdates, System, htb.local
+dn: CN=8ddf6913-1c7b-4c59-a5af-b9ca3b3d2c4c,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 8ddf6913-1c7b-4c59-a5af-b9ca3b3d2c4c
+
+# dda1d01d-4bd7-4c49-a184-46f9241b560e, Operations, DomainUpdates, System, htb.local
+dn: CN=dda1d01d-4bd7-4c49-a184-46f9241b560e,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: dda1d01d-4bd7-4c49-a184-46f9241b560e
+
+# a1789bfb-e0a2-4739-8cc0-e77d892d080a, Operations, DomainUpdates, System, htb.local
+dn: CN=a1789bfb-e0a2-4739-8cc0-e77d892d080a,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: a1789bfb-e0a2-4739-8cc0-e77d892d080a
+
+# 61b34cb0-55ee-4be9-b595-97810b92b017, Operations, DomainUpdates, System, htb.local
+dn: CN=61b34cb0-55ee-4be9-b595-97810b92b017,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 61b34cb0-55ee-4be9-b595-97810b92b017
+
+# 57428d75-bef7-43e1-938b-2e749f5a8d56, Operations, DomainUpdates, System, htb.local
+dn: CN=57428d75-bef7-43e1-938b-2e749f5a8d56,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 57428d75-bef7-43e1-938b-2e749f5a8d56
+
+# ebad865a-d649-416f-9922-456b53bbb5b8, Operations, DomainUpdates, System, htb.local
+dn: CN=ebad865a-d649-416f-9922-456b53bbb5b8,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: ebad865a-d649-416f-9922-456b53bbb5b8
+
+# 0b7fb422-3609-4587-8c2e-94b10f67d1bf, Operations, DomainUpdates, System, htb.local
+dn: CN=0b7fb422-3609-4587-8c2e-94b10f67d1bf,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 0b7fb422-3609-4587-8c2e-94b10f67d1bf
+
+# 2951353e-d102-4ea5-906c-54247eeec741, Operations, DomainUpdates, System, htb.local
+dn: CN=2951353e-d102-4ea5-906c-54247eeec741,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 2951353e-d102-4ea5-906c-54247eeec741
+
+# 71482d49-8870-4cb3-a438-b6fc9ec35d70, Operations, DomainUpdates, System, htb.local
+dn: CN=71482d49-8870-4cb3-a438-b6fc9ec35d70,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 71482d49-8870-4cb3-a438-b6fc9ec35d70
+
+# aed72870-bf16-4788-8ac7-22299c8207f1, Operations, DomainUpdates, System, htb.local
+dn: CN=aed72870-bf16-4788-8ac7-22299c8207f1,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: aed72870-bf16-4788-8ac7-22299c8207f1
+
+# f58300d1-b71a-4DB6-88a1-a8b9538beaca, Operations, DomainUpdates, System, htb.local
+dn: CN=f58300d1-b71a-4DB6-88a1-a8b9538beaca,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: f58300d1-b71a-4DB6-88a1-a8b9538beaca
+
+# 231fb90b-c92a-40c9-9379-bacfc313a3e3, Operations, DomainUpdates, System, htb.local
+dn: CN=231fb90b-c92a-40c9-9379-bacfc313a3e3,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 231fb90b-c92a-40c9-9379-bacfc313a3e3
+
+# 4aaabc3a-c416-4b9c-a6bb-4b453ab1c1f0, Operations, DomainUpdates, System, htb.local
+dn: CN=4aaabc3a-c416-4b9c-a6bb-4b453ab1c1f0,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 4aaabc3a-c416-4b9c-a6bb-4b453ab1c1f0
+
+# 9738c400-7795-4d6e-b19d-c16cd6486166, Operations, DomainUpdates, System, htb.local
+dn: CN=9738c400-7795-4d6e-b19d-c16cd6486166,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 9738c400-7795-4d6e-b19d-c16cd6486166
+
+# de10d491-909f-4fb0-9abb-4b7865c0fe80, Operations, DomainUpdates, System, htb.local
+dn: CN=de10d491-909f-4fb0-9abb-4b7865c0fe80,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: de10d491-909f-4fb0-9abb-4b7865c0fe80
+
+# b96ed344-545a-4172-aa0c-68118202f125, Operations, DomainUpdates, System, htb.local
+dn: CN=b96ed344-545a-4172-aa0c-68118202f125,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: b96ed344-545a-4172-aa0c-68118202f125
+
+# 4c93ad42-178a-4275-8600-16811d28f3aa, Operations, DomainUpdates, System, htb.local
+dn: CN=4c93ad42-178a-4275-8600-16811d28f3aa,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 4c93ad42-178a-4275-8600-16811d28f3aa
+
+# c88227bc-fcca-4b58-8d8a-cd3d64528a02, Operations, DomainUpdates, System, htb.local
+dn: CN=c88227bc-fcca-4b58-8d8a-cd3d64528a02,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: c88227bc-fcca-4b58-8d8a-cd3d64528a02
+
+# 5e1574f6-55df-493e-a671-aaeffca6a100, Operations, DomainUpdates, System, htb.local
+dn: CN=5e1574f6-55df-493e-a671-aaeffca6a100,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 5e1574f6-55df-493e-a671-aaeffca6a100
+
+# d262aae8-41f7-48ed-9f35-56bbb677573d, Operations, DomainUpdates, System, htb.local
+dn: CN=d262aae8-41f7-48ed-9f35-56bbb677573d,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: d262aae8-41f7-48ed-9f35-56bbb677573d
+
+# 82112ba0-7e4c-4a44-89d9-d46c9612bf91, Operations, DomainUpdates, System, htb.local
+dn: CN=82112ba0-7e4c-4a44-89d9-d46c9612bf91,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 82112ba0-7e4c-4a44-89d9-d46c9612bf91
+
+# c3c927a6-cc1d-47c0-966b-be8f9b63d991, Operations, DomainUpdates, System, htb.local
+dn: CN=c3c927a6-cc1d-47c0-966b-be8f9b63d991,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: c3c927a6-cc1d-47c0-966b-be8f9b63d991
+
+# 54afcfb9-637a-4251-9f47-4d50e7021211, Operations, DomainUpdates, System, htb.local
+dn: CN=54afcfb9-637a-4251-9f47-4d50e7021211,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 54afcfb9-637a-4251-9f47-4d50e7021211
+
+# f4728883-84dd-483c-9897-274f2ebcf11e, Operations, DomainUpdates, System, htb.local
+dn: CN=f4728883-84dd-483c-9897-274f2ebcf11e,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: f4728883-84dd-483c-9897-274f2ebcf11e
+
+# ff4f9d27-7157-4cb0-80a9-5d6f2b14c8ff, Operations, DomainUpdates, System, htb.local
+dn: CN=ff4f9d27-7157-4cb0-80a9-5d6f2b14c8ff,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: ff4f9d27-7157-4cb0-80a9-5d6f2b14c8ff
+
+# 83C53DA7-427E-47A4-A07A-A324598B88F7, Operations, DomainUpdates, System, htb.local
+dn: CN=83C53DA7-427E-47A4-A07A-A324598B88F7,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 83C53DA7-427E-47A4-A07A-A324598B88F7
+
+# C81FC9CC-0130-4FD1-B272-634D74818133, Operations, DomainUpdates, System, htb.local
+dn: CN=C81FC9CC-0130-4FD1-B272-634D74818133,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: C81FC9CC-0130-4FD1-B272-634D74818133
+
+# E5F9E791-D96D-4FC9-93C9-D53E1DC439BA, Operations, DomainUpdates, System, htb.local
+dn: CN=E5F9E791-D96D-4FC9-93C9-D53E1DC439BA,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: E5F9E791-D96D-4FC9-93C9-D53E1DC439BA
+
+# e6d5fd00-385d-4e65-b02d-9da3493ed850, Operations, DomainUpdates, System, htb.local
+dn: CN=e6d5fd00-385d-4e65-b02d-9da3493ed850,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: e6d5fd00-385d-4e65-b02d-9da3493ed850
+
+# 3a6b3fbf-3168-4312-a10d-dd5b3393952d, Operations, DomainUpdates, System, htb.local
+dn: CN=3a6b3fbf-3168-4312-a10d-dd5b3393952d,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 3a6b3fbf-3168-4312-a10d-dd5b3393952d
+
+# 7F950403-0AB3-47F9-9730-5D7B0269F9BD, Operations, DomainUpdates, System, htb.local
+dn: CN=7F950403-0AB3-47F9-9730-5D7B0269F9BD,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 7F950403-0AB3-47F9-9730-5D7B0269F9BD
+
+# 434bb40d-dbc9-4fe7-81d4-d57229f7b080, Operations, DomainUpdates, System, htb.local
+dn: CN=434bb40d-dbc9-4fe7-81d4-d57229f7b080,CN=Operations,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: 434bb40d-dbc9-4fe7-81d4-d57229f7b080
+
+# Windows2003Update, DomainUpdates, System, htb.local
+dn: CN=Windows2003Update,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: Windows2003Update
+
+# ActiveDirectoryUpdate, DomainUpdates, System, htb.local
+dn: CN=ActiveDirectoryUpdate,CN=DomainUpdates,CN=System,DC=htb,DC=local
+cn: ActiveDirectoryUpdate
+
+# BCKUPKEY_bcb64993-1db6-45d5-9b0d-b8186e8ee6a4 Secret, System, htb.local
+dn: CN=BCKUPKEY_bcb64993-1db6-45d5-9b0d-b8186e8ee6a4 Secret,CN=System,DC=htb,DC=local
+cn: BCKUPKEY_bcb64993-1db6-45d5-9b0d-b8186e8ee6a4 Secret
+
+# BCKUPKEY_P Secret, System, htb.local
+dn: CN=BCKUPKEY_P Secret,CN=System,DC=htb,DC=local
+cn: BCKUPKEY_P Secret
+
+# BCKUPKEY_b5b09264-b153-45ba-9501-e0f2b84c57a7 Secret, System, htb.local
+dn: CN=BCKUPKEY_b5b09264-b153-45ba-9501-e0f2b84c57a7 Secret,CN=System,DC=htb,DC=local
+cn: BCKUPKEY_b5b09264-b153-45ba-9501-e0f2b84c57a7 Secret
+
+# BCKUPKEY_PREFERRED Secret, System, htb.local
+dn: CN=BCKUPKEY_PREFERRED Secret,CN=System,DC=htb,DC=local
+cn: BCKUPKEY_PREFERRED Secret
+
+# Password Settings Container, System, htb.local
+dn: CN=Password Settings Container,CN=System,DC=htb,DC=local
+cn: Password Settings Container
+
+# PSPs, System, htb.local
+dn: CN=PSPs,CN=System,DC=htb,DC=local
+cn: PSPs
+
+# Server, System, htb.local
+dn: CN=Server,CN=System,DC=htb,DC=local
+cn: Server
+
+# LostAndFound, htb.local
+dn: CN=LostAndFound,DC=htb,DC=local
+cn: LostAndFound
+
+# Infrastructure, htb.local
+dn: CN=Infrastructure,DC=htb,DC=local
+cn: Infrastructure
+
+# ForeignSecurityPrincipals, htb.local
+dn: CN=ForeignSecurityPrincipals,DC=htb,DC=local
+cn: ForeignSecurityPrincipals
+
+# S-1-5-9, ForeignSecurityPrincipals, htb.local
+dn: CN=S-1-5-9,CN=ForeignSecurityPrincipals,DC=htb,DC=local
+cn: S-1-5-9
+
+# S-1-5-7, ForeignSecurityPrincipals, htb.local
+dn: CN=S-1-5-7,CN=ForeignSecurityPrincipals,DC=htb,DC=local
+cn: S-1-5-7
+
+# S-1-1-0, ForeignSecurityPrincipals, htb.local
+dn: CN=S-1-1-0,CN=ForeignSecurityPrincipals,DC=htb,DC=local
+cn: S-1-1-0
+
+# S-1-5-4, ForeignSecurityPrincipals, htb.local
+dn: CN=S-1-5-4,CN=ForeignSecurityPrincipals,DC=htb,DC=local
+cn: S-1-5-4
+
+# S-1-5-11, ForeignSecurityPrincipals, htb.local
+dn: CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=htb,DC=local
+cn: S-1-5-11
+
+# S-1-5-17, ForeignSecurityPrincipals, htb.local
+dn: CN=S-1-5-17,CN=ForeignSecurityPrincipals,DC=htb,DC=local
+cn: S-1-5-17
+
+# Microsoft Exchange System Objects, htb.local
+dn: CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: Microsoft Exchange System Objects
+
+# Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: Monitoring Mailboxes
+
+# HealthMailboxc3d7722415ad41a5b19e3e00e165edbe, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailboxc3d7722415ad41a5b19e3e00e165edbe,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxc3d7722415ad41a5b19e3e00e165edbe
+userAccountControl: 66048
+sAMAccountName: HealthMailboxc3d7722
+
+# ExchangeActiveSyncDevices, HealthMailboxc3d7722415ad41a5b19e3e00e165edbe, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=ExchangeActiveSyncDevices,CN=HealthMailboxc3d7722415ad41a5b19e3e00e165edbe,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: ExchangeActiveSyncDevices
+
+# EASProbeDeviceType\C2\A7EASProbeDeviceId141, ExchangeActiveSyncDevices, HealthMailboxc3d7722415ad41a5b19e3e00e165edbe, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn:: Q049RUFTUHJvYmVEZXZpY2VUeXBlwqdFQVNQcm9iZURldmljZUlkMTQxLENOPUV4Y2hhbmdlQWN0aXZlU3luY0RldmljZXMsQ049SGVhbHRoTWFpbGJveGMzZDc3MjI0MTVhZDQxYTViMTllM2UwMGUxNjVlZGJlLENOPU1vbml0b3JpbmcgTWFpbGJveGVzLENOPU1pY3Jvc29mdCBFeGNoYW5nZSBTeXN0ZW0gT2JqZWN0cyxEQz1odGIsREM9bG9jYWw=
+cn:: RUFTUHJvYmVEZXZpY2VUeXBlwqdFQVNQcm9iZURldmljZUlkMTQx
+
+# HealthMailboxfc9daad117b84fe08b081886bd8a5a50, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailboxfc9daad117b84fe08b081886bd8a5a50,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxfc9daad117b84fe08b081886bd8a5a50
+userAccountControl: 66048
+sAMAccountName: HealthMailboxfc9daad
+
+# ExchangeActiveSyncDevices, HealthMailboxfc9daad117b84fe08b081886bd8a5a50, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=ExchangeActiveSyncDevices,CN=HealthMailboxfc9daad117b84fe08b081886bd8a5a50,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: ExchangeActiveSyncDevices
+
+# EASProbeDeviceType\C2\A7EASProbeDeviceId141, ExchangeActiveSyncDevices, HealthMailboxfc9daad117b84fe08b081886bd8a5a50, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn:: Q049RUFTUHJvYmVEZXZpY2VUeXBlwqdFQVNQcm9iZURldmljZUlkMTQxLENOPUV4Y2hhbmdlQWN0aXZlU3luY0RldmljZXMsQ049SGVhbHRoTWFpbGJveGZjOWRhYWQxMTdiODRmZTA4YjA4MTg4NmJkOGE1YTUwLENOPU1vbml0b3JpbmcgTWFpbGJveGVzLENOPU1pY3Jvc29mdCBFeGNoYW5nZSBTeXN0ZW0gT2JqZWN0cyxEQz1odGIsREM9bG9jYWw=
+cn:: RUFTUHJvYmVEZXZpY2VUeXBlwqdFQVNQcm9iZURldmljZUlkMTQx
+
+# HealthMailboxc0a90c97d4994429b15003d6a518f3f5, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailboxc0a90c97d4994429b15003d6a518f3f5,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxc0a90c97d4994429b15003d6a518f3f5
+userAccountControl: 66048
+sAMAccountName: HealthMailboxc0a90c9
+
+# HealthMailbox670628ec4dd64321acfdf6e67db3a2d8, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailbox670628ec4dd64321acfdf6e67db3a2d8,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox670628ec4dd64321acfdf6e67db3a2d8
+userAccountControl: 66048
+sAMAccountName: HealthMailbox670628e
+
+# HealthMailbox968e74dd3edb414cb4018376e7dd95ba, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailbox968e74dd3edb414cb4018376e7dd95ba,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox968e74dd3edb414cb4018376e7dd95ba
+userAccountControl: 66048
+sAMAccountName: HealthMailbox968e74d
+
+# HealthMailbox6ded67848a234577a1756e072081d01f, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailbox6ded67848a234577a1756e072081d01f,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox6ded67848a234577a1756e072081d01f
+userAccountControl: 66048
+sAMAccountName: HealthMailbox6ded678
+
+# HealthMailbox83d6781be36b4bbf8893b03c2ee379ab, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailbox83d6781be36b4bbf8893b03c2ee379ab,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox83d6781be36b4bbf8893b03c2ee379ab
+userAccountControl: 66048
+sAMAccountName: HealthMailbox83d6781
+
+# HealthMailboxfd87238e536e49e08738480d300e3772, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailboxfd87238e536e49e08738480d300e3772,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxfd87238e536e49e08738480d300e3772
+userAccountControl: 66048
+sAMAccountName: HealthMailboxfd87238
+
+# HealthMailboxb01ac647a64648d2a5fa21df27058a24, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailboxb01ac647a64648d2a5fa21df27058a24,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxb01ac647a64648d2a5fa21df27058a24
+userAccountControl: 66048
+sAMAccountName: HealthMailboxb01ac64
+
+# HealthMailbox7108a4e350f84b32a7a90d8e718f78cf, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailbox7108a4e350f84b32a7a90d8e718f78cf,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox7108a4e350f84b32a7a90d8e718f78cf
+userAccountControl: 66048
+sAMAccountName: HealthMailbox7108a4e
+
+# HealthMailbox0659cc188f4c4f9f978f6c2142c4181e, Monitoring Mailboxes, Microsoft Exchange System Objects, htb.local
+dn: CN=HealthMailbox0659cc188f4c4f9f978f6c2142c4181e,CN=Monitoring Mailboxes,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox0659cc188f4c4f9f978f6c2142c4181e
+userAccountControl: 66048
+sAMAccountName: HealthMailbox0659cc1
+
+# Exchange Install Domain Servers, Microsoft Exchange System Objects, htb.local
+dn: CN=Exchange Install Domain Servers,CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: Exchange Install Domain Servers
+sAMAccountName: $D31000-NSEL5BRJ63V7
+
+# SystemMailbox{ce2583c9-4e38-48ab-b23d-88d6e3aa059f}, Microsoft Exchange System Objects, htb.local
+dn: CN=SystemMailbox{ce2583c9-4e38-48ab-b23d-88d6e3aa059f},CN=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: SystemMailbox{ce2583c9-4e38-48ab-b23d-88d6e3aa059f}
+
+# Program Data, htb.local
+dn: CN=Program Data,DC=htb,DC=local
+cn: Program Data
+
+# Microsoft, Program Data, htb.local
+dn: CN=Microsoft,CN=Program Data,DC=htb,DC=local
+cn: Microsoft
+
+# NTDS Quotas, htb.local
+dn: CN=NTDS Quotas,DC=htb,DC=local
+cn: NTDS Quotas
+
+# Managed Service Accounts, htb.local
+dn: CN=Managed Service Accounts,DC=htb,DC=local
+cn: Managed Service Accounts
+
+# Keys, htb.local
+dn: CN=Keys,DC=htb,DC=local
+
+# Service Accounts, htb.local
+dn: OU=Service Accounts,DC=htb,DC=local
+
+# svc-alfresco, Service Accounts, htb.local
+dn: CN=svc-alfresco,OU=Service Accounts,DC=htb,DC=local
+
+# Security Groups, htb.local
+dn: OU=Security Groups,DC=htb,DC=local
+
+# Service Accounts, Security Groups, htb.local
+dn: CN=Service Accounts,OU=Security Groups,DC=htb,DC=local
+
+# Privileged IT Accounts, Security Groups, htb.local
+dn: CN=Privileged IT Accounts,OU=Security Groups,DC=htb,DC=local
+
+# test, Security Groups, htb.local
+dn: CN=test,OU=Security Groups,DC=htb,DC=local
+cn: test
+sAMAccountName: test
+
+# Employees, htb.local
+dn: OU=Employees,DC=htb,DC=local
+
+# Information Technology, Employees, htb.local
+dn: OU=Information Technology,OU=Employees,DC=htb,DC=local
+
+# Exchange Administrators, Information Technology, Employees, htb.local
+dn: OU=Exchange Administrators,OU=Information Technology,OU=Employees,DC=htb,DC=local
+
+# Sebastien Caron, Exchange Administrators, Information Technology, Employees, htb.local
+dn: CN=Sebastien Caron,OU=Exchange Administrators,OU=Information Technology,OU=Employees,DC=htb,DC=local
+cn: Sebastien Caron
+userAccountControl: 66048
+sAMAccountName: sebastien
+
+# Developers, Information Technology, Employees, htb.local
+dn: OU=Developers,OU=Information Technology,OU=Employees,DC=htb,DC=local
+
+# Santi Rodriguez, Developers, Information Technology, Employees, htb.local
+dn: CN=Santi Rodriguez,OU=Developers,OU=Information Technology,OU=Employees,DC=htb,DC=local
+cn: Santi Rodriguez
+userAccountControl: 66048
+sAMAccountName: santi
+
+# Application Support, Information Technology, Employees, htb.local
+dn: OU=Application Support,OU=Information Technology,OU=Employees,DC=htb,DC=local
+
+# IT Management, Information Technology, Employees, htb.local
+dn: OU=IT Management,OU=Information Technology,OU=Employees,DC=htb,DC=local
+
+# Lucinda Berger, IT Management, Information Technology, Employees, htb.local
+dn: CN=Lucinda Berger,OU=IT Management,OU=Information Technology,OU=Employees,DC=htb,DC=local
+cn: Lucinda Berger
+userAccountControl: 66048
+sAMAccountName: lucinda
+
+# Helpdesk, Information Technology, Employees, htb.local
+dn: OU=Helpdesk,OU=Information Technology,OU=Employees,DC=htb,DC=local
+
+# Andy Hislip, Helpdesk, Information Technology, Employees, htb.local
+dn: CN=Andy Hislip,OU=Helpdesk,OU=Information Technology,OU=Employees,DC=htb,DC=local
+cn: Andy Hislip
+userAccountControl: 66048
+sAMAccountName: andy
+
+# Sysadmins, Information Technology, Employees, htb.local
+dn: OU=Sysadmins,OU=Information Technology,OU=Employees,DC=htb,DC=local
+
+# Mark Brandt, Sysadmins, Information Technology, Employees, htb.local
+dn: CN=Mark Brandt,OU=Sysadmins,OU=Information Technology,OU=Employees,DC=htb,DC=local
+cn: Mark Brandt
+userAccountControl: 66048
+sAMAccountName: mark
+
+# Sales, Employees, htb.local
+dn: OU=Sales,OU=Employees,DC=htb,DC=local
+
+# Marketing, Employees, htb.local
+dn: OU=Marketing,OU=Employees,DC=htb,DC=local
+
+# Reception, Employees, htb.local
+dn: OU=Reception,OU=Employees,DC=htb,DC=local
+
+# TPM Devices, htb.local
+dn: CN=TPM Devices,DC=htb,DC=local
+cn: TPM Devices
+
+# Builtin, htb.local
+dn: CN=Builtin,DC=htb,DC=local
+cn: Builtin
+
+# Account Operators, Builtin, htb.local
+dn: CN=Account Operators,CN=Builtin,DC=htb,DC=local
+
+# Pre-Windows 2000 Compatible Access, Builtin, htb.local
+dn: CN=Pre-Windows 2000 Compatible Access,CN=Builtin,DC=htb,DC=local
+cn: Pre-Windows 2000 Compatible Access
+sAMAccountName: Pre-Windows 2000 Compatible Access
+
+# Incoming Forest Trust Builders, Builtin, htb.local
+dn: CN=Incoming Forest Trust Builders,CN=Builtin,DC=htb,DC=local
+cn: Incoming Forest Trust Builders
+sAMAccountName: Incoming Forest Trust Builders
+
+# Windows Authorization Access Group, Builtin, htb.local
+dn: CN=Windows Authorization Access Group,CN=Builtin,DC=htb,DC=local
+cn: Windows Authorization Access Group
+sAMAccountName: Windows Authorization Access Group
+
+# Terminal Server License Servers, Builtin, htb.local
+dn: CN=Terminal Server License Servers,CN=Builtin,DC=htb,DC=local
+cn: Terminal Server License Servers
+sAMAccountName: Terminal Server License Servers
+
+# Administrators, Builtin, htb.local
+dn: CN=Administrators,CN=Builtin,DC=htb,DC=local
+
+# Users, Builtin, htb.local
+dn: CN=Users,CN=Builtin,DC=htb,DC=local
+cn: Users
+sAMAccountName: Users
+
+# Guests, Builtin, htb.local
+dn: CN=Guests,CN=Builtin,DC=htb,DC=local
+cn: Guests
+sAMAccountName: Guests
+
+# Print Operators, Builtin, htb.local
+dn: CN=Print Operators,CN=Builtin,DC=htb,DC=local
+
+# Backup Operators, Builtin, htb.local
+dn: CN=Backup Operators,CN=Builtin,DC=htb,DC=local
+
+# Replicator, Builtin, htb.local
+dn: CN=Replicator,CN=Builtin,DC=htb,DC=local
+
+# Remote Desktop Users, Builtin, htb.local
+dn: CN=Remote Desktop Users,CN=Builtin,DC=htb,DC=local
+cn: Remote Desktop Users
+sAMAccountName: Remote Desktop Users
+
+# Network Configuration Operators, Builtin, htb.local
+dn: CN=Network Configuration Operators,CN=Builtin,DC=htb,DC=local
+cn: Network Configuration Operators
+sAMAccountName: Network Configuration Operators
+
+# Performance Monitor Users, Builtin, htb.local
+dn: CN=Performance Monitor Users,CN=Builtin,DC=htb,DC=local
+cn: Performance Monitor Users
+sAMAccountName: Performance Monitor Users
+
+# Performance Log Users, Builtin, htb.local
+dn: CN=Performance Log Users,CN=Builtin,DC=htb,DC=local
+cn: Performance Log Users
+sAMAccountName: Performance Log Users
+
+# Distributed COM Users, Builtin, htb.local
+dn: CN=Distributed COM Users,CN=Builtin,DC=htb,DC=local
+cn: Distributed COM Users
+sAMAccountName: Distributed COM Users
+
+# IIS_IUSRS, Builtin, htb.local
+dn: CN=IIS_IUSRS,CN=Builtin,DC=htb,DC=local
+cn: IIS_IUSRS
+sAMAccountName: IIS_IUSRS
+
+# Cryptographic Operators, Builtin, htb.local
+dn: CN=Cryptographic Operators,CN=Builtin,DC=htb,DC=local
+cn: Cryptographic Operators
+sAMAccountName: Cryptographic Operators
+
+# Event Log Readers, Builtin, htb.local
+dn: CN=Event Log Readers,CN=Builtin,DC=htb,DC=local
+cn: Event Log Readers
+sAMAccountName: Event Log Readers
+
+# Certificate Service DCOM Access, Builtin, htb.local
+dn: CN=Certificate Service DCOM Access,CN=Builtin,DC=htb,DC=local
+cn: Certificate Service DCOM Access
+sAMAccountName: Certificate Service DCOM Access
+
+# RDS Remote Access Servers, Builtin, htb.local
+dn: CN=RDS Remote Access Servers,CN=Builtin,DC=htb,DC=local
+cn: RDS Remote Access Servers
+sAMAccountName: RDS Remote Access Servers
+
+# RDS Endpoint Servers, Builtin, htb.local
+dn: CN=RDS Endpoint Servers,CN=Builtin,DC=htb,DC=local
+cn: RDS Endpoint Servers
+sAMAccountName: RDS Endpoint Servers
+
+# RDS Management Servers, Builtin, htb.local
+dn: CN=RDS Management Servers,CN=Builtin,DC=htb,DC=local
+cn: RDS Management Servers
+sAMAccountName: RDS Management Servers
+
+# Hyper-V Administrators, Builtin, htb.local
+dn: CN=Hyper-V Administrators,CN=Builtin,DC=htb,DC=local
+cn: Hyper-V Administrators
+sAMAccountName: Hyper-V Administrators
+
+# Access Control Assistance Operators, Builtin, htb.local
+dn: CN=Access Control Assistance Operators,CN=Builtin,DC=htb,DC=local
+cn: Access Control Assistance Operators
+sAMAccountName: Access Control Assistance Operators
+
+# Remote Management Users, Builtin, htb.local
+dn: CN=Remote Management Users,CN=Builtin,DC=htb,DC=local
+cn: Remote Management Users
+sAMAccountName: Remote Management Users
+
+# System Managed Accounts Group, Builtin, htb.local
+dn: CN=System Managed Accounts Group,CN=Builtin,DC=htb,DC=local
+cn: System Managed Accounts Group
+sAMAccountName: System Managed Accounts Group
+
+# Storage Replica Administrators, Builtin, htb.local
+dn: CN=Storage Replica Administrators,CN=Builtin,DC=htb,DC=local
+cn: Storage Replica Administrators
+sAMAccountName: Storage Replica Administrators
+
+# Server Operators, Builtin, htb.local
+dn: CN=Server Operators,CN=Builtin,DC=htb,DC=local
+
+# Microsoft Exchange Security Groups, htb.local
+dn: OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+
+# Organization Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=Organization Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Organization Management
+sAMAccountName: Organization Management
+
+# Recipient Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=Recipient Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Recipient Management
+sAMAccountName: Recipient Management
+
+# View-Only Organization Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=View-Only Organization Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: View-Only Organization Management
+sAMAccountName: View-Only Organization Management
+
+# Public Folder Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=Public Folder Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Public Folder Management
+sAMAccountName: Public Folder Management
+
+# UM Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=UM Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: UM Management
+sAMAccountName: UM Management
+
+# Help Desk, Microsoft Exchange Security Groups, htb.local
+dn: CN=Help Desk,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Help Desk
+sAMAccountName: Help Desk
+
+# Records Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=Records Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Records Management
+sAMAccountName: Records Management
+
+# Discovery Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=Discovery Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Discovery Management
+sAMAccountName: Discovery Management
+
+# Server Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=Server Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Server Management
+sAMAccountName: Server Management
+
+# Delegated Setup, Microsoft Exchange Security Groups, htb.local
+dn: CN=Delegated Setup,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Delegated Setup
+sAMAccountName: Delegated Setup
+
+# Hygiene Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=Hygiene Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Hygiene Management
+sAMAccountName: Hygiene Management
+
+# Compliance Management, Microsoft Exchange Security Groups, htb.local
+dn: CN=Compliance Management,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Compliance Management
+sAMAccountName: Compliance Management
+
+# Security Reader, Microsoft Exchange Security Groups, htb.local
+dn: CN=Security Reader,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Security Reader
+sAMAccountName: Security Reader
+
+# Security Administrator, Microsoft Exchange Security Groups, htb.local
+dn: CN=Security Administrator,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Security Administrator
+sAMAccountName: Security Administrator
+
+# Exchange Servers, Microsoft Exchange Security Groups, htb.local
+dn: CN=Exchange Servers,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Exchange Servers
+sAMAccountName: Exchange Servers
+
+# Exchange Trusted Subsystem, Microsoft Exchange Security Groups, htb.local
+dn: CN=Exchange Trusted Subsystem,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Exchange Trusted Subsystem
+sAMAccountName: Exchange Trusted Subsystem
+
+# Managed Availability Servers, Microsoft Exchange Security Groups, htb.local
+dn: CN=Managed Availability Servers,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Managed Availability Servers
+sAMAccountName: Managed Availability Servers
+
+# Exchange Windows Permissions, Microsoft Exchange Security Groups, htb.local
+dn: CN=Exchange Windows Permissions,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: Exchange Windows Permissions
+sAMAccountName: Exchange Windows Permissions
+
+# ExchangeLegacyInterop, Microsoft Exchange Security Groups, htb.local
+dn: CN=ExchangeLegacyInterop,OU=Microsoft Exchange Security Groups,DC=htb,DC=local
+cn: ExchangeLegacyInterop
+sAMAccountName: ExchangeLegacyInterop
+
+# search reference
+ref: ldap://ForestDnsZones.htb.local/DC=ForestDnsZones,DC=htb,DC=local
+
+# search reference
+ref: ldap://DomainDnsZones.htb.local/DC=DomainDnsZones,DC=htb,DC=local
+
+# search reference
+ref: ldap://htb.local/CN=Configuration,DC=htb,DC=local
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 316
+# numEntries: 312
+# numReferences: 3

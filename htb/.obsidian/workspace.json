@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "academy/WINDOWS/lateral movement/PassTheHash .md",
+                "file": "academy/WINDOWS/lateral movement/PtH from Windows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PassTheHash"
+              "title": "PtH from Windows"
             }
           }
         ]
@@ -80,7 +80,7 @@
             }
           },
           {
-            "id": "24c015530f88e648",
+            "id": "cc927b5450a775ad",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -216,8 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -236,8 +235,11 @@
   },
   "active": "05252cf12538d1fb",
   "lastOpenFiles": [
-    "academy/WINDOWS/lateral movement/PassTheHash .md",
+    "academy/WINDOWS/kerberos/Kerberos refresher protocol .md",
+    "academy/WINDOWS/lateral movement/PtH from Windows.md",
     "academy/WINDOWS/lateral movement/lateral movement.md",
+    "academy/WINDOWS/lateral movement/PassTheHash .md",
+    "academy/WINDOWS/lateral movement/.md",
     "academy/WINDOWS/AD/AD.md",
     "academy/WINDOWS/AD/LDAP,NBTNS,SMB.md",
     "academy/CPTS/footprinting/SMB.md",
@@ -270,9 +272,6 @@
     "labs/machines/starting-point/DANCING.md",
     "labs/machines/starting-point/MEOW.md",
     "labs/machines/starting-point/TEMPLATE111.md",
-    "academy/WINDOWS/hash dumping/Attacking AD and NTDS.dit.md",
-    "academy/WINDOWS/AD/Domain Controllers .md",
-    "labs/machines/easy/SAUNA.md",
     "Pasted image 20261113184819.png",
     "Pasted image 20260820003747.png",
     "Pasted image 20260820001606.png",

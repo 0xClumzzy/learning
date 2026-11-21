@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"30fb5a59bde7298c","x":-460,"y":-620,"width":820,"height":320,"type":"text","text":"***DELEGATION MISCONFIGS*** # The money query - run on EVERY domain\n```bash \nldapsearch -x -H ldap://<DC> -b \"DC=domain,DC=local\" \\\n  \"(|(userAccountControl:1.2.840.113556.1.4.803:=524288)\n       (userAccountControl:1.2.840.113556.1.4.803:=16777216)\n       (msDS-AllowedToDelegateTo=*)\n       (msDS-AllowedToActOnBehalfOfOtherIdentity=*))\" \\\n  cn sAMAccountName userAccountControl msDS-AllowedToDelegateTo msDS-AllowedToActOnBehalfOfOtherIdentity\n```"}
+	],
+	"edges":[]
+}

@@ -1,0 +1,12 @@
+# Tier 1 — privilege-escalation primitives
+# 1 entries · tiny 1.1.0
+
+# score=70 tier=1 (HIGH VALUE) | Domain Controller
+dn: CN=FOREST,OU=Domain Controllers,DC=htb,DC=local
+  kind: computer
+  name: FOREST$
+  samaccountname: FOREST$
+  cn: FOREST
+  useraccountcontrol: 532480
+  serviceprincipalname: TERMSRV/FOREST, TERMSRV/FOREST.htb.local, exchangeAB/FOREST, exchangeAB/FOREST.htb.local, Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/FOREST.htb.local (+19 more)
+

@@ -1,0 +1,412 @@
+version: 1
+dn: CN=Guest,CN=Users,DC=htb,DC=local
+cn: Guest
+description: Built-in account for guest access to the computer/domain
+userAccountControl: 66082
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: Guest
+
+# total number of entries: 1
+version: 1
+dn: CN=DefaultAccount,CN=Users,DC=htb,DC=local
+cn: DefaultAccount
+description: A user account managed by the system.
+userAccountControl: 66082
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: DefaultAccount
+
+# total number of entries: 1
+version: 1
+dn: CN=FOREST,OU=Domain Controllers,DC=htb,DC=local
+cn: FOREST
+userAccountControl: 532480
+badPwdCount: 0
+lastLogon: 134394962097357258
+pwdLastSet: 134394944115755561
+sAMAccountName: FOREST$
+servicePrincipalName: TERMSRV/FOREST
+servicePrincipalName: TERMSRV/FOREST.htb.local
+servicePrincipalName: exchangeAB/FOREST
+servicePrincipalName: exchangeAB/FOREST.htb.local
+servicePrincipalName: Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/FOREST.htb.loc
+ al
+servicePrincipalName: ldap/FOREST.htb.local/ForestDnsZones.htb.local
+servicePrincipalName: ldap/FOREST.htb.local/DomainDnsZones.htb.local
+servicePrincipalName: DNS/FOREST.htb.local
+servicePrincipalName: GC/FOREST.htb.local/htb.local
+servicePrincipalName: RestrictedKrbHost/FOREST.htb.local
+servicePrincipalName: RestrictedKrbHost/FOREST
+servicePrincipalName: RPC/236ba33a-7959-4a41-b959-5f82689a0871._msdcs.htb.loca
+ l
+servicePrincipalName: HOST/FOREST/HTB
+servicePrincipalName: HOST/FOREST.htb.local/HTB
+servicePrincipalName: HOST/FOREST
+servicePrincipalName: HOST/FOREST.htb.local
+servicePrincipalName: HOST/FOREST.htb.local/htb.local
+servicePrincipalName: E3514235-4B06-11D1-AB04-00C04FC2DCD2/236ba33a-7959-4a41-
+ b959-5f82689a0871/htb.local
+servicePrincipalName: ldap/FOREST/HTB
+servicePrincipalName: ldap/236ba33a-7959-4a41-b959-5f82689a0871._msdcs.htb.loc
+ al
+servicePrincipalName: ldap/FOREST.htb.local/HTB
+servicePrincipalName: ldap/FOREST
+servicePrincipalName: ldap/FOREST.htb.local
+servicePrincipalName: ldap/FOREST.htb.local/htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=EXCH01,CN=Computers,DC=htb,DC=local
+cn: EXCH01
+userAccountControl: 4096
+badPwdCount: 0
+lastLogon: 132137531802056348
+pwdLastSet: 132132783926408753
+sAMAccountName: EXCH01$
+servicePrincipalName: IMAP/EXCH01
+servicePrincipalName: IMAP/EXCH01.htb.local
+servicePrincipalName: IMAP4/EXCH01
+servicePrincipalName: IMAP4/EXCH01.htb.local
+servicePrincipalName: POP/EXCH01
+servicePrincipalName: POP/EXCH01.htb.local
+servicePrincipalName: POP3/EXCH01
+servicePrincipalName: POP3/EXCH01.htb.local
+servicePrincipalName: exchangeRFR/EXCH01
+servicePrincipalName: exchangeRFR/EXCH01.htb.local
+servicePrincipalName: exchangeAB/EXCH01
+servicePrincipalName: exchangeAB/EXCH01.htb.local
+servicePrincipalName: exchangeMDB/EXCH01
+servicePrincipalName: exchangeMDB/EXCH01.htb.local
+servicePrincipalName: SMTP/EXCH01
+servicePrincipalName: SMTP/EXCH01.htb.local
+servicePrincipalName: SmtpSvc/EXCH01
+servicePrincipalName: SmtpSvc/EXCH01.htb.local
+servicePrincipalName: WSMAN/EXCH01
+servicePrincipalName: WSMAN/EXCH01.htb.local
+servicePrincipalName: RestrictedKrbHost/EXCH01
+servicePrincipalName: HOST/EXCH01
+servicePrincipalName: RestrictedKrbHost/EXCH01.htb.local
+servicePrincipalName: HOST/EXCH01.htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=Exchange Online-ApplicationAccount,CN=Users,DC=htb,DC=local
+cn: Exchange Online-ApplicationAccount
+userAccountControl: 546
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: $331000-VK4ADACQNUCA
+userPrincipalName: Exchange_Online-ApplicationAccount@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1},CN=Users,DC=htb,DC=
+ local
+cn: SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}
+userAccountControl: 514
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: SM_2c8eef0a09b545acb
+userPrincipalName: SystemMailbox{1f05a927-89c0-4725-adca-4527114196a1}@htb.loc
+ al
+
+# total number of entries: 1
+version: 1
+dn: CN=SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c},CN=Users,DC=htb,DC=
+ local
+cn: SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}
+userAccountControl: 514
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: SM_ca8c2ed5bdab4dc9b
+userPrincipalName: SystemMailbox{bb558c35-97f1-4cb9-8ff7-d53741dc928c}@htb.loc
+ al
+
+# total number of entries: 1
+version: 1
+dn: CN=SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9},CN=Users,DC=htb,DC=
+ local
+cn: SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}
+userAccountControl: 514
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: SM_75a538d3025e4db9a
+userPrincipalName: SystemMailbox{e0dc1c29-89c3-4034-b678-e6c29d823ed9}@htb.loc
+ al
+
+# total number of entries: 1
+version: 1
+dn: CN=DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852},CN=Users,
+ DC=htb,DC=local
+cn: DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB852}
+userAccountControl: 514
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: SM_681f53d4942840e18
+userPrincipalName: DiscoverySearchMailbox {D919BA05-46A6-415f-80AD-7E09334BB85
+ 2}@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=Migration.8f3e7716-2011-43e4-96b1-aba62d229136,CN=Users,DC=htb,DC=local
+cn: Migration.8f3e7716-2011-43e4-96b1-aba62d229136
+userAccountControl: 514
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: SM_1b41c9286325456bb
+userPrincipalName: Migration.8f3e7716-2011-43e4-96b1-aba62d229136@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042,CN=Users,DC=htb,DC=
+ local
+cn: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042
+userAccountControl: 514
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: SM_9b69f1b9d2cc45549
+userPrincipalName: FederatedEmail.4c1f4d8b-8179-4148-93bf-00a95fa1e042@htb.loc
+ al
+
+# total number of entries: 1
+version: 1
+dn: CN=SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201},CN=Users,DC=htb,DC=
+ local
+cn: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}
+userAccountControl: 514
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: SM_7c96b981967141ebb
+userPrincipalName: SystemMailbox{D0E409A0-AF9B-4720-92FE-AAC869B0D201}@htb.loc
+ al
+
+# total number of entries: 1
+version: 1
+dn: CN=SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA},CN=Users,DC=htb,DC=
+ local
+cn: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}
+userAccountControl: 514
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: SM_c75ee099d0a64c91b
+userPrincipalName: SystemMailbox{2CE34405-31BE-455D-89D7-A7C7DA7A0DAA}@htb.loc
+ al
+
+# total number of entries: 1
+version: 1
+dn: CN=SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9},CN=Users,DC=htb,DC=
+ local
+cn: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}
+userAccountControl: 514
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 0
+sAMAccountName: SM_1ffab36a2f5f479cb
+userPrincipalName: SystemMailbox{8cc370d3-822a-4ab8-a926-bb94bd0641a9}@htb.loc
+ al
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailboxc3d7722415ad41a5b19e3e00e165edbe,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxc3d7722415ad41a5b19e3e00e165edbe
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 132137530323615163
+pwdLastSet: 132137526918920967
+sAMAccountName: HealthMailboxc3d7722
+userPrincipalName: HealthMailboxc3d7722415ad41a5b19e3e00e165edbe@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailboxfc9daad117b84fe08b081886bd8a5a50,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxfc9daad117b84fe08b081886bd8a5a50
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 132137527257360120
+pwdLastSet: 132137526952671142
+sAMAccountName: HealthMailboxfc9daad
+userPrincipalName: HealthMailboxfc9daad117b84fe08b081886bd8a5a50@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailboxc0a90c97d4994429b15003d6a518f3f5,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxc0a90c97d4994429b15003d6a518f3f5
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132133677952063286
+sAMAccountName: HealthMailboxc0a90c9
+userPrincipalName: HealthMailboxc0a90c97d4994429b15003d6a518f3f5@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailbox670628ec4dd64321acfdf6e67db3a2d8,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox670628ec4dd64321acfdf6e67db3a2d8
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132133678056439933
+sAMAccountName: HealthMailbox670628e
+userPrincipalName: HealthMailbox670628ec4dd64321acfdf6e67db3a2d8@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailbox968e74dd3edb414cb4018376e7dd95ba,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox968e74dd3edb414cb4018376e7dd95ba
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132133678161439690
+sAMAccountName: HealthMailbox968e74d
+userPrincipalName: HealthMailbox968e74dd3edb414cb4018376e7dd95ba@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailbox6ded67848a234577a1756e072081d01f,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox6ded67848a234577a1756e072081d01f
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132133678265970122
+sAMAccountName: HealthMailbox6ded678
+userPrincipalName: HealthMailbox6ded67848a234577a1756e072081d01f@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailbox83d6781be36b4bbf8893b03c2ee379ab,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox83d6781be36b4bbf8893b03c2ee379ab
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132133678370658086
+sAMAccountName: HealthMailbox83d6781
+userPrincipalName: HealthMailbox83d6781be36b4bbf8893b03c2ee379ab@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailboxfd87238e536e49e08738480d300e3772,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxfd87238e536e49e08738480d300e3772
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132133678474876792
+sAMAccountName: HealthMailboxfd87238
+userPrincipalName: HealthMailboxfd87238e536e49e08738480d300e3772@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailboxb01ac647a64648d2a5fa21df27058a24,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailboxb01ac647a64648d2a5fa21df27058a24
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132133678578785590
+sAMAccountName: HealthMailboxb01ac64
+userPrincipalName: HealthMailboxb01ac647a64648d2a5fa21df27058a24@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailbox7108a4e350f84b32a7a90d8e718f78cf,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox7108a4e350f84b32a7a90d8e718f78cf
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132133678682533414
+sAMAccountName: HealthMailbox7108a4e
+userPrincipalName: HealthMailbox7108a4e350f84b32a7a90d8e718f78cf@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=HealthMailbox0659cc188f4c4f9f978f6c2142c4181e,CN=Monitoring Mailboxes,C
+ N=Microsoft Exchange System Objects,DC=htb,DC=local
+cn: HealthMailbox0659cc188f4c4f9f978f6c2142c4181e
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132133678786439938
+sAMAccountName: HealthMailbox0659cc1
+userPrincipalName: HealthMailbox0659cc188f4c4f9f978f6c2142c4181e@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=Sebastien Caron,OU=Exchange Administrators,OU=Information Technology,OU
+ =Employees,DC=htb,DC=local
+cn: Sebastien Caron
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 132136649695862270
+pwdLastSet: 132134129995447247
+sAMAccountName: sebastien
+userPrincipalName: sebastien@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=Lucinda Berger,OU=IT Management,OU=Information Technology,OU=Employees,
+ DC=htb,DC=local
+cn: Lucinda Berger
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132134138532338911
+sAMAccountName: lucinda
+userPrincipalName: lucinda@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=Andy Hislip,OU=Helpdesk,OU=Information Technology,OU=Employees,DC=htb,D
+ C=local
+cn: Andy Hislip
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132136658562910820
+sAMAccountName: andy
+userPrincipalName: andy@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=Mark Brandt,OU=Sysadmins,OU=Information Technology,OU=Employees,DC=htb,
+ DC=local
+cn: Mark Brandt
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132134938502435678
+sAMAccountName: mark
+userPrincipalName: mark@htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=Santi Rodriguez,OU=Developers,OU=Information Technology,OU=Employees,DC
+ =htb,DC=local
+cn: Santi Rodriguez
+userAccountControl: 66048
+badPwdCount: 0
+lastLogon: 0
+pwdLastSet: 132134941751348277
+sAMAccountName: santi
+userPrincipalName: santi@htb.local
+
+# total number of entries: 1

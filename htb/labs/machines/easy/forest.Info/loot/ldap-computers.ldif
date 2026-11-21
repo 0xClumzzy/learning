@@ -1,0 +1,66 @@
+version: 1
+dn: CN=FOREST,OU=Domain Controllers,DC=htb,DC=local
+cn: FOREST
+userAccountControl: 532480
+sAMAccountName: FOREST$
+servicePrincipalName: TERMSRV/FOREST
+servicePrincipalName: TERMSRV/FOREST.htb.local
+servicePrincipalName: exchangeAB/FOREST
+servicePrincipalName: exchangeAB/FOREST.htb.local
+servicePrincipalName: Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/FOREST.htb.loc
+ al
+servicePrincipalName: ldap/FOREST.htb.local/ForestDnsZones.htb.local
+servicePrincipalName: ldap/FOREST.htb.local/DomainDnsZones.htb.local
+servicePrincipalName: DNS/FOREST.htb.local
+servicePrincipalName: GC/FOREST.htb.local/htb.local
+servicePrincipalName: RestrictedKrbHost/FOREST.htb.local
+servicePrincipalName: RestrictedKrbHost/FOREST
+servicePrincipalName: RPC/236ba33a-7959-4a41-b959-5f82689a0871._msdcs.htb.loca
+ l
+servicePrincipalName: HOST/FOREST/HTB
+servicePrincipalName: HOST/FOREST.htb.local/HTB
+servicePrincipalName: HOST/FOREST
+servicePrincipalName: HOST/FOREST.htb.local
+servicePrincipalName: HOST/FOREST.htb.local/htb.local
+servicePrincipalName: E3514235-4B06-11D1-AB04-00C04FC2DCD2/236ba33a-7959-4a41-
+ b959-5f82689a0871/htb.local
+servicePrincipalName: ldap/FOREST/HTB
+servicePrincipalName: ldap/236ba33a-7959-4a41-b959-5f82689a0871._msdcs.htb.loc
+ al
+servicePrincipalName: ldap/FOREST.htb.local/HTB
+servicePrincipalName: ldap/FOREST
+servicePrincipalName: ldap/FOREST.htb.local
+servicePrincipalName: ldap/FOREST.htb.local/htb.local
+
+# total number of entries: 1
+version: 1
+dn: CN=EXCH01,CN=Computers,DC=htb,DC=local
+cn: EXCH01
+userAccountControl: 4096
+sAMAccountName: EXCH01$
+servicePrincipalName: IMAP/EXCH01
+servicePrincipalName: IMAP/EXCH01.htb.local
+servicePrincipalName: IMAP4/EXCH01
+servicePrincipalName: IMAP4/EXCH01.htb.local
+servicePrincipalName: POP/EXCH01
+servicePrincipalName: POP/EXCH01.htb.local
+servicePrincipalName: POP3/EXCH01
+servicePrincipalName: POP3/EXCH01.htb.local
+servicePrincipalName: exchangeRFR/EXCH01
+servicePrincipalName: exchangeRFR/EXCH01.htb.local
+servicePrincipalName: exchangeAB/EXCH01
+servicePrincipalName: exchangeAB/EXCH01.htb.local
+servicePrincipalName: exchangeMDB/EXCH01
+servicePrincipalName: exchangeMDB/EXCH01.htb.local
+servicePrincipalName: SMTP/EXCH01
+servicePrincipalName: SMTP/EXCH01.htb.local
+servicePrincipalName: SmtpSvc/EXCH01
+servicePrincipalName: SmtpSvc/EXCH01.htb.local
+servicePrincipalName: WSMAN/EXCH01
+servicePrincipalName: WSMAN/EXCH01.htb.local
+servicePrincipalName: RestrictedKrbHost/EXCH01
+servicePrincipalName: HOST/EXCH01
+servicePrincipalName: RestrictedKrbHost/EXCH01.htb.local
+servicePrincipalName: HOST/EXCH01.htb.local
+
+# total number of entries: 1

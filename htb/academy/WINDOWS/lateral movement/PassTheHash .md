@@ -70,4 +70,4 @@ xfreerdp3 /v:ip /u:Administrator /pth:Hash
 User Account Control limits user admin privs 
 when the registry key `HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\LocalAccountTokenFilterPolicy` is set to `0`, it means the local admin `RID-500, Administrator` is the only local account with privs, setting it to `1`  allows other local admin accounts as well 
 
->**Note:** There is one exception, if the registry key `FilterAdministratorToken` (disabled by default) is enabled (value 1), the RID 500 account (even if it is renamed) is enrolled in UAC protection. This means that remote PTH will fail against the machine when using that account.
+>**Note:** There is one exception, if the registry key `FilterAdministratorToken` (disabled by default) is enabled (value 1), the RID 500 account (even if it is renamed) is enrolled in UAC protection. This means that remote PTH will fail against the machine when using that account

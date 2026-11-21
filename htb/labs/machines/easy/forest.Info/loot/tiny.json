@@ -1,0 +1,129 @@
+{
+  "tool": "tiny",
+  "version": "1.1.0",
+  "generated": "2026-11-18T20:07:04",
+  "sources": [
+    "stdin"
+  ],
+  "domain": "htb.local",
+  "counts": {
+    "total": 2,
+    "tiers": {
+      "0": 0,
+      "1": 1,
+      "2": 0,
+      "3": 1
+    },
+    "kinds": {
+      "computer": 2
+    }
+  },
+  "quick_wins": {},
+  "posture": {
+    "domain": "htb.local",
+    "available": false,
+    "machine_account_quota": null,
+    "lockout_threshold": null,
+    "lockout_duration": null,
+    "lockout_window": null,
+    "min_password_length": null,
+    "max_password_age": null,
+    "password_history": null,
+    "complexity": null,
+    "functional_level": null,
+    "trusts": []
+  },
+  "objects": [
+    {
+      "dn": "CN=FOREST,OU=Domain Controllers,DC=htb,DC=local",
+      "name": "FOREST$",
+      "kind": "computer",
+      "score": 70,
+      "tier": 1,
+      "tier_label": "HIGH VALUE",
+      "reasons": [
+        "Domain Controller"
+      ],
+      "tags": [
+        "dc",
+        "privileged"
+      ],
+      "memberships": [],
+      "attributes": {
+        "cn": "FOREST",
+        "useraccountcontrol": "532480",
+        "samaccountname": "FOREST$",
+        "serviceprincipalname": [
+          "TERMSRV/FOREST",
+          "TERMSRV/FOREST.htb.local",
+          "exchangeAB/FOREST",
+          "exchangeAB/FOREST.htb.local",
+          "Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/FOREST.htb.local",
+          "ldap/FOREST.htb.local/ForestDnsZones.htb.local",
+          "ldap/FOREST.htb.local/DomainDnsZones.htb.local",
+          "DNS/FOREST.htb.local",
+          "GC/FOREST.htb.local/htb.local",
+          "RestrictedKrbHost/FOREST.htb.local",
+          "RestrictedKrbHost/FOREST",
+          "RPC/236ba33a-7959-4a41-b959-5f82689a0871._msdcs.htb.local",
+          "HOST/FOREST/HTB",
+          "HOST/FOREST.htb.local/HTB",
+          "HOST/FOREST",
+          "HOST/FOREST.htb.local",
+          "HOST/FOREST.htb.local/htb.local",
+          "E3514235-4B06-11D1-AB04-00C04FC2DCD2/236ba33a-7959-4a41-b959-5f82689a0871/htb.local",
+          "ldap/FOREST/HTB",
+          "ldap/236ba33a-7959-4a41-b959-5f82689a0871._msdcs.htb.local",
+          "ldap/FOREST.htb.local/HTB",
+          "ldap/FOREST",
+          "ldap/FOREST.htb.local",
+          "ldap/FOREST.htb.local/htb.local"
+        ]
+      }
+    },
+    {
+      "dn": "CN=EXCH01,CN=Computers,DC=htb,DC=local",
+      "name": "EXCH01$",
+      "kind": "computer",
+      "score": 15,
+      "tier": 3,
+      "tier_label": "LOW",
+      "reasons": [
+        "no escalation signals"
+      ],
+      "tags": [],
+      "memberships": [],
+      "attributes": {
+        "cn": "EXCH01",
+        "useraccountcontrol": "4096",
+        "samaccountname": "EXCH01$",
+        "serviceprincipalname": [
+          "IMAP/EXCH01",
+          "IMAP/EXCH01.htb.local",
+          "IMAP4/EXCH01",
+          "IMAP4/EXCH01.htb.local",
+          "POP/EXCH01",
+          "POP/EXCH01.htb.local",
+          "POP3/EXCH01",
+          "POP3/EXCH01.htb.local",
+          "exchangeRFR/EXCH01",
+          "exchangeRFR/EXCH01.htb.local",
+          "exchangeAB/EXCH01",
+          "exchangeAB/EXCH01.htb.local",
+          "exchangeMDB/EXCH01",
+          "exchangeMDB/EXCH01.htb.local",
+          "SMTP/EXCH01",
+          "SMTP/EXCH01.htb.local",
+          "SmtpSvc/EXCH01",
+          "SmtpSvc/EXCH01.htb.local",
+          "WSMAN/EXCH01",
+          "WSMAN/EXCH01.htb.local",
+          "RestrictedKrbHost/EXCH01",
+          "HOST/EXCH01",
+          "RestrictedKrbHost/EXCH01.htb.local",
+          "HOST/EXCH01.htb.local"
+        ]
+      }
+    }
+  ]
+}

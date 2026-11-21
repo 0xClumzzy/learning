@@ -1,0 +1,21 @@
+# All computer objects
+# 2 entries · tiny 1.1.0
+
+# score=70 tier=1 (HIGH VALUE) | Domain Controller
+dn: CN=FOREST,OU=Domain Controllers,DC=htb,DC=local
+  kind: computer
+  name: FOREST$
+  samaccountname: FOREST$
+  cn: FOREST
+  useraccountcontrol: 532480
+  serviceprincipalname: TERMSRV/FOREST, TERMSRV/FOREST.htb.local, exchangeAB/FOREST, exchangeAB/FOREST.htb.local, Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/FOREST.htb.local (+19 more)
+
+# score=15 tier=3 (LOW) | no escalation signals
+dn: CN=EXCH01,CN=Computers,DC=htb,DC=local
+  kind: computer
+  name: EXCH01$
+  samaccountname: EXCH01$
+  cn: EXCH01
+  useraccountcontrol: 4096
+  serviceprincipalname: IMAP/EXCH01, IMAP/EXCH01.htb.local, IMAP4/EXCH01, IMAP4/EXCH01.htb.local, POP/EXCH01 (+19 more)
+
