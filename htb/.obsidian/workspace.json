@@ -263,6 +263,7 @@
   },
   "active": "93cc2220dbf11b8b",
   "lastOpenFiles": [
+    "labs/sherlocks/easy/TASKFORCE.md",
     "labs/sherlocks/easy",
     "labs/sherlocks",
     "academy/WINDOWS/lateral movement/lateral movement.md",
@@ -280,7 +281,6 @@
     "academy/WINDOWS/lateral movement/exercise/tickets/dookie/bin/uploadserver",
     "academy/WINDOWS/lateral movement/exercise/tickets/dookie/lib/python3.14/site-packages/uploadserver/__pycache__/cgi.cpython-314.pyc",
     "academy/WINDOWS/lateral movement/exercise/tickets/dookie/lib/python3.14/site-packages/uploadserver/__pycache__/__main__.cpython-314.pyc",
-    "academy/WINDOWS/lateral movement/exercise/tickets/dookie/lib/python3.14/site-packages/uploadserver/__pycache__/__init__.cpython-314.pyc",
     "academy/WINDOWS/lateral movement/exercise/tickets/dookie/lib/python3.14/site-packages/pip-26.2.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
     "academy/WINDOWS/lateral movement/exercise/tickets/dookie/lib/python3.14/site-packages/pip/_vendor/idna/LICENSE.md",
     "academy/CPTS/File tranfer methods/shells and payloads/SHELLS.md",
