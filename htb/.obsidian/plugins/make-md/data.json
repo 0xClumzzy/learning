@@ -54,9 +54,8 @@
     "//ctfs",
     "//academy/academy/CPTS",
     "//academy/academy/WINDOWS",
-    "//academy/academy/WINDOWS/academy/WINDOWS/hash dumping",
     "//academy/academy/CPTS/academy/CPTS/File tranfer methods",
-    "//academy/academy/WINDOWS/academy/WINDOWS/lateral movement"
+    "//academy/academy/WINDOWS/academy/WINDOWS/kerberos"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
