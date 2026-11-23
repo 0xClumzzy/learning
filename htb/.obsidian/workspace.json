@@ -107,7 +107,7 @@
             }
           },
           {
-            "id": "93cc2220dbf11b8b",
+            "id": "25952a9bfbd5123c",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -261,7 +261,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "93cc2220dbf11b8b",
+  "active": "5d11f9ca6a33308e",
   "lastOpenFiles": [
     "labs/sherlocks/easy/TASKFORCE.md",
     "labs/sherlocks/easy",
