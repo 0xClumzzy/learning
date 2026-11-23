@@ -55,7 +55,8 @@
     "//academy/academy/CPTS",
     "//academy/academy/WINDOWS",
     "//academy/academy/CPTS/academy/CPTS/File tranfer methods",
-    "//academy/academy/WINDOWS/academy/WINDOWS/kerberos"
+    "//academy/academy/WINDOWS/academy/WINDOWS/kerberos",
+    "//academy/academy/WINDOWS/academy/WINDOWS/lateral movement"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

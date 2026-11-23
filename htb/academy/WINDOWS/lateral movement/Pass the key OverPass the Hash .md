@@ -3,7 +3,7 @@ aliases:
   - Pass the key/ Over the Hash
 ---
 Forging a tgt:
-Converting the hash/key(rc4_hmac, aes256_cts_hmac_sha1) fpr a `domain-joined usr` into a `TGT`
+Converting the hash/key(rc4_hmac, aes256_cts_hmac_sha1) for a `domain-joined usr` into a `TGT`
 we need the
 - Users hash 
 - `serkulsa::ekeys` dumps kerberos encryption keys 

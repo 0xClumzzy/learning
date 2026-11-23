@@ -12,10 +12,12 @@ A `keytab` is a file containing pairs of Kerberos principals and encrypted keys 
 - . You can use a keytab file to authenticate to various remote systems using Kerberos without entering a password. BUt if u change yo pass, you have to regenerate your keytab files 
 > **Note:** Any computer that has a Kerberos client installed can create keytab files. Keytab files can be created on one computer and copied for use on other computers because they are not restricted to the systems on which they were initially created.
 
-1. Check if the linux machine is domain joined
+1.  *Check if the linux machine is domain joined
 - `realm list` or 
 - `ps -ef | grep -i "winbind\|sssd" `
-2. Finding keytab files 
+
+
+2. *Finding keytab files 
 - `find / -name *keytab* -ls 2>/dev/null`
 > **Note:** To use a keytab file, we must have read and write (rw) privileges on the file.
 
@@ -25,3 +27,38 @@ finding keytab files in cronjobs
 Kinit allows interation with Kerberos 
 - It requests  user's TGT's and stores the ticket in the cache file 
 - We can use kinit to import a keytab 
+
+> **Note**: a computer account needs a ticket to interact with the Active Directory environment. Similarly, a Linux domain-joined machine needs a ticket. The ticket is represented as a keytab file located by default at `/etc/krb5.keytab` and can only be read by the root user. If we gain access to this ticket, we can impersonate the computer account
+
+3. *finding cacche files 
+ - `env | grep -k krb5`
+- `ls /tmp`
+
+4. *Abusing keytab files 
+- `kinit`- obtain and cache tickets
+- `klist` - list kerberos principle and tickets
+To list keytab file information we would use klist 
+```bash
+klist -k -t /path/to/keytab/file
+```
+- Principal - user@hostname
+- timestamp
+Impersonate with kinit 
+> **Note:** **kinit** is case-sensitive, so be sure to use the name of the principal as shown in klist.
+```bash 
+kinit <principal> -k -t /path/to/key/tab/used/
+```
+klist to confirm 
+> **Note:** To keep the ticket from the current session, before importing the keytab, save a copy of the ccache file present in the environment variable `KRB5CCNAME`.
+
+After this one can 
+- connect to smb shares: `smbclient //dc01/user -k -c ls`
+
+***KEYTAB EXTRACT*** (502-type `.keytab` files)
+- when u wanna access acc using user password
+https://github.com/sosdave/KeyTabExtract
+- allows us to extract hashes 
+- NTLM hash, we can perform a Pass the Hash attack.
+- AES256 or AES128 hash, we can forge our tickets using Rubeus or attempt to crack the hashes to obtain the plaintext password. `Rubeus.exe asktgt /domain: /user /aes256: /nowrap`
+> **Note:** A KeyTab file can contain different types of hashes and can be merged to contain multiple credentials even from different users.
+
