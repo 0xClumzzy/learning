@@ -94,6 +94,8 @@ proxychains impacket-wmiexec dc01 -k --no-pass
 > **Note:** If you are using Impacket tools from a Linux machine connected to the domain, note that some Linux Active Directory implementations use the FILE: prefix in the KRB5CCNAME variable. If this is the case, we need to modify the variable only to include the path to the ccache file.
 
 
-To use evil-winrm with kerberos, we need to install the kerberos package for network authentication, `kbr5-user`, with domain as the kerberos realm , server can be empty or the target machine name
-
+To use evil-winrm with kerberos, we need to install the kerberos package for network authentication, `kbr5-user`, with domain as the kerberos realm , server can be empty or the target machine name. `/etc/krb5.conf`
+```bash 
+proxchains evil-winrm -i dc01 -r inlanefreight.htb 
+```
 
